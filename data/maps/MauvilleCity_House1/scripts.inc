@@ -4,11 +4,10 @@ MauvilleCity_House1_MapScripts::
 MauvilleCity_House1_EventScript_RockSmashDude::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
+	goto_if_set FLAG_RECEIVED_TM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
 	msgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_HM_ROCK_SMASH
-	setflag FLAG_RECEIVED_HM_ROCK_SMASH
-	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
+	giveitem ITEM_TM_ROCK_SMASH
+	setflag FLAG_RECEIVED_TM_ROCK_SMASH
 	msgbox MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT
 	release
 	end
@@ -28,13 +27,13 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Anyways, your Pokémon look pretty\n"
 	.string "strong.\p"
 	.string "I like that!\n"
-	.string "Here, take this Hidden Machine!$"
+	.string "Here, take this Technical Machine!$"
 
 MauvilleCity_House1_Text_ExplainRockSmash:
-	.string "That HM contains Rock Smash.\p"
+	.string "That TM contains Rock Smash.\p"
 	.string "If you come across large boulders\n"
 	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
+	.string "Well, use that TM move and smash\n"
 	.string "them right out of your way!\p"
 	.string "Yes, sir! Smash rocks aside, I say!\n"
 	.string "Woohoo!$"

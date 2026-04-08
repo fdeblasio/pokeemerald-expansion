@@ -3075,4 +3075,25 @@
 	.4byte \lose_text_b
 	.2byte \partnerId
 	waitstate
+
+@ Custom
+	.macro overworldspecies species:req, cryMode=CRY_MODE_NORMAL
+	playmoncry \species, \cryMode
+	setseenmon \species
+	.endm
+
+	.macro bufferspeciestext species:req text:req, msgtype=MSGBOX_DEFAULT
+	bufferspeciesname STR_VAR_1, \species
+	msgbox \text, \msgtype
+	.endm
+
+	.macro mart_clerk mart:req
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart \mart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
 	.endm

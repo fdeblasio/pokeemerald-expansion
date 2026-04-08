@@ -302,6 +302,7 @@ ContestHall_EventScript_CreateAudience::
 	case CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_CreateSuperContestAudience
 	case CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_CreateHyperContestAudience
 	case CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_CreateMasterContestAudience
+	case CONTEST_TYPE_NPC_SPECIAL, ContestHall_EventScript_CreateMasterContestAudience
 	case CONTEST_TYPE_LINK, ContestHall_EventScript_CreateMasterContestAudience
 	return
 
@@ -402,29 +403,15 @@ ContestHall_EventScript_CreateWirelessContestAudience::
 ContestHall_EventScript_SetExitWarp::
 	special ClearLinkContestFlags
 	switch VAR_CONTEST_TYPE
-	case CONTEST_TYPE_NPC_NORMAL, ContestHall_EventScript_SetExitWarpNormalContest
-	case CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_SetExitWarpSuperContest
-	case CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_SetExitWarpHyperContest
-	case CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_SetExitWarpMasterContest
+	case CONTEST_TYPE_NPC_NORMAL, ContestHall_EventScript_SetExitWarpContest
+	case CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_SetExitWarpContest
+	case CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_SetExitWarpContest
+	case CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_SetExitWarpContest
+	case CONTEST_TYPE_NPC_SPECIAL, ContestHall_EventScript_SetExitWarpContest
 	case CONTEST_TYPE_LINK, ContestHall_EventScript_SetExitWarpLinkContest
 	return
 
-ContestHall_EventScript_SetExitWarpNormalContest::
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
-	waitstate
-	end
-
-ContestHall_EventScript_SetExitWarpSuperContest::
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
-	waitstate
-	end
-
-ContestHall_EventScript_SetExitWarpHyperContest::
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
-	waitstate
-	end
-
-ContestHall_EventScript_SetExitWarpMasterContest::
+ContestHall_EventScript_SetExitWarpContest::
 	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
 	waitstate
 	end

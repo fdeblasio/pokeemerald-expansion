@@ -371,8 +371,8 @@ ThreeIsland_EventScript_Doduo::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DODUO, CRY_MODE_NORMAL
-	msgbox ThreeIsland_Text_Doduo
+	overworldspecies SPECIES_DODUO
+	bufferspeciestext SPECIES_DODUO, ThreeIsland_Text_Doduo
 	waitmoncry
 	release
 	end
@@ -550,5 +550,5 @@ ThreeIsland_Text_WhenDodouEvolvesGoingToPlayGame::
 	.string "a game on Two Island.$"
 
 ThreeIsland_Text_Doduo::
-	.string "Doduo: Gigiih!$"
+	.string "{STR_VAR_1}: Gigiih!$"
 

@@ -28,6 +28,7 @@ EverGrandeCity_ChampionsRoom_EventScript_EnterRoom::
 	applymovement LOCALID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
 	waitmovement 0
 	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_ChampionsRoom_EventScript_WallaceRematch
 	goto EverGrandeCity_ChampionsRoom_EventScript_Wallace
 	releaseall
 	end
@@ -41,6 +42,13 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_ChampionsRoom_EventScript_WallaceRematch::
+	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
+	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLACE_REMATCH, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
@@ -242,6 +250,16 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "their Pokémon in Hoenn?\p"
 	.string "Show me right here and now!$"
 
+EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch:
+	.string "Wallace: Welcome, {PLAYER}.\p"
+	.string "This is where your achievements\n"
+	.string "are put to the test against what\l"
+	.string "others like you have achieved.\p"
+	.string "Now!\p"
+	.string "Who can most elegantly dance with\n"
+	.string "their Pokémon in Hoenn?\p"
+	.string "Show me right here and now!$"
+
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "I, the Champion, fall in defeat…\p"
 	.string "That was wonderful work.\n"
@@ -267,24 +285,24 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "Hoenn region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "May: {PLAYER}{KUN}!\p"
+	.string "{RIVAL}: {PLAYER}{KUN}!\p"
 	.string "Here's some advice before you challenge\n"
 	.string "the Champion…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "May: Huh?\n"
+	.string "{RIVAL}: Huh?\n"
 	.string "What, what, what?\p"
 	.string "{PLAYER}{KUN}…\n"
 	.string "Could it be that…\l"
 	.string "It's already over?$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
-	.string "Brendan: {PLAYER}!\p"
+	.string "{RIVAL}: {PLAYER}!\p"
 	.string "How would you like some advice before\n"
 	.string "you challenge the Champion?…$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
-	.string "Brendan: {PLAYER}…\p"
+	.string "{RIVAL}: {PLAYER}…\p"
 	.string "Are you trying to tell me…\n"
 	.string "You've beaten the Champion?$"
 
@@ -323,7 +341,7 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "Prof. Birch.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "May: Groan…\p"
+	.string "{RIVAL}: Groan…\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "I'm just joking! That's okay!\n"
@@ -332,7 +350,7 @@ EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
 	.string "Honestly, congratulations!$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
-	.string "Brendan: Whaaaat?! … … … … …\n"
+	.string "{RIVAL}: Whaaaat?! … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "It can't be helped if that's the rule.\p"
 	.string "{PLAYER}, way to go!\n"

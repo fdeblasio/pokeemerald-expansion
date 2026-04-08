@@ -13,8 +13,8 @@ SaffronCity_CopycatsHouse_1F_EventScript_Chansey::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-	msgbox SaffronCity_CopycatsHouse_1F_Text_Chansey
+	overworldspecies SPECIES_CHANSEY
+	bufferspeciestext SPECIES_CHANSEY, SaffronCity_CopycatsHouse_1F_Text_Chansey
 	waitmoncry
 	release
 	end
@@ -30,5 +30,5 @@ SaffronCity_CopycatsHouse_1F_Text_DaughterLikesToMimicPeople::
 	.string "nickname Copycat around here.$"
 
 SaffronCity_CopycatsHouse_1F_Text_Chansey::
-	.string "Chansey: Chaan! Sii!$"
+	.string "{STR_VAR_1}: Chaan! Sii!$"
 

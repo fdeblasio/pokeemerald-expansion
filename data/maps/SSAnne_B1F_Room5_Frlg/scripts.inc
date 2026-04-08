@@ -9,8 +9,8 @@ SSAnne_B1F_Room5_EventScript_Machoke::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
-	msgbox SSAnne_B1F_Room5_Text_Machoke
+	overworldspecies SPECIES_MACHOKE
+	bufferspeciestext SPECIES_MACHOKE, SSAnne_B1F_Room5_Text_Machoke
 	waitmoncry
 	release
 	end
@@ -21,5 +21,5 @@ SSAnne_B1F_Room5_Text_MachokeHasStrengthToMoveRocks::
 	.string "big rocks!$"
 
 SSAnne_B1F_Room5_Text_Machoke::
-	.string "Machoke: Gwoh! Goggoh!$"
+	.string "{STR_VAR_1}: Gwoh! Goggoh!$"
 

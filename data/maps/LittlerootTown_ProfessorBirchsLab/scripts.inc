@@ -36,6 +36,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_CheckReadyForJohtoStarter::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SetReadyForJohtoStarter::
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CYNDAQUIL
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_SetJohtoStarterLayout
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SetJohtoStarterLayout::
@@ -79,16 +82,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AddRivalObject::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_SetObjectPosForJohtoStarters::
-	addobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL
-	addobject LOCALID_BIRCHS_LAB_TOTODILE_BALL
-	addobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL
 	addobject LOCALID_BIRCHS_LAB_RIVAL
-	turnobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL, DIR_SOUTH
-	setobjectxy LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL, 8, 4
-	turnobject LOCALID_BIRCHS_LAB_TOTODILE_BALL, DIR_SOUTH
-	setobjectxy LOCALID_BIRCHS_LAB_TOTODILE_BALL, 9, 4
-	turnobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL, DIR_SOUTH
-	setobjectxy LOCALID_BIRCHS_LAB_CHIKORITA_BALL, 10, 4
 	turnobject LOCALID_BIRCHS_LAB_BIRCH, DIR_SOUTH
 	setobjectxy LOCALID_BIRCHS_LAB_BIRCH, 6, 4
 	turnobject LOCALID_BIRCHS_LAB_RIVAL, DIR_EAST
@@ -288,40 +282,29 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AideReceivedStarter::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Cyndaquil::
 	release
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter
 	applymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	showmonpic SPECIES_CYNDAQUIL, 10, 3
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime
+	showmonpic POSTGAME_FIRE_STARTER, 10, 3
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil, MSGBOX_DEFAULT
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Totodile::
 	release
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter
 	applymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	showmonpic SPECIES_TOTODILE, 10, 3
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime
+	showmonpic POSTGAME_WATER_STARTER, 10, 3
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile, MSGBOX_DEFAULT
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Chikorita::
 	release
-	goto_if_ge VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6, LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter
 	applymovement LOCALID_BIRCHS_LAB_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	showmonpic SPECIES_CHIKORITA, 10, 3
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime
+	showmonpic POSTGAME_GRASS_STARTER, 10, 3
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita, MSGBOX_DEFAULT
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_AlreadyChoseJohtoStarter::
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone, MSGBOX_DEFAULT
-	releaseall
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime::
@@ -331,9 +314,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::
-	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CYNDAQUIL
-	givemon SPECIES_CYNDAQUIL, 5
+	bufferspeciesname STR_VAR_1, POSTGAME_FIRE_STARTER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_FIRE_STARTER
+	givemon POSTGAME_FIRE_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToPC
 	hidemonpic
@@ -343,6 +326,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CYNDAQUIL
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil
 	call Common_EventScript_GetGiftMonPartySlot
@@ -353,6 +337,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToPC::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_CYNDAQUIL_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CYNDAQUIL
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_CyndaquilTransferredToPC
 	call Common_EventScript_NameReceivedBoxMon
@@ -366,15 +351,15 @@ LittlerootTown_ProfessorBirchsLab_EventScript_CyndaquilTransferredToPC::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 	hidemonpic
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	addvar VAR_POSTGAME_STARTERS_CHOSEN, 1
 	releaseall
+	goto_if_ge VAR_POSTGAME_STARTERS_CHOSEN, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AllStartersChosen
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
-	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_TOTODILE
-	givemon SPECIES_TOTODILE, 5
+	bufferspeciesname STR_VAR_1, POSTGAME_WATER_STARTER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_WATER_STARTER
+	givemon POSTGAME_WATER_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToPC
 	hidemonpic
@@ -384,6 +369,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_TOTODILE_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile
 	call Common_EventScript_GetGiftMonPartySlot
@@ -394,6 +380,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToPC::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_TOTODILE_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_TOTODILE
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_TotodileTransferredToPC
 	call Common_EventScript_NameReceivedBoxMon
@@ -407,15 +394,15 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TotodileTransferredToPC::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 	hidemonpic
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	addvar VAR_POSTGAME_STARTERS_CHOSEN, 1
 	releaseall
+	goto_if_ge VAR_POSTGAME_STARTERS_CHOSEN, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AllStartersChosen
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
-	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHIKORITA
-	givemon SPECIES_CHIKORITA, 5
+	bufferspeciesname STR_VAR_1, POSTGAME_GRASS_STARTER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_GRASS_STARTER
+	givemon POSTGAME_GRASS_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToPC
 	hidemonpic
@@ -425,6 +412,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedChikorita
 	call Common_EventScript_GetGiftMonPartySlot
@@ -435,6 +423,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty::
 LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToPC::
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter
 	removeobject LOCALID_BIRCHS_LAB_CHIKORITA_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_ChikoritaTransferredToPC
 	call Common_EventScript_NameReceivedBoxMon
@@ -448,9 +437,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChikoritaTransferredToPC::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedChikorita::
 	hidemonpic
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
-	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	addvar VAR_POSTGAME_STARTERS_CHOSEN, 1
 	releaseall
+	goto_if_ge VAR_POSTGAME_STARTERS_CHOSEN, 3, LittlerootTown_ProfessorBirchsLab_EventScript_AllStartersChosen
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter::
@@ -525,7 +514,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese, MSGBOX_DEFAULT
-	giveitem ITEM_POKE_BALL, 5
+	giveitem ITEM_POKE_BALL, 10
 	call_if_eq VAR_RESULT, FALSE, LittlerootTown_ProfessorBirchsLab_EventScript_MayNoRoomForPokeBalls
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls, MSGBOX_DEFAULT
 	setvar VAR_RESULT, 0
@@ -533,7 +522,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese, MSGBOX_DEFAULT
-	giveitem ITEM_POKE_BALL, 5
+	giveitem ITEM_POKE_BALL, 10
 	call_if_eq VAR_RESULT, FALSE, LittlerootTown_ProfessorBirchsLab_EventScript_BrendanNoRoomForPokeBalls
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls, MSGBOX_DEFAULT
 	setvar VAR_RESULT, 1
@@ -656,6 +645,10 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	releaseall
 	end
 
+LittlerootTown_ProfessorBirchsLab_EventScript_AllStartersChosen::
+	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
+	end
+
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "Hunh? Prof. Birch?\p"
 	.string "The Prof's away on fieldwork.\n"
@@ -760,13 +753,13 @@ LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "and do fieldwork again!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "May: Oh, wow, {PLAYER}{KUN}!\n"
+	.string "{RIVAL}: Oh, wow, {PLAYER}{KUN}!\n"
 	.string "You got a Pokédex, too!\p"
 	.string "That's great! Just like me!\n"
 	.string "I've got something for you, too!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "May: It's fun if you can get a lot of\n"
+	.string "{RIVAL}: It's fun if you can get a lot of\n"
 	.string "Pokémon!\p"
 	.string "I'm going to look all over the place\n"
 	.string "because I want different Pokémon.\p"
@@ -777,17 +770,17 @@ LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 	.string "Oh? Your Bag's full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "May: I wonder where I should go look\n"
+	.string "{RIVAL}: I wonder where I should go look\n"
 	.string "for Pokémon next?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "Brendan: Huh…\n"
+	.string "{RIVAL}: Huh…\n"
 	.string "So you got a Pokédex, too.\p"
 	.string "Well then, here.\n"
 	.string "I'll give you these.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "Brendan: You know it's more fun to\n"
+	.string "{RIVAL}: You know it's more fun to\n"
 	.string "have a whole bunch of Pokémon.\p"
 	.string "I'm going to explore all over the place\n"
 	.string "to find different Pokémon.\p"
@@ -798,7 +791,7 @@ LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
 	.string "Hey, your Bag's full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "Brendan: Where should I look for\n"
+	.string "{RIVAL}: Where should I look for\n"
 	.string "Pokémon next…$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
@@ -833,14 +826,14 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "Here, let me see your Pokédex units.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "May: Eheheh!\p"
+	.string "{RIVAL}: Eheheh!\p"
 	.string "It's so cool that even my Pokédex\n"
 	.string "is getting updated!\p"
 	.string "It's because you went out and caught\n"
 	.string "so many Pokémon, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "Brendan: I went out all over Hoenn\n"
+	.string "{RIVAL}: I went out all over Hoenn\n"
 	.string "and checked out Pokémon.\p"
 	.string "You can thank me for getting\n"
 	.string "the National Mode Pokédex.\p"
@@ -863,13 +856,13 @@ LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "that's waiting for you!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "May: I think I'll take a short break\n"
+	.string "{RIVAL}: I think I'll take a short break\n"
 	.string "from fieldwork.\p"
 	.string "I think I'll help the Prof here for\n"
 	.string "a while.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "Brendan: For the time being,\n"
+	.string "{RIVAL}: For the time being,\n"
 	.string "I'm taking a break from fieldwork.\p"
 	.string "I'll be helping out the Prof here\n"
 	.string "for a while.$"
@@ -886,34 +879,26 @@ LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
 	.string "I have a gift for you.\p"
 	.string "Consider it my show of appreciation\n"
 	.string "for the fantastic work you've done.\p"
-	.string "My gift is a rare Pokémon only found\n"
-	.string "in another region!\p"
-	.string "You can have any one of these\n"
-	.string "three Pokémon!$"
+	.string "My gift is some rare Pokémon only\n"
+	.string "found in another region!\p"
+	.string "You can have these three Pokémon!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
 	.string "Prof. Birch: These are rare Pokémon\n"
 	.string "only found in another region!\p"
-	.string "You can have any one of these\n"
-	.string "three Pokémon!$"
+	.string "You can have these three Pokémon!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
 	.string "Prof. Birch: The Fire Pokémon\n"
-	.string "Cyndaquil caught your eye!\p"
-	.string "You're as sharp as ever!\p"
-	.string "So the Cyndaquil is your choice?$"
+	.string "Cyndaquil!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
 	.string "Prof. Birch: The Water Pokémon\n"
-	.string "Totodile is your choice!\p"
-	.string "You know how to pick a good one.\p"
-	.string "So, you'll take the Totodile?$"
+	.string "Totodile!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
 	.string "Prof. Birch: The Grass Pokémon\n"
-	.string "Chikorita is your choice!\p"
-	.string "You sure know what you're doing.\p"
-	.string "So, you'll take the Chikorita?$"
+	.string "Chikorita!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
 	.string "Prof. Birch: Take your time before\n"
@@ -934,26 +919,13 @@ LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
 	.string "Want to give a nickname to\n"
 	.string "the {STR_VAR_1} you received?$"
 
-LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
-	.string "Prof. Birch: Listen, {PLAYER}{KUN}.\n"
-	.string "You've completed the Hoenn Pokédex,\l"
-	.string "but your Pokémon journey isn't over.\p"
-	.string "There is no end to the road\n"
-	.string "that is Pokémon.\p"
-	.string "Somewhere, there is a grassy patch\n"
-	.string "that's waiting for you!$"
-
-LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "You received the promised Pokémon.\n"
-	.string "Better leave the others alone.$"
-
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
 	.string "Oh, you don't have any room for\n"
 	.string "this Pokémon.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "May: {PLAYER}{KUN}, after this…\n"
+	.string "{RIVAL}: {PLAYER}{KUN}, after this…\n"
 	.string "What are you going to do?\p"
 	.string "Are you going to keep battling\n"
 	.string "and sharpening your skills?\p"
@@ -962,17 +934,17 @@ LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 	.string "I'm staying here to help the Prof.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "Brendan: Rather than collecting\n"
+	.string "{RIVAL}: Rather than collecting\n"
 	.string "Pokémon, I prefer slowly and \l"
 	.string "steadily raising the one I chose.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "May: Oh, hi, {PLAYER}{KUN}!\n"
+	.string "{RIVAL}: Oh, hi, {PLAYER}{KUN}!\n"
 	.string "Have you gone to that place,\l"
 	.string "the Battle Frontier?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "Brendan: Hey, {PLAYER}!\n"
+	.string "{RIVAL}: Hey, {PLAYER}!\n"
 	.string "Have you gone out to that place,\l"
 	.string "the Battle Frontier?$"
 

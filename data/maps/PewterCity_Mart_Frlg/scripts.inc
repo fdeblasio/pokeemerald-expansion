@@ -10,25 +10,14 @@ PewterCity_Mart_EventScript_Boy::
 	end
 
 PewterCity_Mart_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart PewterCity_Mart_Items
-	msgbox gText_PleaseComeAgain
-	release
-	end
+	mart_clerk 0
+
+PewterCity_Mart_EventScript_CrunchClerk::
+	mart_clerk PewterCity_Mart_Crunchies
 
 	.align 2
-PewterCity_Mart_Items::
-	.2byte ITEM_POKE_BALL
-	.2byte ITEM_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_REPEL
+PewterCity_Mart_Crunchies::
+	.2byte ITEM_PEWTER_CRUNCHIES
 	.2byte ITEM_NONE
 	release
 	end

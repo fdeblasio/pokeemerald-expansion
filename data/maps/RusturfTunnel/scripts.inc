@@ -53,11 +53,11 @@ RusturfTunnel_EventScript_ClearTunnelScene::
 	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_FaceWandasBoyfriend2
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_FaceWandasBoyfriend3
 	call RusturfTunnel_EventScript_WandasBoyfriendNotice
-	msgbox RusturfTunnel_Text_YouShatteredBoulderTakeHM, MSGBOX_DEFAULT
+	msgbox RusturfTunnel_Text_YouShatteredBoulderTakeTM, MSGBOX_DEFAULT
 	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
-	giveitem ITEM_HM_STRENGTH
-	setflag FLAG_RECEIVED_HM_STRENGTH
+	giveitem ITEM_TM_STRENGTH
+	setflag FLAG_RECEIVED_TM_STRENGTH
 	msgbox RusturfTunnel_Text_ExplainStrength, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_BoyfriendApproachWanda1
@@ -290,7 +290,7 @@ RusturfTunnel_EventScript_Peeko::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	overworldspecies SPECIES_PEEKO
 	msgbox RusturfTunnel_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -322,7 +322,7 @@ RusturfTunnel_EventScript_Grunt::
 	message RusturfTunnel_Text_ThankYouLetsGoHomePeeko
 	waitmessage
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	playmoncry SPECIES_PEEKO, CRY_MODE_NORMAL
 	waitbuttonpress
 	waitmoncry
 	closemessage
@@ -423,7 +423,7 @@ RusturfTunnel_Text_ComeAndGetSome:
 	.string "Come and get some, then!$"
 
 RusturfTunnel_Text_Peeko:
-	.string "Peeko: Pii pihyoh!$"
+	.string "{PEEKO}: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
 	.string "Grah, keelhaul it all!\p"
@@ -448,11 +448,11 @@ RusturfTunnel_Text_GruntTakePackage:
 	.string "You want it back that badly, take it!$"
 
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
-	.string "Peeko!\n"
+	.string "{PEEKO}!\n"
 	.string "Am I glad to see you're safe!$"
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
-	.string "Peeko owes her life to you!\p"
+	.string "{PEEKO} owes her life to you!\p"
 	.string "They call me Mr. Briney.\n"
 	.string "And, you are?\p"
 	.string "… … … … … … … …\n"
@@ -463,9 +463,9 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "you, don't hesitate to tell me!\p"
 	.string "You can usually find me in my cottage\n"
 	.string "by the sea near Petalburg Woods.\p"
-	.string "Come, Peeko, we should make our way\n"
+	.string "Come, {PEEKO}, we should make our way\n"
 	.string "home.\p"
-	.string "Peeko: Pihyoh!$"
+	.string "{PEEKO}: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "… …\p"
@@ -484,14 +484,14 @@ RusturfTunnel_Text_ToGetToVerdanturf:
 	.string "you need to go to Dewford, then pass\l"
 	.string "through Slateport and Mauville…$"
 
-RusturfTunnel_Text_YouShatteredBoulderTakeHM:
+RusturfTunnel_Text_YouShatteredBoulderTakeTM:
 	.string "Wow! You shattered that boulder\n"
 	.string "blocking the way.\p"
 	.string "To show you how much I appreciate it,\n"
-	.string "I'd like you to have this HM.$"
+	.string "I'd like you to have this TM.$"
 
 RusturfTunnel_Text_ExplainStrength:
-	.string "That HM contains Strength.\p"
+	.string "That TM contains Strength.\p"
 	.string "If a muscular Pokémon were to learn\n"
 	.string "that, it would be able to move even\l"
 	.string "large boulders.$"

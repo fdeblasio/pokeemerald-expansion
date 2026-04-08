@@ -42,8 +42,8 @@ CeladonCity_EventScript_Poliwrath::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_POLIWRATH, CRY_MODE_NORMAL
-	msgbox CeladonCity_Text_Poliwrath
+	overworldspecies SPECIES_POLIWRATH
+	bufferspeciestext SPECIES_POLIWRATH, CeladonCity_Text_Poliwrath
 	closemessage
 	waitmoncry
 	applymovement LOCALID_CELADON_POLIWRATH, Common_Movement_FaceOriginalDirection
@@ -129,7 +129,7 @@ CeladonCity_Text_MyTrustedPalPoliwrath::
 	.string "I used a Water Stone.$"
 
 CeladonCity_Text_Poliwrath::
-	.string "Poliwrath: Ribi ribit!$"
+	.string "{STR_VAR_1}: Ribi ribit!$"
 
 CeladonCity_Text_GetLostOrIllPunchYou::
 	.string "What are you staring at?\n"

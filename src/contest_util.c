@@ -1399,7 +1399,7 @@ static void LoadContestResultsTitleBarTilemaps(void)
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Hyper_Tilemap, 5, 1, 10, 2);
         x = 15;
     }
-    else // CONTEST_RANK_MASTER
+    else // CONTEST_RANK_MASTER and CONTEST_RANK_SPECIAL
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Master_Tilemap, 5, 1, 10, 2);
         x = 15;
@@ -1924,6 +1924,10 @@ void TryEnterContestMon(void)
 
 u16 HasMonWonThisContestBefore(void)
 {
+
+    if (gSpecialVar_ContestRank == CONTEST_RANK_SPECIAL)
+        return TRUE;
+
     if (GetMonData(&gParties[B_TRAINER_PLAYER][gContestMonPartyIndex], gContestCategoryInfo[gSpecialVar_ContestCategory].ribbon) > gSpecialVar_ContestRank)
         return TRUE;
 
@@ -2215,6 +2219,10 @@ void BufferContestTrainerAndMonNames(void)
     BufferContestantTrainerName();
     BufferContestantMonNickname();
     BufferContestantMonSpecies();
+    if (StringCompare(gStringVar1, gStringVar3) == 0)
+        gSpecialVar_0x800A = TRUE;
+    else
+        gSpecialVar_0x800A = FALSE;
 }
 
 // Unused
@@ -2255,7 +2263,7 @@ void SaveMuseumContestPainting(void)
 void ShouldReadyContestArtist(void)
 {
     if (gContestFinalStandings[gContestPlayerMonIndex] == 0
-     && gSpecialVar_ContestRank == CONTEST_RANK_MASTER
+     && (gSpecialVar_ContestRank == CONTEST_RANK_MASTER || gSpecialVar_ContestRank == CONTEST_RANK_SPECIAL)
      && gContestMonTotalPoints[gContestPlayerMonIndex] >= 800)
     {
         gSpecialVar_0x8004 = TRUE;

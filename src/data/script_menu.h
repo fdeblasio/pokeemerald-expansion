@@ -550,6 +550,7 @@ static const struct MenuAction MultichoiceList_ContestRank[] =
     {COMPOUND_STRING("Super Rank")},
     {COMPOUND_STRING("Hyper Rank")},
     {COMPOUND_STRING("Master Rank")},
+    {COMPOUND_STRING("Special Rank")},
     {gText_Exit},
 };
 

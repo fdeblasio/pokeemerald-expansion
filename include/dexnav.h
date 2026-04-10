@@ -2,6 +2,7 @@
 #define GUARD_DEXNAV_H
 
 #include "config/dexnav.h"
+#include "main.h"
 
 // GUI Info
 enum RowGUIInfo
@@ -9,34 +10,55 @@ enum RowGUIInfo
     ROW_WATER,
     ROW_LAND_TOP,
     ROW_LAND_BOT,
+#if CHECK_SPECIES == FALSE
     ROW_HIDDEN,
+#else
+    ROW_FISHING,
+#endif
     ROWS_COUNT
 };
 
-#define ROW_WATER_ICON_X        30
-#define ROW_WATER_ICON_Y        35
+#if CHECK_SPECIES == FALSE
+    #define ROW_WATER_ICON_X        30
+    #define ROW_WATER_ICON_Y        35
+    #define ROW_LAND_ICON_X         20
+    #define ROW_LAND_TOP_ICON_Y     72
+    #define LAND_DIFFERENCE         28
+#else
+    #define ROW_WATER_ICON_X        29
+    #define ROW_WATER_ICON_Y        34
+    #define ROW_LAND_ICON_X         19
+    #define ROW_LAND_TOP_ICON_Y     75
+    #define LAND_DIFFERENCE         24
+#endif
 
-#define ROW_LAND_ICON_X         20
-#define ROW_LAND_TOP_ICON_Y     72
-#define ROW_LAND_BOT_ICON_Y     (ROW_LAND_TOP_ICON_Y + 28)
+#define ROW_LAND_BOT_ICON_Y     (ROW_LAND_TOP_ICON_Y + LAND_DIFFERENCE)
 
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
+
+#define ROW_FISHING_ICON_X      19
+#define ROW_FISHING_ICON_Y      140
+
+#define COLUMN_SPACING          30
 
 enum EncounterType
 {
     ENCOUNTER_TYPE_LAND,
     ENCOUNTER_TYPE_WATER,
-    ENCOUNTER_TYPE_HIDDEN // Get from species
+    ENCOUNTER_TYPE_HIDDEN, // Get from species
+    ENCOUNTER_TYPE_FISHING
 };
 
-#define COL_WATER_COUNT         5
-#define COL_LAND_COUNT          6
+#define COL_WATER_COUNT         WATER_WILD_COUNT
+#define COL_LAND_COUNT          5
 #define COL_HIDDEN_COUNT        3
+#define COL_FISHING_COUNT       FISH_WILD_COUNT
 
 #define COL_WATER_MAX           (COL_WATER_COUNT - 1)
 #define COL_LAND_MAX            (COL_LAND_COUNT - 1)
 #define COL_HIDDEN_MAX          (COL_HIDDEN_COUNT - 1)
+#define COL_FISHING_MAX         (COL_FISHING_COUNT - 1)
 
 // SEARCH INFO
 #define SCANSTART_X             0
@@ -74,10 +96,13 @@ void Task_OpenDexNavFromStartMenu(u8 taskId);
 bool32 TryStartDexNavSearch(void);
 void TryIncrementSpeciesSearchLevel(void);
 void ResetDexNavSearch(void);
+#if CHECK_SPECIES == FALSE
 bool32 TryFindHiddenPokemon(void);
+#endif
 u32 CalculateDexNavShinyRolls(void);
 void IncrementDexNavChain(void);
 bool32 OnStep_DexNavSearch(void);
+void DexNavGuiInit(MainCallback callback);
 
 extern enum Species gDexNavSpecies;
 

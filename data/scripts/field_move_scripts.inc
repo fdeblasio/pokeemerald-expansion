@@ -86,18 +86,12 @@ EventScript_SmashRock:: @ fallthrough
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
 	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
-	goto_if_eq VAR_RESULT, TRUE, EventScript_EndSmash
-	callnative rockSmashRNG
-	goto_if_eq VAR_RESULT, ROCK_SMASH_ENCOUNTER, EventScript_RockSmashWildEncounter
-	goto_if_eq VAR_RESULT, ROCK_SMASH_ITEM, EventScript_RockSmashItem
-EventScript_EndSmash::
+	goto EventScript_EndSmash
+	waitstate
 	releaseall
 	end
 
-EventScript_RockSmashWildEncounter::
-	special RockSmashWildEncounter
-	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
-	waitstate
+EventScript_EndSmash::
 	releaseall
 	end
 
@@ -180,7 +174,6 @@ EventScript_FollowerJumpWest:
 	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_JumpLeft
 	waitmovement 0
 	return
-
 
 Movement_WalkUp:
 	walk_up

@@ -178,6 +178,29 @@ u8 CreateMonIconIsEgg(enum Species species, void (*callback)(struct Sprite *), s
     return spriteId;
 }
 
+u8 CreateMonIconSilhouette(u16 species, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority, u32 personality)
+{
+    u8 spriteId;
+    struct MonIconSpriteTemplate iconTemplate =
+    {
+        .oam = &sMonIconOamData,
+        .image = GetMonIconPtr(species, personality),
+        .anims = sMonIconAnims,
+        .affineAnims = sMonIconAffineAnims,
+        .callback = callback,
+        .paletteTag = POKE_ICON_BASE_PAL_TAG + gSpeciesInfo[species].iconPalIndex,
+    };
+
+    spriteId = CreateMonIconSprite(&iconTemplate, x, y, subpriority);
+    static const u16 sSilhouette_Pal[] = INCBIN_U16("graphics/pokedex/size_silhouette.gbapal");
+    u8 silhouettePaletteNum = 6;
+    LoadPalette(sSilhouette_Pal, OBJ_PLTT_ID(silhouettePaletteNum), PLTT_SIZE_4BPP);
+    gSprites[spriteId].oam.paletteNum = silhouettePaletteNum;
+
+    UpdateMonIconFrame(&gSprites[spriteId]);
+
+    return spriteId;
+}
 
 u8 CreateMonIconNoPersonality(enum Species species, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority)
 {

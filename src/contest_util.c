@@ -1401,7 +1401,7 @@ static void LoadContestResultsTitleBarTilemaps(void)
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Hyper_Tilemap, 5, 1, 10, 2);
         x = 15;
     }
-    else // CONTEST_RANK_MASTER
+    else // CONTEST_RANK_MASTER and CONTEST_RANK_SPECIAL
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Master_Tilemap, 5, 1, 10, 2);
         x = 15;
@@ -1949,6 +1949,10 @@ void TryEnterContestMon(void)
 
 u16 HasMonWonThisContestBefore(void)
 {
+
+    if (gSpecialVar_ContestRank == CONTEST_RANK_SPECIAL)
+        return TRUE;
+
     bool32 hasRankRibbon = FALSE;
     struct Pokemon *mon = &gParties[B_TRAINER_0][gContestMonPartyIndex];
     switch (gSpecialVar_ContestCategory)
@@ -1980,6 +1984,17 @@ u16 HasMonWonThisContestBefore(void)
     return hasRankRibbon;
 }
 
+#define GIVE_CONTEST_RIBBON(Ribbon)                                                             \
+    ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], Ribbon);             \
+    if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)             \
+    {                                                                                           \
+        ribbonData++;                                                                           \
+        SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], Ribbon, &ribbonData);         \
+        if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS) \
+            TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], Ribbon);    \
+    }                                                                                           \
+    break;
+
 void GiveMonContestRibbon(void)
 {
     u8 ribbonData;
@@ -1990,55 +2005,15 @@ void GiveMonContestRibbon(void)
     switch (gSpecialVar_ContestCategory)
     {
     case CONTEST_CATEGORY_COOL:
-        ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
-        if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
-        {
-            ribbonData++;
-            SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_COOL_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_COOL_RIBBON);
-        }
-        break;
+        GIVE_CONTEST_RIBBON(MON_DATA_COOL_RIBBON)
     case CONTEST_CATEGORY_BEAUTY:
-        ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
-        if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
-        {
-            ribbonData++;
-            SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_BEAUTY_RIBBON);
-        }
-        break;
+        GIVE_CONTEST_RIBBON(MON_DATA_BEAUTY_RIBBON)
     case CONTEST_CATEGORY_CUTE:
-        ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
-        if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
-        {
-            ribbonData++;
-            SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_CUTE_RIBBON);
-        }
-        break;
+        GIVE_CONTEST_RIBBON(MON_DATA_CUTE_RIBBON)
     case CONTEST_CATEGORY_SMART:
-        ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
-        if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
-        {
-            ribbonData++;
-            SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_SMART_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_SMART_RIBBON);
-        }
-        break;
+        GIVE_CONTEST_RIBBON(MON_DATA_SMART_RIBBON)
     case CONTEST_CATEGORY_TOUGH:
-        ribbonData = GetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
-        if (ribbonData <= gSpecialVar_ContestRank && ribbonData <= CONTEST_RANK_MASTER)
-        {
-            ribbonData++;
-            SetMonData(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON, &ribbonData);
-            if (GetRibbonCount(&gParties[B_TRAINER_0][gContestMonPartyIndex]) > NUM_CUTIES_RIBBONS)
-                TryPutSpotTheCutiesOnAir(&gParties[B_TRAINER_0][gContestMonPartyIndex], MON_DATA_TOUGH_RIBBON);
-        }
-        break;
+        GIVE_CONTEST_RIBBON(MON_DATA_TOUGH_RIBBON)
     default:
         break;
     }
@@ -2309,6 +2284,10 @@ void BufferContestTrainerAndMonNames(void)
     BufferContestantTrainerName();
     BufferContestantMonNickname();
     BufferContestantMonSpecies();
+    if (StringCompare(gStringVar1, gStringVar3) == 0)
+        gSpecialVar_0x800A = TRUE;
+    else
+        gSpecialVar_0x800A = FALSE;
 }
 
 // Unused
@@ -2349,7 +2328,7 @@ void SaveMuseumContestPainting(void)
 void ShouldReadyContestArtist(void)
 {
     if (gContestFinalStandings[gContestPlayerMonIndex] == 0
-     && gSpecialVar_ContestRank == CONTEST_RANK_MASTER
+     && (gSpecialVar_ContestRank == CONTEST_RANK_MASTER || gSpecialVar_ContestRank == CONTEST_RANK_SPECIAL)
      && gContestMonTotalPoints[gContestPlayerMonIndex] >= 800)
     {
         gSpecialVar_0x8004 = TRUE;

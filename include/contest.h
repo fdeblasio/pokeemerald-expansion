@@ -89,10 +89,10 @@ struct ContestPokemon
 {
     enum Species species;
     u8 nickname[POKEMON_NAME_LENGTH + 1];
-    u8 trainerName[PLAYER_NAME_LENGTH + 1];
-    u8 trainerGfxId;
+    u8 trainerName[POKEMON_NAME_LENGTH + 1]; //u8 trainerName[PLAYER_NAME_LENGTH + 1];
+    u16 trainerGfxId;
     u32 aiFlags;
-    u8 whichRank:2;
+    u8 whichRank:3;
     u8 aiPool_Cool:1;
     u8 aiPool_Beauty:1;
     u8 aiPool_Cute:1;
@@ -108,7 +108,7 @@ struct ContestPokemon
     u8 highestRank;
     bool8 gameCleared;
     u8 isShiny:1;
-    u8 unused1:7;
+    u8 unused1:6;
     u32 personality;
     u32 otId;
     u8 filter;

@@ -1215,16 +1215,17 @@ static const struct SearchOptionText sDexSearchNameOptions[] =
 static const struct SearchOptionText sDexSearchColorOptions[] =
 {
     {sText_DexEmptyString, sText_DexSearchDontSpecify},
-    [BODY_COLOR_RED + 1]    = {sText_DexEmptyString, COMPOUND_STRING("Red")},
-    [BODY_COLOR_BLUE + 1]   = {sText_DexEmptyString, COMPOUND_STRING("Blue")},
     [BODY_COLOR_YELLOW + 1] = {sText_DexEmptyString, COMPOUND_STRING("Yellow")},
     [BODY_COLOR_GREEN + 1]  = {sText_DexEmptyString, COMPOUND_STRING("Green")},
-    [BODY_COLOR_BLACK + 1]  = {sText_DexEmptyString, COMPOUND_STRING("Black")},
-    [BODY_COLOR_BROWN + 1]  = {sText_DexEmptyString, COMPOUND_STRING("Brown")},
+    [BODY_COLOR_RED + 1]    = {sText_DexEmptyString, COMPOUND_STRING("Red")},
+    [BODY_COLOR_BLUE + 1]   = {sText_DexEmptyString, COMPOUND_STRING("Blue")},
+    [BODY_COLOR_ORANGE + 1] = {sText_DexEmptyString, COMPOUND_STRING("Orange")},
     [BODY_COLOR_PURPLE + 1] = {sText_DexEmptyString, COMPOUND_STRING("Purple")},
-    [BODY_COLOR_GRAY + 1]   = {sText_DexEmptyString, COMPOUND_STRING("Gray")},
+    [BODY_COLOR_BLACK + 1]  = {sText_DexEmptyString, COMPOUND_STRING("Black")},
     [BODY_COLOR_WHITE + 1]  = {sText_DexEmptyString, COMPOUND_STRING("White")},
+    [BODY_COLOR_BROWN + 1]  = {sText_DexEmptyString, COMPOUND_STRING("Brown")},
     [BODY_COLOR_PINK + 1]   = {sText_DexEmptyString, COMPOUND_STRING("Pink")},
+    [BODY_COLOR_GRAY + 1]   = {sText_DexEmptyString, COMPOUND_STRING("Gray")},
     {},
 };
 

@@ -572,7 +572,7 @@ bool32 TryOpenPokedexPage_HGSS(u8 taskId, u8 page)
 {
     if (!POKEDEX_PLUS_HGSS)
         return FALSE;
-    
+
     if (LoadPokedexListPage(page))
         gTasks[taskId].func = Task_HandlePokedexInput;
 

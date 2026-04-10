@@ -424,7 +424,7 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, Magikarp, you sure don't live up\n"
+	.string "Hey, {STR_VAR_1}, you sure don't live up\n"
 	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
@@ -1458,7 +1458,7 @@ Route111_Text_BrandenDefeat:
 	.string "enough of a bribe…$"
 
 Route111_Text_BrandenPostBattle:
-	.string "My Sandshrew loves eating\n"
+	.string "My {STR_VAR_1} loves eating\n"
 	.string "my sandwiches.$"
 
 Route111_Text_TyronIntro:
@@ -1639,7 +1639,7 @@ Route113_Text_DillonPostBattle:
 Route113_Text_MadelineIntro:
 	.string "I use this parasol to ward off this\n"
 	.string "filthy, yucky volcanic ash from\l"
-	.string "my dear Numel.$"
+	.string "my dear {STR_VAR_1}.$"
 
 Route113_Text_MadelineDefeat:
 	.string "Huff, huff…\n"
@@ -2030,14 +2030,14 @@ Route115_Text_TimothyPostRematch:
 
 Route115_Text_KoichiIntro:
 	.string "You!\p"
-	.string "My Machop!\p"
+	.string "My {STR_VAR_1}!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_KoichiDefeat:
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_KoichiPostBattle:
-	.string "My Machop crew!\p"
+	.string "My {STR_VAR_1} crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 
@@ -2099,7 +2099,7 @@ Route115_Text_CyndyPostRematch:
 	.string "It must be that I love Pokémon.$"
 
 Route115_Text_HectorIntro:
-	.string "I have a rare Pokémon!\n"
+	.string "I have rare Pokémon!\n"
 	.string "Would you like me to show you?$"
 
 Route115_Text_HectorDefeat:
@@ -2107,7 +2107,7 @@ Route115_Text_HectorDefeat:
 	.string "You want my Pokémon, don't you?$"
 
 Route115_Text_HectorPostBattle:
-	.string "I have this rare Pokémon.\n"
+	.string "I have these rare Pokémon.\n"
 	.string "It's enough to keep me satisfied.$"
 
 Route115_Text_KyraIntro:
@@ -3893,7 +3893,7 @@ Route125_Text_IrisNotEnoughMons:
 	.string "anything like a 2-on-1 battle.$"
 
 Route125_Text_PresleyIntro:
-	.string "Why would a Birdkeeper like me\n"
+	.string "Why would a Bird Keeper like me\n"
 	.string "come out to the sea?$"
 
 Route125_Text_PresleyDefeat:
@@ -4682,15 +4682,15 @@ Route134_Text_JackPostBattle:
 	.string "currents around these parts.$"
 
 Route134_Text_LaurelIntro:
-	.string "My Luvdisc are looking for a fun\n"
+	.string "My {STR_VAR_1} are looking for a fun\n"
 	.string "match. Will you join us?$"
 
 Route134_Text_LaurelDefeat:
 	.string "Oopsie!$"
 
 Route134_Text_LaurelPostBattle:
-	.string "There's a collector who's after\n"
-	.string "the Scales of Luvdisc.$"
+	.string "There's a collector who used to be\n"
+	.string "after the scales of {STR_VAR_1}.$"
 
 Route134_Text_AlexIntro:
 	.string "Okeydokey! That's enough rest, gang!\n"

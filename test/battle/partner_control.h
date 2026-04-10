@@ -12,13 +12,12 @@
 #line 3
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
 #line 5
         .gender = TRAINER_GENDER_MALE,
 #line 6
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 7
-        .trainerBackPic = TRAINER_PIC_BACK_BRENDAN,
         .partySize = 0,
         .party = (const struct TrainerMon[])
         {
@@ -33,7 +32,7 @@
 #line 11
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
 #line 13
         .gender = TRAINER_GENDER_MALE,
 #line 14
@@ -41,7 +40,6 @@
 #line 16
         .aiFlags = AI_FLAG_BASIC_TRAINER,
 #line 15
-        .trainerBackPic = TRAINER_PIC_BACK_STEVEN,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -122,7 +120,7 @@
 #line 51
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 52
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
 #line 53
         .gender = TRAINER_GENDER_MALE,
 #line 54
@@ -130,7 +128,6 @@
 #line 56
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 55
-        .trainerBackPic = TRAINER_PIC_BACK_STEVEN,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -157,7 +154,7 @@
 #line 64
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 65
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
 #line 66
         .gender = TRAINER_GENDER_MALE,
 #line 67
@@ -165,7 +162,6 @@
 #line 69
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 68
-        .trainerBackPic = TRAINER_PIC_BACK_STEVEN,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {

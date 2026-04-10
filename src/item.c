@@ -95,6 +95,7 @@ struct ItemSlot NONNULL BagPocket_GetSlotData(struct BagPocket *pocket, u32 pock
     switch (pocket->id)
     {
     case POCKET_ITEMS:
+    case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
     case POCKET_TM_HM:
@@ -118,6 +119,7 @@ void NONNULL BagPocket_SetSlotData(struct BagPocket *pocket, u32 pocketPos, stru
     switch (pocket->id)
     {
     case POCKET_ITEMS:
+    case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
     case POCKET_TM_HM:
@@ -151,6 +153,7 @@ void InitializeBagPocket(enum Pocket pocket, enum BagCounts count, struct ItemSl
 void SetBagItemsPointers(void)
 {
     InitializeBagPocket(POCKET_ITEMS, BAG_ITEMS_COUNT, gSaveBlock1Ptr->bag.items);
+    InitializeBagPocket(POCKET_MEDICINE, BAG_MEDICINE_COUNT, gSaveBlock1Ptr->bag.medicine);
     InitializeBagPocket(POCKET_KEY_ITEMS, BAG_KEYITEMS_COUNT, gSaveBlock1Ptr->bag.keyItems);
     InitializeBagPocket(POCKET_POKE_BALLS, BAG_POKEBALLS_COUNT, gSaveBlock1Ptr->bag.pokeBalls);
     InitializeBagPocket(POCKET_TM_HM, BAG_TMHM_COUNT, gSaveBlock1Ptr->bag.TMsHMs);

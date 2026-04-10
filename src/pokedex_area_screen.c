@@ -299,11 +299,6 @@ static void FindMapsWithMon(enum Species species)
     u16 i;
     struct Roamer *roamer;
 
-    sPokedexAreaScreen->alteringCaveCounter = 0;
-    sPokedexAreaScreen->alteringCaveId = VarGet(VAR_ALTERING_CAVE_WILD_SET);
-    if (sPokedexAreaScreen->alteringCaveId >= NUM_ALTERING_CAVE_TABLES)
-        sPokedexAreaScreen->alteringCaveId = 0;
-
     sPokedexAreaScreen->numOverworldAreas = 0;
     sPokedexAreaScreen->numSpecialAreas = 0;
 
@@ -461,8 +456,6 @@ static bool8 MapHasSpecies(const struct WildEncounterTypes *info, enum Species s
 #else
     if (MonListHasSpecies(info->fishingMonsInfo, species, LAND_WILD_COUNT))
 #endif
-        return TRUE;
-    if (MonListHasSpecies(info->rockSmashMonsInfo, species, ROCK_WILD_COUNT))
         return TRUE;
     return FALSE;
 }

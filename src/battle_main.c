@@ -1311,7 +1311,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(&gParties[B_TRAINER_3][4], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
-            
+
             for (enum BattleTrainer trainer = B_TRAINER_0; trainer < MAX_BATTLE_TRAINERS; trainer++)
             {
                 for (u32 i = 0; i < PARTY_SIZE; i++)
@@ -3545,7 +3545,7 @@ static void DoBattleIntro(void)
                 BtlController_EmitDrawPartyStatusSummary(battler, B_COMM_TO_CONTROLLER, hpStatus[GetBattlerTrainer(battler)], PARTY_SUMM_SKIP_DRAW_DELAY);
                 MarkBattlerForControllerExec(battler);
             }
-            
+
             gBattleStruct->eventState.battleIntro++;
         }
         break;
@@ -3945,7 +3945,7 @@ bool32 EndTurnEvents(void) // Called from Battle Script
     {
         if (gSideTimers[i].retaliateTimer > 0)
             gSideTimers[i].retaliateTimer--;
-    }    
+    }
 
     gFieldStatuses &= ~STATUS_FIELD_ION_DELUGE;
 
@@ -5589,6 +5589,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
     {
         gIsFishingEncounter = FALSE;
         gIsSurfingEncounter = FALSE;
+    #if DEXNAV_ENABLED == TRUE
         if (gDexNavSpecies && (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT))
         {
             IncrementDexNavChain();
@@ -5596,6 +5597,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
         }
         else
             gSaveBlock3Ptr->dexNavChain = 0;
+    #endif
 
         ClearCurrentTrainerWantRematchVsSeeker();
         gDexNavSpecies = SPECIES_NONE;

@@ -179,7 +179,7 @@ enum OtIdMethod
 #define LEVEL_UP_MOVE_LV   0xFE00
 #define LEVEL_UP_MOVE_END  0xFFFF
 
-#define MAX_LEVEL_UP_MOVES       20
+#define MAX_LEVEL_UP_MOVES       40
 
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE
@@ -218,7 +218,7 @@ enum OtIdMethod
 #define AFFECTION_FIVE_HEARTS   5 // Max friendship
 
 // Friendship value that the majority of species use.
-#define STANDARD_FRIENDSHIP ((P_UPDATED_FRIENDSHIP >= GEN_8) ? 50 : 70)
+#define STANDARD_FRIENDSHIP ((P_UPDATED_FRIENDSHIP >= GEN_8) ? 70 : 70)
 
 #define MAX_FRIENDSHIP  255
 #define MAX_SHEEN       255
@@ -227,8 +227,8 @@ enum OtIdMethod
 #define MAX_PER_STAT_IVS 31
 #define MAX_IV_MASK 31
 #define USE_RANDOM_IVS (MAX_PER_STAT_IVS + 1)
-#define MAX_PER_STAT_EVS ((P_EV_CAP >= GEN_6) ? 252 : 255)
-#define MAX_TOTAL_EVS 510
+#define MAX_PER_STAT_EVS 63
+#define MAX_TOTAL_EVS 127
 #define EV_REMAINDER (MAX_TOTAL_EVS - (2 * MAX_PER_STAT_EVS))
 #define EV_SPLIT_THREE (MAX_TOTAL_EVS/3)
 #define EV_SPLIT_FOUR  (MAX_TOTAL_EVS/4)

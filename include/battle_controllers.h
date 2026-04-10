@@ -497,6 +497,8 @@ bool32 BattleSideHasTwoTrainers(enum BattleSide side);
 bool32 BattlersShareParty(enum BattlerId battler1, enum BattlerId battler2);
 bool32 TrainerHasParty(enum BattleTrainer trainer);
 
+bool32 ShouldShowTypeEffectiveness(u32 targetId);
+
 
 // oak and old man controller
 void SetControllerToOakOrOldMan(enum BattlerId battler);

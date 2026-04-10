@@ -49,7 +49,6 @@ COMMON_DATA u8 gSelectedObjectEvent = 0;
 
 static void GetPlayerPosition(struct MapPosition *);
 static void GetInFrontOfPlayerPosition(struct MapPosition *);
-static u16 GetPlayerCurMetatileBehavior(int);
 static bool8 TryStartInteractionScript(struct MapPosition *, u16, enum Direction);
 static const u8 *GetInteractionScript(struct MapPosition *, u8, enum Direction);
 static const u8 *GetInteractedObjectEventScript(struct MapPosition *, u8, enum Direction);
@@ -276,7 +275,7 @@ static void GetInFrontOfPlayerPosition(struct MapPosition *position)
         position->elevation = ELEVATION_TRANSITION;
 }
 
-static u16 GetPlayerCurMetatileBehavior(int runningState)
+u16 GetPlayerCurMetatileBehavior(int runningState)
 {
     s16 x, y;
 

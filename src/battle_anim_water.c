@@ -1027,6 +1027,9 @@ void AnimTask_CreateSurfWave(u8 taskId)
     case ANIM_SURF_PAL_SLUDGE_WAVE:
         LoadPalette(gBattleAnimBgPalette_SludgeWave, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
         break;
+    case ANIM_SURF_PAL_NEW_SURF:
+        LoadPalette(gBattleAnimSpritePal_NewSurf, BG_PLTT_ID(animBg.paletteId), PLTT_SIZE_4BPP);
+        break;
     }
 
     taskId2 = CreateTask(AnimTask_SurfWaveScanlineEffect, gTasks[taskId].priority + 1);

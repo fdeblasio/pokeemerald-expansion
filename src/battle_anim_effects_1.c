@@ -404,32 +404,9 @@ const struct SpriteTemplate gFeintZoomSpriteTemplate =
     .callback = AnimMoveFeintZoom,
 };
 
-const struct SpriteTemplate gSleepPowderParticleSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_SLEEP_POWDER,
-    .paletteTag = ANIM_TAG_SLEEP_POWDER,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = gPowderParticlesAnimTable,
-    .callback = AnimMovePowderParticle,
-};
-
-const struct SpriteTemplate gStunSporeParticleSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_STUN_SPORE,
-    .paletteTag = ANIM_TAG_STUN_SPORE,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = gPowderParticlesAnimTable,
-    .callback = AnimMovePowderParticle,
-};
-
-const struct SpriteTemplate gPoisonPowderParticleSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_POISON_POWDER,
-    .paletteTag = ANIM_TAG_POISON_POWDER,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = gPowderParticlesAnimTable,
-    .callback = AnimMovePowderParticle,
-};
+POWDER_PARTICLE(gSleepPowderParticleSpriteTemplate, ANIM_TAG_SLEEP_POWDER, ANIM_TAG_SLEEP_POWDER)
+POWDER_PARTICLE(gStunSporeParticleSpriteTemplate, ANIM_TAG_STUN_SPORE, ANIM_TAG_STUN_SPORE)
+POWDER_PARTICLE(gPoisonPowderParticleSpriteTemplate, ANIM_TAG_POISON_POWDER, ANIM_TAG_POISON_POWDER)
 
 const union AnimCmd gSolarBeamBigOrbAnimCmds1[] =
 {

@@ -31,6 +31,7 @@
 #include "constants/abilities.h"
 #include "constants/battle_frontier.h"
 #include "constants/event_objects.h"
+#include "constants/map_types.h"
 #include "constants/region_map_sections.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
@@ -1060,20 +1061,19 @@ static bool32 CheckMatchCallChance(void)
     if (!GetMonData(&gParties[B_TRAINER_0][0], MON_DATA_SANITY_IS_EGG) && GetMonAbility(&gParties[B_TRAINER_0][0]) == ABILITY_LIGHTNING_ROD)
         callChance = 2;
 
-    if (Random() % 10 < callChance * 3)
+    if (Random() % 10 < callChance * 2)
         return TRUE;
     else
         return FALSE;
 }
 
-static bool32 MapAllowsMatchCall(void)
+bool32 MapAllowsMatchCall(void)
 {
-    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) || gMapHeader.regionMapSectionId == MAPSEC_SAFARI_ZONE)
+    if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
         return FALSE;
 
     if (gMapHeader.regionMapSectionId == MAPSEC_SOOTOPOLIS_CITY
-     && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE
-     && FlagGet(FLAG_NEVER_SET_0x0DC) == FALSE)
+     && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE)
         return FALSE;
 
     if (gMapHeader.regionMapSectionId == MAPSEC_MT_CHIMNEY
@@ -1151,8 +1151,8 @@ static u32 GetActiveMatchCallTrainerId(u32 activeMatchCallId)
     - If the player has match call
     - Every 10th step
     - Every 10 minutes
-    - 1/3 of the time (or 2/3 of the time, if the lead party Pokémon has Lightning Rod)
-    - If in a valid outdoor map (not Safari Zone, not underwater, not Mt Chimney with Team Magma, not Sootopolis with legendaries)
+    - 20% of the time (or 40% of the time, if the lead party Pokémon has Lightning Rod)
+    - If in a valid outdoor map (not underwater, not Mt Chimney with Team Magma, not Sootopolis with legendaries)
     - If an eligible trainer to call the player is selected
 */
 bool32 TryStartMatchCall(void)
@@ -1750,29 +1750,23 @@ static u8 GetLandEncounterSlot(void)
         return 6;
     else if (rand >= 85 && rand < 90)
         return 7;
-    else if (rand >= 90 && rand < 94)
+    else if (rand >= 90 && rand < 95)
         return 8;
-    else if (rand >= 94 && rand < 98)
-        return 9;
-    else if (rand >= 98 && rand < 99)
-        return 10;
     else
-        return 11;
+        return 9;
 }
 
 static u8 GetWaterEncounterSlot(void)
 {
     int rand = Random() % 100;
-    if (rand < 60)
+    if (rand < 50)
         return 0;
-    else if (rand >= 60 && rand < 90)
+    else if (rand >= 50 && rand < 80)
         return 1;
-    else if (rand >= 90 && rand < 95)
+    else if (rand >= 80 && rand < 95)
         return 2;
-    else if (rand >= 95 && rand < 99)
-        return 3;
     else
-        return 4;
+        return 3;
 }
 
 static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)

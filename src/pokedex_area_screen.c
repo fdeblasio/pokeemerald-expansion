@@ -103,8 +103,8 @@ struct
     /*0x620*/ mapsec_u16_t specialAreaRegionMapSectionIds[MAX_AREA_MARKERS];
     /*0x660*/ struct Sprite *areaMarkerSprites[MAX_AREA_MARKERS];
     /*0x6E0*/ u16 numAreaMarkerSprites;
-    /*0x6E2*/ u16 alteringCaveCounter;
-    /*0x6E4*/ u16 alteringCaveId;
+    /*0x6E2*/ u16 buffer1;
+    /*0x6E4*/ u16 buffer2;
     /*0x6E8*/ u8 *screenSwitchState;
     /*0x6EC*/ struct RegionMap regionMap;
     /*0xF70*/ u8 charBuffer[64];
@@ -146,8 +146,6 @@ static const u32 sAreaGlow_Gfx[] = INCGFX_U32("graphics/pokedex/area_glow.png", 
 static const u32 sPokedexPlusHGSS_ScreenSelectBarSubmenu_Tilemap[] = INCGFX_U32("graphics/pokedex/hgss/SelectBar.bin", ".smolTM");
 static void LoadHGSSScreenSelectBarSubmenu(void);
 
-static const enum Species sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
-
 static const mapsec_u16_t sMovingRegionMapSections[3] =
 {
     MAPSEC_MARINE_CAVE,
@@ -157,7 +155,7 @@ static const mapsec_u16_t sMovingRegionMapSections[3] =
 
 static const u16 sFeebasData[][3] =
 {
-    {SPECIES_FEEBAS, MAP_GROUP(MAP_ROUTE119), MAP_NUM(MAP_ROUTE119)},
+    {SPECIES_FEEBAS, MAP_GROUP_AND_NUM(MAP_ROUTE119)},
     {NUM_SPECIES}
 };
 
@@ -294,14 +292,6 @@ static void FindMapsWithMon(enum Species species)
     sPokedexAreaScreen->numOverworldAreas = 0;
     sPokedexAreaScreen->numSpecialAreas = 0;
 
-    // Check if this species should be hidden from the area map.
-    // This only applies to Wynaut, to hide the encounters on Mirage Island.
-    for (i = 0; i < ARRAY_COUNT(sSpeciesHiddenFromAreaScreen); i++)
-    {
-        if (sSpeciesHiddenFromAreaScreen[i] == species)
-            return;
-    }
-
     // Add Pokémon with special encounter circumstances (i.e. not listed
     // in the regular wild encounter table) to the area map.
     // This only applies to Feebas on Route 119, but it was clearly set
@@ -426,14 +416,6 @@ static mapsec_u16_t GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 
 static bool8 MapHasSpecies(const struct WildEncounterTypes *info, u32 headerSectionId, enum Species species)
 {
-    // If this is a header for Altering Cave, skip it if it's not the current Altering Cave encounter set
-    if (headerSectionId == MAPSEC_ALTERING_CAVE)
-    {
-        sPokedexAreaScreen->alteringCaveCounter++;
-        if (sPokedexAreaScreen->alteringCaveCounter != sPokedexAreaScreen->alteringCaveId + 1)
-            return FALSE;
-    }
-
     if (MonListHasSpecies(info->landMonsInfo, species, NUM_LAND_MONS_ENCOUNTER_SLOTS))
         return TRUE;
     if (MonListHasSpecies(info->waterMonsInfo, species, NUM_WATER_MONS_ENCOUNTER_SLOTS))

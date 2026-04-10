@@ -5337,6 +5337,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
         memset(&gBattleMons, 0, sizeof(struct BattlePokemon) * MAX_BATTLERS_COUNT);
         gIsFishingEncounter = FALSE;
         gIsSurfingEncounter = FALSE;
+    #if DEXNAV_ENABLED == TRUE
         if (gDexNavSpecies && (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT))
         {
             IncrementDexNavChain();
@@ -5344,6 +5345,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
         }
         else
             gSaveBlock3Ptr->dexNavChain = 0;
+    #endif
 
         ClearCurrentTrainerWantRematchVsSeeker();
         gDexNavSpecies = SPECIES_NONE;

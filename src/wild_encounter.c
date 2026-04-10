@@ -62,9 +62,124 @@ EWRAM_DATA bool8 gIsFishingEncounter = 0;
 EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
+//Emerald
+#define RANGE_ROUTE_101          3, 3
+#define RANGE_ROUTE_103          4, 4
+#define RANGE_ROUTE_102_104      5, 5
+#define RANGE_ROUTE_102          RANGE_ROUTE_102_104
+#define RANGE_ROUTE_104          RANGE_ROUTE_102_104
+#define RANGE_PETALBURG_WOODS    5, 6
+#define RANGE_PETALBURG_WOODS_COCOON 7, 7
+#define RANGE_ROUTE_104_NORTH    6, 7
+#define RANGE_ROUTE_116          7, 9
+#define RANGE_RUSTURF_TUNNEL     9, 10
+#define RANGE_OLD_ROD_INITIAL   10, 15
+#define RANGE_ROUTE_106         11, 13
+#define RANGE_GRANITE_CAVE      12, 15
+#define RANGE_ROUTE_109_SLATEPORT_OLD_ROD 15, 20
+#define RANGE_ROUTE_109_OLD_ROD RANGE_ROUTE_109_SLATEPORT_OLD_ROD
+#define RANGE_SLATEPORT_OLD_ROD RANGE_ROUTE_109_SLATEPORT_OLD_ROD
+#define RANGE_ROUTE_110         14, 17
+#define RANGE_ROUTE_117         17, 19
+#define RANGE_GOOD_ROD_INITIAL  22, 25
+#define RANGE_ROUTE_112         23, 24
+#define RANGE_FIERY_PATH        24, 25
+#define RANGE_ROUTE_113         24, 25
+#define RANGE_ROUTE_114         24, 25
+#define RANGE_METEOR_FALLS      25, 27
+#define RANGE_JAGGED_PASS       26, 28
+#define RANGE_DESERT            28, 30
+#define RANGE_SURF_INITIAL      30, 32
+#define RANGE_ROUTE_119         33, 35
+#define RANGE_ROUTE_120         38, 40
+#define RANGE_ROUTE_121         40, 42
+#define RANGE_LILYCOVE_CITY     41, 43
+#define RANGE_ROUTE_122         42, 44
+#define RANGE_MT_PYRE           42, 44
+#define RANGE_ROUTE_123         42, 44
+#define RANGE_MAGMA_HIDEOUT     43, 45
+#define RANGE_ROUTE_124         45, 47
+#define RANGE_ROUTE_125         45, 47
+#define RANGE_MOSSDEEP_CITY     46, 48
+#define RANGE_SHOAL_CAVE        46, 48
+#define RANGE_SUPER_ROD_INITIAL 46, 48
+#define RANGE_DIVE_INITIAL      47, 49
+#define RANGE_ROUTE_127         47, 49
+#define RANGE_ROUTE_126         47, 49
+#define RANGE_SOOTOPOLIS_CITY   47, 49
+#define RANGE_ROUTE_128         48, 50
+#define RANGE_EVER_GRANDE_CITY  48, 50
+#define RANGE_SEAFLOOR_CAVERN   50, 52
+#define RANGE_CAVE_OF_ORIGIN    51, 53
+#define RANGE_ROUTE_129         51, 53
+#define RANGE_ROUTE_130         51, 53
+#define RANGE_ROUTE_131         51, 53
+#define RANGE_SKY_PILLAR        52, 54
+#define RANGE_PACIFIDLOG_TOWN   52, 54
+#define RANGE_ROUTE_132         52, 54
+#define RANGE_ROUTE_133         52, 54
+#define RANGE_ROUTE_134         52, 54
+#define RANGE_METEOR_FALLS_WATERFALL 54, 56
+#define RANGE_VICTORY_ROAD      55, 57
+#define RANGE_EVER_GRANDE_CITY_GRIND 60, 60
+#define RANGE_POSTGAME          POSTGAME_LEVEL, POSTGAME_LEVEL
+#define RANGE_BATTLE_FRONTIER   5, 5
+#define RANGE_UNUSED            1, 1
+
+//FireRed
+#define RANGE_ROUTE            1, 1
+#define RANGE_ROUTE_1          2, 4
+#define RANGE_ROUTE_22         3, 5
+#define RANGE_ROUTE_2          4, 5
+#define RANGE_VIRIDIAN_FOREST  5, 6
+#define RANGE_VIRIDIAN_FOREST_COCOON 7, 7
+#define RANGE_PEWTER_CITY      7, 7
+#define RANGE_ROUTE_3          10, 12
+#define RANGE_MT_MOON          12, 14
+#define RANGE_ROUTE_4          14, 16
+#define RANGE_ROUTE_24         15, 17
+#define RANGE_ROUTE_25         16, 18
+#define RANGE_ROUTE_5          17, 19
+#define RANGE_ROUTE_6          18, 20
+#define RANGE_OLD_ROD_FRLG     15, 20
+#define RANGE_ROUTE_11         19, 21
+#define RANGE_DIGLETTS_CAVE    20, 22
+#define RANGE_ROUTE_9          21, 23
+#define RANGE_ROUTE_10         22, 24
+#define RANGE_ROCK_TUNNEL      23, 25
+#define RANGE_ROUTE_8          24, 26
+#define RANGE_ROUTE_7          25, 27
+#define RANGE_CELADON_CITY     26, 28
+#define RANGE_ROUTE_16         27, 29
+#define RANGE_POKEMON_TOWER    28, 30
+//Saffron first?
+#define RANGE_ROUTE_12         29, 31
+#define RANGE_GOOD_ROD_FRLG    30, 32
+#define RANGE_ROUTE_13         31, 33
+#define RANGE_ROUTE_14         32, 34
+#define RANGE_ROUTE_15         33, 35
+#define RANGE_FUCHSIA_CITY     34, 36
+#define RANGE_SUPER_ROD_FRLG   35, 37
+#define RANGE_ROUTE_18         36, 38
+#define RANGE_ROUTE_17         38, 40
+#define RANGE_SAFARI_ZONE_FRLG 39, 41
+#define RANGE_SURF_FRLG        40, 42
+//End of Fuchsia block
+#define RANGE_SEAFOAM_ISLANDS  41, 43
+#define RANGE_CINNABAR_ISLAND  42, 44
+#define RANGE_POKEMON_MANSION  43, 45
+#define RANGE_ONE_ISLAND       44, 46
+
+#define RANGE_ROUTE_23          1, 1
+#define RANGE_VICTORY_ROAD_FRLG 1, 1
+
+#define RANGE_POSTGAME_FRLG    POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
+
+#define SAFARI_ZONE_ENCOUNTER_RATE 50
+
 #include "data/wild_encounters.h"
 
-const struct WildPokemon gWildFeebas = {20, 25, SPECIES_FEEBAS};
+const struct WildPokemon sWildFeebas = {RANGE_ROUTE_119, SPECIES_ROUTE_119};
 
 static const u16 sRoute119WaterTileData[] =
 {
@@ -125,10 +240,6 @@ bool8 CheckFeebasAtCoords(s16 x, s16 y)
             route119Section = 1;
         if (y >= sRoute119WaterTileData[3 * 2 + 0] && y <= sRoute119WaterTileData[3 * 2 + 1])
             route119Section = 2;
-
-        // 50% chance of encountering Feebas (assuming this is a Feebas spot)
-        if (Random() % 100 > 49)
-            return FALSE;
 
         FeebasSeedRng(gSaveBlock1Ptr->dewfordTrends[0].rand);
 
@@ -196,12 +307,8 @@ u32 ChooseWildMonIndex_Land(void)
         wildMonIndex = 7;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_7 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_8)
         wildMonIndex = 8;
-    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_8 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_9)
-        wildMonIndex = 9;
-    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
-        wildMonIndex = 10;
     else
-        wildMonIndex = 11;
+        wildMonIndex = 9;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -257,10 +364,8 @@ u32 ChooseWildMonIndex_Water(void)
         wildMonIndex = 1;
     else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_1 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_2)
         wildMonIndex = 2;
-    else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_3)
-        wildMonIndex = 3;
     else
-        wildMonIndex = 4;
+        wildMonIndex = 3;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -283,38 +388,8 @@ u8 GetWaterEncounterSlotForMatchCall(void)
         return 1;
     else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_1 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_2)
         return 2;
-    else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_3)
+    else
         return 3;
-    else
-        return 4;
-}
-
-
-// NUM_ROCK_SMASH_MONS_ENCOUNTER_SLOTS
-u32 ChooseWildMonIndex_Rocks(void)
-{
-    u32 wildMonIndex = 0;
-    bool8 swap = FALSE;
-    u8 rand = Random() % ENCOUNTER_CHANCE_ROCK_SMASH_MONS_TOTAL;
-
-    if (rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_0)
-        wildMonIndex = 0;
-    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_0 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_1)
-        wildMonIndex = 1;
-    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_1 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_2)
-        wildMonIndex = 2;
-    else if (rand >= ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_3)
-        wildMonIndex = 3;
-    else
-        wildMonIndex = 4;
-
-    if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
-        swap = TRUE;
-
-    if (swap)
-        wildMonIndex = 4 - wildMonIndex;
-
-    return wildMonIndex;
 }
 
 // NUM_FISHING_MONS_ENCOUNTER_SLOTS
@@ -331,39 +406,28 @@ static u32 ChooseWildMonIndex_Fishing(u8 rod)
     switch (rod)
     {
     case OLD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0)
-            wildMonIndex = 0;
-        else
-            wildMonIndex = 1;
+        wildMonIndex = 0;
 
         if (swap)
-            wildMonIndex = 1 - wildMonIndex;
+            wildMonIndex = 0 - wildMonIndex;
         break;
     case GOOD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
+        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_1)
+            wildMonIndex = 1;
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_1 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
             wildMonIndex = 2;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3)
+
+        if (swap)
+            wildMonIndex = 3 - wildMonIndex;
+        break;
+    case SUPER_ROD:
+        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_3)
             wildMonIndex = 3;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4)
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_4)
             wildMonIndex = 4;
 
         if (swap)
-            wildMonIndex = 6 - wildMonIndex;
-        break;
-    case SUPER_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
-            wildMonIndex = 5;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6)
-            wildMonIndex = 6;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7)
-            wildMonIndex = 7;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
-            wildMonIndex = 8;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_9)
-            wildMonIndex = 9;
-
-        if (swap)
-            wildMonIndex = 14 - wildMonIndex;
+            wildMonIndex = 7 - wildMonIndex;
         break;
     }
     return wildMonIndex;
@@ -431,16 +495,6 @@ u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ALTERING_CAVE) &&
-                gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ALTERING_CAVE))
-            {
-                u16 alteringCaveId = VarGet(VAR_ALTERING_CAVE_WILD_SET);
-                if (alteringCaveId >= NUM_ALTERING_CAVE_TABLES)
-                    alteringCaveId = 0;
-
-                i += alteringCaveId;
-            }
-
             return i;
         }
     }
@@ -468,14 +522,8 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
     case WILD_AREA_WATER:
         wildMonInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo;
         break;
-    case WILD_AREA_ROCKS:
-        wildMonInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].rockSmashMonsInfo;
-        break;
     case WILD_AREA_FISHING:
         wildMonInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].fishingMonsInfo;
-        break;
-    case WILD_AREA_HIDDEN:
-        wildMonInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
         break;
     }
 
@@ -563,12 +611,8 @@ bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum WildPok
 
         wildMonIndex = ChooseWildMonIndex_Water();
         break;
-    case WILD_AREA_ROCKS:
-        wildMonIndex = ChooseWildMonIndex_Rocks();
-        break;
     default:
     case WILD_AREA_FISHING:
-    case WILD_AREA_HIDDEN:
         break;
     }
 
@@ -806,48 +850,6 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
     }
 
     return FALSE;
-}
-
-void RockSmashWildEncounter(void)
-{
-    u32 headerId = GetCurrentMapWildMonHeaderId();
-    enum TimeOfDay timeOfDay;
-
-    if (headerId != HEADER_NONE)
-    {
-        timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_ROCKS);
-
-        const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].rockSmashMonsInfo;
-
-        if (wildPokemonInfo == NULL)
-        {
-            gSpecialVar_Result = FALSE;
-        }
-        else if (WildEncounterCheck(wildPokemonInfo->encounterRate, TRUE) == TRUE
-         && TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
-        {
-            if (TryDoDoubleWildBattle())
-            {
-                struct Pokemon mon1 = gParties[B_TRAINER_OPPONENT_A][0];
-                TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE);
-                gParties[B_TRAINER_OPPONENT_A][1] = mon1;
-                BattleSetup_StartDoubleWildBattle();
-                gSpecialVar_Result = TRUE;
-            }
-            else {
-                BattleSetup_StartWildBattle();
-                gSpecialVar_Result = TRUE;
-            }
-        }
-        else
-        {
-            gSpecialVar_Result = FALSE;
-        }
-    }
-    else
-    {
-        gSpecialVar_Result = FALSE;
-    }
 }
 
 bool8 SweetScentWildEncounter(void)
@@ -1139,12 +1141,8 @@ static u8 GetMaxLevelOfSpeciesInWildTable(const struct WildPokemon *wildMon, enu
     case WILD_AREA_WATER:
         numMon = NUM_WATER_MONS_ENCOUNTER_SLOTS;
         break;
-    case WILD_AREA_ROCKS:
-        numMon = NUM_ROCK_SMASH_MONS_ENCOUNTER_SLOTS;
-        break;
     default:
     case WILD_AREA_FISHING:
-    case WILD_AREA_HIDDEN:
         break;
     }
 

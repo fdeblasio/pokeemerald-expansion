@@ -1,11 +1,3 @@
-LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady::
-	special Script_GetLilycoveLadyId
-	switch VAR_RESULT
-	case LILYCOVE_LADY_QUIZ, LilycoveCity_PokemonCenter_1F_EventScript_QuizLady
-	case LILYCOVE_LADY_FAVOR, LilycoveCity_PokemonCenter_1F_EventScript_FavorLady
-	case LILYCOVE_LADY_CONTEST, LilycoveCity_PokemonCenter_1F_EventScript_ContestLady
-	end
-
 LilycoveCity_PokemonCenter_1F_EventScript_FavorLady::
 	lock
 	faceplayer
@@ -391,7 +383,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	delay 120
 	waitmoncry
 	goto_if_eq VAR_0x8004, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock
@@ -480,7 +472,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -490,7 +482,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -500,7 +492,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Poochyena::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Poochyena, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -510,7 +502,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -520,7 +512,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Pikachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Pikachu, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -698,11 +690,6 @@ LilycoveCity_PokemonCenter_1F_Text_WriteYourQuiz:
 LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizQuestion:
 	.string "Are you going to quit writing\n"
 	.string "your quiz question?$"
-
-@ Unused
-LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizAnswer:
-	.string "Are you going to quit choosing\n"
-	.string "your quiz answer?$"
 
 LilycoveCity_PokemonCenter_1F_Text_IllLookForAChallenger:
 	.string "Thank you!\n"

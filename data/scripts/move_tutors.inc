@@ -174,10 +174,6 @@ MoveTutor_EventScript_OpenBox::
 	faceplayer
 	return
 
-MoveTutor_EventScript_CanOnlyBeLearnedOnce::
-	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
-	return
-
 MoveTutor_AfterChooseBoxMon::
 	waitstate
 	special CanTeachMoveBoxMon

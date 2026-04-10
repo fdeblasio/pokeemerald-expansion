@@ -111,44 +111,44 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {COMPOUND_STRING("Oddish")},
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Taillow")},
+    {gSpeciesInfo[SPECIES_TAILLOW].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
+    {gSpeciesInfo[SPECIES_ODDISH].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("Azurill")},
-    {COMPOUND_STRING("Lotad")},
-    {COMPOUND_STRING("Wingull")},
+    {gSpeciesInfo[SPECIES_HARIYAMA].speciesName},
+    {gSpeciesInfo[SPECIES_LOTAD].speciesName},
+    {gSpeciesInfo[SPECIES_WINGULL].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("Dustox")},
-    {COMPOUND_STRING("Zubat")},
-    {COMPOUND_STRING("Nincada")},
+    {gSpeciesInfo[SPECIES_WURMPLE].speciesName},
+    {gSpeciesInfo[SPECIES_ZUBAT].speciesName},
+    {gSpeciesInfo[SPECIES_NINCADA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
-    {COMPOUND_STRING("Ralts")},
-    {COMPOUND_STRING("Zigzagoon")},
-    {COMPOUND_STRING("Slakoth")},
+    {gSpeciesInfo[SPECIES_WALLY_STARTER].speciesName},
+    {gSpeciesInfo[SPECIES_NORMAN_LEND].speciesName},
+    {gSpeciesInfo[SPECIES_SLAKOTH].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Shroomish")},
-    {COMPOUND_STRING("Zigzagoon")},
+    {gSpeciesInfo[SPECIES_ZIGZAGOON].speciesName},
+    {gSpeciesInfo[SPECIES_SHROOMISH].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Zubat")},
-    {COMPOUND_STRING("Carvanha")},
+    {gSpeciesInfo[SPECIES_CARVANHA].speciesName},
+    {gSpeciesInfo[SPECIES_ZUBAT].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =

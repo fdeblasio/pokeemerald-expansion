@@ -69,11 +69,11 @@ enum {
 
 enum {
     BLENDER_MISTER,
-    BLENDER_LADDIE,
-    BLENDER_LASSIE,
-    BLENDER_MASTER,
     BLENDER_DUDE,
-    BLENDER_MISS
+    BLENDER_LASSIE,
+    BLENDER_LADDIE,
+    BLENDER_MISS,
+    BLENDER_MASTER
 };
 
 #define BLENDER_MAX_PLAYERS MAX_LINK_PLAYERS
@@ -249,22 +249,11 @@ static const u16 sBlenderCenter_Pal[] = INCBIN_U16("graphics/berry_blender/cente
 static const u8 sBlenderCenter_Tilemap[] = INCBIN_U8("graphics/berry_blender/center_map.bin");
 static const u16 sBlenderOuter_Pal[] = INCBIN_U16("graphics/berry_blender/outer.gbapal");
 
-static const u16 sUnused_Pal[] = INCBIN_U16("graphics/berry_blender/unused.gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
 static const u8 sText_BerryBlenderStart[] = _("Starting up the Berry Blender.\pPlease select a Berry from your Bag\nto put in the Berry Blender.\p");
 static const u8 sText_NewParagraph[] = _("\p");
 static const u8 sText_WasMade[] = _(" was made!");
-
-static const u8 *const sBlenderOpponentsNames[] =
-{
-    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
-    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
-    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
-};
 
 static const u8 sText_CommunicationStandby[] = _("Communication standby…");
 static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Would you like to blend another Berry?");
@@ -433,7 +422,7 @@ static const u16 sArrowStartPos[] = {
     MAX_ARROW_POS / 4 * 2  // 0x8000
 };
 static const u8 sArrowStartPosIds[BLENDER_MAX_PLAYERS - 1] = {1, 1, 0};
-static const u8 sArrowHitRangeStart[BLENDER_MAX_PLAYERS] = {32, 224, 96, 160};
+static const u8 sArrowHitRangeStart[BLENDER_MAX_PLAYERS] = {24, 216, 88, 152};
 
 static const TaskFunc sLocalOpponentTasks[] =
 {
@@ -848,18 +837,18 @@ static const s16 sBerrySpriteData[][5] =
 static const u8 sOpponentBerrySets[][3] =
 {
     // These sets are used if the player chose one of the 5 NPC berries
-    {BERRY_ID_ASPEAR, BERRY_ID_RAWST,  BERRY_ID_PECHA},   // player chose Cheri Berry
-    {BERRY_ID_CHERI,  BERRY_ID_ASPEAR, BERRY_ID_RAWST},   // player chose Chesto Berry
-    {BERRY_ID_CHESTO, BERRY_ID_CHERI,  BERRY_ID_ASPEAR},  // player chose Pecha Berry
-    {BERRY_ID_PECHA,  BERRY_ID_CHESTO, BERRY_ID_CHERI},   // player chose Rawst Berry
-    {BERRY_ID_RAWST,  BERRY_ID_PECHA,  BERRY_ID_CHESTO},  // player chose Aspear Berry
+    {BERRY_ID_TAMATO, BERRY_ID_FIGY,   BERRY_ID_SPELON},   // player chose Cheri Berry
+    {BERRY_ID_CORNN,  BERRY_ID_WIKI,   BERRY_ID_PAMTRE},   // player chose Chesto Berry
+    {BERRY_ID_MAGOST, BERRY_ID_MAGO,   BERRY_ID_WATMEL},  // player chose Pecha Berry
+    {BERRY_ID_RABUTA, BERRY_ID_AGUAV,  BERRY_ID_DURIN},   // player chose Rawst Berry
+    {BERRY_ID_NOMEL,  BERRY_ID_IAPAPA, BERRY_ID_BELUE},  // player chose Aspear Berry
 
     // These sets are used if the player chose a different berry (set is selected by player's berry % 5)
-    {BERRY_ID_CHERI,  BERRY_ID_PECHA,  BERRY_ID_RAWST},   // player chose Leppa, Figy, ...
-    {BERRY_ID_CHESTO, BERRY_ID_RAWST,  BERRY_ID_ASPEAR},  // player chose Oran, Wiki, ...
-    {BERRY_ID_PECHA,  BERRY_ID_ASPEAR, BERRY_ID_CHERI},   // player chose Persim, Mago, ...
-    {BERRY_ID_RAWST,  BERRY_ID_CHERI,  BERRY_ID_CHESTO},  // player chose Lum, Aguav, ...
-    {BERRY_ID_ASPEAR, BERRY_ID_CHESTO, BERRY_ID_PECHA},   // player chose Sitrus, Iapapa, ...
+    {BERRY_ID_CHERI,  BERRY_ID_PECHA,  BERRY_ID_RAWST},   // player chose Leppa, Figy, Razz, Pomeg, Tamato, Spelon, ...
+    {BERRY_ID_CHESTO, BERRY_ID_RAWST,  BERRY_ID_ASPEAR},  // player chose Oran, Wiki, Bluk, Kelpsy, Cornn, Pamtre, ...
+    {BERRY_ID_PECHA,  BERRY_ID_ASPEAR, BERRY_ID_CHERI},   // player chose Persim, Mago, Nanab, Qualot, Magost, Watmel, ...
+    {BERRY_ID_RAWST,  BERRY_ID_CHERI,  BERRY_ID_CHESTO},  // player chose Lum, Aguav, Wepear, Hondew, Rabuta, Durin, ...
+    {BERRY_ID_ASPEAR, BERRY_ID_CHESTO, BERRY_ID_PECHA},   // player chose Sitrus, Iapapa, Pinap, Grepa, Nomel, Belue, ...
 };
 
 // Berry master's berries follow the same rules as above, but instead of explicitly listing
@@ -887,16 +876,6 @@ static const u8 sBlackPokeblockFlavorFlags[] = {
     (1 << FLAVOR_BITTER) | (1 << FLAVOR_DRY)    | (1 << FLAVOR_SPICY),
     (1 << FLAVOR_SWEET)  | (1 << FLAVOR_DRY)    | (1 << FLAVOR_SPICY),
     (1 << FLAVOR_SOUR)   | (1 << FLAVOR_SWEET)  | (1 << FLAVOR_SPICY),
-};
-
-static const u8 sJPText_GoodTvReady[] = _("\nいいTVができました "); // Unused
-static const u8 sJPText_BadTvReady[] = _("\nダメTVができました "); // Unused
-static const u8 sJPText_Flavors[][5] = {_("からい"), _("しぶい"), _("あまい"), _("にがい"), _("すっぱい")}; // Unused
-
-static const u8 sUnused[] = {
-    6, 6, 6, 6, 5,
-    3, 3, 3, 2, 2,
-    3, 3, 3, 3, 2
 };
 
 static const struct WindowTemplate sBlenderRecordWindowTemplate =
@@ -1210,6 +1189,16 @@ static void ConvertItemToBlenderBerry(struct BlenderBerry *berry, enum Item item
     berry->flavors[FLAVOR_COUNT] = berryInfo->smoothness;
 }
 
+static const u8 *const sBlenderOpponentsNames[] =
+{
+    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
+    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
+    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
+};
+
 static void InitLocalPlayers(u8 opponentsNum)
 {
     switch (opponentsNum)
@@ -1517,11 +1506,19 @@ static u8 GetArrowProximity(u16 arrowPos, u8 playerId)
     u8 arrowId = sBerryBlender->playerIdToArrowId[playerId];
     u32 hitRangeStart = sArrowHitRangeStart[arrowId];
 
-    if (pos >= hitRangeStart && pos < hitRangeStart + 48)
+    if (pos >= hitRangeStart && pos < hitRangeStart + 64)
     {
-        if (pos >= hitRangeStart + 20 && pos < hitRangeStart + 28)
+        if (pos >= hitRangeStart + 24 && pos < hitRangeStart + 40)
+            //48-64: 16
+            //240-256
+            //112-128
+            //176-192
             return PROXIMITY_BEST;
         else
+            //24-88: 64
+            //216-280
+            //88-152
+            //152-216
             return PROXIMITY_GOOD;
     }
 
@@ -2037,7 +2034,7 @@ static void UpdateSpeedFromHit(u16 cmd)
         }
         else
         {
-            sBerryBlender->speed += (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+            sBerryBlender->speed += (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
             ShakeBgCoordForHit(&sBerryBlender->bg_X, (sBerryBlender->speed / 100) - 10);
             ShakeBgCoordForHit(&sBerryBlender->bg_Y, (sBerryBlender->speed / 100) - 10);
         }
@@ -2045,9 +2042,13 @@ static void UpdateSpeedFromHit(u16 cmd)
     case LINKCMD_BLENDER_SCORE_GOOD:
         if (sBerryBlender->speed < 1500)
             sBerryBlender->speed += (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        else
+        {
+            sBerryBlender->speed += (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        }
         break;
     case LINKCMD_BLENDER_SCORE_MISS:
-        sBerryBlender->speed -= (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        sBerryBlender->speed -= (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
         if (sBerryBlender->speed < MIN_ARROW_SPEED)
             sBerryBlender->speed = MIN_ARROW_SPEED;
         break;
@@ -2358,20 +2359,9 @@ static void Debug_SetMaxRPMStage(s16 value)
 {
     sDebug_MaxRPMStage = value;
 }
-
-static s16 UNUSED Debug_GetMaxRPMStage(void)
-{
-    return sDebug_MaxRPMStage;
-}
-
 static void Debug_SetGameTimeStage(s16 value)
 {
     sDebug_GameTimeStage = value;
-}
-
-static s16 UNUSED Debug_GetGameTimeStage(void)
-{
-    return sDebug_GameTimeStage;
 }
 
 static void CalculatePokeblock(struct BlenderBerry *berries, struct Pokeblock *pokeblock, u8 numPlayers, u8 *flavors, u16 maxRPM)
@@ -2473,11 +2463,6 @@ static void CalculatePokeblock(struct BlenderBerry *berries, struct Pokeblock *p
 
     for (i = 0; i < FLAVOR_COUNT + 1; i++)
         flavors[i] = sPokeblockFlavors[i];
-}
-
-static void UNUSED Debug_CalculatePokeblock(struct BlenderBerry *berries, struct Pokeblock *pokeblock, u8 numPlayers, u8 *flavors, u16 maxRPM)
-{
-    CalculatePokeblock(berries, pokeblock, numPlayers, flavors, maxRPM);
 }
 
 static void Debug_SetStageVars(void)

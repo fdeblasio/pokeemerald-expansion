@@ -425,7 +425,22 @@
 #define ANIM_TAG_TATSUGIRI_DROOPY           (ANIM_SPRITES_START + 410)
 #define ANIM_TAG_TATSUGIRI_STRETCHY         (ANIM_SPRITES_START + 411)
 #define ANIM_TAG_SAFARI_BAIT                (ANIM_SPRITES_START + 412)
-#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_SAFARI_BAIT + 1)
+#define ANIM_TAG_NEW_SWORD                  (ANIM_SPRITES_START + 413)
+#define ANIM_TAG_NEW_SEED                   (ANIM_SPRITES_START + 414)
+#define ANIM_TAG_NEW_HORN                   (ANIM_SPRITES_START + 415)
+#define ANIM_TAG_NEW_EMBER                  (ANIM_SPRITES_START + 416)
+#define ANIM_TAG_NEW_ROCKS                  (ANIM_SPRITES_START + 417)
+#define ANIM_TAG_NEW_LEAF                   (ANIM_SPRITES_START + 418)
+#define ANIM_TAG_NEW_TEETH                  (ANIM_SPRITES_START + 419)
+#define ANIM_TAG_NEW_HANDS_AND_FEET         (ANIM_SPRITES_START + 420)
+#define ANIM_TAG_NEW_SPIKES                 (ANIM_SPRITES_START + 421)
+#define ANIM_TAG_NEW_ROUND_SHADOW           (ANIM_SPRITES_START + 422)
+#define ANIM_TAG_NEW_EYE                    (ANIM_SPRITES_START + 423)
+#define ANIM_TAG_NEW_NAIL                   (ANIM_SPRITES_START + 424)
+#define ANIM_TAG_NEW_POKEBALL               (ANIM_SPRITES_START + 425)
+#define ANIM_TAG_NEW_GREEN_STAR             (ANIM_SPRITES_START + 426)
+#define ANIM_TAG_NEW_IMPACT                 (ANIM_SPRITES_START + 427)
+#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_NEW_IMPACT + 1)
 
 // battlers
 enum AnimBattler

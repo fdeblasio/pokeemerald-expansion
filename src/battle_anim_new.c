@@ -230,14 +230,15 @@ const struct SpriteTemplate gAutotomizeMetalShardsTemplate =
 };
 
 // Rage Powder
-const struct SpriteTemplate gRagePowderRedPowderTemplate =
-{
-    .tileTag = ANIM_TAG_SPORE,
-    .paletteTag = ANIM_TAG_HEART_STAMP,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gSporeParticleAnimTable,
-    .callback = AnimSporeParticle,
-};
+POWDER_PARTICLE(gRagePowderRedPowderTemplate, ANIM_TAG_POWDER, ANIM_TAG_HEART_STAMP)
+//const struct SpriteTemplate gRagePowderRedPowderTemplate =
+//{
+//    .tileTag = ANIM_TAG_SPORE,
+//    .paletteTag = ANIM_TAG_HEART_STAMP,
+//    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+//    .anims = gSporeParticleAnimTable,
+//    .callback = AnimSporeParticle,
+//};
 
 // Flame Charge
 const struct SpriteTemplate gFlameChargeEmberTemplate =
@@ -1364,14 +1365,15 @@ const struct SpriteTemplate gVenomDrenchAcidTemplate =
 };
 
 // Powder
-const struct SpriteTemplate gPowderBlackSporeTemplate =
-{
-    .tileTag = ANIM_TAG_SPORE,
-    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gSporeParticleAnimTable,
-    .callback = AnimSporeParticle,
-};
+POWDER_PARTICLE(gPowderBlackSporeTemplate, ANIM_TAG_POWDER, ANIM_TAG_HANDS_AND_FEET)
+//const struct SpriteTemplate gPowderBlackSporeTemplate =
+//{
+//    .tileTag = ANIM_TAG_SPORE,
+//    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+//    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+//    .anims = gSporeParticleAnimTable,
+//    .callback = AnimSporeParticle,
+//};
 
 // Geomancy
 const struct SpriteTemplate gGeomancyRingTemplate =
@@ -3161,14 +3163,7 @@ const struct SpriteTemplate gNoRetreatFlameTemplate =
 };
 
 // Magic Powder
-const struct SpriteTemplate gMagicPowderBluePowderTemplate =
-{
-    .tileTag = ANIM_TAG_POISON_POWDER,
-    .paletteTag = ANIM_TAG_WATER_GUN,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = gPowderParticlesAnimTable,
-    .callback = AnimMovePowderParticle,
-};
+POWDER_PARTICLE(gMagicPowderBluePowderTemplate, ANIM_TAG_POWDER, ANIM_TAG_WATER_GUN)
 
 // Dreepy missile
 const struct SpriteTemplate gDreepyMissilePlayerTemplate =

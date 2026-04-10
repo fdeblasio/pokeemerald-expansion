@@ -227,7 +227,7 @@ const struct FrontierBrain gFrontierBrainInfo[NUM_FRONTIER_FACILITIES] =
             COMPOUND_STRING("Hah!")    //Gold
         },
         .battledBit = {1 << 10, 1 << 11},
-        .streakAppearances = {28, 140, 56, 1},
+        .streakAppearances = {28, 56, 42, 1},
         .goldSymbolFlag = FLAG_SYS_PIKE_GOLD,
         .silverSymbolFlag = FLAG_SYS_PIKE_SILVER,
     },

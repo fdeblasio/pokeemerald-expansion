@@ -17,9 +17,9 @@ Debug_CheatStart::
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 	setvar VAR_BIRCH_LAB_STATE, 2
 	setvar VAR_ROUTE101_STATE, 3
-	givemon SPECIES_TREECKO, 20, ITEM_NONE
-	givemon SPECIES_TORCHIC, 20, ITEM_NONE
-	givemon SPECIES_MUDKIP, 20, ITEM_NONE
+	givemon GRASS_STARTER+2, 40, ITEM_NONE
+	givemon FIRE_STARTER+2,  40, ITEM_NONE
+	givemon WATER_STARTER+2, 40, ITEM_NONE
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
@@ -28,15 +28,16 @@ Debug_CheatStart::
 	special EnableNationalPokedex
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
-	setvar VAR_LITTLEROOT_TOWN_STATE, 4 @ 4: Received Running Shoes
-	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
+	setvar VAR_LITTLEROOT_TOWN_STATE,           4 @ 4: Received Running Shoes
+	setvar VAR_LITTLEROOT_INTRO_STATE,          7 @ 7: Told to go meet rival
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2 @ 2: Met Rival's Mom (and is corresponding gender)
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2 @ 2: Met Rival's Mom (and is corresponding gender)
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 4 @ 4: Received Pokedex
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY,     2 @ 2: Met Rival's Mom (and is corresponding gender)
+	setvar VAR_LITTLEROOT_RIVAL_STATE,          4 @ 4: Received Pokedex
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
+	additem ITEM_MACH_BIKE
 	setvar VAR_BRINEY_HOUSE_STATE, 1
-	setvar VAR_ROUTE116_STATE, 2
+	setvar VAR_ROUTE116_STATE,     2
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 	setflag FLAG_BADGE01_GET
 	setflag FLAG_BADGE02_GET
@@ -46,6 +47,8 @@ Debug_CheatStart::
 	setflag FLAG_BADGE06_GET
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_BADGE08_GET
+	setflag FLAG_SYS_POKENAV_GET
+	setflag FLAG_RECEIVED_TM_DIVE
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	setflag FLAG_VISITED_OLDALE_TOWN
 	setflag FLAG_VISITED_DEWFORD_TOWN
@@ -63,9 +66,21 @@ Debug_CheatStart::
 	setflag FLAG_VISITED_SOOTOPOLIS_CITY
 	setflag FLAG_VISITED_EVER_GRANDE_CITY
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
+	setflag FLAG_LANDMARK_ABANDONED_SHIP,
+	setflag FLAG_LANDMARK_FLOWER_SHOP,
+	setflag FLAG_LANDMARK_FIERY_PATH,
+	setflag FLAG_LANDMARK_OLD_LADY_REST_SHOP,
+	setflag FLAG_LANDMARK_METEOR_FALLS,
+	setflag FLAG_LANDMARK_WEATHER_INSTITUTE,
+	setflag FLAG_LANDMARK_SAFARI_ZONE,
+	setflag FLAG_LANDMARK_MT_PYRE,
+	setflag FLAG_LANDMARK_SHOAL_CAVE,
+	setflag FLAG_LANDMARK_SKY_PILLAR,
+	setflag FLAG_LANDMARK_SOUTHERN_ISLAND
 	setflag FLAG_LANDMARK_BATTLE_FRONTIER
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	setflag FLAG_WALLACE_GOES_TO_SKY_PILLAR
 	release
 	end
 
@@ -75,9 +90,9 @@ Debug_CheatStartFrlg::
 	setflag FLAG_OPENED_START_MENU
 	setflag FLAG_VISITED_OAKS_LAB
 	setflag FLAG_BEAT_RIVAL_IN_OAKS_LAB
-	givemon SPECIES_BULBASAUR, 20, ITEM_NONE
-	givemon SPECIES_CHARMANDER, 20, ITEM_NONE
-	givemon SPECIES_SQUIRTLE, 20, ITEM_NONE
+	givemon GRASS_STARTER_FRLG+2, 40, ITEM_NONE
+	givemon FIRE_STARTER_FRLG+2,  40, ITEM_NONE
+	givemon WATER_STARTER_FRLG+2, 40, ITEM_NONE
 	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
 	setflag FLAG_HIDE_RIVAL_IN_LAB
 	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 1 @ prevents Oak scene when trying to enter Route 1
@@ -201,6 +216,7 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, Def IVs: {STR_VAR_2}, SpDef IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	givemon SPECIES_ARAQUANID, 100, move1=MOVE_STRUGGLE_BUG, move2=MOVE_CHILLING_WATER, move3=MOVE_POUNCE, move4=MOVE_NONE
 	release
 	end
 

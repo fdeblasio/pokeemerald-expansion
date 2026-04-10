@@ -6154,14 +6154,14 @@ static inline u32 CalcRolloutBasePower(enum BattlerId battlerAtk, u32 basePower)
     return basePower;
 }
 
-static inline u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower)
+u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower)
 {
     for (u32 i = 0; i < gBattleMons[battlerAtk].volatiles.furyCutterCounter; i++)
         basePower *= 2;
     return min(basePower, 160); // The duration to reach 160 depends on a gen
 }
 
-static inline u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower)
+u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower)
 {
     bool32 isTerrainAffected = FALSE;
 
@@ -6178,7 +6178,7 @@ static inline u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePow
     return basePower;
 }
 
-static inline u32 IsFieldMudSportAffected(enum Type moveType)
+u32 IsFieldMudSportAffected(enum Type moveType)
 {
     if (moveType != TYPE_ELECTRIC)
         return FALSE;
@@ -6198,7 +6198,7 @@ static inline u32 IsFieldMudSportAffected(enum Type moveType)
     return FALSE;
 }
 
-static inline u32 IsFieldWaterSportAffected(enum Type moveType)
+u32 IsFieldWaterSportAffected(enum Type moveType)
 {
     if (moveType != TYPE_FIRE)
         return FALSE;

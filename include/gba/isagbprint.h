@@ -34,6 +34,14 @@ void AGBPrintInit(void);
 #define DebugAssert(pFile, nLine, pExpression, nStopProgram) MgbaAssert(pFile, nLine, pExpression, nStopProgram)
 #define DebugPrintfLevel(level, pBuf, ...) MgbaPrintf(level, pBuf, ## __VA_ARGS__)
 
+#define DEBUG_PRINT(text) MgbaPrintf(MGBA_LOG_WARN, text);
+#define DEBUG_PRINT_INT(text, var) MgbaPrintf(MGBA_LOG_WARN, text "%d", var);
+#define DEBUG_PRINT_INT_VAR(var) DEBUG_PRINT_INT(#var ": ", var)
+#define DEBUG_PRINT_INT_EMPTY(var) DEBUG_PRINT_INT("", var)
+#define DEBUG_PRINT_STRING(text, var) MgbaPrintf(MGBA_LOG_WARN, text "%S", var);
+#define DEBUG_PRINT_STRING_VAR(var) DEBUG_PRINT_STRING(#var ": ", var)
+#define DEBUG_PRINT_STRING_EMPTY(var) DEBUG_PRINT_STRING("", var)
+
 #elif (LOG_HANDLER == LOG_HANDLER_NOCASH_PRINT)
 
 #define DebugPrintf(pBuf, ...) NoCashGBAPrintf(pBuf, ## __VA_ARGS__)

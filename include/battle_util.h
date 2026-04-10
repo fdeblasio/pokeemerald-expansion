@@ -319,4 +319,9 @@ enum BattleTerrain GetBattleTerrainFromOverworldWeather(u32 owWeather);
 bool32 IsCommanderActive(enum BattlerId battler);
 bool32 IsWholeSideAlive(enum BattlerId sideBattler);
 
+u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower);
+u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower);
+u32 IsFieldMudSportAffected(enum Type moveType);
+u32 IsFieldWaterSportAffected(enum Type moveType);
+
 #endif // GUARD_BATTLE_UTIL_H

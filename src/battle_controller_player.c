@@ -2360,7 +2360,7 @@ enum
     EFFECTIVENESS_EXTREMELY_EFFECTIVE,
 };
 
-static bool32 ShouldShowTypeEffectiveness(u32 targetId)
+bool32 ShouldShowTypeEffectiveness(u32 targetId)
 {
     if (IsGhostBattleWithoutScope())
         return FALSE;

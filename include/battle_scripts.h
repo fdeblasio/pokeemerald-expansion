@@ -430,6 +430,7 @@ extern const u8 BattleScript_MoveEffectStatChange[];
 extern const u8 BattleScript_RemoveElectricType[];
 extern const u8 BattleScript_SeedSowerActivates[];
 extern const u8 BattleScript_WindPowerActivates[];
+extern const u8 BattleScript_ElectromorphosisActivates[];
 extern const u8 BattleScript_ProtosynthesisActivates[];
 extern const u8 BattleScript_QuarkDriveActivates[];
 extern const u8 BattleScript_RuinAbilityActivates[];

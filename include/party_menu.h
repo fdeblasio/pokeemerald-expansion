@@ -140,6 +140,7 @@ void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 bool32 IsAFusedMon(enum Species species);
+void CB2_ReturnToPartyMenuFromSummaryScreen(void);
 
 bool32 SetUpFieldMove_Surf(void);
 bool32 SetUpFieldMove_Fly(void);

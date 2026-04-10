@@ -4597,7 +4597,7 @@ bool16 HasAllHoennMons(void)
     for (enum HoennDexOrder i = 0; i < HOENN_DEX_COUNT - 1; i++)
     {
         enum NationalDexOrder j = HoennToNationalOrder(i + 1);
-        if (!(gSpeciesInfo[j].isMythical && !gSpeciesInfo[j].dexForceRequired) && !GetSetPokedexFlag(j, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlag(j, FLAG_GET_CAUGHT))
             return FALSE;
     }
     return TRUE;

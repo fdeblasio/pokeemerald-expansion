@@ -555,8 +555,8 @@ static void CreateApprenticeMenu(u8 menu)
     case APPRENTICE_ASK_WHICH_LEVEL:
         left = 18;
         top = 8;
-        strings[0] = gText_Lv50;
-        strings[1] = gText_OpenLevel;
+        strings[0] = gText_OpenLevel;
+        strings[1] = gText_Lv50;
         break;
     case APPRENTICE_ASK_3SPECIES:
         count = MULTI_PARTY_SIZE;

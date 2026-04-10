@@ -340,4 +340,9 @@ uq4_12_t GetSameTypeAttackBonusModifier(struct DamageContext *ctx);
 uq4_12_t GetMoveAgainstProtectionModifier(struct DamageContext *ctx);
 uq4_12_t GetOtherModifiers(struct DamageContext *ctx);
 
+u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower);
+u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower);
+u32 IsFieldMudSportAffected(enum Type moveType);
+u32 IsFieldWaterSportAffected(enum Type moveType);
+
 #endif // GUARD_BATTLE_UTIL_H

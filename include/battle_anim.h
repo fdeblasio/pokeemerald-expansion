@@ -279,6 +279,16 @@ void FreeHealthboxPalsForLevelUp(enum BattlerId battler);
 void SetAnimBgAttribute(u8 bgId, u8 attributeId, u8 value);
 int GetAnimBgAttribute(u8 bgId, u8 attributeId);
 
+#define POWDER_PARTICLE(template, tiles, palette) \
+const struct SpriteTemplate template =            \
+{                                                 \
+    .tileTag = tiles,                             \
+    .paletteTag = palette,                        \
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,    \
+    .anims = gPowderParticlesAnimTable,           \
+    .callback = AnimMovePowderParticle,           \
+};
+
 // battle_anim_effects_1.c
 void AnimFalseSwipeSlice_Step3(struct Sprite *);
 void SetSpriteNextToMonHead(enum BattlerId battler, struct Sprite *sprite);

@@ -35,49 +35,49 @@ static const struct SpriteTemplate sUnusedBagStealSpriteTemplate =
 
 static const union AffineAnimCmd sAffineAnim_Bite_0[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 1),
+    AFFINEANIMCMD_FRAME(0, 0, 0, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_1[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, 32, 1),
+    AFFINEANIMCMD_FRAME(0, 0, 32, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_2[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, 64, 1),
+    AFFINEANIMCMD_FRAME(0, 0, 64, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_3[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, 96, 1),
+    AFFINEANIMCMD_FRAME(0, 0, 96, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_4[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, -128, 1),
+    AFFINEANIMCMD_FRAME(0, 0, -128, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_5[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, -96, 1),
+    AFFINEANIMCMD_FRAME(0, 0, -96, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_6[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, -64, 1),
+    AFFINEANIMCMD_FRAME(0, 0, -64, 1),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_Bite_7[] =
 {
-    AFFINEANIMCMD_FRAME(0x0, 0x0, -32, 1),
+    AFFINEANIMCMD_FRAME(0, 0, -32, 1),
     AFFINEANIMCMD_END,
 };
 

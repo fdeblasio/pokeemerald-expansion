@@ -119,18 +119,18 @@ enum PartyBattleOrder
 
 // capacities of various saveblock objects
 #define DAYCARE_MON_COUNT 2
-#define POKEBLOCKS_COUNT 40
 #define OBJECT_EVENTS_COUNT 16
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 50
+#define PC_ITEMS_COUNT   20 //was 50
+#define POKEBLOCKS_COUNT 20 //was 40
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
 #define APPRENTICE_COUNT 4
 #define APPRENTICE_MAX_QUESTIONS 9
-#define MAX_REMATCH_ENTRIES 100 // only REMATCH_TABLE_ENTRIES (78) are used
+#define MAX_REMATCH_ENTRIES 82 // was 100, only REMATCH_TABLE_ENTRIES (78) are used, 1 byte
 #define NUM_CONTEST_WINNERS 13
 #define UNION_ROOM_KB_ROW_COUNT 10
 #define SAVED_TRENDS_COUNT 5
@@ -139,12 +139,16 @@ enum PartyBattleOrder
 
 enum BagCounts
 {
-    BAG_ITEMS_COUNT = 30,
-    BAG_KEYITEMS_COUNT = 30,
-    BAG_POKEBALLS_COUNT = 16,
-    BAG_TMHM_COUNT = 64,
-    BAG_BERRIES_COUNT = 46,
+    BAG_ITEMS_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 100 : 60, // need at most 558, was 30
+    BAG_MEDICINE_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 37 : 0,
+    BAG_KEYITEMS_COUNT = 45, // was 30
+    BAG_POKEBALLS_COUNT = 28, // was 16
+    BAG_TMHM_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 250 : 108, // was 64
+    BAG_BERRIES_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 68 : 46, // was 46
 };
+
+//Free space:
+//Saveblock 1: 15780/15872, free 92b    44/4=11 items
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.

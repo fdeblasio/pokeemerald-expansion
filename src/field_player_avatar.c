@@ -90,6 +90,7 @@ static bool8 ForcedMovement_SlideEast(void);
 static bool8 ForcedMovement_MatJump(void);
 static bool8 ForcedMovement_MatSpin(void);
 static bool8 ForcedMovement_MuddySlope(void);
+static bool8 ForcedMovement_Waterfall(void);
 static bool8 ForcedMovement_SpinRight(void);
 static bool8 ForcedMovement_SpinLeft(void);
 static bool8 ForcedMovement_SpinUp(void);
@@ -123,7 +124,7 @@ static bool8 PlayerAnimIsMultiFrameStationaryAndStateNotTurning(void);
 static bool8 PlayerIsAnimActive(void);
 static bool8 PlayerCheckIfAnimFinishedOrInactive(void);
 
-static void PlayerWalkSlowStairs(enum Direction direction);
+static void UNUSED PlayerWalkSlowStairs(enum Direction direction);
 static void UNUSED PlayerWalkSlow(enum Direction direction);
 static void PlayerRunSlow(enum Direction direction);
 static void PlayerRun(enum Direction);
@@ -203,7 +204,7 @@ static bool8 (*const sForcedMovementFuncs[NUM_FORCED_MOVEMENTS + 1])(void) =
     ForcedMovement_SlideNorth,
     ForcedMovement_SlideWest,
     ForcedMovement_SlideEast,
-    ForcedMovement_PushedSouthByCurrent,
+    ForcedMovement_Waterfall,
     ForcedMovement_MatJump,
     ForcedMovement_MatSpin,
     ForcedMovement_MuddySlope,
@@ -682,6 +683,16 @@ static bool8 ForcedMovement_MuddySlope(void)
     }
 }
 
+static bool8 ForcedMovement_Waterfall(void)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    if (playerObjEvent->movementDirection == DIR_NORTH && FlagGet(FLAG_BADGE08_GET) == TRUE)
+        return DoForcedMovement(DIR_NORTH, PlayerWalkSlow);
+    else
+        return DoForcedMovement(DIR_SOUTH, PlayerRideWaterCurrent);
+}
+
 static bool8 ForcedMovement_SpinRight(void)
 {
     PlaySpinSound();
@@ -901,8 +912,7 @@ static void PlayerNotOnBikeMoving(enum Direction direction, u16 heldKeys)
         }
         else
         {
-            // speed 2 is fast, same speed as running
-            PlayerWalkFast(direction);
+            PlayerWalkFaster(direction);
         }
         return;
     }
@@ -929,10 +939,7 @@ static void PlayerNotOnBikeMoving(enum Direction direction, u16 heldKeys)
     }
     else
     {
-        if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
-            PlayerWalkSlowStairs(direction);
-        else
-            PlayerWalkNormal(direction);
+        PlayerWalkFast(direction);
     }
 }
 
@@ -1254,7 +1261,7 @@ void PlayerSetAnimId(u8 movementActionId, enum CopyMovement copyableMovement)
 }
 
 // slow stairs (from FRLG--faster than slow)
-static void PlayerWalkSlowStairs(enum Direction direction)
+static void UNUSED PlayerWalkSlowStairs(enum Direction direction)
 {
     PlayerSetAnimId(GetWalkSlowStairsMovementAction(direction), COPY_MOVE_WALK);
 }

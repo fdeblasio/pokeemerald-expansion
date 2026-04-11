@@ -52,18 +52,17 @@
 // A new bias is drawn every round, except during ReelTime. Bias towards 7's
 // persists across rounds until you match 7's. All other biases are reset after
 // the round.
-#define BIAS_REPLAY     (1 << 0)
-#define BIAS_CHERRY     (1 << 1)
-#define BIAS_LOTAD      (1 << 2)
-#define BIAS_AZURILL    (1 << 3)
-#define BIAS_POWER      (1 << 4)
-#define BIAS_REELTIME   (1 << 5)
-#define BIAS_MIXED_7    (1 << 6)
-#define BIAS_STRAIGHT_7 (1 << 7)
+#define BIAS_CHERRY     (1 << 0)
+#define BIAS_LOTAD      (1 << 1)
+#define BIAS_AZURILL    (1 << 2)
+#define BIAS_POWER      (1 << 3)
+#define BIAS_REELTIME   (1 << 4)
+#define BIAS_MIXED_7    (1 << 5)
+#define BIAS_STRAIGHT_7 (1 << 6)
 
 #define BIAS_7       (BIAS_STRAIGHT_7 | BIAS_MIXED_7)
 #define BIAS_SPECIAL (BIAS_7 | BIAS_REELTIME)
-#define BIAS_REGULAR (BIAS_REPLAY | BIAS_CHERRY | BIAS_LOATAD | BIAS_AZURILL | BIAS_POWER)
+#define BIAS_REGULAR (BIAS_CHERRY | BIAS_LOATAD | BIAS_AZURILL | BIAS_POWER)
 
 // The slot machine will try to manipulate the outcome by adding up to 4 extra
 // turns to the reel after you press stop.
@@ -134,7 +133,7 @@ enum {
     MATCH_LOTAD,
     MATCH_AZURILL,
     MATCH_POWER,
-    MATCH_MIXED_7,       // First two 7's are same color; last is other color
+    MATCH_MIXED_7,
     MATCH_RED_7,
     MATCH_BLUE_7,
     MATCH_NONE,
@@ -695,7 +694,7 @@ static const u16 sUnkPalette[];
 static const u8 sSpecialDrawOdds[NUM_SLOT_MACHINE_IDS][MAX_BET];
 static const u8 sBiasSymbols[];
 static const u16 sBiasesSpecial[3];
-static const u16 sBiasesRegular[5];
+static const u16 sBiasesRegular[4];
 static const s16 sDigitalDisplay_SpriteCoords[][2];
 static const SpriteCallback sDigitalDisplay_SpriteCallbacks[];
 static const struct SpriteTemplate *const sSpriteTemplates_DigitalDisplay[NUM_DIG_DISPLAY_SPRITES];
@@ -1840,7 +1839,7 @@ static u8 GetBiasSymbol(u8 machineBias)
 {
     u8 i;
 
-    for (i = 0; i < 8; i++)
+    for (i = 0; i < 7; i++)
     {
         if (machineBias & 1)
             return sBiasSymbols[i];
@@ -1898,13 +1897,6 @@ static u8 TrySelectBias_Regular(void)
             value += 10;
             if (value > 0x100)
                 value = 0x100;
-        }
-        // Reduce odds of BIAS_REPLAY if it's a lucky game
-        else if (whichBias == 4 && sSlotMachine->luckyGame == TRUE)
-        {
-            value -= 10;
-            if (value < 0)
-                value = 0;
         }
         if (value > rval)
             break;
@@ -2085,10 +2077,12 @@ static u8 GetMatchFromSymbols(u8 sym1, u8 sym2, u8 sym3)
 {
     if (sym1 == sym2 && sym1 == sym3)
         return sSymbolToMatch[sym1];
-    if (sym1 == SYMBOL_7_RED && sym2 == SYMBOL_7_RED && sym3 == SYMBOL_7_BLUE)
+    if ((sym1 == SYMBOL_7_RED || sym1 == SYMBOL_7_BLUE)
+     && (sym2 == SYMBOL_7_RED || sym2 == SYMBOL_7_BLUE)
+     && (sym3 == SYMBOL_7_RED || sym3 == SYMBOL_7_BLUE))
         return MATCH_MIXED_7;
-    if (sym1 == SYMBOL_7_BLUE && sym2 == SYMBOL_7_BLUE && sym3 == SYMBOL_7_RED)
-        return MATCH_MIXED_7;
+    if (sym1 == SYMBOL_CHERRY && sym2 == SYMBOL_CHERRY)
+        return MATCH_TOPBOT_CHERRY;
     if (sym1 == SYMBOL_CHERRY)
         return MATCH_CHERRY;
     return MATCH_NONE;
@@ -2315,13 +2309,7 @@ static bool8 ReelTask_DecideStop(struct Task *task)
     sSlotMachine->reelExtraTurns[task->tReelId] = 0;
 
     if (sSlotMachine->reelTimeSpinsLeft == 0)
-    {
-        if (sSlotMachine->machineBias == 0 || !sSlotMachine->didNotFailBias || !sDecideStop_Bias[task->tReelId]())
-        {
-            sSlotMachine->didNotFailBias = FALSE;
-            sDecideStop_NoBias[task->tReelId]();
-        }
-    }
+        sDecideStop_Bias[task->tReelId]();
     task->tExtraTurns = sSlotMachine->reelExtraTurns[task->tReelId];
     return TRUE;
 }
@@ -2472,7 +2460,7 @@ static bool8 DecideStop_Bias_Reel1_Bet2or3(u8 sym1, u8 sym2)
 {
     s16 i;
     bool8 cherry7Bias = BiasedTowardCherryOr7s();
-    if (cherry7Bias || !AreCherriesOnScreen_Reel1(0))
+    if (cherry7Bias)
     {
         // Check the current screen
         for (i = 1; i <= 3; i++)
@@ -2489,18 +2477,17 @@ static bool8 DecideStop_Bias_Reel1_Bet2or3(u8 sym1, u8 sym2)
     // Check the next 4 turns
     for (i = 1; i <= MAX_EXTRA_TURNS; i++)
     {
-        bool8 cherry7BiasCopy = cherry7Bias; // redundant
-        if (cherry7BiasCopy || !AreCherriesOnScreen_Reel1(i))
+        if (cherry7Bias)
         {
             if (EitherSymbolAtPos_Reel1(1 - i, sym1, sym2))
             {
-                if (i == 1 && (cherry7BiasCopy || !AreCherriesOnScreen_Reel1(3)))
+                if (i == 1 && (cherry7Bias))
                 {
                     sSlotMachine->winnerRows[0] = 3;
                     sSlotMachine->reelExtraTurns[0] = 3;
                     return TRUE;
                 }
-                if (i <= 3 && (cherry7BiasCopy || !AreCherriesOnScreen_Reel1(i + 1)))
+                if (i <= 3 && (cherry7Bias))
                 {
                     sSlotMachine->winnerRows[0] = 2;
                     sSlotMachine->reelExtraTurns[0] = i + 1;
@@ -5241,12 +5228,12 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_LOTAD,
         SYMBOL_CHERRY,
         SYMBOL_POWER,
-        SYMBOL_REPLAY,
+        SYMBOL_LOTAD,
         SYMBOL_AZURILL,
         SYMBOL_7_RED,
         SYMBOL_POWER,
         SYMBOL_LOTAD,
-        SYMBOL_REPLAY,
+        SYMBOL_POWER,
         SYMBOL_AZURILL,
         SYMBOL_7_BLUE,
         SYMBOL_POWER,
@@ -5256,7 +5243,7 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
     [MIDDLE_REEL] = {
         SYMBOL_7_RED,
         SYMBOL_CHERRY,
-        SYMBOL_REPLAY,
+        SYMBOL_POWER,
         SYMBOL_LOTAD,
         SYMBOL_AZURILL,
         SYMBOL_CHERRY,
@@ -5270,28 +5257,28 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_CHERRY,
         SYMBOL_AZURILL,
         SYMBOL_LOTAD,
-        SYMBOL_REPLAY,
+        SYMBOL_POWER,
         SYMBOL_CHERRY,
         SYMBOL_LOTAD,
-        SYMBOL_REPLAY,
+        SYMBOL_AZURILL,
         SYMBOL_CHERRY
     },
     [RIGHT_REEL] = {
         SYMBOL_7_RED,
         SYMBOL_POWER,
         SYMBOL_7_BLUE,
-        SYMBOL_REPLAY,
+        SYMBOL_CHERRY,
         SYMBOL_LOTAD,
         SYMBOL_AZURILL,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
         SYMBOL_POWER,
         SYMBOL_AZURILL,
-        SYMBOL_REPLAY,
+        SYMBOL_CHERRY,
         SYMBOL_LOTAD,
         SYMBOL_AZURILL,
         SYMBOL_POWER,
-        SYMBOL_REPLAY,
+        SYMBOL_CHERRY,
         SYMBOL_LOTAD,
         SYMBOL_AZURILL,
         SYMBOL_POWER,
@@ -5315,11 +5302,11 @@ static const s16 sInitialReelPositions[NUM_REELS][2] = {
 
 static const u8 sSpecialDrawOdds[NUM_SLOT_MACHINE_IDS][MAX_BET] = {
     [SLOT_MACHINE_UNLUCKIEST] = {1, 1, 12},
-    [SLOT_MACHINE_UNLUCKIER]  = {1, 1, 14},
-    [SLOT_MACHINE_UNLUCKY]    = {2, 2, 14},
-    [SLOT_MACHINE_LUCKY]      = {2, 2, 14},
-    [SLOT_MACHINE_LUCKIER]    = {2, 3, 16},
-    [SLOT_MACHINE_LUCKIEST]   = {3, 3, 16}
+    [SLOT_MACHINE_UNLUCKIER]  = {2, 2, 16},
+    [SLOT_MACHINE_UNLUCKY]    = {4, 4, 32},
+    [SLOT_MACHINE_LUCKY]      = {8, 8, 64},
+    [SLOT_MACHINE_LUCKIER]    = {16, 16, 96},
+    [SLOT_MACHINE_LUCKIEST]   = {32, 32, 128}
 };
 
 static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
@@ -5346,8 +5333,8 @@ static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
         [SLOT_MACHINE_UNLUCKY]    = 30,
-        [SLOT_MACHINE_LUCKY]      = 25,
-        [SLOT_MACHINE_LUCKIER]    = 25,
+        [SLOT_MACHINE_LUCKY]      = 30,
+        [SLOT_MACHINE_LUCKIER]    = 30,
         [SLOT_MACHINE_LUCKIEST]   = 30
     }
 };
@@ -5358,18 +5345,18 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_UNLUCKIEST] = 20,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
         [SLOT_MACHINE_UNLUCKY]    = 25,
-        [SLOT_MACHINE_LUCKY]      = 20,
+        [SLOT_MACHINE_LUCKY]      = 25,
         [SLOT_MACHINE_LUCKIER]    = 25,
         [SLOT_MACHINE_LUCKIEST]   = 25
     },
     {
         // Probabilities for BIAS_AZURILL
-        [SLOT_MACHINE_UNLUCKIEST] = 12,
+        [SLOT_MACHINE_UNLUCKIEST] = 15,
         [SLOT_MACHINE_UNLUCKIER]  = 15,
         [SLOT_MACHINE_UNLUCKY]    = 15,
-        [SLOT_MACHINE_LUCKY]      = 18,
-        [SLOT_MACHINE_LUCKIER]    = 19,
-        [SLOT_MACHINE_LUCKIEST]   = 22
+        [SLOT_MACHINE_LUCKY]      = 20,
+        [SLOT_MACHINE_LUCKIER]    = 20,
+        [SLOT_MACHINE_LUCKIEST]   = 25
     },
     {
         // Probabilities for BIAS_LOTAD
@@ -5388,15 +5375,6 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKY]      = 20,
         [SLOT_MACHINE_LUCKIER]    = 15,
         [SLOT_MACHINE_LUCKIEST]   = 15
-    },
-    {
-        // Probabilities for BIAS_REPLAY
-        [SLOT_MACHINE_UNLUCKIEST] = 40,
-        [SLOT_MACHINE_UNLUCKIER]  = 40,
-        [SLOT_MACHINE_UNLUCKY]    = 35,
-        [SLOT_MACHINE_LUCKY]      = 35,
-        [SLOT_MACHINE_LUCKIER]    = 40,
-        [SLOT_MACHINE_LUCKIEST]   = 40
     }
 };
 
@@ -5468,7 +5446,6 @@ static const u16 sQuarterSpeed_ProbabilityBoost[] = {
 };
 
 static const u8 sBiasSymbols[] = {
-  SYMBOL_REPLAY,  // BIAS_REPLAY
   SYMBOL_CHERRY,  // BIAS_CHERRY
   SYMBOL_LOTAD,   // BIAS_LOTAD
   SYMBOL_AZURILL, // BIAS_AZURILL
@@ -5483,7 +5460,7 @@ static const u16 sBiasesSpecial[] = {
 };
 
 static const u16 sBiasesRegular[] = {
-    BIAS_POWER, BIAS_AZURILL, BIAS_LOTAD, BIAS_CHERRY, BIAS_REPLAY
+    BIAS_POWER, BIAS_AZURILL, BIAS_LOTAD, BIAS_CHERRY
 };
 
 static const u8 sSymbolToMatch[] = {
@@ -5491,7 +5468,7 @@ static const u8 sSymbolToMatch[] = {
     [SYMBOL_7_BLUE]  = MATCH_BLUE_7,
     [SYMBOL_AZURILL] = MATCH_AZURILL,
     [SYMBOL_LOTAD]   = MATCH_LOTAD,
-    [SYMBOL_CHERRY]  = MATCH_CHERRY,
+    [SYMBOL_CHERRY]  = MATCH_TOPBOT_CHERRY,
     [SYMBOL_POWER]   = MATCH_POWER,
     [SYMBOL_REPLAY]  = MATCH_REPLAY
 };
@@ -5509,15 +5486,15 @@ static const u16 sSlotMatchFlags[] = {
 };
 
 static const u16 sSlotPayouts[] = {
-    [MATCH_CHERRY]        = 2,
-    [MATCH_TOPBOT_CHERRY] = 4,
-    [MATCH_REPLAY]        = 0,
-    [MATCH_LOTAD]         = 6,
-    [MATCH_AZURILL]       = 12,
-    [MATCH_POWER]         = 3,
-    [MATCH_MIXED_7]       = 90,
-    [MATCH_RED_7]         = 300,
-    [MATCH_BLUE_7]        = 300
+    [MATCH_CHERRY]        = 3,
+    [MATCH_TOPBOT_CHERRY] = 6,
+    [MATCH_REPLAY]        = 1,
+    [MATCH_LOTAD]         = 60,
+    [MATCH_AZURILL]       = 120,
+    [MATCH_POWER]         = 10,
+    [MATCH_MIXED_7]       = 1000,
+    [MATCH_RED_7]         = 3000,
+    [MATCH_BLUE_7]        = 3000
 };
 
 static const s16 sDigitalDisplay_SpriteCoords[][2] = {

@@ -9,14 +9,15 @@
 #include "overworld.h"
 #include "pokemon_storage_system.h"
 #include "field_screen_effect.h"
+#include "constants/rgb.h"
 
 extern const u8 gText_Peekaboo[];
 
 static void CB2_HandleGivenWaldaPhrase(void);
 static u32 GetWaldaPhraseInputCase(u8 *);
 static bool32 TryCalculateWallpaper(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
+static bool32 TryCalculateWallpaperSimple(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
 static void SetWallpaperDataFromLetter(u8 *, u8 *, u32, u32, u32);
-static u32 GetWallpaperDataBits(u8 *, u32, u32);
 static void RotateWallpaperDataLeft(u8 *, s32, s32);
 static void MaskWallpaperData(u8 *, u32, u8);
 
@@ -29,6 +30,21 @@ static const u8 sWaldaLettersTable[1 << BITS_PER_LETTER] =
 {
     CHAR_B, CHAR_C, CHAR_D, CHAR_F, CHAR_G, CHAR_H, CHAR_J, CHAR_K, CHAR_L, CHAR_M, CHAR_N, CHAR_P, CHAR_Q, CHAR_R, CHAR_S, CHAR_T, CHAR_V, CHAR_W, CHAR_Z,
     CHAR_b, CHAR_c, CHAR_d, CHAR_f, CHAR_g, CHAR_h, CHAR_j, CHAR_k,         CHAR_m, CHAR_n, CHAR_p, CHAR_q,         CHAR_s
+};
+
+static const u8 sWaldaLettersTable2[1 << BITS_PER_LETTER] =
+{
+    CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9, CHAR_PERIOD, CHAR_COMMA,
+    CHAR_A, CHAR_E, CHAR_I,         CHAR_O,                 CHAR_U,                 CHAR_X, CHAR_Y,
+    CHAR_a, CHAR_e, CHAR_i, CHAR_l, CHAR_o, CHAR_r, CHAR_t, CHAR_u, CHAR_v, CHAR_w, CHAR_x, CHAR_y, CHAR_z
+};
+
+#define SYMBOL_COUNT 12
+static const u8 sWaldaLettersTable3[SYMBOL_COUNT] =
+{
+    CHAR_SPACE,
+    CHAR_EXCL_MARK, CHAR_QUESTION_MARK,  CHAR_MALE,            CHAR_FEMALE,         CHAR_SLASH,          CHAR_HYPHEN,
+    CHAR_ELLIPSIS,  CHAR_DBL_QUOTE_LEFT, CHAR_DBL_QUOTE_RIGHT, CHAR_SGL_QUOTE_LEFT, CHAR_SGL_QUOTE_RIGHT
 };
 
 enum
@@ -98,7 +114,7 @@ u16 TryGetWallpaperWithWaldaPhrase(void)
     u16 backgroundClr, foregroundClr;
     u8 patternId, iconId;
     u16 trainerId = GetTrainerId(gSaveBlock2Ptr->playerTrainerId);
-    gSpecialVar_Result = TryCalculateWallpaper(&backgroundClr, &foregroundClr, &iconId, &patternId, trainerId, GetWaldaPhrasePtr());
+    gSpecialVar_Result = TryCalculateWallpaperSimple(&backgroundClr, &foregroundClr, &iconId, &patternId, trainerId, GetWaldaPhrasePtr());
 
     if (gSpecialVar_Result)
     {
@@ -117,11 +133,89 @@ static u8 GetLetterTableId(u8 letter)
 
     for (i = 0; i < ARRAY_COUNT(sWaldaLettersTable); i++)
     {
-        if (sWaldaLettersTable[i] == letter)
+        if (sWaldaLettersTable[i] == letter || sWaldaLettersTable2[i] == letter)
             return i;
+
+        if (i < SYMBOL_COUNT)
+        {
+            if (sWaldaLettersTable3[i] == letter)
+                return i;
+        }
     }
 
     return ARRAY_COUNT(sWaldaLettersTable);
+}
+
+static const u8 sWaldaNumbers[10] =
+{
+    CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9
+};
+
+#define HEX_LETTERS 6
+static const u8 sWaldaHexUppercase[HEX_LETTERS] =
+{
+    CHAR_A, CHAR_B, CHAR_C, CHAR_D, CHAR_E, CHAR_F
+};
+
+static const u8 sWaldaHexLowercase[HEX_LETTERS] =
+{
+    CHAR_a, CHAR_b, CHAR_c, CHAR_d, CHAR_e, CHAR_f
+};
+
+static u8 GetLetterSimpleId(u8 letter)
+{
+    s8 i;
+
+    for (i = 0; i < ARRAY_COUNT(sWaldaNumbers); i++)
+    {
+        if (sWaldaNumbers[i] == letter)
+            return letter - CHAR_0;
+    }
+
+    for (i = 0; i < HEX_LETTERS; i++)
+    {
+        if (sWaldaHexUppercase[i] == letter)
+            return letter - 0xB1;
+        else if (sWaldaHexLowercase[i] == letter)
+            return letter - 0xCB;
+    }
+
+    return ARRAY_COUNT(sWaldaNumbers) + HEX_LETTERS;
+}
+
+static u8 RGBToHexColor(u8 hex1, u8 hex2)
+{
+    return (16 * hex1) + hex2;
+}
+
+static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, u8 *phrase)
+{
+    s8 i;
+    u8 charsByTableId[WALDA_PHRASE_LENGTH];
+    bool8 useSimple = TRUE;
+
+    // Reject any phrase that does not use the full length
+    if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
+        return FALSE;
+
+    for (i = 0; i < WALDA_PHRASE_LENGTH; i++)
+    {
+        charsByTableId[i] = GetLetterSimpleId(phrase[i]);
+        if (charsByTableId[i] == ARRAY_COUNT(sWaldaNumbers) + HEX_LETTERS){
+            useSimple = FALSE;
+            break;
+        }
+    }
+
+    if (useSimple == FALSE)
+        return TryCalculateWallpaper(backgroundClr, foregroundClr, iconId, patternId, trainerId, phrase);
+
+    *backgroundClr = RGB2GBA(RGBToHexColor(charsByTableId[0], charsByTableId[1]), RGBToHexColor(charsByTableId[2], charsByTableId[3]), RGBToHexColor(charsByTableId[4], charsByTableId[5]));
+    *foregroundClr = RGB2GBA(RGBToHexColor(charsByTableId[6], charsByTableId[7]), RGBToHexColor(charsByTableId[8], charsByTableId[9]), RGBToHexColor(charsByTableId[10], charsByTableId[11]));
+    *patternId = charsByTableId[12];
+    *iconId = charsByTableId[13] + charsByTableId[14];
+
+    return TRUE;
 }
 
 // Attempts to generate a wallpaper based on the given trainer id and phrase.
@@ -140,6 +234,7 @@ static u8 GetLetterTableId(u8 letter)
 #define KEY          data[8]
 #define NUM_WALLPAPER_DATA_BYTES 9
 #define TO_BIT_OFFSET(i)  (3 + (8 * (i))) // Convert a position in the phrase to a bit number into the wallpaper data array
+
 static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, u8 *phrase)
 {
     s32 i;
@@ -151,7 +246,7 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
         return FALSE;
 
-    // Reject any phrase that uses characters not in sWaldaLettersTable
+    // Reject any phrase that uses characters not in sWaldaLettersTable, sWaldaLettersTable2, or sWaldaLettersTable3
     for (i = 0; i < WALDA_PHRASE_LENGTH; i++)
     {
         charsByTableId[i] = GetLetterTableId(phrase[i]);
@@ -169,21 +264,10 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     // Do first 2 bits of the last letter
     SetWallpaperDataFromLetter(data, charsByTableId, BITS_PER_LETTER * (WALDA_PHRASE_LENGTH - 1), TO_BIT_OFFSET(WALDA_PHRASE_LENGTH - 1), 2);
 
-    // Check the first 3 bits of the data array against the remaining 3 bits of the last letter
-    // Reject the phrase if they are not already the same
-    if (GetWallpaperDataBits(data, 0, 3) != GetWallpaperDataBits(charsByTableId, TO_BIT_OFFSET(WALDA_PHRASE_LENGTH - 1) + 2, 3))
-        return FALSE;
-
     // Perform some relatively arbitrary changes to the wallpaper data using the last byte (KEY)
     RotateWallpaperDataLeft(data, NUM_WALLPAPER_DATA_BYTES,     21);
     RotateWallpaperDataLeft(data, NUM_WALLPAPER_DATA_BYTES - 1, KEY & 0xF);
     MaskWallpaperData(data, NUM_WALLPAPER_DATA_BYTES - 1, KEY >> 4);
-
-    // Reject the results of any phrase that are 'incompatible' with the player's trainer id
-    if (TID_CHECK_HI != (BG_COLOR_LO ^ FG_COLOR_LO ^ ICON_ID ^ (trainerId >> 8)))
-        return FALSE;
-    if (TID_CHECK_LO != (BG_COLOR_HI ^ FG_COLOR_HI ^ PATTERN_ID ^ (trainerId & 0xFF)))
-        return FALSE;
 
     // Successful phrase, save resulting wallpaper
     ptr = (u16 *) &BG_COLOR_LO;
@@ -262,17 +346,4 @@ static void SetWallpaperDataFromLetter(u8 *data, u8 *letterTableIds, u32 setOffs
         else
             ClearWallpaperDataBit(data, setOffset + i);
     }
-}
-
-static u32 GetWallpaperDataBits(u8 *data, u32 offset, u32 numBits)
-{
-    u32 bits, i;
-
-    for (bits = 0, i = 0; i < numBits; i++)
-    {
-        bits <<= 1;
-        bits |= GetWallpaperDataBit(data, offset + i);
-    }
-
-    return bits;
 }

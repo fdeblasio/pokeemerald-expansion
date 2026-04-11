@@ -980,9 +980,9 @@ u8 GetBattleOutcome(void)
 void CableCarWarp(void)
 {
     if (gSpecialVar_0x8004 != 0)
-        SetWarpDestination(MAP_GROUP(MAP_ROUTE112_CABLE_CAR_STATION), MAP_NUM(MAP_ROUTE112_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
+        SetWarpDestination(MAP_GROUP_AND_NUM(MAP_ROUTE112_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
     else
-        SetWarpDestination(MAP_GROUP(MAP_MT_CHIMNEY_CABLE_CAR_STATION), MAP_NUM(MAP_MT_CHIMNEY_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
+        SetWarpDestination(MAP_GROUP_AND_NUM(MAP_MT_CHIMNEY_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
 }
 
 void SetHiddenItemFlag(void)
@@ -1526,7 +1526,7 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateRandomMon(&gParties[B_TRAINER_PLAYER][0], SPECIES_ZIGZAGOON, 7);
+    CreateRandomMon(&gParties[B_TRAINER_PLAYER][0], SPECIES_NORMAN_LEND, 7);
     monData = TRUE;
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_ABILITY_NUM, &monData);
     monData = MOVE_TACKLE;
@@ -1535,6 +1535,8 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE2, &monData);
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE3, &monData);
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE4, &monData);
+    monData = ITEM_ULTRA_BALL;
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_POKEBALL, &monData);
 }
 
 bool8 IsStarterInParty(void)
@@ -2393,27 +2395,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 6;
-        task->tLeft = 14;
-        task->tTop = 1;
-        task->tWidth = 15;
-        task->tHeight = 12;
-        task->tKeepOpenAfterSelect = FALSE;
-        task->tTaskId = taskId;
-        break;
-    case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
-        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 7;
-        task->tLeft = 14;
-        task->tTop = 1;
-        task->tWidth = 15;
-        task->tHeight = 12;
-        task->tKeepOpenAfterSelect = FALSE;
-        task->tTaskId = taskId;
-        break;
-    case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
-        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 10;
+        task->tNumItems = 9;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2444,7 +2426,7 @@ void ShowScrollableMultichoice(void)
     case SCROLL_MULTI_BF_MOVE_TUTOR_1:
     case SCROLL_MULTI_BF_MOVE_TUTOR_2:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 11;
+        task->tNumItems = 10;
         task->tLeft = 15;
         task->tTop = 1;
         task->tWidth = 14;
@@ -2514,8 +2496,13 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("Red Flute"),
         COMPOUND_STRING("White Flute"),
         COMPOUND_STRING("Black Flute"),
-        COMPOUND_STRING("Pretty Chair"),
-        COMPOUND_STRING("Pretty Desk"),
+        //gItemsInfo[ITEM_BLUE_FLUTE].name,
+        //gItemsInfo[ITEM_YELLOW_FLUTE].name,
+        //gItemsInfo[ITEM_RED_FLUTE].name,
+        //gItemsInfo[ITEM_WHITE_FLUTE].name,
+        //gItemsInfo[ITEM_BLACK_FLUTE].name,
+        gDecorations[DECOR_PRETTY_CHAIR].name,
+        gDecorations[DECOR_PRETTY_DESK].name,
         gText_Exit
     },
     [SCROLL_MULTI_POKEMON_FAN_CLUB_RATER] =
@@ -2535,48 +2522,28 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1] =
     {
-        COMPOUND_STRING("Kiss Poster{CLEAR_TO 94}16BP"),
-        COMPOUND_STRING("Kiss Cushion{CLEAR_TO 94}32BP"),
-        COMPOUND_STRING("Smoochum Doll{CLEAR_TO 94}32BP"),
-        COMPOUND_STRING("Togepi Doll{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Meowth Doll{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Clefairy Doll{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Ditto Doll{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Cyndaquil Doll{CLEAR_TO 94}80BP"),
-        COMPOUND_STRING("Chikorita Doll{CLEAR_TO 94}80BP"),
-        COMPOUND_STRING("Totodile Doll{CLEAR_TO 94}80BP"),
+        COMPOUND_STRING("Kiss Poster{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Kiss Cushion{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Smoochum Doll{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Togepi Doll{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Meowth Doll{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Clefairy Doll{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Ditto Doll{CLEAR_TO 94}1BP"),
+        COMPOUND_STRING("Cyndaquil Doll{CLEAR_TO 94}2BP"),
+        COMPOUND_STRING("Chikorita Doll{CLEAR_TO 94}2BP"),
+        COMPOUND_STRING("Totodile Doll{CLEAR_TO 94}2BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =
     {
-        COMPOUND_STRING("Lapras Doll{CLEAR_TO 88}128BP"),
-        COMPOUND_STRING("Snorlax Doll{CLEAR_TO 88}128BP"),
-        COMPOUND_STRING("Venusaur Doll{CLEAR_TO 88}256BP"),
-        COMPOUND_STRING("Charizard Doll{CLEAR_TO 88}256BP"),
-        COMPOUND_STRING("Blastoise Doll{CLEAR_TO 88}256BP"),
-        gText_Exit
-    },
-    [SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR] =
-    {
-        COMPOUND_STRING("Protein{CLEAR_TO 100}1BP"),
-        COMPOUND_STRING("Calcium{CLEAR_TO 100}1BP"),
-        COMPOUND_STRING("Iron{CLEAR_TO 100}1BP"),
-        COMPOUND_STRING("Zinc{CLEAR_TO 100}1BP"),
-        COMPOUND_STRING("Carbos{CLEAR_TO 100}1BP"),
-        COMPOUND_STRING("HP Up{CLEAR_TO 100}1BP"),
-        gText_Exit
-    },
-    [SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR] =
-    {
-        COMPOUND_STRING("Leftovers{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("White Herb{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Quick Claw{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Mental Herb{CLEAR_TO 94}48BP"),
-        COMPOUND_STRING("Bright Powder{CLEAR_TO 94}64BP"),
-        COMPOUND_STRING("Choice Band{CLEAR_TO 94}64BP"),
-        COMPOUND_STRING("King's Rock{CLEAR_TO 94}64BP"),
-        COMPOUND_STRING("Focus Band{CLEAR_TO 94}64BP"),
-        COMPOUND_STRING("Scope Lens{CLEAR_TO 94}64BP"),
+        COMPOUND_STRING("Lapras Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Snorlax Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Venusaur Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Charizard Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Blastoise Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Regirock Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Regice Doll{CLEAR_TO 88}4BP"),
+        COMPOUND_STRING("Registeel Doll{CLEAR_TO 88}4BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BERRY_POWDER_VENDOR] =
@@ -2585,12 +2552,12 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("Energy Root{CLEAR_TO 114}{FONT_SMALL}80"),
         COMPOUND_STRING("Heal Powder{CLEAR_TO 114}{FONT_SMALL}50"),
         COMPOUND_STRING("Revival Herb{CLEAR_TO 108}{FONT_SMALL}300"),
+        COMPOUND_STRING("HP Up{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("Protein{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("Iron{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("Carbos{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("Calcium{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("Zinc{CLEAR_TO 99}{FONT_SMALL}1,000"),
-        COMPOUND_STRING("HP Up{CLEAR_TO 99}{FONT_SMALL}1,000"),
         COMPOUND_STRING("PP Up{CLEAR_TO 99}{FONT_SMALL}3,000"),
         gText_Exit
     },
@@ -2609,30 +2576,22 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_1] =
     {
-        COMPOUND_STRING("Soft-Boiled{CLEAR_TO 78}16BP"),
-        COMPOUND_STRING("Seismic Toss{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Dream Eater{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Mega Punch{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Mega Kick{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Body Slam{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Rock Slide{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Counter{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Thunder Wave{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Swords Dance{CLEAR_TO 78}48BP"),
+        COMPOUND_STRING("Mega Punch{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Mega Kick{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Endure{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Mud-Slap{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Stored Power{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Imprison{CLEAR_TO 100}1BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_2] =
     {
-        COMPOUND_STRING("Defense Curl{CLEAR_TO 78}16BP"),
-        COMPOUND_STRING("Snore{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Mud-Slap{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Swift{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Icy Wind{CLEAR_TO 78}24BP"),
-        COMPOUND_STRING("Endure{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Psych Up{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Ice Punch{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Thunder Punch{CLEAR_TO 78}48BP"),
-        COMPOUND_STRING("Fire Punch{CLEAR_TO 78}48BP"),
+        COMPOUND_STRING("Low Kick{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Low Sweep{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Defense Curl{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Rock Blast{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Scary Face{CLEAR_TO 100}1BP"),
+        COMPOUND_STRING("Take Down{CLEAR_TO 100}1BP"),
         gText_Exit
     },
     [SCROLL_MULTI_SS_TIDAL_DESTINATION] =
@@ -3155,8 +3114,6 @@ static void HideFrontierExchangeCornerItemIcon(enum ScrollMulti menu, u16 unused
         {
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1:
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
             // This makes sure deleting the icon will not clear palettes in use by object events
             FieldEffectFreeGraphicsResources(&gSprites[sScrollableMultichoice_ItemSpriteId]);
             break;
@@ -3265,8 +3222,6 @@ static const u8 sDeoxysRockCoords[DEOXYS_ROCK_LEVELS][2] = {
 
 static void Task_DeoxysRockInteraction(u8 taskId)
 {
-    static const u8 sStoneMaxStepCounts[DEOXYS_ROCK_LEVELS - 1] = { 4, 8, 8, 8, 4, 4, 4, 6, 3, 3 };
-
     if (FlagGet(FLAG_DEOXYS_ROCK_COMPLETE) == TRUE)
     {
         gSpecialVar_Result = DEOXYS_ROCK_COMPLETE;
@@ -3276,18 +3231,10 @@ static void Task_DeoxysRockInteraction(u8 taskId)
     else
     {
         u16 rockLevel = VarGet(VAR_DEOXYS_ROCK_LEVEL);
-        u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
 
         VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
-        if (rockLevel != 0 && sStoneMaxStepCounts[rockLevel - 1] < stepCount)
-        {
-            // Player failed to take the shortest path to the stone, so it resets.
-            ChangeDeoxysRockLevel(0);
-            VarSet(VAR_DEOXYS_ROCK_LEVEL, 0);
-            gSpecialVar_Result = DEOXYS_ROCK_FAILED;
-            DestroyTask(taskId);
-        }
-        else if (rockLevel == DEOXYS_ROCK_LEVELS - 1)
+
+        if (rockLevel == DEOXYS_ROCK_LEVELS - 1)
         {
             FlagSet(FLAG_DEOXYS_ROCK_COMPLETE);
             gSpecialVar_Result = DEOXYS_ROCK_SOLVED;
@@ -3570,18 +3517,18 @@ u32 GetMartEmployeeObjectEventId(void)
 {
     static const u8 sPokeMarts[][3] =
     {
-        { MAP_GROUP(MAP_OLDALE_TOWN_MART),     MAP_NUM(MAP_OLDALE_TOWN_MART),     LOCALID_OLDALE_MART_CLERK },
-        { MAP_GROUP(MAP_LAVARIDGE_TOWN_MART),  MAP_NUM(MAP_LAVARIDGE_TOWN_MART),  LOCALID_LAVARIDGE_MART_CLERK },
-        { MAP_GROUP(MAP_FALLARBOR_TOWN_MART),  MAP_NUM(MAP_FALLARBOR_TOWN_MART),  LOCALID_FALLARBOR_MART_CLERK },
-        { MAP_GROUP(MAP_VERDANTURF_TOWN_MART), MAP_NUM(MAP_VERDANTURF_TOWN_MART), LOCALID_VERDANTURF_MART_CLERK },
-        { MAP_GROUP(MAP_PETALBURG_CITY_MART),  MAP_NUM(MAP_PETALBURG_CITY_MART),  LOCALID_PETALBURG_MART_CLERK },
-        { MAP_GROUP(MAP_SLATEPORT_CITY_MART),  MAP_NUM(MAP_SLATEPORT_CITY_MART),  LOCALID_SLATEPORT_MART_CLERK },
-        { MAP_GROUP(MAP_MAUVILLE_CITY_MART),   MAP_NUM(MAP_MAUVILLE_CITY_MART),   LOCALID_MAUVILLE_MART_CLERK },
-        { MAP_GROUP(MAP_RUSTBORO_CITY_MART),   MAP_NUM(MAP_RUSTBORO_CITY_MART),   LOCALID_RUSTBORO_MART_CLERK },
-        { MAP_GROUP(MAP_FORTREE_CITY_MART),    MAP_NUM(MAP_FORTREE_CITY_MART),    LOCALID_FORTREE_MART_CLERK },
-        { MAP_GROUP(MAP_MOSSDEEP_CITY_MART),   MAP_NUM(MAP_MOSSDEEP_CITY_MART),   LOCALID_MOSSDEEP_MART_CLERK },
-        { MAP_GROUP(MAP_SOOTOPOLIS_CITY_MART), MAP_NUM(MAP_SOOTOPOLIS_CITY_MART), LOCALID_SOOTOPOLIS_MART_CLERK },
-        { MAP_GROUP(MAP_BATTLE_FRONTIER_MART), MAP_NUM(MAP_BATTLE_FRONTIER_MART), LOCALID_FRONTIER_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_OLDALE_TOWN_MART),     LOCALID_OLDALE_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_LAVARIDGE_TOWN_MART),  LOCALID_LAVARIDGE_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_FALLARBOR_TOWN_MART),  LOCALID_FALLARBOR_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_VERDANTURF_TOWN_MART), LOCALID_VERDANTURF_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_PETALBURG_CITY_MART),  LOCALID_PETALBURG_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_SLATEPORT_CITY_MART),  LOCALID_SLATEPORT_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_MAUVILLE_CITY_MART),   LOCALID_MAUVILLE_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_RUSTBORO_CITY_MART),   LOCALID_RUSTBORO_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_FORTREE_CITY_MART),    LOCALID_FORTREE_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_MOSSDEEP_CITY_MART),   LOCALID_MOSSDEEP_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_SOOTOPOLIS_CITY_MART), LOCALID_SOOTOPOLIS_MART_CLERK },
+        { MAP_GROUP_AND_NUM(MAP_BATTLE_FRONTIER_MART), LOCALID_FRONTIER_MART_CLERK }
     };
 
     u8 i;
@@ -3978,32 +3925,24 @@ void UpdateTrainerFanClubGameClear(void)
     }
 }
 
-// If the player has < 3 fans, gain a new fan whenever the counter reaches 20+
-// Defeating Drake or participating in a Contest increments the counter by 2
-// Participating at Battle Tower or in a Secret Base battle increments the counter by 1
+// Gain a new fan whenever the counter reaches 10+
+// Defeating Drake, participating in a Contest, participating at Battle Tower, or in a Secret Base battle increments the counter by 1
 u8 TryGainNewFanFromCounter(u8 incrementId)
 {
     static const u8 sCounterIncrements[] =
     {
-        [FANCOUNTER_DEFEATED_DRAKE]    = 2,
+        [FANCOUNTER_DEFEATED_DRAKE]    = 1,
         [FANCOUNTER_BATTLED_AT_BASE]   = 1,
-        [FANCOUNTER_FINISHED_CONTEST]  = 2,
+        [FANCOUNTER_FINISHED_CONTEST]  = 1,
         [FANCOUNTER_USED_BATTLE_TOWER] = 1
     };
 
     if (VarGet(VAR_LILYCOVE_FAN_CLUB_STATE) == 2)
     {
-        if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 19)
+        if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 9)
         {
-            if (GetNumFansOfPlayerInTrainerFanClub() < 3)
-            {
-                PlayerGainRandomTrainerFan();
-                CLEAR_TRAINER_FAN_CLUB_COUNTER;
-            }
-            else
-            {
-                SET_TRAINER_FAN_CLUB_COUNTER(20);
-            }
+            PlayerGainRandomTrainerFan();
+            CLEAR_TRAINER_FAN_CLUB_COUNTER;
         }
         else
         {

@@ -191,38 +191,32 @@ static const u8 sText_Jackpot[] = _("jackpot");
 static const struct {
     enum Species species;
     u16 moves[MAX_MON_MOVES];
-    u8 level;
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
-        .level = 3,
+        .species = SPECIES_TOGEPI,
+        .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
         .location = MAP_NUM(MAP_ROUTE102)
     },
     {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15,
-        .location = MAP_NUM(MAP_ROUTE114),
+        .species = SPECIES_ELEKID,
+        .moves = {MOVE_CROSS_CHOP, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ELECTRIC_TERRAIN},
+        .location = MAP_NUM(MAP_ROUTE110),
     },
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13,
-        .location = MAP_NUM(MAP_ROUTE117),
+        .species = SPECIES_MAGBY,
+        .moves = {MOVE_MACH_PUNCH, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY},
+        .location = MAP_NUM(MAP_ROUTE113),
     },
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25,
-        .location = MAP_NUM(MAP_ROUTE120),
+        .species = SPECIES_SANDILE,
+        .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
+        .location = MAP_NUM(MAP_ROUTE111),
     },
     {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
-        .level = 8,
-        .location = MAP_NUM(MAP_ROUTE116),
+        .species = SPECIES_TANGELA,
+        .moves = {MOVE_NATURE_POWER, MOVE_CONFUSION, MOVE_LEECH_SEED, MOVE_AMNESIA},
+        .location = MAP_NUM(MAP_ROUTE123),
     }
 };
 
@@ -1556,13 +1550,15 @@ void StartMassOutbreak(void)
     gSaveBlock1Ptr->outbreakLocationMapNum = show->massOutbreak.locationMapNum;
     gSaveBlock1Ptr->outbreakLocationMapGroup = show->massOutbreak.locationMapGroup;
     gSaveBlock1Ptr->outbreakPokemonLevel = show->massOutbreak.level;
+#if IS_FRLG == FALSE
     gSaveBlock1Ptr->outbreakUnused1 = show->massOutbreak.unused1;
     gSaveBlock1Ptr->outbreakUnused2 = show->massOutbreak.unused2;
+    gSaveBlock1Ptr->outbreakUnused3 = show->massOutbreak.unused3;
+#endif
     gSaveBlock1Ptr->outbreakPokemonMoves[0] = show->massOutbreak.moves[0];
     gSaveBlock1Ptr->outbreakPokemonMoves[1] = show->massOutbreak.moves[1];
     gSaveBlock1Ptr->outbreakPokemonMoves[2] = show->massOutbreak.moves[2];
     gSaveBlock1Ptr->outbreakPokemonMoves[3] = show->massOutbreak.moves[3];
-    gSaveBlock1Ptr->outbreakUnused3 = show->massOutbreak.unused3;
     gSaveBlock1Ptr->outbreakPokemonProbability = show->massOutbreak.probability;
     gSaveBlock1Ptr->outbreakDaysLeft = 2;
 }
@@ -1629,18 +1625,12 @@ static void InterviewAfter_PkmnFanClubOpinions(void)
 
 static void TryStartRandomMassOutbreak(void)
 {
-    u8 i;
     u16 outbreakIdx;
     TVShow *show;
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))
     {
-        for (i = 0; i < LAST_TVSHOW_IDX; i++)
-        {
-            if (gSaveBlock1Ptr->tvShows[i].common.kind == TVSHOW_MASS_OUTBREAK)
-                return;
-        }
-        if (!rbernoulli(1, 200))
+        if (!rbernoulli(1, 50))
         {
             sCurTVShowSlot = FindFirstEmptyNormalTVShowSlot(gSaveBlock1Ptr->tvShows);
             if (sCurTVShowSlot != -1)
@@ -1649,11 +1639,13 @@ static void TryStartRandomMassOutbreak(void)
                 show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
                 show->massOutbreak.kind = TVSHOW_MASS_OUTBREAK;
                 show->massOutbreak.active = TRUE;
-                show->massOutbreak.level = sPokeOutbreakSpeciesList[outbreakIdx].level;
+                show->massOutbreak.level = 70;
+            #if IS_FRLG == FALSE
                 show->massOutbreak.unused1 = 0;
-                show->massOutbreak.unused3 = 0;
-                show->massOutbreak.species = sPokeOutbreakSpeciesList[outbreakIdx].species;
                 show->massOutbreak.unused2 = 0;
+                show->massOutbreak.unused3 = 0;
+            #endif
+                show->massOutbreak.species = sPokeOutbreakSpeciesList[outbreakIdx].species;
                 show->massOutbreak.moves[0] = sPokeOutbreakSpeciesList[outbreakIdx].moves[0];
                 show->massOutbreak.moves[1] = sPokeOutbreakSpeciesList[outbreakIdx].moves[1];
                 show->massOutbreak.moves[2] = sPokeOutbreakSpeciesList[outbreakIdx].moves[2];
@@ -1661,7 +1653,7 @@ static void TryStartRandomMassOutbreak(void)
                 show->massOutbreak.locationMapNum = sPokeOutbreakSpeciesList[outbreakIdx].location;
                 show->massOutbreak.locationMapGroup = 0;
                 show->massOutbreak.unused4 = 0;
-                show->massOutbreak.probability = 50;
+                show->massOutbreak.probability = 75;
                 show->massOutbreak.unused5 = 0;
                 show->massOutbreak.daysLeft = 1;
                 StorePlayerIdInNormalShow(show);
@@ -1677,13 +1669,15 @@ void EndMassOutbreak(void)
     gSaveBlock1Ptr->outbreakLocationMapNum = 0;
     gSaveBlock1Ptr->outbreakLocationMapGroup = 0;
     gSaveBlock1Ptr->outbreakPokemonLevel = 0;
+#if IS_FRLG == FALSE
     gSaveBlock1Ptr->outbreakUnused1 = 0;
     gSaveBlock1Ptr->outbreakUnused2 = 0;
+    gSaveBlock1Ptr->outbreakUnused3 = 0;
+#endif
     gSaveBlock1Ptr->outbreakPokemonMoves[0] = MOVE_NONE;
     gSaveBlock1Ptr->outbreakPokemonMoves[1] = MOVE_NONE;
     gSaveBlock1Ptr->outbreakPokemonMoves[2] = MOVE_NONE;
     gSaveBlock1Ptr->outbreakPokemonMoves[3] = MOVE_NONE;
-    gSaveBlock1Ptr->outbreakUnused3 = 0;
     gSaveBlock1Ptr->outbreakPokemonProbability = 0;
     gSaveBlock1Ptr->outbreakDaysLeft = 0;
 }
@@ -2714,6 +2708,9 @@ void CopyContestRankToStringVar(u8 varIdx, u8 rank)
         break;
     case CONTEST_RANK_MASTER:
         StringCopy(gTVStringVarPtrs[varIdx], gStdStrings[STDSTRING_MASTER]);
+        break;
+    case CONTEST_RANK_SPECIAL:
+        StringCopy(gTVStringVarPtrs[varIdx], gStdStrings[STDSTRING_SPECIAL]);
         break;
     }
 }

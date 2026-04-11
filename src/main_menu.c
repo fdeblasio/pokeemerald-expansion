@@ -427,7 +427,7 @@ static const u16 sMainMenuBgPal[] = INCBIN_U16("graphics/interface/main_menu_bg.
 static const u16 sMainMenuTextPal[] = INCBIN_U16("graphics/interface/main_menu_text.gbapal");
 
 static const u8 sTextColor_Headers[] = {TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_2, TEXT_DYNAMIC_COLOR_3};
-static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_3};
+static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_GREEN, TEXT_COLOR_LIGHT_GREEN};
 
 static const struct BgTemplate sMainMenuBgTemplates[] = {
     {
@@ -478,49 +478,35 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("Stu"),
-    COMPOUND_STRING("Milton"),
+    COMPOUND_STRING("Frank"),
+    COMPOUND_STRING("Jake"),
+    COMPOUND_STRING("Rafi"),
+    COMPOUND_STRING("Junya"),
+    COMPOUND_STRING("Felix"),
+    COMPOUND_STRING("Dan"),
+    COMPOUND_STRING("Eric"),
     COMPOUND_STRING("Tom"),
-    COMPOUND_STRING("Kenny"),
-    COMPOUND_STRING("Reid"),
-    COMPOUND_STRING("Jude"),
-    COMPOUND_STRING("Jaxson"),
-    COMPOUND_STRING("Easton"),
-    COMPOUND_STRING("Walker"),
-    COMPOUND_STRING("Teru"),
-    COMPOUND_STRING("Johnny"),
-    COMPOUND_STRING("Brett"),
-    COMPOUND_STRING("Seth"),
-    COMPOUND_STRING("Terry"),
-    COMPOUND_STRING("Casey"),
-    COMPOUND_STRING("Darren"),
-    COMPOUND_STRING("Landon"),
-    COMPOUND_STRING("Collin"),
-    COMPOUND_STRING("Stanley"),
-    COMPOUND_STRING("Quincy")
+    COMPOUND_STRING("Jack"),
+    COMPOUND_STRING("Gus"),
+    COMPOUND_STRING("Will"),
+    COMPOUND_STRING("Jeff"),
+    COMPOUND_STRING("Duncan")
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("Kimmy"),
-    COMPOUND_STRING("Tiara"),
-    COMPOUND_STRING("Bella"),
-    COMPOUND_STRING("Jayla"),
-    COMPOUND_STRING("Allie"),
-    COMPOUND_STRING("Lianna"),
+    COMPOUND_STRING("Emily"),
+    COMPOUND_STRING("Kim"),
     COMPOUND_STRING("Sara"),
-    COMPOUND_STRING("Monica"),
-    COMPOUND_STRING("Camila"),
-    COMPOUND_STRING("Aubree"),
-    COMPOUND_STRING("Ruthie"),
-    COMPOUND_STRING("Hazel"),
-    COMPOUND_STRING("Nadine"),
-    COMPOUND_STRING("Tanja"),
-    COMPOUND_STRING("Yasmin"),
-    COMPOUND_STRING("Nicola"),
-    COMPOUND_STRING("Lillie"),
-    COMPOUND_STRING("Terra"),
-    COMPOUND_STRING("Lucy"),
-    COMPOUND_STRING("Halie")
+    COMPOUND_STRING("Julie"),
+    COMPOUND_STRING("Ashley"),
+    COMPOUND_STRING("Kristen"),
+    COMPOUND_STRING("Tanvi"),
+    COMPOUND_STRING("Kylie"),
+    COMPOUND_STRING("Mariah"),
+    COMPOUND_STRING("Cassidy"),
+    COMPOUND_STRING("Mackenzie"),
+    COMPOUND_STRING("Meghan"),
+    COMPOUND_STRING("Kelli")
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -1402,7 +1388,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     u8 spriteId = gTasks[sBirchSpeechMainTaskId].tLotadSpriteId;
 
     gSprites[spriteId].x = 100;
-    gSprites[spriteId].y = 75;
+    gSprites[spriteId].y = 70;
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
@@ -1703,7 +1689,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         spriteId = gTasks[taskId].tLotadSpriteId;
         gSprites[spriteId].x = 100;
-        gSprites[spriteId].y = 75;
+        gSprites[spriteId].y = 70;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);

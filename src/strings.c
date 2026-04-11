@@ -142,8 +142,9 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 const u8 *const gPocketNamesStringsTable[] =
 {
     [POCKET_ITEMS]      = COMPOUND_STRING("Items"),
+    [POCKET_MEDICINE]   = COMPOUND_STRING("Medicine"),
     [POCKET_POKE_BALLS] = COMPOUND_STRING("Poké Balls"),
-    [POCKET_TM_HM]      = COMPOUND_STRING("TMs & HMs"),
+    [POCKET_TM_HM]      = COMPOUND_STRING("TMs"),
     [POCKET_BERRIES]    = COMPOUND_STRING("Berries"),
     [POCKET_KEY_ITEMS]  = COMPOUND_STRING("Key Items")
 };
@@ -875,6 +876,7 @@ const u8 gText_MenuPokedex[] = _("Pokédex");
 const u8 gText_MenuPokemon[] = _("Pokémon");
 const u8 gText_MenuBag[] = _("Bag");
 const u8 gText_MenuPokenav[] = _("PokéNav");
+const u8 gText_MenuFly[] = _("Fly");
 const u8 gText_MenuPlayer[] = _("{PLAYER}");
 const u8 gText_MenuSave[] = _("Save");
 const u8 gText_MenuOption[] = _("Option");

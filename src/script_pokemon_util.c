@@ -79,7 +79,7 @@ u8 ScriptGiveEgg(enum Species species)
 // TODO verify that this is really always the same output as the script special variant
 u8 HasEnoughMonsForDoubleBattle2(void)
 {
-    return GetMonsStateToDoubles() == PLAYER_HAS_TWO_USABLE_MONS; 
+    return GetMonsStateToDoubles() == PLAYER_HAS_TWO_USABLE_MONS;
 }
 
 void HasEnoughMonsForDoubleBattle(void)

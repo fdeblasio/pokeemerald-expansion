@@ -10,45 +10,45 @@
 
 static const struct MassOutbreak sPokeOutbreakSpeciesList[OUTBREAK_COUNT] = {
     [OUTBREAK_ID_ROUTE102] = {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
-        .level = 3,
+        .species = SPECIES_TOGEPI,
+        .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
+        .level = POSTGAME_LEVEL,
         .probability = 100,
         .duration = 1,
         .location = MAP_ROUTE102
 
     },
     [OUTBREAK_ID_ROUTE114] = {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15,
-        .probability = 50,
+        .species = SPECIES_ELEKID,
+        .moves = {MOVE_CROSS_CHOP, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ELECTRIC_TERRAIN},
+        .level = POSTGAME_LEVEL,
+        .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE114,
+        .location = MAP_ROUTE110,
     },
     [OUTBREAK_ID_ROUTE117] = {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13,
-        .probability = 50,
+        .species = SPECIES_MAGBY,
+        .moves = {MOVE_MACH_PUNCH, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY},
+        .level = POSTGAME_LEVEL,
+        .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE117,
+        .location = MAP_ROUTE113,
     },
     [OUTBREAK_ID_ROUTE120] = {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25,
-        .probability = 50,
+        .species = SPECIES_SANDILE,
+        .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
+        .level = POSTGAME_LEVEL,
+        .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE120,
+        .location = MAP_ROUTE111,
     },
     [OUTBREAK_ID_ROUTE116] = {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
-        .level = 8,
-        .probability = 50,
+        .species = SPECIES_TANGELA,
+        .moves = {MOVE_NATURE_POWER, MOVE_CONFUSION, MOVE_LEECH_SEED, MOVE_AMNESIA},
+        .level = POSTGAME_LEVEL,
+        .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE116,
+        .location = MAP_ROUTE123,
     }
 };
 

@@ -24,8 +24,6 @@
 
 #if IS_FRLG
 
-#define INTRO_SPECIES SPECIES_NIDORAN_F
-
 enum
 {
     WIN_INTRO_TEXTBOX,
@@ -592,76 +590,44 @@ static const u8 *const sControlsGuide_Pages2And3_Strings[CONTROLS_GUIDE_STRINGS_
 
 static const u8 *const sMaleNameChoices[] =
 {
-#if defined(FIRERED)
-    gNameChoice_Red,
-    gNameChoice_Fire,
-    gNameChoice_Ash,
-    gNameChoice_Kene,
-    gNameChoice_Geki,
-#else
-    gNameChoice_Green,
-    gNameChoice_Leaf,
-    gNameChoice_Gary,
-    gNameChoice_Kaz,
-    gNameChoice_Toru,
-#endif
-    gNameChoice_Jak,
-    gNameChoice_Janne,
-    gNameChoice_Jonn,
-    gNameChoice_Kamon,
-    gNameChoice_Karl,
-    gNameChoice_Taylor,
-    gNameChoice_Oscar,
-    gNameChoice_Hiro,
-    gNameChoice_Max,
-    gNameChoice_Jon,
-    gNameChoice_Ralph,
-    gNameChoice_Kay,
-    gNameChoice_Tosh,
-    gNameChoice_Roak
+    COMPOUND_STRING("Frank"),
+    COMPOUND_STRING("Jake"),
+    COMPOUND_STRING("Rafi"),
+    COMPOUND_STRING("Junya"),
+    COMPOUND_STRING("Felix"),
+    COMPOUND_STRING("Dan"),
+    COMPOUND_STRING("Eric"),
+    COMPOUND_STRING("Tom"),
+    COMPOUND_STRING("Jack"),
+    COMPOUND_STRING("Gus"),
+    COMPOUND_STRING("Will"),
+    COMPOUND_STRING("Jeff"),
+    COMPOUND_STRING("Duncan")
 };
 
 static const u8 *const sFemaleNameChoices[] =
 {
-#if defined(FIRERED)
-    gNameChoice_Red,
-    gNameChoice_Fire,
-#else
-    gNameChoice_Green,
-    gNameChoice_Leaf,
-#endif
-    gNameChoice_Omi,
-    gNameChoice_Jodi,
-    gNameChoice_Amanda,
-    gNameChoice_Hillary,
-    gNameChoice_Makey,
-    gNameChoice_Michi,
-    gNameChoice_Paula,
-    gNameChoice_June,
-    gNameChoice_Cassie,
-    gNameChoice_Rey,
-    gNameChoice_Seda,
-    gNameChoice_Kiko,
-    gNameChoice_Mina,
-    gNameChoice_Norie,
-    gNameChoice_Sai,
-    gNameChoice_Momo,
-    gNameChoice_Suzi
+    COMPOUND_STRING("Emily"),
+    COMPOUND_STRING("Kim"),
+    COMPOUND_STRING("Sara"),
+    COMPOUND_STRING("Julie"),
+    COMPOUND_STRING("Ashley"),
+    COMPOUND_STRING("Kristen"),
+    COMPOUND_STRING("Tanvi"),
+    COMPOUND_STRING("Kylie"),
+    COMPOUND_STRING("Mariah"),
+    COMPOUND_STRING("Cassidy"),
+    COMPOUND_STRING("Mackenzie"),
+    COMPOUND_STRING("Meghan"),
+    COMPOUND_STRING("Kelli")
 };
 
 static const u8 *const sRivalNameChoices[] =
 {
-#if defined(FIRERED)
-    gNameChoice_Green,
-    gNameChoice_Gary,
-    gNameChoice_Kaz,
-    gNameChoice_Toru
-#else
-    gNameChoice_Red,
-    gNameChoice_Ash,
-    gNameChoice_Kene,
-    gNameChoice_Geki
-#endif
+    COMPOUND_STRING("Green"),
+    COMPOUND_STRING("Gary"),
+    COMPOUND_STRING("Kaz"),
+    COMPOUND_STRING("Terry")
 };
 
 enum
@@ -2129,7 +2095,7 @@ static void PrintNameChoiceOptions(u8 taskId, u8 hasPlayerBeenNamed)
     PutWindowTilemap(tMenuWindowId);
     DrawStdFrameWithCustomTileAndPalette(tMenuWindowId, 1, STD_WINDOW_BASE_TILE_NUM, 14);
     FillWindowPixelBuffer(gTasks[taskId].tMenuWindowId, PIXEL_FILL(1));
-    AddTextPrinterParameterized(tMenuWindowId, FONT_NORMAL, gOtherText_NewName, 8, 1, 0, NULL);
+    AddTextPrinterParameterized(tMenuWindowId, FONT_NORMAL, COMPOUND_STRING("New Name"), 8, 1, 0, NULL);
     if (hasPlayerBeenNamed == FALSE)
         textPtrs = gSaveBlock2Ptr->playerGender == MALE ? sMaleNameChoices : sFemaleNameChoices;
     else

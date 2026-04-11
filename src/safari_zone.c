@@ -57,11 +57,8 @@ void EnterSafariMode(void)
     IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    if (IS_FRLG)
-        gSafariZoneStepCounter = 600;
-    else
-        gSafariZoneStepCounter = 500;
+    gNumSafariBalls = 99;
+    gSafariZoneStepCounter = 9999;
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }

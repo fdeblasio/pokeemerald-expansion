@@ -1702,6 +1702,9 @@ const u32 gPartyMenuBg_Gfx[] = INCGFX_U32("graphics/party_menu/bg.png", ".4bpp.s
 const u16 gPartyMenuBg_Pal[] = INCGFX_U16("graphics/party_menu/bg.png", ".gbapal");
 const u32 gPartyMenuBg_Tilemap[] = INCGFX_U32("graphics/party_menu/bg.bin", ".smolTM");
 
+const u32 gPartyMenuBgYb_Gfx[] = INCGFX_U32("graphics/party_menu/bg_yb.png", ".4bpp.smol", "-num_tiles 62 -Wnum_tiles");
+const u16 gPartyMenuBgYb_Pal[] = INCGFX_U16("graphics/party_menu/bg_yb.png", ".gbapal");
+
 const u32 gPartyMenuPokeball_Gfx[] = INCGFX_U32("graphics/party_menu/pokeball.png", ".4bpp.smol");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCGFX_U32("graphics/party_menu/pokeball_small.png", ".4bpp.smol"); //unused
 const u16 gPartyMenuPokeball_Pal[] = INCGFX_U16("graphics/party_menu/pokeball.png", ".gbapal");
@@ -1736,6 +1739,7 @@ const u16 gBagPalette[] = INCGFX_U16("graphics/bag/bag.pal", ".gbapal");
 
 const u16 gBagScreenMale_Pal[] = INCGFX_U16("graphics/bag/menu_male.pal", ".gbapal");
 const u16 gBagScreenFemale_Pal[] = INCGFX_U16("graphics/bag/menu_female.pal", ".gbapal");
+const u16 gBagScreenYellowBlack_Pal[] = INCBIN_U16("graphics/bag/menu_yellow_black.pal", ".gbapal");
 
 const u32 gBagScreen_Gfx[] = INCGFX_U32("graphics/bag/menu.png", ".4bpp.smol", "-num_tiles 53 -Wnum_tiles");
 const u32 gBagScreen_GfxTileMap[] = INCGFX_U32("graphics/bag/menu.bin", ".smolTM");
@@ -2069,28 +2073,6 @@ const u16 gTradeMenuMonBox_Tilemap[] = INCBIN_U16("graphics/trade/menu_mon_box.b
 const u16 gMessageBox_Pal[] = INCGFX_U16("graphics/text_window/message_box.png", ".gbapal");
 const u8 gMessageBox_Gfx[] = INCGFX_U8("graphics/text_window/message_box.png", ".4bpp");
 const u8 gSignpostWindow_Gfx[] = INCGFX_U8("graphics/text_window/signpost.png", ".4bpp");
-
-const u32 gWallpaperIcon_Cross[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/cross.png", ".4bpp.smol");
-const u32 gWallpaperIcon_Bolt[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/bolt.png", ".4bpp.smol");
-const u32 gWallpaperIcon_Plusle[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/plusle.png", ".4bpp.smol");
-
-const u16 gWallpaperPalettes_Horizontal[][16] =
-{
-    INCGFX_U16("graphics/pokemon_storage/wallpapers/friends_frame2.png", ".gbapal"),
-    INCGFX_U16("graphics/pokemon_storage/wallpapers/horizontal/bg.png", ".gbapal"),
-};
-
-const u32 gWallpaperTiles_Horizontal[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/horizontal/tiles.4bpp", ".smol");
-const u32 gWallpaperTilemap_Horizontal[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/horizontal/tilemap.bin", ".smolTM");
-
-const u16 gWallpaperPalettes_Ribbon[][16] =
-{
-    INCGFX_U16("graphics/pokemon_storage/wallpapers/ribbon/frame.pal", ".gbapal"),
-    INCGFX_U16("graphics/pokemon_storage/wallpapers/ribbon/bg.png", ".gbapal"),
-};
-
-const u32 gWallpaperTiles_Ribbon[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/ribbon/tiles.4bpp", ".smol");
-const u32 gWallpaperTilemap_Ribbon[] = INCGFX_U32("graphics/pokemon_storage/wallpapers/ribbon/tilemap.bin", ".smolTM");
 
 const u16 gPokenavRibbonsSummaryBg_Pal[] = INCGFX_U16("graphics/pokenav/ribbons/summary_bg.png", ".gbapal");
 const u32 gPokenavRibbonsSummaryBg_Gfx[] = INCGFX_U32("graphics/pokenav/ribbons/summary_bg.png", ".4bpp.smol");

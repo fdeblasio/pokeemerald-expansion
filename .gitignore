@@ -49,6 +49,7 @@ src/data/map_group_count.h
 include/constants/heal_locations.h
 include/constants/script_commands.h
 tools/trainerproc/trainerproc
+src/data/trainers_frlg.h
 tools/compresSmol/compresSmol
 tools/compresSmol/compresSmolTilemap
 tools/aif2pcm/aif2pcm

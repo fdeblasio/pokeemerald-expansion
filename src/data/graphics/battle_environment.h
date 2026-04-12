@@ -50,6 +50,12 @@ const u16 gBattleEnvironmentPalette_StadiumGlacia[] = INCGFX_U16("graphics/battl
 const u16 gBattleEnvironmentPalette_StadiumDrake[] = INCGFX_U16("graphics/battle_environment/stadium/drake.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumWallace[] = INCGFX_U16("graphics/battle_environment/stadium/wallace.pal", ".gbapal");
 
+const u16 gBattleEnvironmentPalette_StadiumDark[] = INCGFX_U16("graphics/battle_environment/stadium/dark.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumFlying[] = INCGFX_U16("graphics/battle_environment/stadium/flying.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumGrass[] = INCGFX_U16("graphics/battle_environment/stadium/grass.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumIce[] = INCGFX_U16("graphics/battle_environment/stadium/ice.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumRock[] = INCGFX_U16("graphics/battle_environment/stadium/rock.pal", ".gbapal");
+
 const u16 gBattleEnvironmentPalette_Kyogre[] = INCGFX_U16("graphics/battle_environment/water/kyogre.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_Groudon[] = INCGFX_U16("graphics/battle_environment/cave/groudon.pal", ".gbapal");
 
@@ -86,3 +92,7 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCGFX_U32("graphics/battle
 
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCGFX_U32("graphics/battle_environment/sky/anim_tiles.png", ".4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCGFX_U32("graphics/battle_environment/sky/anim_map.bin", ".smolTM");
+
+const u16 gBattleEnvironmentPalette_BurialGround[] = INCGFX_U16("graphics/battle_environment/burial_ground/palette.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_Ice[] = INCGFX_U16("graphics/battle_environment/cave/ice.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_Volcano[] = INCGFX_U16("graphics/battle_environment/rock/volcano.pal", ".gbapal");

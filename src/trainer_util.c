@@ -35,9 +35,9 @@ static void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct Trai
 
     for (j = 0; j < MAX_MON_MOVES; ++j)
     {
-        u32 pp = GetMovePP(partyEntry->moves[j]);
+        u32 maxPP = CalculateMaxPP(partyEntry->moves[j]);
         SetMonData(mon, MON_DATA_MOVE1 + j, &partyEntry->moves[j]);
-        SetMonData(mon, MON_DATA_PP1 + j, &pp);
+        SetMonData(mon, MON_DATA_PP1 + j, &maxPP);
     }
 }
 
@@ -86,9 +86,15 @@ static bool32 SetCorrectAbilityNum(struct Pokemon *mon, enum Species species, en
         if (speciesInfo->abilities[abilityNum] == ability)
             break;
     }
-    assertf(abilityNum < maxAbilityNum, "illegal ability %S for %S", gAbilitiesInfo[ability].name, speciesInfo->speciesName)
+    if (abilityNum >= maxAbilityNum)
     {
-        return FALSE;
+        if ((ability == 1 || ability == 2) && speciesInfo->abilities[ability] != ABILITY_NONE)
+            abilityNum = ability;
+        else
+            assertf(abilityNum < maxAbilityNum, "illegal ability %S for %S", gAbilitiesInfo[ability].name, speciesInfo->speciesName)
+            {
+                return FALSE;
+            }
     }
     SetMonData(mon, MON_DATA_ABILITY_NUM, &abilityNum);
     return TRUE;
@@ -102,6 +108,7 @@ void MakeTrainerGenerator(struct TrainerGenerator *trainerGen, const struct Trai
     trainerGen->isFrontier = FALSE;
     StringCopyN(trainerGen->name, trainer->trainerName, TRAINER_NAME_LENGTH + 1);
     trainerGen->trainerClass = trainer->trainerClass;
+    trainerGen->trainerPic = trainer->trainerPic;
     trainerGen->otID = OTID_STRUCT_RANDOM_NO_SHINY;
     trainerGen->localRngState = GeneratePartySeed(trainer);
 }
@@ -115,6 +122,7 @@ void MakePartnerGenerator(struct TrainerGenerator *trainerGen, const struct Trai
     trainerGen->isFrontier = FALSE;
     StringCopyN(trainerGen->name, partner->trainerName, TRAINER_NAME_LENGTH + 1);
     trainerGen->trainerClass = partner->trainerClass;
+    trainerGen->trainerPic = partner->trainerPic;
     otID = Crc32B((const u8 *)partner, sizeof(struct Trainer));
     trainerGen->otID = OTID_STRUCT_PRESET(otID);
     trainerGen->localRngState = LocalRandomSeed(otID);
@@ -125,7 +133,9 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
     u32 data;
     u32 personality = (LocalRandom32(&trainer->localRngState) & 0xFFFFDF00) + 0x1000;
     u32 genderValue = 0;
-    if (trainerMon->gender == TRAINER_MON_RANDOM_GENDER)
+    if (trainer->trainerPic == TRAINER_PIC_LEADER_NORMAN && trainerMon->species == SPECIES_SPINDA)
+        personalityValue = 0x8888D7D9;
+    else if (trainerMon->gender == TRAINER_MON_RANDOM_GENDER)
         genderValue = LocalRandom32(&trainer->localRngState) & 0x000000FF;
     else if (trainerMon->gender == TRAINER_MON_MALE)
         genderValue = GeneratePersonalityForGender(MON_MALE, trainerMon->species);

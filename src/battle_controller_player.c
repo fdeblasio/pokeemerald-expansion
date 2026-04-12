@@ -1751,9 +1751,13 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
 {
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     enum Move move = moveInfo->moves[gMoveSelectionCursor[battler]];
-    u16 pwr = GetMovePower(move);
-    u16 acc = GetMoveAccuracy(move);
+    struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+    u16 pwr = GetDynamicPower(mon, move, battler);
+    u32 acc = GetDynamicAccuracy(mon, move, battler);
+    u32 moveEffect = GetMoveEffect(move);
     enum DamageCategory cat = GetBattleMoveCategory(move);
+    if (GetMoveEffect(move) == EFFECT_NATURE_POWER)
+        cat = GetMoveCategory(GetNaturePowerMove());
 
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX))
     {
@@ -1769,16 +1773,20 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     u8 cat_start[] = _("{CLEAR_TO 3}");
     u8 pwr_start[] = _("{CLEAR_TO 56}");
     u8 acc_start[] = _("{CLEAR_TO 108}");
+
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
-    if (pwr < 2)
+
+    if (pwr <= 2 && moveEffect != EFFECT_POWER_BASED_ON_USER_HP && moveEffect != EFFECT_RETURN && moveEffect != EFFECT_FRUSTRATION)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
+
     if (acc < 2)
         StringCopy(acc_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+
     StringCopy(gDisplayedStringBattle, cat_start);
     StringAppend(gDisplayedStringBattle, cat_desc);
     StringAppend(gDisplayedStringBattle, pwr_start);
@@ -2092,7 +2100,10 @@ static void PlayerChooseMoveInBattlePalace(enum BattlerId battler)
     if (--gBattleStruct->arenaMindPoints[battler] == 0)
     {
         gBattlePalaceMoveSelectionRngValue = gRngValue;
-        BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, ChooseMoveAndTargetInBattlePalace(battler));
+        if (CanMegaEvolve(battler))
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[battler] | RET_GIMMICK | (gMultiUsePlayerCursor << 8));
+        else
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, ChooseMoveAndTargetInBattlePalace(battler));
         BtlController_Complete(battler);
     }
 }

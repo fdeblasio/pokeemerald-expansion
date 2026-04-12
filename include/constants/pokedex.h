@@ -1091,6 +1091,9 @@ enum NationalDexOrder
 #endif
 
 #define FOREACH_SPECIES_IN_HOENN_DEX_ORDER(F) \
+    F(MACHOP) \
+    F(MACHOKE) \
+    F(MACHAMP) \
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \
@@ -1165,9 +1168,6 @@ enum NationalDexOrder
     F(ARON) \
     F(LAIRON) \
     F(AGGRON) \
-    F(MACHOP) \
-    F(MACHOKE) \
-    F(MACHAMP) \
     F(MEDITITE) \
     F(MEDICHAM) \
     F(ELECTRIKE) \

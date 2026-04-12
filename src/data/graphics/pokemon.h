@@ -8,6 +8,11 @@ const u32 gMonFrontPic_CircledQuestionMark[] = INCGFX_U32("graphics/pokemon/ques
 const u32 gMonBackPic_CircledQuestionMark[] = INCGFX_U32("graphics/pokemon/question_mark/circled/back.png", ".4bpp.smol");
 const u16 gMonPalette_CircledQuestionMark[] = INCGFX_U16("graphics/pokemon/question_mark/circled/normal.pal", ".gbapal");
 const u16 gMonShinyPalette_CircledQuestionMark[] = INCGFX_U16("graphics/pokemon/question_mark/circled/shiny.pal", ".gbapal");
+
+const u32 gMonFrontPic_DoubleQuestionMark[] = INCGFX_U32("graphics/pokemon/question_mark/double/anim_front.png", ".4bpp.smol");
+const u32 gMonBackPic_DoubleQuestionMark[] = INCGFX_U32("graphics/pokemon/question_mark/double/back.png", ".4bpp.smol");
+const u16 gMonPalette_DoubleQuestionMark[] = INCGFX_U16("graphics/pokemon/question_mark/double/normal.pal", ".gbapal");
+const u16 gMonShinyPalette_DoubleQuestionMark[] = INCGFX_U16("graphics/pokemon/question_mark/double/shiny.pal", ".gbapal");
 const u8 gMonIcon_QuestionMark[] = INCGFX_U8("graphics/pokemon/question_mark/icon.png", ".4bpp");
 #if P_FOOTPRINTS
 #if !P_GBA_STYLE_SPECIES_FOOTPRINTS
@@ -6991,6 +6996,12 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_LedianF[] = INCGFX_COMP("graphics/pokemon/ledian/overworldf.png", ".4bpp", "-mwidth 4 -mheight 4");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
+
+    const u32 gMonFrontPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/front.4bpp.lz");
+    const u32 gMonPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/normal.gbapal.lz");
+    const u32 gMonBackPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/shiny.gbapal.lz");
+    const u8 gMonIcon_Ledybulk[] = INCBIN_U8("graphics/pokemon/ledybulk/icon.4bpp");
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK
@@ -14858,6 +14869,12 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_PachirisuF[] = INCGFX_COMP("graphics/pokemon/pachirisu/overworldf.png", ".4bpp", "-mwidth 4 -mheight 4");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
+
+    const u32 gMonFrontPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/front.4bpp.lz");
+    const u32 gMonPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/normal.gbapal.lz");
+    const u32 gMonBackPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/shiny.gbapal.lz");
+    const u8 gMonIcon_Pachirikku[] = INCBIN_U8("graphics/pokemon/pachirikku/icon.4bpp");
 #endif //P_FAMILY_PACHIRISU
 
 #if P_FAMILY_BUIZEL

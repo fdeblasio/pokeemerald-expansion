@@ -280,7 +280,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ILLUMINATE] =
     {
         .name = _("Illuminate"),
-        .description = 
+        .description =
         #if B_ILLUMINATE_EFFECT >= GEN_9
             COMPOUND_STRING("Accuracy can't be lowered."),
         #else
@@ -1939,7 +1939,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PUNK_ROCK] =
     {
-        .name = _("Punk Rock"),
+        .name = _("Amplify"),
         .description = COMPOUND_STRING("Boosts and resists sound."),
         .aiRating = 2,
         .breakable = TRUE,

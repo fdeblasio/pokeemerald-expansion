@@ -355,6 +355,7 @@ upcoming
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Luvdisc Scale Shot uses Heart Scale sprite
         - Maybe 100% accuracy and doesn't lower defense
+        - Or make new move with these features that only Luvdisc (and maybe Alomomola) learns
     - Smack Down is super effective if a Tinkaton uses it against Corviknight
     - Drilbur line Drill Run
     - Charjabug charge (Charge, Discharge, Charge Beam, Parabolic Charge) moves

@@ -67,7 +67,7 @@ enum Direction GetMewMoveDirection(void)
     else
         mew->invisible = TRUE;
 
-    // Mew will stay in place for 1 step after its visible
+    // Mew will stay in place for 1 step after it's visible
     if (VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % 9 == 0)
         return DIR_NONE;
 
@@ -337,7 +337,7 @@ bool8 ObjectEventIsFarawayIslandMew(struct ObjectEvent *objectEvent)
     if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR)
      && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR))
     {
-        if (objectEvent->graphicsId == OBJ_EVENT_GFX_MEW)
+        if (objectEvent->graphicsId == OBJ_EVENT_GFX_MEW || objectEvent->graphicsId == OBJ_EVENT_GFX_SPECIES(MEW))
             return TRUE;
     }
 

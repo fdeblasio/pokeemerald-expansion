@@ -113,6 +113,7 @@
 - Added Burial Ground, Volcano, and Ice battle environments from later generations (effects Secret Power and Nature Power)
 
 ### Items:
+- No longer able to select "Use" on items that can't be used from the bag
 - Eviolite now prevents Pokémon from evolving
 - Buffs to healing items:
     - Hyper Potion: 120->200

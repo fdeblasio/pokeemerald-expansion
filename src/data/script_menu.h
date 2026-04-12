@@ -248,6 +248,8 @@ static const struct MenuAction MultichoiceList_SternDeepSea[] =
 {
     {COMPOUND_STRING("Deep Sea Tooth")},
     {COMPOUND_STRING("Deep Sea Scale")},
+    //{gItemsInfo[SCANNER_REWARD_1].name},
+    //{gItemsInfo[SCANNER_REWARD_2].name},
     {gText_Exit},
 };
 
@@ -258,6 +260,11 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
     {COMPOUND_STRING("Red Flute")},
     {COMPOUND_STRING("White Flute")},
     {COMPOUND_STRING("Black Flute")},
+    //{gItemsInfo[ITEM_BLUE_FLUTE].name},
+    //{gItemsInfo[ITEM_YELLOW_FLUTE].name},
+    //{gItemsInfo[ITEM_RED_FLUTE].name},
+    //{gItemsInfo[ITEM_WHITE_FLUTE].name},
+    //{gItemsInfo[ITEM_BLACK_FLUTE].name},
     {COMPOUND_STRING("Glass Chair")},
     {COMPOUND_STRING("Glass Desk")},
     {gText_Cancel2},
@@ -265,26 +272,16 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 
 static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 {
-    {COMPOUND_STRING("Treecko Doll 1,000 Coins")},
-    {COMPOUND_STRING("Torchic Doll 1,000 Coins")},
-    {COMPOUND_STRING("Mudkip Doll   1,000 Coins")},
-    {gText_Exit},
-};
-
-static const struct MenuAction MultichoiceList_GameCornerTMs[] =
-{
-    {COMPOUND_STRING("TM32{CLEAR_TO 72}1,500 Coins")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 72}3,500 Coins")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 72}4,000 Coins")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 72}4,000 Coins")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 72}4,000 Coins")},
+    {COMPOUND_STRING("Treecko Doll 500 Coins")},
+    {COMPOUND_STRING("Torchic Doll 500 Coins")},
+    {COMPOUND_STRING("Mudkip Doll   500 Coins")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
-    {COMPOUND_STRING("  50 Coins    ¥1,000")},
-    {COMPOUND_STRING("500 Coins  ¥10,000")},
+    {COMPOUND_STRING("  50 Coins    ¥50")},
+    {COMPOUND_STRING("500 Coins  ¥500")},
     {gText_Exit},
 };
 
@@ -629,6 +626,8 @@ static const struct MenuAction MultichoiceList_Fossil[] =
 {
     {COMPOUND_STRING("Claw Fossil")},
     {COMPOUND_STRING("Root Fossil")},
+    //{gItemsInfo[RIGHT_FOSSIL].name},
+    //{gItemsInfo[LEFT_FOSSIL].name},
     {gText_Exit},
 };
 
@@ -1191,7 +1190,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_SLATEPORT_WITH_BF]  = MULTICHOICE(MultichoiceList_SSTidalSlateportWithBF),
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
-    [MULTI_GAME_CORNER_TMS_UNUSED]     = MULTICHOICE(MultichoiceList_GameCornerTMs),
+    [MULTI_GAME_CORNER_TMS_UNUSED]     = MULTICHOICE(MultichoiceList_GameCornerCoins),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),

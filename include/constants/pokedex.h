@@ -1104,7 +1104,6 @@ enum NationalDexOrder
     F(MIGHTYENA) \
     F(ZIGZAGOON) \
     F(LINOONE) \
-    HOENN_DEX_IF(P_GALARIAN_FORMS, F(OBSTAGOON)) \
     F(WURMPLE) \
     F(SILCOON) \
     F(BEAUTIFLY) \
@@ -1298,11 +1297,137 @@ enum NationalDexOrder
     F(REGIROCK) \
     F(REGICE) \
     F(REGISTEEL) \
-    F(LATIAS) \
-    F(LATIOS) \
+    F(REGIELEKI) \
+    F(REGIDRAGO) \
+    F(REGIGIGAS) \
     F(KYOGRE) \
     F(GROUDON) \
-    F(RAYQUAZA) \
+    F(RAYQUAZA) /*Postgame*/ \
+    F(HAPPINY) \
+    F(CHANSEY) \
+    F(BLISSEY) \
+    F(ELEKID) \
+    F(ELECTABUZZ) \
+    F(ELECTIVIRE) \
+    F(MAGBY) \
+    F(MAGMAR) \
+    F(MAGMORTAR) \
+    F(MUNCHLAX) \
+    F(SNORLAX) \
+    F(POLIWAG) \
+    F(POLIWHIRL) \
+    F(POLIWRATH) \
+    F(POLITOED) \
+    F(LICKITUNG) \
+    F(LICKILICKY) \
+    F(TANGELA) \
+    F(TANGROWTH) \
+    F(SHELLDER) \
+    F(CLOYSTER) \
+    F(GROWLITHE) \
+    F(ARCANINE) \
+    F(KRABBY) \
+    F(KINGLER) \
+    F(SLOWPOKE) \
+    F(SLOWBRO) \
+    F(SLOWKING) \
+    F(SEEL) \
+    F(DEWGONG) \
+    F(MEOWTH) \
+    F(PERSIAN) \
+    F(PERRSERKER) \
+    F(MAREEP) \
+    F(FLAAFFY) \
+    F(AMPHAROS) \
+    F(WOOPER) \
+    F(QUAGSIRE) \
+    F(CLODSIRE) \
+    F(SWINUB) \
+    F(PILOSWINE) \
+    F(MAMOSWINE) \
+    F(TEDDIURSA) \
+    F(URSARING) \
+    F(URSALUNA) \
+    F(TOGEPI) \
+    F(TOGETIC) \
+    F(TOGEKISS) \
+    F(SNEASEL) \
+    F(WEAVILE) \
+    F(SNEASLER) \
+    F(SNUBBULL) \
+    F(GRANBULL) \
+    F(SUNKERN) \
+    F(SUNFLORA) \
+    F(LEDYBA) \
+    F(LEDIAN) \
+    F(SPINARAK) \
+    F(ARIADOS) \
+    F(HOOTHOOT) \
+    F(NOCTOWL) \
+    F(PINECO) \
+    F(FORRETRESS) \
+    F(QWILFISH) \
+    F(OVERQWIL) \
+    F(REMORAID) \
+    F(OCTILLERY) \
+    F(MANTYKE) \
+    F(MANTINE) \
+    F(SHUCKLE) \
+    F(STANTLER) \
+    F(WYRDEER) \
+    F(AIPOM) \
+    F(AMBIPOM) \
+    F(BONSLY) \
+    F(SUDOWOODO) \
+    F(MILTANK) \
+    F(SANDILE) \
+    F(KROKOROK) \
+    F(KROOKODILE) \
+    F(TYNAMO) \
+    F(EELEKTRIK) \
+    F(EELEKTROSS) \
+    F(TYMPOLE) \
+    F(PALPITOAD) \
+    F(SEISMITOAD) \
+    F(DRILBUR) \
+    F(EXCADRILL) \
+    F(VANILLITE) \
+    F(VANILLISH) \
+    F(VANILLUXE) \
+    F(HEATMOR) \
+    F(FRILLISH) \
+    F(JELLICENT) \
+    F(DUCKLETT) \
+    F(SWANNA) \
+    F(ALOMOMOLA) \
+    F(HELIOPTILE) \
+    F(HELIOLISK) \
+    F(CLAUNCHER) \
+    F(CLAWITZER) \
+    F(SKRELP) \
+    F(DRAGALGE) \
+    F(CRAMORANT) \
+    F(DEWPIDER) \
+    F(ARAQUANID) \
+    F(ARROKUDA) \
+    F(BARRASKEWDA) \
+    F(ROLYCOLY) \
+    F(CARKOL) \
+    F(COALOSSAL) \
+    F(DONDOZO) \
+    F(VELUZA) \
+    F(DITTO) \
+    F(OMANYTE) \
+    F(OMASTAR) \
+    F(KABUTO) \
+    F(KABUTOPS) \
+    F(AERODACTYL) \
+    F(SMEARGLE) \
+    F(MEW) \
+    F(LUGIA) \
+    F(HO_OH) \
+    F(LATIAS) \
+    F(LATIOS) \
     F(JIRACHI) \
     F(DEOXYS)
 

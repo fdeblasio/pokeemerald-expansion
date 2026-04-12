@@ -150,6 +150,10 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
 // Support percentages are listed in comments off to the side instead
 #define PALACE_STYLE(atk, def, atkLow, defLow) {atk, atk + def, atkLow, atkLow + defLow}
 
+//B_MSG_GLINT_IN_EYE    Attack increases
+//B_MSG_GETTING_IN_POS  Defense increases
+//B_MSG_GROWL_DEEPLY    Support increases
+//B_MSG_EAGER_FOR_MORE  Stats stay the same
 const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 {
     [NATURE_HARDY] =
@@ -183,9 +187,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPEED,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_BRAVE, AFFINE_TURN_UP},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(70, 15, 32, 60), //15%, 8%
-        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(70, 15, 80, 15), // 15%,  5%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_ADAMANT] =
@@ -196,8 +200,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_ADAMANT, AFFINE_NONE},
         .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(38, 31, 70, 15), //31%, 15%
-        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
+        .battlePalacePercents = PALACE_STYLE(70, 15, 70, 15), //15%, 15%
+        .battlePalaceFlavorText = B_MSG_EAGER_FOR_MORE,
         .battlePalaceSmokescreen = PALACE_TARGET_STRONGER,
     },
     [NATURE_NAUGHTY] =
@@ -207,8 +211,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPDEF,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_NAUGHTY, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(20, 70, 70, 22), //10%, 8%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow,
+        .battlePalacePercents = PALACE_STYLE(20, 10, 40, 10), //70%, 50%
         .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
@@ -231,8 +235,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_DEF,
         .backAnim = 1,
         .pokeBlockAnim = {ANIM_DOCILE, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(56, 22, 56, 22), //22%, 22%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(22, 56, 22, 56), //22%, 22%
         .battlePalaceFlavorText = B_MSG_EAGER_FOR_MORE,
         .battlePalaceSmokescreen = PALACE_TARGET_RANDOM,
     },
@@ -255,8 +259,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPATK,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_IMPISH, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(69, 6, 28, 55), //25%, 17%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(6, 25, 28, 55), //69%, 17%
         .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
         .battlePalaceSmokescreen = PALACE_TARGET_STRONGER,
     },
@@ -279,9 +283,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_ATK,
         .backAnim = 2,
         .pokeBlockAnim = {ANIM_TIMID, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        .battlePalacePercents = PALACE_STYLE(62, 10, 30, 20), //28%, 50%
-        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(42, 28, 20, 50), //30%, 30%
+        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_HASTY] =
@@ -291,9 +295,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_DEF,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_HASTY, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(58, 37, 88, 6), //5%, 6%
-        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
+        .battlePalacePercents = PALACE_STYLE(58, 37, 12, 6), //5%, 82%
+        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_SERIOUS] =
@@ -339,9 +343,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_ATK,
         .backAnim = 2,
         .pokeBlockAnim = {ANIM_MODEST, AFFINE_TURN_DOWN_SLOW},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(35, 45, 34, 60), //20%, 6%
-        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(55, 25, 60, 34), //20%, 6%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_MILD] =
@@ -423,9 +427,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPEED,
         .backAnim = 1,
         .pokeBlockAnim = {ANIM_SASSY, AFFINE_TURN_UP_HIGH},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        .battlePalacePercents = PALACE_STYLE(88, 6, 22, 20), //6%, 58%
-        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(54, 6, 72, 6), //40%, 22%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_CAREFUL] =
@@ -459,7 +463,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #include "data/pokemon/trainer_class_lookups.h"
 #include "data/pokemon/experience_tables.h"
 
-#if P_LVL_UP_LEARNSETS >= GEN_9
+#if P_LVL_UP_LEARNSETS == GEN_LATEST
+#include "data/pokemon/level_up_learnsets/custom.h"
+#elif P_LVL_UP_LEARNSETS >= GEN_9
 #include "data/pokemon/level_up_learnsets/gen_9.h" // Scarlet/Violet
 #elif P_LVL_UP_LEARNSETS >= GEN_8
 #include "data/pokemon/level_up_learnsets/gen_8.h" // Sword/Shield
@@ -643,19 +649,6 @@ static const s8 sFriendshipEventModifiers[][3] =
     [FRIENDSHIP_EVENT_FAINT_FIELD_PSN] = {-5, -5, -10},
     [FRIENDSHIP_EVENT_FAINT_LARGE]     = {-5, -5, -10},
     [FRIENDSHIP_EVENT_MASSAGE]         = { 3,  3,  3 },
-};
-
-static const struct SpeciesItem sAlteringCaveWildMonHeldItems[] =
-{
-    {SPECIES_NONE,      ITEM_NONE},
-    {SPECIES_MAREEP,    ITEM_GANLON_BERRY},
-    {SPECIES_PINECO,    ITEM_APICOT_BERRY},
-    {SPECIES_HOUNDOUR,  ITEM_BIG_MUSHROOM},
-    {SPECIES_TEDDIURSA, ITEM_PETAYA_BERRY},
-    {SPECIES_AIPOM,     ITEM_BERRY_JUICE},
-    {SPECIES_SHUCKLE,   ITEM_BERRY_JUICE},
-    {SPECIES_STANTLER,  ITEM_PETAYA_BERRY},
-    {SPECIES_SMEARGLE,  ITEM_SALAC_BERRY},
 };
 
 static const struct OamData sOamData_64x64 =
@@ -878,6 +871,9 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
     if (P_NO_SHINIES_WITHOUT_POKEBALLS && !HasAtLeastOnePokeBall() && FlagGet(FLAG_SYS_POKEDEX_GET))
         return FALSE;
 
+    if (!FlagGet(FLAG_ADVENTURE_STARTED))
+        return = FALSE;
+
     u32 totalRerolls = 0;
 
     if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
@@ -1015,7 +1011,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     enum Type teraType = value == 0 ? GetSpeciesType(species, 0) : GetSpeciesType(species, 1);
     SetBoxMonData(boxMon, MON_DATA_TERA_TYPE, &teraType);
     //using gen 3-4 ability formula, it was changed in later gens
-    if (GetSpeciesAbility(species, 1))
+    if (species == SPECIES_MIRAGE_ISLAND && GetCurrentRegionMapSectionId() == MAPSEC_ROUTE_130) {
+        value = 2;
+        SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
+        value = MAPSEC_MIRAGE_ISLAND;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
+    }
+    else if (GetSpeciesAbility(species, 1))
         SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
 }
 
@@ -1410,7 +1412,7 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
             continue;
 
         u8 baseStat = GetSpeciesBaseStat(species, i);
-        s32 n = (((2 * baseStat + iv[i] + ev[i] / 4) * level) / 100) + 5;
+        s32 n = (((2 * baseStat + iv[i] + ev[i]) * level) / 100) + 5;
         n = ModifyStatByNature(nature, n, i);
         if (B_FRIENDSHIP_BOOST == TRUE)
             n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));
@@ -1429,7 +1431,7 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
     else
     {
         s32 n = 2 * GetSpeciesBaseHP(species) + iv[STAT_HP];
-        newMaxHP = (((n + ev[STAT_HP] / 4) * level) / 100) + level + 10;
+        newMaxHP = (((n + ev[STAT_HP]) * level) / 100) + level + 10;
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;
@@ -1506,9 +1508,9 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, enum Move move)
         enum Move existingMove = GetBoxMonData(boxMon, MON_DATA_MOVE1 + i);
         if (existingMove == MOVE_NONE)
         {
-            u32 pp = GetMovePP(move);
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
-            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp);
+            u32 maxPP = CalculateMaxPP(move);
+            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }
         if (existingMove == move)
@@ -1526,7 +1528,7 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, enum Move move)
         if (mon->moves[i] == MOVE_NONE)
         {
             mon->moves[i] = move;
-            mon->pp[i] = GetMovePP(move);
+            mon->pp[i] = CalculateMaxPP(move);
             return move;
         }
     }
@@ -1542,8 +1544,8 @@ void SetMonMoveSlot(struct Pokemon *mon, enum Move move, enum MoveSlot slot)
 void SetBoxMonMoveSlot(struct BoxPokemon *mon, enum Move move, enum MoveSlot slot)
 {
     SetBoxMonData(mon, MON_DATA_MOVE1 + slot, &move);
-    u32 pp = GetMovePP(move);
-    SetBoxMonData(mon, MON_DATA_PP1 + slot, &pp);
+    u32 maxPP = CalculateMaxPP(move);
+    SetBoxMonData(mon, MON_DATA_PP1 + slot, &maxPP);
 }
 
 static void SetMonMoveSlot_KeepPP(struct Pokemon *mon, enum Move move, enum MoveSlot slot)
@@ -1560,7 +1562,7 @@ static void SetMonMoveSlot_KeepPP(struct Pokemon *mon, enum Move move, enum Move
 void SetBattleMonMoveSlot(struct BattlePokemon *mon, enum Move move, enum MoveSlot slot)
 {
     mon->moves[slot] = move;
-    mon->pp[slot] = GetMovePP(move);
+    mon->pp[slot] = CalculateMaxPP(move);
 }
 
 void GiveMonInitialMoveset(struct Pokemon *mon)
@@ -1614,8 +1616,10 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
-        u32 pp = GetMovePP(moves[i]);
-        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp);
+        u32 maxPP = CalculateMaxPP(moves[i]);
+        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
+        u8 ppBonus = 255;
+        SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonus);
     }
 }
 
@@ -1653,8 +1657,8 @@ void GiveBoxMonDefaultMove(struct BoxPokemon *boxMon, enum MoveSlot slot)
     }
 
     SetBoxMonData(boxMon, MON_DATA_MOVE1 + slot, &move);
-    u32 pp = GetMovePP(move);
-    SetBoxMonData(boxMon, MON_DATA_PP1 + slot, &pp);
+    u32 maxPP = CalculateMaxPP(move);
+    SetBoxMonData(boxMon, MON_DATA_PP1 + slot, &maxPP);
 }
 
 enum Move MonTryLearningNewMoveAtLevel(struct Pokemon *mon, bool32 firstMove, u32 level)
@@ -1721,7 +1725,6 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, enum Move move)
     s32 i;
     enum Move moves[MAX_MON_MOVES];
     u8 pp[MAX_MON_MOVES];
-    u8 ppBonuses;
 
     for (i = 0; i < MAX_MON_MOVES - 1; i++)
     {
@@ -1729,18 +1732,14 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, enum Move move)
         pp[i] = GetMonData(mon, MON_DATA_PP2 + i);
     }
 
-    ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES);
-    ppBonuses >>= 2;
     moves[MAX_MON_MOVES - 1] = move;
-    pp[MAX_MON_MOVES - 1] = GetMovePP(move);
+    pp[MAX_MON_MOVES - 1] = CalculateMaxPP(move);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetMonData(mon, MON_DATA_MOVE1 + i, &moves[i]);
         SetMonData(mon, MON_DATA_PP1 + i, &pp[i]);
     }
-
-    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
 }
 
 u32 CountAliveMonsInBattle(u8 caseId, enum BattlerId battler)
@@ -3132,8 +3131,8 @@ void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
             for (j = 0; j < MAX_MON_MOVES; j++)
             {
                 SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                u32 pp = GetMovePP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_PP1 + j, &pp);
+                u32 maxPP = CalculateMaxPP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
+                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_PP1 + j, &maxPP);
             }
         }
     }
@@ -3342,23 +3341,6 @@ u8 CalculatePPWithBonus(enum Move move, u8 ppBonuses, enum MoveSlot moveIndex)
 {
     u8 basePP = GetMovePP(move);
     return basePP + ((basePP * 20 * ((gPPUpGetMask[moveIndex] & ppBonuses) >> (2 * moveIndex))) / 100);
-}
-
-void RemoveMonPPBonus(struct Pokemon *mon, enum MoveSlot moveIndex)
-{
-    RemoveBoxMonPPBonus(&mon->box, moveIndex);
-}
-
-void RemoveBoxMonPPBonus(struct BoxPokemon *mon, enum MoveSlot moveIndex)
-{
-    u8 ppBonuses = GetBoxMonData(mon, MON_DATA_PP_BONUSES);
-    ppBonuses &= gPPUpClearMask[moveIndex];
-    SetBoxMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
-}
-
-void RemoveBattleMonPPBonus(struct BattlePokemon *mon, enum MoveSlot moveIndex)
-{
-    mon->ppBonuses &= gPPUpClearMask[moveIndex];
 }
 
 void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
@@ -4416,7 +4398,7 @@ enum Species GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode m
     holdEffect = GetItemHoldEffect(heldItem);
 
     // Prevent evolution with Everstone, unless we're just viewing the party menu with an evolution item
-    if (holdEffect == HOLD_EFFECT_PREVENT_EVOLVE
+    if ((holdEffect == HOLD_EFFECT_PREVENT_EVOLVE || holdEffect == HOLD_EFFECT_EVIOLITE)
         && mode != EVO_MODE_ITEM_CHECK
         && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
         return SPECIES_NONE;
@@ -4933,7 +4915,9 @@ void MonGainEVs(struct Pokemon *mon, enum Species defeatedSpecies)
         switch (i)
         {
         case STAT_HP:
-            if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
+            if (GetMonData(mon, MON_DATA_SPECIES, 0) == SPECIES_SHEDINJA)
+                evIncrease = 0;
+            else if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
                 evIncrease = (gSpeciesInfo[defeatedSpecies].evYield_HP + bonus) * multiplier;
             else
                 evIncrease = gSpeciesInfo[defeatedSpecies].evYield_HP * multiplier;
@@ -5023,17 +5007,98 @@ bool8 TryIncrementMonLevel(struct Pokemon *mon)
     }
 }
 
+static const u16 sUniversalMoves[] =
+{
+    MOVE_BIDE,
+    MOVE_FRUSTRATION,
+    MOVE_HIDDEN_POWER,
+    MOVE_MIMIC,
+    MOVE_NATURAL_GIFT,
+    MOVE_RAGE,
+    MOVE_RETURN,
+    MOVE_SECRET_POWER,
+    MOVE_SUBSTITUTE,
+    MOVE_TERA_BLAST,
+};
+
 bool32 CanLearnTeachableMove(enum Species species, enum Move move)
 {
-    const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
     if (species == SPECIES_EGG)
-        return FALSE;
-    for (u32 i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
     {
-        if (teachableLearnset[i] == move)
-            return TRUE;
+        return FALSE;
     }
-    return FALSE;
+    else if (species == SPECIES_MEW)
+    {
+        switch (move)
+        {
+        case MOVE_DRAGON_ASCENT:
+        case MOVE_RELIC_SONG:
+        case MOVE_SECRET_SWORD:
+        case MOVE_VOLT_TACKLE:
+            return FALSE;
+        default:
+            return TRUE;
+        }
+    }
+    else
+    {
+        u32 i, j;
+        const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
+        for (i = 0; i < ARRAY_COUNT(sUniversalMoves); i++)
+        {
+            if (sUniversalMoves[i] == move)
+            {
+                if (gSpeciesInfo[species].teachingType != TM_ILLITERATE)
+                {
+                    if (move == MOVE_TERA_BLAST && GET_BASE_SPECIES_ID(species) == SPECIES_TERAPAGOS)
+                        return FALSE;
+                    if (GET_BASE_SPECIES_ID(species) == SPECIES_PYUKUMUKU && (move == MOVE_HIDDEN_POWER || move == MOVE_RETURN || move == MOVE_FRUSTRATION))
+                        return FALSE;
+                    return TRUE;
+                }
+                else
+                {
+                    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
+
+                    if (P_TM_LITERACY < GEN_6)
+                        return FALSE;
+
+                    for (j = 0; j < MAX_LEVEL_UP_MOVES && learnset[j].move != LEVEL_UP_MOVE_END; j++)
+                    {
+                        if (learnset[j].move == move)
+                            return TRUE;
+                    }
+                    return FALSE;
+                }
+            }
+        }
+        for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+        {
+            if (teachableLearnset[i] == move)
+                return TRUE;
+        }
+
+        if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
+            || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
+            || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))
+            || (species == SPECIES_ROTOM_FAN && move == MOVE_AIR_SLASH)
+            || (species == SPECIES_ROTOM_MOW && (move == MOVE_ENERGY_BALL || move == MOVE_LEAF_STORM))
+        )
+            return TRUE;
+        return FALSE;
+    }
+}
+
+u8 GetLevelUpMovesBySpecies(enum Species species, u16 *moves)
+{
+    u8 numMoves = 0;
+    int i;
+    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
+
+    for (i = 0; i < MAX_LEVEL_UP_MOVES && learnset[i].move != LEVEL_UP_MOVE_END; i++)
+        moves[numMoves++] = learnset[i].move;
+
+    return numMoves;
 }
 
 u16 SpeciesToPokedexNum(enum Species species)
@@ -5126,10 +5191,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
-            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_VS_RIVAL;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
@@ -5362,15 +5423,6 @@ void SetMonPreventsSwitchingString(void)
     BattleStringExpandPlaceholders(gText_PkmnsXPreventsSwitching, gStringVar4, sizeof(gStringVar4));
 }
 
-static s32 GetWildMonTableIdInAlteringCave(enum Species species)
-{
-    s32 i;
-    for (i = 0; i < (s32) ARRAY_COUNT(sAlteringCaveWildMonHeldItems); i++)
-        if (sAlteringCaveWildMonHeldItems[i].species == species)
-            return i;
-    return 0;
-}
-
 static inline bool32 CanFirstMonBoostHeldItemRarity(void)
 {
     enum Ability ability;
@@ -5404,27 +5456,11 @@ void SetWildMonHeldItem(void)
         species = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, 0);
         if (gMapHeader.mapLayoutId == LAYOUT_ALTERING_CAVE)
         {
-            s32 alteringCaveId = GetWildMonTableIdInAlteringCave(species);
-            if (alteringCaveId != 0)
-            {
-                // In active Altering Cave, use special item list
-                if (rnd < chanceNotRare)
-                    continue;
-                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM, &sAlteringCaveWildMonHeldItems[alteringCaveId].item);
-            }
-            else
-            {
-                // In inactive Altering Cave, use normal items
-                if (rnd < chanceNoItem)
-                    continue;
-                if (rnd < chanceNotRare)
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
-                else
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemRare);
-            }
-        }
-        else
-        {
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM) != ITEM_NONE)
+                continue; // prevent overwriting previously set item
+
+            rnd = Random() % 100;
+            species = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, 0);
             if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare && gSpeciesInfo[species].itemCommon != ITEM_NONE)
             {
                 // Both held items are the same, 100% chance to hold item

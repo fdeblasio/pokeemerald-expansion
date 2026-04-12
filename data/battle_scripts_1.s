@@ -3239,6 +3239,7 @@ BattleScript_EffectAttract::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectPresent::
+	jumpiftargetally BattleScript_EffectHealPulse
 	attackcanceler
 	accuracycheck BattleScript_MoveMissedPause
 	typecalc
@@ -4387,7 +4388,7 @@ BattleScript_AskToLearnMove::
 	yesnoboxstoplearningmove BattleScript_AskToLearnMove
 .endif
 	printstring STRINGID_DIDNOTLEARNMOVE
-	goto BattleScript_TryLearnMoveLoop
+	goto BattleScript_LearnMoveReturn
 BattleScript_ForgotAndLearnedNewMove::
 	printstring STRINGID_123POOF
 	printstring STRINGID_PKMNFORGOTMOVE
@@ -4904,12 +4905,21 @@ BattleScript_AngerShellTrySpeed:
 BattleScript_AngerShellRet:
 	return
 
-BattleScript_WindPowerActivates::
+BattleScript_ElectromorphosisActivates::
 	call BattleScript_AbilityPopUp
 	setvolatile BS_TARGET, VOLATILE_CHARGE_TIMER, 1
 	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
 	waitmessage B_WAIT_TIME_LONG
 	return
+
+BattleScript_WindPowerActivates::
+	printattackstring
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	setvolatile BS_TARGET, VOLATILE_CHARGE_TIMER, 1
+	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
 
 BattleScript_ToxicDebrisActivates::
 	call BattleScript_AbilityPopUp

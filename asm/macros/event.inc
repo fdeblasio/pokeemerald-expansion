@@ -2675,10 +2675,6 @@
 	.endif
 	msgbox \wantTeachingMsg, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, \declinedJmp
-	.if \flagId
-		call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-		goto_if_eq VAR_RESULT, NO, \declinedJmp
-	.endif
 	msgbox \monSelectMsg, MSGBOX_DEFAULT
 	setvar VAR_0x8005, \moveId
 	call MoveTutor_EventScript_OpenBox
@@ -2826,8 +2822,6 @@
 	.endm
 
 @ FRLG
-
-
 	@ Prints the provided message after playing the fanfare music (can only be MUS_LEVEL_UP or MUS_RG_OBTAIN_KEY_ITEM).
 	@ It then prints the message shown by using putitemaway.
 	.macro msgreceiveditem msg:req, item:req, amount=1, fanfare=MUS_LEVEL_UP

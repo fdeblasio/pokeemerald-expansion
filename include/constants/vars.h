@@ -53,8 +53,8 @@
 #define VAR_REPEL_STEP_COUNT                             0x4021
 #define VAR_ICE_STEP_COUNT                               0x4022
 #define VAR_STARTER_MON                                  0x4023 // 0=Treecko, 1=Torchic, 2=Mudkip
-#define VAR_MIRAGE_RND_H                                 0x4024
-#define VAR_MIRAGE_RND_L                                 0x4025
+#define VAR_UNUSED_0x4024                                0x4024
+#define VAR_UNUSED_0x4025                                0x4025
 #define VAR_SECRET_BASE_MAP                              0x4026
 #define VAR_CYCLING_ROAD_RECORD_COLLISIONS               0x4027
 #define VAR_CYCLING_ROAD_RECORD_TIME_L                   0x4028
@@ -81,7 +81,7 @@
 #define VAR_REGICE_STEPS_1                               0x403B
 #define VAR_REGICE_STEPS_2                               0x403C
 #define VAR_REGICE_STEPS_3                               0x403D
-#define VAR_ALTERING_CAVE_WILD_SET                       0x403E
+#define VAR_UNUSED_0x403E                                0x403E // Unused Var
 #define VAR_DISTRIBUTE_EON_TICKET                        0x403F // This var is read and written, but is always zero. The only way to obtain the Eon Ticket in Emerald is via Record Mixing
 #define VAR_DAYS                                         0x4040
 #define VAR_FANCLUB_FAN_COUNTER                          0x4041

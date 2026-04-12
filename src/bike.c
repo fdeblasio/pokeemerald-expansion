@@ -103,8 +103,8 @@ static void (*const sMachBikeTransitions[])(enum Direction) =
 // bikeFrameCounter is input which is represented by sMachBikeSpeeds in order
 static void (*const sMachBikeSpeedCallbacks[])(enum Direction) =
 {
-    PlayerWalkNormal,
-    PlayerWalkFast,
+    PlayerWalkFaster,
+    PlayerWalkFaster,
     PlayerWalkFaster,
 };
 
@@ -140,7 +140,7 @@ static enum AcroTransition (*const sAcroBikeInputHandlers[])(enum Direction *, u
 };
 
 // used with bikeFrameCounter from mach bike
-static const enum PlayerSpeed sMachBikeSpeeds[] = {PLAYER_SPEED_NORMAL, PLAYER_SPEED_FAST, PLAYER_SPEED_FASTEST};
+static const enum PlayerSpeed sMachBikeSpeeds[] = {PLAYER_SPEED_FASTEST, PLAYER_SPEED_FASTEST, PLAYER_SPEED_FASTEST};
 
 // this is a list of timers to compare against later, terminated with 0. the only timer being compared against is 4 frames in this list.
 static const u8 sAcroBikeJumpTimerList[] = {4, 0};
@@ -1340,9 +1340,11 @@ enum PlayerSpeed GetPlayerSpeed(void)
 
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
         return machSpeeds[gPlayerAvatar.bikeFrameCounter];
+    else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
+        return PLAYER_SPEED_FASTEST;
     else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
         return PLAYER_SPEED_FASTER;
-    else if (gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_DASH))
+    else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_DASH)
         return PLAYER_SPEED_FAST;
     else
         return PLAYER_SPEED_NORMAL;

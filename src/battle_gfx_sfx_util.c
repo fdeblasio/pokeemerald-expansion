@@ -280,14 +280,6 @@ u16 ChooseMoveAndTargetInBattlePalace(enum BattlerId battler)
                         chosenMoveIndex = i;
                 } while (chosenMoveIndex == -1);
             }
-
-            // Because the selected move was not from the Nature-chosen move group there's a 50% chance
-            // that it will be unable to use it. This could have been checked earlier to avoid the above work.
-            if (Random() % 100 >= 50)
-            {
-                gProtectStructs[battler].palaceUnableToUseMove = TRUE;
-                return 0;
-            }
         }
         else
         {

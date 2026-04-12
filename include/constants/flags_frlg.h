@@ -1,8 +1,6 @@
 #ifndef GUARD_CONSTANTS_FLAGS_FRLG_H
 #define GUARD_CONSTANTS_FLAGS_FRLG_H
 
-
-#define FLAG_0x020               0x020
 #define FLAG_0x021               0x021
 #define FLAG_0x022               0x022
 #define FLAG_0x023               0x023

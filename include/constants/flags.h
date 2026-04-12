@@ -45,13 +45,11 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#if IS_FRLG
-
-#include "constants/flags_frlg.h"
-
-#else
-
 #define FLAG_EXP_SHARE       0x20
+
+#if IS_FRLG
+#include "constants/flags_frlg.h"
+#else
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag

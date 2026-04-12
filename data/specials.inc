@@ -381,7 +381,6 @@ gSpecials::
 	def_special CheckInteractedWithFriendsFurnitureTop
 	def_special CheckInteractedWithFriendsPosterDecor
 	def_special SetLilycoveLadyGfx
-	def_special Script_GetLilycoveLadyId
 	def_special GetFavorLadyState
 	def_special BufferFavorLadyRequest
 	def_special HasAnotherPlayerGivenFavorLadyItem

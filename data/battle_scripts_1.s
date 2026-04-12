@@ -3111,7 +3111,7 @@ BattleScript_AskToLearnMove::
 	yesnoboxstoplearningmove BattleScript_AskToLearnMove
 .endif
 	printstring STRINGID_DIDNOTLEARNMOVE
-	goto BattleScript_TryLearnMoveLoop
+	goto BattleScript_LearnMoveReturn
 BattleScript_ForgotAndLearnedNewMove::
 	printstring STRINGID_123POOF
 	printstring STRINGID_PKMNFORGOTMOVE
@@ -3549,13 +3549,23 @@ BattleScript_SeedSowerActivates::
 	call BattleScript_ActivateTerrainEffects
 	return
 
-BattleScript_WindPowerActivates::
+BattleScript_ElectromorphosisActivates::
 	call BattleScript_AbilityPopUp
 	setvolatile BS_ABILITY_BATTLER, VOLATILE_CHARGE_TIMER, 1
     copybyte gEffectBattler, gBattlerAbility
 	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
 	waitmessage B_WAIT_TIME_LONG
 	return
+
+BattleScript_WindPowerActivates::
+	printattackstring
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	setvolatile BS_ABILITY_BATTLER, VOLATILE_CHARGE_TIMER, 1
+    copybyte gEffectBattler, gBattlerAbility
+	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
 
 BattleScript_ToxicDebrisActivates::
 	call BattleScript_AbilityPopUp

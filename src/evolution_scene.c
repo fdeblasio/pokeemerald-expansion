@@ -1013,7 +1013,6 @@ static void Task_EvolutionScene(u8 taskId)
                         // Forget move
                         PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
 
-                        RemoveMonPPBonus(mon, var);
                         SetMonMoveSlot(mon, gMoveToLearn, var);
                         gTasks[taskId].tLearnMoveState++;
                     }
@@ -1374,7 +1373,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 if (gTasks[taskId].tPartyId == PC_MON_CHOSEN)
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                                gParties[B_TRAINER_OPPONENT_A], 
+                                gParties[B_TRAINER_OPPONENT_A],
                                 TRADEMON_FROM_PC,
                                 CB2_TradeEvolutionSceneLoadGraphics,
                                 gMoveToLearn
@@ -1383,7 +1382,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 else
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                                gParties[B_TRAINER_PLAYER], 
+                                gParties[B_TRAINER_PLAYER],
                                 gTasks[taskId].tPartyId,
                                 CB2_TradeEvolutionSceneLoadGraphics,
                                 gMoveToLearn
@@ -1417,7 +1416,6 @@ static void Task_TradeEvolutionScene(u8 taskId)
                         // Forget move
                         PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
 
-                        RemoveMonPPBonus(mon, var);
                         SetMonMoveSlot(mon, gMoveToLearn, var);
                         BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_123POOF]);
                         DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);

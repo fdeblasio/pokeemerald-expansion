@@ -146,6 +146,8 @@ static bool32 HandleEndTurnWeatherDamage(struct BattleCalcValues *cv, enum Battl
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
          && ability != ABILITY_OVERCOAT
+         && ability != ABILITY_WIND_POWER
+         && ability != ABILITY_WIND_RIDER
          && !IS_BATTLER_ANY_TYPE(battler, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
          && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER

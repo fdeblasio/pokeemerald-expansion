@@ -1939,7 +1939,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PUNK_ROCK] =
     {
-        .name = _("Punk Rock"),
+        .name = _("Amplify"),
         .description = COMPOUND_STRING("Boosts and resists sound."),
         .aiRating = 2,
         .breakable = TRUE,

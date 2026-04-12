@@ -305,8 +305,6 @@ static void ApplyDaycareExperience(struct Pokemon *mon)
             while ((learnedMove = MonTryLearningNewMove(mon, firstMove)) != 0)
             {
                 firstMove = FALSE;
-                if (learnedMove == MON_HAS_MAX_MOVES)
-                    DeleteFirstMoveAndGiveMoveToMon(mon, gMoveToLearn);
             }
         }
         else
@@ -856,7 +854,7 @@ static void GiveMoveIfParentHeldItem(struct Pokemon *egg, struct BoxPokemon *fat
 
 static void BuildEggMoveset(struct Pokemon *egg, struct BoxPokemon *father, struct BoxPokemon *mother)
 {
-    enum Species eggSpecies = GetMonData(egg, MON_DATA_SPECIES); 
+    enum Species eggSpecies = GetMonData(egg, MON_DATA_SPECIES);
     enum Move fatherMoves[MAX_MON_MOVES];
     enum Move motherMoves[MAX_MON_MOVES];
 
@@ -1115,7 +1113,7 @@ static inline u32 GetEggCycleLength(void)
         return 257;
     case GEN_8:
     default:
-        return 128;
+        return 32;
     }
 }
 
@@ -1244,7 +1242,6 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     u32 i;
     u16 eggGroups[DAYCARE_MON_COUNT][EGG_GROUPS_PER_MON];
     enum Species species[DAYCARE_MON_COUNT];
-    u32 trainerIds[DAYCARE_MON_COUNT];
     u32 genders[DAYCARE_MON_COUNT];
 
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
@@ -1252,7 +1249,6 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
         u32 personality;
 
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        trainerIds[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_OT_ID);
         personality = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_PERSONALITY);
         genders[i] = GetGenderFromSpeciesAndPersonality(species[i], personality);
         eggGroups[i][0] = gSpeciesInfo[species[i]].eggGroups[0];
@@ -1268,12 +1264,7 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
 
     // one parent is Ditto
     if (eggGroups[0][0] == EGG_GROUP_DITTO || eggGroups[1][0] == EGG_GROUP_DITTO)
-    {
-        if (trainerIds[0] == trainerIds[1])
-            return PARENTS_LOW_COMPATIBILITY;
-
         return PARENTS_MED_COMPATIBILITY;
-    }
     // neither parent is Ditto
     else
     {
@@ -1285,19 +1276,9 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
             return PARENTS_INCOMPATIBLE;
 
         if (species[0] == species[1])
-        {
-            if (trainerIds[0] == trainerIds[1])
-                return PARENTS_MED_COMPATIBILITY; // same species, same trainer
-
-            return PARENTS_MAX_COMPATIBILITY; // same species, different trainers
-        }
+            return PARENTS_MAX_COMPATIBILITY; // same species
         else
-        {
-            if (trainerIds[0] != trainerIds[1])
-                return PARENTS_MED_COMPATIBILITY; // different species, different trainers
-
-            return PARENTS_LOW_COMPATIBILITY; // different species, same trainer
-        }
+            return PARENTS_MED_COMPATIBILITY; // different species
     }
 }
 
@@ -1500,9 +1481,9 @@ static u8 ModifyBreedingScoreForOvalCharm(u8 score)
         case 20:
             return 40;
         case 50:
-            return 80;
+            return 75;
         case 70:
-            return 88;
+            return 90;
         }
     }
 

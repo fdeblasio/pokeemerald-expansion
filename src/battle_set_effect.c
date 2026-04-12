@@ -2622,7 +2622,7 @@ static void HandleSetEffectSketch(struct BattleCalcValues *cv, struct SetEffect 
     else if (!cv->onlyChecking)
     {
         gBattleMons[cv->battlerAtk].moves[gCurrMovePos] = moveToSketch;
-        gBattleMons[cv->battlerAtk].pp[gCurrMovePos] = GetMovePP(moveToSketch);
+        gBattleMons[cv->battlerAtk].pp[gCurrMovePos] = CalculateMaxPP(moveToSketch);
 
         struct MovePPInfo movePPData;
         for (u32 i = 0; i < MAX_MON_MOVES; i++)

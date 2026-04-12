@@ -3456,19 +3456,16 @@ static void Cmd_yesnoboxlearnmove(void)
 
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
 
-                    RemoveMonPPBonus(&gParties[B_TRAINER_PLAYER][gBattleStruct->expGetterMonId], movePosition);
                     SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][gBattleStruct->expGetterMonId], gMoveToLearn, movePosition);
 
                     if (gBattlerPartyIndexes[0] == gBattleStruct->expGetterMonId && MOVE_IS_PERMANENT(0, movePosition))
                     {
-                        RemoveBattleMonPPBonus(&gBattleMons[0], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[0], gMoveToLearn, movePosition);
                     }
                     if (IsDoubleBattle()
                         && gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId
                         && MOVE_IS_PERMANENT(2, movePosition))
                     {
-                        RemoveBattleMonPPBonus(&gBattleMons[2], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[2], gMoveToLearn, movePosition);
                     }
                 }
@@ -5539,6 +5536,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->multiplier = 200;
         break;
     case BALL_MASTER:
+    case BALL_CHERISH:
         ball->guaranteedCapture = TRUE;
         break;
     case BALL_NET:
@@ -5679,6 +5677,16 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         if (B_DREAM_BALL_MODIFIER >= GEN_8 && (battleMon->status1 & STATUS1_SLEEP || (GetBattlerAbilityIgnoreMoldBreaker(wildMonBattler) == ABILITY_COMATOSE)))
             ball->multiplier = 400;
         break;
+    case BALL_SAFARI:
+        if (B_SAFARI_BALL_MODIFIER == GEN_1)
+            ball->multiplier = 200;
+        else if (B_SAFARI_BALL_MODIFIER <= GEN_7)
+            ball->multiplier = 500;
+        break;
+    case BALL_SPORT:
+        if (B_SPORT_BALL_MODIFIER <= GEN_7)
+            ball->multiplier = 150;
+        break;
     case BALL_BEAST:
         ball->multiplier = 410;
         ball->divider = 4096;
@@ -5766,6 +5774,9 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     }
     if (battleMon->status1 & STATUS1_CAN_MOVE)
         odds = odds * 15 / 10;
+
+    if (gBattleMons[gBattlerTarget].isShiny)
+        odds = odds * 3;
 
     return odds;
 }
@@ -6075,6 +6086,11 @@ static void Cmd_trysetcaughtmondexflags(void)
     if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
     {
         gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (!FlagGet(FLAG_SYS_POKEDEX_GET))
+    {
+        HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
+        gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
     else
     {
@@ -7046,7 +7062,7 @@ void ApplyExperienceMultipliers(s32 *expAmount, enum PartySlot expGetterMonId, e
     if (IsTradedMon(&gParties[B_TRAINER_PLAYER][expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
-        *expAmount = (*expAmount * 150) / 100;
+        *expAmount = (*expAmount * 200) / 100;
     if (GetConfig(B_UNEVOLVED_EXP_MULTIPLIER) >= GEN_6 && IsMonPastEvolutionLevel(&gParties[B_TRAINER_PLAYER][expGetterMonId]))
         *expAmount = (*expAmount * 4915) / 4096;
     if (GetConfig(B_AFFECTION_MECHANICS) == TRUE && GetMonAffectionHearts(&gParties[B_TRAINER_PLAYER][expGetterMonId]) >= AFFECTION_FOUR_HEARTS)

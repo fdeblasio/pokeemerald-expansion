@@ -642,6 +642,30 @@ void BattleSetup_StartLegendaryBattle(void)
 
     switch (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES))
     {
+    case SPECIES_MEW:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
+        break;
+    case SPECIES_MEWTWO:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_RG_VS_MEWTWO);
+        break;
+    case SPECIES_RAIKOU:
+    case SPECIES_ENTEI:
+    case SPECIES_SUICUNE:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_C_VS_LEGEND_BEAST);
+        break;
+    case SPECIES_LUGIA:
+    case SPECIES_HO_OH:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
+        break;
+    case SPECIES_REGIROCK:
+        CreateBattleStartTask(B_TRANSITION_REGIROCK, MUS_VS_REGI);
+        break;
+    case SPECIES_REGICE:
+        CreateBattleStartTask(B_TRANSITION_REGICE, MUS_VS_REGI);
+        break;
+    case SPECIES_REGISTEEL:
+        CreateBattleStartTask(B_TRANSITION_REGISTEEL, MUS_VS_REGI);
+        break;
     case SPECIES_GROUDON:
     case SPECIES_GROUDON_PRIMAL:
         CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
@@ -660,13 +684,17 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DEOXYS_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
-    case SPECIES_LUGIA:
-    case SPECIES_HO_OH:
+    case SPECIES_REGIGIGAS:
+    case SPECIES_REGIELEKI:
+    case SPECIES_REGIDRAGO:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_REGI);
+        break;
+    case SPECIES_HOOPA:
+    case SPECIES_HOOPA_UNBOUND:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_RG_VS_LEGEND);
+        break;
     default:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
-        break;
-    case SPECIES_MEW:
-        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
     }
 
@@ -835,10 +863,14 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
             return BATTLE_ENVIRONMENT_BUILDING;
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_ENVIRONMENT_POND;
+        if (MetatileBehavior_IsIce(tileBehavior) || MetatileBehavior_IsIceCave(tileBehavior))
+            return BATTLE_ENVIRONMENT_ICE;
         return BATTLE_ENVIRONMENT_CAVE;
     case MAP_TYPE_INDOOR:
     case MAP_TYPE_SECRET_BASE:
         return BATTLE_ENVIRONMENT_BUILDING;
+    case MAP_TYPE_BURIAL_GROUND:
+        return BATTLE_ENVIRONMENT_BURIAL_GROUND;
     case MAP_TYPE_UNDERWATER:
         return BATTLE_ENVIRONMENT_UNDERWATER;
     case MAP_TYPE_OCEAN_ROUTE:
@@ -846,12 +878,16 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
             return BATTLE_ENVIRONMENT_WATER;
         return BATTLE_ENVIRONMENT_PLAIN;
     }
+
     if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
         return BATTLE_ENVIRONMENT_WATER;
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
         return BATTLE_ENVIRONMENT_POND;
     if (MetatileBehavior_IsMountain(tileBehavior))
         return BATTLE_ENVIRONMENT_MOUNTAIN;
+    if (MetatileBehavior_IsPuddle(tileBehavior))
+        return BATTLE_ENVIRONMENT_PUDDLE;
+
     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
     {
         // Is BRIDGE_TYPE_POND_*?
@@ -861,6 +897,7 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
         if (MetatileBehavior_IsBridgeOverWater(tileBehavior) == TRUE)
             return BATTLE_ENVIRONMENT_WATER;
     }
+
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE113) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ROUTE113))
         return BATTLE_ENVIRONMENT_SAND;
     if (GetSavedWeather() == WEATHER_SANDSTORM)
@@ -1837,6 +1874,12 @@ void PlayTrainerEncounterMusic(void)
     case TRAINER_ENCOUNTER_MUSIC_RICH:
         music = MUS_ENCOUNTER_RICH;
         break;
+    /*case TRAINER_ENCOUNTER_MUSIC_BRENDAN:
+        music = MUS_ENCOUNTER_BRENDAN;
+        break;
+    case TRAINER_ENCOUNTER_MUSIC_MAY:
+        music = MUS_ENCOUNTER_MAY;
+        break;*/
     default:
         music = MUS_ENCOUNTER_SUSPICIOUS;
     }
@@ -1953,6 +1996,8 @@ static void SetRematchIdForTrainer(const struct RematchTrainer *table, u32 table
 
         if (trainerId == 0)
             break;
+        if (!FlagGet(FLAG_BADGE05_GET + i))
+            break;
         if (!HasTrainerBeenFought(trainerId))
             break;
     }
@@ -1989,8 +2034,8 @@ static bool32 UpdateRandomTrainerRematches(const struct RematchTrainer *table, u
             // Trainer already wants a rematch. Don't bother updating it.
             return TRUE;
         }
-        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 30))
-            // 31% chance of getting a rematch.
+        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 34))
+            // 33% chance of getting a rematch.
         {
             SetRematchIdForTrainer(table, i);
             return TRUE;
@@ -2053,6 +2098,8 @@ u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBa
     {
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
+        if (!FlagGet(FLAG_BADGE05_GET + i))
+            return trainerEntry->trainerIds[i];
         if (!HasTrainerBeenFought(trainerEntry->trainerIds[i]))
             return trainerEntry->trainerIds[i];
     }

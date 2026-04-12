@@ -614,7 +614,6 @@
         - PP: 35->40
     - Present:
         - Accuracy: 90->100
-        - Now heals allies similar to Pollen Puff
         - Damage odds:
             - 40% 40->20% 60
             - 30% 80->40% 80

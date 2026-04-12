@@ -796,7 +796,7 @@ struct MauvilleOldManTrader
     u8 language[NUM_TRADER_ITEMS];
 };
 
-typedef union OldMan
+typedef struct OldMan
 {
     struct MauvilleManCommon common;
     struct MauvilleManBard bard;
@@ -804,7 +804,6 @@ typedef union OldMan
     struct MauvilleManHipster hipster;
     struct MauvilleOldManTrader trader;
     struct MauvilleManStoryteller storyteller;
-    u8 filler[0x40];
 } OldMan;
 
 #define LINK_B_RECORDS_COUNT 5
@@ -908,11 +907,9 @@ struct LilycoveLadyFavor
     /*0x003*/ u8 numItemsGiven;
     /*0x004*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x00C*/ u8 favorId;
-    /*0x00D*/ //u8 padding1;
-    /*0x00E*/ enum Item itemId;
-    /*0x010*/ u16 bestItem;
-    /*0x012*/ u8 language;
-    /*0x013*/ //u8 padding2;
+    /*0x00D*/ enum Item itemId;
+    /*0x00F*/ u16 bestItem;
+    /*0x011*/ u8 language;
 };
 
 struct LilycoveLadyContest
@@ -927,13 +924,12 @@ struct LilycoveLadyContest
     /*0x00E*/ u8 language;
 };
 
-typedef union // 3b58
+typedef struct // 3b58
 {
     struct LilycoveLadyQuiz quiz;
     struct LilycoveLadyFavor favor;
     struct LilycoveLadyContest contest;
     u8 id;
-    u8 filler[0x40];
 } LilycoveLady;
 
 struct WaldaPhrase

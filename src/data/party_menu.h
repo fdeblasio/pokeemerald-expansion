@@ -795,6 +795,7 @@ struct
 {
     [MENU_SUMMARY]         = {COMPOUND_STRING("Summary"),         CursorCb_Summary},
     [MENU_SWITCH]          = {COMPOUND_STRING("Switch"),          CursorCb_Switch},
+    [MENU_NICKNAME]        = {COMPOUND_STRING("Nickname"),        CursorCb_Nickname},
     [MENU_CANCEL1]         = {gText_Cancel2,                      CursorCb_Cancel1},
     [MENU_ITEM]            = {COMPOUND_STRING("Item"),            CursorCb_Item},
     [MENU_GIVE]            = {gMenuText_Give,                     CursorCb_Give},
@@ -813,6 +814,12 @@ struct
     [MENU_TRADE1]          = {sText_Trade4,                       CursorCb_Trade1},
     [MENU_TRADE2]          = {sText_Trade4,                       CursorCb_Trade2},
     [MENU_TOSS]            = {gMenuText_Toss,                     CursorCb_Toss},
+    [MENU_LEVEL_UP_MOVES]  = {COMPOUND_STRING("Level Moves"),     CursorCb_ChangeLevelUpMoves},
+    [MENU_EGG_MOVES]       = {COMPOUND_STRING("Egg Moves"),       CursorCb_ChangeEggMoves},
+    [MENU_TM_MOVES]        = {COMPOUND_STRING("TM Moves"),        CursorCb_ChangeTMMoves},
+    [MENU_TUTOR_MOVES]     = {COMPOUND_STRING("Tutor Moves"),     CursorCb_ChangeTutorMoves},
+    [MENU_OTHER_MOVES]     = {COMPOUND_STRING("Other Moves"),     CursorCb_ChangeOtherMoves},
+    [MENU_SUB_MOVES]       = {COMPOUND_STRING("Learn Moves"),     CursorCb_LearnMovesSubMenu},
     [MENU_CATALOG_BULB]    = {COMPOUND_STRING("Light bulb"),      CursorCb_CatalogBulb},
     [MENU_CATALOG_OVEN]    = {COMPOUND_STRING("Microwave oven"),  CursorCb_CatalogOven},
     [MENU_CATALOG_WASHING] = {COMPOUND_STRING("Washing machine"), CursorCb_CatalogWashing},
@@ -1194,7 +1201,7 @@ static const u8 *const sUnused_StatStrings[] =
 #define ROTOM_FAN_MOVE   MOVE_AIR_SLASH
 #define ROTOM_MOW_MOVE   MOVE_ENERGY_BALL
 
-static const u16 sRotomFormChangeMoves[5] =
+static const u16 sRotomFormChangeMoves[9] =
 {
     ROTOM_HEAT_MOVE,
     ROTOM_WASH_MOVE,

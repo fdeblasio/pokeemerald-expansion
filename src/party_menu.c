@@ -5658,7 +5658,6 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
     if (IsPartyMenuTextPrinterActive() != TRUE)
     {
         mon = &gParties[B_TRAINER_0][gPartyMenu.slotId];
-        RemoveMonPPBonus(mon, GetMoveSlotToReplace());
         move = gPartyMenu.data1;
         SetMonMoveSlot(mon, move, GetMoveSlotToReplace());
         Task_LearnedMove(taskId);
@@ -6273,7 +6272,6 @@ void DeleteMove(struct Pokemon *mon, enum Move move)
             if (existingMove == move)
             {
                 SetMonMoveSlot(mon, MOVE_NONE, i);
-                RemoveMonPPBonus(mon, i);
                 for (j = i; j < MAX_MON_MOVES - 1; j++)
                     ShiftMoveSlot(&mon->box, j, j + 1);
                 break;

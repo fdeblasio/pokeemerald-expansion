@@ -79,7 +79,7 @@ upcoming
     - Makefile changes
     - Automatic trainers (probably not)
     - Summary screen/PC renaming/relearning
-    - Add HM back to variable names
+    - Common shop items configured in items.h, not shop.c
 - Get a better understanding of how move animations work:
     - gBattleAnimMove_??? in data/battle_anim_scripts.s
         - These call g???SpriteTemplate from battle_anim_???.c

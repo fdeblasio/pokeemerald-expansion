@@ -44,16 +44,19 @@ upcoming
 ## To Do (common):
 ### Champions
 - Moves:
-    - Dire Claw: 50%->30%
-        - Macro with Tri Attack?
-    - Iron Head: 30%->20%
-        - All but Air Slash and Zing Zap can go back to 20%; update notes if so
-    - Bone Rush: 30 in Champions, 25 here for macro
+    - Power:
+        - Bone Rush: 25->30 (still 25 in EE for macro)
+    - Effect:
+        - Dire Claw: 50%->30%
+            - Macro with Tri Attack?
+        - Iron Head: 30%->20%
+            - All but Air Slash and Zing Zap can go back to 20%; update notes if so
     - Some moveset notes will have to be edited, like Machamp getting Drain Punch
+- Abilities:
+    - Add Dragonize to DynamicPower
 - Megas:
     - Starmie:
-        - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
-            - It seems like it might actually have 30 more SpA but Pure Power
+        - Make attacking stats more consistent? (Regular has 25 more SpA, Mega has 30 more SpA but actually more Atk from Huge Power)
     - Dragonite line:
         - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
     - Lucario Z:
@@ -116,6 +119,7 @@ upcoming
         9: 120
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
+- Clear other legendary defeated flags when beating the Elite Four
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
     - Vanilla:
         - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
@@ -433,6 +437,7 @@ upcoming
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Trainers
+- Define for Gym Ace/level cap
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
     - Even just reducing to two or three rematches would save space

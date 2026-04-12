@@ -700,6 +700,8 @@
         - Power: 75->80
         - Accuracy: 95->100
         - Now a wind move
+    - Beak Blast:
+        - PP: 5->10
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100
@@ -937,7 +939,7 @@
         - Accuracy: 85->100
         - PP: 15->20
     - Crabhammer:
-        - Accuracy: 90->100
+        - Accuracy: 95->100
     - Flip Turn:
         - Power: 60->70
     - Hydro Pump:
@@ -3657,6 +3659,7 @@
     - Learns Surf by level up
 
 - Alomomola (postgame):
+    - Held item: Heart Scale: 0%->100%
     - Learns Flip Turn, Waterfall, and Liquidation by level up
 
 - Joltik:

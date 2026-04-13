@@ -1191,6 +1191,7 @@ enum __attribute__((packed)) Item
     #undef ENUM_HM
     #undef TO_TMHM_NUMS
 
+    ITEM_MACHAMPITE,
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

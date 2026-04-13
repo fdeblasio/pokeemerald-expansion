@@ -51,7 +51,7 @@ upcoming
             - Macro with Tri Attack?
         - Iron Head: 30%->20%
             - All but Air Slash and Zing Zap can go back to 20%; update notes if so
-    - Some moveset notes will have to be edited, like Machamp getting Drain Punch
+    - Some moveset notes will have to be edited, like Machamp getting Drain Punch (in this case, give Machamp Brick Break by level up)
 - Abilities:
     - Add Dragonize to DynamicPower
 - Megas:

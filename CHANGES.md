@@ -1614,11 +1614,11 @@
     - Learns Psybeam, Extrasensory, and Psychic by level up
 
 - Mankey (not in Emerald):
-    - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
+    - Learns Rock Smash, Drain Punch, Brick Break, and Temper Flare by level up
 
 - Primeape (not in Emerald):
     - Evolution: Using Rage Fist 20 times->Knowing Rage Fist
-    - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
+    - Learns Rock Smash, Drain Punch, Brick Break, and Temper Flare by level up
 
 - Annihilape (not in Emerald):
     - Spe: 90->95
@@ -3198,11 +3198,11 @@
     - Spe: 58->60
     - Catch rate: 45->90
     - Received Rock Head as a second ability
-    - Learns Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
+    - Learns Rock Throw, Rock Tomb, Rock Slide, and Brick Break by level up
 
 - Rampardos:
     - Received Rock Head as a second ability
-    - Learns Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
+    - Learns Rock Throw, Rock Tomb, Rock Slide, and Brick Break by level up
 
 - Shieldon:
     - Atk: 42->45
@@ -3307,7 +3307,7 @@
     - Learn Poison Tail by level up
 
 - Croagunk/Toxicroak:
-    - Learn Rock Smash, Brick Break, and Drain Punch by level up
+    - Learn Rock Smash, Drain Punch, and Brick Break by level up
 
 - Carnivine:
     - Learns Leafage, Razor Leaf, Snap Trap, and Seed Bomb by level up
@@ -4076,7 +4076,7 @@
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
 
 - Barbaracle:
-    - Learns Rock Throw, Rock Tomb, Brick Break, Aqua Cutter, Rock Slide, Drain Punch, and Liquidation by level up
+    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Drain Punch, Rock Slide, Brick Break, and Liquidation by level up
     - Learns Body Press by TM
 
 - Skrelp (postgame):
@@ -4398,7 +4398,7 @@
     - Learns Dragon Breath by move tutor
 
 - Stufful/Bewear:
-    - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
+    - Learn Rock Smash, Drain Punch, Body Slam, and Brick Break by level up
 
 - Bounsweet:
     - Atk: 30->40
@@ -4431,7 +4431,7 @@
 
 - Passimian:
     - Catch rate: 45->90
-    - Learns Power-Up Punch, Wake Up-Slap, Brick Break and Drain Punch by level up
+    - Learns Power-Up Punch, Wake Up-Slap, Drain Punch, and Brick Break by level up
 
 - Wimpod:
     - Learns Aqua Jet by level up

@@ -148,6 +148,14 @@ static const struct FormChange sMachampFormChangeTable[] =
     {FORM_CHANGE_END_BATTLE,        SPECIES_MACHAMP},
     {FORM_CHANGE_TERMINATOR},
 };
+
+static const struct FormChange sMachampPartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM, SPECIES_MACHAMP_MEGA_G, ITEM_MACHAMPITE},
+    {FORM_CHANGE_FAINT,                      SPECIES_MACHAMP_PARTNER},
+    {FORM_CHANGE_END_BATTLE,                 SPECIES_MACHAMP_PARTNER},
+    {FORM_CHANGE_TERMINATOR},
+};
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT

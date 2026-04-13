@@ -8621,6 +8621,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMachopLevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
         .eggMoveLearnset = sMachopEggMoveLearnset,
+        .formSpeciesIdTable = sMachopFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
     },
 
@@ -8695,6 +8696,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
+        .formSpeciesIdTable = sMachokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
     },
 
@@ -8791,23 +8793,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sMachampFormChangeTable,
     },
 
-#define MACHAMP_GMAX_INFO                             \
-    .frontPic = gMonFrontPic_MachampGmax,             \
-    .frontPicSize = MON_COORDS_SIZE(64, 64),          \
-    .frontPicYOffset = 0,                             \
-    .frontAnimFrames = sAnims_SingleFramePlaceHolder, \
-    .frontAnimId = ANIM_H_JUMPS,                      \
-    .backPic = gMonBackPic_MachampGmax,               \
-    .backPicSize = MON_COORDS_SIZE(64, 64),           \
-    .backPicYOffset = 3,                              \
-    .backAnimId = BACK_ANIM_V_SHAKE,                  \
-    .palette = gMonPalette_MachampGmax,               \
-    .shinyPalette = gMonShinyPalette_MachampGmax,     \
-    .iconSprite = gMonIcon_MachampGmax,               \
-    .iconPalIndex = 0,                                \
-    SHADOW(7, 13, SHADOW_SIZE_L)                      \
-    FOOTPRINT(Machamp)                                \
-    .pokemonJumpType = PKMN_JUMP_TYPE_NONE
+#define MACHAMP_GMAX_INFO                              \
+    .catchRate = DEFAULT_CATCH_RATE(45),               \
+    .eggCycles = 20,                                   \
+    .friendship = STANDARD_FRIENDSHIP,                 \
+    .growthRate = GROWTH_MEDIUM_SLOW,                  \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE), \
+    .bodyColor = BODY_COLOR_GRAY,                      \
+    .speciesName = _("Machamp"),                       \
+    .cryId = CRY_MACHAMP,                              \
+    .natDexNum = NATIONAL_DEX_MACHAMP,                 \
+    .categoryName = _("Superpower"),                   \
+    .description = COMPOUND_STRING(                    \
+        "One of these Pokémon once used\n"             \
+        "its immeasurable strength to lift a\n"        \
+        "large ship that was in trouble. It\n"         \
+        "then carried the ship to port."),             \
+    .frontPic = gMonFrontPic_MachampGmax,              \
+    .frontPicSize = MON_COORDS_SIZE(64, 64),           \
+    .frontPicYOffset = 0,                              \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder,  \
+    .frontAnimId = ANIM_H_JUMPS,                       \
+    .backPic = gMonBackPic_MachampGmax,                \
+    .backPicSize = MON_COORDS_SIZE(64, 64),            \
+    .backPicYOffset = 3,                               \
+    .backAnimId = BACK_ANIM_V_SHAKE,                   \
+    .palette = gMonPalette_MachampGmax,                \
+    .shinyPalette = gMonShinyPalette_MachampGmax,      \
+    .iconSprite = gMonIcon_MachampGmax,                \
+    .iconPalIndex = 0,                                 \
+    .pokemonJumpType = PKMN_JUMP_TYPE_NONE,            \
+    FOOTPRINT(Machamp)                                 \
+    .teachableLearnset = sMachampTeachableLearnset,    \
+    .formSpeciesIdTable = sMachampFormSpeciesIdTable
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_MACHAMP_GMAX] =
@@ -8819,44 +8837,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = MACHAMP_SPA,
         .baseSpDefense = MACHAMP_SPD,
         .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = DEFAULT_CATCH_RATE(45),
+        MACHAMP_GMAX_INFO,
         .expYield = MACHAMP_EXP_YIELD,
         .evYield_Attack = 3,
         .itemRare = ITEM_FOCUS_BAND,
         .genderRatio = PERCENT_FEMALE(25),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
     #else
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
     #endif
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Machamp"),
-        .cryId = CRY_MACHAMP,
-        .natDexNum = NATIONAL_DEX_MACHAMP,
-        .categoryName = _("Superpower"),
         .height = 250,
         .weight = 0,
-        .description = COMPOUND_STRING(
-            "One of these Pokémon once used\n"
-            "its immeasurable strength to lift a\n"
-            "large ship that was in trouble. It\n"
-            "then carried the ship to port."),
         .pokemonScale = 280,
         .pokemonOffset = 1,
         .trainerScale = 269,
         .trainerOffset = -1,
-        MACHAMP_GMAX_INFO,
+        SHADOW(7, 13, SHADOW_SIZE_L)
         .isGigantamax = TRUE,
         .levelUpLearnset = sMachampLevelUpLearnset,
-        .teachableLearnset = sMachampTeachableLearnset,
-        .formSpeciesIdTable = sMachampFormSpeciesIdTable,
         .formChangeTable = sMachampFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
+
+#define PARTNER_MACHOP_ABILITIES { ABILITY_PUMMEL, ABILITY_NO_GUARD, ABILITY_GUTS }
 
     [SPECIES_MACHOP_PARTNER] =
     {
@@ -8883,7 +8887,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+        .abilities = PARTNER_MACHOP_ABILITIES,
     #else
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
     #endif
@@ -8959,7 +8963,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+        .abilities = PARTNER_MACHOP_ABILITIES,
     #else
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
     #endif
@@ -9049,7 +9053,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+        .abilities = PARTNER_MACHOP_ABILITIES,
     #else
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
     #endif
@@ -9105,21 +9109,36 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMachampLevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
         .formSpeciesIdTable = sMachampFormSpeciesIdTable,
-        .formChangeTable = sMachampFormChangeTable,
+        .formChangeTable = sMachampPartnerFormChangeTable,
     },
 
-//#if P_MEGA_EVOLUTIONS
-//    [SPECIES_MACHAMP_MEGA_G] =
-//    {
-//        .baseHP        = MACHAMP_PARTNER_HP,
-//        .baseAttack    = MACHAMP_PARTNER_ATK + 40,
-//        .baseDefense   = MACHAMP_PARTNER_DEF + 20,
-//        .baseSpeed     = MACHAMP_PARTNER_SPE + 20,
-//        .baseSpAttack  = MACHAMP_PARTNER_SPA,
-//        .baseSpDefense = MACHAMP_PARTNER_SPD + 20,
-//        MACHAMP_GMAX_INFO,
-//    }
-//#endif //P_MEGA_EVOLUTIONS
+    #define MEGA_ABILITY(ability) { ability, ability, ability }
+
+    [SPECIES_MACHAMP_MEGA_G] =
+    {
+        .baseHP        = MACHAMP_PARTNER_HP,
+        .baseAttack    = MACHAMP_PARTNER_ATK + 40,
+        .baseDefense   = MACHAMP_PARTNER_DEF + 20,
+        .baseSpeed     = MACHAMP_PARTNER_SPE + 20,
+        .baseSpAttack  = MACHAMP_PARTNER_SPA,
+        .baseSpDefense = MACHAMP_PARTNER_SPD + 20,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        MACHAMP_GMAX_INFO,
+        .expYield = MACHAMP_EXP_YIELD,
+        .evYield_Attack = 3,
+        .itemRare = ITEM_FOCUS_BAND,
+        .genderRatio = MON_MALE,
+        .abilities = MEGA_ABILITY(ABILITY_SCRAPPY),
+        .height = 20,
+        .weight = 1600,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 309,
+        .trainerOffset = 4,
+        SHADOW(7, 13, SHADOW_SIZE_L)
+        .levelUpLearnset = sMachampPartnerLevelUpLearnset,
+        .formChangeTable = sMachampPartnerFormChangeTable,
+    },
 
 #endif //P_FAMILY_MACHOP
 

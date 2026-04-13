@@ -1096,7 +1096,7 @@ static void CB2_GiveStarter(void)
     u16 starterMon;
 
     starterMon = GetStarterPokemon();
-    ScriptGiveMon(starterMon, 5, ITEM_NONE);
+    ScriptGiveMon(starterMon, 5, ITEM_NONE, TRUE);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

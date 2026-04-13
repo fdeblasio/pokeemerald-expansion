@@ -1681,16 +1681,18 @@
 - Starter Machop:
     - Spe: 35->45 (315, still need 5 more)
     - Evolution: 28->16
-    - Learns Drain Punch by TM
+    - Learns Tackle at level 1
+    - Learns Low Kick and Focus Energy at level 6
+    - Learns Drain Punch and Brick Break by level up
 
 - Starter Machoke:
     - Spe: 45->55 (415, still need 5 more)
     - Evolution: Linking Cord->36
-    - Learns Drain Punch by TM
+    - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Starter Machamp:
     - Spe: 55->65 (515, still need 15 more)
-    - Learns Drain Punch by TM
+    - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Bellsprout (not in Emerald):
     - SpA: 70->75

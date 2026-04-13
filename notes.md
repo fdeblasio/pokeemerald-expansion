@@ -48,6 +48,7 @@ upcoming
     - Figure out forms so they're part of the same Pokedex entry
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
 - If Kim's has a mega, make Mega Machamp G
+    - Add Machampite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam
 
 ## To Do (common):

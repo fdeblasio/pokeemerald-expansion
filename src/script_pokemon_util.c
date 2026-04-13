@@ -382,7 +382,7 @@ u32 ScriptGiveMonParameterized(u8 side, u8 slot, struct PokemonTemplate *monTemp
     return MON_GIVEN_TO_PARTY;
 }
 
-u32 ScriptGiveMon(enum Species species, u8 level, enum Item item)
+u32 ScriptGiveMon(enum Species species, u8 level, enum Item item, bool8 isStarter)
 {
     struct Pokemon mon;
     u8 heldItem[2];
@@ -393,6 +393,10 @@ u32 ScriptGiveMon(enum Species species, u8 level, enum Item item)
         heldItem[0] = item;
         heldItem[1] = item >> 8;
         SetMonData(&mon, MON_DATA_HELD_ITEM, heldItem);
+    }
+    if (isStarter)
+    {
+        SetMonData(&mon, MON_DATA_ABILITY_NUM, 0);
     }
 
     return GiveScriptedMonToPlayer(&mon, PARTY_SIZE);

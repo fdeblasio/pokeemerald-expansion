@@ -3203,7 +3203,7 @@ static const struct DebugSelection sGiveItemSelection = {
 
 static bool32 DebugSelection_GiveSimplePokemon_OnComplete(u8 taskId)
 {
-    ScriptGiveMon(DebugSelection_GetData(taskId, 0), DebugSelection_GetData(taskId, 1), ITEM_NONE);
+    ScriptGiveMon(DebugSelection_GetData(taskId, 0), DebugSelection_GetData(taskId, 1), ITEM_NONE, FALSE);
     DebugSelectionStep_ReturnToGiveMenu(taskId);
     PlaySE(SE_SUCCESS);
     return TRUE;

@@ -2771,7 +2771,6 @@ const u8 gMonIcon_MachampPartner[] = INCBIN_U8("graphics/pokemon/machamp/icon.pn
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_MachampGmax[] = INCGFX_U32("graphics/pokemon/machamp/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_MachampGmax[] = INCGFX_U32("graphics/pokemon/machamp/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_MachampGmax[] = INCGFX_U16("graphics/pokemon/machamp/gmax/normal.pal", ".gbapal");
@@ -2784,7 +2783,6 @@ const u8 gMonIcon_MachampPartner[] = INCBIN_U8("graphics/pokemon/machamp/icon.pn
     // const u16 gShinyOverworldPalette_MachampGmax[] = INCGFX_U16("graphics/pokemon/machamp/gmax/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT

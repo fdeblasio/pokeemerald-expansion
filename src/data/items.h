@@ -11559,6 +11559,13 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_ESCAPE,
         ITEM_ICON(PokeshiDoll),
     },
+
+    [ITEM_MACHAMPITE] =
+    {
+        .name = ITEM_NAME("Machampite"),
+        MEGA_STONE_INFO("Machampite"),
+        ITEM_ICON(Hawluchanite),
+    },
 };
 
 #undef ITEM_NAME

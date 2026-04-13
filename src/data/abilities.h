@@ -2556,4 +2556,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Aura Guard"),
         .description = COMPOUND_STRING("Halves damage from contact."),
     },
+
+    [ABILITY_PUMMEL] =
+    {
+        .name = _("Pummel"),
+        .description = COMPOUND_STRING("Ups Fighting moves in a pinch."),
+        .aiRating = 5,
+    },
 };

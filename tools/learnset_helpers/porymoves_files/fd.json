@@ -772,8 +772,8 @@
   "MANKEY": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 26, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 36, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 26, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 36, "Move": "MOVE_BRICK_BREAK"},
       {"Level": 40, "Move": "MOVE_TEMPER_FLARE"}
     ],
     "PreEvoMoves": [],
@@ -784,8 +784,8 @@
   "PRIMEAPE": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 26, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 44, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 26, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 44, "Move": "MOVE_BRICK_BREAK"},
       {"Level": 48, "Move": "MOVE_TEMPER_FLARE"}
     ],
     "PreEvoMoves": [],
@@ -801,8 +801,8 @@
       {"Level": 1, "Move": "MOVE_PURSUIT"},
       {"Level": 1, "Move": "MOVE_PUNISHMENT"},
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 26, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 44, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 26, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 44, "Move": "MOVE_BRICK_BREAK"},
       {"Level": 48, "Move": "MOVE_TEMPER_FLARE"}
     ],
     "PreEvoMoves": [],
@@ -5465,8 +5465,8 @@
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_THROW"},
       {"Level": 15, "Move": "MOVE_ROCK_TOMB"},
-      {"Level": 28, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 33, "Move": "MOVE_ROCK_SLIDE"}
+      {"Level": 33, "Move": "MOVE_ROCK_SLIDE"},
+      {"Level": 37, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -5477,8 +5477,8 @@
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_THROW"},
       {"Level": 15, "Move": "MOVE_ROCK_TOMB"},
-      {"Level": 28, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 36, "Move": "MOVE_ROCK_SLIDE"}
+      {"Level": 36, "Move": "MOVE_ROCK_SLIDE"},
+      {"Level": 43, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -5868,8 +5868,8 @@
   "CROAGUNK": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 28, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 32, "Move": "MOVE_DRAIN_PUNCH"}
+      {"Level": 28, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 36, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -5879,8 +5879,8 @@
   "TOXICROAK": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 28, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 32, "Move": "MOVE_DRAIN_PUNCH"}
+      {"Level": 28, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 36, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -8165,10 +8165,10 @@
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_THROW"},
       {"Level": 16, "Move": "MOVE_ROCK_TOMB"},
-      {"Level": 24, "Move": "MOVE_BRICK_BREAK"},
       {"Level": 28, "Move": "MOVE_AQUA_CUTTER"},
+      {"Level": 32, "Move": "MOVE_DRAIN_PUNCH"},
       {"Level": 36, "Move": "MOVE_ROCK_SLIDE"},
-      {"Level": 42, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 44, "Move": "MOVE_BRICK_BREAK"},
       {"Level": 48, "Move": "MOVE_LIQUIDATION"}
     ],
     "PreEvoMoves": [],
@@ -8949,9 +8949,9 @@
   "STUFFUL": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 20, "Move": "MOVE_BRICK_BREAK"},
+      {"Level": 28, "Move": "MOVE_DRAIN_PUNCH"},
       {"Level": 32, "Move": "MOVE_BODY_SLAM"},
-      {"Level": 36, "Move": "MOVE_DRAIN_PUNCH"}
+      {"Level": 36, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -8961,9 +8961,9 @@
   "BEWEAR": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ROCK_SMASH"},
-      {"Level": 20, "Move": "MOVE_BRICK_BREAK"},
+      {"Level": 30, "Move": "MOVE_DRAIN_PUNCH"},
       {"Level": 36, "Move": "MOVE_BODY_SLAM"},
-      {"Level": 36, "Move": "MOVE_DRAIN_PUNCH"}
+      {"Level": 42, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -9030,8 +9030,8 @@
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_POWER_UP_PUNCH"},
       {"Level": 15, "Move": "MOVE_WAKE_UP_SLAP"},
-      {"Level": 25, "Move": "MOVE_BRICK_BREAK"},
-      {"Level": 40, "Move": "MOVE_DRAIN_PUNCH"}
+      {"Level": 30, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 40, "Move": "MOVE_BRICK_BREAK"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],

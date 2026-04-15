@@ -51,7 +51,17 @@ upcoming
             - Macro with Tri Attack?
         - Iron Head: 30%->20%
             - All but Air Slash and Zing Zap can go back to 20%; update notes if so
-    - Some moveset notes will have to be edited, like Machamp getting Drain Punch (in this case, give Machamp Brick Break by level up)
+    - Some moveset notes will have to be edited to remove now-canon moves:
+        - Machamp gets Drain Punch (give it Brick Break by level up)
+        - Beedrill gets Cross Poison
+        - Chimecho learns Flash Cannon
+        - Meganium gets Dazzling Gleam
+    - Some movesets get good moves that they don't have in EE that can be added:
+        - Talonflame gets Blaze Kick
+        - Alolan Raichu gets Rising Voltage
+        - Pinsir gets Aerial Ace
+        - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
+        - Clefable gets Air Slash
 - Abilities:
     - Add Dragonize to DynamicPower
 - Megas:

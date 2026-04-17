@@ -365,6 +365,7 @@ upcoming
         - Steel spikes
         - Would give Mew a signature
     - Copy of old Leech Life
+    - A move with a greenish copy of Yawn's cloud for a stink cloud
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Luvdisc Scale Shot uses Heart Scale sprite

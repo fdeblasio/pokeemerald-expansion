@@ -4300,6 +4300,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                     \
     BOSS_AI_FLAGS,                                                                       \
     .partySize = 3,                                                                      \
+    .multiTeamSize = MULTI_TEAM_SIZE_HALF,                                               \
     .party = (const struct TrainerMon[]) {                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
@@ -4438,6 +4439,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .trainerClass = TRAINER_CLASS_MAGMA_LEADER,      \
     .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,    \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
+    .multiTeamSize = MULTI_TEAM_SIZE_HALF,           \
     BOSS_AI_FLAGS
 
 #define HUMPHREY(Level)                                       \
@@ -4531,14 +4533,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
 
-#define FINNEAS(Level)                                 \
-    .lvl = Level,                                      \
-    .species = SPECIES_FINNEAS - (Level < 30 ? 1 : 0), \
-    .ability = ABILITY_ROUGH_SKIN,                     \
-    .nature = NATURE_ADAMANT,                          \
-    PERFECT_IVS,                                       \
-    .gender = TRAINER_MON_MALE,                        \
-    .ball = ITEM_POKE_BALL,                            \
+#define FINNEAS(Level)                                    \
+    .lvl = Level,                                         \
+    .species = SPECIES_ARCHIE_ACE - (Level < 30 ? 1 : 0), \
+    .ability = ABILITY_ROUGH_SKIN,                        \
+    .nature = NATURE_ADAMANT,                             \
+    PERFECT_IVS,                                          \
+    .gender = TRAINER_MON_MALE,                           \
+    .ball = ITEM_POKE_BALL,                               \
     .nickname = COMPOUND_STRING("Finneas")
 
 #define ARCHIE_WAILMER(Level)                                  \

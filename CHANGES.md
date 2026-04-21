@@ -250,6 +250,7 @@
 - Punk Rock: Renamed Amplify to fit Exploud line as well
 - Wind Power: Grants immunity to wind moves and sandstorm damage
 - Wind Rider: Grants immunity to sandstorm damage
+- Pummel: New ability, Fighting clone of Overgrow/Blaze/Torrent/Swarm
 
 ### TMs:
 |TM #|   Move   |Location|

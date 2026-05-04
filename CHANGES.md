@@ -55,6 +55,7 @@
     - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Added area to grind right outside Elite Four
+- Can now leave the first hallway of the Elite Four
 
 ### Quality of Life:
 - Shiny Pokémon can no longer spawn until you get Poké Balls

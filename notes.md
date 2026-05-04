@@ -130,6 +130,8 @@ upcoming
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Clear other legendary defeated flags when beating the Elite Four
+- The default legendary battle music seems to be FRLG's. See if that is in vanilla and potentially change back to RSE
+- Remove evolved fishing encounters for the Safari Zone?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
     - Vanilla:
         - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
@@ -218,6 +220,7 @@ upcoming
 - Macro for stat up (Flame Charge 50/Torch Song 80)
 - Combine Genie macros again
 - Turn some animation macros into functions like the Absorb ones
+- Update Drill Peck animation to match other drills?
 - Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?

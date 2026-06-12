@@ -6,6 +6,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Absorb:          25 PP, absorbs
     Mud-Slap:        20 PP, 100% lower accuracy
     Nuzzle:          20 PP, 100% paralyzes
+    Constrict:       35 PP, 20% lower speed
     Population Bomb: 10 PP, 10 hits
 
 25 Power:
@@ -18,7 +19,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
 30 Power:
     Rollout/Ice Ball:            20 PP, consecutive
     Double Slap/Double Kick:     30 PP, hit twice
-    Constrict/Lick/Poison Sting: 35 PP, 30% effect
+    Lick/Poison Sting:           35 PP, 30% effect
 
     Rage:         20 PP, rages
     Smog:         20 PP, 70 accuracy, 40% poison

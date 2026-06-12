@@ -5047,7 +5047,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     .backPicSize = MON_COORDS_SIZE(56, 56),            \
     .palette = gMonPalette_MimikyuDisguised,           \
     .shinyPalette = gMonShinyPalette_MimikyuDisguised, \
-    .iconSprite = gMonIcon_MimikyuDisguised,           \
     OVERWORLD(                                         \
         sPicTable_MimikyuDisguised,                    \
         SIZE_32x32,                                    \
@@ -5056,7 +5055,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         sAnimTable_Following_Asym,                     \
         gOverworldPalette_MimikyuDisguised,            \
         gShinyOverworldPalette_MimikyuDisguised        \
-    )
+    )                                                  \
+    .iconSprite = gMonIcon_MimikyuDisguised
 
 #define MIMIKYU_BUSTED_INFO                           \
     .description = gMimikyuBustedPokedexText,         \

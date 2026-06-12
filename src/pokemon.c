@@ -873,7 +873,7 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
         return FALSE;
 
     if (!FlagGet(FLAG_ADVENTURE_STARTED))
-        return = FALSE;
+        return FALSE;
 
     u32 totalRerolls = 0;
 

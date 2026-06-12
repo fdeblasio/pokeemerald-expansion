@@ -5073,9 +5073,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         SHADOW_SIZE_M,                                 \
         TRACKS_FOOT,                                   \
         sAnimTable_Following_Asym,                     \
-        gOverworldPalette_Mimikyu,                     \
-        gShinyOverworldPalette_Mimikyu                 \
-    ),                                                 \
+        gOverworldPalette_MimikyuDisguised,            \
+        gShinyOverworldPalette_MimikyuDisguised        \
+    )                                                  \
     .iconSprite = gMonIcon_MimikyuDisguised
 
 #define MIMIKYU_BUSTED_INFO                           \

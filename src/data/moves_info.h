@@ -39,20 +39,21 @@ const u8 gNotDoneYetDescription[] = _(
 #define TRAPPING_COMBOS COMBO_STARTER_MEAN_LOOK, COMBO_STARTER_BLOCK
 
 // Stat change effects
-#define MOVE_EFFECT_ATK_MINUS_1 MOVE_EFFECT_STAT_MINUS, \
-    .attack = 1
+#define MOVE_STAT_HP  0
+#define MOVE_STAT_ATK 1
+#define MOVE_STAT_DEF 2
+#define MOVE_STAT_SPA 3
+#define MOVE_STAT_SPD 4
+#define MOVE_STAT_SPE 5
+#define MOVE_STAT_ACC 6
 
-#define MOVE_EFFECT_DEF_MINUS_1 MOVE_EFFECT_STAT_MINUS, \
-    .defense = 1
-
-#define MOVE_EFFECT_SPA_MINUS_1 MOVE_EFFECT_STAT_MINUS, \
-    .spAtk = 1
-
-#define MOVE_EFFECT_SPD_MINUS_1 MOVE_EFFECT_STAT_MINUS, \
-    .spDef = 1
-
-#define MOVE_EFFECT_SPE_MINUS_1 MOVE_EFFECT_STAT_MINUS, \
-    .speed = 1
+#define STAT_CHANGE(Stat) STAT_CHANGE_##Stat
+#define STAT_CHANGE_1 .attack
+#define STAT_CHANGE_2 .defense
+#define STAT_CHANGE_3 .spAtk
+#define STAT_CHANGE_4 .spDef
+#define STAT_CHANGE_5 .speed
+#define STAT_CHANGE_6 .accuracy
 
 // Damage macros
 // General
@@ -77,7 +78,7 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 0,                                          \
     .additionalEffects = ADDITIONAL_EFFECTS({               \
         .moveEffect = Effect,                               \
-        .Stat = Change,                                     \
+        STAT_CHANGE(Stat) = Change,                         \
         .chance = Chance,                                   \
     })
 
@@ -93,8 +94,8 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE, \
     .validApprenticeMove = TRUE
 
-#define LOWER_STAT_INFO(Stat) \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, Change, 100)
+#define LOWER_STAT_1_INFO(Stat) \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 100)
 
 #define HIT_TWICE_INFO \
     BASIC_MOVE,        \
@@ -189,11 +190,16 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 40,               \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
-#define EFFECT_40_POWER_INFO(Effect)          \
-    EFFECT_MOVE_INFO(Effect, 10),             \
-    .power = 40,                              \
-    .pp = 30,                                 \
+#define EFFECT_40_POWER_INFO \
+    .power = 40,             \
+    .pp = 30,                \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
+
+#define EFFECT_40_POWER_EFFECT_INFO(Effect) \
+    EFFECT_MOVE_INFO(Effect, 10)
+
+#define EFFECT_40_POWER_STAT_INFO(Stat) \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 10)
 
 #define HIGH_PRIORITY_40_POWER_INFO \
     .effect = EFFECT_HIT,           \
@@ -249,7 +255,7 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION
 
 #define LOWER_STAT_50_POWER_INFO(Stat)               \
-    LOWER_STAT_INFO(Stat, 1),                        \
+    LOWER_STAT_1_INFO(Stat),                         \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 50 : 30, \
     .pp = 20
 
@@ -270,7 +276,7 @@ const u8 gNotDoneYetDescription[] = _(
 
 // 55
 #define LOWER_STAT_55_POWER_INFO(Stat) \
-    LOWER_STAT_INFO(Stat, 1),          \
+    LOWER_STAT_1_INFO(Stat),          \
     .power = 55,                       \
     .pp = 15
 
@@ -389,13 +395,20 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
 
-#define BEAM_65_POWER_INFO(Effect)            \
-    EFFECT_MOVE_INFO(Effect, 10),             \
-    .power = 65,                              \
-    .pp = 20,                                 \
-    .target = TARGET_SELECTED,                \
-    .beamMove = TRUE,                         \
+#define BEAM_65_POWER_INFO     \
+    .power = 65,               \
+    .pp = 20,                  \
+    .target = TARGET_SELECTED, \
+    .beamMove = TRUE,          \
     .validApprenticeMove = TRUE
+
+#define BEAM_EFFECT_65_POWER_INFO(Effect) \
+    BEAM_65_POWER_INFO,                   \
+    EFFECT_MOVE_INFO(Effect, 10)
+
+#define BEAM_STAT_65_POWER_INFO(Stat) \
+    BEAM_65_POWER_INFO,               \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 10)
 
 #define ELEMENTAL_FANG_INFO(MoveEffect)       \
     BASIC_MOVE,                               \
@@ -421,11 +434,11 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
 
-#define LOWER_ACCURACY_65_POWER                                    \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, accuracy, 1, 30) \
-    .power = 65,                                                   \
-    .pp = 10,                                                      \
-    .target = TARGET_SELECTED,                                     \
+#define LOWER_ACCURACY_65_POWER                                          \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, MOVE_STAT_ACC, 1, 30), \
+    .power = 65,                                                         \
+    .pp = 10,                                                            \
+    .target = TARGET_SELECTED,                                           \
     .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON
 
 // 70
@@ -487,13 +500,13 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING, \
     .validApprenticeMove = TRUE
 
-#define LOWER_DEFENSE_75_POWER_INFO                               \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, defense, 1, 50) \
-    .power = 75,                                                  \
-    .pp = 10,                                                     \
-    .target = TARGET_SELECTED,                                    \
-    .category = DAMAGE_CATEGORY_PHYSICAL,                         \
-    .makesContact = TRUE,                                         \
+#define LOWER_DEFENSE_75_POWER_INFO                                      \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, MOVE_STAT_DEF, 1, 50), \
+    .power = 75,                                                         \
+    .pp = 10,                                                            \
+    .target = TARGET_SELECTED,                                           \
+    .category = DAMAGE_CATEGORY_PHYSICAL,                                \
+    .makesContact = TRUE,                                                \
     .validApprenticeMove = TRUE
 
 #define DOUBLE_IF_FAILED_75_POWER_INFO \
@@ -526,11 +539,11 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
 
-#define LOWER_STAT_CHANCE_80_POWER_INFO(Stat)                  \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 20) \
-    .power = 80,                                               \
-    .pp = 15,                                                  \
-    .target = TARGET_SELECTED,                                 \
+#define LOWER_STAT_CHANCE_80_POWER_INFO(Stat)                   \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 20), \
+    .power = 80,                                                \
+    .pp = 15,                                                   \
+    .target = TARGET_SELECTED,                                  \
     .validApprenticeMove = TRUE
 
 #define STATUS_80_POWER_INFO(Effect)                 \
@@ -566,7 +579,7 @@ const u8 gNotDoneYetDescription[] = _(
     .contestCategory = CONTEST_CATEGORY_BEAUTY
 
 #define LOWER_STAT_80_POWER_INFO(Stat) \
-    LOWER_STAT_INFO(Stat, 1),          \
+    LOWER_STAT_1_INFO(Stat),           \
     .power = 80,                       \
     .pp = 15,                          \
     .target = TARGET_SELECTED,         \
@@ -578,7 +591,7 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                                      \
     .additionalEffects = ADDITIONAL_EFFECTS({      \
         .moveEffect = MOVE_EFFECT_STAT_PLUS,       \
-        .Stat = 1,                                 \
+        STAT_CHANGE(Stat) = 1,                     \
         .self = TRUE,                              \
         .chance = 100,                             \
     })
@@ -594,11 +607,11 @@ const u8 gNotDoneYetDescription[] = _(
     }),                                         \
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON
 
-#define LOWER_DEFENSE_85_POWER_INFO                               \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, defense, 1, 20) \
-    .power = 85,                                                  \
-    .pp = 10,                                                     \
-    .target = TARGET_SELECTED,                                    \
+#define LOWER_DEFENSE_85_POWER_INFO                                      \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, MOVE_STAT_DEF, 1, 20), \
+    .power = 85,                                                         \
+    .pp = 10,                                                            \
+    .target = TARGET_SELECTED,                                           \
     .contestEffect = CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION
 
 #define ALWAYS_HIT_85_POWER_INFO \
@@ -629,7 +642,7 @@ const u8 gNotDoneYetDescription[] = _(
     .validApprenticeMove = TRUE
 
 #define LOWER_SPECIAL_DEFENSE_90_POWER_INFO                                                          \
-    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, spDef, 1, B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33), \
+    STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, MOVE_STAT_SPD, 1, B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33), \
     .power = 90,                                                                                     \
     .pp = 10,                                                                                        \
     .target = TARGET_SELECTED,                                                                       \
@@ -860,8 +873,8 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 5,                                                   \
     .additionalEffects = ADDITIONAL_EFFECTS({                  \
         .moveEffect = MOVE_EFFECT_STAT_MINUS,                  \
-        .Stat1 = 1,                                            \
-        .Stat2 = 1,                                            \
+        STAT_CHANGE(Stat1) = 1,                                \
+        STAT_CHANGE(Stat2) = 1,                                \
         .self = TRUE,                                          \
     }),                                                        \
     .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED, \
@@ -914,7 +927,7 @@ const u8 gNotDoneYetDescription[] = _(
     GENIE_STORM_INFO,                         \
     .additionalEffects = ADDITIONAL_EFFECTS({ \
         .moveEffect = MOVE_EFFECT_STAT_MINUS, \
-        .Stat = 1,                            \
+        STAT_CHANGE(Stat) = 1,                \
         .chance = 30,                         \
     })
 
@@ -2205,12 +2218,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Acid"),
         .description = COMPOUND_STRING(
             "Sprays a hide-melting acid.\n"
-        #if B_UPDATED_MOVE_DATA >= GEN_4
+      #if B_UPDATED_MOVE_DATA >= GEN_4
             "May lower Sp. Def."),
+            EFFECT_40_POWER_STAT_INFO(MOVE_STAT_SPD),
         #else
             "May lower Defense."),
+            EFFECT_40_POWER_STAT_INFO(MOVE_STAT_DEF),
         #endif
-        EFFECT_40_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_DEF_MINUS_1),
         .type = TYPE_POISON,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -2224,7 +2238,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A weak fire attack that may\n"
             "inflict a burn."),
-        EFFECT_40_POWER_INFO(MOVE_EFFECT_BURN),
+        EFFECT_40_POWER_EFFECT_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_FIRE,
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -2382,7 +2396,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fires a peculiar ray that\n"
             "may confuse the foe."),
-        BEAM_65_POWER_INFO(MOVE_EFFECT_CONFUSION),
+        BEAM_EFFECT_65_POWER_INFO(MOVE_EFFECT_CONFUSION),
         .type = TYPE_PSYCHIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
@@ -2398,7 +2412,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Forcefully sprays bubbles\n"
             "that may lower Speed."),
-        BEAM_65_POWER_INFO(MOVE_EFFECT_SPE_MINUS_1),
+        BEAM_STAT_65_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_WATER,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
@@ -2414,7 +2428,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fires a rainbow-colored\n"
             "beam that may lower Attack."),
-        BEAM_65_POWER_INFO(MOVE_EFFECT_ATK_MINUS_1),
+        BEAM_STAT_65_POWER_INFO(MOVE_STAT_ATK),
         .type = TYPE_ICE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
@@ -2866,7 +2880,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An electrical attack that\n"
             "may paralyze the foe."),
-        EFFECT_40_POWER_INFO(MOVE_EFFECT_PARALYSIS),
+        EFFECT_40_POWER_EFFECT_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
         .target = TARGET_SELECTED,
         .contestCategory = CONTEST_CATEGORY_COOL,
@@ -3989,10 +4003,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Constricts to inflict pain.\n"
             "May lower Speed."),
-        EFFECT_30_POWER_INFO(MOVE_EFFECT_SPE_MINUS_1),
+        .effect = EFFECT_HIT,
+        .power = 20,
         .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 35,
+        .target = TARGET_SELECTED,
+        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .speed = 1,
+            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 20 : 33,
+        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS : CONTEST_EFFECT_STARTLE_PREV_MON,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_Constrict,
@@ -4323,7 +4347,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An attack using bubbles.\n"
             "May lower the foes' Speed."),
-        EFFECT_40_POWER_INFO(MOVE_EFFECT_SPE_MINUS_1),
+        EFFECT_40_POWER_STAT_INFO(MOVE_STAT_SPE),
         .type = TYPE_WATER,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -5209,7 +5233,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "gust. May cause freezing."),
         #endif
-        EFFECT_40_POWER_INFO(MOVE_EFFECT_FREEZE_OR_FROSTBITE),
+        EFFECT_40_POWER_EFFECT_INFO(MOVE_EFFECT_FREEZE_OR_FROSTBITE),
         .type = TYPE_ICE,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -5574,7 +5598,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A chilling attack that\n"
             "lowers the foes' Speed."),
-        LOWER_STAT_55_POWER_INFO(speed),
+        LOWER_STAT_55_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_ICE,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -6632,6 +6656,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SunnyDay,
     },
 
+    //TODO
     [MOVE_CRUNCH] =
     {
         .name = COMPOUND_STRING("Crunch"),
@@ -6639,10 +6664,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Crunches with sharp fangs.\n"
         #if B_UPDATED_MOVE_DATA >= GEN_4
             "May lower Defense."),
+            LOWER_STAT_CHANCE_80_POWER_INFO(MOVE_STAT_DEF),
         #else
             "May lower Sp. Def."),
+            LOWER_STAT_CHANCE_80_POWER_INFO(MOVE_STAT_SPD),
         #endif
-        LOWER_STAT_CHANCE_80_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? defense : spDef),
         .type = TYPE_DARK,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -6734,7 +6760,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls a black blob that may\n"
             "lower the foe's Sp. Def."),
-        LOWER_STAT_CHANCE_80_POWER_INFO(spDef),
+        LOWER_STAT_CHANCE_80_POWER_INFO(MOVE_STAT_SPD),
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
@@ -7492,7 +7518,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but it lowers the\n"
             "user's Attack and Defense."),
-        LOWER_USER_TWO_STATS_120_POWER_INFO(attack, defense),
+        LOWER_USER_TWO_STATS_120_POWER_INFO(MOVE_STAT_ATK, MOVE_STAT_DEF),
         .type = TYPE_FIGHTING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -8933,7 +8959,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls mud at the foe and\n"
             "lowers Speed."),
-        LOWER_STAT_55_POWER_INFO(speed),
+        LOWER_STAT_55_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_GROUND,
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -9530,7 +9556,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fights up close. This lowers\n"
             "the user's defensive stats."),
-        LOWER_USER_TWO_STATS_120_POWER_INFO(defense, spDef),
+        LOWER_USER_TWO_STATS_120_POWER_INFO(MOVE_STAT_DEF, MOVE_STAT_SPD),
         .type = TYPE_FIGHTING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -12605,7 +12631,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Resisting, the user attacks\n"
             "the foes. Lowers Sp. Atk."),
-        LOWER_STAT_50_POWER_INFO(spAtk),
+        LOWER_STAT_50_POWER_INFO(MOVE_STAT_SPA),
         .type = TYPE_BUG,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -12702,7 +12728,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Snares the foes with an\n"
             "electric net. Lowers Speed."),
-        LOWER_STAT_55_POWER_INFO(speed),
+        LOWER_STAT_55_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_ELECTRIC,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -13177,7 +13203,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dances cloaked in flames.\n"
             "May raise Sp. Atk."),
-        RAISE_STAT_80_POWER_INFO(spAtk),
+        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPA),
         .type = TYPE_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .danceMove = TRUE,
@@ -13222,7 +13248,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Yells and rants at the foe\n"
             "lowering its Sp. Atk."),
-        LOWER_STAT_55_POWER_INFO(spAtk),
+        LOWER_STAT_55_POWER_INFO(MOVE_STAT_SPA),
         .type = TYPE_DARK,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -15142,7 +15168,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Lunges at the foe to lower\n"
             "its Attack stat."),
-        LOWER_STAT_80_POWER_INFO(attack),
+        LOWER_STAT_80_POWER_INFO(MOVE_STAT_ATK),
         .type = TYPE_BUG,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -16186,7 +16212,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Plays a drum to attack.\n"
             "The foe's Speed is lowered."),
-        LOWER_STAT_80_POWER_INFO(speed),
+        LOWER_STAT_80_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_GRASS,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
@@ -17286,7 +17312,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Wraps a foe in fierce winds.\n"
             "Varies with the user's form."),
-        GENIE_STORM_STAT_LOWER_INFO(attack),
+        GENIE_STORM_STAT_LOWER_INFO(MOVE_STAT_ATK),
         .type = TYPE_FAIRY,
         .metronomeBanned = TRUE,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
@@ -17299,7 +17325,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A mysterious power strikes,\n"
             "raising the user's Sp. Atk."),
-        RAISE_STAT_80_POWER_INFO(spAtk),
+        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPA),
         .type = TYPE_PSYCHIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestComboStarterId = 0,
@@ -17414,7 +17440,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A full-body tackle. Lowers\n"
             "the user's defensive stats."),
-        LOWER_USER_TWO_STATS_120_POWER_INFO(defense, spDef),
+        LOWER_USER_TWO_STATS_120_POWER_INFO(MOVE_STAT_DEF, MOVE_STAT_SPD),
         .type = TYPE_GROUND,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -17451,7 +17477,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "High critical-hit ratio.\n"
             "Raises the user's Speed."),
-        RAISE_STAT_80_POWER_INFO(speed),
+        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_PSYCHIC,
         .criticalHitStage = INCREASED_CRITICAL,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -17466,7 +17492,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A spine-chilling resentment.\n"
             "Lowers the foe's Attack."),
-        LOWER_STAT_80_POWER_INFO(attack),
+        LOWER_STAT_80_POWER_INFO(MOVE_STAT_ATK),
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .battleAnimScript = gBattleAnimMove_BitterMalice,
@@ -17570,7 +17596,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits with brutal, cold winds.\n"
             "May lower foes' Speed."),
-        GENIE_STORM_STAT_LOWER_INFO(speed),
+        GENIE_STORM_STAT_LOWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_FLYING,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_BleakwindStorm,
@@ -18065,7 +18091,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Flames scorch the target.\n"
             "Raises the user's Sp. Atk."),
-        RAISE_STAT_80_POWER_INFO(spAtk),
+        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPA),
         .type = TYPE_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .soundMove = TRUE,
@@ -18082,7 +18108,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits with light, fluid dance\n"
             "steps. Ups the user's Speed."),
-        RAISE_STAT_80_POWER_INFO(speed),
+        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_WATER,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -18285,7 +18311,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The user pounces on the foe,\n"
             "lowering its Speed."),
-        LOWER_STAT_50_POWER_INFO(speed),
+        LOWER_STAT_50_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_BUG,
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -18317,7 +18343,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A shower with ice-cold water\n"
             "lowers the target's Attack."),
-        LOWER_STAT_50_POWER_INFO(attack),
+        LOWER_STAT_50_POWER_INFO(MOVE_STAT_ATK),
         .type = TYPE_WATER,
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_SPECIAL,
@@ -18388,7 +18414,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Shoots armor. This lowers\n"
             "the user's defensive stats."),
-        LOWER_USER_TWO_STATS_120_POWER_INFO(defense, spDef),
+        LOWER_USER_TWO_STATS_120_POWER_INFO(MOVE_STAT_DEF, MOVE_STAT_SPD),
         .type = TYPE_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
@@ -19576,7 +19602,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     .power = 1,                               \
     .additionalEffects = ADDITIONAL_EFFECTS({ \
         .moveEffect = MOVE_EFFECT_STAT_MINUS, \
-        .Stat = 1,                            \
+        STAT_CHANGE(Stat) = 1,                \
         .onSide = TRUE,                       \
     })
 
@@ -19585,7 +19611,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     .power = 1,                               \
     .additionalEffects = ADDITIONAL_EFFECTS({ \
         .moveEffect = MOVE_EFFECT_STAT_PLUS,  \
-        .Stat = 1,                            \
+        STAT_CHANGE(Stat) = 1,                \
         .onSide = TRUE,                       \
         .self = TRUE,                         \
     })
@@ -19607,7 +19633,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Bug Dynamax attack.\n"
             "Lowers foes' Sp. Atk."),
-        DMAX_LOWER_STAT_INFO(spAtk),
+        DMAX_LOWER_STAT_INFO(MOVE_STAT_SPA),
         .type = TYPE_BUG,
         .battleAnimScript = gBattleAnimMove_MaxFlutterby,
     },
@@ -19629,7 +19655,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Normal Dynamax attack.\n"
             "Lowers foes' Speed."),
-        DMAX_LOWER_STAT_INFO(speed),
+        DMAX_LOWER_STAT_INFO(MOVE_STAT_SPE),
         .type = TYPE_NORMAL,
         .battleAnimScript = gBattleAnimMove_MaxStrike,
     },
@@ -19640,7 +19666,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fighting Dynamax attack.\n"
             "Raises allies' Attack."),
-        DMAX_RAISE_STAT_INFO(attack),
+        DMAX_RAISE_STAT_INFO(MOVE_STAT_ATK),
         .type = TYPE_FIGHTING,
         .battleAnimScript = gBattleAnimMove_MaxKnuckle,
     },
@@ -19651,7 +19677,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ghost Dynamax attack.\n"
             "Lowers foes' Defense."),
-        DMAX_LOWER_STAT_INFO(defense),
+        DMAX_LOWER_STAT_INFO(MOVE_STAT_DEF),
         .type = TYPE_GHOST,
         .battleAnimScript = gBattleAnimMove_MaxPhantasm,
     },
@@ -19677,7 +19703,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Poison Dynamax attack.\n"
             "Raises allies' Sp. Atk."),
-        DMAX_RAISE_STAT_INFO(spAtk),
+        DMAX_RAISE_STAT_INFO(MOVE_STAT_SPA),
         .type = TYPE_POISON,
         .battleAnimScript = gBattleAnimMove_MaxOoze,
     },
@@ -19699,7 +19725,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Flying Dynamax attack.\n"
             "Raises allies' Speed."),
-        DMAX_RAISE_STAT_INFO(speed),
+        DMAX_RAISE_STAT_INFO(MOVE_STAT_SPE),
         .type = TYPE_FLYING,
         .battleAnimScript = gBattleAnimMove_MaxAirstream,
     },
@@ -19721,7 +19747,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dragon Dynamax attack.\n"
             "Lowers foes' Attack."),
-        DMAX_LOWER_STAT_INFO(attack),
+        DMAX_LOWER_STAT_INFO(MOVE_STAT_ATK),
         .type = TYPE_DRAGON,
         .battleAnimScript = gBattleAnimMove_MaxWyrmwind,
     },
@@ -19754,7 +19780,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ground Dynamax attack.\n"
             "Raises allies' Sp. Def."),
-        DMAX_RAISE_STAT_INFO(spDef),
+        DMAX_RAISE_STAT_INFO(MOVE_STAT_SPD),
         .type = TYPE_GROUND,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = gBattleAnimMove_MaxQuake,
@@ -19766,7 +19792,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dark Dynamax attack.\n"
             "Lowers foes' Sp. Def."),
-        DMAX_LOWER_STAT_INFO(spDef),
+        DMAX_LOWER_STAT_INFO(MOVE_STAT_SPD),
         .type = TYPE_DARK,
         .battleAnimScript = gBattleAnimMove_MaxDarkness,
     },
@@ -19788,7 +19814,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Steel Dynamax attack.\n"
             "Raises allies' Defense."),
-        DMAX_RAISE_STAT_INFO(defense),
+        DMAX_RAISE_STAT_INFO(MOVE_STAT_DEF),
         .type = TYPE_STEEL,
         .battleAnimScript = gBattleAnimMove_MaxSteelspike,
     },

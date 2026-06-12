@@ -340,6 +340,7 @@ static const u32 sWallpaperIcon_PlusleJapan[]  = INCGFX_U32("graphics/pokemon_st
 static const u32 sWallpaperIcon_Minun[]        = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/minun.png", ".4bpp.smol");
 static const u32 sWallpaperIcon_Togepi[]       = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/togepi.png", ".4bpp.smol");
 static const u32 sWallpaperIcon_Magma[]        = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/magma.png", ".4bpp.smol");
+static const u32 sWallpaperIcon_Blank[]        = INCGFX_U32("graphics/pokemon_storage/wallpapers/icons/blank.png", ".4bpp.smol");
 
 static const struct Wallpaper sWaldaWallpapers[] =
 {

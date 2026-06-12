@@ -217,8 +217,6 @@ upcoming
 ### Moves
 - Add Pollen Puff-esque ally healing back to Present
 - Macro for EFFECT_STAT_CHANGE?
-- Macro for stat up (Flame Charge 50/Torch Song 80)
-- Combine Genie macros again
 - Turn some animation macros into functions like the Absorb ones
 - Update Drill Peck animation to match other drills?
 - Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?

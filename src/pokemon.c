@@ -5063,7 +5063,7 @@ bool32 CanLearnTeachableMove(enum Species species, enum Move move)
                     if (P_TM_LITERACY < GEN_6)
                         return FALSE;
 
-                    for (j = 0; j < MAX_LEVEL_UP_MOVES && learnset[j].move != LEVEL_UP_MOVE_END; j++)
+                    for (j = 0; learnset[j].move != LEVEL_UP_MOVE_END; j++)
                     {
                         if (learnset[j].move == move)
                             return TRUE;
@@ -5095,7 +5095,7 @@ u8 GetLevelUpMovesBySpecies(enum Species species, u16 *moves)
     int i;
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
 
-    for (i = 0; i < MAX_LEVEL_UP_MOVES && learnset[i].move != LEVEL_UP_MOVE_END; i++)
+    for (i = 0; learnset[i].move != LEVEL_UP_MOVE_END; i++)
         moves[numMoves++] = learnset[i].move;
 
     return numMoves;

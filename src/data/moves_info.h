@@ -10577,7 +10577,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = B_UPDATED_MOVE_FLAGS >= GEN_CHAMPIONS,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -16081,7 +16080,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BOLT_BEAK] =
     {
         .name = COMPOUND_STRING("Bolt Beak"),
-        .description = COMPOUND_STRING(
         DOUBLE_POWER_IF_FASTER_INFO,
         .type = TYPE_ELECTRIC,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -16095,7 +16093,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FISHIOUS_REND] =
     {
         .name = COMPOUND_STRING("Fishious Rend"),
-        .description = COMPOUND_STRING(
         DOUBLE_POWER_IF_FASTER_INFO,
         .type = TYPE_WATER,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -17972,7 +17969,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hits target with splashes\n"
             "of water 3 times in a row."),
         BASIC_MOVE,
-        B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? 35 : 30,
+        .power = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? 35 : 30,
         .type = TYPE_WATER,
         .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,

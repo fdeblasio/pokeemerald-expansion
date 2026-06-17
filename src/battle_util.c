@@ -10453,7 +10453,7 @@ u32 GetTotalAccuracy(struct BattleCalcValues *cv, u32 weather)
     u32 moveAcc = GetMoveAccuracy(cv->move);
     u32 attackerWeather = GetAttackerWeather(cv->holdEffects[battlerAtk], cv->abilities[battlerAtk], weather);
 
-    if (gBattleMons[battlerAtk].species == SPECIES_HYPNO && move == MOVE_HYPNOSIS)
+    if (gBattleMons[battlerAtk].species == SPECIES_HYPNO && cv->move == MOVE_HYPNOSIS)
         moveAcc = 100;
 
     // Check Thunder and Hurricane on sunny weather.

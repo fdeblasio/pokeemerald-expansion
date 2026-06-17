@@ -1035,7 +1035,7 @@ static u32 GetRelearnerOtherMoves(struct BoxPokemon *mon, u16 *moves)
     if (FlagGet(P_FLAG_TUTOR_MOVES) || P_ENABLE_MOVE_RELEARNERS)
         numTutorMoves = GetRelearnerTutorMoves(mon, tutorMoves);
 
-    u16 eggMoves[EGG_MOVES_ARRAY_COUNT] = {0};
+    u16 eggMoves[] = {0};
     u16 numEggMoves = 0;
     if (FlagGet(P_FLAG_EGG_MOVES) || P_ENABLE_MOVE_RELEARNERS)
         numEggMoves = GetRelearnerEggMoves(mon, eggMoves);

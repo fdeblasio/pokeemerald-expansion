@@ -11211,7 +11211,6 @@ const struct ItemInfo gItemsInfo[] =
 #define STAT_MOCHI_INFO(mochi)                       \
     .name = ITEM_NAME(#mochi " Mochi"),              \
     .pluralName = ITEM_PLURAL_NAME(#mochi " Mochi"), \
-    .description = s##mochi##FeatherDesc,            \
     MOCHI_INFO,                                      \
     .fieldUseFunc = ItemUseOutOfBattle_Medicine,     \
     .iconPalette = gItemIconPalette_##mochi##Mochi

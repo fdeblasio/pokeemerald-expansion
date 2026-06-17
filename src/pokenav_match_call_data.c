@@ -364,6 +364,15 @@ static const struct MatchCallStructNPC sScottMatchCallHeader =
     }
 };
 
+#define GYM_LEADER_MATCH_CALL_TEXT(Name)                                                    \
+    (const match_call_text_data_t[]) {                                                      \
+        { MatchCall_Text_##Name##_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET }, \
+        { MatchCall_Text_##Name##_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET }, \
+        { MatchCall_Text_##Name##_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET }, \
+        { MatchCall_Text_##Name##_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET }, \
+        MATCH_CALL_TEXT_END                                                                 \
+    }
+
 static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
@@ -372,13 +381,7 @@ static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
     .rematchTableIdx = REMATCH_ROXANNE,
     .desc = COMPOUND_STRING("Rockin' Whiz"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Roxanne_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Roxanne_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Roxanne_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Roxanne_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Roxanne)
 };
 
 static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
@@ -389,13 +392,7 @@ static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
     .rematchTableIdx = REMATCH_BRAWLY,
     .desc = COMPOUND_STRING("The Big Hit"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Brawly_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Brawly_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Brawly_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Brawly_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Brawly)
 };
 
 static const struct MatchCallStructTrainer sWattsonMatchCallHeader =
@@ -406,13 +403,7 @@ static const struct MatchCallStructTrainer sWattsonMatchCallHeader =
     .rematchTableIdx = REMATCH_WATTSON,
     .desc = COMPOUND_STRING("Swell Shock"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Wattson_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Wattson_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Wattson_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Wattson_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Wattson)
 };
 
 static const struct MatchCallStructTrainer sFlanneryMatchCallHeader =
@@ -423,13 +414,7 @@ static const struct MatchCallStructTrainer sFlanneryMatchCallHeader =
     .rematchTableIdx = REMATCH_FLANNERY,
     .desc = COMPOUND_STRING("Passion Burn"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Flannery_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Flannery_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Flannery_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Flannery_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Flannery)
 };
 
 static const struct MatchCallStructTrainer sWinonaMatchCallHeader =
@@ -440,13 +425,7 @@ static const struct MatchCallStructTrainer sWinonaMatchCallHeader =
     .rematchTableIdx = REMATCH_WINONA,
     .desc = COMPOUND_STRING("Sky Tamer"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Winona_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Winona_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Winona_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Winona_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Winona)
 };
 
 static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
@@ -457,13 +436,7 @@ static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
     .rematchTableIdx = REMATCH_TATE_AND_LIZA,
     .desc = COMPOUND_STRING("Mystic Duo"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_TateLiza_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_TateLiza_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_TateLiza_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_TateLiza_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(TateLiza)
 };
 
 static const struct MatchCallStructTrainer sJuanMatchCallHeader =
@@ -474,13 +447,7 @@ static const struct MatchCallStructTrainer sJuanMatchCallHeader =
     .rematchTableIdx = REMATCH_JUAN,
     .desc = COMPOUND_STRING("Dandy Charm"),
     .name = NULL,
-    .textData = (const match_call_text_data_t[]) {
-        { MatchCall_Text_Juan_Preparing,         REMATCH_CALL_START,  NO_FLAG_TO_SET },
-        { MatchCall_Text_Juan_PreparingPostGame, ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Juan_RematchReady,      ALWAYS_AVAILABLE,    NO_FLAG_TO_SET },
-        { MatchCall_Text_Juan_PostRematch,       FLAG_SYS_GAME_CLEAR, NO_FLAG_TO_SET },
-        MATCH_CALL_TEXT_END
-    }
+    .textData = GYM_LEADER_MATCH_CALL_TEXT(Juan)
 };
 
 static const u8 gText_EliteFourMatchCallDesc[] = _("Elite Four");

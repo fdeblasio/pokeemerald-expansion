@@ -261,7 +261,6 @@ NewMauville_Inside_EventScript_Regieleki::
 	setwildbattle SPECIES_NEW_MAUVILLE_2, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
-	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedRegieleki

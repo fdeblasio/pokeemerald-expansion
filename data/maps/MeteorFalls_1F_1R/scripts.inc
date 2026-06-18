@@ -264,7 +264,6 @@ MeteorFalls_1F_1R_EventScript_Regidrago::
 	setwildbattle SPECIES_METEOR_FALLS, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
-	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, MeteorFalls_1F_1R_EventScript_DefeatedRegidrago

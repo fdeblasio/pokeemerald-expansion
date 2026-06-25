@@ -56,12 +56,20 @@ upcoming
         - Beedrill gets Cross Poison
         - Chimecho learns Flash Cannon
         - Meganium gets Dazzling Gleam
+        - Barbaracle gets Aqua Cutter
+        - Malamar gets Zen Headbutt
+        - Staraptor gets Brick Break
     - Some movesets get good moves that they don't have in EE that can be added:
         - Talonflame gets Blaze Kick
         - Alolan Raichu gets Rising Voltage
-        - Pinsir gets Aerial Ace
+        - Pinsir gets Aerial Ace and Lunge
         - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
         - Clefable gets Air Slash
+        - Falinks gets Seed Bomb
+        - Barbaracle gets Waterfall and Close Combat
+        - Eelektross gets Waterfall
+        - Staraptor gets Bulk Up and Blaze Kick
+        - Sceptile gets Earth Power
 - Abilities:
     - Update DynamicPower for Mega Sol
 - Megas:

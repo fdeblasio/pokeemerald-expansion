@@ -63,7 +63,7 @@ upcoming
         - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
         - Clefable gets Air Slash
 - Abilities:
-    - Add Dragonize to DynamicPower
+    - Update DynamicPower for Mega Sol
 - Megas:
     - Starmie:
         - Make attacking stats more consistent? (Regular has 25 more SpA, Mega has 30 more SpA but actually more Atk from Huge Power)

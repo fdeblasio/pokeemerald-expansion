@@ -2554,7 +2554,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_PUMMEL] =
     {
         .name = _("Pummel"),
-        .description = COMPOUND_STRING("Ups Fighting moves in a pinch."),
+        .description = COMPOUND_STRING("Ups Fighting moves at low HP."),
+        .aiRating = 5,
+    },
+
+    [ABILITY_ZEPHYR] =
+    {
+        .name = _("zephyr"),
+        .description = COMPOUND_STRING("Ups Flying moves at low HP."),
         .aiRating = 5,
     },
 };

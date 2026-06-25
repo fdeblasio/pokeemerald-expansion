@@ -6080,34 +6080,34 @@
             "range": "POSTGAME",
             "mons": [
               {
-                "species": "GRASS_STARTER"
+                "species": "RAFI_STARTER"
               },
               {
-                "species": "FIRE_STARTER"
-              },
-              {
-                "species": "WATER_STARTER"
-              },
-              {
-                "species": "WATER_STARTER"
-              },
-              {
-                "species": "GRASS_STARTER"
-              },
-              {
-                "species": "FIRE_STARTER"
-              },
-              {
-                "species": "WATER_STARTER"
-              },
-              {
-                "species": "WATER_STARTER"
+                "species": "KIM_STARTER"
               },
               {
                 "species": "HAPPINY"
               },
               {
                 "species": "HAPPINY"
+              },
+              {
+                "species": "HAPPINY"
+              },
+              {
+                "species": "HAPPINY"
+              },
+              {
+                "species": "HAPPINY"
+              },
+              {
+                "species": "HAPPINY"
+              },
+              {
+                "species": "RAFI_STARTER"
+              },
+              {
+                "species": "KIM_STARTER"
               }
             ]
           }

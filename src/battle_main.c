@@ -6068,6 +6068,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case ABILITY_REFRIGERATE:
     case ABILITY_PIXILATE:
     case ABILITY_GALVANIZE:
+    case ABILITY_DRAGONIZE:
         if (GetMoveType(move) == TYPE_NORMAL)
             UQ4_12_MULTIPLY(power, 1.2);
         break;
@@ -6105,6 +6106,10 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         if (category == DAMAGE_CATEGORY_PHYSICAL)
             power = uq4_12_multiply_half_down(power, UQ_4_12(1.5));
         break;
+    //case ABILITY_FIRE_MANE:
+    //    if (type == TYPE_FIRE)
+    //        UQ4_12_MULTIPLY(power, 1.5);
+    //    break;
     default:
         break;
     }

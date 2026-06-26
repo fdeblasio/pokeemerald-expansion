@@ -11563,7 +11563,14 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MACHAMPITE] =
     {
         .name = ITEM_NAME("Machampite"),
-        MEGA_STONE_INFO("Machampite"),
+        MEGA_STONE_INFO("Machamp"),
+        ITEM_ICON(Hawluchanite),
+    },
+
+    [ITEM_PLACEHOLDERITE] =
+    {
+        .name = ITEM_NAME("Placeholderite"),
+        MEGA_STONE_INFO("Placeholder"),
         ITEM_ICON(Hawluchanite),
     },
 };

@@ -5528,8 +5528,7 @@ gBattleAnimMove_LeafTornado::
 	splitbgprio ANIM_TARGET
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 2, 47, 1
-	createsprite gEllipticalGustSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
+	call CreateGust
 	call LeafTornadoVortex
 	call LeafTornadoVortex
 	call LeafTornadoVortex
@@ -5686,27 +5685,23 @@ gBattleAnimMove_Hurricane::
 	waitbgfadein
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 64, 1
-	call HurricaneGust
+	call CreateGust
 	delay 10
-	call HurricaneGust
+	call CreateGust
 	delay 10
-	call HurricaneGust
+	call CreateGust
 	delay 10
-	call HurricaneGust
+	call CreateGust
 	delay 10
-	call HurricaneGust
+	call CreateGust
 	delay 10
-	call HurricaneGust
+	call CreateGust
 	waitforvisualfinish
 	stopsound
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	call UnsetBackground
 	end
-HurricaneGust:
-	createsprite gEllipticalGustSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
-	return
 HurricaneGustCentered:
 	createsprite gEllipticalGustCenteredSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
 	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
@@ -12016,11 +12011,11 @@ gBattleAnimMove_SparklySwirl::
 	splitbgprio ANIM_TARGET
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 2, 47, 1
-	call HurricaneGust
+	call CreateGust
 	call PinkPetalVortex
-	call HurricaneGust
+	call CreateGust
 	call PinkPetalVortex
-	call HurricaneGust
+	call CreateGust
 	call PinkPetalVortex
 	waitforvisualfinish
 	stopsound
@@ -24483,8 +24478,7 @@ gBattleAnimMove_Gust::
 	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
-	createsprite gEllipticalGustSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
+	call CreateGust
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 1, 0, 7, 1
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=2
@@ -24493,6 +24487,11 @@ gBattleAnimMove_Gust::
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
+
+CreateGust:
+	createsprite gEllipticalGustSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
+	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
+	return
 
 gBattleAnimMove_WingAttack::
 	monbg ANIM_DEF_PARTNER

@@ -5672,7 +5672,7 @@ static void Task_ReplaceMoveYesNo(u8 taskId)
 
 static void Task_HandleReplaceMoveYesNoInput(u8 taskId)
 {
-    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][gPartyMenu.slotId];
 
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {

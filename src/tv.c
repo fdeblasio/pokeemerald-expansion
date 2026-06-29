@@ -2572,7 +2572,7 @@ void CopyContestRankToStringVar(u8 varIdx, u8 rank)
         StringCopy(GetStringVar(varIdx), gStdStrings[STDSTRING_MASTER]);
         break;
     case CONTEST_RANK_SPECIAL:
-        StringCopy(gTVStringVarPtrs[varIdx], gStdStrings[STDSTRING_SPECIAL]);
+        StringCopy(GetStringVar(varIdx), gStdStrings[STDSTRING_SPECIAL]);
         break;
     }
 }

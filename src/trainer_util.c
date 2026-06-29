@@ -134,7 +134,7 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
     u32 personality = (LocalRandom32(&trainer->localRngState) & 0xFFFFDF00) + 0x1000;
     u32 genderValue = 0;
     if (trainer->trainerPic == TRAINER_PIC_LEADER_NORMAN && trainerMon->species == SPECIES_SPINDA)
-        personalityValue = 0x8888D7D9;
+        genderValue = 0x8888D7D9;
     else if (trainerMon->gender == TRAINER_MON_RANDOM_GENDER)
         genderValue = LocalRandom32(&trainer->localRngState) & 0x000000FF;
     else if (trainerMon->gender == TRAINER_MON_MALE)
@@ -186,7 +186,7 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
         // this is the default from CreateMon (random non-hidden ability based on personality)
     }
 
-    if (trainerMon->ball < POKEBALL_COUNT && partyData[monIndex].ball != BALL_STRANGE)
+    if (trainerMon->ball < POKEBALL_COUNT && trainerMon->ball != BALL_STRANGE)
     {
         data = trainerMon->ball;
         SetMonData(mon, MON_DATA_POKEBALL, &data);

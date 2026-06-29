@@ -7011,7 +7011,7 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
 
     u8 ppBonus = 255;
-    SetMonData(&mon, MON_DATA_PP_BONUSES, &ppBonus);
+    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonus);
 
     CalculateMonStats(mon);
     TryFormChange(mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_PLAYER);

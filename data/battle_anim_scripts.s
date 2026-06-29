@@ -3875,7 +3875,7 @@ gBattleAnimMove_Autotomize::
 gBattleAnimMove_RagePowder::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
-	create_powder_particles macro=create_rage_powder_particle_sprite
+	create_powder_particles anim_battler=ANIM_TARGET, sprite=create_rage_powder_particle_sprite
 	clearmonbg ANIM_DEF_PARTNER
 	end
 
@@ -8060,7 +8060,7 @@ AcidDrench:
 gBattleAnimMove_Powder::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
-	create_powder_particles macro=create_powder_particle_sprite
+	create_powder_particles anim_battler=ANIM_TARGET, sprite=create_powder_particle_sprite
 	clearmonbg ANIM_DEF_PARTNER
 	end
 

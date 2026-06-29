@@ -804,3 +804,20 @@
 	createsprite \sprite, \anim_battler, 1, \anim_battler, 60
 	waitforvisualfinish
 	.endm
+
+	.macro create_spore_particles target:req blend:req
+	create_spore_particle_sprite \target, 2, x=0, y=-20, wave_offset=85, duration=80, blend=\blend
+	delay 12
+	create_spore_particle_sprite \target, 2, x=0, y=-10, wave_offset=170, duration=80, blend=\blend
+	delay 12
+	create_spore_particle_sprite \target, 2, x=0, y=-15, wave_offset=0, duration=80, blend=\blend
+	delay 12
+	.endm
+
+	.macro absorb_effect absorb_type:req
+	call \absorb_type
+	waitforvisualfinish
+	delay 15
+	call HealingEffect
+	waitforvisualfinish
+	.endm

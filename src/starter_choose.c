@@ -97,8 +97,8 @@ static const u8 sStarterLabelCoords[2] = {16, 10};
 
 static const u16 sStarterMon[] =
 {
-    RAFI_STARTER,
-    KIM_STARTER
+    SPECIES_RAFI_STARTER,
+    SPECIES_KIM_STARTER
 };
 
 static const struct BgTemplate sBgTemplates[3] =

@@ -371,7 +371,7 @@
 #define RIVAL_STARTER(Location, Rival, Rival2)                                                                   \
     {                                                                                                            \
     .lvl = Location##_STARTER_LEVEL,                                                                             \
-    .species = Rival2##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)),        \
+    .species = SPECIES_##Rival2##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)),        \
     .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                                 \
     PERFECT_IVS,                                                                                                 \
     .gender = Rival,                                                                                             \

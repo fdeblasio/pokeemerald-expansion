@@ -1751,7 +1751,7 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
 {
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     enum Move move = moveInfo->moves[gMoveSelectionCursor[battler]];
-    struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][gBattlerPartyIndexes[battler]];
     u16 pwr = GetDynamicPower(mon, move, battler);
     u32 acc = GetDynamicAccuracy(mon, move, battler);
     u32 moveEffect = GetMoveEffect(move);

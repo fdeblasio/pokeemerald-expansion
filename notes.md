@@ -186,6 +186,7 @@ upcoming
 ### Items
 - Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
     - Move is currently on two lines, item is on 3 so the move gets cut off
+- Move some TMs from shops to overworld
 - See if it's possible to give the decoration PC more room
 - Increase bag space for all items: 383 (595 - 100 items - 37 medicine - 75 unused):
     - 136 non-macroed
@@ -224,8 +225,6 @@ upcoming
 
 ### Moves
 - Add Pollen Puff-esque ally healing back to Present
-- Macro for EFFECT_STAT_CHANGE?
-- Turn some animation macros into functions like the Absorb ones
 - Update Drill Peck animation to match other drills?
 - Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation

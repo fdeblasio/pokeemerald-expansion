@@ -3012,13 +3012,6 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
-    if (P_PARTY_MOVE_RELEARNER
-    && GetMonData(&mons[slotId], MON_DATA_SPECIES)
-    && CanBoxMonRelearnAnyMove(&mons[slotId].box))
-    {
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUB_MOVES);
-    }
-
     // Add field moves to action list
     for (i = 0; i < MAX_MON_MOVES; i++)
     {

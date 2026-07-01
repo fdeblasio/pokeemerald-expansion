@@ -7944,8 +7944,7 @@ gBattleAnimMove_MysticalFire::
 gBattleAnimMove_SpikyShield::
 	monbg ANIM_ATK_PARTNER
 	splitbgprio ANIM_ATTACKER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 16
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	call CreateProtect
 	delay 15
 	createsprite gNeedleArmSpikeSpriteTemplate, ANIM_TARGET, 2, 0, 1, 0, -32, 16
 	delay 2
@@ -9094,8 +9093,7 @@ gBattleAnimMove_FirstImpression::
 gBattleAnimMove_BanefulBunker::
 	monbg ANIM_ATK_PARTNER
 	splitbgprio ANIM_ATTACKER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER 16
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	call CreateProtect
 	createsprite gBanefulBunkerPoisonBubbleTemplate, ANIM_ATTACKER, 2, 10, 10, 25, 0
 	delay 4
 	createsprite gBanefulBunkerPoisonBubbleTemplate, ANIM_ATTACKER, 2, -15, 0, 25, 0
@@ -12985,8 +12983,7 @@ gBattleAnimMove_Obstruct::
 	delay 16
 	monbg ANIM_ATK_PARTNER
 	splitbgprio ANIM_ATTACKER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 16
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90 @;Protect
+	call CreateProtect
 	waitforvisualfinish
 	createsprite gObstructCrossTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 36
 	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
@@ -13973,8 +13970,7 @@ gBattleAnimMove_SilkTrap::
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_PROTECT, 0, 10, 10, RGB_LIME_GREEN
 	monbg ANIM_ATK_PARTNER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 16
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	call CreateProtect
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
 	end
@@ -15421,9 +15417,8 @@ ChillyReceptionSnowballs:
 gBattleAnimMove_BurningBulwark::
 	monbg ANIM_ATK_PARTNER
 	splitbgprio ANIM_ATTACKER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER 16
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_PROTECT, 0, 13, 13, RGB(27, 10, 0)
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	call CreateProtect
 	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
 	delay 2
 	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
@@ -20239,11 +20234,15 @@ gBattleAnimMove_DefenseCurl::
 gBattleAnimMove_Protect::
 	monbg ANIM_ATK_PARTNER
 	splitbgprio ANIM_ATTACKER
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 16
-	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	call CreateProtect
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
 	end
+
+CreateProtect:
+	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 16
+	createsprite gProtectSpriteTemplate, ANIM_ATTACKER, 2, 24, 0, 90
+	return
 
 gBattleAnimMove_Detect::
 	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=9, color=RGB_BLACK

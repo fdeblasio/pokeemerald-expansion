@@ -1981,7 +1981,7 @@ gBattleAnimMove_IceFang::
 gBattleAnimMove_FireFang::
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	call CreateFireSpiral
+	call CreateFireSpiralInward
 	call CreateBite
 	delay 10
 	waitforvisualfinish
@@ -6158,26 +6158,7 @@ TechnoBlastFire:
 	clearmonbg ANIM_ATTACKER
 	end
 TechnoBlastFireSpiral:
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 8
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 12
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 16
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
+	call CreateFireSpiralOutward
 	delay 2
 	return
 
@@ -9862,26 +9843,7 @@ gBattleAnimMove_Lunge::
 gBattleAnimMove_FireLash::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio_foes ANIM_TARGET
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 8
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 12
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 16
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
+	call CreateFireSpiralOutward
 	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 6
 	delay 4
@@ -11794,26 +11756,7 @@ gBattleAnimMove_BuzzyBuzz::
 gBattleAnimMove_SizzlySlide::
 	monbg ANIM_ATK_PARTNER
 	setalpha 12, 8
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 8
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 12
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 16
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
+	call CreateFireSpiralOutward
 	waitforvisualfinish
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 24, 6, 1, 5
 	createvisualtask AnimTask_TraceMonBlended, 2, 0, 4, 7, 3
@@ -18257,26 +18200,7 @@ TeraBlastSteel:
 	end
 TeraBlastFire:
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 12, 12, RGB(31, 0, 0)
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 8
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 12
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 16
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
+	call CreateFireSpiralOutward
 	waitforvisualfinish
 	monbg ANIM_ATTACKER
 	setalpha 14, 8
@@ -18608,26 +18532,7 @@ TeraBlastIce:
 TeraBlastDragon:
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SMALL_EMBER, 0, 12, 12, RGB(10, 25, 31)
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 12, 12, RGB(10, 25, 31)
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 4
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 8
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 12
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 16
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	delay 2
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
+	call CreateFireSpiralOutward
 	waitforvisualfinish
 	fadetobg BG_FIRE_2
 	waitbgfadeout
@@ -19297,6 +19202,21 @@ ScreechRing:
 gBattleAnimMove_FlameWheel::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio_foes ANIM_TARGET
+	call CreateFireSpiralOutward
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 6
+	delay 4
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 8, 1
+	createvisualtask AnimTask_BlendMonInAndOut, 3, ANIM_TARGET, RGB_RED, 12, 1, 1
+	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_TARGET
+	call FireSpreadEffect
+	delay 7
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 9
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	end
+
+CreateFireSpiralOutward:
 	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
 	delay 2
@@ -19317,22 +19237,6 @@ gBattleAnimMove_FlameWheel::
 	delay 2
 	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 56, 24
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	waitforvisualfinish
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 6
-	delay 4
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 8, 1
-	createvisualtask AnimTask_BlendMonInAndOut, 3, ANIM_TARGET, RGB_RED, 12, 1, 1
-	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_TARGET
-	call FireSpreadEffect
-	delay 7
-	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 9
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	end
-
-FlameWheel1: @ Unused
-	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 50
-	delay 4
 	return
 
 gBattleAnimMove_PinMissile::
@@ -25226,7 +25130,7 @@ gBattleAnimMove_Haze::
 gBattleAnimMove_FirePunch::
 	monbg ANIM_DEF_PARTNER
 	setalpha 12, 8
-	call CreateFireSpiral
+	call CreateFireSpiralInward
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	waitforvisualfinish
 	create_fist_sprite ANIM_TARGET, 3, x=0, y=0, duration=8, initPosition=1
@@ -25242,7 +25146,7 @@ gBattleAnimMove_FirePunch::
 	blendoff
 	end
 
-CreateFireSpiral:
+CreateFireSpiralInward:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 9, RGB_RED
 	createsprite gFireSpiralInwardSpriteTemplate, ANIM_TARGET, 1, 0
 	createsprite gFireSpiralInwardSpriteTemplate, ANIM_TARGET, 1, 64

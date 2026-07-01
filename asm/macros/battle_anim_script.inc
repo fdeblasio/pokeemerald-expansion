@@ -782,6 +782,20 @@
 	playsewithpan \sound_effect, SOUND_PAN_TARGET
 	.endm
 
+	.macro create_hazard anim_battler:req sprite:req
+	monbg ANIM_DEF_PARTNER
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
+	createsprite \sprite, \anim_battler, 2, 20, 0, 0, 24, 30
+	delay 10
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
+	createsprite \sprite, \anim_battler, 2, 20, 0, -24, 24, 30
+	delay 10
+	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
+	createsprite \sprite, \anim_battler, 2, 20, 0, 24, 24, 30
+	.end
+
 	.macro create_syrup_bomb_projectile anim_battler:req, sprite:req
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
 	createsprite \sprite, \anim_battler, 2, 20, 0, 40, 0

@@ -967,17 +967,7 @@ gBattleAnimMove_SuckerPunch::
 	end
 
 gBattleAnimMove_ToxicSpikes::
-	monbg ANIM_DEF_PARTNER
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gToxicSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 24, 30
-	delay 10
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gToxicSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, -24, 24, 30
-	delay 10
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gToxicSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, 24, 24, 30
+	create_hazard anim_battler=ANIM_TARGET, sprite=gToxicSpikesSpriteTemplate
 	delay 40
 	call PoisonBubblesEffect
 	waitforvisualfinish
@@ -2832,17 +2822,7 @@ gBattleAnimMove_Captivate::
 	end
 
 gBattleAnimMove_StealthRock::
-	monbg ANIM_DEF_PARTNER
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gStealthRockSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 24, 30
-	delay 10
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gStealthRockSpriteTemplate, ANIM_TARGET, 2, 20, 0, -24, 24, 30
-	delay 10
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gStealthRockSpriteTemplate, ANIM_TARGET, 2, 20, 0, 24, 24, 30
+	create_hazard anim_battler=ANIM_TARGET, sprite=gStealthRockSpriteTemplate
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	end
@@ -24404,17 +24384,7 @@ gBattleAnimMove_BoneRush::
 	end
 
 gBattleAnimMove_Spikes::
-	monbg ANIM_DEF_PARTNER
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 24, 30
-	delay 10
-	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, -24, 24, 30
-	delay 10
-	waitplaysewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET, 28
-	createsprite gSpikesSpriteTemplate, ANIM_TARGET, 2, 20, 0, 24, 24, 30
+	create_hazard anim_battler=ANIM_TARGET, sprite=gSpikesSpriteTemplate
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	end

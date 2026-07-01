@@ -748,6 +748,20 @@
 	create_overheat_flame_sprite \anim_battler, 66, speed=1, unk1=224, unk2=30, duration=25, y=\y
 	.endm
 
+	.macro create_double_gust anim_battler:req, unknown=20
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	loopsewithpan SE_M_WING_ATTACK, SOUND_PAN_ATTACKER, 20, 2
+	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, 12, 4, 1, 4
+	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
+	createsprite gGustToTargetSpriteTemplate, \anim_battler, 2, -25, 0, 0, 0, \unknown
+	createsprite gGustToTargetSpriteTemplate, \anim_battler, 2, 25, 0, 0, 0, \unknown
+	delay 24
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 9
+	delay 17
+	.endm
+
 	.macro create_syrup_bomb_projectile anim_battler:req, sprite:req
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
 	createsprite \sprite, \anim_battler, 2, 20, 0, 40, 0

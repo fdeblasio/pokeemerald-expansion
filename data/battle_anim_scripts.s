@@ -12056,17 +12056,7 @@ gBattleAnimMove_DoubleIronBash::
 	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
 	metallic_shine permanent=0
 	waitforvisualfinish
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	loopsewithpan SE_M_WING_ATTACK, SOUND_PAN_ATTACKER, 20, 2
-	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, 12, 4, 1, 4
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, -25, 0, 0, 0, 0     @wing attack
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, 25, 0, 0, 0, 0       @wing attack
-	delay 24
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 9
-	delay 17
+	create_double_gust anim_battler=ANIM_ATTACKER, unknown=0
 	create_basic_hitsplat_sprite ANIM_TARGET, 4, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, -32, 0, 0, 3
 	waitforvisualfinish
@@ -24519,17 +24509,7 @@ gBattleAnimMove_Gust::
 	end
 
 gBattleAnimMove_WingAttack::
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	loopsewithpan SE_M_WING_ATTACK, SOUND_PAN_ATTACKER, 20, 2
-	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, 12, 4, 1, 4
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, -25, 0, 0, 0, 20
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, 25, 0, 0, 0, 20
-	delay 24
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 9
-	delay 17
+	create_double_gust anim_battler=ANIM_ATTACKER
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=16, y=0, relative_to=ANIM_TARGET, animation=1
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=-16, y=0, relative_to=ANIM_TARGET, animation=1
 	loopsewithpan SE_M_DOUBLE_SLAP, SOUND_PAN_TARGET, 5, 2
@@ -25519,17 +25499,7 @@ gBattleAnimMove_SteelWing::
 	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
 	metallic_shine permanent=0
 	waitforvisualfinish
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	loopsewithpan SE_M_WING_ATTACK, SOUND_PAN_ATTACKER, 20, 2
-	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, 12, 4, 1, 4
-	createvisualtask AnimTask_AnimateGustTornadoPalette, 5, 1, 70
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, -25, 0, 0, 0, 20
-	createsprite gGustToTargetSpriteTemplate, ANIM_ATTACKER, 2, 25, 0, 0, 0, 20
-	delay 24
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 24, 0, 0, 9
-	delay 17
+	create_double_gust anim_battler=ANIM_ATTACKER
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=16, y=0, relative_to=ANIM_TARGET, animation=1
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=-16, y=0, relative_to=ANIM_TARGET, animation=1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET

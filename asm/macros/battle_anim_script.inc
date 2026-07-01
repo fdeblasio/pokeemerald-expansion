@@ -762,6 +762,26 @@
 	delay 17
 	.endm
 
+	.macro create_sludge_bomb_hit_particles anim_battler:req, sound_effect:req
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 42, 27, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -27, 44, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 39, -28, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -42, -42, 20
+	playsewithpan \sound_effect, SOUND_PAN_TARGET
+	delay 5
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 0, 40, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -8, -44, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -46, -28, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 46, 9, 20
+	playsewithpan \sound_effect, SOUND_PAN_TARGET
+	delay 5
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 42, 0, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -43, -12, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, 16, -46, 20
+	createsprite gSludgeBombHitParticleSpriteTemplate, \anim_battler, 2, -16, 44, 20
+	playsewithpan \sound_effect, SOUND_PAN_TARGET
+	.endm
+
 	.macro create_syrup_bomb_projectile anim_battler:req, sprite:req
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
 	createsprite \sprite, \anim_battler, 2, 20, 0, 40, 0

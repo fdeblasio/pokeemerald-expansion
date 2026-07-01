@@ -16236,23 +16236,7 @@ gBattleAnimMove_SpicyExtract::
 	call SludgeBombProjectile
 	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 3, 0, 9, RGB_RED
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 27, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -27, 44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 39, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -42, -42, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 0, 40, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -8, -44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -46, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 46, 9, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 0, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -43, -12, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 16, -46, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -16, 44, 20
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
+	create_sludge_bomb_hit_particles anim_battler=ANIM_TARGET, sound_effect=SE_M_FLAME_WHEEL
 	call LetsSnuggleForeverTears
 	delay 8
 	call LetsSnuggleForeverTears
@@ -24326,23 +24310,7 @@ gBattleAnimMove_SludgeBomb::
 	call SludgeBombProjectile
 	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
 	blend_color_cycle selector=F_PAL_TARGET, delay=1, num_blends=2, initial_blend_y=0, target_blend_y=12, color=RGB(30, 0, 31)
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 27, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -27, 44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 39, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -42, -42, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 0, 40, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -8, -44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -46, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 46, 9, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 0, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -43, -12, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 16, -46, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -16, 44, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
+	create_sludge_bomb_hit_particles anim_battler=ANIM_TARGET, sound_effect=SE_M_DIG
 	delay 0
 	waitsound
 	waitforvisualfinish

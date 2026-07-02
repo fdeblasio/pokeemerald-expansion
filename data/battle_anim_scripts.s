@@ -1026,32 +1026,7 @@ gBattleAnimMove_AquaRing::
 gBattleAnimGeneral_AquaRingHeal::
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_GUARD_RING, 0, 14, 14, RGB_BLUE
 	monbg ANIM_ATK_PARTNER
-	setalpha 12, 8
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 23, 1
-	delay 5
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 10, 10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -15, 0, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 20, 10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -10, 15, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 25, 20, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -20, 20, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 12, 0, 25, 0
+	call CreateSmallBubblePairs
 	setalpha 8, 8
 	playsewithpan SE_M_MILK_DRINK, SOUND_PAN_ATTACKER
 	createsprite gGuardRingSpriteTemplate, ANIM_ATTACKER, 0, FALSE
@@ -1385,32 +1360,7 @@ gBattleAnimMove_NightSlash::
 
 gBattleAnimMove_AquaTail::
 	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 23, 1
-	delay 5
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 10, 10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 20, 10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -10, 15, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 25, 20, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -20, 20, 25, 0
-	delay 4
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
-	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 12, 0, 25, 0
+	call CreateSmallBubblePairs
 	waitforvisualfinish
 	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
 	delay 4
@@ -1431,6 +1381,35 @@ gBattleAnimMove_AquaTail::
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
+
+CreateSmallBubblePairs:
+	setalpha 12, 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 23, 1
+	delay 5
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 10, 10, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -15, 0, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 20, 10, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -10, 15, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 25, 20, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -20, 20, 25, 0
+	delay 4
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
+	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 12, 0, 25, 0
+	return
 
 gBattleAnimMove_SeedBomb::
 	createsprite gBulletSeedSpriteTemplate, ANIM_TARGET, 2, 20, 0
@@ -10807,10 +10786,7 @@ gBattleAnimMove_ShadowBone::
 	waitbgfadein
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
-	createsprite gSpinningBoneSpriteTemplate, ANIM_ATTACKER, 2, -42, -25, 0, 0, 15
-	delay 12
+	call CreateSpinningBone
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
 	complex_palette_blend selector=F_PAL_BG | F_PAL_ATTACKER | F_PAL_TARGET, delay=5, num_blends=1, color1=0, blend_y1=10, color2=RGB_BLACK, blend_y2=0
@@ -24289,10 +24265,7 @@ gBattleAnimMove_Bonemerang::
 gBattleAnimMove_BoneClub::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
-	createsprite gSpinningBoneSpriteTemplate, ANIM_ATTACKER, 2, -42, -25, 0, 0, 15
-	delay 12
+	call CreateSpinningBone
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
 	complex_palette_blend selector=F_PAL_BG | F_PAL_ATTACKER | F_PAL_TARGET, delay=5, num_blends=1, color1=RGB_BLACK, blend_y1=10, color2=RGB_BLACK, blend_y2=0
@@ -24304,10 +24277,7 @@ gBattleAnimMove_BoneClub::
 
 gBattleAnimMove_BoneRush::
 	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
-	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
-	createsprite gSpinningBoneSpriteTemplate, ANIM_ATTACKER, 2, -42, -25, 0, 0, 15
-	delay 12
+	call CreateSpinningBone
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=2
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 3, 5, 1
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
@@ -24315,6 +24285,13 @@ gBattleAnimMove_BoneRush::
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
+
+CreateSpinningBone:
+	setalpha 12, 8
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
+	createsprite gSpinningBoneSpriteTemplate, ANIM_ATTACKER, 2, -42, -25, 0, 0, 15
+	delay 12
+	return
 
 gBattleAnimMove_Spikes::
 	monbg ANIM_DEF_PARTNER

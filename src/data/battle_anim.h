@@ -1448,6 +1448,8 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_NEW_POKEBALL, gBattleAnimSpriteGfx_NewPokeball, 0x0080, gBattleAnimSpritePal_NewPokeball),
     BATTLE_ANIMATION(ANIM_TAG_NEW_GREEN_STAR, gBattleAnimSpriteGfx_NewGreenStar, 0x0200, gBattleAnimSpritePal_NewGreenStar),
     BATTLE_ANIMATION(ANIM_TAG_NEW_IMPACT, gBattleAnimSpriteGfx_Impact, 0x0200, gBattleAnimSpritePal_NewImpact),
+    //Custom
+    BATTLE_ANIMATION(ANIM_TAG_ARROKUDA, gBattleAnimSpriteGfx_Arrokuda, 0x0800, gBattleAnimSpritePal_Arrokuda),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

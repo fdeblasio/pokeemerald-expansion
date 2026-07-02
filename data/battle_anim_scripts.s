@@ -234,18 +234,7 @@ gBattleAnimMove_GyroBall::
 gBattleAnimMove_HealingWish::
 	setalpha 0, 16
 	createvisualtask AnimTask_AlphaFadeIn, 3, 0, 16, 16, 0, 1
-	playsewithpan SE_M_MOONLIGHT, SOUND_PAN_MIDDLE
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, -12, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, -24, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 21, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 0, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 10, 0
-	delay 20
+	call CreateMoonlightSparkles
 	createvisualtask AnimTask_MoonlightEndFade, 2
 	waitforvisualfinish
 	end
@@ -3331,18 +3320,7 @@ gBattleAnimMove_LunarDance::
 	waitforvisualfinish
 	createsprite gMoonSpriteTemplate, ANIM_ATTACKER, 2, 120, 56
 	createvisualtask AnimTask_AlphaFadeIn, 3, 0, 16, 16, 0, 1
-	playsewithpan SE_M_MOONLIGHT, SOUND_PAN_MIDDLE
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, -12, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, -18, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 21, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 0, 0
-	delay 30
-	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 10, 0
-	delay 20
+	call CreateMoonlightSparkles
 	createvisualtask AnimTask_MoonlightEndFade, 2
 	createvisualtask AnimTask_DragonDanceWaver, 5
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
@@ -21741,6 +21719,14 @@ gBattleAnimMove_Moonlight::
 	waitforvisualfinish
 	createsprite gMoonSpriteTemplate, ANIM_ATTACKER, 2, 120, 56
 	createvisualtask AnimTask_AlphaFadeIn, 3, 0, 16, 16, 0, 1
+	call CreateMoonlightSparkles
+	createvisualtask AnimTask_MoonlightEndFade, 2
+	waitforvisualfinish
+	call HealingEffect
+	waitforvisualfinish
+	end
+
+CreateMoonlightSparkles:
 	playsewithpan SE_M_MOONLIGHT, SOUND_PAN_MIDDLE
 	delay 30
 	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, -12, 0
@@ -21753,11 +21739,7 @@ gBattleAnimMove_Moonlight::
 	delay 30
 	createsprite gMoonlightSparkleSpriteTemplate, ANIM_ATTACKER, 40, 10, 0
 	delay 20
-	createvisualtask AnimTask_MoonlightEndFade, 2
-	waitforvisualfinish
-	call HealingEffect
-	waitforvisualfinish
-	end
+	return
 
 gBattleAnimMove_ExtremeSpeed::
 	call SetHighSpeedBg

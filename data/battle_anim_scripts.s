@@ -28941,8 +28941,8 @@ RainbowEndureEffect:
 	delay 3
 	return
 
-gBattleAnimGeneral_GulpMissile:: @ Tackle anim (placeholder)
-	createsprite gArrokudaSpriteTemplate, ANIM_TARGET, 2, 16, 0,  0, 0, 20, 257
+gBattleAnimGeneral_GulpMissile::
+	createsprite gArrokudaSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 60, 257
 	end
 
 gBattleAnimGeneral_StrongWinds::

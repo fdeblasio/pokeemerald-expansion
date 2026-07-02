@@ -615,6 +615,9 @@ void AnimIceBeamParticle(struct Sprite *sprite);
 // battle_anim_bug.c
 void AnimTranslateStinger(struct Sprite *sprite);
 
+// battle_anim_new.c
+void AnimTranslateGulpMissile(struct Sprite *sprite);
+
 extern const struct BattleAnimBackground gBattleAnimBackgroundTable[];
 
 #endif // GUARD_BATTLE_ANIM_H

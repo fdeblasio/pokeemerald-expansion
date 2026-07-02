@@ -28942,16 +28942,7 @@ RainbowEndureEffect:
 	return
 
 gBattleAnimGeneral_GulpMissile:: @ Tackle anim (placeholder)
-	monbg ANIM_ATTACKER
-	setalpha 12, 8
-	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
-	delay 6
-	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_ATTACKER, animation=2
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 3, 0, 6, 1
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	blendoff
+	createsprite gArrokudaSpriteTemplate, ANIM_TARGET, 2, 16, 0,  0, 0, 20, 257
 	end
 
 gBattleAnimGeneral_StrongWinds::

@@ -133,15 +133,15 @@ bool8 SetUpMassOutbreakEncounter(u8 flags)
         SetMonMoveSlot(&gParties[B_TRAINER_OPPONENT_A][0], gSaveBlock1Ptr->outbreakPokemonMoves[i], i);
 
     u8 hiddenAbility = 2;
-    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &hiddenAbility);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &hiddenAbility);
 
     u32 iv = MAX_PER_STAT_IVS;
-    SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &iv);
-    SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &iv);
-    SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &iv);
-    SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &iv);
-    SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &iv);
-    SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &iv);
+    SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &iv);
 
     return TRUE;
 }

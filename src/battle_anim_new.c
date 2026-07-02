@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle_anim.h"
+#include "battle_anim_internal.h"
 #include "item_menu_icons.h"
 #include "sprite.h"
 #include "random.h"
@@ -6788,6 +6789,46 @@ const struct SpriteTemplate gFreezyFrostRisingSpearSpriteTemplate =
     .oam = &gOamData_AffineOff_ObjNormal_32x32,
     .callback = SpriteCB_GeyserTarget,
 };
+
+// Custom
+#define SPRITE_TAG(Tag) \
+    .tileTag = Tag,     \
+    .paletteTag = Tag
+
+const union AnimCmd gArrokudaAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 0, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gArrokudaAnimTable[] =
+{
+    gArrokudaAnimCmds,
+};
+
+
+const struct SpriteTemplate gArrokudaSpriteTemplate =
+{
+    SPRITE_TAG(ANIM_TAG_ARROKUDA),
+    .oam = &gOamData_AffineNormal_ObjNormal_64x64,
+    .anims = gArrokudaAnimTable,
+    .callback = AnimTranslateGulpMissile,
+};
+
+void AnimTranslateGulpMissile(struct Sprite *sprite)
+{
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        StartSpriteAffineAnim(sprite, 1);
+        sprite->vFlip = 0;
+    }
+    else
+    {
+        sprite->hFlip = 1;
+    }
+
+    TranslateAnimSpriteToTargetMonLocation(sprite);
+}
 
 // functions
 //general

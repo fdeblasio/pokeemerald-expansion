@@ -6795,40 +6795,20 @@ const struct SpriteTemplate gFreezyFrostRisingSpearSpriteTemplate =
     .tileTag = Tag,     \
     .paletteTag = Tag
 
-const union AnimCmd gArrokudaAnimCmds[] =
-{
-    ANIMCMD_FRAME(0, 0, .vFlip = TRUE),
-    ANIMCMD_END,
-};
-
-const union AnimCmd *const gArrokudaAnimTable[] =
-{
-    gArrokudaAnimCmds,
-};
-
-
 const struct SpriteTemplate gArrokudaSpriteTemplate =
 {
     SPRITE_TAG(ANIM_TAG_ARROKUDA),
     .oam = &gOamData_AffineNormal_ObjNormal_64x64,
-    .anims = gArrokudaAnimTable,
     .callback = AnimTranslateGulpMissile,
 };
 
 void AnimTranslateGulpMissile(struct Sprite *sprite)
 {
-    if (!IsOnPlayerSide(gBattleAnimAttacker))
-    {
-        StartSpriteAffineAnim(sprite, 1);
-        sprite->vFlip = 0;
-    }
-    else
-    {
-        sprite->hFlip = 1;
-    }
+    if (IsOnPlayerSide(gBattleAnimAttacker))
+        TrySetSpriteRotScale(sprite, FALSE, -0x100, 0x100, 0x2000);
 
     TranslateAnimSpriteToTargetMonLocation(sprite);
-}
+}*
 
 // functions
 //general

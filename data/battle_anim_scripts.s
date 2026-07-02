@@ -380,7 +380,7 @@ gBattleAnimMove_MetalBurst::
 	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 2, 96
 	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 2, 128
 	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 2, 160
-	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 20, 192
+	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 2, 192
 	createsprite gHiddenPowerOrbScatterSpriteTemplate, ANIM_TARGET, 2, 224
 	waitforvisualfinish
 	set_original_pal battler=ANIM_ATTACKER

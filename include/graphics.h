@@ -2765,6 +2765,8 @@ extern const u32 gBattleAnimSpriteGfx_TatsugiriDroopy[];
 extern const u16 gBattleAnimSpritePal_TatsugiriDroopy[];
 extern const u32 gBattleAnimSpriteGfx_TatsugiriStretchy[];
 extern const u16 gBattleAnimSpritePal_TatsugiriStretchy[];
+extern const u32 gBattleAnimSpriteGfx_Arrokuda[];
+extern const u16 gBattleAnimSpritePal_Arrokuda[];
 
 // New Battle Anim Particles
 extern const u32 gBattleAnimSpriteGfx_AlphaStone[];

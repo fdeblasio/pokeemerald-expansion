@@ -222,13 +222,10 @@ upcoming
         - 18 Tera Shards
         - 7 mochi
 
-
 ### Moves
 - Add Pollen Puff-esque ally healing back to Present
 - Update Drill Peck animation to match other drills?
 - Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?
-- Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
-- Aqua Ring heals more with Water Bubble? In rain?
 - Apply dynamic power to move relearner
     - Might not be possible since move relearner checks the move and not the Pokemon
 - Nature Power:
@@ -261,6 +258,7 @@ upcoming
     - Add back 5 remaining missing moves? (Natural Gift, Lucky Chant, Wring Out, Synchronoise, and Embargo)
         - Or remove Last Resort, Bestow, and others instead?
 - Dynamic power/typing:
+    - Mega Sol
     - Might need to bring this to dynamic power/accuracy (https://github.com/rh-hideout/pokeemerald-expansion/pull/6888)
         - Unsure if monInBattle does the same thing
     - Add more if statements for Utility Umbrella/Air Lock/Cloud Nine?
@@ -347,8 +345,10 @@ upcoming
 - Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
+- Aqua Ring heals more with Water Bubble? In rain?
 - Calculate Electro Ball more similarly to Gyro Ball?
 - New moves:
+    - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
     - Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
         - Add in Magnitude variations as their own moves in order to get more Ground moves?
     - Ideally every Pokemon can learn their types' 40/65/90 power moves
@@ -374,6 +374,7 @@ upcoming
         - Would give Mew a signature
     - Copy of old Leech Life
     - A move with a greenish copy of Yawn's cloud for a stink cloud
+    - Rotom/Tadbulb signature move with the unused light bulb sprite
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Luvdisc Scale Shot uses Heart Scale sprite
@@ -415,7 +416,6 @@ upcoming
     - Pokecenter Ladies
         - "Union'd together"
             - Now a struct
-            - Breaks current Favor Lady but a new game should be good
             - .id can eventually be removed but seems to be used in record_mixing.c
                 - Could maybe make 3 seperate structs after this
         - Update Favor Lady's items to include new items

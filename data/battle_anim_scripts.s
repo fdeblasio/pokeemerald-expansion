@@ -17232,12 +17232,8 @@ gBattleAnimMove_ElectroDrift::
 	delay 1
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -32
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
+	create_triple_lightning_sprites anim_battler2=ANIM_TARGET, x=0, y1=-32, y2=-16, y3=16
 	delay 10
 	createvisualtask AnimTask_ShakeTargetInPattern, 2, 30, 3, TRUE, 0
 	delay 2
@@ -23119,12 +23115,8 @@ gBattleAnimMove_Thunder::
 	delay 1
 	create_triple_lightning_sprites anim_battler2=ANIM_TARGET, x=16, y1=-36, y2=-20, y3=12
 	delay 20
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -32
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, 16
+	create_triple_lightning_sprites anim_battler2=ANIM_TARGET, subpriority_offset=6, x=-16, y1=-32, y2=-16, y3=16
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 5
 	invert_screen_color scenery=1 | 2 | 4
@@ -23135,12 +23127,8 @@ gBattleAnimMove_Thunder::
 	delay 5
 	invert_screen_color scenery=1 | 2 | 4
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -32
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
+	create_triple_lightning_sprites anim_battler2=ANIM_TARGET, x=0, y1=-32, y2=-16, y3=16
 	delay 10
 	invert_screen_color scenery=1 | 2 | 4
 	delay 1

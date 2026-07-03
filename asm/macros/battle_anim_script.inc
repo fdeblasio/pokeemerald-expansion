@@ -645,3 +645,7 @@
 	.macro create_electric_charging_particles_task priority=2, relative_to:req, unk1:req, unk2:req, unk3:req
 	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \unk1, \unk2, \unk3
 	.endm
+
+	.macro create_volt_tackle_bolt_task priority=5, unk0:req
+	createvisualtask AnimTask_VoltTackleBolt, \priority, \unk0
+	.endm

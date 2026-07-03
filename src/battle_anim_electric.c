@@ -1047,6 +1047,8 @@ void AnimTask_VoltTackleAttackerReappear(u8 taskId)
 // The horizontal bolts of electricity for Volt Tackle
 void AnimTask_VoltTackleBolt(u8 taskId)
 {
+    CMD_ARGS(unk0);
+
     struct Task *task = &gTasks[taskId];
 
     switch(task->data[0])
@@ -1054,7 +1056,7 @@ void AnimTask_VoltTackleBolt(u8 taskId)
     case 0:
         task->data[1] = GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER ? 1 : -1;
 
-        switch (gBattleAnimArgs[0])
+        switch (cmd->unk0)
         {
         case 0:
             task->data[3] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
@@ -1067,7 +1069,7 @@ void AnimTask_VoltTackleBolt(u8 taskId)
             task->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) - (task->data[1] * 32);
             break;
         default:
-            if ((gBattleAnimArgs[0] & 1) != 0)
+            if ((cmd->unk0 & 1) != 0)
             {
                 task->data[3] = 256;
                 task->data[4] = -16;
@@ -1080,12 +1082,12 @@ void AnimTask_VoltTackleBolt(u8 taskId)
 
             if (task->data[1] == 1)
             {
-                task->data[5] = 80 - gBattleAnimArgs[0] * 10;
+                task->data[5] = 80 - cmd->unk0 * 10;
             }
             else
             {
                 u16 temp;
-                task->data[5] = gBattleAnimArgs[0] * 10 + 40;
+                task->data[5] = cmd->unk0 * 10 + 40;
                 temp = task->data[3];
                 task->data[3] = task->data[4];
                 task->data[4] = temp;

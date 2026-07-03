@@ -4428,19 +4428,19 @@ Move_VOLT_TACKLE:
 	clearmonbg ANIM_ATTACKER
 	blendoff
 	delay 8
-	createvisualtask AnimTask_VoltTackleBolt, 5, 0
+	create_volt_tackle_bolt_task unk0=0
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 1
+	create_volt_tackle_bolt_task unk0=1
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 2
+	create_volt_tackle_bolt_task unk0=2
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 3
+	create_volt_tackle_bolt_task unk0=3
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 4
+	create_volt_tackle_bolt_task unk0=4
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	delay 8
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1

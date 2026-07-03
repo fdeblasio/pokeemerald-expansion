@@ -803,4 +803,12 @@
 	create_electric_puff_sprite \anim_battler, \subpriority_offset, relative_to=\relative_to, x=\x, y=\y
 	delay 2
 	create_electric_puff_sprite \anim_battler, \subpriority_offset, relative_to=\relative_to, x=-\x, y=-\y
-	endm
+	.endm
+
+	.macro create_triple_lightning_sprites anim_battler1=ANIM_TARGET, anim_battler2:req, subpriority_offset=2, x:req, y1:req, y2:req, y3:req
+	createsprite gLightningSpriteTemplate, \anim_battler1, \subpriority_offset, \x, \y1
+	delay 1
+	createsprite gLightningSpriteTemplate, \anim_battler2, \subpriority_offset, \x, \y2
+	delay 1
+	createsprite gLightningSpriteTemplate, \anim_battler2, \subpriority_offset, \x, \y3
+	.endm

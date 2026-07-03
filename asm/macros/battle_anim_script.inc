@@ -524,7 +524,7 @@
 	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \initPosition, 1
 	.endm
 
-	@Electric
+	@ Electric
 	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, unk0:req, unk1:req, duration:req, unk3:req
 	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3
 	.endm
@@ -627,4 +627,9 @@
 
 	.macro create_surf_wave priority=2, palette:req
 	createvisualtask AnimTask_CreateSurfWave, \priority, \palette
+	.endm
+
+	@ Electric
+	.macro create_electric_bolt_task priority=5, x:req, y:req, unk2:req
+	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
 	.endm

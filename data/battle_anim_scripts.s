@@ -1057,7 +1057,7 @@ Move_THUNDER_SHOCK:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	createvisualtask AnimTask_ElectricBolt, 5, 0, -44, 0
+	create_electric_bolt_task x=0, y=-44, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 9
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 0, 13, RGB_BLACK
@@ -1079,13 +1079,13 @@ Move_THUNDERBOLT:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	createvisualtask AnimTask_ElectricBolt, 5, 24, -52, 0
+	create_electric_bolt_task x=24, y=-52, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 7
-	createvisualtask AnimTask_ElectricBolt, 5, -24, -52, 0
+	create_electric_bolt_task x=-24, y=-52, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 7
-	createvisualtask AnimTask_ElectricBolt, 5, 0, -60, 1
+	create_electric_bolt_task x=0, y=-60, unk2=TRUE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 9
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 0, 13, RGB_BLACK
@@ -1128,7 +1128,7 @@ Move_THUNDER_WAVE:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	createvisualtask AnimTask_ElectricBolt, 5, 0, -48, 0
+	create_electric_bolt_task x=0, y=-48, unk2=FALSE
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 20
 	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4

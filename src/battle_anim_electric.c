@@ -701,9 +701,11 @@ static void AnimElectricity(struct Sprite *sprite)
 // The vertical falling thunder bolt used in Thunder Wave/Shock/Bolt
 void AnimTask_ElectricBolt(u8 taskId)
 {
-    gTasks[taskId].data[0] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + gBattleAnimArgs[0];
-    gTasks[taskId].data[1] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + gBattleAnimArgs[1];
-    gTasks[taskId].data[2] = gBattleAnimArgs[2];
+    CMD_ARGS(x, y, unk2);
+
+    gTasks[taskId].data[0] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->x;
+    gTasks[taskId].data[1] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->y;
+    gTasks[taskId].data[2] = cmd->unk2;
     gTasks[taskId].func = AnimTask_ElectricBolt_Step;
 }
 

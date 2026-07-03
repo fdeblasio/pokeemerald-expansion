@@ -537,6 +537,18 @@
 	createsprite gLightningSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
 	.endm
 
+	@.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req
+	@createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset
+	@.endm
+
+	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, unk2:req, unk3=30, unk4:req, unk5=40, unk6:req
+	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \unk2, \unk3, \unk4, \unk5, \unk6
+	.endm
+
+	@.macro create_sprite anim_battler:req, subpriority_offset:req
+	@createsprite gSpriteTemplate, \anim_battler, \subpriority_offset
+	@.endm
+
 @ createvisualtask wrappers
 @ The arguments are based on the CMD_ARGS of the task.
 

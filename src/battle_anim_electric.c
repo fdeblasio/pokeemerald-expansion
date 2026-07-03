@@ -580,17 +580,19 @@ static void AnimSparkElectricity(struct Sprite *sprite)
 
 static void AnimZapCannonSpark(struct Sprite *sprite)
 {
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5, unk6);
+
     InitSpritePosToAnimAttacker(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[0] = cmd->unk3;
     sprite->data[1] = sprite->x;
     sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     sprite->data[3] = sprite->y;
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     InitAnimLinearTranslation(sprite);
-    sprite->data[5] = gBattleAnimArgs[2];
-    sprite->data[6] = gBattleAnimArgs[5];
-    sprite->data[7] = gBattleAnimArgs[4];
-    sprite->oam.tileNum += gBattleAnimArgs[6] * 4;
+    sprite->data[5] = cmd->unk2;
+    sprite->data[6] = cmd->unk5;
+    sprite->data[7] = cmd->unk4;
+    sprite->oam.tileNum += cmd->unk6 * 4;
     sprite->callback = AnimZapCannonSpark_Step;
     sprite->callback(sprite);
 }

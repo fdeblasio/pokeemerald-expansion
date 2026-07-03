@@ -10136,21 +10136,21 @@ WaterBubblesEffectLong:
 
 ElectricityEffect:
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 5, 0, 5, 0
+	create_electricity_sprite ANIM_TARGET, 2, unk0=5, unk1=0, duration=5, unk3=0
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -5, 10, 5, 1
+	create_electricity_sprite ANIM_TARGET, 2, unk0=-5, unk1=10, duration=5, unk3=1
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 15, 20, 5, 2
+	create_electricity_sprite ANIM_TARGET, 2, unk0=15, unk1=20, duration=5, unk3=2
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -15, -10, 5, 0
+	create_electricity_sprite ANIM_TARGET, 2, unk0=-15, unk1=-10, duration=5, unk3=0
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 25, 0, 5, 1
+	create_electricity_sprite ANIM_TARGET, 2, unk0=25, unk1=0, duration=5, unk3=1
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -8, 8, 5, 2
+	create_electricity_sprite ANIM_TARGET, 2, unk0=-8, unk1=8, duration=5, unk3=2
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 2, -8, 5, 0
+	create_electricity_sprite ANIM_TARGET, 2, unk0=2, unk1=-8, duration=5, unk3=0
 	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -20, 15, 5, 1
+	create_electricity_sprite ANIM_TARGET, 2, unk0=-20, unk1=15, duration=5, unk3=1
 	return
 
 ConfusionEffect:

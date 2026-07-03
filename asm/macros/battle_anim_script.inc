@@ -525,6 +525,10 @@
 	.endm
 
 	@Electric
+	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, unk0:req, unk1:req, duration:req, unk3:req
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3
+	.endm
+
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm

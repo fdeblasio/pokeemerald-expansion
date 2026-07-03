@@ -683,15 +683,17 @@ static void AnimSparkElectricityFlashing_Step(struct Sprite *sprite)
 // Electricity arcs around the target. Used for Paralysis and various electric move hits
 static void AnimElectricity(struct Sprite *sprite)
 {
-    InitSpritePosToAnimTarget(sprite, FALSE);
-    sprite->oam.tileNum += gBattleAnimArgs[3] * 4;
+    CMD_ARGS(unk0, unk1, duration, unk3);
 
-    if (gBattleAnimArgs[3] == 1)
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    sprite->oam.tileNum += cmd->unk3 * 4;
+
+    if (cmd->unk3 == 1)
         sprite->oam.matrixNum = ST_OAM_HFLIP;
-    else if (gBattleAnimArgs[3] == 2)
+    else if (cmd->unk3 == 2)
         sprite->oam.matrixNum = ST_OAM_VFLIP;
 
-    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[0] = cmd->duration;
     sprite->callback = WaitAnimForDuration;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }

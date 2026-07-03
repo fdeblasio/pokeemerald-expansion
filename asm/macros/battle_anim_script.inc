@@ -791,3 +791,10 @@
 	createsprite \sprite, \anim_battler, 1, \anim_battler, 60
 	waitforvisualfinish
 	.endm
+
+	@ Electric
+	.macro create_discharge_electricity_sprites anim_battler=ANIM_TARGET, subpriority_offset=5, unk0:req, unk1:req, duration=5, unk3:req
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_TARGET
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_DEF_PARTNER
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_ATK_PARTNER
+	.endm

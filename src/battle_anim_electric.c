@@ -626,14 +626,16 @@ static void AnimThunderboltOrb_Step(struct Sprite *sprite)
 
 static void AnimThunderboltOrb(struct Sprite *sprite)
 {
-    if (IsContest() || GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
-        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
+    CMD_ARGS(unk0, x, y, unk3);
 
-    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[1];
-    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
-    sprite->data[3] = gBattleAnimArgs[0];
-    sprite->data[4] = gBattleAnimArgs[3];
-    sprite->data[5] = gBattleAnimArgs[3];
+    if (IsContest() || GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+        cmd->x = -cmd->x;
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
+    sprite->data[3] = cmd->unk0;
+    sprite->data[4] = cmd->unk3;
+    sprite->data[5] = cmd->unk3;
     sprite->callback = AnimThunderboltOrb_Step;
 }
 

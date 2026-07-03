@@ -1555,6 +1555,8 @@ static void AnimShockWaveLightning(struct Sprite *sprite)
 // arg 2: duration
 void AnimTask_CreateIons(u8 taskId)
 {
+    CMD_ARGS(unk0, unk1, duration);
+
     if (!TryLoadSpriteAssets(&gIonSpriteTemplate))
     {
         DestroyAnimVisualTask(taskId);
@@ -1627,17 +1629,19 @@ static void VoltSwitch_Step(struct Sprite* sprite)
 
 void AnimTask_VoltSwitch(struct Sprite* sprite)
 {
+    CMD_ARGS(x, y, x2, y2, duration, waveAmp);
+
     InitSpritePosToAnimAttacker(sprite, FALSE);
 
     if (!IsOnPlayerSide(gBattleAnimAttacker))
-        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+        cmd->x2 = -cmd->x2;
     else
         sprite->y += 10; //Move slightly down
 
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2]; //Target X
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3]; //Target Y
-    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[0] = cmd->duration;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x2; //Target X
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y2; //Target Y
+    sprite->data[5] = cmd->waveAmp;
     InitAnimArcTranslation(sprite);
 
     sprite->callback = VoltSwitch_Step;

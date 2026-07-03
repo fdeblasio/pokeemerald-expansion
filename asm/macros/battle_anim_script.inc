@@ -604,8 +604,29 @@
 	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \initPosition, 2
 	.endm
 
+	@ Electric
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
+	.endm
+
+	.macro create_growing_charge_orb2_sprite anim_battler:req, subpriority_offset:req, relative_to:req
+	createsprite gGrowingChargeOrb2SpriteTemplate, \anim_battler, \subpriority_offset, \relative_to
+	.endm
+
+	.macro create_growing_charge_orb3_sprite anim_battler:req, subpriority_offset:req, relative_to:req
+	createsprite gGrowingChargeOrb3SpriteTemplate, \anim_battler, \subpriority_offset, \relative_to
+	.endm
+
+	.macro create_flash_cannon_gray_charge anim_battler:req, subpriority_offset:req, relative_to:req
+	createsprite gFlashCannonGrayChargeTemplate, \anim_battler, \subpriority_offset, \relative_to
+	.endm
+
+	.macro create_seed_flare_green_charge anim_battler:req, subpriority_offset:req, relative_to:req
+	createsprite gFlashCannonGrayChargeTemplate, \anim_battler, \subpriority_offset, \relative_to
+	.endm
+
+	.macro create_volt_switch_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, x2:req, y2:req, duration:req, waveAmp:req
+	createsprite gVoltSwitchSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \waveAmp
 	.endm
 
 @ createvisualtask wrappers
@@ -675,6 +696,11 @@
 
 	.macro create_surf_wave priority=2, palette:req
 	createvisualtask AnimTask_CreateSurfWave, \priority, \palette
+	.endm
+
+	@ Electric
+	.macro create_ions priority=2, unk0:req, unk1:req, duration:req
+	createvisualtask AnimTask_CreateIons, \priority, \unk0, \unk1, \duration
 	.endm
 
 @ Common Steps

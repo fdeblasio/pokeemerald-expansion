@@ -2171,7 +2171,7 @@ gBattleAnimMove_FlashCannon::
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	createsprite gFlashCannonGrayChargeTemplate, ANIM_ATTACKER, 2, 0
+	create_flash_cannon_gray_charge ANIM_ATTACKER, 2, relative_to=ANIM_ATTACKER
 	delay 25
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 20
@@ -2878,7 +2878,7 @@ gBattleAnimMove_Judgment::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 15, RGB_WHITE
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 83, 1
-	createsprite gJudgmentBlackChargeTemplate, ANIM_TARGET, 1, 1, ANIM_TARGET
+	createsprite gJudgmentBlackChargeTemplate, ANIM_TARGET, 1, ANIM_TARGET, ANIM_TARGET
 	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET
 	call JudgmentInwardSpikes
 	delay 5
@@ -3446,7 +3446,7 @@ gBattleAnimMove_SeedFlare::
 	delay 2
 	createsprite gSeedFlareGreenCirclesTemplate, ANIM_ATTACKER, 2, -40, -20, 16
 	delay 2
-	createsprite gSeedFlareGreenChargeTemplate, ANIM_ATTACKER 2, 0
+	create_seed_flare_green_charge ANIM_ATTACKER 2, relative_to=ANIM_ATTACKER
 	createsprite gSeedFlareGreenCirclesTemplate, ANIM_ATTACKER, 2, -40, 20, 16
 	delay 2
 	createsprite gSeedFlareGreenCirclesTemplate, ANIM_ATTACKER, 2, -20, 30, 16
@@ -4059,7 +4059,7 @@ gBattleAnimMove_ElectroBall::
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	createsprite gGrowingChargeOrb2SpriteTemplate, ANIM_ATTACKER, 2, 0
+	create_growing_charge_orb2_sprite ANIM_ATTACKER, 2, relative_to=ANIM_ATTACKER
 	delay 25
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 20
@@ -5182,13 +5182,13 @@ GrassPledgeMiddleFountain:
 
 gBattleAnimMove_VoltSwitch::
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	createsprite gVoltSwitchSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 0, 32, 20
+	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, waveAmp=20
 	delay 30
 	createvisualtask AnimTask_ShakeMon2 2, ANIM_TARGET, 3, 0, 8, 1
 	call VoltSwitchElectricFlashes
 	delay 2
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	createsprite gVoltSwitchSpriteTemplate ANIM_TARGET, 3, 0, 0, 0, 0, 32, -20
+	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, waveAmp=-20
 	delay 4
 	call VoltSwitchElectricFlashes
 	delay 18
@@ -7118,8 +7118,8 @@ gBattleAnimMove_IonDeluge::
 	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER, 10, 12
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 2, 0, 4, RGB_YELLOW
 	waitforvisualfinish
-	createvisualtask AnimTask_CreateIons, 2, 0, 3, 120
-	createvisualtask AnimTask_CreateIons, 2, 0, 3, 120
+	create_ions unk0=0, unk1=3, duration=120
+	create_ions unk0=0, unk1=3, duration=120
 	delay 120
 	delay 30
 	waitforvisualfinish
@@ -12046,7 +12046,7 @@ gBattleAnimMove_DynamaxCannon::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 2, 0, 15, 0
 	waitforvisualfinish
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 14, 10
-	createsprite gGrowingChargeOrb3SpriteTemplate, ANIM_ATTACKER, 2, 0 @;Charge circle
+	create_growing_charge_orb3_sprite ANIM_ATTACKER, 2, relative_to=ANIM_ATTACKER
 	call LightThatBurnsTheSkyGreenSparks
 	call LightThatBurnsTheSkyGreenSparks
 	call LightThatBurnsTheSkyGreenSparks
@@ -17022,7 +17022,7 @@ gBattleAnimMove_ArmorCannon::
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
-	createsprite gFlashCannonGrayChargeTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gFlashCannonGrayChargeTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
 	delay 25
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_ATTACKER
 	delay 20

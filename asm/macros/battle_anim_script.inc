@@ -557,9 +557,9 @@
 	createsprite gThunderWaveSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
 	.endm
 
-	@.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req
-	@createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset
-	@.endm
+	.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, x2:req, y2:req, duration:req, location:req
+	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \location
+	.endm
 
 	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, unk2:req, unk3=30, unk4:req, unk5=40, unk6:req
 	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \unk2, \unk3, \unk4, \unk5, \unk6

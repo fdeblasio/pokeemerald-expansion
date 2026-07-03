@@ -7204,7 +7204,7 @@ Move_ZAP_CANNON:
 	loadspritegfx ANIM_TAG_BLACK_BALL_2
 	loadspritegfx ANIM_TAG_SPARK_2
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
-	createsprite gZapCannonBallSpriteTemplate, ANIM_TARGET, 3, 10, 0, 0, 0, 30, 0
+	create_zap_cannon_ball_sprite ANIM_TARGET, 3, x=10, y=0, x2=0, y2=0, duration=30, location=0
 	create_zap_cannon_spark_sprite ANIM_TARGET, 4, unk2=16, unk4=0, unk6=0
 	create_zap_cannon_spark_sprite ANIM_TARGET, 4, unk2=16, unk4=64, unk6=1
 	create_zap_cannon_spark_sprite ANIM_TARGET, 4, unk2=16, unk4=128, unk6=0

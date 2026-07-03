@@ -5924,7 +5924,7 @@ TechnoBlastElectric:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 12, RGB_BLACK
 	waitforvisualfinish
 	loopsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER, 14, 8
-	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
 	call TechnoBlastCharging1
 	delay 15
 	call TechnoBlastCharging2
@@ -11195,7 +11195,7 @@ gBattleAnimMove_MoongeistBeam::
 	call MoongeistBeamCharge
 	call MoongeistBeamCharge
 	call MoongeistBeamCharge
-	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0 @;Charge circle
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER @;Charge circle
 	call MoongeistBeamCharge
 	delay 32
 	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
@@ -15874,7 +15874,7 @@ gBattleAnimMove_LuminaCrash::
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
 	delay 25
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 20
@@ -16111,7 +16111,7 @@ ElectroShotSetUp:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 12, RGB_BLACK
 	waitforvisualfinish
 	loopsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER, 14, 8
-	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
 	call TechnoBlastCharging1
 	delay 15
 	call TechnoBlastCharging2
@@ -22025,7 +22025,7 @@ gBattleAnimMove_Charge::
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
 	delay 25
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 20

@@ -641,26 +641,28 @@ static void AnimThunderboltOrb(struct Sprite *sprite)
 
 static void AnimSparkElectricityFlashing(struct Sprite *sprite)
 {
+    CMD_ARGS(x, y, unk2, unk3, unk4, unk5, unk6, unk7);
+
     u8 battler;
 
-    sprite->data[0] = gBattleAnimArgs[3];
-    if (gBattleAnimArgs[7] & 0x8000)
+    sprite->data[0] = cmd->unk3;
+    if (cmd->unk7 & 0x8000)
         battler = gBattleAnimTarget;
     else
         battler = gBattleAnimAttacker;
 
     if (IsContest() || GetBattlerSide(battler) == B_SIDE_PLAYER)
-        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+        cmd->x = -cmd->x;
 
-    sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X_2) + gBattleAnimArgs[0];
-    sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[1];
+    sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X_2) + cmd->x;
+    sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
 
-    sprite->data[4] = gBattleAnimArgs[7] & 0x7FFF;
-    sprite->data[5] = gBattleAnimArgs[2];
-    sprite->data[6] = gBattleAnimArgs[5];
-    sprite->data[7] = gBattleAnimArgs[4];
+    sprite->data[4] = cmd->unk7 & 0x7FFF;
+    sprite->data[5] = cmd->unk2;
+    sprite->data[6] = cmd->unk5;
+    sprite->data[7] = cmd->unk4;
 
-    sprite->oam.tileNum += gBattleAnimArgs[6] * 4;
+    sprite->oam.tileNum += cmd->unk6 * 4;
     sprite->callback = AnimSparkElectricityFlashing_Step;
     sprite->callback(sprite);
 }

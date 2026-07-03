@@ -1094,14 +1094,14 @@ Move_THUNDERBOLT:
 	waitforvisualfinish
 	delay 20
 	create_thunderbolt_orb_sprite ANIM_TARGET, 3, unk0=44, x=0, y=0, unk3=3
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 0, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 64, 40, 1, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 128, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 192, 40, 2, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 32, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 96, 40, 1, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 160, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 224, 40, 2, -32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=32, unk3=44, unk4=0, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=32, unk3=44, unk4=64, unk5=40, unk6=1, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=32, unk3=44, unk4=128, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=32, unk3=44, unk4=192, unk5=40, unk6=2, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=16, unk3=44, unk4=32, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=16, unk3=44, unk4=96, unk5=40, unk6=1, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=16, unk3=44, unk4=160, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, unk2=16, unk3=44, unk4=224, unk5=40, unk6=2, unk7=-32765
 	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_TARGET
 	delay 0
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 2, 2, RGB_BLACK
@@ -1966,14 +1966,14 @@ Move_SPARK:
 	delay 20
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=7, target_blend_y=7, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 0, 20, 0, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 64, 20, 1, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 128, 20, 0, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 192, 20, 2, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 32, 20, 0, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 96, 20, 1, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 160, 20, 0, 0
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 224, 20, 2, 0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=32, unk3=12, unk4=0, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=32, unk3=12, unk4=64, unk5=20, unk6=1, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=32, unk3=12, unk4=128, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=32, unk3=12, unk4=192, unk5=20, unk6=2, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=16, unk3=12, unk4=32, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=16, unk3=12, unk4=96, unk5=20, unk6=1, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=16, unk3=12, unk4=160, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, unk2=16, unk3=12, unk4=224, unk5=20, unk6=2, unk7=0
 	delay 4
 	waitforvisualfinish
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)

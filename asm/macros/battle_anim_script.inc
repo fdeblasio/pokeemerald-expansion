@@ -529,12 +529,20 @@
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm
 
+	.macro create_lightning_sprite anim_battler:req, subpriority_offset:req, x:req, y:req
+	createsprite gLightningSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
+	.endm
+
 	.macro create_spark_electricity_sprite anim_battler:req, subpriority_offset:req, sine1:req, multiplier=24, sine2:req, duration:req, target:req, useAltCoords=TRUE, priority:req
 	createsprite gSparkElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \sine1, \multiplier, \sine2, \duration, \target, \useAltCoords, \priority
 	.endm
 
-	.macro create_lightning_sprite anim_battler:req, subpriority_offset:req, x:req, y:req
-	createsprite gLightningSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
+	.macro create_spark_electricity_flashing_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, unk2:req, unk3:req, unk4:req, unk5:req, unk6:req, unk7:req
+	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \unk2, \unk3, \unk4, \unk5, \unk6, \unk7
+	.endm
+
+	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, unk0:req, x:req, y:req, unk3:req
+	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \x, \y, \unk3
 	.endm
 
 	@.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req
@@ -543,10 +551,6 @@
 
 	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, unk2:req, unk3=30, unk4:req, unk5=40, unk6:req
 	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \unk2, \unk3, \unk4, \unk5, \unk6
-	.endm
-
-	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, unk0:req, x:req, y:req, unk3:req
-	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \x, \y, \unk3
 	.endm
 
 	@.macro create_sprite anim_battler:req, subpriority_offset:req

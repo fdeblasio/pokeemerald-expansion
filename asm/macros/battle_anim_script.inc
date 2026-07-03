@@ -528,6 +528,10 @@
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm
 
+	.macro create_spark_electricity_sprite anim_battler:req, subpriority_offset:req, sine1:req, multiplier=24, sine2:req, duration:req, target:req, useAltCoords=TRUE, priority:req
+	createsprite gSparkElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \sine1, \multiplier, \sine2, \duration, \target, \useAltCoords, \priority
+	.endm
+
 @ createvisualtask wrappers
 @ The arguments are based on the CMD_ARGS of the task.
 

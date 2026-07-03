@@ -1948,19 +1948,19 @@ Move_SPARK:
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=32, sine2=190, duration=12, target=ANIM_ATTACKER, priority=FALSE
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=80, sine2=22, duration=12, target=ANIM_ATTACKER, priority=FALSE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=156, sine2=121, duration=13, target=ANIM_ATTACKER, priority=TRUE
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 10
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=100, sine2=60, duration=10, target=ANIM_ATTACKER, priority=FALSE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=170, sine2=42, duration=11, target=ANIM_ATTACKER, priority=TRUE
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=238, sine2=165, duration=10, target=ANIM_ATTACKER, priority=TRUE
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 20

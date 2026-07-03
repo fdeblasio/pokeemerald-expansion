@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle_anim.h"
+#include "battle_anim_internal.h"
 #include "constants/rgb.h"
 #include "trig.h"
 #include "constants/songs.h"
@@ -512,13 +513,22 @@ static void AnimUnusedCirclingShock(struct Sprite *sprite)
     sprite->callback = TranslateSpriteInCircle;
 }
 
+// arg 0: index to sine table
+// arg 1: something multiplied with
+// arg 2: index to sine table
+// arg 3: duration
+// arg 4: target
+// arg 5: 0 or non-0 determines which set of battler sprite coords to use
+// arg 6: increase battler sprite priority by 1
 static void AnimSparkElectricity(struct Sprite *sprite)
 {
+    CMD_ARGS(sine1, multiplier, sine2, duration, target, useAltCoords, priority);
+
     u8 battler;
     u32 matrixNum;
     s16 sineVal;
 
-    switch (gBattleAnimArgs[4])
+    switch (cmd->target)
     {
     case ANIM_ATTACKER:
         battler = gBattleAnimAttacker;
@@ -541,7 +551,7 @@ static void AnimSparkElectricity(struct Sprite *sprite)
         break;
     }
 
-    if (gBattleAnimArgs[5] == 0)
+    if (cmd->useAltCoords == FALSE)
     {
         sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X);
         sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y);
@@ -552,20 +562,20 @@ static void AnimSparkElectricity(struct Sprite *sprite)
         sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET);
     }
 
-    sprite->x2 = (gSineTable[gBattleAnimArgs[0]] * gBattleAnimArgs[1]) >> 8;
-    sprite->y2 = (gSineTable[gBattleAnimArgs[0] + 64] * gBattleAnimArgs[1]) >> 8;
+    sprite->x2 = (gSineTable[cmd->sine1] * cmd->multiplier) >> 8;
+    sprite->y2 = (gSineTable[cmd->sine1 + 64] * cmd->multiplier) >> 8;
 
-    if (gBattleAnimArgs[6] & 1)
+    if (cmd->priority & 1)
         sprite->oam.priority = GetBattlerSpriteBGPriority(battler) + 1;
 
     matrixNum = sprite->oam.matrixNum;
-    sineVal = gSineTable[gBattleAnimArgs[2]];
+    sineVal = gSineTable[cmd->sine2];
 
-    gOamMatrices[matrixNum].a = gOamMatrices[matrixNum].d =  gSineTable[gBattleAnimArgs[2] + 64];
+    gOamMatrices[matrixNum].a = gOamMatrices[matrixNum].d =  gSineTable[cmd->sine2 + 64];
     gOamMatrices[matrixNum].b =  sineVal;
     gOamMatrices[matrixNum].c = -sineVal;
 
-    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[0] = cmd->duration;
     sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 

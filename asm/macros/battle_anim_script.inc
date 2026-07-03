@@ -549,6 +549,10 @@
 	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \x, \y, \unk3
 	.endm
 
+	.macro create_thunder_wave_sprite anim_battler:req, subpriority_offset:req, x:req, y:req
+	createsprite gThunderWaveSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
+	.endm
+
 	@.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req
 	@createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset
 	@.endm

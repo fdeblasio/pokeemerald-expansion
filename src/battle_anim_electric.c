@@ -797,10 +797,12 @@ static void AnimElectricBoltSegment(struct Sprite *sprite)
 // The horizontal bands of electricity used in Thunder Wave
 static void AnimThunderWave(struct Sprite *sprite)
 {
+    CMD_ARGS(x, y);
+
     u8 spriteId;
 
-    sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
+    sprite->x += cmd->x;
+    sprite->y += cmd->y;
     spriteId = CreateSprite(&gThunderWaveSpriteTemplate, sprite->x + 32, sprite->y, sprite->subpriority);
     gSprites[spriteId].oam.tileNum += 8;
     gAnimVisualTaskCount++;

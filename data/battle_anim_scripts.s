@@ -1132,11 +1132,11 @@ Move_THUNDER_WAVE:
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 20
 	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, -16
+	create_thunder_wave_sprite ANIM_TARGET, 2, x=-16, y=-16
 	delay 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, 0
+	create_thunder_wave_sprite ANIM_TARGET, 2, x=-16, y=0
 	delay 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, 16
+	create_thunder_wave_sprite ANIM_TARGET, 2, x=-16, y=16
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_BLACK
 	waitforvisualfinish

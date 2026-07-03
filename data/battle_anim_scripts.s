@@ -4778,38 +4778,38 @@ Move_THUNDER:
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -36
+	create_lightning_sprite ANIM_TARGET, 2, x=16, y=-36
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -20
+	create_lightning_sprite ANIM_TARGET, 2, x=16, y=-20
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, 12
+	create_lightning_sprite ANIM_TARGET, 2, x=16, y=12
 	delay 20
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -32
+	create_lightning_sprite ANIM_TARGET, 6, x=-16, y=-32
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -16
+	create_lightning_sprite ANIM_TARGET, 6, x=-16, y=-16
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, 16
+	create_lightning_sprite ANIM_TARGET, 6, x=-16, y=16
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 5
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -32
+	create_lightning_sprite ANIM_TARGET, 2, x=24, y=-32
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -16
+	create_lightning_sprite ANIM_TARGET, 2, x=24, y=-16
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, 16
+	create_lightning_sprite ANIM_TARGET, 2, x=24, y=16
 	delay 30
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	delay 5
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -32
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=-32
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=-16
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=16
 	delay 10
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	delay 1
@@ -4839,11 +4839,11 @@ Move_THUNDER_PUNCH:
 	delay 1
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=-48
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
+	create_lightning_sprite ANIM_ATTACKER, 2, x=0, y=-16
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, 16
+	create_lightning_sprite ANIM_ATTACKER, 2, x=0, y=16
 	delay 1
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
@@ -8057,11 +8057,11 @@ Move_TRI_ATTACK:
 	loadspritegfx ANIM_TAG_LIGHTNING
 	invert_screen_color scenery=TRUE, attacker=TRUE, target=TRUE
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=-48
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=-16
 	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
+	create_lightning_sprite ANIM_TARGET, 2, x=0, y=16
 	delay 20
 	createvisualtask AnimTask_ShakeTargetInPattern, 2, 20, 3, TRUE, 0
 	delay 2

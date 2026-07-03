@@ -459,12 +459,14 @@ const struct SpriteTemplate gShockWaveProgressingBoltSpriteTemplate =
 
 static void AnimLightning(struct Sprite *sprite)
 {
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        sprite->x -= gBattleAnimArgs[0];
-    else
-        sprite->x += gBattleAnimArgs[0];
+    CMD_ARGS(x, y);
 
-    sprite->y += gBattleAnimArgs[1];
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        sprite->x -= cmd->x;
+    else
+        sprite->x += cmd->x;
+
+    sprite->y += cmd->y;
     sprite->callback = AnimLightning_Step;
 }
 
@@ -513,13 +515,6 @@ static void AnimUnusedCirclingShock(struct Sprite *sprite)
     sprite->callback = TranslateSpriteInCircle;
 }
 
-// arg 0: index to sine table
-// arg 1: something multiplied with
-// arg 2: index to sine table
-// arg 3: duration
-// arg 4: target
-// arg 5: 0 or non-0 determines which set of battler sprite coords to use
-// arg 6: increase battler sprite priority by 1
 static void AnimSparkElectricity(struct Sprite *sprite)
 {
     CMD_ARGS(sine1, multiplier, sine2, duration, target, useAltCoords, priority);

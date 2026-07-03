@@ -478,10 +478,12 @@ static void AnimLightning_Step(struct Sprite *sprite)
 
 static void AnimUnusedSpinningFist(struct Sprite *sprite)
 {
+    CMD_ARGS(x);
+
     if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        sprite->x -= gBattleAnimArgs[0];
+        sprite->x -= cmd->x;
     else
-        sprite->x += gBattleAnimArgs[0];
+        sprite->x += cmd->x;
 
     sprite->callback = AnimUnusedSpinningFist_Step;
 }
@@ -494,23 +496,25 @@ static void AnimUnusedSpinningFist_Step(struct Sprite *sprite)
 
 static void AnimUnusedCirclingShock(struct Sprite *sprite)
 {
+    CMD_ARGS(x, y, amplitude, speed, duration);
+
     sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
 
     if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
     {
-        sprite->x -= gBattleAnimArgs[0];
-        sprite->y -= gBattleAnimArgs[1];
+        sprite->x -= cmd->x;
+        sprite->y -= cmd->y;
     }
     else
     {
-        sprite->x += gBattleAnimArgs[0];
-        sprite->y += gBattleAnimArgs[1];
+        sprite->x += cmd->x;
+        sprite->y += cmd->y;
     }
     sprite->data[0] = 0;
-    sprite->data[1] = gBattleAnimArgs[2];
-    sprite->data[2] = gBattleAnimArgs[3];
-    sprite->data[3] = gBattleAnimArgs[4];
+    sprite->data[1] = cmd->amplitude;
+    sprite->data[2] = cmd->speed;
+    sprite->data[3] = cmd->duration;
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
     sprite->callback = TranslateSpriteInCircle;
 }

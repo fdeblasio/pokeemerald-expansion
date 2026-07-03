@@ -6843,15 +6843,13 @@ gBattleAnimMove_FusionBolt::
 	delay 8
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_TARGET, x=16, y=16
-	delay 2
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_TARGET, x=-16, y=-16
+	create_electric_puffs relative_to=ANIM_TARGET
 	delay 8
 	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 9, 1
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	call CreateElectricPuffs
+	create_electric_puffs relative_to=ANIM_ATTACKER
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 14, 0, RGB_BLACK
 	waitforvisualfinish
 	end
@@ -22038,19 +22036,13 @@ gBattleAnimMove_Charge::
 	delay 6
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 6, 5
 	waitforvisualfinish
-	call CreateElectricPuffs
+	create_electric_puffs relative_to=ANIM_ATTACKER
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	simple_palette_blend selector=F_PAL_BG, delay=4, initial_blend_y=4, target_blend_y=0, color=RGB_BLACK
 	clearmonbg ANIM_ATTACKER
 	blendoff
 	end
-
-CreateElectricPuffs:
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_ATTACKER, x=16, y=16
-	delay 2
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_ATTACKER, x=-16, y=-16
-	return
 
 gBattleAnimMove_Taunt::
 	createsprite gThoughtBubbleSpriteTemplate, ANIM_ATTACKER, 11, 0, 45
@@ -22821,15 +22813,13 @@ gBattleAnimMove_VoltTackle::
 	delay 8
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_TARGET, x=16, y=16
-	delay 2
-	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=ANIM_TARGET, x=-16, y=-16
+	create_electric_puffs relative_to=ANIM_TARGET
 	delay 8
 	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 9, 1
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	call CreateElectricPuffs
+	create_electric_puffs relative_to=ANIM_ATTACKER
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 8, 0, RGB_BLACK
 	waitforvisualfinish
@@ -30982,7 +30972,7 @@ gBattleAnimMove_GigavoltHavoc::
 	waitforvisualfinish
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	createsprite gGigavoltHavocLaunchSpearSpriteTemplate, ANIM_TARGET, 3, 0
-	call CreateElectricPuffs
+	create_electric_puffs relative_to=ANIM_ATTACKER
 	delay 14
 	clearmonbg ANIM_ATTACKER
 	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 8, 28 	@shake target
@@ -32369,7 +32359,7 @@ StokedSparksurferFinish:
 	createvisualtask AnimTask_VoltTackleAttackerReappear, 5 	@ attacker flicker back
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
 	delay 4
-	call CreateElectricPuffs
+	create_electric_puffs relative_to=ANIM_ATTACKER
 	delay 4
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_TARGET | F_PAL_ATTACKER), 2, 16, 0, RGB(31, 31, 22)

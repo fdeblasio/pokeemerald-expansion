@@ -798,3 +798,9 @@
 	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_DEF_PARTNER
 	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_ATK_PARTNER
 	.endm
+
+	.macro create_electric_puffs anim_battler=ANIM_ATTACKER, subpriority_offset=2, relative_to:req, x=16, y=16
+	create_electric_puff_sprite \anim_battler, \subpriority_offset, relative_to=\relative_to, x=\x, y=\y
+	delay 2
+	create_electric_puff_sprite \anim_battler, \subpriority_offset, relative_to=\relative_to, x=-\x, y=-\y
+	endm

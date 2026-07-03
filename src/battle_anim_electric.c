@@ -825,11 +825,11 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave
 void AnimTask_ElectricChargingParticles(u8 taskId)
 {
-    CMD_ARGS(anim_target, unk1, unk2, unk3);
+    CMD_ARGS(relative_to, unk1, unk2, unk3);
 
     struct Task *task = &gTasks[taskId];
 
-    if (cmd->anim_target == ANIM_ATTACKER)
+    if (cmd->relative_to == ANIM_ATTACKER)
     {
         task->data[14] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         task->data[15] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
@@ -917,7 +917,9 @@ static void AnimElectricChargingParticles(struct Sprite *sprite)
 
 static void AnimGrowingChargeOrb(struct Sprite *sprite)
 {
-    if (gBattleAnimArgs[0] == ANIM_ATTACKER)
+    CMD_ARGS(relative_to);
+
+    if (cmd->relative_to == ANIM_ATTACKER)
     {
         sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
@@ -935,7 +937,9 @@ static void AnimGrowingChargeOrb(struct Sprite *sprite)
 // The quick electric burst at the end of Charge / during the Volt Tackle hit
 static void AnimElectricPuff(struct Sprite *sprite)
 {
-    if (gBattleAnimArgs[0] == ANIM_ATTACKER)
+    CMD_ARGS(relative_to, x, y);
+
+    if (cmd->relative_to == ANIM_ATTACKER)
     {
         sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
@@ -946,8 +950,8 @@ static void AnimElectricPuff(struct Sprite *sprite)
         sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     }
 
-    sprite->x2 = gBattleAnimArgs[1];
-    sprite->y2 = gBattleAnimArgs[2];
+    sprite->x2 = cmd->x;
+    sprite->y2 = cmd->y;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = RunStoredCallbackWhenAnimEnds;
 }

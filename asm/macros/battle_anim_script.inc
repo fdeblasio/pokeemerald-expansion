@@ -533,6 +533,10 @@
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm
 
+	.macro create_growing_charge_orb_sprite anim_battler:req, subpriority_offset:req, relative_to:req
+	createsprite gGrowingChargeOrbSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to
+	.endm
+
 	.macro create_lightning_sprite anim_battler:req, subpriority_offset:req, x:req, y:req
 	createsprite gLightningSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
 	.endm
@@ -638,6 +642,6 @@
 	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
 	.endm
 
-	.macro create_electric_charging_particles_task priority=2, anim_target:req, unk1:req, unk2:req, unk3:req
-	createvisualtask AnimTask_ElectricChargingParticles, \priority, \anim_target, \unk1, \unk2, \unk3
+	.macro create_electric_charging_particles_task priority=2, relative_to:req, unk1:req, unk2:req, unk3:req
+	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \unk1, \unk2, \unk3
 	.endm

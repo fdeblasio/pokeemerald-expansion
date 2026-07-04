@@ -1072,27 +1072,15 @@ gBattleAnimMove_MagnetRise::
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_BATTLERS), delay=0, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 20)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_WindUpLunge, 5, ANIM_ATTACKER, -12, 4, 10, 10, 12, 6
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	delay 0
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
 	delay 4
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_BATTLERS), delay=0, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 20)
 	delay 20
@@ -2343,11 +2331,7 @@ DracoMeteor4:
 gBattleAnimMove_Discharge::
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 20)
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 20)
 	delay 10
@@ -2699,17 +2683,9 @@ gBattleAnimMove_IronHead::
 
 gBattleAnimMove_MagnetBomb::
 	delay 0
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
+	call CreateSparks1
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
-	delay 0
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2
 	delay 0
 	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
@@ -5921,21 +5897,21 @@ TechnoBlastElectric:
 	waitforvisualfinish
 	loopsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER, 14, 8
 	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
 	waitforvisualfinish
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
@@ -5972,20 +5948,6 @@ TechnoBlastElectric:
 	blendoff
 	clearmonbg ANIM_ATTACKER
 	end
-TechnoBlastCharging1:
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
-	return
-TechnoBlastCharging2:
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
-	return
 
 TechnoBlastWater:
 	monbg ANIM_ATTACKER
@@ -8192,30 +8154,18 @@ gBattleAnimMove_MagneticFlux::
 	createvisualtask AnimTask_BlendBattleAnimPal 10, (F_PAL_TARGET | F_PAL_ATK_SIDE), 2, 0, 9, RGB(27, 1, 9)
 	loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
 	createvisualtask AnimTask_DefenseCurlDeformMon, 5
-	call MagneticFluxSparks1
+	call CreateSparks1
 	delay 10
-	call MagneticFluxSparks2
+	call CreateSparks2NoSound
 	delay 10
-	call MagneticFluxSparks1
+	call CreateSparks1
 	delay 10
 	createsprite gMagneticFluxUproarTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0, 31, 8
-	call MagneticFluxSparks2
+	call CreateSparks2NoSound
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal 10, (F_PAL_TARGET | F_PAL_ATK_SIDE), 2, 9, 0, RGB(27, 1, 9)
 	waitforvisualfinish
 	end
-MagneticFluxSparks1:
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
-	return
-MagneticFluxSparks2:
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
-	return
 
 gBattleAnimMove_HappyHour::
 	monbg ANIM_ATTACKER
@@ -9561,50 +9511,32 @@ gBattleAnimMove_GearUp::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 0, 9, RGB(27, 28, 0)
 	createsprite gGearUpGearsTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	delay 15
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
 	createsprite gGearUpGearsTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	delay 15
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
 	createsprite gGearUpGearsTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	delay 15
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
 	call GearUpSparks
 	call GearUpSparks
 	call GearUpSparks
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 9, 0, RGB(27, 28, 0)
 	waitforvisualfinish
 	end
 GearUpSparks:
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	delay 15
 	playsewithpan SE_ROULETTE_BALL2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	delay 15
 	return
 
@@ -11265,25 +11197,25 @@ gBattleAnimMove_TearfulLook::
 
 gBattleAnimMove_ZingZap::
 	monbg ANIM_TARGET
-	call ZingZapSparks1
+	call CreateSparks1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 4, 0, 6, 1
 	delay 10
-	call ZingZapSparks2
+	call CreateSparks2
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 4, 0, 6, 1
 	delay 10
-	call ZingZapSparks1
+	call CreateSparks1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 4, 0, 6, 1
 	delay 10
-	call ZingZapSparks2
+	call CreateSparks2
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 4, 0, 6, 1
 	delay 10
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 24, 6, 1, 5
 	delay 4
-	call ZingZapSparks1
+	call CreateSparks1
 	invisible ANIM_ATTACKER
 	createsprite gZingZapYellowBallTemplate, ANIM_TARGET, 2, 0, 0, 15
 	delay 10
-	call ZingZapSparks2
+	call CreateSparks2
 	delay 5
 	stopsound
 	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
@@ -11295,20 +11227,6 @@ gBattleAnimMove_ZingZap::
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	end
-ZingZapSparks1:
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
-	return
-ZingZapSparks2:
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
-	return
 
 gBattleAnimMove_NaturesMadness::
 	monbg ANIM_ATTACKER
@@ -11521,17 +11439,11 @@ gBattleAnimMove_PlasmaFists::
 PlasmaFistSpark1:
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	blend_color_cycle selector=F_PAL_ATTACKER, delay=0, num_blends=2, initial_blend_y=0, target_blend_y=11, color=RGB(31, 31, 22)
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1NoSound
 	return
 PlasmaFistSpark2:
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	return
 PlasmaFistsImpact:
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
@@ -14235,13 +14147,13 @@ gBattleAnimMove_ThunderousKick::
 	createsprite gMegaPunchKickSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 50
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 7, RGB_WHITE
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 2, 0, 22, 1
-	call ZingZapSparks1
+	call CreateSparks1
 	delay 10
-	call ZingZapSparks2
+	call CreateSparks2
 	delay 10
-	call ZingZapSparks1
+	call CreateSparks1
 	delay 10
-	call ZingZapSparks2
+	call CreateSparks2
 	delay 3
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 48, 3, 0, 4
 	delay 7
@@ -16074,25 +15986,25 @@ ElectroShotSetUp:
 	waitforvisualfinish
 	loopsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER, 14, 8
 	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
-	call TechnoBlastCharging1
+	call CreateSparks1
 	delay 15
-	call TechnoBlastCharging2
+	call CreateSparks2
 	delay 15
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 12, 0, RGB_BLACK
@@ -17188,19 +17100,11 @@ gBattleAnimMove_ElectroDrift::
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, -256, 0, 1, -1
 	waitbgfadein
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1
 	delay 10
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
+	call CreateSparks2
 	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
-	delay 0
-	call CreateSparks
+	call CreateSparksFlashing
 	createsprite gVoltTackleOrbSlideSpriteTemplate, ANIM_ATTACKER, 1
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	waitforvisualfinish
@@ -17314,25 +17218,17 @@ MightyCleaveDiggingRun:
 gBattleAnimMove_SupercellSlam::
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 10
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 20
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=7, target_blend_y=7, color=RGB(31, 31, 22)
-	call CreateSparks
+	call CreateSparksFlashing
 	waitforvisualfinish
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 4
@@ -20449,25 +20345,17 @@ OutrageFlames:
 gBattleAnimMove_Spark::
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	call CreateSparks1
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 10
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2
 	delay 0
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 20
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=7, target_blend_y=7, color=RGB(31, 31, 22)
-	call CreateSparks
+	call CreateSparksFlashing
 	waitforvisualfinish
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_ATTACKER), delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
@@ -20481,7 +20369,25 @@ gBattleAnimMove_Spark::
 	waitforvisualfinish
 	end
 
-CreateSparks:
+CreateSparks1:
+	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
+CreateSparks1NoSound:
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 32, 24, 190, 12, ANIM_ATTACKER, 1, 0
+	delay 0
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
+	return
+
+CreateSparks2:
+	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
+CreateSparks2NoSound:
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
+	delay 0
+	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	return
+
+CreateSparksFlashing:
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 0, 20, 0, 0
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 32, 12, 64, 20, 1, 0
@@ -30821,28 +30727,17 @@ gBattleAnimMove_GigavoltHavoc::
 	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 80, 24, 22, 12, ANIM_ATTACKER, 1, 0
 	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 156, 24, 121, 13, ANIM_ATTACKER, 1, 1
 	delay 10
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2
 	delay 0
 	delay 5
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
+	call CreateSparks2NoSound
 	delay 5
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 32, 20, 0, 0
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 96, 20, 1, 0
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 160, 20, 0, 0
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, 16, 12, 224, 20, 2, 0
 	delay 5
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 100, 24, 60, 10, ANIM_ATTACKER, 1, 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 170, 24, 42, 11, ANIM_ATTACKER, 1, 1
-	delay 0
-	createsprite gSparkElectricitySpriteTemplate, ANIM_ATTACKER, 0, 238, 24, 165, 10, ANIM_ATTACKER, 1, 1
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
+	call CreateSparks2
 	monbg ANIM_ATTACKER
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
 @	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@charge particles to user

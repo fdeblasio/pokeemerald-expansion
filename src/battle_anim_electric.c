@@ -626,6 +626,12 @@ static void AnimThunderboltOrb_Step(struct Sprite *sprite)
 
 static void AnimThunderboltOrb(struct Sprite *sprite)
 {
+    /* unk3 is related to frames
+    Set to 0, the sprite is visible every other frame
+    Set to 1, the sprite is visible for two frames, then invisible for two frames
+    Set to 2, the sprite is visible for three frames, then invisible for three frames
+    Set to X, the sprite is visible for X+1 frames, then invisible for X+1 frames
+    */
     CMD_ARGS(duration, x, y, unk3);
 
     if (IsContest() || GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
@@ -683,7 +689,7 @@ static void AnimSparkElectricityFlashing_Step(struct Sprite *sprite)
 // Electricity arcs around the target. Used for Paralysis and various electric move hits
 static void AnimElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, duration, unk3);
+    CMD_ARGS(x, y, duration, unk3); //unk3 is related to sprite orientation
 
     InitSpritePosToAnimTarget(sprite, FALSE);
     sprite->oam.tileNum += cmd->unk3 * 4;
@@ -825,7 +831,7 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave
 void AnimTask_ElectricChargingParticles(u8 taskId)
 {
-    CMD_ARGS(relative_to, duration, unk2, unk3);
+    CMD_ARGS(relative_to, amount, slowness, compaction);
 
     struct Task *task = &gTasks[taskId];
 
@@ -840,14 +846,14 @@ void AnimTask_ElectricChargingParticles(u8 taskId)
         task->data[15] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     }
 
-    task->data[6] = cmd->duration;
+    task->data[6] = cmd->amount;
     task->data[7] = 0;
     task->data[8] = 0;
     task->data[9] = 0;
     task->data[10] = 0;
-    task->data[11] = cmd->unk3;
+    task->data[11] = cmd->compaction;
     task->data[12] = 0;
-    task->data[13] = cmd->unk2;
+    task->data[13] = cmd->slowness;
     task->func = AnimTask_ElectricChargingParticles_Step;
 }
 

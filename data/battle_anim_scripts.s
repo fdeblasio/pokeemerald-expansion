@@ -4422,7 +4422,7 @@ Move_VOLT_TACKLE:
 	setalpha 12, 8
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 8, RGB_BLACK
 	waitforvisualfinish
-	createsprite gVoltTackleOrbSlideSpriteTemplate, ANIM_ATTACKER, 1
+	create_volt_tackle_orb_slide_sprite ANIM_ATTACKER, 1
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
@@ -4558,7 +4558,7 @@ Move_SHOCK_WAVE:
 	electric_charging_particles relative_to=ANIM_ATTACKER, amount=20, slowness=0, compaction=2
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
-	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 2
+	create_growing_shock_wave_orb_sprite ANIM_ATTACKER, 2
 	delay 30
 	shock_wave_progressing_bolt
 	delay 12

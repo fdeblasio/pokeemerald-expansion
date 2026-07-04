@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle_anim.h"
+#include "battle_anim_internal.h"
 #include "constants/rgb.h"
 #include "trig.h"
 #include "constants/songs.h"
@@ -1565,9 +1566,9 @@ void AnimTask_CreateIons(u8 taskId)
 
     if (gTasks[taskId].data[0] == 0)
     {
-        gTasks[taskId].data[1] = gBattleAnimArgs[0];
-        gTasks[taskId].data[2] = gBattleAnimArgs[1];
-        gTasks[taskId].data[3] = gBattleAnimArgs[2];
+        gTasks[taskId].data[1] = cmd->unk0;
+        gTasks[taskId].data[2] = cmd->unk1;
+        gTasks[taskId].data[3] = cmd->duration;
     }
     gTasks[taskId].data[0]++;
     if (gTasks[taskId].data[0] % gTasks[taskId].data[2] == 1)

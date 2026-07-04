@@ -1915,28 +1915,11 @@ gBattleAnimMove_ShadowClaw::
 	end
 
 gBattleAnimMove_ThunderFang::
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=16, color=RGB_BLACK
-	waitforvisualfinish
-	invert_screen_color scenery=1 | 2 | 4
-	delay 1
-	create_triple_lightning_sprites anim_battler2=ANIM_ATTACKER, x=0, y1=-48, y2=-16, y3=16
-	delay 1
+	call ThunderAttackBeginning
+	call ThunderAttackMiddle
 	call CreateBite
 	delay 1
-	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	invert_screen_color scenery=1 | 2 | 4
-	delay 1
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 15, 1
-	create_basic_hitsplat_sprite ANIM_ATTACKER, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=2
-	delay 1
-	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=16, target_blend_y=0, color=RGB_BLACK
-	delay 20
-	waitforvisualfinish
-	clearmonbg ANIM_TARGET
-	blendoff
-	delay 1
+	call ThunderAttackEnd
 	end
 
 gBattleAnimMove_IceFang::
@@ -23010,18 +22993,30 @@ gBattleAnimMove_Thunder::
 	end
 
 gBattleAnimMove_ThunderPunch::
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=16, color=RGB_BLACK
-	waitforvisualfinish
+	call ThunderAttackBeginning
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	create_fist_sprite ANIM_TARGET, 4, x=0, y=0, duration=8, initPosition=1
 	create_basic_hitsplat_sprite ANIM_TARGET, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	delay 1
+	call ThunderAttackMiddle
+	call ThunderAttackEnd
+	end
+
+ThunderAttackBeginning:
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=16, color=RGB_BLACK
+	waitforvisualfinish
+	return
+
+ThunderAttackMiddle:
 	invert_screen_color scenery=1 | 2 | 4
 	delay 1
 	create_triple_lightning_sprites anim_battler2=ANIM_ATTACKER, x=0, y1=-48, y2=-16, y3=16
 	delay 1
+	end
+
+ThunderAttackEnd:
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	invert_screen_color scenery=1 | 2 | 4
 	delay 2
@@ -23033,7 +23028,7 @@ gBattleAnimMove_ThunderPunch::
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	blendoff
-	end
+	return
 
 gBattleAnimMove_SacredFire::
 	loopsewithpan SE_M_SACRED_FIRE, SOUND_PAN_ATTACKER, 7, 5

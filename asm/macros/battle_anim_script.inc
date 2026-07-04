@@ -638,14 +638,26 @@
 	.endm
 
 	@ battle_anim_electric
-	.macro create_electric_bolt_task priority=5, x:req, y:req, unk2:req
+	.macro electric_bolt priority=5, x:req, y:req, unk2:req
 	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
 	.endm
 
-	.macro create_electric_charging_particles_task priority=2, relative_to:req, amount:req, slowness:req, compaction:req
+	.macro electric_charging_particles priority=2, relative_to:req, amount:req, slowness:req, compaction:req
 	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \amount, \slowness, \compaction
 	.endm
 
-	.macro create_volt_tackle_bolt_task priority=5, y:req
+	.macro shock_wave_lightning priority=5
+	createvisualtask AnimTask_ShockWaveLightning, \priority
+	.endm
+
+	.macro shock_wave_progressing_bolt priority=5
+	createvisualtask AnimTask_ShockWaveProgressingBolt, \priority
+	.endm
+
+	.macro volt_tackle_attacker_reappear priority=5
+	createvisualtask AnimTask_VoltTackleAttackerReappear, \priority
+	.endm
+
+	.macro volt_tackle_bolt priority=5, y:req
 	createvisualtask AnimTask_VoltTackleBolt, \priority, \y
 	.endm

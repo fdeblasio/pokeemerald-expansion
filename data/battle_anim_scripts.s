@@ -1057,7 +1057,7 @@ Move_THUNDER_SHOCK:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	create_electric_bolt_task x=0, y=-44, unk2=FALSE
+	electric_bolt x=0, y=-44, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 9
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 0, 13, RGB_BLACK
@@ -1079,13 +1079,13 @@ Move_THUNDERBOLT:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	create_electric_bolt_task x=24, y=-52, unk2=FALSE
+	electric_bolt x=24, y=-52, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 7
-	create_electric_bolt_task x=-24, y=-52, unk2=FALSE
+	electric_bolt x=-24, y=-52, unk2=FALSE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 7
-	create_electric_bolt_task x=0, y=-60, unk2=TRUE
+	electric_bolt x=0, y=-60, unk2=TRUE
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	delay 9
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 0, 13, RGB_BLACK
@@ -1128,7 +1128,7 @@ Move_THUNDER_WAVE:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
 	waitforvisualfinish
 	delay 10
-	create_electric_bolt_task x=0, y=-48, unk2=FALSE
+	electric_bolt x=0, y=-48, unk2=FALSE
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 20
 	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
@@ -3575,7 +3575,7 @@ Move_CHARGE:
 	setalpha 12, 8
 	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=4, color=RGB_BLACK
 	waitforvisualfinish
-	create_electric_charging_particles_task relative_to=ANIM_ATTACKER, amount=60, slowness=2, compaction=12
+	electric_charging_particles relative_to=ANIM_ATTACKER, amount=60, slowness=2, compaction=12
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
@@ -4428,19 +4428,19 @@ Move_VOLT_TACKLE:
 	clearmonbg ANIM_ATTACKER
 	blendoff
 	delay 8
-	create_volt_tackle_bolt_task y=0
+	volt_tackle_bolt y=0
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	create_volt_tackle_bolt_task y=1
+	volt_tackle_bolt y=1
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	waitforvisualfinish
-	create_volt_tackle_bolt_task y=2
+	volt_tackle_bolt y=2
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	create_volt_tackle_bolt_task y=3
+	volt_tackle_bolt y=3
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
 	waitforvisualfinish
-	create_volt_tackle_bolt_task y=4
+	volt_tackle_bolt y=4
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
 	delay 8
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1
@@ -4449,7 +4449,7 @@ Move_VOLT_TACKLE:
 	delay 2
 	create_electric_puff_sprite ANIM_ATTACKER, 2, relative_to=1, x=-16, y=-16
 	delay 8
-	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
+	volt_tackle_attacker_reappear
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 9, 1
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
@@ -4555,15 +4555,15 @@ Move_SHOCK_WAVE:
 	setalpha 12, 8
 	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=4, color=RGB_BLACK
 	waitforvisualfinish
-	create_electric_charging_particles_task relative_to=ANIM_ATTACKER, amount=20, slowness=0, compaction=2
+	electric_charging_particles relative_to=ANIM_ATTACKER, amount=20, slowness=0, compaction=2
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 2
 	delay 30
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5
+	shock_wave_progressing_bolt
 	delay 12
 	waitforvisualfinish
-	createvisualtask AnimTask_ShockWaveLightning, 5
+	shock_wave_lightning
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 6, 18, 1

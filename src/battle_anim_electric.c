@@ -221,7 +221,7 @@ const struct SpriteTemplate gAnchorShotChainTemplate =
     .tileTag = ANIM_TAG_CHAIN_LINK,
     .paletteTag = ANIM_TAG_CHAIN_LINK,
     .oam = &gOamData_AffineOff_ObjNormal_32x16,
-    .callback = AnimThunderWave
+    .callback = AnimThunderWave,
 };
 
 static const s8 sElectricChargingParticleCoordOffsets[][2] =

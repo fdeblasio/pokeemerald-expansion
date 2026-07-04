@@ -9670,11 +9670,11 @@ gBattleAnimMove_AnchorShot::
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 15, 1
 	waitforvisualfinish
 	loopsewithpan SE_SHINY, SOUND_PAN_ATTACKER 28 2
-	createsprite gAnchorShotChainTemplate, ANIM_TARGET, 2, -16, -16
+	create_anchor_shot_chain ANIM_TARGET, 2, x=-16, y=-16
 	delay 4
-	createsprite gAnchorShotChainTemplate, ANIM_TARGET, 2, -16, 0
+	create_anchor_shot_chain ANIM_TARGET, 2, x=-16, y=0
 	delay 4
-	createsprite gAnchorShotChainTemplate, ANIM_TARGET, 2, -16, 16
+	create_anchor_shot_chain ANIM_TARGET, 2, x=-16, y=16
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	end

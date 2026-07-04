@@ -605,6 +605,10 @@
 	.endm
 
 	@ Electric
+	.macro create_anchor_shot_chain anim_battler:req, subpriority_offset:req, x:req, y:req
+	createsprite gAnchorShotChainTemplate, \anim_battler, \subpriority_offset, \x, \y
+	.endm
+
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm

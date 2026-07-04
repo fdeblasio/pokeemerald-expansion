@@ -604,7 +604,7 @@
 	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \initPosition, 2
 	.endm
 
-	@ Electric
+	@ battle_anim_electric
 	.macro create_anchor_shot_chain anim_battler:req, subpriority_offset:req, x:req, y:req
 	createsprite gAnchorShotChainTemplate, \anim_battler, \subpriority_offset, \x, \y
 	.endm
@@ -702,7 +702,7 @@
 	createvisualtask AnimTask_CreateSurfWave, \priority, \palette
 	.endm
 
-	@ Electric
+	@ battle_anim_electric
 	.macro create_ions priority=2, unk0:req, unk1:req, duration:req
 	createvisualtask AnimTask_CreateIons, \priority, \unk0, \unk1, \duration
 	.endm
@@ -822,7 +822,7 @@
 	waitforvisualfinish
 	.endm
 
-	@ Electric
+	@ battle_anim_electric
 	.macro create_discharge_electricity_sprites anim_battler=ANIM_TARGET, subpriority_offset=5, unk0:req, unk1:req, duration=5, unk3:req
 	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_TARGET
 	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3, ANIM_DEF_PARTNER

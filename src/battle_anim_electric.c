@@ -521,13 +521,13 @@ static void AnimUnusedCirclingShock(struct Sprite *sprite)
 
 static void AnimSparkElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(sine1, multiplier, sine2, duration, target, useAltCoords, priority);
+    CMD_ARGS(sine1, multiplier, sine2, duration, relative_to, useAltCoords, priority);
 
     u8 battler;
     u32 matrixNum;
     s16 sineVal;
 
-    switch (cmd->target)
+    switch (cmd->relative_to)
     {
     case ANIM_ATTACKER:
         battler = gBattleAnimAttacker;
@@ -580,7 +580,7 @@ static void AnimSparkElectricity(struct Sprite *sprite)
 
 static void AnimZapCannonSpark(struct Sprite *sprite)
 {
-    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5, unk6);
+    CMD_ARGS(unk0, unk1, radius, unk3, unk4, unk5, unk6);
 
     InitSpritePosToAnimAttacker(sprite, TRUE);
     sprite->data[0] = cmd->unk3;
@@ -589,7 +589,7 @@ static void AnimZapCannonSpark(struct Sprite *sprite)
     sprite->data[3] = sprite->y;
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     InitAnimLinearTranslation(sprite);
-    sprite->data[5] = cmd->unk2;
+    sprite->data[5] = cmd->radius;
     sprite->data[6] = cmd->unk5;
     sprite->data[7] = cmd->unk4;
     sprite->oam.tileNum += cmd->unk6 * 4;
@@ -626,14 +626,14 @@ static void AnimThunderboltOrb_Step(struct Sprite *sprite)
 
 static void AnimThunderboltOrb(struct Sprite *sprite)
 {
-    CMD_ARGS(unk0, x, y, unk3);
+    CMD_ARGS(duration, x, y, unk3);
 
     if (IsContest() || GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
         cmd->x = -cmd->x;
 
     sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x;
     sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
-    sprite->data[3] = cmd->unk0;
+    sprite->data[3] = cmd->duration;
     sprite->data[4] = cmd->unk3;
     sprite->data[5] = cmd->unk3;
     sprite->callback = AnimThunderboltOrb_Step;
@@ -641,11 +641,11 @@ static void AnimThunderboltOrb(struct Sprite *sprite)
 
 static void AnimSparkElectricityFlashing(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, unk2, unk3, unk4, unk5, unk6, unk7);
+    CMD_ARGS(x, y, radius, duration, unk4, unk5, unk6, unk7);
 
     u8 battler;
 
-    sprite->data[0] = cmd->unk3;
+    sprite->data[0] = cmd->duration;
     if (cmd->unk7 & 0x8000)
         battler = gBattleAnimTarget;
     else
@@ -658,7 +658,7 @@ static void AnimSparkElectricityFlashing(struct Sprite *sprite)
     sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
 
     sprite->data[4] = cmd->unk7 & 0x7FFF;
-    sprite->data[5] = cmd->unk2;
+    sprite->data[5] = cmd->radius;
     sprite->data[6] = cmd->unk5;
     sprite->data[7] = cmd->unk4;
 
@@ -683,7 +683,7 @@ static void AnimSparkElectricityFlashing_Step(struct Sprite *sprite)
 // Electricity arcs around the target. Used for Paralysis and various electric move hits
 static void AnimElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(unk0, unk1, duration, unk3);
+    CMD_ARGS(x, y, duration, unk3);
 
     InitSpritePosToAnimTarget(sprite, FALSE);
     sprite->oam.tileNum += cmd->unk3 * 4;
@@ -701,7 +701,7 @@ static void AnimElectricity(struct Sprite *sprite)
 // The vertical falling thunder bolt used in Thunder Wave/Shock/Bolt
 void AnimTask_ElectricBolt(u8 taskId)
 {
-    CMD_ARGS(x, y, unk2);
+    CMD_ARGS(x, y, unk2); //unk2 is related to the shape of the bolt
 
     gTasks[taskId].data[0] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->x;
     gTasks[taskId].data[1] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->y;
@@ -825,7 +825,7 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave
 void AnimTask_ElectricChargingParticles(u8 taskId)
 {
-    CMD_ARGS(relative_to, unk1, unk2, unk3);
+    CMD_ARGS(relative_to, duration, unk2, unk3);
 
     struct Task *task = &gTasks[taskId];
 
@@ -840,7 +840,7 @@ void AnimTask_ElectricChargingParticles(u8 taskId)
         task->data[15] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     }
 
-    task->data[6] = cmd->unk1;
+    task->data[6] = cmd->duration;
     task->data[7] = 0;
     task->data[8] = 0;
     task->data[9] = 0;
@@ -1047,7 +1047,7 @@ void AnimTask_VoltTackleAttackerReappear(u8 taskId)
 // The horizontal bolts of electricity for Volt Tackle
 void AnimTask_VoltTackleBolt(u8 taskId)
 {
-    CMD_ARGS(unk0);
+    CMD_ARGS(y);
 
     struct Task *task = &gTasks[taskId];
 
@@ -1056,7 +1056,7 @@ void AnimTask_VoltTackleBolt(u8 taskId)
     case 0:
         task->data[1] = GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER ? 1 : -1;
 
-        switch (cmd->unk0)
+        switch (cmd->y)
         {
         case 0:
             task->data[3] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
@@ -1069,7 +1069,7 @@ void AnimTask_VoltTackleBolt(u8 taskId)
             task->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) - (task->data[1] * 32);
             break;
         default:
-            if ((cmd->unk0 & 1) != 0)
+            if ((cmd->y & 1) != 0)
             {
                 task->data[3] = 256;
                 task->data[4] = -16;
@@ -1082,12 +1082,12 @@ void AnimTask_VoltTackleBolt(u8 taskId)
 
             if (task->data[1] == 1)
             {
-                task->data[5] = 80 - cmd->unk0 * 10;
+                task->data[5] = 80 - cmd->y * 10;
             }
             else
             {
                 u16 temp;
-                task->data[5] = cmd->unk0 * 10 + 40;
+                task->data[5] = cmd->y * 10 + 40;
                 temp = task->data[3];
                 task->data[3] = task->data[4];
                 task->data[4] = temp;

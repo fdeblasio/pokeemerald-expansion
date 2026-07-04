@@ -525,8 +525,8 @@
 	.endm
 
 	@ battle_anim_electric
-	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, unk0:req, unk1:req, duration:req, unk3:req
-	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \duration, \unk3
+	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, unk3:req
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \unk3
 	.endm
 
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
@@ -541,16 +541,16 @@
 	createsprite gLightningSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y
 	.endm
 
-	.macro create_spark_electricity_sprite anim_battler:req, subpriority_offset:req, sine1:req, multiplier=24, sine2:req, duration:req, target:req, useAltCoords=TRUE, priority:req
-	createsprite gSparkElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \sine1, \multiplier, \sine2, \duration, \target, \useAltCoords, \priority
+	.macro create_spark_electricity_sprite anim_battler:req, subpriority_offset:req, sine1:req, radius:req, sine2:req, duration:req, relative_to:req, useAltCoords=TRUE, priority:req
+	createsprite gSparkElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \sine1, \radius, \sine2, \duration, \relative_to, \useAltCoords, \priority
 	.endm
 
-	.macro create_spark_electricity_flashing_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, unk2:req, unk3:req, unk4:req, unk5:req, unk6:req, unk7:req
-	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \unk2, \unk3, \unk4, \unk5, \unk6, \unk7
+	.macro create_spark_electricity_flashing_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, radius:req, duration:req, unk4:req, unk5:req, unk6:req, unk7:req
+	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \radius, \duration, \unk4, \unk5, \unk6, \unk7
 	.endm
 
-	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, unk0:req, x:req, y:req, unk3:req
-	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \x, \y, \unk3
+	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, duration:req, x:req, y:req, unk3:req
+	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \duration, \x, \y, \unk3
 	.endm
 
 	.macro create_thunder_wave_sprite anim_battler:req, subpriority_offset:req, x:req, y:req
@@ -561,8 +561,8 @@
 	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \location
 	.endm
 
-	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, unk2:req, unk3=30, unk4:req, unk5=40, unk6:req
-	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \unk2, \unk3, \unk4, \unk5, \unk6
+	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, radius:req, unk3=30, unk4:req, unk5=40, unk6:req
+	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \radius, \unk3, \unk4, \unk5, \unk6
 	.endm
 
 	@.macro create_sprite anim_battler:req, subpriority_offset:req
@@ -642,10 +642,10 @@
 	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
 	.endm
 
-	.macro create_electric_charging_particles_task priority=2, relative_to:req, unk1:req, unk2:req, unk3:req
-	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \unk1, \unk2, \unk3
+	.macro create_electric_charging_particles_task priority=2, relative_to:req, duration:req, unk2:req, unk3:req
+	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \duration, \unk2, \unk3
 	.endm
 
-	.macro create_volt_tackle_bolt_task priority=5, unk0:req
-	createvisualtask AnimTask_VoltTackleBolt, \priority, \unk0
+	.macro create_volt_tackle_bolt_task priority=5, y:req
+	createvisualtask AnimTask_VoltTackleBolt, \priority, \y
 	.endm

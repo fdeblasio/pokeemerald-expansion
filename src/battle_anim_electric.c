@@ -580,10 +580,10 @@ static void AnimSparkElectricity(struct Sprite *sprite)
 
 static void AnimZapCannonSpark(struct Sprite *sprite)
 {
-    CMD_ARGS(unk0, unk1, radius, unk3, unk4, unk5, unk6);
+    CMD_ARGS(x, y, radius, duration, unk4, unk5, unk6);
 
     InitSpritePosToAnimAttacker(sprite, TRUE);
-    sprite->data[0] = cmd->unk3;
+    sprite->data[0] = cmd->duration;
     sprite->data[1] = sprite->x;
     sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
     sprite->data[3] = sprite->y;

@@ -561,8 +561,8 @@
 	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \location
 	.endm
 
-	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, unk0=10, unk1=0, radius:req, unk3=30, unk4:req, unk5=40, unk6:req
-	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \radius, \unk3, \unk4, \unk5, \unk6
+	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, radius:req, duration:req, unk4:req, unk5:req, unk6:req
+	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \radius, \duration, \unk4, \unk5, \unk6
 	.endm
 
 	@.macro create_sprite anim_battler:req, subpriority_offset:req

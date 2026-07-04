@@ -7205,14 +7205,14 @@ Move_ZAP_CANNON:
 	loadspritegfx ANIM_TAG_SPARK_2
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
 	create_zap_cannon_ball_sprite ANIM_TARGET, 3, x=10, y=0, x2=0, y2=0, duration=30, location=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=16, unk4=0, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=16, unk4=64, unk6=1
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=16, unk4=128, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=16, unk4=192, unk6=2
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=8, unk4=32, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=8, unk4=96, unk6=1
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=8, unk4=160, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, radius=8, unk4=224, unk6=2
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=0, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=64, unk5=40, unk6=1
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=128, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=192, unk5=40, unk6=2
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=32, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=96, unk5=40, unk6=1
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=160, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=224, unk5=40, unk6=2
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 5, 1
 	delay 15

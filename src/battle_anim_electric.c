@@ -1352,8 +1352,10 @@ void AnimGrowingShockWaveOrb(struct Sprite *sprite)
 // Thin bolt of electricity that moves up and down toward the target. Used by Shock Wave
 void AnimTask_ShockWaveProgressingBolt(u8 taskId)
 {
+    CMD_ARGS(relative_to);
+
     struct Task *task = &gTasks[taskId];
-    enum AnimBattler animBattler = gBattleAnimArgs[0];
+    enum AnimBattler animBattler = cmd->relative_to;
     enum BattlerId target = GetAnimBattlerId(animBattler);
 
     switch (task->data[0])
@@ -1485,8 +1487,10 @@ static void AnimShockWaveProgressingBolt(struct Sprite *sprite)
 
 void AnimTask_ShockWaveLightning(u8 taskId)
 {
+    CMD_ARGS(relative_to);
+
     struct Task *task = &gTasks[taskId];
-    enum AnimBattler animBattler = gBattleAnimArgs[0];
+    enum AnimBattler animBattler = cmd->relative_to;
     enum BattlerId target = GetAnimBattlerId(animBattler);
 
     switch (task->data[0])

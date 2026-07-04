@@ -707,6 +707,14 @@
 	createvisualtask AnimTask_CreateIons, \priority, \unk0, \unk1, \duration
 	.endm
 
+	.macro shock_wave_lightning priority=5, relative_to:req
+	createvisualtask AnimTask_ShockWaveProgressingBolt, \priority, \relative_to
+	.endm
+
+	.macro shock_wave_progressing_bolt priority=5, relative_to:req
+	createvisualtask AnimTask_ShockWaveProgressingBolt, \priority, \relative_to
+	.endm
+
 @ Common Steps
 	.macro create_powder_particles sound_effect=SE_M_POISON_POWDER, anim_battler:req, sprite:req
 	loopsewithpan \sound_effect, SOUND_PAN_TARGET, 10, 6

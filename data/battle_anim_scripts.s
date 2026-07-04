@@ -7083,10 +7083,10 @@ gBattleAnimMove_ParabolicCharge::
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 2
 	delay 30
 	jumpifdoublebattle ParabolicChargeDouble
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_TARGET
+	shock_wave_progressing_bolt relative_to=ANIM_TARGET
 	delay 12
 	waitforvisualfinish
-	createvisualtask AnimTask_ShockWaveLightning, 5, ANIM_TARGET
+	shock_wave_lightning relative_to=ANIM_TARGET
 	playsewithpan SE_M_STRENGTH, SOUND_PAN_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 6, 18, 1
@@ -7111,14 +7111,14 @@ ParabolicChargeHeal:
 	blendoff
 	end
 ParabolicChargeDouble:
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_TARGET
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_DEF_PARTNER
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_ATK_PARTNER
+	shock_wave_progressing_bolt relative_to=ANIM_TARGET
+	shock_wave_progressing_bolt relative_to=ANIM_DEF_PARTNER
+	shock_wave_progressing_bolt relative_to=ANIM_ATK_PARTNER
 	delay 12
 	waitforvisualfinish
-	createvisualtask AnimTask_ShockWaveLightning, 5, ANIM_TARGET
-	createvisualtask AnimTask_ShockWaveLightning, 5, ANIM_DEF_PARTNER
-	createvisualtask AnimTask_ShockWaveLightning, 5, ANIM_ATK_PARTNER
+	shock_wave_lightning relative_to=ANIM_TARGET
+	shock_wave_lightning relative_to=ANIM_DEF_PARTNER
+	shock_wave_lightning relative_to=ANIM_ATK_PARTNER
 	playsewithpan SE_M_STRENGTH, SOUND_PAN_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 6, 18, 1
@@ -11407,7 +11407,7 @@ gBattleAnimMove_PlasmaFists::
 	call PlasmaFistSpark2
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_ATTACKER
+	shock_wave_progressing_bolt relative_to=ANIM_ATTACKER
 	waitforvisualfinish
 	monbg ANIM_TARGET
 	call PlasmaFistsImpact
@@ -13342,7 +13342,7 @@ gBattleAnimMove_RisingVoltage::
 ANIM_RISING_VOLTAGE_NORMAL:
 	createvisualtask AnimTask_BlendBattleAnimPal, 2, F_PAL_BG, 1, 0, 4, RGB_BLACK @;To black
 	waitforvisualfinish
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 30, 0, 3 @;Amount, Slowness, Slowness, Compaction
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 30, 0, 3
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 0, 0
@@ -13362,7 +13362,7 @@ ANIM_RISING_VOLTAGE_NORMAL:
 ANIM_RISING_VOLTAGE_STRONGER:
 	createvisualtask AnimTask_BlendBattleAnimPal, 2, F_PAL_BG, 1, 0, 12, RGB_BLACK @;To black
 	waitforvisualfinish
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 55, 0, 0 @;Amount, Slowness, Slowness, Compaction
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 55, 0, 0
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 2,
@@ -15150,7 +15150,7 @@ gBattleAnimMove_DoubleShock::
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, -256, 0, 1, -1
 	waitbgfadein
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 30, 0, 3 @;Amount, Slowness, Slowness, Compaction
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 30, 0, 3
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 0, 0
@@ -22752,10 +22752,10 @@ gBattleAnimMove_ShockWave::
 	delay 12
 	createsprite gGrowingShockWaveOrbSpriteTemplate, ANIM_ATTACKER, 2
 	delay 30
-	createvisualtask AnimTask_ShockWaveProgressingBolt, 5, ANIM_TARGET
+	shock_wave_progressing_bolt relative_to=ANIM_TARGET
 	delay 12
 	waitforvisualfinish
-	createvisualtask AnimTask_ShockWaveLightning, 5, ANIM_TARGET
+	shock_wave_lightning relative_to=ANIM_TARGET
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 6, 18, 1
@@ -28969,7 +28969,7 @@ gBattleAnimGeneral_UltraBurst::
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_HYDRO_PUMP, 0, 12, 12, RGB2GBA(250, 240, 230)
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_ADJACENT), 2, 0, 15, RGB_BLACK
 	waitforvisualfinish
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@ charge particles to attacker
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12
 	delay 30
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 14, 10
 	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 3, 0
@@ -30711,7 +30711,7 @@ gBattleAnimMove_GigavoltHavoc::
 	call CreateSparks2
 	monbg ANIM_ATTACKER
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-@	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@charge particles to user
+@	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12
 @	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16, 44, 32, 40, 0, 3
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16, 44, 96, 40, 1, 3
 @	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 16, 44, 160, 40, 0, 3
@@ -31659,7 +31659,7 @@ CatastropikaFinish:
 	waitbgfadeout
 	visible ANIM_ATTACKER
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@charge particles to user
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 32, 40, 0, 3
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 96, 40, 1, 3
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 160, 40, 0, 3
@@ -31815,7 +31815,7 @@ gBattleAnimMove_10000000VoltThunderbolt::
 	waitbgfadein
 	visible ANIM_ATTACKER
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@charge particles to user
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 32, 40, 0, 3
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 96, 40, 1, 3
 	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 44, 160, 40, 0, 3
@@ -34307,7 +34307,7 @@ gBattleAnimMove_LightThatBurnsTheSky::
 	setalpha 12, 8
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_ADJACENT), 2, 0, 15, RGB_BLACK
 	waitforvisualfinish
-	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@ charge particles to attacker
+	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12
 	delay 30
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 14, 10
 	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 3, 0

@@ -831,7 +831,7 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave
 void AnimTask_ElectricChargingParticles(u8 taskId)
 {
-    CMD_ARGS(relative_to, amount, slowness, compaction);
+    CMD_ARGS(relative_to, amount, duration, compaction);
 
     struct Task *task = &gTasks[taskId];
 
@@ -853,7 +853,7 @@ void AnimTask_ElectricChargingParticles(u8 taskId)
     task->data[10] = 0;
     task->data[11] = cmd->compaction;
     task->data[12] = 0;
-    task->data[13] = cmd->slowness;
+    task->data[13] = cmd->duration;
     task->func = AnimTask_ElectricChargingParticles_Step;
 }
 

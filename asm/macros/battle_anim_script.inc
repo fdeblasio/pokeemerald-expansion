@@ -650,8 +650,8 @@
 	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
 	.endm
 
-	.macro electric_charging_particles priority=2, relative_to:req, amount:req, slowness:req, compaction:req
-	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \amount, \slowness, \compaction
+	.macro electric_charging_particles priority=2, relative_to:req, amount:req, duration:req, compaction:req
+	createvisualtask AnimTask_ElectricChargingParticles, \priority, \relative_to, \amount, \duration, \compaction
 	.endm
 
 	.macro shock_wave_lightning priority=5

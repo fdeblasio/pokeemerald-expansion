@@ -3575,7 +3575,7 @@ Move_CHARGE:
 	setalpha 12, 8
 	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=4, color=RGB_BLACK
 	waitforvisualfinish
-	electric_charging_particles relative_to=ANIM_ATTACKER, amount=60, slowness=2, compaction=12
+	electric_charging_particles relative_to=ANIM_ATTACKER, amount=60, duration=2, compaction=12
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 30
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
@@ -4555,7 +4555,7 @@ Move_SHOCK_WAVE:
 	setalpha 12, 8
 	simple_palette_blend selector=F_PAL_BG, delay=2, initial_blend_y=0, target_blend_y=4, color=RGB_BLACK
 	waitforvisualfinish
-	electric_charging_particles relative_to=ANIM_ATTACKER, amount=20, slowness=0, compaction=2
+	electric_charging_particles relative_to=ANIM_ATTACKER, amount=20, duration=0, compaction=2
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	delay 12
 	create_growing_shock_wave_orb_sprite ANIM_ATTACKER, 2

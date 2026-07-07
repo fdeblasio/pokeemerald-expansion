@@ -1094,14 +1094,14 @@ Move_THUNDERBOLT:
 	waitforvisualfinish
 	delay 20
 	create_thunderbolt_orb_sprite ANIM_TARGET, 3, duration=44, x=0, y=0, unk3=3
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=32, duration=44, unk4=0, unk5=40, unk6=0, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=32, duration=44, unk4=64, unk5=40, unk6=1, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=32, duration=44, unk4=128, unk5=40, unk6=0, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=32, duration=44, unk4=192, unk5=40, unk6=2, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=16, duration=44, unk4=32, unk5=40, unk6=0, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=16, duration=44, unk4=96, unk5=40, unk6=1, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=16, duration=44, unk4=160, unk5=40, unk6=0, unk7=-32765
-	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, radius=16, duration=44, unk4=224, unk5=40, unk6=2, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, unk4=0, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, unk4=64, unk5=40, unk6=1, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, unk4=128, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, unk4=192, unk5=40, unk6=2, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=16, duration=44, unk4=32, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=16, duration=44, unk4=96, unk5=40, unk6=1, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=16, duration=44, unk4=160, unk5=40, unk6=0, unk7=-32765
+	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=16, duration=44, unk4=224, unk5=40, unk6=2, unk7=-32765
 	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_TARGET
 	delay 0
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 2, 2, RGB_BLACK
@@ -1948,32 +1948,32 @@ Move_SPARK:
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=32, radius=24, sine2=190, duration=12, relative_to=ANIM_ATTACKER, priority=FALSE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=32, wave_amplitude=24, sine2=190, duration=12, relative_to=ANIM_ATTACKER, priority=FALSE
 	delay 0
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=80, radius=24, sine2=22, duration=12, relative_to=ANIM_ATTACKER, priority=FALSE
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=156, radius=24, sine2=121, duration=13, relative_to=ANIM_ATTACKER, priority=TRUE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=80, wave_amplitude=24, sine2=22, duration=12, relative_to=ANIM_ATTACKER, priority=FALSE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=156, wave_amplitude=24, sine2=121, duration=13, relative_to=ANIM_ATTACKER, priority=TRUE
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 10
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=5, target_blend_y=5, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=100, radius=24, sine2=60, duration=10, relative_to=ANIM_ATTACKER, priority=FALSE
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=170, radius=24, sine2=42, duration=11, relative_to=ANIM_ATTACKER, priority=TRUE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=100, wave_amplitude=24, sine2=60, duration=10, relative_to=ANIM_ATTACKER, priority=FALSE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=170, wave_amplitude=24, sine2=42, duration=11, relative_to=ANIM_ATTACKER, priority=TRUE
 	delay 0
-	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=238, radius=24, sine2=165, duration=10, relative_to=ANIM_ATTACKER, priority=TRUE
+	create_spark_electricity_sprite ANIM_ATTACKER, 0, sine1=238, wave_amplitude=24, sine2=165, duration=10, relative_to=ANIM_ATTACKER, priority=TRUE
 	delay 0
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
 	delay 20
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=7, target_blend_y=7, color=RGB(31, 31, 22)
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=32, duration=12, unk4=0, unk5=20, unk6=0, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=32, duration=12, unk4=64, unk5=20, unk6=1, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=32, duration=12, unk4=128, unk5=20, unk6=0, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=32, duration=12, unk4=192, unk5=20, unk6=2, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=16, duration=12, unk4=32, unk5=20, unk6=0, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=16, duration=12, unk4=96, unk5=20, unk6=1, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=16, duration=12, unk4=160, unk5=20, unk6=0, unk7=0
-	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, radius=16, duration=12, unk4=224, unk5=20, unk6=2, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=32, duration=12, unk4=0, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=32, duration=12, unk4=64, unk5=20, unk6=1, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=32, duration=12, unk4=128, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=32, duration=12, unk4=192, unk5=20, unk6=2, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=16, duration=12, unk4=32, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=16, duration=12, unk4=96, unk5=20, unk6=1, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=16, duration=12, unk4=160, unk5=20, unk6=0, unk7=0
+	create_spark_electricity_flashing_sprite ANIM_ATTACKER, 4, x=0, y=0, wave_amplitude=16, duration=12, unk4=224, unk5=20, unk6=2, unk7=0
 	delay 4
 	waitforvisualfinish
 	blend_color_cycle priority=2, selector=F_PAL_BG | F_PAL_ATTACKER, delay=-31, num_blends=1, initial_blend_y=0, target_blend_y=0, color=RGB(31, 31, 22)
@@ -7205,14 +7205,14 @@ Move_ZAP_CANNON:
 	loadspritegfx ANIM_TAG_SPARK_2
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
 	create_zap_cannon_ball_sprite ANIM_TARGET, 3, x=10, y=0, x2=0, y2=0, duration=30, location=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=0, unk5=40, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=64, unk5=40, unk6=1
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=128, unk5=40, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=16, duration=30, unk4=192, unk5=40, unk6=2
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=32, unk5=40, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=96, unk5=40, unk6=1
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=160, unk5=40, unk6=0
-	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, radius=8, duration=30, unk4=224, unk5=40, unk6=2
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=16, duration=30, unk4=0, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=16, duration=30, unk4=64, unk5=40, unk6=1
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=16, duration=30, unk4=128, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=16, duration=30, unk4=192, unk5=40, unk6=2
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=8, duration=30, unk4=32, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=8, duration=30, unk4=96, unk5=40, unk6=1
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=8, duration=30, unk4=160, unk5=40, unk6=0
+	create_zap_cannon_spark_sprite ANIM_TARGET, 4, x=10, y=0, wave_amplitude=8, duration=30, unk4=224, unk5=40, unk6=2
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 5, 1
 	delay 15

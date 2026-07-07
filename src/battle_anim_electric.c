@@ -521,7 +521,7 @@ static void AnimUnusedCirclingShock(struct Sprite *sprite)
 
 static void AnimSparkElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(sine1, multiplier, sine2, duration, relative_to, useAltCoords, priority);
+    CMD_ARGS(sine1, waveAmplitude, sine2, duration, relative_to, useAltCoords, priority);
 
     u8 battler;
     u32 matrixNum;
@@ -561,8 +561,8 @@ static void AnimSparkElectricity(struct Sprite *sprite)
         sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET);
     }
 
-    sprite->x2 = (gSineTable[cmd->sine1] * cmd->multiplier) >> 8;
-    sprite->y2 = (gSineTable[cmd->sine1 + 64] * cmd->multiplier) >> 8;
+    sprite->x2 = (gSineTable[cmd->sine1] * cmd->waveAmplitude) >> 8;
+    sprite->y2 = (gSineTable[cmd->sine1 + 64] * cmd->waveAmplitude) >> 8;
 
     if (cmd->priority & 1)
         sprite->oam.priority = GetBattlerSpriteBGPriority(battler) + 1;
@@ -580,7 +580,7 @@ static void AnimSparkElectricity(struct Sprite *sprite)
 
 static void AnimZapCannonSpark(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, radius, duration, unk4, unk5, unk6);
+    CMD_ARGS(x, y, waveAmplitude, duration, unk4, unk5, unk6);
 
     InitSpritePosToAnimAttacker(sprite, TRUE);
     sprite->data[0] = cmd->duration;
@@ -589,7 +589,7 @@ static void AnimZapCannonSpark(struct Sprite *sprite)
     sprite->data[3] = sprite->y;
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     InitAnimLinearTranslation(sprite);
-    sprite->data[5] = cmd->radius;
+    sprite->data[5] = cmd->waveAmplitude;
     sprite->data[6] = cmd->unk5;
     sprite->data[7] = cmd->unk4;
     sprite->oam.tileNum += cmd->unk6 * 4;
@@ -647,7 +647,7 @@ static void AnimThunderboltOrb(struct Sprite *sprite)
 
 static void AnimSparkElectricityFlashing(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, radius, duration, unk4, unk5, unk6, unk7);
+    CMD_ARGS(x, y, waveAmplitude, duration, unk4, unk5, unk6, unk7);
 
     u8 battler;
 
@@ -664,7 +664,7 @@ static void AnimSparkElectricityFlashing(struct Sprite *sprite)
     sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
 
     sprite->data[4] = cmd->unk7 & 0x7FFF;
-    sprite->data[5] = cmd->radius;
+    sprite->data[5] = cmd->waveAmplitude;
     sprite->data[6] = cmd->unk5;
     sprite->data[7] = cmd->unk4;
 

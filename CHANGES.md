@@ -2475,9 +2475,11 @@
 
 - Ursaluna (postgame):
     - Spe: 50->55
+    - Type: Ground/Normal->Normal/Ground
     - Learns Bulldoze, Stomping Tantrum, Body Slam, and Earthquake by level up
 
 - Bloodmoon Ursaluna (not in main game):
+    - Type: Ground/Normal->Normal/Ground
     - Learns Mud-Slap, Swift, Mud Shot, Mud Bomb, and Earth Power by level up
 
 - Slugma:
@@ -5075,6 +5077,7 @@
     - Held item: Relic Gold: 0%->5%
 
 - Gholdengo:
+    - Type: Steel/Ghost->Ghost/Steel
     - Held item: Relic Gold: 0%->100%
 
 - Wo-Chien:

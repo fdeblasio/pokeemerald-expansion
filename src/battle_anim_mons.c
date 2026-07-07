@@ -1546,7 +1546,7 @@ void AnimSpriteOnMonPos(struct Sprite *sprite)
 // arg 5: lower 8 bits = location on attacking mon, upper 8 bits = location on target mon pick to target
 void TranslateAnimSpriteToTargetMonLocation(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, x2, y2, duration, location);
+    CMD_ARGS(initialX, initialY, targetX, targetY, duration, location);
 
     bool8 respectMonPicOffsets;
     u8 coordType;
@@ -1563,11 +1563,11 @@ void TranslateAnimSpriteToTargetMonLocation(struct Sprite *sprite)
 
     InitSpritePosToAnimAttacker(sprite, respectMonPicOffsets);
     if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        cmd->x2 = -cmd->x2;
+        cmd->targetX = -cmd->targetX;
 
     sprite->data[0] = cmd->duration;
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x2;
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + cmd->y2;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->targetX;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + cmd->targetY;
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }

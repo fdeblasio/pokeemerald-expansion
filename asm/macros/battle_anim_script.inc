@@ -565,8 +565,8 @@
 	createsprite gVoltTackleOrbSlideSpriteTemplate, \anim_battler, \subpriority_offset
 	.endm
 
-	.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, x2:req, y2:req, duration:req, location:req
-	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \location
+	.macro create_zap_cannon_ball_sprite anim_battler:req, subpriority_offset:req, initial_x:req, initial_y:req, target_x:req, target_y:req, duration:req, location:req
+	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \initial_x, \initial_y, \target_x, \target_y, \duration, \location
 	.endm
 
 	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, wave_amplitude:req, duration:req, wave_offset:req, wave_period:req, tile_offset:req

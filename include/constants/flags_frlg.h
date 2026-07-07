@@ -2244,7 +2244,6 @@
 #define FLAG_HIDE_ROUTE_128_MAXIE                                   0
 #define FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS                       0
 #define FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE                          0
-#define FLAG_HIDE_SLATEPORT_CITY_TM_SALESMAN                        0
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE              0
 #define FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY                       0
 #define FLAG_HIDE_SS_TIDAL_ROOMS_SNATCH_GIVER                       0

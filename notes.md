@@ -47,8 +47,6 @@ upcoming
     - Power:
         - Bone Rush: 25->30 (still 25 in EE for macro)
     - Effect:
-        - Dire Claw: 50%->30%
-            - Macro with Tri Attack?
         - Iron Head: 30%->20%
             - All but Air Slash and Zing Zap can go back to 20%; update notes if so
     - Some moveset notes will have to be edited to remove now-canon moves:
@@ -128,7 +126,6 @@ upcoming
 - Combine two meta files (notes.md and CHANGES.md)?
     Include more changes, even if general like Battle Frontier edits
 - Organize changes better
-- Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
 - Give all Pokémon updated movesets
@@ -251,7 +248,6 @@ upcoming
 - Possible Move Updates:
     - Bite: 60->65?
     - Poison Fang: 60->65?
-    - Brick Break: 75->85 to match Psychic Fangs?
     - Shadow Punch: 60->75?
         - Would need Ghost-type never miss replacement
     - Delta Stream Flying-type Weather Ball

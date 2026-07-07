@@ -525,8 +525,8 @@
 	.endm
 
 	@ battle_anim_electric
-	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, unk3:req
-	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \unk3
+	.macro create_electricity_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, tile_offset:req
+	createsprite gElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \tile_offset
 	.endm
 
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
@@ -549,8 +549,8 @@
 	createsprite gSparkElectricitySpriteTemplate, \anim_battler, \subpriority_offset, \sine1, \wave_amplitude, \sine2, \duration, \relative_to, \useAltCoords, \priority
 	.endm
 
-	.macro create_spark_electricity_flashing_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, wave_amplitude:req, duration:req, unk4:req, unk5:req, unk6:req, unk7:req
-	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \wave_amplitude, \duration, \unk4, \unk5, \unk6, \unk7
+	.macro create_spark_electricity_flashing_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, wave_amplitude:req, duration:req, wave_offset:req, wave_period:req, tile_offset:req, unk7:req
+	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \wave_amplitude, \duration, \wave_offset, \wave_period, \tile_offset, \unk7
 	.endm
 
 	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, duration:req, x:req, y:req, unk3:req
@@ -569,8 +569,8 @@
 	createsprite gZapCannonBallSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \location
 	.endm
 
-	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, wave_amplitude:req, duration:req, unk4:req, unk5:req, unk6:req
-	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \wave_amplitude, \duration, \unk4, \unk5, \unk6
+	.macro create_zap_cannon_spark_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, wave_amplitude:req, duration:req, wave_offset:req, wave_period:req, tile_offset:req
+	createsprite gZapCannonSparkSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \wave_amplitude, \duration, \wave_offset, \wave_period, \tile_offset
 	.endm
 
 	@.macro create_sprite anim_battler:req, subpriority_offset:req

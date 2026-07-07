@@ -580,7 +580,7 @@ static void AnimSparkElectricity(struct Sprite *sprite)
 
 static void AnimZapCannonSpark(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, waveAmplitude, duration, unk4, unk5, unk6);
+    CMD_ARGS(x, y, waveAmplitude, duration, waveOffset, wavePeriod, tileOffset);
 
     InitSpritePosToAnimAttacker(sprite, TRUE);
     sprite->data[0] = cmd->duration;
@@ -590,9 +590,9 @@ static void AnimZapCannonSpark(struct Sprite *sprite)
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     InitAnimLinearTranslation(sprite);
     sprite->data[5] = cmd->waveAmplitude;
-    sprite->data[6] = cmd->unk5;
-    sprite->data[7] = cmd->unk4;
-    sprite->oam.tileNum += cmd->unk6 * 4;
+    sprite->data[6] = cmd->wavePeriod;
+    sprite->data[7] = cmd->waveOffset;
+    sprite->oam.tileNum += cmd->tileOffset * 4;
     sprite->callback = AnimZapCannonSpark_Step;
     sprite->callback(sprite);
 }
@@ -647,7 +647,7 @@ static void AnimThunderboltOrb(struct Sprite *sprite)
 
 static void AnimSparkElectricityFlashing(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, waveAmplitude, duration, unk4, unk5, unk6, unk7);
+    CMD_ARGS(x, y, waveAmplitude, duration, waveOffset, wavePeriod, tileOffset, unk7);
 
     u8 battler;
 
@@ -665,10 +665,10 @@ static void AnimSparkElectricityFlashing(struct Sprite *sprite)
 
     sprite->data[4] = cmd->unk7 & 0x7FFF;
     sprite->data[5] = cmd->waveAmplitude;
-    sprite->data[6] = cmd->unk5;
-    sprite->data[7] = cmd->unk4;
+    sprite->data[6] = cmd->wavePeriod;
+    sprite->data[7] = cmd->waveOffset;
 
-    sprite->oam.tileNum += cmd->unk6 * 4;
+    sprite->oam.tileNum += cmd->tileOffset * 4;
     sprite->callback = AnimSparkElectricityFlashing_Step;
     sprite->callback(sprite);
 }
@@ -689,14 +689,14 @@ static void AnimSparkElectricityFlashing_Step(struct Sprite *sprite)
 // Electricity arcs around the target. Used for Paralysis and various electric move hits
 static void AnimElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(x, y, duration, unk3); //unk3 is related to sprite orientation
+    CMD_ARGS(x, y, duration, tileOffset);
 
     InitSpritePosToAnimTarget(sprite, FALSE);
-    sprite->oam.tileNum += cmd->unk3 * 4;
+    sprite->oam.tileNum += cmd->tileOffset * 4;
 
-    if (cmd->unk3 == 1)
+    if (cmd->tileOffset == 1)
         sprite->oam.matrixNum = ST_OAM_HFLIP;
-    else if (cmd->unk3 == 2)
+    else if (cmd->tileOffset == 2)
         sprite->oam.matrixNum = ST_OAM_VFLIP;
 
     sprite->data[0] = cmd->duration;

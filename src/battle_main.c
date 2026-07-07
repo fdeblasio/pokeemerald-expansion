@@ -6000,7 +6000,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case EFFECT_EARTHQUAKE:
         if (gMain.inBattle)
         {
-            if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+            if (gFieldTimers.terrain == B_TERRAIN_GRASSY)
                 UQ4_12_MULTIPLY(power, 0.5);
         }
         else if (gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)

@@ -648,6 +648,9 @@
         - PP: 5->10
     - Tera Starstorm:
         - PP: 5->10
+    - Tri Attack:
+        - PP: 10->15
+        - Effect: 20%->30%
     - Vise Grip:
         - Power: 55->65
     - Wrap:
@@ -732,8 +735,6 @@
         - Power: 60->75
     - Belch:
         - Accuracy: 90->100
-    - Dire Claw:
-        - Power: 80->90
     - Malignant Chain:
         - PP: 5->10
     - Mortal Spin:

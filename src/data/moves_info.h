@@ -558,18 +558,18 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                                  \
     .validApprenticeMove = TRUE
 
-#define STATUS_80_POWER_INFO(Effect)                 \
-    EFFECT_MOVE_INFO(Effect, 30),                    \
-    .power = 80,                                     \
-    .pp = 20,                                        \
-    .target = TARGET_SELECTED,                       \
+#define STATUS_80_POWER_INFO(Effect) \
+    EFFECT_MOVE_INFO(Effect, 30),    \
+    .power = 80,                     \
+    .pp = 20,                        \
+    .target = TARGET_SELECTED,       \
     .validApprenticeMove = TRUE
 
-#define HIT_ADJACENT_80_POWER(Status) \
-    EFFECT_MOVE_INFO(Status, 30),     \
-    .power = 80,                      \
-    .pp = 15,                         \
-    .target = TARGET_FOES_AND_ALLY,   \
+#define HIT_ADJACENT_80_POWER_INFO(Status) \
+    EFFECT_MOVE_INFO(Status, 30),          \
+    .power = 80,                           \
+    .pp = 15,                              \
+    .target = TARGET_FOES_AND_ALLY,        \
     .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS
 
 #define HIT_TWICE_80_TOTAL_POWER_INFO \
@@ -577,6 +577,18 @@ const u8 gNotDoneYetDescription[] = _(
     .power = 40,                      \
     .pp = 15,                         \
     .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL
+
+#define RANDOM_EFFECT_80_POWER_INFO(Effect1, Effect2, Effect3)       \
+    BASIC_MOVE,                                                      \
+    .power = 80,                                                     \
+    .pp = 15,                                                        \
+    .additionalEffects = ADDITIONAL_EFFECTS({                        \
+        .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,                  \
+        .chance = 30,                                                \
+        .argument.randomMoveEffects = { Effect1, Effect2, Effect3 }, \
+    }),                                                              \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_PREV_MONS, \
+    .validApprenticeMove = TRUE
 
 #define PLEDGE_INFO                                                 \
     .effect = EFFECT_PLEDGE,                                        \
@@ -4671,26 +4683,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "May burn/paralyze/freeze."),
         #endif
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
-            .chance = 20,
-            .argument.randomMoveEffects = { MOVE_EFFECT_BURN, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_FREEZE_OR_FROSTBITE },
-        }),
     #else
             "A triangular field of energy\n"
             "is created and launched."),
     #endif
-        BASIC_MOVE,
-        .power = 80,
+        RANDOM_EFFECT_80_POWER_INFO(MOVE_EFFECT_BURN, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_FREEZE_OR_FROSTBITE),
         .type = TYPE_NORMAL,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_LOCK_ON},
         .battleAnimScript = gBattleAnimMove_TriAttack,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SUPER_FANG] =
@@ -10627,7 +10630,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Zaps all others with\n"
             "electricity. May paralyze."),
-        HIT_ADJACENT_80_POWER(MOVE_EFFECT_PARALYSIS),
+        HIT_ADJACENT_80_POWER_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_COOL,
@@ -10642,7 +10645,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Torches all others with\n"
             "scarlet flames. May burn."),
-        HIT_ADJACENT_80_POWER(MOVE_EFFECT_BURN),
+        HIT_ADJACENT_80_POWER_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -16919,18 +16922,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "High critical-hit ratio. May\n"
             "paralyze, poison or sleep."),
-        BASIC_MOVE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 90 : 60,
+        RANDOM_EFFECT_80_POWER_INFO(MOVE_EFFECT_POISON, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_SLEEP),
         .type = TYPE_POISON,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .slicingMove = B_UPDATED_MOVE_FLAGS >= GEN_CHAMPIONS,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? 30 : 50,
-            .argument.randomMoveEffects = { MOVE_EFFECT_POISON, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_SLEEP },
-        }),
         .battleAnimScript = gBattleAnimMove_DireClaw,
     },
 

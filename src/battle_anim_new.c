@@ -6808,7 +6808,7 @@ void AnimTranslateGulpMissile(struct Sprite *sprite)
         TrySetSpriteRotScale(sprite, FALSE, -0x100, 0x100, 0x2000);
 
     TranslateAnimSpriteToTargetMonLocation(sprite);
-}*
+};
 
 // functions
 //general

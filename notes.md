@@ -88,6 +88,7 @@ upcoming
             - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 
 ### Meta
+- Implement level caps?
 - Organize here between Emerald/FireRed
 - Try to get upstream changes working better here
     - Automatic teachable movesets. Would require bringing local porymoves code here
@@ -456,7 +457,6 @@ upcoming
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Trainers
-- Define for Gym Ace/level cap
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
     - Even just reducing to two or three rematches would save space
@@ -467,7 +467,8 @@ upcoming
 - Add trailing commas wherever possible
 - Remove type duplicates:
     - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
-    - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
+    - Turn Juan into a Poison specialist?
+        - Swalot as Ace since both have mustaches
         - Would need to update gym palette
         - Mr. Rime could be a good hack signature if he becomes Ice
     - Swap Juan and Glacia and turn Juan into Grass specialist?
@@ -538,7 +539,6 @@ upcoming
     - Houndour can too (possibly swapping with a Fire Cave Pokemon) if removed from the Hoenn Dex
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
     - Won't really matter as-is (besides maybe introducing some Pokemon earlier), but will be helpful for hacks with larger Dexes
-- Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries

@@ -1,6 +1,7 @@
 #include "global.h"
 #include "malloc.h"
 #include "battle.h"
+#include "caps.h"
 #include "data.h"
 #include "graphics.h"
 #include "trainer_pools.h"

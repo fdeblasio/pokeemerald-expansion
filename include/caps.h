@@ -18,6 +18,14 @@
 #error "Invalid choice for B_EV_CAP_TYPE, must be one of [EV_CAP_NONE, EV_CAP_FLAG_LIST, EV_CAP_VARIABLE, EV_CAP_NO_GAIN]"
 #endif
 
+#define CAP_GYM_2 18
+#define CAP_GYM_3 24
+#define CAP_GYM_4 32
+#define CAP_GYM_5 35
+#define CAP_GYM_6 43
+#define CAP_GYM_7 51
+#define CAP_GYM_8 58
+
 u32 GetCurrentLevelCap(void);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);
 u32 GetCurrentEVCap(void);

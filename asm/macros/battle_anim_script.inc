@@ -629,8 +629,8 @@
 	createsprite gFlashCannonGrayChargeTemplate, \anim_battler, \subpriority_offset, \relative_to
 	.endm
 
-	.macro create_volt_switch_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, x2:req, y2:req, duration:req, waveAmp:req
-	createsprite gVoltSwitchSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \waveAmp
+	.macro create_volt_switch_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, x2:req, y2:req, duration:req, wave_amplitude:req
+	createsprite gVoltSwitchSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \x2, \y2, \duration, \wave_amplitude
 	.endm
 
 @ createvisualtask wrappers

@@ -5141,13 +5141,13 @@ GrassPledgeMiddleFountain:
 
 gBattleAnimMove_VoltSwitch::
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, waveAmp=20
+	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, wave_amplitude=20
 	delay 30
 	createvisualtask AnimTask_ShakeMon2 2, ANIM_TARGET, 3, 0, 8, 1
 	call VoltSwitchElectricFlashes
 	delay 2
 	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, waveAmp=-20
+	create_volt_switch_sprite ANIM_TARGET, 3, x=0, y=0, x2=0, y2=0, duration=32, wave_amplitude=-20
 	delay 4
 	call VoltSwitchElectricFlashes
 	delay 18

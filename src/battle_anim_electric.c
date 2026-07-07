@@ -1634,7 +1634,7 @@ static void VoltSwitch_Step(struct Sprite* sprite)
 
 void AnimTask_VoltSwitch(struct Sprite* sprite)
 {
-    CMD_ARGS(x, y, x2, y2, duration, waveAmp);
+    CMD_ARGS(x, y, x2, y2, duration, waveAmplitude);
 
     InitSpritePosToAnimAttacker(sprite, FALSE);
 
@@ -1646,7 +1646,7 @@ void AnimTask_VoltSwitch(struct Sprite* sprite)
     sprite->data[0] = cmd->duration;
     sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x2; //Target X
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y2; //Target Y
-    sprite->data[5] = cmd->waveAmp;
+    sprite->data[5] = cmd->waveAmplitude;
     InitAnimArcTranslation(sprite);
 
     sprite->callback = VoltSwitch_Step;

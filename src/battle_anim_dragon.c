@@ -424,13 +424,13 @@ static void UpdateDragonDanceScanlineEffect(struct Task *task)
 
 static void AnimOverheatFlame(struct Sprite *sprite)
 {
-    CMD_ARGS(speed, unk1, unk2, duration, y);
+    CMD_ARGS(speed, unk1, amplitude, duration, y);
 
     int i;
-    int yAmplitude = (cmd->unk2 * 3) / 5;
+    int yAmplitude = (cmd->amplitude * 3) / 5;
     sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
     sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
-    sprite->data[1] = Cos(cmd->unk1, cmd->unk2);
+    sprite->data[1] = Cos(cmd->unk1, cmd->amplitude);
     sprite->data[2] = Sin(cmd->unk1, yAmplitude);
     sprite->x += sprite->data[1] * cmd->speed;
     sprite->y += sprite->data[2] * cmd->speed;

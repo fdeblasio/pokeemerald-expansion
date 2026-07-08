@@ -4527,7 +4527,7 @@ Move_DRAGON_DANCE:
 	monbg ANIM_ATTACKER
 	splitbgprio ANIM_ATTACKER
 	delay 1
-	createvisualtask AnimTask_DragonDanceWaver, 5
+	dragon_dance_waver
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
 	delay 8
 	createvisualtask AnimTask_BlendPalInAndOutByTag, 5, ANIM_TAG_HOLLOW_ORB, RGB(0, 0, 19), 14, 0, 3
@@ -9305,32 +9305,32 @@ Move_OVERHEAT:
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 2, 0, 15, 1
 	waitforvisualfinish
 	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_ATTACKER
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, unk2=30, duration=25, y=-20
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, unk2=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, amplitude=30, duration=25, y=-20
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, amplitude=30, duration=25, y=-20
 	delay 5
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, unk2=30, duration=25, y=0
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, unk2=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, amplitude=30, duration=25, y=0
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, amplitude=30, duration=25, y=0
 	delay 5
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, unk2=30, duration=25, y=10
-	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, unk2=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=0, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=32, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=64, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=96, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 2, speed=1, unk1=128, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=160, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=192, amplitude=30, duration=25, y=10
+	create_overheat_flame_sprite ANIM_ATTACKER, 66, speed=1, unk1=224, amplitude=30, duration=25, y=10
 	delay 5
 	waitforvisualfinish
 	create_basic_hitsplat_sprite ANIM_TARGET, 3, x=-5, y=3, relative_to=ANIM_TARGET, animation=0

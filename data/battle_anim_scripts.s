@@ -735,15 +735,15 @@ Move_ICICLE_SPEAR:
 	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_ATTACKER
-	createsprite gIcicleSpearSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, -8, -8, 20, -32
+	create_icicle_spear_sprite ANIM_ATTACKER, 2, initial_x=20, initial_y=-8, target_x=-8, target_y=-8, duration=20, wave_amplitude=-32
 	delay 15
-	createsprite gIcicleSpearSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, 8, 8, 20, -40
+	create_icicle_spear_sprite ANIM_ATTACKER, 2, initial_x=20, initial_y=-8, target_x=8, target_y=8, duration=20, wave_amplitude=-40
 	delay 4
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 3, x=-8, y=-8, relative_to=ANIM_TARGET, animation=2
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 2, 1
 	delay 9
-	createsprite gIcicleSpearSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, 0, 0, 20, -32
+	create_icicle_spear_sprite ANIM_ATTACKER, 2, initial_x=20, initial_y=-8, target_x=0, target_y=0, duration=20, wave_amplitude=-32
 	delay 4
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 3, x=8, y=8, relative_to=ANIM_TARGET, animation=2
@@ -7500,7 +7500,7 @@ Move_SPIDER_WEB:
 	call SpiderWebThread
 	waitforvisualfinish
 	playsewithpan SE_M_STRING_SHOT2, SOUND_PAN_TARGET
-	createsprite gSpiderWebSpriteTemplate, ANIM_ATTACKER, 2
+	create_spider_web_sprite ANIM_ATTACKER, 2
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	delay 1

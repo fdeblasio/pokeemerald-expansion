@@ -521,13 +521,13 @@ static void AnimUnusedCirclingShock(struct Sprite *sprite)
 
 static void AnimSparkElectricity(struct Sprite *sprite)
 {
-    CMD_ARGS(sine1, waveAmplitude, sine2, duration, relative_to, useAltCoords, priority);
+    CMD_ARGS(sine1, waveAmplitude, sine2, duration, relativeTo, useAltCoords, priority);
 
     u8 battler;
     u32 matrixNum;
     s16 sineVal;
 
-    switch (cmd->relative_to)
+    switch (cmd->relativeTo)
     {
     case ANIM_ATTACKER:
         battler = gBattleAnimAttacker;
@@ -707,66 +707,66 @@ static void AnimElectricity(struct Sprite *sprite)
 // The vertical falling thunder bolt used in Thunder Wave/Shock/Bolt
 void AnimTask_ElectricBolt(u8 taskId)
 {
-    CMD_ARGS(x, y, unk2); //unk2 is related to the shape of the bolt
+    CMD_ARGS(x, y, bigBolt);
 
     gTasks[taskId].data[0] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->x;
     gTasks[taskId].data[1] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->y;
-    gTasks[taskId].data[2] = cmd->unk2;
+    gTasks[taskId].data[2] = cmd->bigBolt;
     gTasks[taskId].func = AnimTask_ElectricBolt_Step;
 }
 
 static void AnimTask_ElectricBolt_Step(u8 taskId)
 {
-    u16 r8;
+    u16 tileOffset;
     u16 r2;
-    s16 r12;
+    s16 yOffset;
     u8 spriteId = 0;
     u8 r7 = 0;
-    u8 sp = gTasks[taskId].data[2];
+    u8 bigBolt = gTasks[taskId].data[2];
     s16 x = gTasks[taskId].data[0];
     s16 y = gTasks[taskId].data[1];
 
     if (!gTasks[taskId].data[2])
     {
-        r8 = 0;
+        tileOffset = 0;
         r2 = 1;
-        r12 = 16;
+        yOffset = 16;
     }
     else
     {
-        r12 = 16;
-        r8 = 8;
+        yOffset = 16;
+        tileOffset = 8;
         r2 = 4;
     }
 
     switch (gTasks[taskId].data[10])
     {
     case 0:
-        r12 *= 1;
-        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + r12, 2);
+        yOffset *= 1; // 16
+        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + yOffset, 2);
         r7++;
         break;
     case 2:
-        r12 *= 2;
-        r8 += r2;
-        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + r12, 2);
+        yOffset *= 2; // 32
+        tileOffset += r2; // If bigBolt: 8+4=12, else 0+1=1
+        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + yOffset, 2);
         r7++;
         break;
     case 4:
-        r12 *= 3;
-        r8 += r2 * 2;
-        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + r12, 2);
+        yOffset *= 3; // 96
+        tileOffset += r2 * 2; // If bigBolt: 12+8=20, else 1+2=3
+        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + yOffset, 2);
         r7++;
         break;
     case 6:
-        r12 *= 4;
-        r8 += r2 * 3;
-        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + r12, 2);
+        yOffset *= 4; // 384
+        tileOffset += r2 * 3; // If bigBolt: 20+12=32, else 3+3=6
+        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + yOffset, 2);
         r7++;
         break;
     case 8:
-        r12 *= 5;
-        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + r12, 2);
+        yOffset *= 5; // 1920
+        spriteId = CreateSprite(&gElectricBoltSegmentSpriteTemplate, x, y + yOffset, 2);
         r7++;
         break;
     case 10:
@@ -776,8 +776,8 @@ static void AnimTask_ElectricBolt_Step(u8 taskId)
 
     if (r7)
     {
-        gSprites[spriteId].oam.tileNum += r8;
-        gSprites[spriteId].data[0] = sp;
+        gSprites[spriteId].oam.tileNum += tileOffset;
+        gSprites[spriteId].data[0] = bigBolt;
         gSprites[spriteId].callback(&gSprites[spriteId]);
     }
 
@@ -831,11 +831,11 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave
 void AnimTask_ElectricChargingParticles(u8 taskId)
 {
-    CMD_ARGS(relative_to, amount, duration, compaction);
+    CMD_ARGS(relativeTo, amount, duration, compaction);
 
     struct Task *task = &gTasks[taskId];
 
-    if (cmd->relative_to == ANIM_ATTACKER)
+    if (cmd->relativeTo == ANIM_ATTACKER)
     {
         task->data[14] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         task->data[15] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
@@ -923,9 +923,9 @@ static void AnimElectricChargingParticles(struct Sprite *sprite)
 
 static void AnimGrowingChargeOrb(struct Sprite *sprite)
 {
-    CMD_ARGS(relative_to);
+    CMD_ARGS(relativeTo);
 
-    if (cmd->relative_to == ANIM_ATTACKER)
+    if (cmd->relativeTo == ANIM_ATTACKER)
     {
         sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
@@ -943,9 +943,9 @@ static void AnimGrowingChargeOrb(struct Sprite *sprite)
 // The quick electric burst at the end of Charge / during the Volt Tackle hit
 static void AnimElectricPuff(struct Sprite *sprite)
 {
-    CMD_ARGS(relative_to, x, y);
+    CMD_ARGS(relativeTo, x, y);
 
-    if (cmd->relative_to == ANIM_ATTACKER)
+    if (cmd->relativeTo == ANIM_ATTACKER)
     {
         sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
         sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);

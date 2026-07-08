@@ -646,8 +646,8 @@
 	.endm
 
 	@ battle_anim_electric
-	.macro electric_bolt priority=5, x:req, y:req, unk2:req
-	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \unk2
+	.macro electric_bolt priority=5, x:req, y:req, big_bolt:req
+	createvisualtask AnimTask_ElectricBolt, \priority, \x, \y, \big_bolt
 	.endm
 
 	.macro electric_charging_particles priority=2, relative_to:req, amount:req, duration:req, compaction:req

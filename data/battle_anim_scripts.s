@@ -1093,7 +1093,7 @@ Move_THUNDERBOLT:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 13, 0, RGB_BLACK
 	waitforvisualfinish
 	delay 20
-	create_thunderbolt_orb_sprite ANIM_TARGET, 3, duration=44, x=0, y=0, unk3=3
+	create_thunderbolt_orb_sprite ANIM_TARGET, 3, duration=44, x=0, y=0, visibility_duration=3
 	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, wave_offset=0, wave_period=40, tile_offset=0, unk7=-32765
 	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, wave_offset=64, wave_period=40, tile_offset=1, unk7=-32765
 	create_spark_electricity_flashing_sprite ANIM_TARGET, 4, x=0, y=0, wave_amplitude=32, duration=44, wave_offset=128, wave_period=40, tile_offset=0, unk7=-32765

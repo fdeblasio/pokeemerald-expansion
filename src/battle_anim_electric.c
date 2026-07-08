@@ -626,13 +626,8 @@ static void AnimThunderboltOrb_Step(struct Sprite *sprite)
 
 static void AnimThunderboltOrb(struct Sprite *sprite)
 {
-    /* unk3 is related to frames
-    Set to 0, the sprite is visible every other frame
-    Set to 1, the sprite is visible for two frames, then invisible for two frames
-    Set to 2, the sprite is visible for three frames, then invisible for three frames
-    Set to X, the sprite is visible for X+1 frames, then invisible for X+1 frames
-    */
-    CMD_ARGS(duration, x, y, unk3);
+    // When visibilityDuration is set to X, the sprite is visible for X+1 frames, then invisible for X+1 frames
+    CMD_ARGS(duration, x, y, visibilityDuration);
 
     if (IsContest() || GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
         cmd->x = -cmd->x;
@@ -640,8 +635,8 @@ static void AnimThunderboltOrb(struct Sprite *sprite)
     sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->x;
     sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->y;
     sprite->data[3] = cmd->duration;
-    sprite->data[4] = cmd->unk3;
-    sprite->data[5] = cmd->unk3;
+    sprite->data[4] = cmd->visibilityDuration;
+    sprite->data[5] = cmd->visibilityDuration;
     sprite->callback = AnimThunderboltOrb_Step;
 }
 
@@ -680,7 +675,7 @@ static void AnimSparkElectricityFlashing_Step(struct Sprite *sprite)
 
     sprite->data[7] = (sprite->data[7] + sprite->data[6]) & 0xFF;
     if (sprite->data[7] % sprite->data[4] == 0)
-        sprite->invisible ^= TRUE;
+        sprite->invisible ^= 1;
 
     if (sprite->data[0]-- <= 0)
         DestroyAnimSprite(sprite);

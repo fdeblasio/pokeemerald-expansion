@@ -553,8 +553,8 @@
 	createsprite gSparkElectricityFlashingSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \wave_amplitude, \duration, \wave_offset, \wave_period, \tile_offset, \unk7
 	.endm
 
-	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, duration:req, x:req, y:req, unk3:req
-	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \duration, \x, \y, \unk3
+	.macro create_thunderbolt_orb_sprite anim_battler:req, subpriority_offset:req, duration:req, x:req, y:req, visibility_duration:req
+	createsprite gThunderboltOrbSpriteTemplate, \anim_battler, \subpriority_offset, \duration, \x, \y, \visibility_duration
 	.endm
 
 	.macro create_thunder_wave_sprite anim_battler:req, subpriority_offset:req, x:req, y:req

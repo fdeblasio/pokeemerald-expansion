@@ -3514,19 +3514,19 @@ Move_TORMENT:
 Move_MEMENTO:
 	setalpha 0, 16
 	delay 1
-	createvisualtask AnimTask_InitMementoShadow, 2
+	init_memento_shadow
 	delay 1
-	createvisualtask AnimTask_MoveAttackerMementoShadow, 5
+	move_attacker_memento_shadow
 	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
 	delay 48
 	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	createvisualtask AnimTask_MementoHandleBg, 2
+	memento_handle_bg
 	delay 12
 	setalpha 0, 16
 	delay 1
 	monbg_static ANIM_TARGET
-	createvisualtask AnimTask_MoveTargetMementoShadow, 5
+	move_target_memento_shadow
 	playsewithpan SE_M_PSYBEAM, SOUND_PAN_TARGET
 	waitforvisualfinish
 	clearmonbg_static ANIM_TARGET

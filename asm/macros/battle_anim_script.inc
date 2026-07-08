@@ -312,22 +312,6 @@
 	.endif
 	.endm
 
-	.macro create_sharp_teeth_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req, x_velocity:req, y_velocity:req, half_duration:req
-	createsprite gSharpTeethSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation, 256 * \x_velocity, 256 * \y_velocity, \half_duration
-	.endm
-
-	.macro create_clamp_jaw_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req, x_velocity:req, y_velocity:req, half_duration:req
-	createsprite gClampJawSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation, 256 * \x_velocity, 256 * \y_velocity, \half_duration
-	.endm
-
-	.macro create_tear_drop_sprite anim_battler:req, subpriority_offset:req, relative_to:req, type:req
-	createsprite gTearDropSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \type
-	.endm
-
-	.macro create_claw_slash_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req
-	createsprite gClawSlashSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation
-	.endm
-
 	.macro create_outrage_flame_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, x_velocity:req, y_velocity:req, flicker_duration:req
 	createsprite gOutrageFlameSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, 256 * \x_velocity, 256 * \y_velocity, \flicker_duration
 	.endm
@@ -537,31 +521,31 @@
 	createsprite gWebThreadSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \unk2, \amplitude, \targets_both
 	.endm
 
-@ createvisualtask wrappers
-@ The arguments are based on the CMD_ARGS of the task.
-
-	.macro metallic_shine priority=5, permanent:req, color
-	.ifb \color
-	createvisualtask AnimTask_MetallicShine, \priority, \permanent, FALSE, RGB_BLACK
-	.else
-	createvisualtask AnimTask_MetallicShine, \priority, \permanent, TRUE, \color
-	.endif
+	@ battle_anim_dark
+	.macro create_clamp_jaw_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req, x_velocity:req, y_velocity:req, half_duration:req
+	createsprite gClampJawSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation, 256 * \x_velocity, 256 * \y_velocity, \half_duration
 	.endm
 
+	.macro create_claw_slash_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req
+	createsprite gClawSlashSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation
+	.endm
+
+	.macro create_sharp_teeth_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, animation:req, x_velocity:req, y_velocity:req, half_duration:req
+	createsprite gSharpTeethSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \animation, 256 * \x_velocity, 256 * \y_velocity, \half_duration
+	.endm
+
+	.macro create_tear_drop_sprite anim_battler:req, subpriority_offset:req, relative_to:req, type:req
+	createsprite gTearDropSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \type
+	.endm
+
+@ createvisualtask wrappers
+@ The arguments are based on the CMD_ARGS of the task.
 	.macro set_grayscale_pal priority=5, battler:req
 	createvisualtask AnimTask_SetGrayscaleOrOriginalPal, \priority, \battler, FALSE
 	.endm
 
 	.macro set_original_pal priority=5, battler:req
 	createvisualtask AnimTask_SetGrayscaleOrOriginalPal, \priority, \battler, TRUE
-	.endm
-
-	.macro attacker_fade_to_invisible priority=2, step_delay:req
-	createvisualtask AnimTask_AttackerFadeToInvisible, \priority, \step_delay
-	.endm
-
-	.macro attacker_fade_from_invisible priority=2, step_delay:req
-	createvisualtask AnimTask_AttackerFadeFromInvisible, \priority, \step_delay
 	.endm
 
 	.macro shrink_target_copy priority=5, unk0:req, unk1:req
@@ -603,4 +587,37 @@
 
 	.macro create_surf_wave priority=2, palette:req
 	createvisualtask AnimTask_CreateSurfWave, \priority, \palette
+	.endm
+
+	@ battle_anim_dark
+	.macro attacker_fade_from_invisible priority=2, step_delay:req
+	createvisualtask AnimTask_AttackerFadeFromInvisible, \priority, \step_delay
+	.endm
+
+	.macro attacker_fade_to_invisible priority=2, step_delay:req
+	createvisualtask AnimTask_AttackerFadeToInvisible, \priority, \step_delay
+	.endm
+
+	.macro init_memento_shadow priority=2
+	createvisualtask AnimTask_InitMementoShadow, \priority
+	.endm
+
+	.macro memento_handle_bg priority=2
+	createvisualtask AnimTask_MementoHandleBg, \priority
+	.endm
+
+	.macro metallic_shine priority=5, permanent:req, color
+	.ifb \color
+	createvisualtask AnimTask_MetallicShine, \priority, \permanent, FALSE, RGB_BLACK
+	.else
+	createvisualtask AnimTask_MetallicShine, \priority, \permanent, TRUE, \color
+	.endif
+	.endm
+
+	.macro move_attacker_memento_shadow priority=5
+	createvisualtask AnimTask_MoveAttackerMementoShadow, \priority
+	.endm
+
+	.macro move_target_memento_shadow priority=5
+	createvisualtask AnimTask_MoveTargetMementoShadow, \priority
 	.endm

@@ -427,6 +427,11 @@
 #define ANIM_HAND_LEFT  3
 #define ANIM_HAND_RIGHT 4
 
+// Poison projectile sprites
+#define ANIM_POISON_PROJECTILE 0
+#define ANIM_ACID_DROPLET      1
+#define ANIM_SLUDGE_BOMB_HIT   2
+
 // Surf wave palettes
 #define ANIM_SURF_PAL_SURF           0
 #define ANIM_SURF_PAL_MUDDY_WATER    1

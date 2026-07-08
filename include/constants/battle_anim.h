@@ -420,6 +420,12 @@
 #define ANIM_WEATHER_SANDSTORM 3
 #define ANIM_WEATHER_HAIL 4
 
+#define ANIM_FIST       0
+#define ANIM_FOOT_WIDE  1
+#define ANIM_FOOT_TALL  2
+#define ANIM_HAND_LEFT  3
+#define ANIM_HAND_RIGHT 4
+
 // Surf wave palettes
 #define ANIM_SURF_PAL_SURF           0
 #define ANIM_SURF_PAL_MUDDY_WATER    1

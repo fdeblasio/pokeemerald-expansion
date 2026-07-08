@@ -139,7 +139,7 @@ const struct SpriteTemplate gCrossChopHandSpriteTemplate =
     .tileTag = ANIM_TAG_HANDS_AND_FEET,
     .paletteTag = ANIM_TAG_HANDS_AND_FEET,
     .oam = &gOamData_AffineOff_ObjNormal_32x32,
-    .anims = &sAnims_HandsAndFeet[3],
+    .anims = &sAnims_HandsAndFeet[ANIM_HAND_LEFT],
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimCrossChopHand,
@@ -150,7 +150,7 @@ const struct SpriteTemplate gSlidingKickSpriteTemplate =
     .tileTag = ANIM_TAG_HANDS_AND_FEET,
     .paletteTag = ANIM_TAG_HANDS_AND_FEET,
     .oam = &gOamData_AffineOff_ObjNormal_32x32,
-    .anims = &sAnims_HandsAndFeet[1],
+    .anims = &sAnims_HandsAndFeet[ANIM_FOOT_WIDE],
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSlidingKick,
@@ -420,14 +420,16 @@ static void AnimUnusedHumanoidFoot(struct Sprite *sprite)
 
 static void AnimSlideHandOrFootToTarget(struct Sprite *sprite)
 {
-    if (gBattleAnimArgs[7] == 1 && GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+    CMD_ARGS(initialX, initialY, targetX, targetY, duration, relativeTo, sprite, unk7);
+
+    if (cmd->unk7 == 1 && GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
     {
-        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
-        gBattleAnimArgs[3] = -gBattleAnimArgs[3];
+        cmd->initialY = -cmd->initialY;
+        cmd->targetY = -cmd->targetY;
     }
 
     StartSpriteAnim(sprite, gBattleAnimArgs[6]);
-    gBattleAnimArgs[6] = 0;
+    cmd->sprite = 0;
     AnimTravelDiagonally(sprite);
 }
 
@@ -435,8 +437,8 @@ static void AnimJumpKick(struct Sprite *sprite)
 {
     if (IsContest())
     {
-        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
-        gBattleAnimArgs[3] = -gBattleAnimArgs[3];
+        cmd->initialY = -cmd->initialY;
+        cmd->targetY = -cmd->targetY;
     }
 
     AnimSlideHandOrFootToTarget(sprite);
@@ -451,33 +453,37 @@ static void AnimJumpKick(struct Sprite *sprite)
 // arg 4: anim num
 static void AnimBasicFistOrFoot(struct Sprite *sprite)
 {
-    StartSpriteAnim(sprite, gBattleAnimArgs[4]);
+    CMD_ARGS(x, y, duration, relative_to, sprite);
 
-    if (gBattleAnimArgs[3] == 0)
+    StartSpriteAnim(sprite, cmd->sprite);
+
+    if (cmd->relative_to == ANIM_ATTACKER)
         InitSpritePosToAnimAttacker(sprite, TRUE);
     else
         InitSpritePosToAnimTarget(sprite, TRUE);
 
-    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[0] = cmd->duration;
     sprite->callback = WaitAnimForDuration;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 static void AnimFistOrFootRandomPos(struct Sprite *sprite)
 {
+    CMD_ARGS(relativeTo, unk1, sprite); //unk1 = duration?
+
     u8 battler;
     s16 xMod, yMod;
     s16 x, y;
 
-    if (gBattleAnimArgs[0] == 0)
+    if (cmd->relativeTo == ANIM_ATTACKER)
         battler = gBattleAnimAttacker;
     else
         battler = gBattleAnimTarget;
 
-    if (gBattleAnimArgs[2] < 0)
-        gBattleAnimArgs[2] = Random2() % 5;
+    if (cmd->sprite < 0)
+        cmd->sprite = Random2() % 5;
 
-    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    StartSpriteAnim(sprite, cmd->sprite);
     sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X_2);
     sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET);
 
@@ -498,7 +504,7 @@ static void AnimFistOrFootRandomPos(struct Sprite *sprite)
     sprite->x += x;
     sprite->y += y;
 
-    sprite->data[0] = gBattleAnimArgs[1];
+    sprite->data[0] = cmd->unk1;
     sprite->data[7] = CreateSprite(&gBasicHitSplatSpriteTemplate, sprite->x, sprite->y, sprite->subpriority + 1);
     if (sprite->data[7] != MAX_SPRITES)
     {
@@ -529,10 +535,12 @@ static void AnimFistOrFootRandomPos_Step(struct Sprite *sprite)
 
 static void AnimCrossChopHand(struct Sprite *sprite)
 {
+    CMD_ARGS(unk0, unk1, unk2) // x, y, flipped?
+
     InitSpritePosToAnimTarget(sprite, TRUE);
     sprite->data[0] = 30;
 
-    if (gBattleAnimArgs[2] == 0)
+    if (cmd->unk2 == 0)
     {
         sprite->data[2] = sprite->x - 20;
     }

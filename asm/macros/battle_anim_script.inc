@@ -448,14 +448,6 @@
 	createsprite gFlashingHitSplatSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \relative_to, \animation
 	.endm
 
-	.macro create_fist_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, initPosition=ANIM_TARGET
-	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \initPosition, 0
-	.endm
-
-	.macro create_wide_foot_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, initPosition=ANIM_TARGET
-	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \initPosition, 1
-	.endm
-
 	.macro create_electric_puff_sprite anim_battler:req, subpriority_offset:req, relative_to:req, x:req, y:req
 	createsprite gElectricPuffSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \x, \y
 	.endm
@@ -537,6 +529,31 @@
 
 	.macro create_overheat_flame_sprite anim_battler:req, subpriority_offset:req, speed:req, unk1:req, amplitude:req, duration:req, y:req
 	createsprite gOverheatFlameSpriteTemplate, \anim_battler, \subpriority_offset, \speed, \unk1, \amplitude, \duration, \y
+	.endm
+
+	@ battle_anim_fight.c
+	.macro create_cross_chop_hand_sprite anim_battler:req, subpriority_offset:req, unk0:req, unk1:req, unk2:req
+	createsprite gCrossChopHandSpriteTemplate, \anim_battler, \subpriority_offset, \unk0, \unk1, \unk2
+	.endm
+
+	.macro create_fist_foot_random_pos_sprite anim_battler:req, subpriority_offset:req, relative_to:req, unk1:req, sprite:req
+	createsprite gFistFootRandomPosSpriteTemplate, \anim_battler, \subpriority_offset, \relative_to, \unk1, \sprite
+	.endm
+
+	.macro create_fist_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, relative_to=ANIM_TARGET
+	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \relative_to, ANIM_FIST
+	.endm
+
+	.macro create_wide_foot_sprite anim_battler:req, subpriority_offset:req, x:req, y:req, duration:req, relative_to=ANIM_TARGET
+	createsprite gFistFootSpriteTemplate, \anim_battler, \subpriority_offset, \x, \y, \duration, \relative_to, ANIM_FOOT_WIDE
+	.endm
+
+	.macro create_karate_chop_sprite anim_battler:req, subpriority_offset:req, initial_x:req, initial_y:req, target_x:req, target_y:req, duration:req, relative_to:req, sprite:req, unk7:req
+	createsprite gKarateChopSpriteTemplate, \anim_battler, \subpriority_offset, \initial_x, \initial_y, \target_x, \target_y, \duration, \relative_to, \sprite, \unk7
+	.endm
+
+	.macro create_jump_kick_sprite anim_battler:req, subpriority_offset:req, initial_x:req, initial_y:req, target_x:req, target_y:req, duration:req, relative_to:req, sprite:req, unk7:req
+	createsprite gJumpKickSpriteTemplate, \anim_battler, \subpriority_offset, \initial_x, \initial_y, \target_x, \target_y, \duration, \relative_to, \sprite, \unk7
 	.endm
 
 @ createvisualtask wrappers

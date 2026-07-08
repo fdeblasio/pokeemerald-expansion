@@ -2534,15 +2534,15 @@ Move_THRASH:
 	loadspritegfx ANIM_TAG_HANDS_AND_FEET
 	createvisualtask AnimTask_ThrashMoveMonHorizontal, 2
 	createvisualtask AnimTask_ThrashMoveMonVertical, 2
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
+	create_fist_foot_random_pos_sprite ANIM_TARGET, 3, relative_to=ANIM_TARGET, unk1=10, sprite=ANIM_FIST
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 28
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 1
+	create_fist_foot_random_pos_sprite ANIM_TARGET, 3, relative_to=ANIM_TARGET, unk1=10, sprite=ANIM_FOOT_WIDE
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	delay 28
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 3
+	create_fist_foot_random_pos_sprite ANIM_TARGET, 3, relative_to=ANIM_TARGET, unk1=10, sprite=ANIM_HAND_LEFT
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 8, 0, 16, 1
 	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
 	end
@@ -6455,7 +6455,7 @@ Move_KARATE_CHOP:
 	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_TARGET
-	createsprite gKarateChopSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, 0, 0, 10, 1, 3, 0
+	create_karate_chop_sprite ANIM_ATTACKER, 2, initial_x=-16, initial_y=0, target_x=0, target_y=0, duration=10, relative_to=ANIM_TARGET, sprite=ANIM_HAND_LEFT, unk7=0
 	waitforvisualfinish
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=2
@@ -6471,8 +6471,8 @@ Move_CROSS_CHOP:
 	monbg ANIM_DEF_PARTNER
 	setalpha 12, 8
 	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_TARGET
-	createsprite gCrossChopHandSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0
-	createsprite gCrossChopHandSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1
+	create_cross_chop_hand_sprite ANIM_ATTACKER, 2, unk0=0, unk1=0, unk2=0
+	create_cross_chop_hand_sprite ANIM_ATTACKER, 2, unk0=0, unk1=0, unk2=1
 	delay 40
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	complex_palette_blend unused_anim_battler=ANIM_ATTACKER, unused_subpriority_offset=2, selector=F_PAL_BG | F_PAL_BATTLERS, delay=3, num_blends=1, color1=RGB_WHITE, blend_y1=10, color2=RGB_BLACK, blend_y2=10
@@ -6490,7 +6490,7 @@ Move_JUMP_KICK:
 	setalpha 12, 8
 	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
 	delay 3
-	createsprite gJumpKickSpriteTemplate, ANIM_ATTACKER, 2, -16, 8, 0, 0, 10, ANIM_TARGET, 1, 1
+	create_jump_kick_sprite ANIM_ATTACKER, 2, initial_x=-16, initial_y=8, target_x=0, target_y=0, duration=10, relative_to=ANIM_TARGET, sprite=ANIM_FOOT_WIDE, unk7=1
 	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_TARGET
 	waitforvisualfinish
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 1, x=0, y=0, relative_to=ANIM_TARGET, animation=1
@@ -6511,7 +6511,7 @@ Move_HI_JUMP_KICK:
 	delay 10
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 3
 	delay 2
-	createsprite gJumpKickSpriteTemplate, ANIM_ATTACKER, 2, -16, 8, 0, 0, 10, ANIM_TARGET, 1, 1
+	create_jump_kick_sprite ANIM_ATTACKER, 2, initial_x=-16, initial_y=8, target_x=0, target_y=0, duration=10, relative_to=ANIM_TARGET, sprite=ANIM_FOOT_WIDE, unk7=1
 	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_TARGET
 	waitforvisualfinish
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
@@ -6532,7 +6532,7 @@ Move_DOUBLE_KICK:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
 	setalpha 12, 8
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_ATTACKER, 3, 1, 20, 1
+	create_fist_foot_random_pos_sprite ANIM_TARGET, 3, relative_to=ANIM_TARGET, unk1=20, sprite=ANIM_FOOT_WIDE
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	waitforvisualfinish

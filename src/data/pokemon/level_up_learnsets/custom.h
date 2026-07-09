@@ -446,7 +446,6 @@ static const struct LevelUpMove sRaticateAlolaLevelUpLearnset[] = {
 
 #if P_FAMILY_SPEAROW
 static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
@@ -463,7 +462,6 @@ static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sFearowLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DRILL_RUN),
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),

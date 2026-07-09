@@ -217,18 +217,14 @@
     "TutorMoves": []
   },
   "SPEAROW": {
-    "LevelMoves": [
-      {"Level": 1, "Move": "MOVE_SCRATCH"}
-    ],
+    "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "FEAROW": {
-    "LevelMoves": [
-      {"Level": 1, "Move": "MOVE_SCRATCH"}
-    ],
+    "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

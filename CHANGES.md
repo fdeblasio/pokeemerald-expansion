@@ -1422,7 +1422,6 @@
 
 - Spearow (not in Emerald):
     - Type: Normal/Flying->Flying
-    - Learns Scratch by level up
 
 - Fearow: (not in Emerald)
     - Type: Normal/Flying->Flying
@@ -1430,7 +1429,6 @@
     - Atk: 90->95
     - SpA: 61->65
     - SpD: 61->65
-    - Learns Scratch by level up
 
 - Ekans/Arbok (not in Emerald):
     - Learn Poison Tail, Poison Fang, and Poison Jab by level up

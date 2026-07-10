@@ -86,7 +86,6 @@ upcoming
             - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 
 ### Meta
-- Implement level caps?
 - Organize here between Emerald/FireRed
 - Try to get upstream changes working better here
     - Automatic teachable movesets. Would require bringing local porymoves code here
@@ -128,9 +127,10 @@ upcoming
 - Organize changes better
 
 ### Pokémon
+- Implement level caps?
 - Give all Pokémon updated movesets
     - Not including cross-gen evos or regionals or already updated:
-        8: 20 (fossils, Kubfu-Zarude, Glastrier-Calyrex, double-check Morpeko, Regieleki, Regidrago)
+        8: 20 (fossils, Kubfu-Zarude, Glastrier-Calyrex)
         4: 107
         9: 120
         5: 156
@@ -371,6 +371,7 @@ upcoming
         - Would give Mew a signature
     - Copy of old Leech Life
     - A move with a greenish copy of Yawn's cloud for a stink cloud
+        - Bad Breath? Halitosis? 40 basic poison?
     - Rotom/Tadbulb signature move with the unused light bulb sprite
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):

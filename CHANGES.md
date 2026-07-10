@@ -4820,6 +4820,11 @@
     - Learns Fairy Wind by Egg Move
 
 - Morpeko:
+    - HP: 58->60
+    - Def: 58->60
+    - SpD: 58->60
+    - Spe: 97->100
+    - Learns Nuzzle, Thunder Fang, and Thunder Punch by level up
     - Learns Fairy Wind by Egg Move
 
 - Cufant:

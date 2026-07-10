@@ -10184,7 +10184,11 @@
     "TutorMoves": []
   },
   "MORPEKO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_NUZZLE"},
+      {"Level": 25, "Move": "MOVE_THUNDER_FANG"},
+      {"Level": 40, "Move": "MOVE_THUNDER_PUNCH"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

@@ -130,7 +130,6 @@ upcoming
 - Implement level caps?
 - Give all Pokémon updated movesets
     - Not including cross-gen evos or regionals or already updated:
-        8: 20 (fossils, Kubfu-Zarude, Glastrier-Calyrex)
         4: 107
         9: 120
         5: 156

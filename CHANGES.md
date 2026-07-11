@@ -4839,9 +4839,16 @@
     - Received Sturdy as a second ability
 
 - Dracozolt:
+    - Learns Twister, Shock Wave, and Spark by level up
+
 - Arctozolt:
+    - Learns Shock Wave, and Spark by level up
+
 - Dracovish:
+    - Learns Twister, Water Pulse, and Bubble Beam by level up
+
 - Arctovish:
+    - Learns Water Pulse, and Bubble Beam by level up
 
 - Duraludon:
     - Catch rate: 45->90
@@ -4881,10 +4888,11 @@
 - Eternamax Eternatus:
     - SpA: 125->145
 
-- Kubfu:
-- Urshifu:
+- Kubfu/Urshifu:
+    - Learn Karate Chop by level up
 
 - Zarude:
+    - Learns Pursuit, Leafage, Payback, Feint Attack, Razor Leaf, Crunch, Seed Bomb, and Throat Chop by level up
 
 - Regieleki:
     - Learn Rest and Endure by level up
@@ -4893,8 +4901,13 @@
     - Learns Rest and Endure by level up
 
 - Glastrier:
+    - Learns Powder Snow by level up
+
 - Spectrier:
+    - Learns Astonish by level up
+
 - Calyrex:
+    - Learns Razor Leaf, Zen Headbutt, and Seed Bomb by level up
 
 - Enamorus:
     - Learns Play Rough by level up

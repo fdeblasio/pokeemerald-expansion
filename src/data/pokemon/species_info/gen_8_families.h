@@ -6136,56 +6136,55 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CUFANT
 
-#define GALAR_FOSSIL_HP  90
-#define GALAR_FOSSIL_ATK 90
-#define GALAR_FOSSIL_DEF 90
-#define GALAR_FOSSIL_SPA 70
-#define GALAR_FOSSIL_SPD 70
-#define GALAR_FOSSIL_SPE 55
+#define ZOLT  1
+#define VISH  2
+#define DRACO 3
+#define ARCTO 4
 
-#define ZOLT_ATK 10
-#define ZOLT_SPA 10
-#define VISH_DEF 10
-#define VISH_SPD 10
-#define DRACO_SPE 20
-#define ARCTO_SPA 10
-#define ARCTO_SPD 10
+#define ZOLT_TYPE  TYPE_ELECTRIC
+#define VISH_TYPE  TYPE_WATER
+#define DRACO_TYPE TYPE_DRAGON
+#define ARCTO_TYPE TYPE_ICE
 
 #define ZOLT_ABILITY  ABILITY_VOLT_ABSORB
 #define VISH_ABILITY  ABILITY_WATER_ABSORB
 #define DRACO_ABILITY ABILITY_SAND_RUSH
 #define ARCTO_ABILITY ABILITY_SLUSH_RUSH
 
-//TODO: parameterize with the fossils and above defines
-#define GALAR_FOSSIL_INFO                                      \
-    .catchRate = DEFAULT_CATCH_RATE(45),                       \
-    .expYield = 177,                                           \
-    .genderRatio = MON_GENDERLESS,                             \
-    .eggCycles = 35,                                           \
-    .friendship = STANDARD_FRIENDSHIP,                         \
-    .growthRate = GROWTH_SLOW,                                 \
-    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED), \
-    .categoryName = _("Fossil")
+#define ZOLT_WEIGHT  750
+#define VISH_WEIGHT  ZOLT_WEIGHT+250
+#define DRACO_WEIGHT 1900-ZOLT_WEIGHT
+#define ARCTO_WEIGHT DRACO_WEIGHT+400
+
+#define GALAR_FOSSIL_INFO(Body, Head, Ability)                                \
+    .baseHP        = 90,                                                      \
+    .baseAttack    = 90 + (Head == ZOLT ? 10 : 0),                            \
+    .baseDefense   = 90 + (Head == VISH ? 10 : 0),                            \
+    .baseSpeed     = 70 + (Body == DRACO ? 20 : 0),                           \
+    .baseSpAttack  = 70 + (Head == ZOLT ? 10 : 0) + (Body == ARCTO ? 10 : 0), \
+    .baseSpDefense = 55 + (Head == VISH ? 10 : 0) + (Body == ARCTO ? 10 : 0), \
+    .types = MON_TYPES(Head##_TYPE, Body##_TYPE),                             \
+    .catchRate = DEFAULT_CATCH_RATE(45),                                      \
+    .expYield = 177,                                                          \
+    .genderRatio = MON_GENDERLESS,                                            \
+    .eggCycles = 35,                                                          \
+    .friendship = STANDARD_FRIENDSHIP,                                        \
+    .growthRate = GROWTH_SLOW,                                                \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),                \
+    .abilities = { Head##_ABILITY, Ability, Body##_ABILITY },                 \
+    .bodyColor = Body == DRACO ? BODY_COLOR_GREEN : BODY_COLOR_BLUE,          \
+    .categoryName = _("Fossil"),                                              \
+    .weight = Head##_WEIGHT+Body##_WEIGHT
 
 #if P_FAMILY_DRACOZOLT
     [SPECIES_DRACOZOLT] =
     {
-        .baseHP        = GALAR_FOSSIL_HP,
-        .baseAttack    = GALAR_FOSSIL_ATK + ZOLT_ATK,
-        .baseDefense   = GALAR_FOSSIL_DEF,
-        .baseSpeed     = GALAR_FOSSIL_SPE + DRACO_SPE,
-        .baseSpAttack  = GALAR_FOSSIL_SPA + ZOLT_SPA,
-        .baseSpDefense = GALAR_FOSSIL_SPD,
-        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
-        GALAR_FOSSIL_INFO,
+        GALAR_FOSSIL_INFO(DRACO, ZOLT, ABILITY_HUSTLE),
         .evYield_Attack = 2,
-        .abilities = { ZOLT_ABILITY, ABILITY_HUSTLE, DRACO_ABILITY },
-        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracozolt"),
         .cryId = CRY_DRACOZOLT,
         .natDexNum = NATIONAL_DEX_DRACOZOLT,
         .height = 18,
-        .weight = 1900,
         .description = COMPOUND_STRING(
             "In ancient times, it was unbeatable thanks\n"
             "to its powerful lower body, but it went\n"
@@ -6228,22 +6227,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOZOLT
     [SPECIES_ARCTOZOLT] =
     {
-        .baseHP        = GALAR_FOSSIL_HP,
-        .baseAttack    = GALAR_FOSSIL_ATK + ZOLT_ATK,
-        .baseDefense   = GALAR_FOSSIL_DEF,
-        .baseSpeed     = GALAR_FOSSIL_SPE,
-        .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA + ZOLT_SPA,
-        .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD,
-        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ICE),
-        GALAR_FOSSIL_INFO,
+        GALAR_FOSSIL_INFO(ARCTO, ZOLT, ABILITY_STATIC),
         .evYield_Attack = 2,
-        .abilities = { ZOLT_ABILITY, ABILITY_STATIC, ARCTO_ABILITY },
-        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctozolt"),
         .cryId = CRY_ARCTOZOLT,
         .natDexNum = NATIONAL_DEX_ARCTOZOLT,
         .height = 23,
-        .weight = 1500,
         .description = COMPOUND_STRING(
             "The shaking of its freezing upper half is\n"
             "what generates its electricity. It has a\n"
@@ -6285,22 +6274,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_DRACOVISH
     [SPECIES_DRACOVISH] =
     {
-        .baseHP        = GALAR_FOSSIL_HP,
-        .baseAttack    = GALAR_FOSSIL_ATK,
-        .baseDefense   = GALAR_FOSSIL_DEF + VISH_DEF,
-        .baseSpeed     = GALAR_FOSSIL_SPE + DRACO_SPE,
-        .baseSpAttack  = GALAR_FOSSIL_SPA,
-        .baseSpDefense = GALAR_FOSSIL_SPD + VISH_SPD,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
-        GALAR_FOSSIL_INFO,
+        GALAR_FOSSIL_INFO(DRACO, VISH, ABILITY_STRONG_JAW),
         .evYield_Defense = 2,
-        .abilities = { VISH_ABILITY, ABILITY_STRONG_JAW, DRACO_ABILITY },
-        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracovish"),
         .cryId = CRY_DRACOVISH,
         .natDexNum = NATIONAL_DEX_DRACOVISH,
         .height = 23,
-        .weight = 2150,
         .description = COMPOUND_STRING(
             "Powerful legs and jaws made it the apex\n"
             "predator of its time. Its own overhunting\n"
@@ -6343,22 +6322,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOVISH
     [SPECIES_ARCTOVISH] =
     {
-        .baseHP        = GALAR_FOSSIL_HP,
-        .baseAttack    = GALAR_FOSSIL_ATK,
-        .baseDefense   = GALAR_FOSSIL_DEF + VISH_DEF,
-        .baseSpeed     = GALAR_FOSSIL_SPE,
-        .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA,
-        .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD + VISH_SPD,
-        .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
-        GALAR_FOSSIL_INFO,
+        GALAR_FOSSIL_INFO(ARCTO, VISH, ABILITY_ICE_BODY),
         .evYield_Defense = 2,
-        .abilities = { VISH_ABILITY, ABILITY_ICE_BODY, ARCTO_ABILITY },
-        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctovish"),
         .cryId = CRY_ARCTOVISH,
         .natDexNum = NATIONAL_DEX_ARCTOVISH,
         .height = 20,
-        .weight = 1750,
         .description = COMPOUND_STRING(
             "Though it's able to capture prey by\n"
             "freezing its surroundings, it has trouble\n"

@@ -131,16 +131,16 @@ const u8 gNotDoneYetDescription[] = _(
     .argument = { .recoilPercentage = recoil }, \
     .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
 
-#define SEMI_INVULNERABLE_INFO(StringId, State)                          \
-    .effect = EFFECT_SEMI_INVULNERABLE,                                  \
-    .target = TARGET_SELECTED,                                           \
-    .priority = 0,                                                       \
-    .category = DAMAGE_CATEGORY_PHYSICAL,                                \
-    .makesContact = TRUE,                                                \
-    .sleepTalkBanned = TRUE,                                             \
-    .instructBanned = TRUE,                                              \
-    .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,                       \
-    .argument.twoTurnAttack = { .stringId = StringId, .state = Status }, \
+#define SEMI_INVULNERABLE_INFO(StringId, State)                         \
+    .effect = EFFECT_SEMI_INVULNERABLE,                                 \
+    .target = TARGET_SELECTED,                                          \
+    .priority = 0,                                                      \
+    .category = DAMAGE_CATEGORY_PHYSICAL,                               \
+    .makesContact = TRUE,                                               \
+    .sleepTalkBanned = TRUE,                                            \
+    .instructBanned = TRUE,                                             \
+    .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,                      \
+    .argument.twoTurnAttack = { .stringId = StringId, .state = State }, \
     .validApprenticeMove = TRUE
 
 #define TWO_TURN_ATTACK_INFO(StringId, ...) \

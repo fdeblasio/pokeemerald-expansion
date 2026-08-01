@@ -6210,7 +6210,7 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
             accuracy = GetMoveAccuracy(GetNaturePowerMove());
         else if (moveEffect == EFFECT_OHKO) {
             accuracy += gBattleMons[battler].level - gBattleMons[BATTLE_OPPOSITE(battler)].level;
-            if (MoveHasIncreasedAccByTenOnSameType(move) && !IS_BATTLER_OF_TYPE(battler, GetMoveType(move)))
+            if (MoveDecreasesAccIfUserNotSameType(move) && !IS_BATTLER_OF_TYPE(battler, GetMoveType(move)))
                 accuracy -= 10;
         }
 

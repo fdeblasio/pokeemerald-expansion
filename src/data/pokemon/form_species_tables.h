@@ -268,6 +268,7 @@ static const u16 sMachokeFormSpeciesIdTable[] = {
 static const u16 sMachampFormSpeciesIdTable[] = {
     SPECIES_MACHAMP,
     SPECIES_MACHAMP_PARTNER,
+    SPECIES_MACHAMP_MEGA_G,
 #if P_GIGANTAMAX_FORMS
     SPECIES_MACHAMP_GMAX,
 #endif
@@ -2134,8 +2135,22 @@ static const u16 sInteleonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_SOBBLE
 
 #if P_FAMILY_ROOKIDEE
+static const u16 sRookideeFormSpeciesIdTable[] = {
+    SPECIES_ROOKIDEE,
+    SPECIES_ROOKIDEE_PARTNER,
+    FORM_SPECIES_END,
+};
+
+static const u16 sCorvisquireFormSpeciesIdTable[] = {
+    SPECIES_CORVISQUIRE,
+    SPECIES_CORVISQUIRE_PARTNER,
+    FORM_SPECIES_END,
+};
+
 static const u16 sCorviknightFormSpeciesIdTable[] = {
     SPECIES_CORVIKNIGHT,
+    SPECIES_CORVIKNIGHT_PARTNER,
+    SPECIES_CORVIKNIGHT_MEGA_G,
 #if P_GIGANTAMAX_FORMS
     SPECIES_CORVIKNIGHT_GMAX,
 #endif

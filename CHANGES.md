@@ -1681,20 +1681,32 @@
     - Learn Drain Punch by TM
 
 - Starter Machop:
-    - Spe: 35->45 (315, still need 5 more)
+    - SpD: 35->40
+    - Spe: 35->45
     - Evolution: 28->16
     - Learns Tackle at level 1
     - Learns Low Kick and Focus Energy at level 6
     - Learns Drain Punch and Brick Break by level up
 
 - Starter Machoke:
-    - Spe: 45->55 (415, still need 5 more)
+    - SpD: 60->65
+    - Spe: 45->55
     - Evolution: Linking Cord->36
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Starter Machamp:
-    - Spe: 55->65 (515, still need 15-20 more)
+    - Def: 80->90
+    - Spe: 55->75
     - Learns Tackle, Drain Punch, and Brick Break by level up
+
+- Mega Machamp:
+    - HP: 90
+    - Atk: 170
+    - Def: 110
+    - SpA: 65
+    - SpD: 105
+    - Spe: 95
+    - Ability: Scrappy
 
 - Bellsprout (not in Emerald):
     - SpA: 70->75
@@ -4756,15 +4768,43 @@
     - Learns Iron Head by level up
 
 - Starter Rookidee:
-    - STATS (255, needs 65 more)
+    - HP: 38->55
+    - Atk: 47->60
+    - Def: 35->55
+    - SpA: 33->40
+    - SpD: 35->50
+    - Spe: 57->60
     - Evolution: 18->16
+    - Learns Scratch at level 1
+    - Learns Peck at level 6
+    - Learns Feather Dance by level up
 
 - Starter Corvisquire:
-    - STATS (375, needs 45 more)
+    - HP: 68->75
+    - Atk: 67->80
+    - Def: 55->75
+    - SpA: 43->45
+    - SpD: 55->65
+    - Spe: 77->80
     - Evolution: 38->36
+    - Learns Scratch and Feather Dance by level up
 
 - Starter Corviknight:
-    - STATS (505, needs 25-30 more)
+    - HP: 98->100
+    - Atk: 87->100
+    - Def: 105->115
+    - SpA: 53->55
+    - Spe: 67->80
+    - Learns Scratch, Feather Dance, and Iron Head by level up
+
+- Mega Corviknight:
+    - HP: 100
+    - Atk: 120
+    - Def: 155
+    - SpA: 55
+    - SpD: 105
+    - Spe: 100
+    - Ability: Mirror Armor
 
 - Blipbug:
     - SpA: 25->30

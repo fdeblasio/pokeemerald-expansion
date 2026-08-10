@@ -8867,9 +8867,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseHP        = 70,
         .baseAttack    = 80,
         .baseDefense   = 50,
-        .baseSpeed     = 45,
         .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseSpDefense = 40,
+        .baseSpeed     = 45,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = DEFAULT_CATCH_RATE(180),
     #if P_UPDATED_EXP_YIELDS >= GEN_5
@@ -8949,9 +8949,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseHP        = 80,
         .baseAttack    = 100,
         .baseDefense   = 70,
-        .baseSpeed     = 55,
         .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 60 : 50,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 65 : 50,
+        .baseSpeed     = 55,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = DEFAULT_CATCH_RATE(90),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 146,
@@ -9029,10 +9029,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define MACHAMP_PARTNER_HP  90
 #define MACHAMP_PARTNER_ATK 130
-#define MACHAMP_PARTNER_DEF 80
+#define MACHAMP_PARTNER_DEF 90
 #define MACHAMP_PARTNER_SPA 65
 #define MACHAMP_PARTNER_SPD P_UPDATED_STATS >= GEN_2 ? 85 : 65
-#define MACHAMP_PARTNER_SPE 65
+#define MACHAMP_PARTNER_SPE 75
 
     [SPECIES_MACHAMP_PARTNER] =
     {

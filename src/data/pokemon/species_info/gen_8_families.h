@@ -1255,8 +1255,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gShinyOverworldPalette_Rookidee
-            gOverworldPalette_Rookidee,
+            gShinyOverworldPalette_Rookidee,
+            gOverworldPalette_Rookidee
         )
         .levelUpLearnset = sRookideePartnerLevelUpLearnset,
         .teachableLearnset = sRookideeTeachableLearnset,
@@ -1330,8 +1330,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gShinyOverworldPalette_Corvisquire
-            gOverworldPalette_Corvisquire,
+            gShinyOverworldPalette_Corvisquire,
+            gOverworldPalette_Corvisquire
         )
         .levelUpLearnset = sCorvisquirePartnerLevelUpLearnset,
         .teachableLearnset = sCorvisquireTeachableLearnset,
@@ -1406,8 +1406,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gShinyOverworldPalette_Corviknight
-            gOverworldPalette_Corviknight,
+            gShinyOverworldPalette_Corviknight,
+            gOverworldPalette_Corviknight
         )
         .levelUpLearnset = sCorviknightPartnerLevelUpLearnset,
         .teachableLearnset = sCorviknightTeachableLearnset,

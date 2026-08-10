@@ -2560,7 +2560,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ZEPHYR] =
     {
-        .name = _("zephyr"),
+        .name = _("Zephyr"),
         .description = COMPOUND_STRING("Ups Flying moves at low HP."),
         .aiRating = 5,
     },

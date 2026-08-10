@@ -8868,7 +8868,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     .palette = gMonPalette_MachampGmax,               \
     .shinyPalette = gMonShinyPalette_MachampGmax,     \
     .iconSprite = gMonIcon_MachampGmax,               \
-    .iconPalIndex = 0
+    .iconPalIndex = 0,                                \
+    SHADOW(7, 13, SHADOW_SIZE_L)                      \
+    FOOTPRINT(Machamp)                                \
+    .pokemonJumpType = PKMN_JUMP_TYPE_NONE
 
 #if P_GIGANTAMAX_FORMS
     [SPECIES_MACHAMP_GMAX] =
@@ -8911,9 +8914,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 269,
         .trainerOffset = -1,
         MACHAMP_GMAX_INFO,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(7, 13, SHADOW_SIZE_L)
-        FOOTPRINT(Machamp)
         .isGigantamax = TRUE,
         .levelUpLearnset = sMachampLevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,

@@ -1373,7 +1373,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 750,
         .description = COMPOUND_STRING(
             "This Pokémon reigns supreme in the skies\n"
-            "of the Galar region. The black luster of\n"
+            "of the Galar region. The gray luster of\n"
             "its steel body could drive terror into\n"
             "the heart of any foe."),
         .pokemonScale = 256,
@@ -1438,8 +1438,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .cryId = CRY_CORVIKNIGHT,
         .natDexNum = NATIONAL_DEX_CORVIKNIGHT,
         .categoryName = _("Raven"),
-        .height = 140,
-        .weight = 0,
+        .height = 25,
+        .weight = 1000,
         .description = COMPOUND_STRING(
             "Imbued with Mega energy, its\n"
             "wings can whip up winds more\n"
@@ -1447,7 +1447,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             "muster. The gusts blow everything away."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
-        .trainerScale = 348,
+        .trainerScale = 360,
         .trainerOffset = 6,
         CORVIKNIGHT_GMAX_INFO,
         .palette = gMonShinyPalette_CorviknightGmax,

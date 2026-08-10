@@ -44,18 +44,14 @@ upcoming
 ## Hack-specific:
 - Starters: Machop for Rafi, Corviknight for Kim
 - Make new Machop/Rookidee forms (like with partner Pikachu/Eevee) and edit them to match other starters (BST, evolution levels, etc.)
-    - Overgrow/Blaze clones for abilities? Can still have second ability, just hardcode to giving with first
-    - Figure out forms so they're part of the same Pokedex entry
-- Rookidee Partner:
-    - Stats
-        - Mega stats. Currently 40 Def, 20 else is fine. Depends on new partner stats though
-    - Moveset
-        - Feather Dance
+    - Figure out forms so they're part of the same Pokedex entry (might be done already?)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
 - Add Machampite/Corviknite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam
 - Rival Kim uses non-flying birds (Psyduck for Water type?)
 - Nidoking for Arnold
+- Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
+- Adam Gengar?
 
 ## To Do (common):
 ### Champions

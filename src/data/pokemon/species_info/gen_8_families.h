@@ -1193,12 +1193,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_ROOKIDEE_PARTNER] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 50,
-        .baseDefense   = 35,
+        .baseHP        = 55,
+        .baseAttack    = 60,
+        .baseDefense   = 55,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 50,
         .baseSpeed     = 60,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = DEFAULT_CATCH_RATE(255),
         .expYield = 49,
@@ -1267,12 +1267,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVISQUIRE_PARTNER] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 70,
-        .baseDefense   = 55,
-        .baseSpeed     = 80,
+        .baseHP        = 75,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
         .baseSpAttack  = 45,
-        .baseSpDefense = 55,
+        .baseSpDefense = 65,
+        .baseSpeed     = 80,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = DEFAULT_CATCH_RATE(120),
         .expYield = 128,
@@ -1340,20 +1340,20 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #define CORVIKNIGHT_PARTNER_HP  100
-#define CORVIKNIGHT_PARTNER_ATK 90
-#define CORVIKNIGHT_PARTNER_DEF 105
+#define CORVIKNIGHT_PARTNER_ATK 100
+#define CORVIKNIGHT_PARTNER_DEF 115
 #define CORVIKNIGHT_PARTNER_SPA 55
 #define CORVIKNIGHT_PARTNER_SPD 85
-#define CORVIKNIGHT_PARTNER_SPE 70
+#define CORVIKNIGHT_PARTNER_SPE 80
 
     [SPECIES_CORVIKNIGHT_PARTNER] =
     {
         .baseHP        = CORVIKNIGHT_PARTNER_HP,
         .baseAttack    = CORVIKNIGHT_PARTNER_ATK,
         .baseDefense   = CORVIKNIGHT_PARTNER_DEF,
-        .baseSpeed     = CORVIKNIGHT_PARTNER_SPA,
-        .baseSpAttack  = CORVIKNIGHT_PARTNER_SPD,
-        .baseSpDefense = CORVIKNIGHT_PARTNER_SPE,
+        .baseSpAttack  = CORVIKNIGHT_PARTNER_SPA,
+        .baseSpDefense = CORVIKNIGHT_PARTNER_SPD,
+        .baseSpeed     = CORVIKNIGHT_PARTNER_SPE,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 248,
@@ -1417,12 +1417,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVIKNIGHT_MEGA_G] =
     {
-        .baseHP        = CORVIKNIGHT_PARTNER_HP,  //Amethyst changes
-        .baseAttack    = CORVIKNIGHT_PARTNER_ATK, //+50
-        .baseDefense   = CORVIKNIGHT_PARTNER_DEF, //+20
-        .baseSpeed     = CORVIKNIGHT_PARTNER_SPA, //-10
-        .baseSpAttack  = CORVIKNIGHT_PARTNER_SPD, //+30
-        .baseSpDefense = CORVIKNIGHT_PARTNER_SPE, //+10
+        .baseHP        = CORVIKNIGHT_PARTNER_HP,
+        .baseAttack    = CORVIKNIGHT_PARTNER_ATK + 20,
+        .baseDefense   = CORVIKNIGHT_PARTNER_DEF + 40,
+        .baseSpAttack  = CORVIKNIGHT_PARTNER_SPA,
+        .baseSpDefense = CORVIKNIGHT_PARTNER_SPD + 20,
+        .baseSpeed     = CORVIKNIGHT_PARTNER_SPE + 20,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 248,

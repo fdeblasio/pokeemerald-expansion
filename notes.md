@@ -42,14 +42,19 @@ upcoming
 ```
 
 ## Hack-specific:
-- Starters: Machop for Rafi, ??? for Kim
-- Make new Machop/??? forms (like with partner Pikachu/Eevee) and edit them to match other starters (BST, evolution levels, etc.)
+- Starters: Machop for Rafi, Corviknight for Kim
+- Make new Machop/Rookidee forms (like with partner Pikachu/Eevee) and edit them to match other starters (BST, evolution levels, etc.)
     - Overgrow/Blaze clones for abilities? Can still have second ability, just hardcode to giving with first
     - Figure out forms so they're part of the same Pokedex entry
+- Rookidee Partner:
+    - Stats
+    - Moveset
+    - Mega G macro
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
-- If Kim's has a mega, make Mega Machamp G
-    - Add Machampite to store or Steven
+- Add Machampite/Corviknite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam
+- Rival Kim uses non-flying birds (Psyduck for Water type?)
+- Nidoking for Arnold
 
 ## To Do (common):
 ### Champions

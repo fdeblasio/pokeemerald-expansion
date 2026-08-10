@@ -1094,6 +1094,9 @@ enum NationalDexOrder
     F(MACHOP) \
     F(MACHOKE) \
     F(MACHAMP) \
+    F(ROOKIDEE) \
+    F(CORVISQUIRE) \
+    F(CORVIKNIGHT) \
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \

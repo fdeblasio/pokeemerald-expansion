@@ -9001,7 +9001,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Machop,
             gShinyOverworldPalette_Machop
         )
-        .levelUpLearnset = sMachopLevelUpLearnset,
+        .levelUpLearnset = sMachopPartnerLevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
         .eggMoveLearnset = sMachopEggMoveLearnset,
         .formSpeciesIdTable = sMachopFormSpeciesIdTable,
@@ -9077,7 +9077,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Machoke,
             gShinyOverworldPalette_Machoke
         )
-        .levelUpLearnset = sMachokeLevelUpLearnset,
+        .levelUpLearnset = sMachokePartnerLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
         .formSpeciesIdTable = sMachokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MACHAMP_PARTNER}),
@@ -9170,13 +9170,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Machamp,
             gShinyOverworldPalette_Machamp
         )
-        .levelUpLearnset = sMachampLevelUpLearnset,
+        .levelUpLearnset = sMachampPartnerLevelUpLearnset,
         .teachableLearnset = sMachampTeachableLearnset,
         .formSpeciesIdTable = sMachampFormSpeciesIdTable,
         .formChangeTable = sMachampPartnerFormChangeTable,
     },
-
-    #define MEGA_ABILITY(ability) { ability, ability, ability }
 
     [SPECIES_MACHAMP_MEGA_G] =
     {
@@ -9203,7 +9201,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMachampPartnerLevelUpLearnset,
         .formChangeTable = sMachampPartnerFormChangeTable,
     },
-
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT

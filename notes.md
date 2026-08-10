@@ -48,8 +48,9 @@ upcoming
     - Figure out forms so they're part of the same Pokedex entry
 - Rookidee Partner:
     - Stats
+        - Mega stats. Currently 40 Def, 20 else is fine. Depends on new partner stats though
     - Moveset
-    - Mega G macro
+        - Feather Dance
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
 - Add Machampite/Corviknite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam

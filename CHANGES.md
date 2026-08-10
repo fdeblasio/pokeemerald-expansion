@@ -1693,7 +1693,7 @@
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Starter Machamp:
-    - Spe: 55->65 (515, still need 15 more)
+    - Spe: 55->65 (515, still need 15-20 more)
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Bellsprout (not in Emerald):
@@ -4756,15 +4756,15 @@
     - Learns Iron Head by level up
 
 - Starter Rookidee:
-    - STATS
+    - STATS (255, needs 65 more)
     - Evolution: 18->16
 
 - Starter Corvisquire:
-    - STATS
+    - STATS (375, needs 45 more)
     - Evolution: 38->36
 
 - Starter Corviknight:
-    - STATS
+    - STATS (505, needs 25-30 more)
 
 - Blipbug:
     - SpA: 25->30

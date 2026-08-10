@@ -9032,7 +9032,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #define MACHAMP_PARTNER_DEF 80
 #define MACHAMP_PARTNER_SPA 65
 #define MACHAMP_PARTNER_SPD P_UPDATED_STATS >= GEN_2 ? 85 : 65
-#define MACHAMP_PARTNER_SPE 55
+#define MACHAMP_PARTNER_SPE 65
 
     [SPECIES_MACHAMP_PARTNER] =
     {

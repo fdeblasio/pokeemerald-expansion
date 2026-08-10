@@ -1192,7 +1192,7 @@ enum __attribute__((packed)) Item
     #undef TO_TMHM_NUMS
 
     ITEM_MACHAMPITE,
-    ITEM_PLACEHOLDERITE,
+    ITEM_CORVIKNITE,
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

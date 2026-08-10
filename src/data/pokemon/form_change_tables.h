@@ -1772,6 +1772,14 @@ static const struct FormChange sCorviknightFormChangeTable[] =
     {FORM_CHANGE_END_BATTLE,        SPECIES_CORVIKNIGHT},
     {FORM_CHANGE_TERMINATOR},
 };
+
+static const struct FormChange sCorviknightPartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM, SPECIES_CORVIKNIGHT_MEGA_G, ITEM_CORVIKNITE},
+    {FORM_CHANGE_FAINT,                      SPECIES_CORVIKNIGHT_PARTNER},
+    {FORM_CHANGE_END_BATTLE,                 SPECIES_CORVIKNIGHT_PARTNER},
+    {FORM_CHANGE_TERMINATOR},
+};
 #endif //P_FAMILY_ROOKIDEE
 
 #if P_FAMILY_BLIPBUG

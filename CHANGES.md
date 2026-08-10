@@ -4751,6 +4751,17 @@
     - Spe: 67->70
     - Learns Iron Head by level up
 
+- Starter Rookidee:
+    - STATS
+    - Evolution: 18->16
+
+- Starter Corvisquire:
+    - STATS
+    - Evolution: 38->36
+
+- Starter Corviknight:
+    - STATS
+
 - Blipbug:
     - SpA: 25->30
 

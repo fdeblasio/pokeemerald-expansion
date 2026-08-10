@@ -1053,14 +1053,21 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CORVIKNIGHT}),
     },
 
+#define CORVIKNIGHT_HP  100
+#define CORVIKNIGHT_ATK 90
+#define CORVIKNIGHT_DEF 105
+#define CORVIKNIGHT_SPA 55
+#define CORVIKNIGHT_SPD 85
+#define CORVIKNIGHT_SPE 70
+
     [SPECIES_CORVIKNIGHT] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 90,
-        .baseDefense   = 105,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 85,
+        .baseHP        = CORVIKNIGHT_HP,
+        .baseAttack    = CORVIKNIGHT_ATK,
+        .baseDefense   = CORVIKNIGHT_DEF,
+        .baseSpeed     = CORVIKNIGHT_SPE,
+        .baseSpAttack  = CORVIKNIGHT_SPA,
+        .baseSpDefense = CORVIKNIGHT_SPD,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 248,
@@ -1122,15 +1129,31 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCorviknightFormChangeTable,
     },
 
+#define CORVIKNIGHT_GMAX_INFO                         \
+    .frontPic = gMonFrontPic_CorviknightGmax,         \
+    .frontPicSize = MON_COORDS_SIZE(64, 64),          \
+    .frontPicYOffset = 2,                             \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder, \
+    .frontAnimId = ANIM_H_STRETCH_FAR_SLOW,           \
+    .backPic = gMonBackPic_CorviknightGmax,           \
+    .backPicSize = MON_COORDS_SIZE(64, 64),           \
+    .backPicYOffset = 3,                              \
+    .backAnimId = BACK_ANIM_NONE,                     \
+    .iconSprite = gMonIcon_CorviknightGmax,           \
+    .iconPalIndex = 0,                                \
+    SHADOW(2, 8, SHADOW_SIZE_L)                       \
+    FOOTPRINT(Corviknight)                            \
+    .pokemonJumpType = PKMN_JUMP_TYPE_NONE
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_CORVIKNIGHT_GMAX] =
     {
-        .baseHP        = 98,
-        .baseAttack    = 87,
-        .baseDefense   = 105,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 85,
+        .baseHP        = CORVIKNIGHT_HP,
+        .baseAttack    = CORVIKNIGHT_ATK,
+        .baseDefense   = CORVIKNIGHT_DEF,
+        .baseSpeed     = CORVIKNIGHT_SPE,
+        .baseSpAttack  = CORVIKNIGHT_SPA,
+        .baseSpDefense = CORVIKNIGHT_SPD,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 248,
@@ -1157,22 +1180,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 0,
         .trainerScale = 348,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_CorviknightGmax,
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CorviknightGmax,
-        .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 3,
-        //.backAnimId = BACK_ANIM_NONE,
+        CORVIKNIGHT_GMAX_INFO,
         .palette = gMonPalette_CorviknightGmax,
         .shinyPalette = gMonShinyPalette_CorviknightGmax,
-        .iconSprite = gMonIcon_CorviknightGmax,
-        .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 8, SHADOW_SIZE_L)
-        FOOTPRINT(Corviknight)
         .isGigantamax = TRUE,
         .levelUpLearnset = sCorviknightLevelUpLearnset,
         .teachableLearnset = sCorviknightTeachableLearnset,
@@ -5328,7 +5338,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             ANIMCMD_FRAME(1, 2),
             ANIMCMD_FRAME(0, 2),
             ANIMCMD_FRAME(1, 2),
-            ANIMCMD_FRAME(0, 2),			
+            ANIMCMD_FRAME(0, 2),
             ANIMCMD_FRAME(1, 2),
             ANIMCMD_FRAME(0, 2),
             ANIMCMD_FRAME(1, 2),

@@ -54,8 +54,6 @@ upcoming
 - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank
-- Add Grass to Rustboro
-    - Grass in other cities for other Squawkabillies?
 - Update surf/fish encounters
 - Replace Elekid outbreak
 - Move evolution items/mega stones

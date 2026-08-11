@@ -49,9 +49,17 @@ upcoming
 - Add Machampite/Corviknite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam
 - Rival Kim uses non-flying birds (Psyduck for Water type?)
-- Nidoking for Arnold
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Adam Gengar?
+- Update rival battle macro since starters no longer share a type with grass/water/fire
+    - Nidoran named Arnold
+- Wallace->Frank
+- Add Grass to Rustboro
+    - Grass in other cities for other Squawkabillies?
+- Update surf/fish encounters
+- Replace Elekid outbreak
+- Move evolution items/mega stones
+    - Electrizer
 
 ## To Do (common):
 ### Champions

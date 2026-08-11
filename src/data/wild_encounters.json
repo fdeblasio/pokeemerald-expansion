@@ -74,6 +74,54 @@
               }
             ]
           }
+        },        {
+          "map": "MAP_RUSTBORO_CITY",
+          "base_label": "gRustboroCity",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "range": "ROUTE_116",
+                "species": "PIDOVE"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "STARLY"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "FARFETCHD"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SQUAWKABILLY_GREEN"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "FARFETCHD"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SQUAWKABILLY_GREEN"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "PIDOVE"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "STARLY"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "FARFETCHD"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SQUAWKABILLY_GREEN"
+              }
+            ]
+          }
         },
         {
           "map": "MAP_DEWFORD_TOWN",
@@ -557,19 +605,10 @@
                 "species": "EARLY_BIRD_1"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "PIDGEY"
               },
               {
-                "species": "EARLY_BEAST_2"
-              },
-              {
-                "species": "EARLY_BEAST_1"
-              },
-              {
-                "species": "EARLY_BEAST_2"
-              },
-              {
-                "species": "EARLY_BEAST_1"
+                "species": "PIDGEY"
               },
               {
                 "species": "EARLY_BEAST_1"
@@ -579,6 +618,15 @@
               },
               {
                 "species": "EARLY_BEAST_1"
+              },
+              {
+                "species": "EARLY_BEAST_2"
+              },
+              {
+                "species": "EARLY_BEAST_1"
+              },
+              {
+                "species": "EARLY_BEAST_2"
               }
             ]
           },
@@ -715,34 +763,34 @@
             "range": "ROUTE_104_NORTH",
             "mons": [
               {
-                "species": "EARLY_BIRD_1"
+                "species": "NIDORAN_M"
               },
               {
-                "species": "EARLY_BIRD_2"
+                "species": "NIDORAN_F"
               },
               {
-                "species": "AZURILL"
+                "species": "FLITTLE"
               },
               {
-                "species": "EARLY_BUG_1"
+                "species": "FLITTLE"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "ROOKIDEE"
               },
               {
-                "species": "AZURILL"
+                "species": "ROOKIDEE"
               },
               {
-                "species": "EARLY_BIRD_2"
+                "species": "FLETCHLING"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "FLETCHLING"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "FLETCHLING"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "FLETCHLING"
               }
             ]
           },
@@ -843,34 +891,34 @@
             "range": "ROUTE_106",
             "mons": [
               {
-                "species": "WINGULL"
+                "species": "WATTREL"
               },
               {
-                "species": "WINGULL"
+                "species": "SANDYGAST"
               },
               {
-                "species": "WINGULL"
+                "species": "PIKIPEK"
               },
               {
-                "species": "WINGULL"
+                "species": "DWEBBLE"
               },
               {
-                "species": "WINGULL"
+                "species": "PIKIPEK"
               },
               {
-                "species": "WINGULL"
+                "species": "DWEBBLE"
               },
               {
-                "species": "WINGULL"
+                "species": "CRABRAWLER"
               },
               {
-                "species": "WINGULL"
+                "species": "CRABRAWLER"
               },
               {
-                "species": "WINGULL"
+                "species": "CRABRAWLER"
               },
               {
-                "species": "WINGULL"
+                "species": "CRABRAWLER"
               }
             ]
           },
@@ -882,13 +930,13 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1105,25 +1153,25 @@
                 "species": "ELECTRIKE"
               },
               {
-                "species": "GULPIN"
-              },
-              {
-                "species": "ELECTRIKE"
-              },
-              {
-                "species": "PLUSLE"
-              },
-              {
-                "species": "MINUN"
-              },
-              {
-                "species": "PLUSLE"
-              },
-              {
-                "species": "MINUN"
+                "species": "ORICORIO_POM_POM"
               },
               {
                 "species": "ODDISH"
+              },
+              {
+                "species": "PLUSLE"
+              },
+              {
+                "species": "MINUN"
+              },
+              {
+                "species": "PLUSLE"
+              },
+              {
+                "species": "MINUN"
+              },
+              {
+                "species": "ORICORIO_POM_POM"
               },
               {
                 "species": "ODDISH"
@@ -1135,7 +1183,7 @@
             "range": "SURF_INITIAL",
             "mons": [
               {
-                "species": "TENTACOOL"
+                "species": "WATTREL"
               },
               {
                 "species": "CHINCHOU"
@@ -1193,22 +1241,22 @@
                 "species": "BALTOY"
               },
               {
-                "species": "BALTOY"
-              },
-              {
                 "species": "SANDSHREW"
               },
               {
                 "species": "SANDSHREW"
               },
               {
-                "species": "TRAPINCH"
+                "species": "SILICOBRA"
               },
               {
-                "species": "BALTOY"
+                "species": "SILICOBRA"
               },
               {
-                "species": "SANDSHREW"
+                "species": "SILICOBRA"
+              },
+              {
+                "species": "SILICOBRA"
               }
             ]
           },
@@ -1266,31 +1314,31 @@
                 "species": "NUMEL"
               },
               {
-                "species": "NUMEL"
-              },
-              {
                 "species": "MACHOP"
               },
               {
-                "species": "NUMEL"
+                "species": "ORICORIO_BAILE"
               },
               {
-                "species": "MACHOP"
+                "species": "FARFETCHD_GALAR"
               },
               {
-                "species": "MACHOP"
+                "species": "ORICORIO_BAILE"
               },
               {
-                "species": "MACHOP"
+                "species": "FARFETCHD_GALAR"
               },
               {
-                "species": "MACHOP"
+                "species": "SIZZLIPEDE"
               },
               {
-                "species": "NUMEL"
+                "species": "SIZZLIPEDE"
               },
               {
-                "species": "NUMEL"
+                "species": "SIZZLIPEDE"
+              },
+              {
+                "species": "SIZZLIPEDE"
               }
             ]
           }
@@ -1306,13 +1354,13 @@
                 "species": "SPINDA"
               },
               {
-                "species": "SPINDA"
-              },
-              {
                 "species": "SKARMORY"
               },
               {
-                "species": "SKARMORY"
+                "species": "BOMBIRDIER"
+              },
+              {
+                "species": "BOMBIRDIER"
               },
               {
                 "species": "SANDSHREW"
@@ -1327,10 +1375,10 @@
                 "species": "SLUGMA"
               },
               {
-                "species": "SKARMORY"
+                "species": "SANDSHREW"
               },
               {
-                "species": "SANDSHREW"
+                "species": "SLUGMA"
               }
             ]
           }
@@ -1428,7 +1476,7 @@
                 "species": "IGGLYBUFF"
               },
               {
-                "species": "SWABLU"
+                "species": "FLAMIGO"
               },
               {
                 "species": "RHYHORN"
@@ -1440,7 +1488,7 @@
                 "species": "IGGLYBUFF"
               },
               {
-                "species": "SWABLU"
+                "species": "FLAMIGO"
               },
               {
                 "species": "RHYHORN"
@@ -1513,22 +1561,22 @@
                 "species": "NINCADA"
               },
               {
+                "species": "SPEAROW"
+              },
+              {
+                "species": "SPEAROW"
+              },
+              {
+                "species": "ABRA"
+              },
+              {
                 "species": "EARLY_BIRD_2"
               },
               {
                 "species": "ABRA"
               },
               {
-                "species": "EARLY_BEAST_1"
-              },
-              {
                 "species": "EARLY_BIRD_2"
-              },
-              {
-                "species": "ABRA"
-              },
-              {
-                "species": "EARLY_BEAST_1"
               },
               {
                 "species": "SKITTY"
@@ -1550,7 +1598,7 @@
                 "species": "BUDEW"
               },
               {
-                "species": "BUDEW"
+                "species": "DUCKLETT"
               },
               {
                 "species": "VOLBEAT"
@@ -1586,13 +1634,13 @@
                 "species": "PSYDUCK"
               },
               {
-                "species": "AZUMARILL"
+                "species": "DUCKLETT"
               },
               {
-                "species": "MASQUERAIN"
+                "species": "DUCKLETT"
               },
               {
-                "species": "MASQUERAIN"
+                "species": "DUCKLETT"
               }
             ]
           },
@@ -1641,10 +1689,10 @@
                 "species": "MANECTRIC"
               },
               {
-                "species": "PELIPPER"
+                "species": "CRAMORANT"
               },
               {
-                "species": "PELIPPER"
+                "species": "CRAMORANT"
               },
               {
                 "species": "EARLY_BEAST_1 + 1"
@@ -1653,10 +1701,10 @@
                 "species": "MANECTRIC"
               },
               {
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1665,16 +1713,16 @@
             "range": "SURF_INITIAL",
             "mons": [
               {
-                "species": "TENTACOOL"
+                "species": "LUVDISC"
               },
               {
-                "species": "PELIPPER"
+                "species": "ALOMOMOLA"
               },
               {
-                "species": "PELIPPER"
+                "species": "ALOMOMOLA"
               },
               {
-                "species": "PELIPPER"
+                "species": "ALOMOMOLA"
               }
             ]
           },
@@ -1686,7 +1734,7 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "LUVDISC"
               },
               {
                 "range": "GOOD_ROD_INITIAL",
@@ -1694,7 +1742,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "LUVDISC"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1723,22 +1771,22 @@
                 "species": "HERACROSS"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "DRAMPA"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "MURKROW"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "DRAMPA"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "MURKROW"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "DRAMPA"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "MURKROW"
               }
             ]
           },
@@ -1875,22 +1923,10 @@
             "range": "ROUTE_121",
             "mons": [
               {
-                "species": "DUSKULL"
+                "species": "ORICORIO_SENSU"
               },
               {
-                "species": "SHUPPET"
-              },
-              {
-                "species": "GIRAFARIG"
-              },
-              {
-                "species": "DODUO"
-              },
-              {
-                "species": "EARLY_BEAST_2 + 1"
-              },
-              {
-                "species": "GLOOM"
+                "species": "RUFFLET"
               },
               {
                 "species": "GIRAFARIG"
@@ -1899,10 +1935,22 @@
                 "species": "DODUO"
               },
               {
-                "species": "PELIPPER"
+                "species": "GIRAFARIG"
               },
               {
-                "species": "KECLEON"
+                "species": "DODUO"
+              },
+              {
+                "species": "VULLABY"
+              },
+              {
+                "species": "VULLABY"
+              },
+              {
+                "species": "VULLABY"
+              },
+              {
+                "species": "VULLABY"
               }
             ]
           },
@@ -1963,10 +2011,10 @@
                 "species": "CORSOLA_GALAR"
               },
               {
-                "species": "CORSOLA_GALAR"
+                "species": "DHELMISE"
               },
               {
-                "species": "CORSOLA_GALAR"
+                "species": "DHELMISE"
               }
             ]
           },
@@ -2602,6 +2650,22 @@
                 "species": "NINCADA"
               },
               {
+                "range": "PETALBURG_WOODS",
+                "species": "SLAKOTH"
+              },
+              {
+                "range": "PETALBURG_WOODS",
+                "species": "SLAKOTH"
+              },
+              {
+                "range": "PETALBURG_WOODS",
+                "species": "HOOTHOOT"
+              },
+              {
+                "range": "PETALBURG_WOODS",
+                "species": "HOOTHOOT"
+              },
+              {
                 "range": "PETALBURG_WOODS_COCOON",
                 "species": "SILCOON"
               },
@@ -2616,22 +2680,6 @@
               {
                 "range": "PETALBURG_WOODS_COCOON",
                 "species": "CASCOON"
-              },
-              {
-                "range": "PETALBURG_WOODS",
-                "species": "SHROOMISH"
-              },
-              {
-                "range": "PETALBURG_WOODS",
-                "species": "SLAKOTH"
-              },
-              {
-                "range": "PETALBURG_WOODS",
-                "species": "SLAKOTH"
-              },
-              {
-                "range": "PETALBURG_WOODS",
-                "species": "SLAKOTH"
               }
             ]
           }
@@ -2690,22 +2738,22 @@
                 "species": "GEODUDE"
               },
               {
-                "species": "MAKUHITA"
+                "species": "ROGGENROLA"
               },
               {
-                "species": "GEODUDE"
+                "species": "ROGGENROLA"
               },
               {
-                "species": "MAKUHITA"
+                "species": "BINACLE"
+              },
+              {
+                "species": "BINACLE"
               },
               {
                 "species": "ABRA"
               },
               {
-                "species": "MAKUHITA"
-              },
-              {
-                "species": "MAKUHITA"
+                "species": "ABRA"
               },
               {
                 "species": "ABRA"
@@ -2770,7 +2818,7 @@
                 "species": "NOSEPASS"
               },
               {
-                "species": "ARON"
+                "species": "CUFANT"
               },
               {
                 "species": "NOSEPASS"
@@ -2788,10 +2836,10 @@
                 "species": "SABLEYE"
               },
               {
-                "species": "ZUBAT"
+                "species": "CUFANT"
               },
               {
-                "species": "ARON"
+                "species": "CUFANT"
               }
             ]
           }
@@ -2807,25 +2855,25 @@
                 "species": "ARON"
               },
               {
+                "species": "CUFANT"
+              },
+              {
+                "species": "NOSEPASS"
+              },
+              {
+                "species": "MAKUHITA"
+              },
+              {
+                "species": "NOSEPASS"
+              },
+              {
+                "species": "MAKUHITA"
+              },
+              {
                 "species": "ARON"
               },
               {
-                "species": "NOSEPASS"
-              },
-              {
-                "species": "MAKUHITA"
-              },
-              {
-                "species": "NOSEPASS"
-              },
-              {
-                "species": "MAKUHITA"
-              },
-              {
-                "species": "NOSEPASS"
-              },
-              {
-                "species": "MAKUHITA"
+                "species": "CUFANT"
               },
               {
                 "species": "NOSEPASS"
@@ -2890,16 +2938,16 @@
                 "species": "LUNATONE"
               },
               {
-                "species": "SOLROCK"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "SOLROCK"
+                "species": "CLEFFA"
               },
               {
-                "species": "LUNATONE"
+                "species": "CLEFFA"
               },
               {
                 "species": "ZUBAT"
@@ -2972,16 +3020,16 @@
                 "species": "LUNATONE"
               },
               {
-                "species": "SOLROCK"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "SOLROCK"
+                "species": "CLEFAIRY"
               },
               {
-                "species": "LUNATONE"
+                "species": "CLEFAIRY"
               },
               {
                 "species": "GOLBAT"
@@ -3050,16 +3098,16 @@
                 "species": "LUNATONE"
               },
               {
-                "species": "SOLROCK"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
-                "species": "SOLROCK"
+                "species": "CLEFAIRY"
               },
               {
-                "species": "LUNATONE"
+                "species": "CLEFAIRY"
               },
               {
                 "species": "GOLBAT"
@@ -3246,10 +3294,10 @@
                 "species": "CABLE_CAR_2"
               },
               {
-                "species": "CABLE_CAR_3"
+                "species": "CABLE_CAR_5"
               },
               {
-                "species": "CABLE_CAR_3"
+                "species": "CABLE_CAR_5"
               },
               {
                 "species": "CABLE_CAR_3"
@@ -3537,7 +3585,13 @@
                 "species": "PICHU"
               },
               {
+                "species": "ELEKID"
+              },
+              {
                 "species": "PICHU"
+              },
+              {
+                "species": "ELEKID"
               },
               {
                 "species": "VOLTORB"
@@ -3549,13 +3603,7 @@
                 "species": "PICHU"
               },
               {
-                "species": "PICHU"
-              },
-              {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "MAGNEMITE"
+                "species": "ELEKID"
               }
             ]
           }
@@ -3574,28 +3622,28 @@
                 "species": "MAGNEMITE"
               },
               {
-                "species": "VOLTORB"
+                "species": "PICHU"
               },
               {
-                "species": "MAGNEMITE"
+                "species": "ELEKID"
               },
               {
-                "species": "VOLTORB"
+                "species": "PICHU"
               },
               {
-                "species": "MAGNEMITE"
-              },
-              {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "MAGNEMITE"
+                "species": "ELEKID"
               },
               {
                 "species": "VOLTORB"
               },
               {
                 "species": "MAGNEMITE"
+              },
+              {
+                "species": "PICHU"
+              },
+              {
+                "species": "ELEKID"
               }
             ]
           }
@@ -3614,28 +3662,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3654,28 +3702,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3694,28 +3742,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3734,28 +3782,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3774,28 +3822,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3814,28 +3862,28 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
-                "species": "SHUPPET"
+                "species": "GOLETT"
               }
             ]
           }
@@ -3866,10 +3914,10 @@
                 "species": "SHUPPET"
               },
               {
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "species": "PELIPPER"
@@ -3900,22 +3948,22 @@
                 "species": "NATU"
               },
               {
-                "species": "DUSKULL"
+                "species": "HAWLUCHA"
               },
               {
-                "species": "SHUPPET"
+                "species": "HAWLUCHA"
               },
               {
-                "species": "DUSKULL"
+                "species": "HAWLUCHA"
               },
               {
-                "species": "SHUPPET"
+                "species": "HAWLUCHA"
               },
               {
-                "species": "DUSKULL"
+                "species": "HAWLUCHA"
               },
               {
-                "species": "SHUPPET"
+                "species": "HAWLUCHA"
               }
             ]
           }
@@ -4251,31 +4299,31 @@
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
               },
               {
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
+              },
+              {
+                "species": "EISCUE"
+              },
+              {
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               }
             ]
           }
@@ -4291,31 +4339,31 @@
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
               },
               {
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
+              },
+              {
+                "species": "EISCUE"
+              },
+              {
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               }
             ]
           }
@@ -4331,31 +4379,31 @@
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
               },
               {
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
+              },
+              {
+                "species": "EISCUE"
+              },
+              {
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               }
             ]
           },
@@ -4364,7 +4412,7 @@
             "range": "SHOAL_CAVE",
             "mons": [
               {
-                "species": "WAILMER"
+                "species": "EISCUE"
               },
               {
                 "species": "SPHEAL"
@@ -4413,31 +4461,31 @@
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
               },
               {
                 "species": "SPHEAL"
               },
               {
-                "species": "SPHEAL"
+                "species": "DELIBIRD"
+              },
+              {
+                "species": "EISCUE"
+              },
+              {
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "GOLBAT"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               }
             ]
           },
@@ -4446,7 +4494,7 @@
             "range": "SHOAL_CAVE",
             "mons": [
               {
-                "species": "WAILMER"
+                "species": "EISCUE"
               },
               {
                 "species": "SPHEAL"
@@ -4495,19 +4543,19 @@
                 "species": "SNORUNT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "SNORUNT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "SNORUNT"
               },
               {
-                "species": "SPHEAL"
+                "species": "EISCUE"
               },
               {
                 "species": "SNORUNT"
@@ -5372,7 +5420,7 @@
             "range": "POSTGAME",
             "mons": [
               {
-                "species": "ELEKID"
+                "species": "BLITZLE"
               },
               {
                 "species": "MAREEP"
@@ -5411,13 +5459,13 @@
                 "species": "TYMPOLE"
               },
               {
-                "species": "DUCKLETT"
+                "species": "BRUXISH"
               },
               {
-                "species": "DUCKLETT"
+                "species": "BRUXISH"
               },
               {
-                "species": "DUCKLETT"
+                "species": "BRUXISH"
               }
             ]
           },
@@ -5587,13 +5635,13 @@
                 "species": "DONDOZO"
               },
               {
-                "species": "ALOMOMOLA"
+                "species": "WISHIWASHI"
               },
               {
                 "species": "DONDOZO"
               },
               {
-                "species": "ALOMOMOLA"
+                "species": "WISHIWASHI"
               }
             ]
           }
@@ -5615,13 +5663,13 @@
                 "species": "VOLTORB_HISUI"
               },
               {
-                "species": "HOOTHOOT"
+                "species": "FOONGUS"
               },
               {
                 "species": "VOLTORB_HISUI"
               },
               {
-                "species": "HOOTHOOT"
+                "species": "FOONGUS"
               },
               {
                 "species": "MILTANK"
@@ -5645,13 +5693,13 @@
                 "species": "DEWPIDER"
               },
               {
-                "species": "CRAMORANT"
+                "species": "PYUKUMUKU"
               },
               {
-                "species": "CRAMORANT"
+                "species": "PYUKUMUKU"
               },
               {
-                "species": "CRAMORANT"
+                "species": "PYUKUMUKU"
               }
             ]
           },
@@ -5687,7 +5735,7 @@
                 "species": "MEOWTH"
               },
               {
-                "species": "TOGEPI"
+                "species": "KLEFKI"
               },
               {
                 "species": "MEOWTH_ALOLA"

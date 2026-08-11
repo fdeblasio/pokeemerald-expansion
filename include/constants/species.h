@@ -1768,7 +1768,7 @@ enum __attribute__((packed)) Species
 
 #define SPECIES_LAVARIDGE_EGG     SPECIES_WYNAUT
 
-#define SPECIES_LEFT_FOSSIL       SPECIES_LILEEP
+#define SPECIES_LEFT_FOSSIL       SPECIES_ARCHEN
 #define SPECIES_RIGHT_FOSSIL      SPECIES_ANORITH
 #define FOSSIL_LEVEL              30
 
@@ -1847,7 +1847,7 @@ enum __attribute__((packed)) Species
 #define SPECIES_CABLE_CAR_2                 SPECIES_PHANPY
 #define SPECIES_CABLE_CAR_3                 SPECIES_NUMEL
 #define SPECIES_CABLE_CAR_4                 SPECIES_MACHOP
-#define SPECIES_CABLE_CAR_5                 SPECIES_SPOINK
+#define SPECIES_CABLE_CAR_5                 SPECIES_TOGEPI
 
 #define SPECIES_TERRANCE_ACE                SPECIES_BALTOY
 #define SPECIES_JORDAN_ACE                  SPECIES_RHYHORN

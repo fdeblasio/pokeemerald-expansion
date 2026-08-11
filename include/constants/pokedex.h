@@ -1205,6 +1205,8 @@ enum NationalDexOrder
     F(MUK) \
     F(KOFFING) \
     F(WEEZING) \
+    F(HOUNDOUR) \
+    F(HOUNDOOM) \
     F(SPOINK) \
     F(GRUMPIG) \
     F(SANDSHREW) \

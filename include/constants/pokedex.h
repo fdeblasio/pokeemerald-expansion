@@ -1203,6 +1203,12 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(PROBOPASS)) \
     F(CUFANT) \
     F(COPPERAJAH) \
+    F(SPRITZEE) \
+    F(AROMATISSE) \
+    F(SWIRLIX) \
+    F(SLURPUFF) \
+    F(CUTIEFLY) \
+    F(RIBOMBEE) \
     F(GULPIN) \
     F(SWALOT) \
     F(ELECTRIKE) \
@@ -1214,6 +1220,14 @@ enum NationalDexOrder
     F(VILEPLUME) \
     F(BELLOSSOM) \
     F(ORICORIO) \
+    F(TOGEPI) \
+    F(TOGETIC) \
+    F(TOGEKISS) \
+    F(SNUBBULL) \
+    F(GRANBULL) \
+    F(FIDOUGH) \
+    F(DACHSBUN) \
+    F(CYCLIZAR) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(BUDEW)) \
     F(ROSELIA) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(ROSERADE)) \
@@ -1266,13 +1280,15 @@ enum NationalDexOrder
     F(CLEFAIRY) \
     F(CLEFABLE) \
     F(DRUDDIGON) \
+    F(NOIBAT) \
+    F(NOIVERN) \
     F(SPOINK) \
     F(GRUMPIG) \
     F(PHANPY) \
     F(DONPHAN) \
-    F(TOGEPI) \
-    F(TOGETIC) \
-    F(TOGEKISS) \
+    F(MANKEY) \
+    F(PRIMEAPE) \
+    F(ANNIHILAPE) \
     F(TRAPINCH) \
     F(VIBRAVA) \
     F(FLYGON) \
@@ -1319,6 +1335,9 @@ enum NationalDexOrder
     F(CASTFORM) \
     F(ABSOL) \
     F(KECLEON) \
+    F(AXEW) \
+    F(FRAXURE) \
+    F(HAXORUS) \
     F(DODUO) \
     F(DODRIO) \
     F(GIRAFARIG) \
@@ -1353,11 +1372,13 @@ enum NationalDexOrder
     F(SPHEAL) \
     F(SEALEO) \
     F(WALREIN) \
+    F(DELIBIRD) \
+    F(EISCUE) \
     F(SNORUNT) \
     F(GLALIE) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(FROSLASS)) \
-    F(DELIBIRD) \
-    F(EISCUE) \
+    F(CUBCHOO) \
+    F(BEARTIC) \
     F(WYNAUT) \
     F(WOBBUFFET) \
     F(CLAMPERL) \
@@ -1430,8 +1451,8 @@ enum NationalDexOrder
     F(SNEASEL) \
     F(WEAVILE) \
     F(SNEASLER) \
-    F(SNUBBULL) \
-    F(GRANBULL) \
+    F(MORELULL) \
+    F(SHIINOTIC) \
     F(SUNKERN) \
     F(SUNFLORA) \
     F(LEDYBA) \
@@ -1553,6 +1574,9 @@ enum HoennDexOrder
     KANTO_DEX_IF(P_GEN_2_CROSS_EVOS, F(PICHU)) \
     F(PIKACHU) \
     F(RAICHU) \
+    F(KLINK) \
+    F(KLANG) \
+    F(KLINKLANG) \
     F(SANDSHREW) \
     F(SANDSLASH) \
     F(NIDORAN_F) \

@@ -236,40 +236,40 @@ LilycoveCity_DepartmentStore_4F_Pokemart_StrongTMs:
 @@@@@ Evolution items @@@@@
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
-	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                      Postgame: Growlithe, Growlithe-H, Unused: Cubone, Eevee, Pansear, Capsakid
-	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;              Postgame: Poliwhirl, Shellder;    Unused: Eevee, Panpour
-	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; Postgame: Eelektrik;              Unused: Eevee, Charjabug, Tadbulb
-	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;              Postgame: Voltorb-H;              Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
-	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          Postgame: Ursaring;               Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
-	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;              Postgame: Sunkern, Helioptile;    Unused: Exeggcute, Eevee, Cottonee, Petilil
-	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Roselia;            Postgame: Togetic;                Unused: Eevee, Minccino, Rufflet, Floette
+	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                                           Postgame: Growlithe, Growlithe-H, Unused: Cubone, Eevee, Pansear, Capsakid
+	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;                                   Postgame: Poliwhirl, Shellder;    Unused: Eevee, Panpour
+	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass;                      Postgame: Eelektrik;              Unused: Eevee, Charjabug, Tadbulb
+	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;                                   Postgame: Voltorb-H;              Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
+	.2byte ITEM_MOON_STONE      @ Hoenn: Nidorina, Nidorino, Clefairy, Jigglypuff, Skitty; Postgame: Ursaring;               Unused: Eevee, Munna
+	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;                                   Postgame: Sunkern, Helioptile;    Unused: Exeggcute, Eevee, Cottonee, Petilil
+	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Togetic, Roselia, Rufflet;               Postgame: N/A;                    Unused: Eevee, Minccino, Floette
+	.2byte ITEM_DUSK_STONE      @ Hoenn: Murkrow;                                          Postgame: N/A;                    Unused: Misdreavus, Lampent, Doublade
 	.2byte ITEM_DAWN_STONE      @ Hoenn: Kirlia and Snorunt
-	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler;  Postgame: Graveler-A;             Unused: Haunter, Boldore, Gurdurr, Karrablast, Shelmet, Phantump, Pumpkaboo
+	.2byte ITEM_ICE_STONE       @ Hoenn: Crabrawler                                        Postgame: Sandshrew-A, Vulpix-A;  Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
+	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler, Haunter, Boldore;     Postgame: Graveler-A;             Unused: Gurdurr, Karrablast, Shelmet, Phantump, Pumpkaboo
+	.2byte ITEM_ELECTIRIZER     @ Hoenn: Electabuzz
 	.2byte ITEM_DRAGON_SCALE    @ Hoenn: Seadra
 	.2byte ITEM_DEEP_SEA_TOOTH  @ Hoenn: Clamperl
 	.2byte ITEM_DEEP_SEA_SCALE  @ Hoenn: Clamperl
 	.2byte ITEM_REAPER_CLOTH    @ Hoenn: Dusclops
 	.2byte ITEM_PROTECTOR       @ Hoenn: Rhydon
+	.2byte ITEM_RAZOR_CLAW      @ Hoenn: Sneasel;                                          Postgame: Sneasel-H
 	.2byte ITEM_PRISM_SCALE     @ Hoenn: Feebas
+	.2byte ITEM_SACHET          @ Hoenn: Spritzee
+	.2byte ITEM_WHIPPED_DREAM   @ Hoenn: Swirlix
 	pokemartlistend
 
 @ Unused shop that contains evo items for Pokemon not available in Emerald by default
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
-	.2byte ITEM_DUSK_STONE                         @ Unused: Murkrow, Misdreavus, Lampent, Doublade
-	.2byte ITEM_ICE_STONE       @ Battle Frontier;   Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
 	.2byte ITEM_KINGS_ROCK      @ Battle Frontier;   Postgame: Poliwhirl and Slowpoke
 	.2byte ITEM_METAL_COAT                         @ Unused: Onix and Scyther
 	.2byte ITEM_BLACK_AUGURITE                     @ Unused: Scyther
 	.2byte ITEM_UPGRADE                            @ Unused: Porygon
 	.2byte ITEM_DUBIOUS_DISC                       @ Unused: Porygon2
 	.2byte ITEM_RAZOR_FANG      @ Battle Frontier;   Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier;   Postgame: Sneasel and Sneasel-H
-	.2byte ITEM_ELECTIRIZER     @ Battle Frontier;   Postgame: Electabuzz
 	.2byte ITEM_MAGMARIZER      @ Battle Frontier;   Postgame: Magmar
 	.2byte ITEM_OVAL_STONE      @ Battle Frontier;   Postgame: Happiny
-	.2byte ITEM_SACHET                             @ Unused: Spritzee
-	.2byte ITEM_WHIPPED_DREAM                      @ Unused: Swirlix
 	.2byte ITEM_GALARICA_CUFF   @ Battle Frontier;   Postgame: Slowpoke-G
 	.2byte ITEM_GALARICA_WREATH @ Battle Frontier;   Postgame: Slowpoke-G
 	.2byte ITEM_SWEET_APPLE                        @ Unused: Applin
@@ -290,18 +290,20 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 @ Mega Stones
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
+	.2byte ITEM_MACHAMPITE
+	.2byte ITEM_CORVIKNITE
+	.2byte ITEM_PIDGEOTITE      @ 0018
 	.2byte ITEM_RAICHUNITE_X    @ 0026
 	.2byte ITEM_RAICHUNITE_Y    @ 0026
+	.2byte ITEM_CLEFABLITE      @ 0036
 	.2byte ITEM_ALAKAZITE       @ 0065
+	.2byte ITEM_GENGARITE       @ 0094
 	.2byte ITEM_STARMINITE      @ 0121
 	.2byte ITEM_PINSIRITE       @ 0127
 	.2byte ITEM_GYARADOSITE     @ 0130
 	.2byte ITEM_HERACRONITE     @ 0214
 	.2byte ITEM_SKARMORITE      @ 0227
 	.2byte ITEM_HOUNDOOMINITE   @ 0229
-	.2byte ITEM_SCEPTILITE      @ 0254
-	.2byte ITEM_BLAZIKENITE     @ 0257
-	.2byte ITEM_SWAMPERTITE     @ 0260
 	.2byte ITEM_GARDEVOIRITE    @ 0282
 	.2byte ITEM_GALLADITE       @ 0282
 	.2byte ITEM_SABLENITE       @ 0302
@@ -320,6 +322,12 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_FROSLASSITE     @ 0362
 	.2byte ITEM_SALAMENCITE     @ 0373
 	.2byte ITEM_METAGROSSITE    @ 0376
+	.2byte ITEM_STARAPTITE      @ 0398
+	.2byte ITEM_CHANDELURITE    @ 0609
+	.2byte ITEM_BARBARACITE     @ 0689
+	.2byte ITEM_HAWLUCHANITE    @ 0701
+	.2byte ITEM_CRABOMINITE     @ 0740
+	.2byte ITEM_DRAMPANITE      @ 0780
 	pokemartlistend
 
 @ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
@@ -330,11 +338,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_CHARIZARDITE_Y  @ 0006
 	.2byte ITEM_BLASTOISINITE   @ 0009
 	.2byte ITEM_BEEDRILLITE     @ 0015
-	.2byte ITEM_PIDGEOTITE      @ 0018
-	.2byte ITEM_CLEFABLITE      @ 0036
 	.2byte ITEM_VICTREEBELITE   @ 0071
 	.2byte ITEM_SLOWBRONITE     @ 0080
-	.2byte ITEM_GENGARITE       @ 0094
 	.2byte ITEM_STEELIXITE      @ 0095
 	.2byte ITEM_KANGASKHANITE   @ 0115
 	.2byte ITEM_SCIZORITE       @ 0123
@@ -342,13 +347,15 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_DRAGONINITE     @ 0149
 	.2byte ITEM_MEWTWONITE_X    @ 0150
 	.2byte ITEM_MEWTWONITE_Y    @ 0150
-	.2byte ITEM_MEGANIUMITE     @ 0154 Battle Frontier
-	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
+	.2byte ITEM_MEGANIUMITE     @ 0154
+	.2byte ITEM_FERALIGITE      @ 0160
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
 	.2byte ITEM_TYRANITARITE    @ 0248
+	.2byte ITEM_SCEPTILITE      @ 0254 Battle Frontier
+	.2byte ITEM_BLAZIKENITE     @ 0257 Battle Frontier
+	.2byte ITEM_SWAMPERTITE     @ 0260 Battle Frontier
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
-	.2byte ITEM_STARAPTITE      @ 0398
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_GARCHOMPITE     @ 0445
 	.2byte ITEM_GARCHOMPITE_Z   @ 0445
@@ -363,7 +370,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_SCOLIPITE       @ 0545
 	.2byte ITEM_SCRAFTINITE     @ 0560
 	.2byte ITEM_EELEKTROSSITE   @ 0604
-	.2byte ITEM_CHANDELURITE    @ 0609
 	.2byte ITEM_GOLURKITE       @ 0623
 	.2byte ITEM_CHESNAUGHTITE   @ 0652
 	.2byte ITEM_DELPHOXITE      @ 0655
@@ -372,14 +378,10 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_FLOETTITE       @ 0670
 	.2byte ITEM_MEOWSTICITE     @ 0678
 	.2byte ITEM_MALAMARITE      @ 0687
-	.2byte ITEM_BARBARACITE     @ 0689
 	.2byte ITEM_DRAGALGITE      @ 0691 Battle Frontier
-	.2byte ITEM_HAWLUCHANITE    @ 0701
 	.2byte ITEM_ZYGARDITE       @ 0718
 	.2byte ITEM_DIANCITE        @ 0719
-	.2byte ITEM_CRABOMINITE     @ 0740
 	.2byte ITEM_GOLISOPITE      @ 0768
-	.2byte ITEM_DRAMPANITE      @ 0780
 	.2byte ITEM_MAGEARNITE      @ 0801
 	.2byte ITEM_ZERAORITE       @ 0807
 	.2byte ITEM_FALINKSITE      @ 0870
@@ -391,20 +393,18 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE       @ Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
 	.2byte ITEM_KINGS_ROCK      @ Postgame: Poliwhirl, Slowpoke
-	.2byte ITEM_ELECTIRIZER     @ Postgame: Electabuzz
 	.2byte ITEM_MAGMARIZER      @ Postgame: Magmar
 	.2byte ITEM_OVAL_STONE      @ Postgame: Happiny
 	.2byte ITEM_RAZOR_FANG      @ Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Postgame: Snesasel, Sneasel-H
 	.2byte ITEM_GALARICA_CUFF   @ Postgame: Slowpoke-G
 	.2byte ITEM_GALARICA_WREATH @ Postgame: Slowpoke-G
 	.2byte ITEM_PEAT_BLOCK      @ Postgame: Ursaring
 	.2byte ITEM_AERODACTYLITE   @ 0142
-	.2byte ITEM_MEGANIUMITE     @ 0154
-	.2byte ITEM_FERALIGITE      @ 0160
 	.2byte ITEM_AMPHAROSITE     @ 0181
+	.2byte ITEM_SCEPTILITE      @ 0254
+	.2byte ITEM_BLAZIKENITE     @ 0257
+	.2byte ITEM_SWAMPERTITE     @ 0260
 	.2byte ITEM_LATIASITE       @ 0380
 	.2byte ITEM_LATIOSITE       @ 0381
 	.2byte ITEM_EXCADRITE       @ 0530

@@ -1250,6 +1250,8 @@ enum NationalDexOrder
     F(STARMIE) \
     F(CHINCHOU) \
     F(LANTURN) \
+    F(TADBULB) \
+    F(BELLIBOLT) \
     F(CARVANHA) \
     F(SHARPEDO) \
     F(NUMEL) \
@@ -1327,6 +1329,7 @@ enum NationalDexOrder
     F(TROPIUS) \
     F(PINSIR) \
     F(HERACROSS) \
+    F(KOMALA) \
     F(DRAMPA) \
     F(MURKROW) \
     F(HONCHKROW) \
@@ -1406,6 +1409,18 @@ enum NationalDexOrder
     F(HAPPINY) \
     F(CHANSEY) \
     F(BLISSEY) \
+    F(TREECKO) \
+    F(GROVYLE) \
+    F(SCEPTILE) \
+    F(TORCHIC) \
+    F(COMBUSKEN) \
+    F(BLAZIKEN) \
+    F(MUDKIP) \
+    F(MARSHTOMP) \
+    F(SWAMPERT) \
+    F(PIPLUP) \
+    F(PRINPLUP) \
+    F(EMPOLEON) \
     F(BLITZLE) \
     F(ZEBSTRIKA) \
     F(MAGBY) \
@@ -1451,8 +1466,6 @@ enum NationalDexOrder
     F(SNEASEL) \
     F(WEAVILE) \
     F(SNEASLER) \
-    F(MORELULL) \
-    F(SHIINOTIC) \
     F(SUNKERN) \
     F(SUNFLORA) \
     F(LEDYBA) \
@@ -1502,7 +1515,6 @@ enum NationalDexOrder
     F(CLAWITZER) \
     F(SKRELP) \
     F(DRAGALGE) \
-    F(PYUKUMUKU) \
     F(DEWPIDER) \
     F(ARAQUANID) \
     F(ARROKUDA) \

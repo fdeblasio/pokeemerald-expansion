@@ -42,11 +42,9 @@ upcoming
 ```
 
 ## Hack-specific:
-- Starters: Machop for Rafi, Corviknight for Kim
-- Make new Machop/Rookidee forms (like with partner Pikachu/Eevee) and edit them to match other starters (BST, evolution levels, etc.)
-    - Figure out forms so they're part of the same Pokedex entry (might be done already?)
+- Figure out starter forms so they're part of the same Pokedex entry (might be done already?)
+- Have Steven give out starter Mega Stones? (with copies available in Lilycove)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
-- Add Machampite/Corviknite to store or Steven
 - Team Admins?: Oleg, Kate, Helen, Cam
 - Rival Kim uses non-flying birds (Psyduck for Water type?)
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
@@ -55,8 +53,10 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update surf/fish encounters
-- Move evolution items/mega stones
-    - Electrizer
+    - More Luvdisc/Alomomola
+        - To a lesser extent, more Arrokuda and Tadbulb
+- Remove Lileep, Treecko, Mudkip, Torchic from Trainers
+    - Meganium, Typhlosion, Feraligatr for postgame
 
 ## To Do (common):
 ### Champions

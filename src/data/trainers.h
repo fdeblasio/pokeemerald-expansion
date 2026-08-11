@@ -378,6 +378,23 @@
     .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_SCEPTILITE : ITEM_SWAMPERTITE), \
     }
 
+#define RIVAL_SECOND_BRENDAN(Location)                                      \
+    {                                                                       \
+    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
+    Location < RIVAL_ROUTE_119 ? SPECIES_NIDORAN_M : (Location < RIVAL_LILYCOVE ? SPECIES_NIDORINO : SPECIES_NIDOKING), \
+    .ability = ABILITY_POISON_POINT,                                        \
+    IVS(18),                                                                \
+    .nickname = COMPOUND_STRING("Arnold"),                                  \
+    }
+
+#define RIVAL_SECOND_MAY(Location)                                          \
+    {                                                                       \
+    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
+    Location < RIVAL_ROUTE_119 ? SPECIES_NIDORAN_F : (Location < RIVAL_LILYCOVE ? SPECIES_NIDORINA : SPECIES_NIDOQUEEN), \
+    .ability = ABILITY_POISON_POINT,                                        \
+    IVS(18),                                                                \
+    }
+
 #define RIVAL_WHISMUR(Location, Rival)                                      \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \

@@ -1294,7 +1294,7 @@
                 "species": "WATTREL"
               },
               {
-                "species": "CHINCHOU"
+                "species": "TADBULB"
               },
               {
                 "species": "CHINCHOU"
@@ -1316,7 +1316,7 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "TADBULB"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1324,7 +1324,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "BELLIBOLT"
               }
             ]
           }
@@ -1846,7 +1846,7 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "CARVANHA"
+                "species": "ARROKUDA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1854,7 +1854,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -1870,7 +1870,7 @@
                 "species": "TROPIUS"
               },
               {
-                "species": "GLOOM"
+                "species": "KOMALA"
               },
               {
                 "species": "PINSIR"
@@ -5702,16 +5702,16 @@
                 "species": "BONSLY"
               },
               {
-                "species": "MORELULL"
+                "species": "TREECKO"
               },
               {
-                "species": "MORELULL"
+                "species": "TREECKO"
               },
               {
-                "species": "MORELULL"
+                "species": "TREECKO"
               },
               {
-                "species": "MORELULL"
+                "species": "TREECKO"
               }
             ]
           },
@@ -5801,13 +5801,13 @@
                 "species": "DEWPIDER"
               },
               {
-                "species": "PYUKUMUKU"
+                "species": "PIPLUP"
               },
               {
-                "species": "PYUKUMUKU"
+                "species": "PIPLUP"
               },
               {
-                "species": "PYUKUMUKU"
+                "species": "PIPLUP"
               }
             ]
           },
@@ -5818,13 +5818,13 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "ARROKUDA"
+                "species": "MUDKIP"
               },
               {
                 "species": "VELUZA"
               },
               {
-                "species": "BARRASKEWDA"
+                "species": "MARSHTOMP"
               },
               {
                 "species": "VELUZA"

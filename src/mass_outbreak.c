@@ -10,21 +10,21 @@
 
 static const struct MassOutbreak sPokeOutbreakSpeciesList[OUTBREAK_COUNT] = {
     [OUTBREAK_ID_ROUTE102] = {
-        .species = SPECIES_TOGEPI,
-        .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
+        .species = SPECIES_KRABBY,
+        .moves = {MOVE_NIGHT_SLASH, MOVE_CRABHAMMER, MOVE_X_SCISSOR, MOVE_SWORDS_DANCE},
         .level = POSTGAME_LEVEL,
         .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE102
+        .location = MAP_ROUTE106
 
     },
     [OUTBREAK_ID_ROUTE114] = {
-        .species = SPECIES_ELEKID,
-        .moves = {MOVE_CROSS_CHOP, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ELECTRIC_TERRAIN},
+        .species = SPECIES_SNEASEL,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_LASH_OUT, MOVE_SNOWSCAPE, MOVE_SWORDS_DANCE},
         .level = POSTGAME_LEVEL,
         .probability = 100,
         .duration = 1,
-        .location = MAP_ROUTE110,
+        .location = MAP_ROUTE121,
     },
     [OUTBREAK_ID_ROUTE117] = {
         .species = SPECIES_MAGBY,

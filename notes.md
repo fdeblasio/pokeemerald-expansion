@@ -55,7 +55,6 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update surf/fish encounters
-- Replace Elekid outbreak
 - Move evolution items/mega stones
     - Electrizer
 

@@ -172,31 +172,31 @@
                 "species": "SQUAWKABILLY_BLUE"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "CUTIEFLY"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "SPRITZEE"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "SWIRLIX"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "SPRITZEE"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "SWIRLIX"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "ORICORIO_PAU"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "ORICORIO_PAU"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "ORICORIO_PAU"
               },
               {
-                "species": "SQUAWKABILLY_BLUE"
+                "species": "ORICORIO_PAU"
               }
             ]
           },
@@ -254,31 +254,31 @@
                 "species": "SQUAWKABILLY_YELLOW"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "FIDOUGH"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "SNUBBULL"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "SNUBBULL"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "CYCLIZAR"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "CYCLIZAR"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "TOGEPI"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "TOGEPI"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "TOGEPI"
               },
               {
-                "species": "SQUAWKABILLY_YELLOW"
+                "species": "TOGEPI"
               }
             ]
           }
@@ -1955,10 +1955,10 @@
                 "species": "MASQUERAIN"
               },
               {
-                "species": "EARLY_BEAST_2 + 1"
+                "species": "AXEW"
               },
               {
-                "species": "EARLY_BEAST_1 + 1"
+                "species": "AXEW"
               },
               {
                 "species": "GLOOM"
@@ -3058,16 +3058,16 @@
                 "species": "CLEFFA"
               },
               {
-                "species": "ZUBAT"
+                "species": "NOIBAT"
               },
               {
-                "species": "ZUBAT"
+                "species": "NOIBAT"
               },
               {
-                "species": "ZUBAT"
+                "species": "NOIBAT"
               },
               {
-                "species": "ZUBAT"
+                "species": "NOIBAT"
               }
             ]
           },
@@ -3140,16 +3140,16 @@
                 "species": "CLEFAIRY"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               }
             ]
           },
@@ -3218,16 +3218,16 @@
                 "species": "CLEFAIRY"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               }
             ]
           },
@@ -3702,16 +3702,16 @@
                 "species": "ELEKID"
               },
               {
-                "species": "VOLTORB"
+                "species": "KLINK"
               },
               {
-                "species": "MAGNEMITE"
+                "species": "KLINK"
               },
               {
-                "species": "PICHU"
+                "species": "KLINK"
               },
               {
-                "species": "ELEKID"
+                "species": "KLINK"
               }
             ]
           }
@@ -3742,16 +3742,16 @@
                 "species": "ELEKID"
               },
               {
-                "species": "VOLTORB"
+                "species": "KLINK"
               },
               {
-                "species": "MAGNEMITE"
+                "species": "KLINK"
               },
               {
-                "species": "PICHU"
+                "species": "KLINK"
               },
               {
-                "species": "ELEKID"
+                "species": "KLINK"
               }
             ]
           }
@@ -4654,25 +4654,25 @@
                 "species": "EISCUE"
               },
               {
+                "species": "CUBCHOO"
+              },
+              {
+                "species": "CUBCHOO"
+              },
+              {
                 "species": "SNORUNT"
               },
               {
                 "species": "EISCUE"
               },
               {
-                "species": "SNORUNT"
+                "species": "CUBCHOO"
               },
               {
-                "species": "EISCUE"
-              },
-              {
-                "species": "SNORUNT"
+                "species": "CUBCHOO"
               },
               {
                 "species": "SPHEAL"
-              },
-              {
-                "species": "SNORUNT"
               },
               {
                 "species": "SPHEAL"
@@ -5702,16 +5702,16 @@
                 "species": "BONSLY"
               },
               {
-                "species": "SNUBBULL"
+                "species": "MORELULL"
               },
               {
-                "species": "SNUBBULL"
+                "species": "MORELULL"
               },
               {
-                "species": "SNUBBULL"
+                "species": "MORELULL"
               },
               {
-                "species": "SNUBBULL"
+                "species": "MORELULL"
               }
             ]
           },

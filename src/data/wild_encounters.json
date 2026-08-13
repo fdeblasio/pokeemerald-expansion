@@ -154,7 +154,7 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "HORSEA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -162,7 +162,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SEADRA"
               }
             ]
           }

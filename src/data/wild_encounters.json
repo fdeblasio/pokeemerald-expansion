@@ -480,10 +480,10 @@
             "encounter_rate": 5,
             "range": "SURF_INITIAL",
             "mons": [
-              {"species": "PELIPPER"},
-              {"species": "TENTACOOL"},
-              {"species": "TENTACOOL"},
-              {"species": "PELIPPER"}
+              {"species": "LUVDISC"},
+              {"species": "LUVDISC"},
+              {"species": "ALOMOMOLA"},
+              {"species": "ALOMOMOLA"}
             ]
           },
           "fishing_mons": {
@@ -536,7 +536,7 @@
             "mons": [
               {"species": "WINGULL"},
               {"species": "STARYU"},
-              {"species": "STARYU"},
+              {"species": "PELIPPER"},
               {"species": "PELIPPER"}
             ]
           },
@@ -1214,10 +1214,10 @@
             "encounter_rate": 4,
             "range": "SURF_INITIAL",
             "mons": [
-              {"species": "LUVDISC"},
-              {"species": "ALOMOMOLA"},
-              {"species": "ALOMOMOLA"},
-              {"species": "ALOMOMOLA"}
+              {"species": "ARROKUDA"},
+              {"species": "PELIPPER"},
+              {"species": "PELIPPER"},
+              {"species": "PELIPPER"}
             ]
           },
           "fishing_mons": {
@@ -1228,19 +1228,19 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "LUVDISC"
-              },
-              {
-                "range": "GOOD_ROD_INITIAL",
                 "species": "ARROKUDA"
               },
               {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "LUVDISC"
+                "range": "GOOD_ROD_INITIAL",
+                "species": "CARVANHA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "BARRASKEWDA"
+              },
+              {
+                "range": "SUPER_ROD_INITIAL",
+                "species": "SHARPEDO"
               }
             ]
           }
@@ -1268,10 +1268,10 @@
             "encounter_rate": 4,
             "range": "ROUTE_119",
             "mons": [
-              {"species": "TENTACOOL"},
-              {"species": "PELIPPER"},
-              {"species": "PELIPPER"},
-              {"species": "PELIPPER"}
+              {"species": "LUVDISC"},
+              {"species": "LUVDISC"},
+              {"species": "ALOMOMOLA"},
+              {"species": "ALOMOMOLA"}
             ]
           },
           "fishing_mons": {
@@ -1286,7 +1286,7 @@
               },
               {
                 "range": "ROUTE_119",
-                "species": "CARVANHA"
+                "species": "LUVDISC"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1294,7 +1294,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "ALOMOMOLA"
               }
             ]
           }
@@ -1324,7 +1324,7 @@
             "mons": [
               {"species": "PSYDUCK"},
               {"species": "GOLDEEN"},
-              {"species": "AZUMARILL"},
+              {"species": "MASQUERAIN"},
               {"species": "MASQUERAIN"}
             ]
           },

@@ -4318,14 +4318,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_DUCKLETT : SPECIES_SWANNA, \
+        .ability = ABILITY_HYDRATION,                                                 \
         .gender = TRAINER_MON_FEMALE,                                                 \
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = SPECIES_MARINA_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),      \
-        .ability = ABILITY_ILLUMINATE,                                                \
+        .species = SPECIES_MARINA_ACE + (Level < WEATHER_INSTITUTE_AQUA_LEVEL ? 0 : 1), \
+        .ability = 0,                                                                 \
+        .gender = TRAINER_MON_FEMALE,                                                 \
         }                                                                             \
     },                                                                                \
 }
@@ -4339,14 +4340,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-        .ability = ABILITY_CLEAR_BODY,                                                     \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_CHINCHOU : SPECIES_LANTURN,     \
+        .ability = ABILITY_WATER_ABSORB,                                                   \
         .gender = TRAINER_MON_MALE,                                                        \
         },                                                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
         .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),            \
-        .ability = ABILITY_SHELL_ARMOR,                                                    \
+        .ability = ABILITY_OBLIVIOUS,                                                      \
         .gender = TRAINER_MON_MALE,                                                        \
         }                                                                                  \
     },                                                                                     \
@@ -4383,8 +4384,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                             \
         {                                                                              \
         .lvl = Level,                                                                  \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD,  \
-        .ability = ABILITY_WATER_VEIL,                                                 \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_LOMBRE : SPECIES_LUDICOLO,  \
+        .ability = ABILITY_SWIFT_SWIM,                                                 \
         .gender = TRAINER_MON_FEMALE,                                                  \
         },                                                                             \
         {                                                                              \
@@ -4400,7 +4401,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define TABITHA_BATTLE(Location, AceLevel, IVs)                                          \
 [DIFFICULTY_NORMAL][TRAINER_TABITHA_##Location] =                                        \
 {                                                                                        \
-    .trainerName = _("Tabitha"),                                                         \
+    .trainerName = _("Cam"),                                                             \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                           \
     .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,                                             \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                     \
@@ -4410,24 +4411,24 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
-        .ability = ABILITY_SAND_VEIL,                                                    \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_ORICORIO_BAILE,                \
+        .ability = ABILITY_DANCER,                                                       \
         IVS(IVs),                                                                        \
-        .gender = TRAINER_MON_MALE,                                                      \
+        .gender = TRAINER_MON_FEMALE,                                                    \
         },                                                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SLUGMA : SPECIES_MAGCARGO,     \
-        .ability = ABILITY_MAGMA_ARMOR,                                                  \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SIZZLIPEDE : SPECIES_CENTISKORCH,\
+        .ability = ABILITY_FLASH_FIRE,                                                   \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_MALE,                                                      \
         },                                                                               \
         {                                                                                \
         .lvl = AceLevel,                                                                 \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,   \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX : SPECIES_NINETALES,    \
         .ability = ABILITY_FLASH_FIRE,                                                   \
         IVS(IVs),                                                                        \
-        .gender = TRAINER_MON_MALE,                                                      \
+        .gender = TRAINER_MON_FEMALE,                                                    \
         }                                                                                \
     },                                                                                   \
 }
@@ -4435,7 +4436,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define COURTNEY_BATTLE(Location, AceLevel, IVs)                                      \
 [DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                    \
 {                                                                                     \
-    .trainerName = _("Courtney"),                                                     \
+    .trainerName = _("Kate"),                                                         \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                        \
     .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                          \
     .gender = TRAINER_GENDER_FEMALE,                                                  \
@@ -4445,24 +4446,24 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
         .lvl = (AceLevel - 2),                                                        \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN,   \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SILICOBRA : SPECIES_SANDACONDA, \
         .ability = 0,                                                                 \
         IVS(IVs),                                                                     \
         .gender = TRAINER_MON_FEMALE,                                                 \
         },                                                                            \
         {                                                                             \
         .lvl = (AceLevel - 2),                                                        \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_BALTOY : SPECIES_CLAYDOL,   \
-        .ability = ABILITY_LEVITATE,                                                  \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_FLETCHINDER : SPECIES_TALONFLAME,   \
+        .ability = ABILITY_FLAME_BODY,                                                  \
         IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_NONE,                                                   \
+        .gender = TRAINER_MON_FEMALE,                                                   \
         },                                                                            \
         {                                                                             \
         .lvl = AceLevel,                                                              \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX : SPECIES_NINETALES, \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,\
         .ability = ABILITY_FLASH_FIRE,                                                \
         IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_FEMALE,                                                 \
+        .gender = TRAINER_MON_MALE,                                                   \
         }                                                                             \
     },                                                                                \
 }
@@ -4470,7 +4471,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
 [DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                     \
 {                                                                                    \
-    .trainerName = _("Shelly"),                                                      \
+    .trainerName = _("Helen"),                                                       \
     .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
     .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                          \
     .gender = TRAINER_GENDER_FEMALE,                                                 \
@@ -4505,7 +4506,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MATT_BATTLE(Location, AceLevel, IVs)        \
 [DIFFICULTY_NORMAL][TRAINER_MATT_##Location] =      \
 {                                                   \
-    .trainerName = _("Matt"),                       \
+    .trainerName = _("Oleg"),                       \
     .trainerClass = TRAINER_CLASS_AQUA_ADMIN,       \
     .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,         \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
@@ -10054,8 +10055,8 @@ TABITHA_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 1, 6),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(CAP_MT_CHIMNEY - 2),
-        MAXIE_BALTOY(CAP_MT_CHIMNEY - 1),
+        MAXIE_TRAPINCH(CAP_MT_CHIMNEY - 2),
+        MAXIE_GOLETT(CAP_MT_CHIMNEY - 1),
         MAXIE_RHYHORN(CAP_MT_CHIMNEY - 1),
         {
         HUMPHREY(CAP_MT_CHIMNEY),
@@ -14907,8 +14908,8 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, CAP_MAGMA_HIDEOUT - 1, 9),
     .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(CAP_MAGMA_HIDEOUT - 2),
-        MAXIE_BALTOY(CAP_MAGMA_HIDEOUT - 1),
+        MAXIE_TRAPINCH(CAP_MAGMA_HIDEOUT - 2),
+        MAXIE_GOLETT(CAP_MAGMA_HIDEOUT - 1),
         MAXIE_RHYHORN(CAP_MAGMA_HIDEOUT - 1),
         {
         HUMPHREY(CAP_MAGMA_HIDEOUT),
@@ -15602,7 +15603,7 @@ TABITHA_BATTLE(SPACE_CENTER, CAP_SPACE_CENTER - 1, 12),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_BALTOY(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
+        MAXIE_GOLETT(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
         MAXIE_RHYHORN(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
         {
         HUMPHREY(CAP_SPACE_CENTER),
@@ -16232,8 +16233,8 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = CAP_SEAFLOOR_CAVERN - 2,
-        .species = SPECIES_GOLDUCK,
-        .ability = ABILITY_DAMP,
+        .species = SPECIES_BARRASKEWDA,
+        .ability = ABILITY_SWIFT_SWIM,
         IVS(18),
         .gender = TRAINER_MON_MALE,
         },

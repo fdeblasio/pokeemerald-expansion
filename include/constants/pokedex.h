@@ -1237,9 +1237,10 @@ enum NationalDexOrder
     F(SWANNA) \
     F(LUVDISC) \
     F(WAILMER) \
+    F(WAILORD) \
+    F(ALOMOMOLA) \
     F(TENTACOOL) \
     F(TENTACRUEL) \
-    F(WAILORD) \
     F(BARBOACH) \
     F(WHISCASH) \
     F(CORPHISH) \
@@ -1324,7 +1325,6 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(MAGNEZONE)) \
     F(VOLTORB) \
     F(ELECTRODE) \
-    F(ALOMOMOLA) \
     F(CRAMORANT) \
     F(TROPIUS) \
     F(PINSIR) \

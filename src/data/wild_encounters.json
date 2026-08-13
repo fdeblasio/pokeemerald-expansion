@@ -377,16 +377,16 @@
             "range": "MOSSDEEP_CITY",
             "mons": [
               {
-                "species": "WAILMER"
+                "species": "TATSUGIRI_CURLY"
               },
               {
-                "species": "WAILMER"
+                "species": "TATSUGIRI_DROOPY"
               },
               {
-                "species": "WAILMER"
+                "species": "TATSUGIRI_STRETCHY"
               },
               {
-                "species": "WAILMER"
+                "species": "TATSUGIRI_STRETCHY"
               }
             ]
           },
@@ -2241,16 +2241,16 @@
             "range": "ROUTE_124",
             "mons": [
               {
-                "species": "TENTACRUEL"
+                "species": "TATSUGIRI_DROOPY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_STRETCHY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_CURLY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_CURLY"
               }
             ]
           },
@@ -2287,16 +2287,16 @@
             "range": "ROUTE_125",
             "mons": [
               {
-                "species": "TENTACRUEL"
+                "species": "TATSUGIRI_STRETCHY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_CURLY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_DROOPY"
               },
               {
-                "species": "PELIPPER"
+                "species": "TATSUGIRI_DROOPY"
               }
             ]
           },
@@ -4410,28 +4410,28 @@
                 "species": "DELIBIRD"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "DELIBIRD"
-              },
-              {
                 "species": "EISCUE"
               },
               {
                 "species": "EISCUE"
               },
               {
-                "species": "GOLBAT"
+                "species": "CETODDLE"
               },
               {
-                "species": "EISCUE"
+                "species": "CETODDLE"
               },
               {
-                "species": "GOLBAT"
+                "species": "SWINUB"
               },
               {
-                "species": "EISCUE"
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
               }
             ]
           }
@@ -4450,28 +4450,28 @@
                 "species": "DELIBIRD"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "DELIBIRD"
-              },
-              {
                 "species": "EISCUE"
               },
               {
                 "species": "EISCUE"
               },
               {
-                "species": "GOLBAT"
+                "species": "CETODDLE"
               },
               {
-                "species": "EISCUE"
+                "species": "CETODDLE"
               },
               {
-                "species": "GOLBAT"
+                "species": "SWINUB"
               },
               {
-                "species": "EISCUE"
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
               }
             ]
           }
@@ -4490,28 +4490,28 @@
                 "species": "DELIBIRD"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "DELIBIRD"
-              },
-              {
                 "species": "EISCUE"
               },
               {
                 "species": "EISCUE"
               },
               {
-                "species": "GOLBAT"
+                "species": "CETODDLE"
               },
               {
-                "species": "EISCUE"
+                "species": "CETODDLE"
               },
               {
-                "species": "GOLBAT"
+                "species": "SWINUB"
               },
               {
-                "species": "EISCUE"
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
               }
             ]
           },
@@ -4572,28 +4572,28 @@
                 "species": "DELIBIRD"
               },
               {
-                "species": "SPHEAL"
-              },
-              {
-                "species": "DELIBIRD"
-              },
-              {
                 "species": "EISCUE"
               },
               {
                 "species": "EISCUE"
               },
               {
-                "species": "GOLBAT"
+                "species": "CETODDLE"
               },
               {
-                "species": "EISCUE"
+                "species": "CETODDLE"
               },
               {
-                "species": "GOLBAT"
+                "species": "SWINUB"
               },
               {
-                "species": "EISCUE"
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
+              },
+              {
+                "species": "SWINUB"
               }
             ]
           },
@@ -6005,13 +6005,13 @@
                 "species": "SNEASEL"
               },
               {
-                "species": "SWINUB"
+                "species": "SMOOCHUM"
               },
               {
                 "species": "SNEASEL"
               },
               {
-                "species": "SWINUB"
+                "species": "SMOOCHUM"
               },
               {
                 "species": "VANILLITE"

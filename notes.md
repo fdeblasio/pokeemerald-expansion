@@ -48,6 +48,9 @@ upcoming
 - Team Admins?: Oleg, Kate, Helen, Cam
 - Rival Kim uses non-flying birds (Psyduck for Water type?)
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
+- Double-check movesets
+    - Add Vega Luvdisc evolution?
+- Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
 - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank

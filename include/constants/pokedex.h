@@ -1249,6 +1249,9 @@ enum NationalDexOrder
     F(SEAKING) \
     F(STARYU) \
     F(STARMIE) \
+    F(HORSEA) \
+    F(SEADRA) \
+    F(KINGDRA) \
     F(CHINCHOU) \
     F(LANTURN) \
     F(TADBULB) \
@@ -1394,9 +1397,6 @@ enum NationalDexOrder
     F(HUNTAIL) \
     F(GOREBYSS) \
     F(RELICANTH) \
-    F(HORSEA) \
-    F(SEADRA) \
-    F(KINGDRA) \
     F(BAGON) \
     F(SHELGON) \
     F(SALAMENCE) \

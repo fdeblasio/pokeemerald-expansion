@@ -227,7 +227,7 @@
             "range": "LILYCOVE_CITY",
             "mons": [
               {"species": "CARVANHA"},
-              {"species": "PELIPPER"},
+              {"species": "STARYU"},
               {"species": "PELIPPER"},
               {"species": "PELIPPER"}
             ]
@@ -640,7 +640,7 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "SURF_INITIAL",
@@ -648,7 +648,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -680,10 +680,10 @@
             "encounter_rate": 1,
             "range": "SURF_INITIAL",
             "mons": [
-              {"species": "TENTACOOL"},
-              {"species": "KILOWATTREL"},
-              {"species": "KILOWATTREL"},
-              {"species": "KILOWATTREL"}
+              {"species": "BINACLE"},
+              {"species": "WATTREL"},
+              {"species": "WATTREL"},
+              {"species": "WATTREL"}
             ]
           },
           "fishing_mons": {
@@ -806,7 +806,7 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "SURF_INITIAL",
@@ -814,7 +814,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -952,7 +952,7 @@
               },
               {
                 "range": "GOOD_ROD_INITIAL",
-                "species": "GOLDEEN"
+                "species": "CORPHISH"
               },
               {
                 "range": "GOOD_ROD_INITIAL",
@@ -960,7 +960,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "CRAWDAUNT"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1428,7 +1428,7 @@
               },
               {
                 "range": "ROUTE_122",
-                "species": "TENTACOOL"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "ROUTE_122",
@@ -1436,7 +1436,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CURSOLA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1616,9 +1616,9 @@
             "range": "ROUTE_127",
             "mons": [
               {"species": "MAGIKARP"},
-              {"species": "TENTACOOL"},
+              {"species": "ARROKUDA"},
               {"species": "WAILMER"},
-              {"species": "TENTACRUEL"},
+              {"species": "BARRASKEWDA"},
               {"species": "WAILORD"}
             ]
           }
@@ -1664,9 +1664,9 @@
             "range": "ROUTE_129",
             "mons": [
               {"species": "MAGIKARP"},
-              {"species": "TENTACOOL"},
+              {"species": "ARROKUDA"},
               {"species": "WAILMER"},
-              {"species": "TENTACRUEL"},
+              {"species": "BARRASKEWDA"},
               {"species": "WAILORD"}
             ]
           }
@@ -1753,9 +1753,9 @@
             "mons": [
               {"species": "MAGIKARP"},
               {"species": "HORSEA"},
-              {"species": "WAILMER"},
+              {"species": "ARROKUDA"},
               {"species": "SEADRA"},
-              {"species": "WAILMER"}
+              {"species": "BARRASKEWDA"}
             ]
           }
         },
@@ -1777,9 +1777,9 @@
             "mons": [
               {"species": "MAGIKARP"},
               {"species": "HORSEA"},
-              {"species": "WAILMER"},
+              {"species": "ARROKUDA"},
               {"species": "SEADRA"},
-              {"species": "WAILMER"}
+              {"species": "BARRASKEWDA"}
             ]
           }
         },

@@ -238,14 +238,14 @@ LilycoveCity_DepartmentStore_4F_Pokemart_StrongTMs:
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                                           Postgame: Growlithe, Growlithe-H, Unused: Cubone, Eevee, Pansear, Capsakid
 	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;                                   Postgame: Poliwhirl, Shellder;    Unused: Eevee, Panpour
-	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass;                      Postgame: Eelektrik;              Unused: Eevee, Charjabug, Tadbulb
+	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass, Tadbulb;             Postgame: Eelektrik;              Unused: Eevee, Charjabug
 	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;                                   Postgame: Voltorb-H;              Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
 	.2byte ITEM_MOON_STONE      @ Hoenn: Nidorina, Nidorino, Clefairy, Jigglypuff, Skitty; Postgame: Ursaring;               Unused: Eevee, Munna
 	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;                                   Postgame: Sunkern, Helioptile;    Unused: Exeggcute, Eevee, Cottonee, Petilil
 	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Togetic, Roselia, Rufflet;               Postgame: N/A;                    Unused: Eevee, Minccino, Floette
 	.2byte ITEM_DUSK_STONE      @ Hoenn: Murkrow;                                          Postgame: N/A;                    Unused: Misdreavus, Lampent, Doublade
 	.2byte ITEM_DAWN_STONE      @ Hoenn: Kirlia and Snorunt
-	.2byte ITEM_ICE_STONE       @ Hoenn: Crabrawler                                        Postgame: Sandshrew-A, Vulpix-A;  Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
+	.2byte ITEM_ICE_STONE       @ Hoenn: Crabrawler, Cetoddle                              Postgame: Sandshrew-A, Vulpix-A;  Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler
 	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler, Haunter, Boldore;     Postgame: Graveler-A;             Unused: Gurdurr, Karrablast, Shelmet, Phantump, Pumpkaboo
 	.2byte ITEM_ELECTIRIZER     @ Hoenn: Electabuzz
 	.2byte ITEM_DRAGON_SCALE    @ Hoenn: Seadra
@@ -324,10 +324,12 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_METAGROSSITE    @ 0376
 	.2byte ITEM_STARAPTITE      @ 0398
 	.2byte ITEM_CHANDELURITE    @ 0609
+	.2byte ITEM_GOLURKITE       @ 0623
 	.2byte ITEM_BARBARACITE     @ 0689
 	.2byte ITEM_HAWLUCHANITE    @ 0701
 	.2byte ITEM_CRABOMINITE     @ 0740
 	.2byte ITEM_DRAMPANITE      @ 0780
+	.2byte ITEM_TATSUGIRINITE   @ 0978
 	pokemartlistend
 
 @ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
@@ -370,7 +372,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_SCOLIPITE       @ 0545
 	.2byte ITEM_SCRAFTINITE     @ 0560
 	.2byte ITEM_EELEKTROSSITE   @ 0604
-	.2byte ITEM_GOLURKITE       @ 0623
 	.2byte ITEM_CHESNAUGHTITE   @ 0652
 	.2byte ITEM_DELPHOXITE      @ 0655
 	.2byte ITEM_GRENINJITE      @ 0658
@@ -387,7 +388,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_FALINKSITE      @ 0870
 	.2byte ITEM_SCOVILLAINITE   @ 0952
 	.2byte ITEM_GLIMMORANITE    @ 0970
-	.2byte ITEM_TATSUGIRINITE   @ 0978
 	.2byte ITEM_BAXCALIBRITE    @ 0998
 	pokemartlistend
 

@@ -375,7 +375,7 @@
     .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                                 \
     PERFECT_IVS,                                                                                                 \
     .gender = Rival,                                                                                             \
-    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_SCEPTILITE : ITEM_SWAMPERTITE), \
+    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_MACHAMPITE : ITEM_CORVIKNITE), \
     }
 
 #define RIVAL_SECOND_BRENDAN(Location)                                      \
@@ -3901,7 +3901,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         STEVEN_SKARMORY(88),
-        STEVEN_CLAYDOL(88),
+        STEVEN_COPPERAJAH(88),
         STEVEN_JIRACHI(88),
         {
         STEVEN_MAWILE(89),
@@ -5463,7 +5463,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 6,
-        .species = WATER_STARTER,
+        .species = SPECIES_DUCKLETT,
         }
     },
 },
@@ -9894,7 +9894,7 @@ COURTNEY_BATTLE(METEOR_FALLS, CAP_METEOR_FALLS, 3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_BLAZIKEN,
+        .species = SPECIES_HARIYAMA,
         IVS(17),
         },
         {
@@ -16671,7 +16671,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_BLAZIKEN,
+        .species = SPECIES_SIRFETCHD,
         }
     },
 },
@@ -17917,7 +17917,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
         },
         {
         .lvl = POSTGAME_LEVEL - 2,
-        .species = SPECIES_FERALIGATR,
+        .species = SPECIES_EMPOLEON,
         }
     },
 },

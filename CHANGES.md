@@ -3375,6 +3375,7 @@
     - Theoretically learn Bolt Beak by Egg Move, although nothing can pass it down
 
 - Flittle:
+    - Ability: Anticipation->Opportunist
     - Learns Psychic by level up
 
 - Espathra:

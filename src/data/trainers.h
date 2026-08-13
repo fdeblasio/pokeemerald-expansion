@@ -4307,6 +4307,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,     \
     }
 
+#define WEATHER_INSTITUTE_AQUA_LEVEL CAP_WEATHER - 4
 #define AQUA_HIDEOUT_LEVEL CAP_AQUA_HIDEOUT - 4
 #define SEAFLOOR_CAVERN_LEVEL CAP_SEAFLOOR_CAVERN - 3
 
@@ -4412,7 +4413,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_ORICORIO_BAILE,                \
+        .species = SPECIES_ORICORIO_BAILE,                                               \
         .ability = ABILITY_DANCER,                                                       \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_FEMALE,                                                    \
@@ -12920,7 +12921,6 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 },
 
 // Weather Institute
-#define WEATHER_INSTITUTE_AQUA_LEVEL CAP_WEATHER - 4
 NERISSA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 BERYL_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 MALIK_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),

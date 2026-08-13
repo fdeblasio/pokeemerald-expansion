@@ -42,26 +42,36 @@ upcoming
 ```
 
 ## Hack-specific:
-- Figure out starter forms so they're part of the same Pokedex entry (might be done already?)
 - Have Steven give out starter Mega Stones? (with copies available in Lilycove)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
-- Team Admins?: Oleg, Kate, Helen, Cam
-- Rival Kim uses non-flying birds (Psyduck for Water type?)
-- Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
-- Double-check movesets
-    - Add Vega Luvdisc evolution?
-- Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
-- Update rival battle macro since starters no longer share a type with grass/water/fire
+- Update Rival battles:
+    - Rival Kim uses non-flying birds (Psyduck for Water type?)
+    - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank
-- Double check Mega Stones
-    - Absolite-Z, Tatusigiri, Golurk, although none of them have abilities
+- Update Gym leaders/Elite Four
+    - Update TMs
+    - Check Steven's Copperajah note
+- Double-check added Pokemon movesets
+    - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
+- Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
+    - Add Vega Luvdisc evolution? (Valentide)
+- Figure out Mega Absol Z and Mega Tatusigiri abilities
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
-        - To a lesser extent, more Arrokuda and Tadbulb
+        - To a lesser extent, more Tadbulb
+- Added Dracozolt/Arctozolt (Fossilized BIRD)?
 - Update legendaries?
-- Remove Lileep, Treecko, Mudkip, Torchic from Trainers
-    - Meganium, Typhlosion, Feraligatr for postgame
+    - Legendary birds
+    - Galarian legendary birds
+    - Tornadus-T
+    - Yveltal
+    - Fezandipiti
+    - Tapu Koko
+    - Iron Bundle
+- Remove Lileep, Treecko, Mudkip, Torchic lines from Trainers
+    - Most will be removed when Gyms are redone
+    - Jackson's Treecko is the only one not in a Gym
 
 ## To Do (common):
 ### Champions

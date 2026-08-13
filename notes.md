@@ -788,20 +788,21 @@ upcoming
     - Replace green with yellow on player sprites?
     - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
 - Hoenn Plus branch?
-  - In addition to Houndoom and Cursola, adds a couple extra Pokemon to flesh out teams and pre-put common Pokemon in for hacks
-    - Floatzel for Tubers
-    - Accelgor for Ninja Boys
-    - Clefable/Noivern in Meteor Falls for extra Fairy/Flying types?
-    - Kilowattrel/Cramorant for extra beach birds?
-    - Druddigon/Drampa/Haxorus for extra Dragon types?
-      - Some Ace Trainer should have a team of pseudo-pseudos of Flygon/Aggron/Haxorus
-    - Bombirder/Flamigo for extra flying types?
-    - Comfey for Fairy/tropical?
-    - Togekiss for Fairy?
-    - Araquanid as Masquerain's counterpart?
-    - Cyclizar for Dragon/Cyclists?
-    - Klinklang for Steel/Cyclists?
-    - Krabby/Crabrawler for Dewford sand?
+    - Pokedex reordered to match encounter order
+    - In addition to Houndoom and Cursola, adds a couple extra Pokemon to flesh out teams and pre-put common Pokemon in for hacks
+        - Floatzel for Tubers
+        - Accelgor for Ninja Boys
+        - Clefable/Noivern in Meteor Falls for extra Fairy/Flying types?
+        - Kilowattrel/Cramorant for extra beach birds?
+        - Druddigon/Drampa/Haxorus for extra Dragon types?
+          - Some Ace Trainer should have a team of pseudo-pseudos of Flygon/Aggron/Haxorus
+        - Bombirder/Flamigo for extra flying types?
+        - Comfey for Fairy/tropical?
+        - Togekiss for Fairy?
+        - Araquanid as Masquerain's counterpart?
+        - Cyclizar for Dragon/Cyclists?
+        - Klinklang for Steel/Cyclists?
+        - Krabby/Crabrawler for Dewford sand?
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, Comfey, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon

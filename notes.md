@@ -48,13 +48,15 @@ upcoming
 - Team Admins?: Oleg, Kate, Helen, Cam
 - Rival Kim uses non-flying birds (Psyduck for Water type?)
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
-- Adam Gengar?
 - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank
+- Double check Mega Stones
+    - Absolite-Z, Tatusigiri, Golurk, although none of them have abilities
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Arrokuda and Tadbulb
+- Update legendaries?
 - Remove Lileep, Treecko, Mudkip, Torchic from Trainers
     - Meganium, Typhlosion, Feraligatr for postgame
 

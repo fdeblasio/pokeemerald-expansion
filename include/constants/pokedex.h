@@ -1372,11 +1372,17 @@ enum NationalDexOrder
     F(NATU) \
     F(XATU) \
     F(HAWLUCHA) \
+    F(TATSUGIRI) \
     F(SPHEAL) \
     F(SEALEO) \
     F(WALREIN) \
+    F(SWINUB) \
+    F(PILOSWINE) \
+    F(MAMOSWINE) \
     F(DELIBIRD) \
     F(EISCUE) \
+    F(CETODDLE) \
+    F(CETITAN) \
     F(SNORUNT) \
     F(GLALIE) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(FROSLASS)) \
@@ -1456,9 +1462,8 @@ enum NationalDexOrder
     F(WOOPER) \
     F(QUAGSIRE) \
     F(CLODSIRE) \
-    F(SWINUB) \
-    F(PILOSWINE) \
-    F(MAMOSWINE) \
+    F(SMOOCHUM) \
+    F(JYNX) \
     F(TEDDIURSA) \
     F(URSARING) \
     F(URSALUNA) \

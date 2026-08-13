@@ -4521,7 +4521,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_YAMASK_GALAR
 #define MAXIE_STUNFISK
 #define MAXIE_STUNFISK_ALOLA
-#define MAXIE_GOLETT
+
+#define MAXIE_GOLETT(Level)                                  \
+    {                                                        \
+    TEAM_LEADER_SUPPORTING_MON(Level),                       \
+    .species = Level < 43 ? SPECIES_GOLETT : SPECIES_GOLURK, \
+    .ability = ABILITY_IRON_FIST,                            \
+    .gender = TRAINER_MON_NONE,                              \
+    }
+
 #define MAXIE_MUDBRAY
 #define MAXIE_SILICOBRA
 #define MAXIE_TOEDSCOOL

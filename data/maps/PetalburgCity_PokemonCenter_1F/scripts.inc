@@ -36,18 +36,18 @@ PetalburgCity_PokemonCenter_1F_EventScript_Woman::
 PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo::
 	checkplayergender
 	call_if_eq VAR_RESULT, 0, PetalburgCity_PokemonCenter_1F_EventScript_SayMachopType
-	call_if_eq VAR_RESULT, 1, PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType
+	call_if_eq VAR_RESULT, 1, PetalburgCity_PokemonCenter_1F_EventScript_SayRookideeType
 	release
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_SayMachopType::
-	bufferspeciesname STR_VAR_1, GRASS_STARTER
+	bufferspeciesname STR_VAR_1, SPECIES_RAFI_STARTER
 	msgbox PetalburgCity_PokemonCenter_1F_Text_MachopIsFightingType, MSGBOX_DEFAULT
 	return
 
-PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType::
-	bufferspeciesname STR_VAR_1, FIRE_STARTER
-	msgbox PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType, MSGBOX_DEFAULT
+PetalburgCity_PokemonCenter_1F_EventScript_SayRookideeType::
+	bufferspeciesname STR_VAR_1, SPECIES_KIM_STARTER
+	msgbox PetalburgCity_PokemonCenter_1F_Text_RookideeIsFlyingType, MSGBOX_DEFAULT
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
@@ -75,10 +75,10 @@ PetalburgCity_PokemonCenter_1F_Text_MachopIsFightingType:
 	.string "But, it's weak against Fairy-type\n"
 	.string "Pokémon.$"
 
-PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
+PetalburgCity_PokemonCenter_1F_Text_RookideeIsFlyingType:
 	.string "For example, your {STR_VAR_1}\n"
-	.string "is a Fire type.\p"
+	.string "is a Flying type.\p"
 	.string "It's strong against the Grass and\n"
 	.string "Bug types.\p"
-	.string "But, it's weak against Water-type\n"
+	.string "But, it's weak against Rock-type\n"
 	.string "Pokémon.$"

@@ -1421,7 +1421,7 @@
 - Spearow (not in Emerald):
     - Type: Normal/Flying->Flying
 
-- Fearow: (not in Emerald)
+- Fearow (not in Emerald):
     - Type: Normal/Flying->Flying
     - HP: 65->70
     - Atk: 90->95
@@ -4387,7 +4387,7 @@
 - Lurantis:
     - Learns Superpower and Seed Bomb by level up
 
-- Morelull/ShiinoticL
+- Morelull/Shiinotic:
     - Learn Fairy Wind and Draining Kiss by level up
 
 - Salandit:

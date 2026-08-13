@@ -476,7 +476,7 @@
 }
 
 RIVAL_BATTLES(BRENDAN, RAFI, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
-RIVAL_BATTLES(MAY, KIM, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
+RIVAL_BATTLES(MAY, KIM, FLITTLE, ESPATHRA, OPPORTUNIST, PSYDUCK, GOLDUCK, CLOUD_NINE),
 
 #define ENDGAME_REMATCH_2_LEVEL 80
 #define ENDGAME_REMATCH_3_LEVEL 85
@@ -763,7 +763,7 @@ WALLY_REMATCH(4),
 
 #define ROXANNE_INFO                 \
     LEADER_INFO(ROXANNE),            \
-    .trainerName = _("Roxanne"),     \
+    .trainerName = _("Maribel"),     \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
@@ -1002,7 +1002,7 @@ ROXANNE_REMATCH(4),
 
 #define BRAWLY_INFO             \
     LEADER_INFO(BRAWLY),        \
-    .trainerName = _("Brawly"), \
+    .trainerName = _("Adam"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_BRAWLY_1] =
@@ -1229,8 +1229,9 @@ BRAWLY_REMATCH(4),
 
 #define WATTSON_INFO             \
     LEADER_INFO(WATTSON),        \
-    .trainerName = _("Wattson"), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+    .trainerName = _("Linda"), \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_WATTSON_1] =
 {
@@ -1513,7 +1514,7 @@ WATTSON_REMATCH(4),
 
 #define FLANNERY_INFO             \
     LEADER_INFO(FLANNERY),        \
-    .trainerName = _("Flannery"), \
+    .trainerName = _("Helene"), \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
@@ -1719,7 +1720,7 @@ FLANNERY_REMATCH(4),
 
 #define NORMAN_INFO             \
     LEADER_INFO(NORMAN),        \
-    .trainerName = _("Norman"), \
+    .trainerName = _("Eric"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_NORMAN_1] =
@@ -2000,9 +2001,8 @@ NORMAN_REMATCH(4),
 
 #define WINONA_INFO             \
     LEADER_INFO(WINONA),        \
-    .trainerName = _("Winona"), \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+    .trainerName = _("Yunda"), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_WINONA_1] =
 {
@@ -2237,8 +2237,9 @@ WINONA_REMATCH(3),
 WINONA_REMATCH(4),
 
 #define TATE_AND_LIZA_INFO                                   \
-    LEADER_INFO(TATE_AND_LIZA) | AI_FLAG_DOUBLE_ACE_POKEMON, \
-    .trainerName = _("Tate&Liza"),                           \
+    LEADER_INFO(TATE_AND_LIZA), \
+    .trainerName = _("Ivanna"),                           \
+    .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =
@@ -2489,7 +2490,7 @@ TATE_AND_LIZA_REMATCH(4),
 
 #define JUAN_INFO             \
     LEADER_INFO(JUAN),        \
-    .trainerName = _("Juan"), \
+    .trainerName = _("Pat"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_JUAN_1] =
@@ -2770,7 +2771,8 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_INFO                \
     ELITE_FOUR_INFO(SIDNEY, DARK), \
-    .trainerName = _("Sidney"),    \
+    .trainerName = _("Thuy"),    \
+    .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 // Also ITEM_ABSOLITE_Z
@@ -2992,10 +2994,9 @@ JUAN_REMATCH(4),
     },
 },
 
-#define PHOEBE_INFO                  \
-    ELITE_FOUR_INFO(PHOEBE, GHOST),  \
-    .trainerName = _("Phoebe"),      \
-    .gender = TRAINER_GENDER_FEMALE, \
+#define PHOEBE_INFO                 \
+    ELITE_FOUR_INFO(PHOEBE, GHOST), \
+    .trainerName = _("Brian"),      \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define PHOEBE_DUSKNOIR(Rematch, Tier)                                              \
@@ -10067,7 +10068,7 @@ TABITHA_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 1, 6),
 // Jagged Pass
 [DIFFICULTY_NORMAL][TRAINER_ERIC] =
 {
-    .trainerName = _("Eric"),
+    .trainerName = _("Ricard"),
     HIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -11238,7 +11239,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 
 [DIFFICULTY_NORMAL][TRAINER_HELENE] =
 {
-    .trainerName = _("Helene"),
+    .trainerName = _("Helena"),
     BATTLE_GIRL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -13735,7 +13736,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_PAT] =
 {
-    .trainerName = _("Pat"),
+    .trainerName = _("Juan"),
     POKEMON_BREEDER_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .party = (const struct TrainerMon[]) {
@@ -16645,7 +16646,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 // Route 133
 [DIFFICULTY_NORMAL][TRAINER_LINDA] =
 {
-    .trainerName = _("Linda"),
+    .trainerName = _("Colleen"),
     SWIMMER_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -21831,7 +21832,7 @@ RIVAL_BATTLES(WATER),
 
 [DIFFICULTY_NORMAL][TRAINER_HIKER_ERIC] =
 {
-    .trainerName = _("Eric"),
+    .trainerName = _("Ricard"),
     HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,

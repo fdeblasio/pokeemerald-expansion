@@ -135,14 +135,12 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
     u32 genderValue = 0;
     if (trainer->trainerPic == TRAINER_PIC_LEADER_NORMAN && trainerMon->species == SPECIES_SPINDA)
         genderValue = 0x8888D7D9;
-    else if (trainerMon->gender == TRAINER_MON_RANDOM_GENDER)
-        genderValue = LocalRandom32(&trainer->localRngState) & 0x000000FF;
     else if (trainerMon->gender == TRAINER_MON_MALE)
         genderValue = GeneratePersonalityForGender(MON_MALE, trainerMon->species);
     else if (trainerMon->gender == TRAINER_MON_FEMALE)
         genderValue = GeneratePersonalityForGender(MON_FEMALE, trainerMon->species);
     else
-        errorf("Unkwown trainer mon gender value %d", trainerMon->gender);
+        genderValue = LocalRandom32(&trainer->localRngState) & 0x000000FF;
     personality |= genderValue;
     ModifyPersonalityForNature(&personality, trainerMon->nature);
     CreateMon(mon, trainerMon->species, trainerMon->lvl, personality, trainer->otID);

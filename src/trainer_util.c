@@ -133,7 +133,7 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
     u32 data;
     u32 personality = (LocalRandom32(&trainer->localRngState) & 0xFFFFDF00) + 0x1000;
     u32 genderValue = 0;
-    if (trainer->trainerPic == TRAINER_PIC_LEADER_NORMAN && trainerMon->species == SPECIES_SPINDA)
+    if (trainer->trainerPic == TRAINER_PIC_LEADER_ERIC && trainerMon->species == SPECIES_SPINDA)
         genderValue = 0x8888D7D9;
     else if (trainerMon->gender == TRAINER_MON_MALE)
         genderValue = GeneratePersonalityForGender(MON_MALE, trainerMon->species);

@@ -1719,7 +1719,7 @@ FLANNERY_REMATCH(3),
 FLANNERY_REMATCH(4),
 
 #define NORMAN_INFO             \
-    LEADER_INFO(NORMAN),        \
+    LEADER_INFO(ERIC),        \
     .trainerName = _("Eric"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 

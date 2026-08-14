@@ -25,7 +25,7 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	end
 
 RustboroCity_Gym_EventScript_GiveRockTomb::
-	giveitem ITEM_TM_ROCK_TOMB
+	giveitem ITEM_TM_DRAINING_KISS
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
@@ -115,11 +115,11 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "But Gym Leaders aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
-	.string "Roxanne, the Gym Leader, is a user\n"
-	.string "of Rock-type Pokémon.\p"
-	.string "The Rock type is very durable, but\n"
-	.string "it can't stand Water-type and\l"
-	.string "Grass-type moves.\p"
+	.string "Maribel, the Gym Leader, is a user\n"
+	.string "of Fairy-type Pokémon.\p"
+	.string "The Fairy type is very durable, but\n"
+	.string "it can't stand Steel-type and\l"
+	.string "Poison-type moves.\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the Gym Leader.\p"
 	.string "Well, go for it!$"
@@ -129,7 +129,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
 	.string "Check your Trainer Card.\p"
-	.string "The Stone Badge you got should be\n"
+	.string "The Fairy Badge you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
@@ -144,25 +144,25 @@ RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the Rock\n"
+	.string "You haven't seen anything of the Fairy\n"
 	.string "type's terrifying power!$"
 
 RustboroCity_Gym_Text_TommyIntro:
 	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against Roxanne!$"
+	.string "a chance against Maribel!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
 	.string "Wow! You've got some potential!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "Roxanne is stronger than me by\n"
+	.string "Maribel is stronger than me by\n"
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
 
 RustboroCity_Gym_Text_MarciaIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
-	.string "My Rock Pokémon need room to\n"
+	.string "My Fairy Pokémon need room to\n"
 	.string "rampage!$"
 
 RustboroCity_Gym_Text_MarciaDefeat:
@@ -172,10 +172,10 @@ RustboroCity_Gym_Text_MarciaDefeat:
 RustboroCity_Gym_Text_MarciaPostBattle:
 	.string "I have to hand it to our Leader.\p"
 	.string "It took smarts and sense for her to\n"
-	.string "pick the Rock type at her young age.$"
+	.string "pick the Fairy type.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am Roxanne, the Rustboro\n"
+	.string "Hello, I am Maribel, the Rustboro\n"
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
 	.string "apply what I learned at the Pokémon\l"
@@ -183,7 +183,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which Pokémon?$"
 
-RustboroCity_Gym_Text_RoxanneDefeat:
+RustboroCity_Gym_Text_MaribelDefeat:
 	.string "So…\n"
 	.string "I lost…\p"
 	.string "It seems that I still have much more\n"
@@ -193,22 +193,22 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "that Trainers are to be given this\l"
 	.string "if they defeat a Gym Leader.\p"
 	.string "Please accept the official Pokémon\n"
-	.string "League Stone Badge.$"
+	.string "League Fairy Badge.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the Stone Badge\n"
-	.string "from Roxanne.$"
+	.string "{PLAYER} received the Fairy Badge\n"
+	.string "from Maribel.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The Stone Badge heightens the Attack\n"
+	.string "The Fairy Badge heightens the Attack\n"
 	.string "power of your Pokémon.\p"
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That Technical Machine, TM39,\n"
-	.string "contains Rock Tomb.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers Speed.\p"
+	.string "That Technical Machine, TM080,\n"
+	.string "contains Draining Kiss.\p"
+	.string "It not only inflicts damage\n"
+	.string ", it also heals you.\p"
 	.string "If you use a TM, it instantly teaches\n"
 	.string "the move to a Pokémon.$"
 
@@ -223,15 +223,15 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "Rustboro City Pokémon Gym\p"
-	.string "Roxanne's Certified Trainers:\n"
+	.string "Maribel's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "Roxanne: Oh, hello, {PLAYER}?\n"
-	.string "This is Roxanne of Rustboro City.\p"
-	.string "I heard from Brawly that you're\n"
+	.string "Maribel: Oh, hello, {PLAYER}?\n"
+	.string "This is Maribel of Rustboro City.\p"
+	.string "I heard from Adam that you're\n"
 	.string "moving up through the ranks of\l"
 	.string "Trainers at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
@@ -244,11 +244,11 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … Click!$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered Gym Leader Roxanne\n"
+	.string "Registered Gym Leader Maribel\n"
 	.string "in the PokéNav.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "Roxanne: I'm so glad to see you again.\n"
+	.string "Maribel: I'm so glad to see you again.\n"
 	.string "I'm Roxanne, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
@@ -260,13 +260,13 @@ RustboroCity_Gym_Text_RoxanneRematchDefeat:
 	.string "Again, I have lost…$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "Roxanne: I still have much to learn\n"
+	.string "Maribel: I still have much to learn\n"
 	.string "when it comes to battling Pokémon.\p"
 	.string "That awareness makes me love battling\n"
 	.string "all that much more!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "Roxanne: I'm so glad to see you again.\n"
+	.string "Maribel: I'm so glad to see you again.\n"
 	.string "I'm Roxanne, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"

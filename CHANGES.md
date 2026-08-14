@@ -29,11 +29,6 @@
     - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
     - Pokémon have a more even encounter distribution
     - Route 104's northen section has different encounters than the southern section
-    - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
-    - Juan gives out Liquidation instead of Water Pulse (Water Pulse can be found in Slateport)
-    - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
-    - Galarian Corsola and Cursola were added to the Hoenn Pokédex
-    - Regieleki, Regidrago, and Regigigas were added to the Hoenn Pokédex
     - Safari Zone:
         - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
         - Pokémon in the Safari Zone can't flee
@@ -157,28 +152,28 @@
 |          BOSSES           |        VANILLA       |    UPDATED    |
 |:-------------------------:|:--------------------:|:-------------:|
 |Rival Route 103            |5||
-|Roxanne                    |12, 12, 15            |11, 11, 13|
+|Gym Leader 1               |12, 12, 15||
 |Rival Rustboro             |13, 15||
-|Brawly                     |16, 16, 19            |16, 16, 18|
+|Gym Leader 2               |16, 16, 19            |16, 16, 18|
 |Archie Oceanic Museum      |N/A                   |17, 17, 19|
 |Rival Route 110            |18, 18, 20||
 |Wally Mauville             |16                    |19|
 |Wally Verdanturf           |N/A                   |21, 23|
-|Wattson                    |20, 22, 22, 24||
+|Gym Leader 3               |20, 22, 22, 24||
 |Wally Route 114            |N/A                   |25, 25, 27|
 |Courtney Meteor Falls      |N/A                   |26, 26, 28|
 |Tabitha Mt. Chimney        |18, 20, 22, 22        |27, 27, 29|
 |Maxie Mt. Chimney          |24, 24, 25            |28, 29, 29, 30|
-|Flannery                   |24, 24, 26, 29        |28, 30, 30, 32|
-|Norman                     |27, 27, 29, 31        |31, 33, 33, 35|
+|Gym Leader 4               |24, 24, 26, 29        |28, 30, 30, 32|
+|Gym Leader 5               |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly Weather Institute   |28, 28                |39, 39, 41|
 |Rival Route 119            |29, 29, 31            |40, 40, 41, 42|
-|Winona                     |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
+|Gym Leader 6               |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
 |Rival Lilycove             |31, 32, 32, 34        |43, 43, 43, 44, 45|
 |Tabitha Magma Hideout      |26, 28, 30, 33        |45, 45, 47|
 |Maxie Magma Hideout        |37, 38, 39            |46, 47, 47, 48|
 |Matt Aqua Hideout          |34, 34                |47, 47, 49|
-|Tate/Liza                  |41, 41, 42, 42        |49, 49, 51, 51|
+|Gym Leader 7               |41, 41, 42, 42        |49, 49, 51, 51|
 |Courtney Space Center      |N/A                   |50, 50, 52|
 |Tabitha/Maxie Space Center |36, 38, 40/42, 43, 44 |50, 50, 52/52, 52, 53|
 |Matt/Shelly Seafloor Cavern|N/A/37, 37            |52, 52, 54/52, 52, 54|
@@ -186,14 +181,14 @@
 |Regirock/Regice/Registeel  |40                    |55|
 |Regieleki/Regidrago        |N/A                   |55|
 |Regigigas                  |N/A                   |60|
-|Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
+|Gym Leader 8               |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                   |70                    |60|
 |Wally Victory Road         |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
-|Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 63|
-|Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 64|
-|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 65|
-|Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
-|Wallace                    |55, 56, 56, 56, 57, 58|67, 67, 67, 67, 68, 69|
+|Elite Four 1               |46, 46, 48, 48, 49    |60, 60, 61, 61, 63|
+|Elite Four 2               |48, 49, 49, 50, 51    |61, 61, 62, 62, 64|
+|Elite Four 3               |50, 50, 52, 52, 53    |62, 62, 63, 63, 65|
+|Elite Four 4               |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
+|Champion                   |55, 56, 56, 56, 57, 58|67, 67, 67, 67, 68, 69|
 |Groudon/Kyogre             |70||
 |Latios/Latias              |40                    |70|
 |Mew                        |N/A                   |70|
@@ -203,27 +198,8 @@
 |Gym Leader/Wally rematch 2 |Various               |80, 80, 80, 83, 83, 85|
 |Gym Leader/Wally rematch 3 |Various               |85, 85, 85, 88, 88, 90|
 |Elite Four rematches       |N/A                   |87, 87, 87, 88, 88, 90|
-|Wallace rematches          |N/A                   |88, 88, 88, 88, 89, 90|
+|Champion rematches         |N/A                   |88, 88, 88, 88, 89, 90|
 |Steven                     |75, 76, 76, 76, 77, 78|88, 88, 88, 89, 89, 90|
-
-#### Bosses (FireRed):
-|          BOSSES           |        VANILLA       |    UPDATED    |
-|:-------------------------:|:--------------------:|:-------------:|
-|Rival Oak's Lab            |5||
-|Rival Route 22             |9, 9                  |7, 7|
-
-|Roxanne                    |12, 12, 15            |11, 11, 13|
-|Rival Rustboro             |13, 15||
-|Brawly                     |16, 16, 19            |16, 16, 18|
-|Archie Oceanic Museum      |N/A                   |17, 17, 19|
-|Rival Route 110            |18, 18, 20||
-|Wally Mauville             |16                    |19|
-|Wally Verdanturf           |N/A                   |21, 23|
-|Wattson                    |20, 22, 22, 24||
-|Wally Route 114            |N/A                   |25, 25, 27|
-|Courtney Meteor Falls      |N/A                   |26, 26, 28|
-|Tabitha Mt. Chimney        |18, 20, 22, 22        |27, 27, 29|
-|Maxie Mt. Chimney          |24, 24, 25            |28, 29, 29, 30|
 
 ### Berries:
 - All berries: min and max yields have been boosted to a minimum of 3/6
@@ -294,7 +270,7 @@
 |TM036|Sludge Bomb|Dewford|
 |TM037|Sandstorm|Route 111|
 |TM038|Fire Blast|Lilycove Department Store|
-|TM039|Rock Tomb|Roxanne|
+|TM039|Rock Tomb|Slateport TM Shop|
 |TM040|Aerial Ace|Winona|
 |TM041|Torment|Slateport|
 |TM042|Facade|Norman|
@@ -335,7 +311,7 @@
 |TM077|Vacuum Wave|Mauville TM Shop|
 |TM078|Icicle Spear|Mauville TM Shop|
 |TM079|Poison Tail|Mauville TM Shop|
-|TM080|Draining Kiss|Mauville TM Shop|
+|TM080|Draining Kiss|Rustboro Gym Leader|
 |TM081|Electroweb|Mauville TM Shop|
 |TM082|Icy Wind|Mauville TM Shop|
 |TM083|Mud Shot|Mauville TM Shop|

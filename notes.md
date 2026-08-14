@@ -42,6 +42,7 @@ upcoming
 ```
 
 ## Hack-specific:
+- Implement level caps?
 - Have Steven give out starter Mega Stones? (with copies available in Lilycove)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
 - Update Rival battles:
@@ -54,11 +55,12 @@ upcoming
     - Update TMs
     - Eric Spinda pattern
     - Check Steven's Copperajah note
+    - Use PokeTom Lavaridge map
 - Double-check added Pokemon movesets
     - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Add Vega Luvdisc evolution? (Valentide)
-- Figure out Mega Absol Z and Mega Tatusigiri abilities
+- Figure out and Mega Tatusigiri ability
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb

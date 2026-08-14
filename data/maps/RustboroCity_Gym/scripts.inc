@@ -183,7 +183,7 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which Pokémon?$"
 
-RustboroCity_Gym_Text_MaribelDefeat:
+RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
 	.string "I lost…\p"
 	.string "It seems that I still have much more\n"
@@ -207,8 +207,8 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That Technical Machine, TM080,\n"
 	.string "contains Draining Kiss.\p"
-	.string "It not only inflicts damage\n"
-	.string ", it also heals you.\p"
+	.string "It not only inflicts damage,\n"
+	.string "it also heals you.\p"
 	.string "If you use a TM, it instantly teaches\n"
 	.string "the move to a Pokémon.$"
 

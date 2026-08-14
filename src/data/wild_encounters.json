@@ -2005,8 +2005,8 @@
               {"species": "CLEFFA"},
               {"species": "NOIBAT"},
               {"species": "NOIBAT"},
-              {"species": "NOIBAT"},
-              {"species": "NOIBAT"}
+              {"species": "WOOBAT"},
+              {"species": "WOOBAT"}
             ]
           },
           "water_mons": {
@@ -2059,8 +2059,8 @@
               {"species": "CLEFAIRY"},
               {"species": "NOIVERN"},
               {"species": "NOIVERN"},
-              {"species": "NOIVERN"},
-              {"species": "NOIVERN"}
+              {"species": "SWOOBAT"},
+              {"species": "SWOOBAT"}
             ]
           },
           "water_mons": {
@@ -2099,8 +2099,8 @@
               {"species": "CLEFAIRY"},
               {"species": "NOIVERN"},
               {"species": "NOIVERN"},
-              {"species": "NOIVERN"},
-              {"species": "NOIVERN"}
+              {"species": "SWOOBAT"},
+              {"species": "SWOOBAT"}
             ]
           },
           "water_mons": {

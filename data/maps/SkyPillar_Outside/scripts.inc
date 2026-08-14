@@ -140,7 +140,7 @@ SkyPillar_Outside_Text_DoorIsClosed:
 	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "Wallace: Oh, my, I'm terribly sorry!\p"
+	.string "Frank: Oh, my, I'm terribly sorry!\p"
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
 	.string "I've opened the locked door of\n"
@@ -148,16 +148,16 @@ SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "{PLAYER}{KUN}, let's be on our way!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "Wallace: It's an earthquake!\p"
+	.string "Frank: It's an earthquake!\p"
 	.string "There's not a moment to waste!\n"
 	.string "We've got to hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "Wallace: Hmm…\n"
+	.string "Frank: Hmm…\n"
 	.string "The situation is getting worse…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "Wallace: This isn't good…\p"
+	.string "Frank: This isn't good…\p"
 	.string "The weather distortion is spreading\n"
 	.string "even here…\p"
 	.string "{PLAYER}{KUN}.\p"

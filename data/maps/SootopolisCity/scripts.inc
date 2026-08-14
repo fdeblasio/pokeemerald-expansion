@@ -1648,7 +1648,7 @@ SootopolisCity_Text_MaxieArchieLeft:
 	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "Wallace: Oh?\n"
+	.string "Frank: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the Sky Pillar\n"
 	.string "yet?\p"
@@ -1656,14 +1656,14 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "the top of the Sky Pillar…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "Frank: {PLAYER}{KUN}…\p"
 	.string "The leaders of Team Magma and Aqua,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "Wallace: {PLAYER}{KUN}…\n"
+	.string "Frank: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, Sootopolis…\n"
 	.string "No, all of Hoenn was saved.\p"
@@ -1684,6 +1684,6 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "Wallace: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
+	.string "Frank: I'm sure that you will be\n"
+	.string "dazzled by his breathtakingly\l"
 	.string "elegant battle style.$"

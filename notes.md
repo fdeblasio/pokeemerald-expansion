@@ -57,8 +57,10 @@ upcoming
     - Check Steven's Copperajah note
     - Use PokeTom Lavaridge map
 - Double-check added Pokemon movesets
+    - Chatot
     - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
+    - Boost Chatot/Squawkabilly too?
     - Add Vega Luvdisc evolution? (Valentide)
 - Figure out and Mega Tatusigiri ability
 - Update surf/fish encounters
@@ -73,6 +75,19 @@ upcoming
     - Fezandipiti
     - Tapu Koko
     - Iron Bundle
+    - Have Lugia replace Regigigas and have SIX (instead of five) doors open
+        - Articuno: Shoal Cave
+        - Zapdos: New Mauville
+        - Moltres: Fiery Path
+        - Articuno-G: Desert Tomb
+        - Zapdos-G: Ancient Ruins
+        - Moltres-G: Island Cave
+        - Would need hints for where these are
+        - Have Yveltal replace Lugia
+        - Make new areas instead?
+        - New rooms in Navel Rock?
+        - Or one on each floor
+            - Would need to use floors B4 and B5 again
 - Remove Lileep, Treecko, Mudkip, Torchic lines from Trainers
     - Most will be removed when Gyms are redone
     - Jackson's Treecko is the only one not in a Gym

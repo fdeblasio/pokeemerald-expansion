@@ -1803,6 +1803,18 @@
 - Ditto (postgame):
     - All stats: 48->50
 
+- Porygon:
+    - Catch rate: 45->90
+    - Learns Swift and Hyper Voice by level up
+
+- Porygon2:
+    - Learns Swift and Hyper Voice by level up
+    - Learns Double-Edge by level up (Note: Porygon and Porygon-Z already learn it)
+    - Learns Lock-On at level 55 instead of level 50 for consistency with Porygon and Porygon-Z
+
+- Porygon-Z:
+    - Learns Swift and Hyper Voice by level up
+
 - Omanyte (postgame):
     - Catch rate: 45->90
     - Learns Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up

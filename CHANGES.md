@@ -2,8 +2,6 @@
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
-- Checking wild encounters doesn't differentiate between what's been caught and what hasn't
-    - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
 - Followers will stop following you if you use the naming screen from the party menu. They will start to follow you again if you talk to it
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)
 - Relearning graphics glitch
@@ -2469,15 +2467,19 @@
 - Hisuian Sneasel/Sneasler (postgame):
     - Learn Poison Sting, Cross Poison, Double Kick, and Drain Punch by level up
 
-- Teddiursa/Ursaring (postgame):
-    - Learn Body Slam by level up
+- Teddiursa (postgame):
+    - Learns Body Slam by level up
+
+- Ursaring (postgame):
+    - Learns Body Slam by level up
+    - Evolves into Bloodmoon Ursaluna with a Moon Stone
 
 - Ursaluna (postgame):
     - Spe: 50->55
     - Type: Ground/Normal->Normal/Ground
     - Learns Bulldoze, Stomping Tantrum, Body Slam, and Earthquake by level up
 
-- Bloodmoon Ursaluna (not in main game):
+- Bloodmoon Ursaluna (postgame):
     - Type: Ground/Normal->Normal/Ground
     - Learns Mud-Slap, Swift, Mud Shot, Mud Bomb, and Earth Power by level up
 
@@ -3045,6 +3047,9 @@
 - Absol:
     - Hidden Ability: Justified->Sharpness
     - Learns Shadow Sneak, Spite, and Shadow Claw by level up
+
+- Mega Absol Z:
+    - Ability: Sharpness until its official one is revealed
 
 - Snorunt/Glalie/Froslass:
     - Learn Aurora Beam and Ice Beam by level up

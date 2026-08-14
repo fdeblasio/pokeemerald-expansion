@@ -10562,7 +10562,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Absol"),
@@ -11580,7 +11580,83 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLuvdiscLevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
         .eggMoveLearnset = sLuvdiscEggMoveLearnset,
+    #if P_VEGA_POKEMON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_VALENTIDE}), //TODO
+    #endif
     },
+
+#if P_VEGA_POKEMON
+    [SPECIES_VALENTIDE] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 45,
+        .baseDefense   = 65,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_WATER), //TODO
+        .catchRate = DEFAULT_CATCH_RATE(95),
+        .expYield = 190,
+        .evYield_Speed = 3,
+        .itemCommon = ITEM_HEART_SCALE,
+        .itemRare = ITEM_HEART_SCALE,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Valentide"),
+        .cryId = CRY_LUVDISC,
+        .natDexNum = NATIONAL_DEX_VALENTIDE,
+        .categoryName = _("Rendezvous"),
+        .height = 12,
+        .weight = 174,
+        .description = COMPOUND_STRING(
+            "The power of love caused it to grow.\n"
+            "Seeing one is a sign that you will soon\n"
+            "meet the love of your life."),
+        //TODO
+        .pokemonScale = 371,
+        .pokemonOffset = 2,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Luvdisc,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .backPic = gMonBackPic_Luvdisc,
+        .backPicSize = MON_COORDS_SIZE(40, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_H_SPRING_REPEATED,
+        .palette = gMonPalette_Luvdisc,
+        .shinyPalette = gMonShinyPalette_Luvdisc,
+        .iconSprite = gMonIcon_Luvdisc,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Luvdisc)
+        OVERWORLD(
+            sPicTable_Luvdisc,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            sAnimTable_Following,
+            gOverworldPalette_Luvdisc,
+            gShinyOverworldPalette_Luvdisc
+        )
+        .levelUpLearnset = sLuvdiscLevelUpLearnset,
+        .teachableLearnset = sLuvdiscTeachableLearnset,
+    },
+#endif
 #endif //P_FAMILY_LUVDISC
 
 #if P_FAMILY_BAGON

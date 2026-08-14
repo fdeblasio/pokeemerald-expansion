@@ -1302,6 +1302,7 @@ enum NationalDexOrder
     F(CACTURNE) \
     F(BALTOY) \
     F(CLAYDOL) \
+    F(SIGILYPH) \
     F(SILICOBRA) \
     F(SANDACONDA) \
     F(ANORITH) \
@@ -1328,7 +1329,14 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(MAGNEZONE)) \
     F(VOLTORB) \
     F(ELECTRODE) \
+    F(PORYGON) \
+    F(PORYGON2) \
+    F(PORYGON_Z) \
+    F(KLINK) \
+    F(KLANG) \
+    F(KLINKLANG) \
     F(CRAMORANT) \
+    F(CHATOT) \
     F(TROPIUS) \
     F(PINSIR) \
     F(HERACROSS) \
@@ -1535,8 +1543,13 @@ enum NationalDexOrder
     F(KABUTO) \
     F(KABUTOPS) \
     F(AERODACTYL) \
+    F(DRACOZOLT) \
+    F(ARCTOZOLT) \
     F(SMEARGLE) \
     F(MEW) \
+    F(ARTICUNO) \
+    F(ZAPDOS) \
+    F(MOLTRES) \
     F(LUGIA) \
     F(HO_OH) \
     F(LATIAS) \
@@ -1591,9 +1604,6 @@ enum HoennDexOrder
     KANTO_DEX_IF(P_GEN_2_CROSS_EVOS, F(PICHU)) \
     F(PIKACHU) \
     F(RAICHU) \
-    F(KLINK) \
-    F(KLANG) \
-    F(KLINKLANG) \
     F(SANDSHREW) \
     F(SANDSLASH) \
     F(NIDORAN_F) \

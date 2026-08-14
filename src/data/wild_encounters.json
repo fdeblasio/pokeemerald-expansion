@@ -922,16 +922,16 @@
             "encounter_rate": 10,
             "range": "DESERT",
             "mons": [
-              {"species": "TRAPINCH"},
               {"species": "CACNEA"},
               {"species": "BALTOY"},
-              {"species": "BALTOY"},
               {"species": "SANDSHREW"},
               {"species": "SANDSHREW"},
               {"species": "SILICOBRA"},
               {"species": "SILICOBRA"},
-              {"species": "SILICOBRA"},
-              {"species": "SILICOBRA"}
+              {"species": "SIGILYPH"},
+              {"species": "SIGILYPH"},
+              {"species": "TRAPINCH"},
+              {"species": "TRAPINCH"}
             ]
           },
           "water_mons": {
@@ -1200,12 +1200,12 @@
             "mons": [
               {"species": "EARLY_BEAST_1 + 1"},
               {"species": "MANECTRIC"},
-              {"species": "EARLY_BEAST_1 + 1"},
-              {"species": "MANECTRIC"},
+              {"species": "CHATOT"},
+              {"species": "CHATOT"},
               {"species": "CRAMORANT"},
               {"species": "CRAMORANT"},
-              {"species": "EARLY_BEAST_1 + 1"},
-              {"species": "MANECTRIC"},
+              {"species": "KILOWATTREL"},
+              {"species": "KILOWATTREL"},
               {"species": "KILOWATTREL"},
               {"species": "KILOWATTREL"}
             ]
@@ -2353,16 +2353,16 @@
             "encounter_rate": 10,
             "range": "SURF_INITIAL",
             "mons": [
-              {"species": "VOLTORB"},
               {"species": "MAGNEMITE"},
-              {"species": "PICHU"},
               {"species": "ELEKID"},
               {"species": "PICHU"},
-              {"species": "ELEKID"},
+              {"species": "PICHU"},
               {"species": "KLINK"},
               {"species": "KLINK"},
-              {"species": "KLINK"},
-              {"species": "KLINK"}
+              {"species": "PORYGON"},
+              {"species": "PORYGON"},
+              {"species": "VOLTORB"},
+              {"species": "VOLTORB"}
             ]
           }
         },
@@ -2373,16 +2373,16 @@
             "encounter_rate": 5,
             "range": "SURF_INITIAL",
             "mons": [
-              {"species": "VOLTORB"},
               {"species": "MAGNEMITE"},
-              {"species": "PICHU"},
               {"species": "ELEKID"},
               {"species": "PICHU"},
-              {"species": "ELEKID"},
+              {"species": "PICHU"},
               {"species": "KLINK"},
               {"species": "KLINK"},
-              {"species": "KLINK"},
-              {"species": "KLINK"}
+              {"species": "PORYGON"},
+              {"species": "PORYGON"},
+              {"species": "VOLTORB"},
+              {"species": "VOLTORB"}
             ]
           }
         },
@@ -3619,10 +3619,10 @@
               {"species": "KABUTO"},
               {"species": "OMANYTE"},
               {"species": "KABUTO"},
-              {"species": "DITTO"},
-              {"species": "AERODACTYL"},
-              {"species": "OMANYTE"},
-              {"species": "KABUTO"}
+              {"species": "DRACOZOLT"},
+              {"species": "ARCTOZOLT"},
+              {"species": "DRACOZOLT"},
+              {"species": "ARCTOZOLT"}
             ]
           }
         },

@@ -231,7 +231,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;              Postgame: Poliwhirl, Shellder;    Unused: Eevee, Panpour
 	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; Postgame: Eelektrik;              Unused: Eevee, Charjabug, Tadbulb
 	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;              Postgame: Voltorb-H;              Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
-	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          Postgame: N/A;                    Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
+	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          Postgame: Ursaring;               Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
 	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;              Postgame: Sunkern, Helioptile;    Unused: Exeggcute, Eevee, Cottonee, Petilil
 	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Roselia;            Postgame: Togetic;                Unused: Eevee, Minccino, Floette
 	.2byte ITEM_DAWN_STONE      @ Hoenn: Kirlia and Snorunt

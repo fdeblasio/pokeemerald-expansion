@@ -91,6 +91,7 @@
 
 #define MON_TYPES(type1, ...) { type1, DEFAULT(type1, __VA_ARGS__) }
 #define MON_EGG_GROUPS(group1, ...) { group1, DEFAULT(group1, __VA_ARGS__) }
+#define MEGA_ABILITY(ability) { ability, ability, ability }
 
 #define FLIP    0
 #define NO_FLIP 1

@@ -205,8 +205,8 @@ static const struct MatchCallStructTrainer sNormanMatchCallHeader =
     .mapSec = MAPSEC_PETALBURG_CITY,
     .flag = FLAG_ENABLE_NORMAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_NORMAN,
-    .desc = COMPOUND_STRING("Reliable One"),
-    .name = COMPOUND_STRING("Dad"),
+    .desc = COMPOUND_STRING("Normal One"),
+    .name = COMPOUND_STRING("Eric"),
     .textData = (const match_call_text_data_t[]) {
         { MatchCall_Text_Norman1,                  FLAG_ENABLE_NORMAN_MATCH_CALL, NO_FLAG_TO_SET },
         { MatchCall_Text_Norman2,                  FLAG_BADGE02_GET,              NO_FLAG_TO_SET },

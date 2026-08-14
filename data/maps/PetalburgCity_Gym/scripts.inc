@@ -1551,7 +1551,7 @@ PetalburgCity_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "{PLAYER}…\n"
+	.string "Eric: {PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
 	.string "a challenge from you.\p"
@@ -1567,14 +1567,14 @@ PetalburgCity_Gym_Text_NormanRematchDefeat:
 	.string "Maybe that was going too hard…$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "{PLAYER}…\n"
+	.string "Eric: {PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
 	.string "Hahaha…\l"
 	.string "It has already come true, actually.$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
-	.string "{PLAYER}…\n"
+	.string "Eric: {PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
 	.string "a challenge from you.\p"

@@ -228,7 +228,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "Wallace: Welcome, {PLAYER}{KUN}.\p"
+	.string "Frank: Welcome, {PLAYER}{KUN}.\p"
 	.string "That incident in Sootopolis City…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
@@ -251,7 +251,7 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "Show me right here and now!$"
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch:
-	.string "Wallace: Welcome, {PLAYER}.\p"
+	.string "Frank: Welcome, {PLAYER}.\p"
 	.string "This is where your achievements\n"
 	.string "are put to the test against what\l"
 	.string "others like you have achieved.\p"
@@ -270,7 +270,7 @@ EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "Trainer!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "Wallace: The Pokémon you sent into\n"
+	.string "Frank: The Pokémon you sent into\n"
 	.string "battle…\p"
 	.string "At times they danced like a spring\n"
 	.string "breeze, and at times they struck\l"
@@ -328,13 +328,13 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "Frank: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
 	.string "The new Champion!\p"
 	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "Wallace: I'm sorry, but…\p"
+	.string "Frank: I'm sorry, but…\p"
 	.string "From here on, only those Trainers who\n"
 	.string "have become Champions may enter.\p"
 	.string "You'll have to wait outside with\n"

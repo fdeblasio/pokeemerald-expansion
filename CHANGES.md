@@ -2750,6 +2750,22 @@
 - Boldore/Gigalith:
     - Learn Rock Throw by level up
 
+- Woobat:
+    - Def: 43->45
+    - SpD: 43->45
+    - Spe: 72->75
+    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
+    - Evolution: friendship->24
+    - Learns Psybeam and Psychic Noise by level up
+
+- Swoobat:
+    - HP: 67->80
+    - Atk: 57->60
+    - SpA: 77->90
+    - Spe: 114->115
+    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
+    - Learns Psybeam and Psychic Noise by level up
+
 - Drilbur (postgame):
     - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
 

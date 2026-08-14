@@ -66,7 +66,6 @@ upcoming
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
-- Added Dracozolt/Arctozolt (Fossilized BIRD)?
 - Update legendaries?
     - Tornadus-T
     - Yveltal

@@ -1285,6 +1285,8 @@ enum NationalDexOrder
     F(CLEFFA) \
     F(CLEFAIRY) \
     F(CLEFABLE) \
+    F(WOOBAT) \
+    F(SWOOBAT) \
     F(DRUDDIGON) \
     F(NOIBAT) \
     F(NOIVERN) \

@@ -26,8 +26,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0",
-      "flag": "0"
+      "script": "NavelRock_Down03_EventScript_Legendary",
+      "flag": "FLAG_HIDE_NAVEL_ROCK_MOLTRES"
     }
   ],
   "warp_events": [

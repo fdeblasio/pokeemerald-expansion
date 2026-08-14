@@ -774,27 +774,27 @@ WALLY_REMATCH(4),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = CAP_GYM_1 - 4,
-        .species = SPECIES_LILEEP,
-        .ability = ABILITY_SUCTION_CUPS,
+        .lvl = CAP_GYM_1 - 3,
+        .species = SPECIES_TOGEPI,
+        .ability = ABILITY_SERENE_GRACE,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
+        .moves = {MOVE_DRAINING_KISS, MOVE_SWEET_KISS, MOVE_POUND, MOVE_GROWL},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = CAP_GYM_1 - 4,
-        .species = SPECIES_ANORITH,
-        .ability = ABILITY_SWIFT_SWIM,
+        .lvl = CAP_GYM_1 - 3,
+        .species = SPECIES_CLEFFA,
+        .ability = ABILITY_MAGIC_GUARD,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_SCRATCH, MOVE_HARDEN, MOVE_WATER_GUN},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_DRAINING_KISS, MOVE_SWEET_KISS, MOVE_POUND, MOVE_COPYCAT},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = CAP_GYM_1 - 2,
-        .species = SPECIES_NOSEPASS,
-        .ability = ABILITY_STURDY,
+        .lvl = CAP_GYM_1,
+        .species = SPECIES_SPRITZEE,
+        .ability = ABILITY_HEALER,
         IVS(24),
-        .moves = {MOVE_ROCK_TOMB, MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE},
+        .moves = {MOVE_DRAINING_KISS, MOVE_SWEET_KISS, MOVE_ECHOED_VOICE, MOVE_SWEET_SCENT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_ORAN_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -5838,15 +5838,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_JOSH] =
 {
     .trainerName = _("Josh"),
-    SCHOOLKID_M_INFO,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_SNUBBULL,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_MUD_SPORT, MOVE_NONE}
         }
     },
 },
@@ -5860,12 +5859,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_AZURILL,
         IVS(13),
         },
         {
         .lvl = 9,
-        .species = SPECIES_ARON,
+        .species = SPECIES_SWIRLIX,
         IVS(14),
         }
     },
@@ -5874,18 +5873,18 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_MARCIA] =
 {
     .trainerName = _("Marcia"),
-    SCHOOLKID_F_INFO,
+    LASS_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_IGGLYBUFF,
         IVS(14),
         },
         {
         .lvl = 9,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_FIDOUGH,
         IVS(15),
         }
     },
@@ -6086,7 +6085,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_LAURA] =
 {
     .trainerName = _("Laura"),
-    BATTLE_GIRL_INFO,
+    HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -6101,7 +6100,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_LILITH] =
 {
     .trainerName = _("Lilith"),
-    BATTLE_GIRL_INFO,
+    HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -6161,7 +6160,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_JOCELYN] =
 {
     .trainerName = _("Jocelyn"),
-    BATTLE_GIRL_INFO,
+    HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -7134,7 +7133,7 @@ MARINA_BATTLE(MUSEUM, CAP_MUSEUM - 2),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(19, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_KLINK,
         }
     },
 },
@@ -7636,7 +7635,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_KIRK] =
 {
     .trainerName = _("Kirk"),
-    MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
+    MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
         MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
@@ -7646,7 +7645,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_BEN] =
 {
     .trainerName = _("Ben"),
-    MAUVILLE_GYM_TRAINER_INFO(YOUNGSTER),
+    MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
         MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
@@ -7656,7 +7655,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
 {
     .trainerName = _("Angelo"),
-    MAUVILLE_GYM_TRAINER_INFO(POKE_MANIAC),
+    MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
         MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
@@ -7666,7 +7665,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
 {
     .trainerName = _("Shawn"),
-    MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
+    MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
         MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
@@ -8195,7 +8194,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         TRIATHLETE_MON(21, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_ELEKID,
         }
     },
 },
@@ -8213,11 +8212,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         TRIATHLETE_MON(20, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_PICHU,
         },
         {
         TRIATHLETE_MON(20, 0),
-        .species = SPECIES_VOLTORB,
+        .species = SPECIES_ORICORIO_POM_POM,
         }
     },
 },
@@ -8235,11 +8234,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         TRIATHLETE_MON(20, 0),
-        .species = SPECIES_VOLTORB,
+        .species = SPECIES_TADBULB,
         },
         {
         TRIATHLETE_MON(20, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_WATTREL,
         }
     },
 },
@@ -10229,7 +10228,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(27, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_CYCLIZAR,
         }
     },
 },
@@ -10962,7 +10961,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 29,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_GOLETT,
         }
     },
 },
@@ -11312,12 +11311,12 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_NOSEPASS,
+        .species = SPECIES_SANDYGAST,
         IVS(12),
         },
         {
         .lvl = 31,
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_SILICOBRA,
         IVS(12),
         }
     },
@@ -12915,7 +12914,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 33,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_ESPATHRA,
         }
     },
 },
@@ -13581,7 +13580,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
         },
         {
         .lvl = 39,
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_CRUSTLE,
         IVS(6),
         }
     },
@@ -15518,18 +15517,18 @@ MATT_BATTLE(AQUA_HIDEOUT, CAP_AQUA_HIDEOUT, 6),
     },                                                      \
 }
 
-MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  PSYCHIC_M,  GALLADE),
-MOSSDEEP_GYM_TRAINER(MAURA,    "Maura",    PSYCHIC_F,  ALAKAZAM),
-MOSSDEEP_GYM_TRAINER(SAMANTHA, "Samantha", PSYCHIC_F,  XATU),
-MOSSDEEP_GYM_TRAINER(BLAKE,    "Blake",    PSYCHIC_M,  CLAYDOL),
-MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  STARMIE),
-MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  FARIGIRAF),
-MOSSDEEP_GYM_TRAINER(KATHLEEN, "Kathleen", PSYCHIC_F,  CHIMECHO),
-MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  WOBBUFFET),
-MOSSDEEP_GYM_TRAINER(NATE,     "Nate",     GENTLEMAN,  GRUMPIG),
-MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  GOLDUCK),
-MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC, MEDICHAM),
-MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
+MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  DRAGON_TAMER, GALLADE),
+MOSSDEEP_GYM_TRAINER(MAURA,    "Maura",    PSYCHIC_F,    ALAKAZAM),
+MOSSDEEP_GYM_TRAINER(SAMANTHA, "Samantha", PSYCHIC_F,    XATU),
+MOSSDEEP_GYM_TRAINER(BLAKE,    "Blake",    DRAGON_TAMER, CLAYDOL),
+MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,    STARMIE),
+MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,    FARIGIRAF),
+MOSSDEEP_GYM_TRAINER(KATHLEEN, "Kathleen", PSYCHIC_F,    CHIMECHO),
+MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", DRAGON_TAMER, WOBBUFFET),
+MOSSDEEP_GYM_TRAINER(NATE,     "Nate",     GENTLEMAN,    GRUMPIG),
+MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   DRAGON_TAMER, GOLDUCK),
+MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC,   MEDICHAM),
+MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,    GARDEVOIR),
 
 // Trick House 6
 [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =

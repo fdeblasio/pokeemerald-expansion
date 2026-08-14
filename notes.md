@@ -49,8 +49,10 @@ upcoming
     - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank
+    - New Mauville Wattson->Frank?
 - Update Gym leaders/Elite Four
     - Update TMs
+    - Eric Spinda pattern
     - Check Steven's Copperajah note
 - Double-check added Pokemon movesets
     - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?

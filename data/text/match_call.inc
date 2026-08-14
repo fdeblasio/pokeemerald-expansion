@@ -2025,7 +2025,7 @@ MatchCall_Text_Mom1::
 MatchCall_Text_Mom2::
 	.string "Mom: Hi, {PLAYER}!\n"
 	.string "Your father keeps himself locked\l"
-	.string "away in the Petalburg Gym.\p"
+	.string "away in his research.\p"
 	.string "He comes home every so often.\n"
 	.string "But he goes back to the Gym when\l"
 	.string "he's eaten everything he can.\p"
@@ -2905,7 +2905,7 @@ MatchCall_Text_MrStone5::
 
 MatchCall_Text_MrStone6::
 	.string "Mr. Stone: What's that?\p"
-	.string "You battled your own father and\n"
+	.string "You battled your own friend and\n"
 	.string "defeated him?\p"
 	.string "That's astounding!\p"
 	.string "I had no idea that I befriended\n"

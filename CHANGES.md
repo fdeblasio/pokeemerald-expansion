@@ -31,6 +31,7 @@
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Galarian Corsola and Cursola were added to the Hoenn Pokédex
+- Regieleki, Regidrago, and Regigigas were added to the Hoenn Pokédex
 - Pokémon can now be listed as orange in the Pokédex
 - Safari Zone:
     - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
@@ -54,6 +55,7 @@
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Added area to grind right outside Elite Four
 - Can now leave the first hallway of the Elite Four
+- The Regis will now respawn if not caught after defeating the Elite Four
 
 ### Quality of Life:
 - Shiny Pokémon can no longer spawn until you get Poké Balls

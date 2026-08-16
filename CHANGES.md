@@ -55,7 +55,7 @@
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Added area to grind right outside Elite Four
 - Can now leave the first hallway of the Elite Four
-- The Regis will now respawn if not caught after defeating the Elite Four
+- All legendaries will now respawn if not caught after defeating the Elite Four
 
 ### Quality of Life:
 - Shiny Pokémon can no longer spawn until you get Poké Balls

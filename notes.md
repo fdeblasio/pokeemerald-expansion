@@ -134,7 +134,6 @@ upcoming
         9: 120
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
-- Clear other legendary defeated flags when beating the Elite Four
 - The default legendary battle music seems to be FRLG's. See if that is in vanilla and potentially change back to RSE
 - Remove evolved fishing encounters for the Safari Zone?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:

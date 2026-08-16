@@ -14,10 +14,16 @@ TerraCave_End_EventScript_TryRemoveGroudon::
 	return
 
 TerraCave_End_OnTransition:
-	call_if_unset FLAG_DEFEATED_GROUDON, TerraCave_End_EventScript_ShowGroudon
+	call_if_set FLAG_CAUGHT_GROUDON, TerraCave_End_EventScript_HideGroudon
+	call_if_unset FLAG_CAUGHT_GROUDON, TerraCave_End_EventScript_ShowGroudon
 	end
 
+TerraCave_End_EventScript_HideGroudon::
+	setflag FLAG_HIDE_TERRA_CAVE_GROUDON
+	return
+
 TerraCave_End_EventScript_ShowGroudon::
+	goto_if_set FLAG_DEFEATED_GROUDON, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_TERRA_CAVE_GROUDON
 	setvar VAR_TEMP_1, 1
 	return
@@ -44,7 +50,7 @@ TerraCave_End_EventScript_Groudon::
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, TerraCave_End_EventScript_RanFromGroudon
 	setvar VAR_SHOULD_END_ABNORMAL_WEATHER, 1
 	giveitem ITEM_RED_ORB
-	setflag FLAG_DEFEATED_GROUDON
+	setflag FLAG_CAUGHT_GROUDON
 	releaseall
 	end
 

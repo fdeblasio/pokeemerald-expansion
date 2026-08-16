@@ -515,10 +515,10 @@
 #define FLAG_CAUGHT_REGIELEKI                0x1D6
 #define FLAG_CAUGHT_REGIDRAGO                0x1D7
 #define FLAG_CAUGHT_REGIGIGAS                0x1D8
+#define FLAG_CAUGHT_GROUDON                  0x1D9
+#define FLAG_CAUGHT_KYOGRE                   0x1DA
+#define FLAG_CAUGHT_RAYQUAZA                 0x1DB
 
-#define FLAG_UNUSED_0x1D9                    0x1D9 // Unused Flag
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
-#define FLAG_UNUSED_0x1DB                    0x1DB // Unused Flag
 #define FLAG_UNUSED_0x1DC                    0x1DC // Unused Flag
 #define FLAG_UNUSED_0x1DD                    0x1DD // Unused Flag
 #define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag

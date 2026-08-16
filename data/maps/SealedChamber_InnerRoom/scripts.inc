@@ -16,10 +16,16 @@ SealedChamber_InnerRoom_EventScript_TryRemoveRegigigas::
 SealedChamber_InnerRoom_OnTransition:
 	specialvar VAR_RESULT, CheckRegiParty
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_NopReturn
-	call_if_unset FLAG_DEFEATED_REGIGIGAS, SealedChamber_InnerRoom_EventScript_ShowRegigigas
+	call_if_set FLAG_CAUGHT_REGIGIGAS, SealedChamber_InnerRoom_EventScript_HideRegigigas
+	call_if_unset FLAG_CAUGHT_REGIGIGAS, SealedChamber_InnerRoom_EventScript_ShowRegigigas
 	end
 
+SealedChamber_InnerRoom_EventScript_HideRegigigas::
+	setflag FLAG_HIDE_REGIGIGAS
+	return
+
 SealedChamber_InnerRoom_EventScript_ShowRegigigas::
+	goto_if_set FLAG_DEFEATED_REGIGIGAS, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_REGIGIGAS
 	return
 
@@ -109,7 +115,7 @@ SealedChamber_InnerRoom_EventScript_Regigigas::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SealedChamber_InnerRoom_EventScript_DefeatedRegigigas
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SealedChamber_InnerRoom_EventScript_RanFromRegigigas
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SealedChamber_InnerRoom_EventScript_RanFromRegigigas
-	setflag FLAG_DEFEATED_REGIGIGAS
+	setflag FLAG_CAUGHT_REGIGIGAS
 	release
 	end
 

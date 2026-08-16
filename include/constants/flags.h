@@ -509,12 +509,13 @@
 #define FLAG_DEFEATED_HO_OH                  0x1D1
 #define FLAG_DEFEATED_LUGIA                  0x1D2
 
-#define FLAG_UNUSED_0x1D3                    0x1D3 // Unused Flag
-#define FLAG_UNUSED_0x1D4                    0x1D4 // Unused Flag
-#define FLAG_UNUSED_0x1D5                    0x1D5 // Unused Flag
-#define FLAG_UNUSED_0x1D6                    0x1D6 // Unused Flag
-#define FLAG_UNUSED_0x1D7                    0x1D7 // Unused Flag
-#define FLAG_UNUSED_0x1D8                    0x1D8 // Unused Flag
+#define FLAG_CAUGHT_REGIROCK                 0x1D3
+#define FLAG_CAUGHT_REGICE                   0x1D4
+#define FLAG_CAUGHT_REGISTEEL                0x1D5
+#define FLAG_CAUGHT_REGIELEKI                0x1D6
+#define FLAG_CAUGHT_REGIDRAGO                0x1D7
+#define FLAG_CAUGHT_REGIGIGAS                0x1D8
+
 #define FLAG_UNUSED_0x1D9                    0x1D9 // Unused Flag
 #define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
 #define FLAG_UNUSED_0x1DB                    0x1DB // Unused Flag

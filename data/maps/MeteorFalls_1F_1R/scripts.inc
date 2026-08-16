@@ -16,11 +16,17 @@ MeteorFalls_1F_1R_EventScript_TryRemoveRegidrago::
 
 MeteorFalls_1F_1R_OnTransition:
 	setflag FLAG_LANDMARK_METEOR_FALLS
-	call_if_unset FLAG_DEFEATED_REGIDRAGO, MeteorFalls_1F_1R_EventScript_ShowRegidrago
+	call_if_set FLAG_CAUGHT_REGIDRAGO, MeteorFalls_1F_1R_EventScript_HideRegidrago
+	call_if_unset FLAG_CAUGHT_REGIDRAGO, MeteorFalls_1F_1R_EventScript_ShowRegidrago
 	end
+
+MeteorFalls_1F_1R_EventScript_HideRegidrago::
+	setflag FLAG_HIDE_REGIDRAGO
+	return
 
 MeteorFalls_1F_1R_EventScript_ShowRegidrago::
 	goto_if_unset FLAG_REGI_DOORS_OPENED, Common_EventScript_NopReturn
+	goto_if_set FLAG_DEFEATED_REGIDRAGO, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_REGIDRAGO
 	return
 
@@ -269,7 +275,7 @@ MeteorFalls_1F_1R_EventScript_Regidrago::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, MeteorFalls_1F_1R_EventScript_DefeatedRegidrago
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, MeteorFalls_1F_1R_EventScript_RanFromRegidrago
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, MeteorFalls_1F_1R_EventScript_RanFromRegidrago
-	setflag FLAG_DEFEATED_REGIDRAGO
+	setflag FLAG_CAUGHT_REGIDRAGO
 	release
 	end
 

@@ -25,6 +25,12 @@ EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags::
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
+	clearflag FLAG_DEFEATED_REGIROCK
+	clearflag FLAG_DEFEATED_REGICE
+	clearflag FLAG_DEFEATED_REGISTEEL
+	clearflag FLAG_DEFEATED_REGIELEKI
+	clearflag FLAG_DEFEATED_REGIDRAGO
+	clearflag FLAG_DEFEATED_REGIGIGAS
 	clearflag FLAG_DEFEATED_MEW
 	clearflag FLAG_DEFEATED_DEOXYS
 	clearflag FLAG_DEFEATED_LUGIA

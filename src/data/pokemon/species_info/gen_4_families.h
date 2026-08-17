@@ -1165,12 +1165,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_KRICKETOT
     [SPECIES_KRICKETOT] =
     {
-        .baseHP        = 37,
+        .baseHP        = 40,
         .baseAttack    = 25,
-        .baseDefense   = 41,
+        .baseDefense   = 45,
         .baseSpeed     = 25,
         .baseSpAttack  = 25,
-        .baseSpDefense = 41,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = DEFAULT_CATCH_RATE(255),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 39 : 54,
@@ -1261,12 +1261,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_KRICKETUNE] =
     {
-        .baseHP        = 77,
+        .baseHP        = 80,
         .baseAttack    = 85,
-        .baseDefense   = 51,
+        .baseDefense   = 55,
         .baseSpeed     = 65,
         .baseSpAttack  = 55,
-        .baseSpDefense = 51,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 134 : 159,
@@ -4113,12 +4113,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CHATOT
     [SPECIES_CHATOT] =
     {
-        .baseHP        = 76,
+        .baseHP        = 80,
         .baseAttack    = 65,
         .baseDefense   = 45,
-        .baseSpeed     = 91,
-        .baseSpAttack  = 92,
-        .baseSpDefense = 42,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = DEFAULT_CATCH_RATE(30),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 107,

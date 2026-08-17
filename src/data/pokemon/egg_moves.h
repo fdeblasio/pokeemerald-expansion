@@ -4204,7 +4204,6 @@ static const u16 sBronzorEggMoveLearnset[] = {
 
 #if P_FAMILY_CHATOT
 static const u16 sChatotEggMoveLearnset[] = {
-    MOVE_BOOMBURST,
     MOVE_DEFOG,
     MOVE_ROLE_PLAY,
     MOVE_SKY_ATTACK,

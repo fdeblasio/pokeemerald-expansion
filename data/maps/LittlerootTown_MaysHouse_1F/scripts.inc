@@ -237,13 +237,14 @@ LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer1:
 	step_end
 
 LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer2:
-	walk_in_place_faster_right
-	walk_right
 	walk_in_place_faster_up
 	walk_up
 	walk_up
 	walk_up
 	walk_up
+	walk_in_place_faster_right
+	walk_right
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_MaysHouse_1F_EventScript_MayGoUpstairs0::

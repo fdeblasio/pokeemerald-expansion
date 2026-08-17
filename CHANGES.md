@@ -1,6 +1,4 @@
 ## Known bugs and other notes
-- When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
-    - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. They will start to follow you again if you talk to it
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)

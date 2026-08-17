@@ -397,6 +397,9 @@ u32 ScriptGiveMon(enum Species species, u8 level, enum Item item, bool8 isStarte
     if (isStarter)
     {
         SetMonData(&mon, MON_DATA_ABILITY_NUM, 0);
+        u32 iv = MAX_PER_STAT_IVS;
+        SetMonData(&mon, MON_DATA_ATK_IV, &iv);
+        SetMonData(&mon, MON_DATA_DEF_IV, &iv);
     }
 
     return GiveScriptedMonToPlayer(&mon, PARTY_SIZE);

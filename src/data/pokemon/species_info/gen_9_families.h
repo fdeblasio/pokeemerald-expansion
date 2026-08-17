@@ -1908,7 +1908,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_SQUAWKABILLY_WHITE] =
     {
         SQUAWKABILLY_INFO,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_WHITE,
         .description = COMPOUND_STRING(

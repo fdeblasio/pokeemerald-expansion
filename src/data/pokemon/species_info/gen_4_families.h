@@ -4192,7 +4192,94 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sChatotLevelUpLearnset,
         .teachableLearnset = sChatotTeachableLearnset,
         .eggMoveLearnset = sChatotEggMoveLearnset,
+    #if P_VEGA_POKEMON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONDUCTOT}), //TODO
+    #endif
     },
+
+#if P_VEGA_POKEMON
+    [SPECIES_CONDUCTOT] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 80,
+        .baseDefense   = 60,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = DEFAULT_CATCH_RATE(30),
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 205 : 107,
+        .evYield_SpAttack = 2,
+        .itemCommon = ITEM_METRONOME,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_OWN_TEMPO, ABILITY_AMPLIFY },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Chatot"),
+        .cryId = CRY_CHATOT,
+        .natDexNum = NATIONAL_DEX_CONDUCTOT,
+        .categoryName = _("Chattering"),
+        .height = 13,
+        .weight = 336,
+        .description = COMPOUND_STRING(
+            "Its beautiful singing voice can calm\n"
+            "down quick-tempered Pokémon and put an\n"
+            "end to most conflicts."),
+        //TODO
+        .pokemonScale = 333,
+        .pokemonOffset = 9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Conductot,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        .backPic = gMonBackPic_Conductot,
+        .backPicSize = MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 9,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_Conductot,
+        .shinyPalette = gMonShinyPalette_Conductot,
+        .iconSprite = gMonIcon_Conductot,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 3, SHADOW_SIZE_S)
+        FOOTPRINT(Chatot)
+        OVERWORLD(
+            sPicTable_Chatot,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Chatot,
+            gShinyOverworldPalette_Chatot
+        )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
+        .levelUpLearnset = sChatotLevelUpLearnset,
+        .teachableLearnset = sChatotTeachableLearnset,
+    },
+#endif
 #endif //P_FAMILY_CHATOT
 
 #if P_FAMILY_SPIRITOMB

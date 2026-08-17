@@ -13630,6 +13630,12 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Luvdisc[] = INCGFX_U16("graphics/pokemon/luvdisc/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/front.png", ".4bpp.smol");
+    const u32 gMonPalette_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/normal.pal", ".gbapal");
+    const u32 gMonBackPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/back.png", ".4bpp.smol");
+    const u32 gMonShinyPalette_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/icon.png", ".4bpp");
 #endif //P_FAMILY_LUVDISC
 
 #if P_FAMILY_BAGON
@@ -15223,6 +15229,12 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Chatot[] = INCGFX_U16("graphics/pokemon/chatot/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/front.png", ".4bpp.smol");
+    const u32 gMonPalette_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/normal.pal", ".gbapal");
+    const u32 gMonBackPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/back.png", ".4bpp.smol");
+    const u32 gMonShinyPalette_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/icon.png", ".4bpp");
 #endif //P_FAMILY_CHATOT
 
 #if P_FAMILY_SPIRITOMB

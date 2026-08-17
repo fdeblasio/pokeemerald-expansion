@@ -555,8 +555,6 @@
         - Accuracy: 85->100
     - Blood Moon:
         - PP: 5->10
-    - Chatter:
-        - Power: 65->80
     - Comet Punch:
         - Power: 18->25
         - Accuracy: 85->100
@@ -709,6 +707,9 @@
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100
+    - Chatter:
+        - Power: 65->80
+        - Can now be copied by Sketch
     - Dragon Ascent:
         - PP: 5->10
         - No longer lowers users Defense and Special Defense

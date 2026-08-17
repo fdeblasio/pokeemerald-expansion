@@ -180,7 +180,7 @@ enum DebugMenuTypes
 #define DEBUG_MENU_WIDTH_MAIN 17
 #define DEBUG_MENU_HEIGHT_MAIN 9
 
-#define DEBUG_MENU_WIDTH_EXTRA 10
+#define DEBUG_MENU_WIDTH_EXTRA 12
 #define DEBUG_MENU_HEIGHT_EXTRA 4
 
 #define DEBUG_MENU_WIDTH_WEATHER 15
@@ -1767,7 +1767,7 @@ static void DebugSelectionStep_UpdateMapGroup(u8 taskId, u8 digits, u32 min, u32
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     ConvertIntToDecimalStringN(gStringVar3, max, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Group: {STR_VAR_2} / {STR_VAR_3}"));
-    StringCopy(gStringVar2, COMPOUND_STRING(""));
+    GetMapName(gStringVar2, Overworld_GetMapHeaderByGroupAndId(gTasks[taskId].tInput, 0)->regionMapSectionId, 0);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
@@ -1778,8 +1778,8 @@ static void DebugSelectionStep_UpdateMapNum(u8 taskId, u8 digits, u32 min, u32 m
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     ConvertIntToDecimalStringN(gStringVar3, max, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Map: {STR_VAR_2} / {STR_VAR_3}"));
-    StringCopy(gStringVar2, COMPOUND_STRING("MapSec:"));
-    GetMapName(gStringVar3, Overworld_GetMapHeaderByGroupAndId(mapGroup, gTasks[taskId].tInput)->regionMapSectionId, 0);
+    GetMapName(gStringVar2, Overworld_GetMapHeaderByGroupAndId(mapGroup, gTasks[taskId].tInput)->regionMapSectionId, 0);
+    StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
 

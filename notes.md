@@ -50,19 +50,16 @@ upcoming
     - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
 - Wallace->Frank
-    - New Mauville Wattson->Frank?
 - Update Gym leaders/Elite Four
     - Update TMs
     - Eric Spinda pattern
     - Check Steven's Copperajah note
     - Use PokeTom Lavaridge map
-- Double-check added Pokemon movesets
-    - Chatot
-    - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
+- Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
+        - Add Vega Chatot evolution? (Conductot)
     - Add Vega Luvdisc evolution? (Valentide)
-- Figure out and Mega Tatusigiri ability
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb

@@ -1452,7 +1452,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         CORVIKNIGHT_GMAX_INFO,
         .palette = gMonShinyPalette_CorviknightGmax,
         .shinyPalette = gMonPalette_CorviknightGmax,
-        .isGigantamax = TRUE,
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sCorviknightPartnerLevelUpLearnset,
         .teachableLearnset = sCorviknightTeachableLearnset,
         .formSpeciesIdTable = sCorviknightFormSpeciesIdTable,

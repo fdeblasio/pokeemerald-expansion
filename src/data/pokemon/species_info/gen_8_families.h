@@ -1140,7 +1140,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     .backPicYOffset = 3,                              \
     .backAnimId = BACK_ANIM_NONE,                     \
     .iconSprite = gMonIcon_CorviknightGmax,           \
-    .iconPalIndex = 0,                                \
+    .iconPalIndex = 1,                                \
     SHADOW(2, 8, SHADOW_SIZE_L)                       \
     FOOTPRINT(Corviknight)                            \
     .pokemonJumpType = PKMN_JUMP_TYPE_NONE
@@ -1245,7 +1245,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .palette = gMonShinyPalette_Rookidee,
         .shinyPalette = gMonPalette_Rookidee,
         .iconSprite = gMonIcon_Rookidee,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, -3, SHADOW_SIZE_S)
         FOOTPRINT(Rookidee)
@@ -1320,7 +1320,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .palette = gMonShinyPalette_Corvisquire,
         .shinyPalette = gMonPalette_Corvisquire,
         .iconSprite = gMonIcon_Corvisquire,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 16, SHADOW_SIZE_S)
         FOOTPRINT(Corvisquire)
@@ -1396,7 +1396,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .palette = gMonShinyPalette_Corviknight,
         .shinyPalette = gMonPalette_Corviknight,
         .iconSprite = gMonIcon_Corviknight,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 9, SHADOW_SIZE_L)
         FOOTPRINT(Corviknight)

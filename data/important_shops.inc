@@ -257,6 +257,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_PRISM_SCALE     @ Hoenn: Feebas
 	.2byte ITEM_SACHET          @ Hoenn: Spritzee
 	.2byte ITEM_WHIPPED_DREAM   @ Hoenn: Swirlix
+	.2byte ITEM_LOVE_SWEET      @ Hoenn: Luvdisc
 	pokemartlistend
 
 @ Unused shop that contains evo items for Pokemon not available in Emerald by default

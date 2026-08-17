@@ -4195,12 +4195,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sChatotLevelUpLearnset,
         .teachableLearnset = sChatotTeachableLearnset,
         .eggMoveLearnset = sChatotEggMoveLearnset,
-    #if P_VEGA_POKEMON
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONDUCTOT}), //TODO
-    #endif
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONDUCTOT}),
     },
 
-#if P_VEGA_POKEMON
     [SPECIES_CONDUCTOT] =
     {
         .baseHP        = 105,
@@ -4265,7 +4262,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sConductotLevelUpLearnset,
         .teachableLearnset = sConductotTeachableLearnset,
     },
-#endif
 #endif //P_FAMILY_CHATOT
 
 #if P_FAMILY_SPIRITOMB

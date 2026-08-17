@@ -7002,6 +7002,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Ledybulk[] = INCGFX_U16("graphics/pokemon/ledybulk/shiny.pal", ".gbapal");
     const u8 gMonIcon_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/icon.png", ".4bpp");
+    const u8 gMonFootprint_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/footprint.png", ".1bpp");
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK
@@ -13636,6 +13637,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Valentide[] = INCGFX_U16("graphics/pokemon/valentide/shiny.pal", ".gbapal");
     const u8 gMonIcon_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/icon.png", ".4bpp");
+    const u8 gMonFootprint_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/footprint.png", ".1bpp");
 #endif //P_FAMILY_LUVDISC
 
 #if P_FAMILY_BAGON
@@ -14881,6 +14883,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Pachirikku[] = INCGFX_U16("graphics/pokemon/pachirikku/shiny.pal", ".gbapal");
     const u8 gMonIcon_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/icon.png", ".4bpp");
+    const u8 gMonFootprint_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/footprint.png", ".1bpp");
 #endif //P_FAMILY_PACHIRISU
 
 #if P_FAMILY_BUIZEL
@@ -15235,6 +15238,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Conductot[] = INCGFX_U16("graphics/pokemon/conductot/shiny.pal", ".gbapal");
     const u8 gMonIcon_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/icon.png", ".4bpp");
+    const u8 gMonFootprint_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/footprint.png", ".1bpp");
 #endif //P_FAMILY_CHATOT
 
 #if P_FAMILY_SPIRITOMB

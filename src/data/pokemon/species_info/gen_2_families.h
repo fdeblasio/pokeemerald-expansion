@@ -1363,7 +1363,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Ledybulk,
         .iconSprite = gMonIcon_Ledybulk,
         .iconPalIndex = 0,
-        FOOTPRINT(Ledian)
+        FOOTPRINT(Ledybulk)
         OVERWORLD(
             sPicTable_Ledian,
             SIZE_32x32,

@@ -11637,7 +11637,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Luvdisc)
+        FOOTPRINT(Valentide)
         OVERWORLD(
             sPicTable_Luvdisc,
             SIZE_32x32,

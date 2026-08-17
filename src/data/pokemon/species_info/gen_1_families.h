@@ -9198,6 +9198,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 309,
         .trainerOffset = 4,
         SHADOW(7, 13, SHADOW_SIZE_L)
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sMachampPartnerLevelUpLearnset,
         .formChangeTable = sMachampPartnerFormChangeTable,
     },

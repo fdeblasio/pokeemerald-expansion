@@ -1755,31 +1755,38 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #endif //P_FAMILY_SMOLIV
 
 #if P_FAMILY_SQUAWKABILLY
+#define SQUAWKABILLY_INFO                                \
+    .baseHP        = 82,                                 \
+    .baseAttack    = 96,                                 \
+    .baseDefense   = 51,                                 \
+    .baseSpeed     = 92,                                 \
+    .baseSpAttack  = 45,                                 \
+    .baseSpDefense = 51,                                 \
+    .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),        \
+    .catchRate = DEFAULT_CATCH_RATE(190),                \
+    .expYield = 146,                                     \
+    .evYield_Attack = 1,                                 \
+    .genderRatio = PERCENT_FEMALE(50),                   \
+    .eggCycles = 15,                                     \
+    .friendship = STANDARD_FRIENDSHIP,                   \
+    .growthRate = GROWTH_ERRATIC,                        \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),       \
+    .speciesName = _("Squawkabilly"),                    \
+    .cryId = CRY_SQUAWKABILLY,                           \
+    .natDexNum = NATIONAL_DEX_SQUAWKABILLY,              \
+    .categoryName = _("Parrot"),                         \
+    .height = 6,                                         \
+    .weight = 24,                                        \
+    .levelUpLearnset = sSquawkabillyLevelUpLearnset,     \
+    .teachableLearnset = sSquawkabillyTeachableLearnset, \
+    .eggMoveLearnset = sSquawkabillyEggMoveLearnset,     \
+    .formSpeciesIdTable = sSquawkabillyFormSpeciesIdTable
+
     [SPECIES_SQUAWKABILLY_GREEN] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = DEFAULT_CATCH_RATE(190),
-        .expYield = 146,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        SQUAWKABILLY_INFO,
         .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Squawkabilly"),
-        .cryId = CRY_SQUAWKABILLY,
-        .natDexNum = NATIONAL_DEX_SQUAWKABILLY,
-        .categoryName = _("Parrot"),
-        .height = 6,
-        .weight = 24,
         .description = COMPOUND_STRING(
             "Green-feathered flocks hold the\n"
             "most sway. When they're out\n"
@@ -1814,37 +1821,13 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_SquawkabillyGreen,
             gShinyOverworldPalette_SquawkabillyGreen
         )
-        .levelUpLearnset = sSquawkabillyLevelUpLearnset,
-        .teachableLearnset = sSquawkabillyTeachableLearnset,
-        .eggMoveLearnset = sSquawkabillyEggMoveLearnset,
-        .formSpeciesIdTable = sSquawkabillyFormSpeciesIdTable,
     },
 
     [SPECIES_SQUAWKABILLY_BLUE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = DEFAULT_CATCH_RATE(190),
-        .expYield = 146,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        SQUAWKABILLY_INFO,
         .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Squawkabilly"),
-        .cryId = CRY_SQUAWKABILLY,
-        .natDexNum = NATIONAL_DEX_SQUAWKABILLY,
-        .categoryName = _("Parrot"),
-        .height = 6,
-        .weight = 24,
         .description = COMPOUND_STRING(
             "The largest of their flocks can\n"
             "contain more than 50 individuals. They\n"
@@ -1879,37 +1862,13 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_SquawkabillyBlue,
             gShinyOverworldPalette_SquawkabillyBlue
         )
-        .levelUpLearnset = sSquawkabillyLevelUpLearnset,
-        .teachableLearnset = sSquawkabillyTeachableLearnset,
-        .eggMoveLearnset = sSquawkabillyEggMoveLearnset,
-        .formSpeciesIdTable = sSquawkabillyFormSpeciesIdTable,
     },
 
     [SPECIES_SQUAWKABILLY_YELLOW] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = DEFAULT_CATCH_RATE(190),
-        .expYield = 146,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        SQUAWKABILLY_INFO,
         .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Squawkabilly"),
-        .cryId = CRY_SQUAWKABILLY,
-        .natDexNum = NATIONAL_DEX_SQUAWKABILLY,
-        .categoryName = _("Parrot"),
-        .height = 6,
-        .weight = 24,
         .description = COMPOUND_STRING(
             "These Squawkabilly are hotheaded,\n"
             "and their fighting style is vicious.\n"
@@ -1944,37 +1903,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_SquawkabillyYellow,
             gShinyOverworldPalette_SquawkabillyYellow
         )
-        .levelUpLearnset = sSquawkabillyLevelUpLearnset,
-        .teachableLearnset = sSquawkabillyTeachableLearnset,
-        .eggMoveLearnset = sSquawkabillyEggMoveLearnset,
-        .formSpeciesIdTable = sSquawkabillyFormSpeciesIdTable,
     },
 
     [SPECIES_SQUAWKABILLY_WHITE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = DEFAULT_CATCH_RATE(190),
-        .expYield = 146,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        SQUAWKABILLY_INFO,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Squawkabilly"),
-        .cryId = CRY_SQUAWKABILLY,
-        .natDexNum = NATIONAL_DEX_SQUAWKABILLY,
-        .categoryName = _("Parrot"),
-        .height = 6,
-        .weight = 24,
         .description = COMPOUND_STRING(
             "Though these Squawkabilly are the\n"
             "fewest in number, they have no\n"
@@ -2009,10 +1945,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_SquawkabillyWhite,
             gShinyOverworldPalette_SquawkabillyWhite
         )
-        .levelUpLearnset = sSquawkabillyLevelUpLearnset,
-        .teachableLearnset = sSquawkabillyTeachableLearnset,
-        .eggMoveLearnset = sSquawkabillyEggMoveLearnset,
-        .formSpeciesIdTable = sSquawkabillyFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SQUAWKABILLY
 
@@ -5216,31 +5148,38 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #endif //P_FAMILY_DONDOZO
 
 #if P_FAMILY_TATSUGIRI
+    #define TATSUGIRI_INFO                                                     \
+        .baseHP        = 68,                                                   \
+        .baseAttack    = 50,                                                   \
+        .baseDefense   = 60,                                                   \
+        .baseSpeed     = 82,                                                   \
+        .baseSpAttack  = 120,                                                  \
+        .baseSpDefense = 95,                                                   \
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),                           \
+        .catchRate = DEFAULT_CATCH_RATE(100),                                  \
+        .expYield = 166,                                                       \
+        .evYield_SpAttack = 2,                                                 \
+        .genderRatio = PERCENT_FEMALE(50),                                     \
+        .eggCycles = 35,                                                       \
+        .friendship = STANDARD_FRIENDSHIP,                                     \
+        .growthRate = GROWTH_MEDIUM_SLOW,                                      \
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),                        \
+        .abilities = { ABILITY_COMMANDER, ABILITY_NONE, ABILITY_STORM_DRAIN }, \
+        .speciesName = _("Tatsugiri"),                                         \
+        .natDexNum = NATIONAL_DEX_TATSUGIRI,                                   \
+        .categoryName = _("Mimicry"),                                          \
+        .height = 3,                                                           \
+        .weight = 80,                                                          \
+        .levelUpLearnset = sTatsugiriLevelUpLearnset,                          \
+        .teachableLearnset = sTatsugiriTeachableLearnset,                      \
+        .eggMoveLearnset = sTatsugiriEggMoveLearnset,                          \
+        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable
+
     [SPECIES_TATSUGIRI_CURLY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
-        .catchRate = DEFAULT_CATCH_RATE(100),
-        .expYield = 166,
-        .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_COMMANDER, ABILITY_NONE, ABILITY_STORM_DRAIN },
+        TATSUGIRI_INFO,
         .bodyColor = BODY_COLOR_ORANGE,
-        .speciesName = _("Tatsugiri"),
         .cryId = CRY_TATSUGIRI_CURLY,
-        .natDexNum = NATIONAL_DEX_TATSUGIRI,
-        .categoryName = _("Mimicry"),
-        .height = 3,
-        .weight = 80,
         .description = COMPOUND_STRING(
             "This is a small dragon Pokémon. It\n"
             "lives inside the mouth of Dondozo to\n"
@@ -5275,38 +5214,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_TatsugiriCurly,
             gShinyOverworldPalette_TatsugiriCurly
         )
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriCurlyFormChangeTable,
     },
 
     [SPECIES_TATSUGIRI_DROOPY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
-        .catchRate = DEFAULT_CATCH_RATE(100),
-        .expYield = 166,
-        .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_COMMANDER, ABILITY_NONE, ABILITY_STORM_DRAIN },
+        TATSUGIRI_INFO,
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Tatsugiri"),
         .cryId = CRY_TATSUGIRI_DROOPY,
-        .natDexNum = NATIONAL_DEX_TATSUGIRI,
-        .categoryName = _("Mimicry"),
-        .height = 3,
-        .weight = 80,
         .description = COMPOUND_STRING(
             "This Pokémon tricks its opponents\n"
             "by playing dead. It is small and\n"
@@ -5340,38 +5255,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_TatsugiriDroopy,
             gShinyOverworldPalette_TatsugiriDroopy
         )
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriDroopyFormChangeTable,
     },
 
     [SPECIES_TATSUGIRI_STRETCHY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
-        .catchRate = DEFAULT_CATCH_RATE(100),
-        .expYield = 166,
-        .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_COMMANDER, ABILITY_NONE, ABILITY_STORM_DRAIN },
+        TATSUGIRI_INFO,
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Tatsugiri"),
         .cryId = CRY_TATSUGIRI_STRETCHY,
-        .natDexNum = NATIONAL_DEX_TATSUGIRI,
-        .categoryName = _("Mimicry"),
-        .height = 3,
-        .weight = 80,
         .description = COMPOUND_STRING(
             "It's one of the most intelligent\n"
             "dragon Pokémon. It camouflages itself\n"
@@ -5405,22 +5296,26 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_TatsugiriStretchy,
             gShinyOverworldPalette_TatsugiriStretchy
         )
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriStretchyFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
+#define MEGA_TATSUGIRI_INFO                               \
+        .baseHP        = 68,                              \
+        .baseAttack    = 65,                              \
+        .baseDefense   = 90,                              \
+        .baseSpeed     = 92,                              \
+        .baseSpAttack  = 135,                             \
+        .baseSpDefense = 125,                             \
+        .isMegaEvolution = TRUE,                          \
+        .levelUpLearnset = sTatsugiriLevelUpLearnset,     \
+        .teachableLearnset = sTatsugiriTeachableLearnset, \
+        .eggMoveLearnset = sTatsugiriEggMoveLearnset,     \
+        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable
+
     [SPECIES_TATSUGIRI_CURLY_MEGA] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 65,
-        .baseDefense   = 90,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 135,
-        .baseSpDefense = 125,
+        MEGA_TATSUGIRI_INFO,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(100),
         .expYield = 166,
@@ -5463,22 +5358,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Tatsugiri)
         SHADOW(0, 2, SHADOW_SIZE_M)
-        .isMegaEvolution = TRUE,
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriCurlyFormChangeTable,
     },
 
     [SPECIES_TATSUGIRI_DROOPY_MEGA] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 65,
-        .baseDefense   = 90,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 135,
-        .baseSpDefense = 125,
+        MEGA_TATSUGIRI_INFO,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(100),
         .expYield = 166,
@@ -5521,22 +5406,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Tatsugiri)
         SHADOW(0, 2, SHADOW_SIZE_M)
-        .isMegaEvolution = TRUE,
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriDroopyFormChangeTable,
     },
 
     [SPECIES_TATSUGIRI_STRETCHY_MEGA] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 65,
-        .baseDefense   = 90,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 135,
-        .baseSpDefense = 125,
+        MEGA_TATSUGIRI_INFO,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(100),
         .expYield = 166,
@@ -5579,11 +5454,6 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Tatsugiri)
         SHADOW(0, 2, SHADOW_SIZE_M)
-        .isMegaEvolution = TRUE,
-        .levelUpLearnset = sTatsugiriLevelUpLearnset,
-        .teachableLearnset = sTatsugiriTeachableLearnset,
-        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
-        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
         .formChangeTable = sTatsugiriStretchyFormChangeTable,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS

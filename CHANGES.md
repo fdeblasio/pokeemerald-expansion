@@ -3199,6 +3199,17 @@
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
 
+- Kricketot:
+    - HP: 37->40
+    - Def: 41->45
+    - SpD: 41->45
+
+- Kricketune:
+    - HP: 77->80
+    - Def: 51->55
+    - SpD: 51->55
+    - Learns Leech Life by level up
+
 - Shinx/Luxio/Luxray:
     - Learn Zing Zap and Supercell Slam by level up
 
@@ -3244,6 +3255,9 @@
     - Learns Signal Beam by TM
     - Learns Tail Slap by Egg Move
 
+- Buizel/Floatzel:
+    - Learn Bubble by level up
+
 - Cherubi/Cherrim:
     - Learns Fairy Wind by Egg Move
 
@@ -3256,9 +3270,6 @@
 
 - Drifloon/Drifblim:
     - Learn Air Cutter and Air Slash by level up
-
-- Buizel/Floatzel:
-    - Learn Bubble by level up
 
 - Buneary:
     - Evolution: friendship->23
@@ -3287,6 +3298,13 @@
     - SpD: 61->65
     - Spe: 84->85
     - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
+
+- Chatot:
+    - HP: 76->80
+    - SpA: 92->95
+    - SpD: 42->45
+    - Spe: 91->95
+    - Learns Gust, Air Cutter, Air Slash, and Boomburst by level up
 
 - Spiritomb:
     - Learns Astonish, Knock Off, and Foul Play by level up
@@ -3438,7 +3456,11 @@
 - Munna/Musharna:
     - Learn Confusion by level up
 
+- Pidove/Tranquill:
+    - Learn Scratch, Peck, Covet, Pluck, and Dual Wingbeat by level up
+
 - Unfezant:
+    - Learns Scratch, Peck, Covet, Pluck, and Dual Wingbeat by level up
     - Learns Acrobatics by TM
 
 - Blitzle/Zebstrika:
@@ -3573,6 +3595,7 @@
 
 - Sigilyph:
     - Catch rate: 45->90
+    - Learns Psyshock by level up
 
 - Tirtouga:
     - Catch rate: 45->90
@@ -3669,7 +3692,7 @@
 
 - Alomomola (postgame):
     - Held item: Heart Scale: 0%->100%
-    - Learns Flip Turn, Waterfall, and Liquidation by level up
+    - Learns Heart Stamp, Flip Turn, Waterfall, and Liquidation by level up
 
 - Joltik:
     - SpA: 57->60
@@ -3794,9 +3817,22 @@
 
 - Rufflet:
     - Evolution: 54->35
+    - Evolves into Hisuian Braviary with a Shiny Stone
+    - Learns Scratch, Cut, Dual Wingbeat, and Body Slam by level up
+
+- Braviary:
+    - Learns Scratch, Cut, Dual Wingbeat, and Body Slam by level up
+
+- Hisuian Braviary:
+    - Learns Air Cutter by evolving
+    - Learns Scratch, Cut, Dual Wingbeat, and Body Slam by level up
 
 - Vullaby:
     - Evolution: 54->35
+    - Learns Payback, Peck, Night Slash, Dual Wingbeat, and Throat Chop by level up
+
+- Mandibuzz:
+    - Learns Payback, Peck, Night Slash, Dual Wingbeat, and Throat Chop by level up
 
 - Heatmor (postgame):
     - Atk: 97->105
@@ -4976,6 +5012,9 @@
     - Learns Body Press upon evolving
     - Learns Fairy Wind by level up
 
+- Squawkabilly:
+    - Learns Scratch, Cut, Dual Wingbeat, and Body Slam by level up
+
 - Nacli/Naclstack:
     - Learn Rock Tomb by level up
 
@@ -5096,6 +5135,12 @@
 
 - Dondozo (postgame):
     - Learns Stockpile, Swallow, Spit Up, Waterfall, and Liquidation by level up
+
+- Tatsugiri:
+    - Learns Twister, Dragon Breath, and Surf by level up
+
+- Mega Tatsugiri:
+    - Ability: Storm Drain until its official one is revealed
 
 - Gimmighoul:
     - Held item: Relic Gold: 0%->5%

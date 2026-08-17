@@ -130,7 +130,7 @@ upcoming
 - Implement level caps?
 - Give all Pokémon updated movesets
     - Not including cross-gen evos or regionals or already updated:
-        4: 107
+        4: 24 (Burmy-Mothim, Buneary-Lopunny, Bronzor-Bronzong, Finneon-Lumineon, Uxie-Heatran, Giratina-Arceus)
         9: 120
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
@@ -802,6 +802,7 @@ upcoming
         - Cyclizar for Dragon/Cyclists?
         - Klinklang for Steel/Cyclists?
         - Krabby/Crabrawler for Dewford sand?
+        - Cetitan for more Ice/relation to Wailmer?
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, Comfey, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon

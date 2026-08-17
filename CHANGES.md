@@ -2865,11 +2865,11 @@
 
 - Budew:
     - Evolution: friendship->13
-    - Gender ratio: 50/50->75/25
+    - Gender ratio: 50/50->25/75
     - Learns Fairy Wind by Egg Move
 
 - Roselia/Roserade:
-    - Gender ratio: 50/50->75/25
+    - Gender ratio: 50/50->25/75
     - Held items:
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%

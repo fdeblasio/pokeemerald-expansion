@@ -2639,7 +2639,19 @@
     - SpA: 40->80
     - Spd: 97->100
     - Held item: Heart Scale: 50%->100%
+    - Received Cute Charm as a second ability
+    - Evolves into ??? with a Love Sweet
     - Learns Surf by level up
+
+- ???:
+    - Type: Water
+    - HP: 75
+    - Atk: 56
+    - Def: 65
+    - SpA: 100
+    - SpD: 75
+    - Spe: 130
+    - Abilities: Swift Swim/Cute Charm/Hydration
 
 - Bagon/Shelgon:
     - Received Intimidate as a second ability
@@ -2727,7 +2739,18 @@
     - SpD: 42->45
     - Spe: 91->95
     - Catch rate: 30->90
+    - Evolves into ??? with a Linking Cord
     - Learns Gust, Air Cutter, Air Slash, and Boomburst by level up
+
+- ???:
+    - Type: Normal/Flying
+    - HP: 105
+    - Atk: 80
+    - Def: 60
+    - SpA: 120
+    - SpD: 60
+    - Spe: 115
+    - Abilities: Keen Eye/Own Tempo/Amplify
 
 - Regigigas:
     - Learns Rest, Endure, Headbutt, and Body Slam by level up

@@ -11529,7 +11529,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_CUTE_CHARM, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Luvdisc"),
         .cryId = CRY_LUVDISC,
@@ -11580,12 +11580,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLuvdiscLevelUpLearnset,
         .teachableLearnset = sLuvdiscTeachableLearnset,
         .eggMoveLearnset = sLuvdiscEggMoveLearnset,
-    #if P_VEGA_POKEMON
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_VALENTIDE}), //TODO
-    #endif
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LOVE_SWEET, SPECIES_VALENTIDE}),
     },
 
-#if P_VEGA_POKEMON
     [SPECIES_VALENTIDE] =
     {
         .baseHP        = 75,
@@ -11605,7 +11602,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_CUTE_CHARM, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Valentide"),
         .cryId = CRY_LUVDISC,
@@ -11650,7 +11647,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sValentideLevelUpLearnset,
         .teachableLearnset = sValentideTeachableLearnset,
     },
-#endif
 #endif //P_FAMILY_LUVDISC
 
 #if P_FAMILY_BAGON

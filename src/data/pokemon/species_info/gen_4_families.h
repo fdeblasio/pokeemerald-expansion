@@ -2653,7 +2653,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_Pachirikku,
         .iconSprite = gMonIcon_Pachirikku,
         .iconPalIndex = 0,
-        FOOTPRINT(Pachirisu)
+        FOOTPRINT(Pachirikku)
         OVERWORLD(
             sPicTable_Pachirisu,
             SIZE_32x32,
@@ -4218,7 +4218,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_OWN_TEMPO, ABILITY_PUNK_ROCK },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Chatot"),
+        .speciesName = _("Conductot"),
         .cryId = CRY_CHATOT,
         .natDexNum = NATIONAL_DEX_CONDUCTOT,
         .categoryName = _("Chattering"),
@@ -4248,7 +4248,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Chatot)
+        FOOTPRINT(Conductot)
         OVERWORLD(
             sPicTable_Chatot,
             SIZE_32x32,

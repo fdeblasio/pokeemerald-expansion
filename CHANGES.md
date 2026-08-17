@@ -1528,6 +1528,7 @@
     - SpD: 35->40
     - Spe: 35->45
     - Evolution: 28->16
+    - Gender ratio: 75/25->100/0
     - Learns Tackle at level 1
     - Learns Low Kick and Focus Energy at level 6
     - Learns Drain Punch and Brick Break by level up
@@ -1536,11 +1537,13 @@
     - SpD: 60->65
     - Spe: 45->55
     - Evolution: Linking Cord->36
+    - Gender ratio: 75/25->100/0
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Starter Machamp:
     - Def: 80->90
     - Spe: 55->75
+    - Gender ratio: 75/25->100/0
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
 - Mega Machamp:
@@ -3237,6 +3240,7 @@
     - SpD: 35->50
     - Spe: 57->60
     - Evolution: 18->16
+    - Gender ratio: 50/50->0/100
     - Learns Scratch at level 1
     - Learns Peck at level 6
     - Learns Feather Dance by level up
@@ -3249,6 +3253,7 @@
     - SpD: 55->65
     - Spe: 77->80
     - Evolution: 38->36
+    - Gender ratio: 50/50->0/100
     - Learns Scratch and Feather Dance by level up
 
 - Starter Corviknight:
@@ -3257,6 +3262,7 @@
     - Def: 105->115
     - SpA: 53->55
     - Spe: 67->80
+    - Gender ratio: 50/50->0/100
     - Learns Scratch, Feather Dance, and Iron Head by level up
 
 - Mega Corviknight:

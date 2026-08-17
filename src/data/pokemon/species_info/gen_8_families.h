@@ -1456,7 +1456,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sCorviknightPartnerLevelUpLearnset,
         .teachableLearnset = sCorviknightTeachableLearnset,
         .formSpeciesIdTable = sCorviknightFormSpeciesIdTable,
-        .formChangeTable = sCorviknightFormChangeTable,
+        .formChangeTable = sCorviknightPartnerFormChangeTable,
     },
 #endif //P_FAMILY_ROOKIDEE
 

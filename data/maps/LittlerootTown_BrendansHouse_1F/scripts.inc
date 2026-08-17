@@ -188,13 +188,14 @@ LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2::
 	return
 
 LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0:
-	walk_in_place_faster_left
-	walk_left
 	walk_in_place_faster_up
 	walk_up
 	walk_up
 	walk_up
 	walk_up
+	walk_in_place_faster_left
+	walk_left
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1:

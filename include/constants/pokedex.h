@@ -1040,6 +1040,8 @@ enum NationalDexOrder
     NATIONAL_DEX_IRON_CROWN,
     NATIONAL_DEX_TERAPAGOS,
     NATIONAL_DEX_PECHARUNT,
+    NATIONAL_DEX_VALENTIDE,
+    NATIONAL_DEX_CONDUCTOT,
 };
 
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
@@ -1236,6 +1238,7 @@ enum NationalDexOrder
     F(DUCKLETT) \
     F(SWANNA) \
     F(LUVDISC) \
+    F(VALENTIDE) \
     F(WAILMER) \
     F(WAILORD) \
     F(ALOMOMOLA) \
@@ -1339,6 +1342,7 @@ enum NationalDexOrder
     F(KLINKLANG) \
     F(CRAMORANT) \
     F(CHATOT) \
+    F(CONDUCTOT) \
     F(TROPIUS) \
     F(PINSIR) \
     F(HERACROSS) \

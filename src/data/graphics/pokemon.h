@@ -6998,9 +6998,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 
     const u32 gMonFrontPic_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/front.png", ".4bpp.smol");
-    const u32 gMonPalette_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/normal.pal", ".gbapal");
+    const u16 gMonPalette_Ledybulk[] = INCGFX_U16("graphics/pokemon/ledybulk/normal.pal", ".gbapal");
     const u32 gMonBackPic_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/back.png", ".4bpp.smol");
-    const u32 gMonShinyPalette_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/shiny.pal", ".gbapal");
+    const u16 gMonShinyPalette_Ledybulk[] = INCGFX_U16("graphics/pokemon/ledybulk/shiny.pal", ".gbapal");
     const u8 gMonIcon_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/icon.png", ".4bpp");
 #endif //P_FAMILY_LEDYBA
 
@@ -13632,9 +13632,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
     const u32 gMonFrontPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/front.png", ".4bpp.smol");
-    const u32 gMonPalette_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/normal.pal", ".gbapal");
+    const u16 gMonPalette_Valentide[] = INCGFX_U16("graphics/pokemon/valentide/normal.pal", ".gbapal");
     const u32 gMonBackPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/back.png", ".4bpp.smol");
-    const u32 gMonShinyPalette_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/shiny.pal", ".gbapal");
+    const u16 gMonShinyPalette_Valentide[] = INCGFX_U16("graphics/pokemon/valentide/shiny.pal", ".gbapal");
     const u8 gMonIcon_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/icon.png", ".4bpp");
 #endif //P_FAMILY_LUVDISC
 
@@ -14877,9 +14877,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 
     const u32 gMonFrontPic_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/front.png", ".4bpp.smol");
-    const u32 gMonPalette_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/normal.pal", ".gbapal");
+    const u16 gMonPalette_Pachirikku[] = INCGFX_U16("graphics/pokemon/pachirikku/normal.pal", ".gbapal");
     const u32 gMonBackPic_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/back.png", ".4bpp.smol");
-    const u32 gMonShinyPalette_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/shiny.pal", ".gbapal");
+    const u16 gMonShinyPalette_Pachirikku[] = INCGFX_U16("graphics/pokemon/pachirikku/shiny.pal", ".gbapal");
     const u8 gMonIcon_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/icon.png", ".4bpp");
 #endif //P_FAMILY_PACHIRISU
 
@@ -15231,9 +15231,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
     const u32 gMonFrontPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/front.png", ".4bpp.smol");
-    const u32 gMonPalette_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/normal.pal", ".gbapal");
+    const u16 gMonPalette_Conductot[] = INCGFX_U16("graphics/pokemon/conductot/normal.pal", ".gbapal");
     const u32 gMonBackPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/back.png", ".4bpp.smol");
-    const u32 gMonShinyPalette_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/shiny.pal", ".gbapal");
+    const u16 gMonShinyPalette_Conductot[] = INCGFX_U16("graphics/pokemon/conductot/shiny.pal", ".gbapal");
     const u8 gMonIcon_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/icon.png", ".4bpp");
 #endif //P_FAMILY_CHATOT
 

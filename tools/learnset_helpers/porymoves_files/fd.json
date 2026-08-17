@@ -5421,7 +5421,9 @@
     "TutorMoves": []
   },
   "KRICKETUNE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 42, "Move": "MOVE_LEECH_LIFE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -5750,7 +5752,12 @@
     "TutorMoves": []
   },
   "CHATOT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_GUST"},
+      {"Level": 29, "Move": "MOVE_AIR_CUTTER"},
+      {"Level": 37, "Move": "MOVE_AIR_SLASH"},
+      {"Level": 55, "Move": "MOVE_BOOMBURST"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6360,21 +6367,39 @@
     "TutorMoves": []
   },
   "PIDOVE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 1, "Move": "MOVE_PECK"},
+      {"Level": 16, "Move": "MOVE_PLUCK"},
+      {"Level": 20, "Move": "MOVE_COVET"},
+      {"Level": 36, "Move": "MOVE_DUAL_WINGBEAT"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TRANQUILL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 1, "Move": "MOVE_PECK"},
+      {"Level": 16, "Move": "MOVE_PLUCK"},
+      {"Level": 20, "Move": "MOVE_COVET"},
+      {"Level": 44, "Move": "MOVE_DUAL_WINGBEAT"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "UNFEZANT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 1, "Move": "MOVE_PECK"},
+      {"Level": 16, "Move": "MOVE_PLUCK"},
+      {"Level": 20, "Move": "MOVE_COVET"},
+      {"Level": 50, "Move": "MOVE_DUAL_WINGBEAT"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_ACROBATICS"],
     "EggMoves": [],
@@ -6805,7 +6830,9 @@
     "TutorMoves": ["MOVE_DRAGON_BREATH"]
   },
   "SIGILYPH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 30, "Move": "MOVE_PSYSHOCK"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7143,6 +7170,7 @@
   },
   "ALOMOMOLA": {
     "LevelMoves": [
+      {"Level": 17, "Move": "MOVE_HEART_STAMP"},
       {"Level": 25, "Move": "MOVE_FLIP_TURN"},
       {"Level": 41, "Move": "MOVE_WATERFALL"},
       {"Level": 55, "Move": "MOVE_LIQUIDATION"}
@@ -7490,35 +7518,63 @@
     "TutorMoves": []
   },
   "RUFFLET": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 12, "Move": "MOVE_CUT"},
+      {"Level": 48, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 55, "Move": "MOVE_BODY_SLAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BRAVIARY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 1, "Move": "MOVE_CUT"},
+      {"Level": 48, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 57, "Move": "MOVE_BODY_SLAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BRAVIARY_HISUI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 0, "Move": "MOVE_AIR_CUTTER"},
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 1, "Move": "MOVE_CUT"},
+      {"Level": 48, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 57, "Move": "MOVE_BODY_SLAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VULLABY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_PAYBACK"},
+      {"Level": 1, "Move": "MOVE_PECK"},
+      {"Level": 36, "Move": "MOVE_NIGHT_SLASH"},
+      {"Level": 48, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 54, "Move": "MOVE_THROAT_CHOP"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MANDIBUZZ": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_PAYBACK"},
+      {"Level": 1, "Move": "MOVE_PECK"},
+      {"Level": 36, "Move": "MOVE_NIGHT_SLASH"},
+      {"Level": 48, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 57, "Move": "MOVE_THROAT_CHOP"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10683,7 +10739,12 @@
     "TutorMoves": []
   },
   "SQUAWKABILLY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_SCRATCH"},
+      {"Level": 13, "Move": "MOVE_CUT"},
+      {"Level": 34, "Move": "MOVE_DUAL_WINGBEAT"},
+      {"Level": 42, "Move": "MOVE_BODY_SLAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11162,7 +11223,11 @@
     "TutorMoves": []
   },
   "TATSUGIRI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_TWISTER"},
+      {"Level": 17, "Move": "MOVE_DRAGON_BREATH"},
+      {"Level": 52, "Move": "MOVE_SURF"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

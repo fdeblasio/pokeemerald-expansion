@@ -3,7 +3,7 @@
 SlateportCity_Market_TMs:
 	.2byte ITEM_TM_WATER_PULSE
 	.2byte ITEM_TM_CALM_MIND
-	@.2byte ITEM_TM_BULK_UP
+	.2byte ITEM_TM_BULK_UP
 	.2byte ITEM_TM_ROCK_TOMB
 	.2byte ITEM_TM_FALSE_SWIPE
 	.2byte ITEM_TM_FIRE_SPIN
@@ -63,7 +63,6 @@ LavaridgeTown_Mart_TMs:
 	.2byte ITEM_TM_PAYBACK
 	.2byte ITEM_TM_AVALANCHE
 	.2byte ITEM_TM_BRINE
-	.2byte ITEM_TM_HEX
 	.2byte ITEM_TM_VENOSHOCK
 	.2byte ITEM_TM_U_TURN
 	.2byte ITEM_TM_VOLT_SWITCH

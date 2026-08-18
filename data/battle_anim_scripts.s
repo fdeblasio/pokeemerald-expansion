@@ -13294,18 +13294,26 @@ SteelRollerRocks:
 	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, 12, 25, 4, 4
 	return
 
+.macro scale_shot sprite:req
+createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
+delay 3
+playsewithpan SE_M_BONEMERANG, SOUND_PAN_ATTACKER
+createsprite \sprite, ANIM_TARGET, 2, 16, 0, 0, 0, 20, 257
+waitforvisualfinish
+playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
+create_basic_hitsplat_sprite ANIM_TARGET, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=1
+createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 5, 1
+delay 16
+stopsound
+waitforvisualfinish
+.endm
+
 gBattleAnimMove_ScaleShot::
-	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
-	delay 3
-	playsewithpan SE_M_BONEMERANG, SOUND_PAN_ATTACKER
-	createsprite gSpriteTemplate_ScaleShotScale, ANIM_TARGET, 2, 16, 0, 0, 0, 20, 257
-	waitforvisualfinish
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	create_basic_hitsplat_sprite ANIM_TARGET, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=1
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 5, 1
-	delay 16
-	stopsound
-	waitforvisualfinish
+	scale_shot sprite=gSpriteTemplate_ScaleShotScale
+	end
+
+gBattleAnimMove_HeartScaleShot::
+	scale_shot gSpriteTemplate_HeartScaleShotScale
 	end
 
 gBattleAnimMove_MeteorBeam::

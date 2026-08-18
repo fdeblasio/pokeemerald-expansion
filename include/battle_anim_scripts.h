@@ -730,6 +730,7 @@ extern const u8 gBattleAnimMove_SteelBeam[];
 extern const u8 gBattleAnimMove_ExpandingForce[];
 extern const u8 gBattleAnimMove_SteelRoller[];
 extern const u8 gBattleAnimMove_ScaleShot[];
+extern const u8 gBattleAnimMove_HeartScaleShot[];
 extern const u8 gBattleAnimMove_MeteorBeam[];
 extern const u8 gBattleAnimMove_ShellSideArm[];
 extern const u8 gBattleAnimMove_MistyExplosion[];

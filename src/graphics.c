@@ -801,8 +801,11 @@ const u16 gBattleAnimSpritePal_TatsugiriDroopy[] = INCGFX_U16("graphics/battle_a
 const u32 gBattleAnimSpriteGfx_TatsugiriStretchy[] = INCGFX_U32("graphics/battle_anims/sprites/tatsugiri_stretchy.png", ".4bpp.smol");
 const u16 gBattleAnimSpritePal_TatsugiriStretchy[] = INCGFX_U16("graphics/battle_anims/sprites/tatsugiri_stretchy.png", ".gbapal");
 
+//Custom
 const u32 gBattleAnimSpriteGfx_Arrokuda[] = INCGFX_U32("graphics/pokemon/arrokuda/front.png", ".4bpp.smol");
 const u16 gBattleAnimSpritePal_Arrokuda[] = INCGFX_U16("graphics/pokemon/arrokuda/normal.pal", ".gbapal");
+
+const u32 gBattleAnimSpriteGfx_HeartScale[] = INCGFX_U32("graphics/battle_anims/sprites/heart_scale.png", ".4bpp.smol");
 
 // Contest
 const u32 gJPContestGfx1[] = INCGFX_U32("graphics/contest/japanese/composite_1.4bpp", ".smol");

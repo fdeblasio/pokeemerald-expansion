@@ -530,6 +530,8 @@
 - Moves are no longer replaced if a Pokémon levels up in the daycare
 - Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5
 - Some moves had their power or PP slightly updated to make them more similar to other moves (like Ice Beam gaining 5 PP to match Thunderbolt and Flamethrower)
+- Heart Scale Shot: New move, the same as Scale Shot, but Water-type and doesn't reduce Defense. Exclusive to Luvdisc and Alomomola
+
 #### Specific move changes:
 - Normal:
     - Barrage:
@@ -2644,7 +2646,7 @@
     - Held item: Heart Scale: 50%->100%
     - Received Cute Charm as a second ability
     - Evolves into ??? with a Love Sweet
-    - Learns Surf by level up
+    - Learns Heart Scale Shot and Surf by level up
 
 - ???:
     - Type: Water
@@ -2885,7 +2887,7 @@
 
 - Alomomola:
     - Held item: Heart Scale: 0%->100%
-    - Learns Heart Stamp, Flip Turn, Waterfall, and Liquidation by level up
+    - Learns Heart Stamp, Flip Turn, Heart Scale Shot, Waterfall, and Liquidation by level up
 
 - Klink:
     - Atk: 55->60

@@ -1000,8 +1000,8 @@ ROXANNE_REMATCH(2),
 ROXANNE_REMATCH(3),
 ROXANNE_REMATCH(4),
 
-#define BRAWLY_INFO             \
-    LEADER_INFO(BRAWLY),        \
+#define BRAWLY_INFO           \
+    LEADER_INFO(BRAWLY),      \
     .trainerName = _("Adam"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
@@ -1013,26 +1013,26 @@ ROXANNE_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = CAP_GYM_2 - 2,
-        .species = SPECIES_MACHOP,
-        .ability = ABILITY_NO_GUARD,
+        .species = SPECIES_LITWICK,
+        .ability = ABILITY_FLAME_BODY,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_FORESIGHT},
+        .moves = {MOVE_HEX, MOVE_INCINERATE, MOVE_SMOG, MOVE_CONFUSE_RAY},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_2 - 2,
-        .species = SPECIES_MEDITITE,
-        .ability = ABILITY_PURE_POWER,
+        .species = SPECIES_SANDYGAST,
+        .ability = ABILITY_WATER_COMPACTION,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_DETECT, MOVE_CONFUSION, MOVE_BIDE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_HEX, MOVE_MUD_SHOT, MOVE_MEGA_DRAIN, MOVE_SAND_TOMB},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_2,
-        .species = SPECIES_MAKUHITA,
-        .ability = ABILITY_THICK_FAT,
+        .species = SPECIES_GASTLY,
+        .ability = ABILITY_LEVITATE,
         IVS(24),
-        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
+        .moves = {MOVE_HEX, MOVE_LICK, MOVE_HYPNOSIS, MOVE_CONFUSE_RAY},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -6084,14 +6084,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 // Dewford Gym
 [DIFFICULTY_NORMAL][TRAINER_LAURA] =
 {
-    .trainerName = _("Laura"),
+    .trainerName = _("Amelia"),
     HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
+        .lvl = 15,
+        .species = SPECIES_ORICORIO_SENSU,
         IVS(18),
         }
     },
@@ -6099,14 +6099,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [DIFFICULTY_NORMAL][TRAINER_LILITH] =
 {
-    .trainerName = _("Lilith"),
+    .trainerName = _("Gracie"),
     HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_LITWICK,
         IVS(18),
         }
     },
@@ -6120,8 +6120,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 15,
-        .species = SPECIES_MACHOP,
+        .lvl = 13,
+        .species = SPECIES_DHELMISE,
         IVS(15),
         }
     },
@@ -6129,14 +6129,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [DIFFICULTY_NORMAL][TRAINER_TAKAO] =
 {
-    .trainerName = _("Takao"),
-    BLACK_BELT_INFO,
+    .trainerName = _("Jalen"),
+    PSYCHIC_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 13,
-        .species = SPECIES_HERACROSS,
+        .lvl = 15,
+        .species = SPECIES_GOLETT,
         IVS(12),
         }
     },
@@ -6144,14 +6144,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [DIFFICULTY_NORMAL][TRAINER_CRISTIAN] =
 {
-    .trainerName = _("Cristian"),
-    BLACK_BELT_INFO,
+    .trainerName = _("Derek"),
+    PSYCHIC_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_DUSKULL,
         IVS(24),
         }
     },
@@ -6159,14 +6159,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [DIFFICULTY_NORMAL][TRAINER_JOCELYN] =
 {
-    .trainerName = _("Jocelyn"),
+    .trainerName = _("Amanda"),
     HEX_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_SABLEYE,
         IVS(15),
         }
     },

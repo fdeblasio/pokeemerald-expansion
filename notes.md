@@ -58,9 +58,6 @@ upcoming
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
-        - Add Vega Chatot evolution? (Conductot)
-    - Add Vega Luvdisc evolution? (Valentide)
-    - Luvdisc/Alomomola special Heart Scale Shot?
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb

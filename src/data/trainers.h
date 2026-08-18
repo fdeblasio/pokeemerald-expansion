@@ -1987,11 +1987,11 @@ FLANNERY_REMATCH(4),
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
         NORMAN_LINOONE(Rematch, TIER3),         \
-        NORMAN_KECLEON(Rematch, TIER3),         \
-        NORMAN_EXPLOUD(Rematch, TIER3),         \
+        NORMAN_FARIGIRAF(Rematch, TIER3),       \
+        NORMAN_PORYGON_Z(Rematch, TIER3),       \
         NORMAN_ZANGOOSE(Rematch, TIER2),        \
         NORMAN_SPINDA(Rematch, TIER2),          \
-        NORMAN_SLAKING(Rematch, ACE),           \
+        NORMAN_KOMALA(Rematch, ACE),            \
     },                                          \
 }
 

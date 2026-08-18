@@ -1887,7 +1887,15 @@ FLANNERY_REMATCH(4),
 #define NORMAN_KANGASKHAN
 #define NORMAN_TAUROS
 #define NORMAN_DITTO
-#define NORMAN_PORYGON_Z
+
+#define NORMAN_PORYGON_Z(rematch, tier)                                           \
+    {                                                                             \
+    REMATCH_MON(PORYGON_Z, tier, rematch),                                        \
+    .ability = ABILITY_ADAPTABILITY,                                              \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
+    .moves = {MOVE_HYPER_VOICE, MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_NONE,                                                   \
+    }
 
 #define NORMAN_SNORLAX(rematch, tier)                                        \
     {                                                                        \
@@ -1902,7 +1910,16 @@ FLANNERY_REMATCH(4),
 #define NORMAN_FURRET
 #define NORMAN_NOCTOWL
 #define NORMAN_AMBIPOM
-#define NORMAN_FARIGIRAF
+
+#define NORMAN_FARIGIRAF(rematch, tier) \
+    {                                                                                  \
+    REMATCH_MON(FARIGIRAF, tier, rematch),                                             \
+    .ability = ABILITY_ARMOR_TAIL,                                                     \
+    IDEAL_ATTACKER_SPECIAL,                                                            \
+    .moves = {MOVE_HYPER_VOICE, MOVE_TWIN_BEAM, MOVE_DAZZLING_GLEAM, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
 #define NORMAN_DUDUNSPARCE
 #define NORMAN_URSALUNA
 #define NORMAN_WYRDEER
@@ -1984,7 +2001,15 @@ FLANNERY_REMATCH(4),
 
 #define NORMAN_BEWEAR
 #define NORMAN_ORANGURU
-#define NORMAN_KOMALA
+
+#define NORMAN_KOMALA(rematch, tier) \
+    {                                \
+    REMATCH_MON(KOMALA, tier, rematch),                                             \
+    .ability = ABILITY_COMATOSE,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
+    .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_RAPID_SPIN, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
 
 #define NORMAN_GREEDENT(rematch, tier)                                                                           \
     {                                                                                                            \

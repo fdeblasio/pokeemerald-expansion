@@ -11647,8 +11647,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             gOverworldPalette_Luvdisc,
             gShinyOverworldPalette_Luvdisc
         )
-        .levelUpLearnset = sLuvdiscLevelUpLearnset,
-        .teachableLearnset = sLuvdiscTeachableLearnset,
+        .levelUpLearnset = sValentideLevelUpLearnset,
+        .teachableLearnset = sValentideTeachableLearnset,
     },
 #endif
 #endif //P_FAMILY_LUVDISC

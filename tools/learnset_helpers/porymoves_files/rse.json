@@ -35094,6 +35094,81 @@
       "MOVE_SWIFT"
     ]
   },
+  "VALENTIDE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 4,
+        "Move": "MOVE_CHARM"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_AGILITY"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_TAKE_DOWN"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_ATTRACT"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_SWEET_KISS"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_FLAIL"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_SAFEGUARD"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_WATER_PULSE",
+      "MOVE_TOXIC",
+      "MOVE_HAIL",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_BLIZZARD",
+      "MOVE_PROTECT",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SAFEGUARD",
+      "MOVE_FRUSTRATION",
+      "MOVE_RETURN",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_FACADE",
+      "MOVE_SECRET_POWER",
+      "MOVE_REST",
+      "MOVE_ATTRACT",
+      "MOVE_SURF",
+      "MOVE_WATERFALL",
+      "MOVE_DIVE"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_DOUBLE_EDGE",
+      "MOVE_ENDURE",
+      "MOVE_ICY_WIND",
+      "MOVE_MIMIC",
+      "MOVE_PSYCH_UP",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SNORE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SWAGGER",
+      "MOVE_SWIFT"
+    ]
+  },
   "BAGON": {
     "LevelMoves": [
       {

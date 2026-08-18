@@ -271,11 +271,12 @@ const u8 gNotDoneYetDescription[] = _(
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 50 : 30, \
     .pp = 20
 
-#define MULTISTRIKE_INFO \
-    BASIC_MOVE,          \
-    .power = 25,         \
-    .pp = 20,            \
-    .multiHit = TRUE
+#define MULTISTRIKE_INFO(OldContestEffect) \
+    BASIC_MOVE,                            \
+    .power = 25,                           \
+    .pp = 20,                              \
+    .multiHit = TRUE,                      \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : OldContestEffect
 
 #define CHANGE_TYPE_AND_DOUBLE_INFO    \
     .power = 50,                       \
@@ -1328,7 +1329,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_POUND},
@@ -1341,12 +1342,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Repeatedly punches the foe\n"
             "2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_BETTER_IF_SAME_TYPE),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .punchingMove = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_CometPunch,
     },
@@ -1825,11 +1825,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Jabs the foe 2 to 5 times\n"
             "with sharp horns, etc."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_HORN_ATTACK, COMBO_STARTER_PECK},
@@ -2021,10 +2020,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sharp pins are fired to\n"
             "strike 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_BUG,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_PinMissile,
     },
@@ -3966,10 +3964,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Launches sharp spikes that\n"
             "strike 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_SpikeCannon,
     },
@@ -4203,11 +4200,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls round objects at the\n"
             "foe 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_BETTER_IF_SAME_TYPE),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ballisticMove = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_Barrage,
     },
@@ -4520,11 +4516,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Rakes the foe with sharp\n"
             "claws, etc., 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SCRATCH},
@@ -5577,10 +5572,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Strikes the foe with a bone\n"
             "in hand 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_HIGHLY_APPEALING),
         .type = TYPE_GROUND,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = COMBO_STARTER_BONE_RUSH,
         .contestComboMoves = {COMBO_STARTER_BONE_CLUB, COMBO_STARTER_BONEMERANG, COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_SHADOW_BONE},
@@ -7777,11 +7771,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Straight-arm punches that\n"
             "strike the foe 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_FIGHTING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FAKE_OUT, COMBO_STARTER_FOCUS_ENERGY},
@@ -8599,11 +8592,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Shoots 2 to 5 seeds in a row\n"
             "to strike the foe."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS),
         .type = TYPE_GRASS,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ballisticMove = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {GRASS_COMBOS, COMBO_STARTER_ROTOTILLER},
@@ -8633,10 +8625,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks the foe by firing\n"
             "2 to 5 icicles in a row."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL),
         .type = TYPE_ICE,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
         .battleAnimScript = gBattleAnimMove_IcicleSpear,
     },
@@ -9001,11 +8992,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls boulders at the foe\n"
             "2 to 5 times in a row."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_BETTER_IF_SAME_TYPE),
         .type = TYPE_ROCK,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ballisticMove = B_UPDATED_MOVE_FLAGS >= GEN_7,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_RockBlast,
     },
@@ -12774,11 +12764,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Strikes the foe with its\n"
             "tail 2 to 5 times."),
-        MULTISTRIKE_INFO,
+        MULTISTRIKE_INFO(CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION),
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING,
         NO_COMBO(CONTEST_CATEGORY_CUTE),
         .battleAnimScript = gBattleAnimMove_TailSlap,
     },
@@ -16356,7 +16345,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .multiHit = TRUE,
-        .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER,
+        .contestEffect = CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_ScaleShot,
     },
@@ -18665,6 +18654,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     .description = COMPOUND_STRING("A basic attack."), \
     .type = TYPE_##Type,                               \
     .category = DAMAGE_CATEGORY_##Category,            \
+    .metronomeBanned = TRUE,                           \
     .battleAnimScript = gBattleAnimMove_None
 
     [MOVE_YELP] =
@@ -18763,6 +18753,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Cuddle"),
         CUSTOM_BASIC_MOVE_INFO(FAIRY, PHYSICAL),
         .makesContact = TRUE,
+    },
+
+    [MOVE_HEART_SCALE_SHOT] =
+    {
+        .name = COMPOUND_STRING("Heart Scale Shot"),
+        .description = COMPOUND_STRING(
+            "Shoots scales 2 to 5 times.\n"
+            "Increases Speed."),
+        .effect = EFFECT_HEART_SCALE_SHOT,
+        .power = 25,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .multiHit = TRUE,
+        .contestEffect = CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING,
+        NO_COMBO(CONTEST_CATEGORY_CUTE),
+        .battleAnimScript = gBattleAnimMove_HeartScaleShot,
     },
 
 #define Z_MOVE_BASE \

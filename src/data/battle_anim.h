@@ -1450,6 +1450,7 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_NEW_IMPACT, gBattleAnimSpriteGfx_Impact, 0x0200, gBattleAnimSpritePal_NewImpact),
     //Custom
     BATTLE_ANIMATION(ANIM_TAG_ARROKUDA, gBattleAnimSpriteGfx_Arrokuda, 0x0800, gBattleAnimSpritePal_Arrokuda),
+    BATTLE_ANIMATION(ANIM_TAG_HEART_SCALE, gBattleAnimSpriteGfx_HeartScale, 0x0200, gItemIconPalette_HeartScale),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

@@ -775,7 +775,7 @@ upcoming
 
 ## Future hacks
 - Miscellaneous:
-    - Magma gets Diglett, Aqua gets Wiglett
+    - Magma gets Diglett/Toedscool, Aqua gets Wiglett/Tentacool
     - Elite Four where each one is based on either a terrain and/or weather
         - For combos, Sunny/Grassy Terrain, Rainy/Electric Terrain
         - Weather kind of copies Magma/Aqua though

@@ -6810,6 +6810,14 @@ void AnimTranslateGulpMissile(struct Sprite *sprite)
     TranslateAnimSpriteToTargetMonLocation(sprite);
 };
 
+const struct SpriteTemplate gSpriteTemplate_HeartScaleShotScale =
+{
+    SPRITE_TAG(ANIM_TAG_HEART_SCALE),
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = gAffineAnims_BasicRock,
+    .callback = AnimRockBlastRock,
+};
+
 // functions
 //general
 void AnimTask_IsTargetPartner(u8 taskId)

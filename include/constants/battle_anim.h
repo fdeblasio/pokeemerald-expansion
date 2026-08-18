@@ -440,8 +440,10 @@
 #define ANIM_TAG_NEW_POKEBALL               (ANIM_SPRITES_START + 425)
 #define ANIM_TAG_NEW_GREEN_STAR             (ANIM_SPRITES_START + 426)
 #define ANIM_TAG_NEW_IMPACT                 (ANIM_SPRITES_START + 427)
+
 #define ANIM_TAG_ARROKUDA                   (ANIM_SPRITES_START + 428)
-#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_ARROKUDA + 1)
+#define ANIM_TAG_HEART_SCALE                (ANIM_SPRITES_START + 429)
+#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_HEART_SCALE + 1)
 
 // battlers
 enum AnimBattler

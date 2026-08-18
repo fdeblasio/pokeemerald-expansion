@@ -921,6 +921,7 @@ enum __attribute__((packed)) Move
     MOVE_YELL,
     MOVE_MIRROR_FLASH,
     MOVE_CUDDLE,
+    MOVE_HEART_SCALE_SHOT,
     MOVES_COUNT_CUSTOM,
 
     MOVES_COUNT = MOVES_COUNT_CUSTOM,

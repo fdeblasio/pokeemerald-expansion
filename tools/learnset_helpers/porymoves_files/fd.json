@@ -5067,6 +5067,15 @@
     "EggMoves": [],
     "TutorMoves": []
   },
+  "VALENTIDE": {
+    "LevelMoves": [
+      {"Level": 34, "Move": "MOVE_SURF"}
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "BAGON": {
     "LevelMoves": [
       {"Level": 20, "Move": "MOVE_DRAGON_PULSE"}
@@ -5752,6 +5761,18 @@
     "TutorMoves": []
   },
   "CHATOT": {
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_GUST"},
+      {"Level": 29, "Move": "MOVE_AIR_CUTTER"},
+      {"Level": 37, "Move": "MOVE_AIR_SLASH"},
+      {"Level": 55, "Move": "MOVE_BOOMBURST"}
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "CONDUCTOT": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_GUST"},
       {"Level": 29, "Move": "MOVE_AIR_CUTTER"},

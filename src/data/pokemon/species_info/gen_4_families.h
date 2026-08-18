@@ -4259,8 +4259,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gShinyOverworldPalette_Chatot
         )
         .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
-        .levelUpLearnset = sChatotLevelUpLearnset,
-        .teachableLearnset = sChatotTeachableLearnset,
+        .levelUpLearnset = sConductotLevelUpLearnset,
+        .teachableLearnset = sConductotTeachableLearnset,
     },
 #endif
 #endif //P_FAMILY_CHATOT

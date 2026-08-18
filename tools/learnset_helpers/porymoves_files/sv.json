@@ -36789,6 +36789,105 @@
     ],
     "TutorMoves": []
   },
+  "VALENTIDE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_CHARM"
+      },
+      {
+        "Level": 4,
+        "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_AGILITY"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_WISH"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ATTRACT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 26,
+        "Move": "MOVE_FLAIL"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_SWEET_KISS"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_TAKE_DOWN"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_BABY_DOLL_EYES"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_AQUA_RING"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_SOAK"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_HYDRO_PUMP"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_SAFEGUARD"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_CHARM",
+      "MOVE_AGILITY",
+      "MOVE_PROTECT",
+      "MOVE_WATER_PULSE",
+      "MOVE_FACADE",
+      "MOVE_ICY_WIND",
+      "MOVE_DRAINING_KISS",
+      "MOVE_ENDURE",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SNOWSCAPE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_WATERFALL",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_LIQUIDATION",
+      "MOVE_SURF",
+      "MOVE_ICE_BEAM",
+      "MOVE_HYDRO_PUMP",
+      "MOVE_BLIZZARD",
+      "MOVE_TERA_BLAST",
+      "MOVE_FLIP_TURN",
+      "MOVE_SCALE_SHOT",
+      "MOVE_PSYCH_UP",
+      "MOVE_ENDEAVOR",
+      "MOVE_WHIRLPOOL"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
   "BAGON": {
     "LevelMoves": [
       {

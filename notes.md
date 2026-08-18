@@ -134,11 +134,14 @@ upcoming
         9: 120
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
+    - Staraptor because of different-typed Mega?
+        - Mega Staraptor Fighting/Flying->Flying/Fighting?
 - The default legendary battle music seems to be FRLG's. See if that is in vanilla and potentially change back to RSE
 - Remove evolved fishing encounters for the Safari Zone?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
     - Vanilla:
         - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
+        - Staraptor Normal(?)/Flying->Mega Staraptor Fighting/Flying
     - Custom:
         - Mime Jr. Psychic->Galarian Mr. Mime Ice/Psychic
         - Swablu Flying->Altaria Dragon/Flying

@@ -60,6 +60,7 @@ upcoming
     - Boost Chatot/Squawkabilly too?
         - Add Vega Chatot evolution? (Conductot)
     - Add Vega Luvdisc evolution? (Valentide)
+    - Luvdisc/Alomomola special Heart Scale Shot?
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb

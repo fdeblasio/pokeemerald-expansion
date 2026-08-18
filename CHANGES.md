@@ -239,7 +239,7 @@
 |TM005|Roar|Route 114|
 |TM006|Toxic|Fortree TM Shop|
 |TM007|Hail|Shoal Cave|
-|TM008|Bulk Up|Brawly|
+|TM008|Bulk Up|Slateport TM Shop|
 |TM009|Bullet Seed|Route 104|
 |TM010|Hidden Power|Fortree|
 |TM011|Sunny Day|Scorched Slab|
@@ -338,7 +338,7 @@
 |TM104|Payback|Lavaridge TM Shop|
 |TM105|Avalanche|Lavaridge TM Shop|
 |TM106|Brine|Lavaridge TM Shop|
-|TM107|Hex|Lavaridge TM Shop|
+|TM107|Hex|Dewford Gym Leader|
 |TM108|Venoshock|Lavaridge TM Shop|
 |TM109|U-turn|Lavaridge TM Shop|
 |TM110|Volt Switch|Lavaridge TM Shop|

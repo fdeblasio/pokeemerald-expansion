@@ -49,7 +49,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	end
 
 MossdeepCity_Gym_EventScript_GivePsychic2::
-	giveitem ITEM_TM_PSYCHIC
+	giveitem ITEM_TM_DRAGON_PULSE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_PSYCHIC
@@ -57,7 +57,7 @@ MossdeepCity_Gym_EventScript_GivePsychic2::
 	end
 
 MossdeepCity_Gym_EventScript_GivePsychic::
-	giveitem ITEM_TM_PSYCHIC
+	giveitem ITEM_TM_DRAGON_PULSE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_PSYCHIC
@@ -505,59 +505,59 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible Pokémon power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "Tate: Hehehe… Were you surprised?\p"
-	.string "Liza: Fufufu… Were you surprised?\p"
-	.string "Tate: That there are two Gym Leaders?\n"
-	.string "Liza: That there are two Gym Leaders?\p"
-	.string "Tate: We're twins!\n"
-	.string "Liza: We're twins!\p"
-	.string "Tate: We don't need to talk because…\n"
-	.string "Liza: We can each determine what…\p"
-	.string "Tate: The other is thinking…\n"
-	.string "Liza: All in our minds!\p"
-	.string "Tate: This combination of ours…\n"
-	.string "Liza: Can you beat it?$"
+	.string "Ivanna: Hehehe… Were you surprised?\p"
+	.string "Fufufu… Were you surprised?\p"
+	.string "That there are two Gym Leaders?\n"
+	.string "That there are two Gym Leaders?\p"
+	.string "We're twins!\n"
+	.string "We're twins!\p"
+	.string "We don't need to talk because…\n"
+	.string "We can each determine what…\p"
+	.string "The other is thinking…\n"
+	.string "All in our minds!\p"
+	.string "This combination of ours…\n"
+	.string "Can you beat it?$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
-	.string "Tate: What?! Our combination…\n"
-	.string "Liza: Was shattered!\p"
-	.string "Tate: It can't be helped. You've won…\n"
-	.string "Liza: So, in recognition, take this.$"
+	.string "Ivanna: What?! Our combination…\n"
+	.string "Was shattered!\p"
+	.string "It can't be helped. You've won…\n"
+	.string "So, in recognition, take this.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the Mind Badge\n"
-	.string "from Tate and Liza.$"
+	.string "from Ivanna.$"
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
-	.string "Tate: The Mind Badge enhances the\n"
+	.string "Ivanna: The Mind Badge enhances the\n"
 	.string "Sp. Atk and Sp. Def of Pokémon.\p"
-	.string "Liza: You should also take this, too.$"
+	.string "You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainPsychic:
-	.string "Tate: That TM029 contains…\n"
-	.string "Liza: Psychic!\p"
-	.string "Tate: It's a move that's perfect…\n"
-	.string "Liza: For Psychic Pokémon!\p"
+	.string "Ivanna: That TM210 contains\n"
+	.string "Dragon Pulse!\p"
+	.string "It's a move that's perfect\n"
+	.string "for Dragon Pokémon!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered Gym Leaders Tate & Liza\n"
+	.string "Registered Gym Leaders Ivanna & Ivanna\n"
 	.string "in the PokéNav.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
-	.string "Tate: Looks like the bond between you\n"
+	.string "Ivanna: Looks like the bond between you\n"
 	.string "and your Pokémon is far stronger than\l"
 	.string "the bond that we share as twins.\p"
-	.string "Liza: You will become even stronger!\n"
+	.string "You will become even stronger!\n"
 	.string "We've battled you, so we know.$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "Tate: Hehehe… Were you surprised?\p"
-	.string "Liza: That there are two Gym Leaders?\p"
-	.string "Tate: Oops, you have only one…\n"
-	.string "Liza: Pokémon that can battle.\p"
-	.string "Tate: We can't battle that way!\p"
-	.string "Liza: If you want to challenge us,\n"
+	.string "Ivanna: Hehehe… Were you surprised?\p"
+	.string "That there are two Gym Leaders?\p"
+	.string "Oops, you have only one…\n"
+	.string "Pokémon that can battle.\p"
+	.string "We can't battle that way!\p"
+	.string "If you want to challenge us,\n"
 	.string "bring some more Pokémon.$"
 
 MossdeepCity_Gym_Text_GymStatue:
@@ -565,39 +565,39 @@ MossdeepCity_Gym_Text_GymStatue:
 
 MossdeepCity_Gym_Text_GymStatueCertified:
 	.string "Mossdeep City Pokémon Gym\p"
-	.string "Liza and Tate's Certified Trainers:\n"
+	.string "Ivanna's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "Tate: Pokémon…\n"
-	.string "Liza: Pokémon…\p"
-	.string "Tate: By changing the party's mix…\n"
-	.string "Liza: The battle style changes.\p"
-	.string "Tate: But me…\n"
-	.string "Liza: But me…\p"
-	.string "Tate: I'll always be with Liza!\n"
-	.string "Liza: I'll always be with Tate!\p"
-	.string "Tate: Our combination…\n"
-	.string "Liza: We'll show you again and again!$"
+	.string "Ivanna: Pokémon…\n"
+	.string "Pokémon…\p"
+	.string "By changing the party's mix…\n"
+	.string "The battle style changes.\p"
+	.string "But me…\n"
+	.string "But me…\p"
+	.string "I'll always be with Ivanna!\n"
+	.string "I'll always be with Ivanna!\p"
+	.string "Our combination…\n"
+	.string "We'll show you again and again!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "Tate: You and your Pokémon…\n"
-	.string "Liza: It's as if you were siblings!$"
+	.string "Ivanna: You and your Pokémon…\n"
+	.string "It's as if you were siblings!$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
-	.string "Tate: You can knock us down,\n"
+	.string "Ivanna: You can knock us down,\n"
 	.string "but we'll never stay down!\p"
-	.string "Liza: Because the two of us,\n"
+	.string "Because the two of us,\n"
 	.string "we always support each other!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
-	.string "Tate: You're back again…\n"
-	.string "Liza: You're back again…\p"
-	.string "Tate: To give us a rematch.\n"
-	.string "Liza: To give us a rematch.\p"
-	.string "Tate: But…\n"
-	.string "Liza: For our match…\p"
-	.string "Tate: You brought just one Pokémon!\n"
-	.string "Liza: You brought just one Pokémon!\p"
-	.string "Tate: We need you to bring at least…\n"
-	.string "Liza: Two Pokémon when you come back.$"
+	.string "Ivanna: You're back again…\n"
+	.string "You're back again…\p"
+	.string "To give us a rematch.\n"
+	.string "To give us a rematch.\p"
+	.string "But…\n"
+	.string "For our match…\p"
+	.string "You brought just one Pokémon!\n"
+	.string "You brought just one Pokémon!\p"
+	.string "We need you to bring at least…\n"
+	.string "Two Pokémon when you come back.$"

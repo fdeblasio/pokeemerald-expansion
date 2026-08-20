@@ -282,7 +282,7 @@
 |TM047|Steel Wing|Granite Cave|
 |TM048|Skill Swap|Mt. Pyre|
 |TM049|Snatch|SS Tidal|
-|TM050|Overheat|Flannery|
+|TM050|Overheat|Lilycove Department Store|
 |TM051|Cut|Rustboro|
 |TM052|Fly|Route 119|
 |TM053|Surf|Petalburg|
@@ -397,7 +397,7 @@
 |TM162|Psychic Noise|Fortree TM Shop|
 |TM163|Seed Bomb|Fortree TM Shop|
 |TM164|X-Scissor|Fortree TM Shop|
-|TM165|Signal Beam|Fortree TM Shop|
+|TM165|Signal Beam|Lavaridge Gym Leader|
 |TM166|Zen Headbutt|Fortree TM Shop|
 |TM167|Drill Run|Fortree TM Shop|
 |TM168|Dual Wingbeat|Fortree TM Shop|
@@ -2832,6 +2832,7 @@
 
 - Dwebble/Crustle:
     - Learn Rock Throw and Rock Tomb by level up
+    - Learn Signal Beam by TM
 
 - Sigilyph:
     - Catch rate: 45->90

@@ -52,7 +52,7 @@ upcoming
 - Wallace->Frank
 - Update Gym leaders/Elite Four
     - Rustboro and Dewford first battles completed
-    - Petalburg first battles and rematches completed
+    - Lavaridge and Petalburg first battles and rematches completed
     - Update TMs
     - Eric Spinda pattern
     - Check Steven's Copperajah note

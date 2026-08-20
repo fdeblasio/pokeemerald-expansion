@@ -4290,8 +4290,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {                                                                           \
         .lvl = Level,                                                               \
         .species = SPECIES_JORDAN_ACE + (Level < SPACE_CENTER_GRUNT_LEVEL ? 0 : 1), \
-        .ability = ABILITY_ROCK_HEAD,                                               \
-        .gender = TRAINER_MON_FEMALE,                                               \
+        .ability = ABILITY_IRON_FIST,                                               \
+        .gender = TRAINER_MON_NONE,                                                 \
         }                                                                           \
     },                                                                              \
 }
@@ -4491,39 +4491,39 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                   \
 }
 
-#define COURTNEY_BATTLE(Location, AceLevel, IVs)                                      \
-[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                    \
-{                                                                                     \
-    .trainerName = _("Kate"),                                                         \
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                          \
-    .gender = TRAINER_GENDER_FEMALE,                                                  \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                  \
-    BOSS_AI_FLAGS,                                                                    \
-    .partySize = 3,                                                                   \
-    .party = (const struct TrainerMon[]) {                                            \
-        {                                                                             \
-        .lvl = (AceLevel - 2),                                                        \
+#define COURTNEY_BATTLE(Location, AceLevel, IVs)                                          \
+[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                        \
+{                                                                                         \
+    .trainerName = _("Kate"),                                                             \
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                            \
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                              \
+    .gender = TRAINER_GENDER_FEMALE,                                                      \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                      \
+    BOSS_AI_FLAGS,                                                                        \
+    .partySize = 3,                                                                       \
+    .party = (const struct TrainerMon[]) {                                                \
+        {                                                                                 \
+        .lvl = (AceLevel - 2),                                                            \
         .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SILICOBRA : SPECIES_SANDACONDA, \
-        .ability = 0,                                                                 \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_FEMALE,                                                 \
-        },                                                                            \
-        {                                                                             \
-        .lvl = (AceLevel - 2),                                                        \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_FLETCHINDER : SPECIES_TALONFLAME,   \
-        .ability = ABILITY_FLAME_BODY,                                                  \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_FEMALE,                                                   \
-        },                                                                            \
-        {                                                                             \
-        .lvl = AceLevel,                                                              \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,\
-        .ability = ABILITY_FLASH_FIRE,                                                \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_MALE,                                                   \
-        }                                                                             \
-    },                                                                                \
+        .ability = 0,                                                                    \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                    \
+        },                                                                               \
+        {                                                                                \
+        .lvl = (AceLevel - 2),                                                           \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_DRILBUR : SPECIES_EXCADRILL,   \
+        .ability = ABILITY_SAND_FORCE,                                                   \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                    \
+        },                                                                               \
+        {                                                                                \
+        .lvl = AceLevel,                                                                 \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,   \
+        .ability = ABILITY_FLASH_FIRE,                                                   \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                    \
+        }                                                                                \
+    },                                                                                   \
 }
 
 #define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
@@ -10113,7 +10113,7 @@ TABITHA_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 1, 6),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         MAXIE_TRAPINCH(CAP_MT_CHIMNEY - 2),
-        MAXIE_GOLETT(CAP_MT_CHIMNEY - 1),
+        MAXIE_SANDILE(CAP_MT_CHIMNEY - 1),
         MAXIE_RHYHORN(CAP_MT_CHIMNEY - 1),
         {
         HUMPHREY(CAP_MT_CHIMNEY),
@@ -14964,7 +14964,7 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, CAP_MAGMA_HIDEOUT - 1, 9),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         MAXIE_TRAPINCH(CAP_MAGMA_HIDEOUT - 2),
-        MAXIE_GOLETT(CAP_MAGMA_HIDEOUT - 1),
+        MAXIE_SANDILE(CAP_MAGMA_HIDEOUT - 1),
         MAXIE_RHYHORN(CAP_MAGMA_HIDEOUT - 1),
         {
         HUMPHREY(CAP_MAGMA_HIDEOUT),
@@ -15658,7 +15658,7 @@ TABITHA_BATTLE(SPACE_CENTER, CAP_SPACE_CENTER - 1, 12),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_GOLETT(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
+        MAXIE_SANDILE(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
         MAXIE_RHYHORN(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
         {
         HUMPHREY(CAP_SPACE_CENTER),

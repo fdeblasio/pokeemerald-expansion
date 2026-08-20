@@ -2794,10 +2794,10 @@
     - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Learns Psybeam and Psychic Noise by level up
 
-- Drilbur (postgame):
+- Drilbur:
     - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
 
-- Excadrill (postgame):
+- Excadrill:
     - Learns Smart Strike upon evolving
     - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
 
@@ -2811,18 +2811,18 @@
 - Seismitoad (postgame):
     - Learns Mud Bomb, Waterfall, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
 
-- Sandile (postgame):
+- Sandile:
     - Atk: 72->75
     - Evolution: 29->25
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
-- Krokorok (postgame):
+- Krokorok:
     - Atk: 82->85
     - Spe: 74->75
     - Evolution: 40->38
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
-- Krookodile (postgame):
+- Krookodile:
     - Atk: 117->120
     - Spe: 92->95
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up

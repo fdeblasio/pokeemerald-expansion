@@ -111,7 +111,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	end
 
 MauvilleCity_Gym_EventScript_GiveShockWave2::
-	giveitem ITEM_TM_SHOCK_WAVE
+	giveitem ITEM_TM_ROCK_TOMB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
@@ -119,7 +119,7 @@ MauvilleCity_Gym_EventScript_GiveShockWave2::
 	end
 
 MauvilleCity_Gym_EventScript_GiveShockWave::
-	giveitem ITEM_TM_SHOCK_WAVE
+	giveitem ITEM_TM_ROCK_TOMB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
@@ -258,41 +258,41 @@ MauvilleCity_Gym_EventScript_GymStatue::
 MauvilleCity_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Wattson, the Leader of Mauville\n"
-	.string "Gym, uses Electric-type Pokémon.\p"
-	.string "If you challenge him with Water-type\n"
-	.string "Pokémon, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his Gym! Eccentric!\p"
+	.string "Linda, the Leader of Mauville\n"
+	.string "Gym, uses Rock-type Pokémon.\p"
+	.string "If you challenge her with Fire-type\n"
+	.string "Pokémon, she'll rock them!\p"
+	.string "And, she's put in switch-controlled\n"
+	.string "doors all over her Gym! Eccentric!\p"
 	.string "Hey, go for it!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa, you're electrifying!\n"
+	.string "Whoa, you're rocking!\n"
 	.string "You've powered the door open!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
+	.string "My rock soul, it'll shatter your\n"
 	.string "dreams whole, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
 	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "over-driven rock, man!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
 	.string "Pokémon and rock, it's all about heart,\n"
 	.string "whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under Wattson!\n"
+	.string "I trained under Linda!\n"
 	.string "There ain't no way I'll lose easily!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
 	.string "Unplugged and turned off…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "Wattson, our Gym Leader, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
+	.string "Linda, our Gym Leader, has been\n"
+	.string "around for a short time.\p"
+	.string "She was battling even after your\n"
 	.string "daddy was born, that tough coot.$"
 
 MauvilleCity_Gym_Text_BenIntro:
@@ -303,7 +303,7 @@ MauvilleCity_Gym_Text_BenDefeat:
 	.string "It's no fun to lose…$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "Wattson says he likes setting up\n"
+	.string "Linda says she likes setting up\n"
 	.string "little traps with switches.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
@@ -315,10 +315,10 @@ MauvilleCity_Gym_Text_VivianDefeat:
 
 MauvilleCity_Gym_Text_VivianPostBattle:
 	.string "I've heard that Mauville was founded\n"
-	.string "by Wattson.\p"
-	.string "He was a Trainer long before we\n"
+	.string "by Linda.\p"
+	.string "She was a Trainer long before we\n"
 	.string "became Trainers.\l"
-	.string "He must know all sorts of things!$"
+	.string "She must know all sorts of things!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
 	.string "I love shiny things!$"
@@ -328,7 +328,7 @@ MauvilleCity_Gym_Text_AngeloDefeat:
 	.string "My eyes are frazzled…$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "Mauville Gym's Wattson has a shiny\n"
+	.string "Mauville Gym's Linda has a shiny\n"
 	.string "forehead. It makes me happy!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
@@ -341,7 +341,7 @@ MauvilleCity_Gym_Text_WattsonIntro:
 	.string "past all my rigged doors?\p"
 	.string "Wahahahah!\n"
 	.string "Now, that is amusing!\p"
-	.string "Then, I, Wattson, the Leader of\n"
+	.string "Then, I, Linda, the Leader of\n"
 	.string "Mauville Gym, shall electrify you!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
@@ -352,7 +352,7 @@ MauvilleCity_Gym_Text_WattsonDefeat:
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "{PLAYER} received the Dynamo Badge\n"
-	.string "from Wattson.$"
+	.string "from Linda.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 	.string "With the Dynamo Badge, you can\n"
@@ -363,13 +363,13 @@ MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 	.string "You should take this, too!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM034 there contains Shock Wave.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
+	.string "That TM039 there contains Rock Tomb.\p"
+	.string "It's a trustworthy move that\n"
+	.string "lowers the foe's Speed!\p"
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered Gym Leader Wattson\n"
+	.string "Registered Gym Leader Linda\n"
 	.string "in the PokéNav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
@@ -385,15 +385,15 @@ MauvilleCity_Gym_Text_GymStatue:
 
 MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "Mauville City Pokémon Gym\p"
-	.string "Wattson's Certified Trainers:\n"
+	.string "Linda's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "Wattson: Ah-ha! Here at last!\n"
+	.string "Linda: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my Pokémon!\p"
 	.string "Wahahahaha!\p"
-	.string "I'll make sparks fly from you!\n"
+	.string "I'll make rocks fly from you!\n"
 	.string "Don't say I didn't warn you!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
@@ -401,7 +401,7 @@ MauvilleCity_Gym_Text_WattsonRematchDefeat:
 	.string "Our batteries ran dry…$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "Wattson: We'll have to recharge our\n"
+	.string "Linda: We'll have to recharge our\n"
 	.string "batteries again.\p"
 	.string "When we're fully charged up, we'll\n"
 	.string "gladly accept your challenge.\p"
@@ -409,7 +409,7 @@ MauvilleCity_Gym_Text_WattsonPostRematch:
 	.string "won't you?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "Wattson: Ah-ha! Here at last!\n"
+	.string "Linda: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my Pokémon!\p"
 	.string "Wahahahaha!\p"

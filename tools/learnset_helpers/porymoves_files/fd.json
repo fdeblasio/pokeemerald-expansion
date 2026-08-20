@@ -288,7 +288,7 @@
       {"Level": 2, "Move": "MOVE_NASTY_PLOT"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_RISING_VOLTAGE"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -1953,7 +1953,10 @@
       {"Level": 1, "Move": "MOVE_FURY_CUTTER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_AERIAL_ACE"],
+    "TMMoves": [
+      "MOVE_AERIAL_ACE",
+      "MOVE_LUNGE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3199,7 +3202,7 @@
     }
   ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_DRAIN_PUNCH"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -7919,7 +7922,7 @@
       {"Level": 56, "Move": "MOVE_DUAL_WINGBEAT"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_BLAZE_KICK"],
     "EggMoves": [],
     "TutorMoves": []
   },

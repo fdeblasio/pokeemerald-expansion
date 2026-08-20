@@ -810,13 +810,13 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define WALLY_TALONFLAME(rematch, tier)                                               \
-    {                                                                                 \
-    REMATCH_MON(TALONFLAME, tier, rematch),                                           \
-    .ability = ABILITY_GALE_WINGS,                                                    \
-    IDEAL_SPEEDSTER_PHYSICAL,                                                         \
-    .moves = {MOVE_TEMPER_FLARE, MOVE_DUAL_WINGBEAT, MOVE_STEEL_WING, MOVE_TAILWIND}, \
-    .gender = TRAINER_MON_MALE,                                                       \
+#define WALLY_TALONFLAME(rematch, tier)                                             \
+    {                                                                               \
+    REMATCH_MON(TALONFLAME, tier, rematch),                                         \
+    .ability = ABILITY_GALE_WINGS,                                                  \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                       \
+    .moves = {MOVE_BLAZE_KICK, MOVE_DUAL_WINGBEAT, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                                     \
     }
 
 #define WALLY_DUBWOOL(rematch, tier)                                                  \
@@ -1718,13 +1718,13 @@ WATTSON_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
-#define FLANNERY_TALONFLAME(rematch, tier)                                                                              \
-    {                                                                                                                   \
-    REMATCH_MON(TALONFLAME, tier, rematch),                                                                             \
-    .ability = ABILITY_FLAME_BODY,                                                                                      \
-    IDEAL_SPEEDSTER_PHYSICAL,                                                                                           \
-    .moves = {MOVE_TEMPER_FLARE, tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_STEEL_WING, MOVE_TAILWIND}, \
-    .gender = TRAINER_MON_FEMALE,                                                                                       \
+#define FLANNERY_TALONFLAME(rematch, tier)                                                                            \
+    {                                                                                                                 \
+    REMATCH_MON(TALONFLAME, tier, rematch),                                                                           \
+    .ability = ABILITY_FLAME_BODY,                                                                                    \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                                                         \
+    .moves = {MOVE_BLAZE_KICK, tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                     \
     }
 
 #define FLANNERY_PYROAR(rematch, tier)                                             \
@@ -3130,14 +3130,14 @@ JUAN_REMATCH(4),
 
 #define PHOEBE_POLTEAGEIST
 
-#define PHOEBE_HOUNDSTONE(Level, Tier)                                                \
-    {                                                                                 \
-    ELITE_FOUR_MON(Level, HOUNDSTONE, Tier, PHOEBE),                                  \
-    .ability = ABILITY_FLUFFY,                                                        \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_DEF_SPE,                                                            \
-    .moves = {MOVE_LAST_RESPECTS, MOVE_BODY_PRESS, MOVE_PLAY_ROUGH, MOVE_ROCK_TOMB},  \
-    .gender = TRAINER_MON_FEMALE,                                                     \
+#define PHOEBE_HOUNDSTONE(Level, Tier)                                               \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, HOUNDSTONE, Tier, PHOEBE),                                 \
+    .ability = ABILITY_FLUFFY,                                                       \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_DEF_SPE,                                                           \
+    .moves = {MOVE_LAST_RESPECTS, MOVE_BODY_PRESS, MOVE_PLAY_ROUGH, MOVE_ROCK_TOMB}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =

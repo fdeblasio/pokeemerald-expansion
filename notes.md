@@ -57,12 +57,13 @@ upcoming
         - Barbaracle gets Aqua Cutter
         - Malamar gets Zen Headbutt
         - Staraptor gets Brick Break
-    - Some movesets get good moves that they don't have in EE that can be added:
+        - Clefable gets Air Slash
+    - Some moveset notes will have to be edited once a Winds and Waves confirms how they learn the move:
+        - Pinsir gets Aerial Ace and Lunge
         - Talonflame gets Blaze Kick
         - Alolan Raichu gets Rising Voltage
-        - Pinsir gets Aerial Ace and Lunge
+    - Some movesets get good moves that they don't have in EE that can be added:
         - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
-        - Clefable gets Air Slash
         - Falinks gets Seed Bomb
         - Barbaracle gets Waterfall and Close Combat
         - Eelektross gets Waterfall
@@ -452,6 +453,7 @@ upcoming
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Trainers
+- Add check to throw assert if Trainer mon knows move it shouldn't?
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
     - Even just reducing to two or three rematches would save space

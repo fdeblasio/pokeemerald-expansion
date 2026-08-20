@@ -402,7 +402,7 @@
 |TM155|Thunder Punch|Fortree TM Shop|
 |TM156|Fire Punch|Fortree TM Shop|
 |TM157|Ice Punch|Fortree TM Shop|
-|TM158|Drain Punch|Lilycove TM Shop|
+|TM158|Drain Punch|Lilycove Department Store|
 |TM159|Stomping Tantrum|Fortree TM Shop|
 |TM160|Temper Flare|Fortree TM Shop|
 |TM161|Lash Out|Fortree TM Shop|
@@ -425,76 +425,76 @@
 |TM178|Tailwind|Fortree TM Shop|
 |TM179|Curse|Fortree TM Shop|
 |TM180|Dragon Cheer|Fortree TM Shop|
-|TM181|Body Slam|Lilycove TM Shop|
-|TM182|Hyper Voice|Lilycove TM Shop|
-|TM183|Blaze Kick|Lilycove TM Shop|
-|TM184|Heat Wave|Lilycove TM Shop|
+|TM181|Body Slam|Lilycove Department Store|
+|TM182|Hyper Voice|Lilycove Department Store|
+|TM183|Blaze Kick|Lilycove Department Store|
+|TM184|Heat Wave|Lilycove Department Store|
 |TM185|Liquidation|Juan|
-|TM186|Aqua Tail|Lilycove TM Shop|
-|TM187|Scald|Lilycove TM Shop|
+|TM186|Aqua Tail|Lilycove Department Store|
+|TM187|Scald|Lilycove Department Store|
 |TM188|Leaf Blade|Route 123|
-|TM189|Petal Blizzard|Lilycove TM Shop|
-|TM190|Energy Ball|Lilycove TM Shop|
-|TM191|Zing Zap|Lilycove TM Shop|
-|TM192|Icicle Crash|Lilycove TM Shop|
-|TM193|Sky Uppercut|Lilycove TM Shop|
-|TM194|Aura Sphere|Lilycove TM Shop|
-|TM195|Poison Jab|Lilycove TM Shop|
-|TM196|Sludge Wave|Lilycove TM Shop|
-|TM197|High Horsepower|Lilycove TM Shop|
-|TM198|Earth Power|Lilycove TM Shop|
-|TM199|Acrobatics|Lilycove TM Shop|
-|TM200|Air Slash|Lilycove TM Shop|
-|TM201|Psychic Fangs|Lilycove TM Shop|
-|TM202|Psyshock|Lilycove TM Shop|
-|TM203|Leech Life|Lilycove TM Shop|
-|TM204|Lunge|Lilycove TM Shop|
-|TM205|Bug Buzz|Lilycove TM Shop|
-|TM206|Pollen Puff|Lilycove TM Shop|
-|TM207|Rock Slide|Lilycove TM Shop|
+|TM189|Petal Blizzard|Lilycove Department Store|
+|TM190|Energy Ball|Lilycove Department Store|
+|TM191|Zing Zap|Lilycove Department Store|
+|TM192|Icicle Crash|Lilycove Department Store|
+|TM193|Sky Uppercut|Lilycove Department Store|
+|TM194|Aura Sphere|Lilycove Department Store|
+|TM195|Poison Jab|Lilycove Department Store|
+|TM196|Sludge Wave|Lilycove Department Store|
+|TM197|High Horsepower|Lilycove Department Store|
+|TM198|Earth Power|Lilycove Department Store|
+|TM199|Acrobatics|Lilycove Department Store|
+|TM200|Air Slash|Lilycove Department Store|
+|TM201|Psychic Fangs|Lilycove Department Store|
+|TM202|Psyshock|Lilycove Department Store|
+|TM203|Leech Life|Lilycove Department Store|
+|TM204|Lunge|Lilycove Department Store|
+|TM205|Bug Buzz|Lilycove Department Store|
+|TM206|Pollen Puff|Lilycove Department Store|
+|TM207|Rock Slide|Lilycove Department Store|
 |TM208|Power Gem|Fallarbor|
-|TM209|Phantom Force|Lilycove TM Shop|
-|TM210|Dragon Pulse|Lilycove TM Shop|
-|TM211|Crunch|Lilycove TM Shop|
-|TM212|Throat Chop|Lilycove TM Shop|
-|TM213|Darkest Lariat|Lilycove TM Shop|
-|TM214|Dark Pulse|Lilycove TM Shop|
-|TM215|Iron Head|Lilycove TM Shop|
-|TM216|Flash Cannon|Lilycove TM Shop|
-|TM217|Play Rough|Lilycove TM Shop|
-|TM218|Moonblast|Lilycove TM Shop|
-|TM219|Body Press|Lilycove TM Shop|
-|TM220|Fire Pledge|Lilycove TM Shop|
-|TM221|Water Pledge|Lilycove TM Shop|
-|TM222|Grass Pledge|Lilycove TM Shop|
-|TM223|Electric Terrain|Lilycove TM Shop|
-|TM224|Grassy Terrain|Lilycove TM Shop|
-|TM225|Psychic Terrain|Lilycove TM Shop|
-|TM226|Misty Terrain|Lilycove TM Shop|
-|TM227|Giga Impact|Lilycove TM Shop|
-|TM228|Hydro Pump|Lilycove TM Shop|
-|TM229|Hurricane|Lilycove TM Shop|
-|TM230|Gunk Shot|Lilycove TM Shop|
+|TM209|Phantom Force|Lilycove Department Store|
+|TM210|Dragon Pulse|Lilycove Department Store|
+|TM211|Crunch|Lilycove Department Store|
+|TM212|Throat Chop|Lilycove Department Store|
+|TM213|Darkest Lariat|Lilycove Department Store|
+|TM214|Dark Pulse|Lilycove Department Store|
+|TM215|Iron Head|Lilycove Department Store|
+|TM216|Flash Cannon|Lilycove Department Store|
+|TM217|Play Rough|Lilycove Department Store|
+|TM218|Moonblast|Lilycove Department Store|
+|TM219|Body Press|Lilycove Department Store|
+|TM220|Fire Pledge|Lilycove Department Store|
+|TM221|Water Pledge|Lilycove Department Store|
+|TM222|Grass Pledge|Lilycove Department Store|
+|TM223|Electric Terrain|Lilycove Department Store|
+|TM224|Grassy Terrain|Lilycove Department Store|
+|TM225|Psychic Terrain|Lilycove Department Store|
+|TM226|Misty Terrain|Lilycove Department Store|
+|TM227|Giga Impact|Lilycove Department Store|
+|TM228|Hydro Pump|Lilycove Department Store|
+|TM229|Hurricane|Lilycove Department Store|
+|TM230|Gunk Shot|Lilycove Department Store|
 |TM231|Focus Blast|Victory Road|
-|TM232|Stone Edge|Lilycove TM Shop|
-|TM233|Blast Burn|Lilycove TM Shop|
-|TM234|Hydro Cannon|Lilycove TM Shop|
-|TM235|Frenzy Plant|Lilycove TM Shop|
-|TM236|Flare Blitz|Lilycove TM Shop|
-|TM237|Brave Bird|Lilycove TM Shop|
-|TM238|Wild Charge|Lilycove TM Shop|
-|TM239|Leaf Storm|Lilycove TM Shop|
-|TM240|Draco Meteor|Lilycove TM Shop|
-|TM241|Close Combat|Lilycove TM Shop|
-|TM242|Solar Blade|Lilycove TM Shop|
-|TM243|Outrage|Lilycove TM Shop|
-|TM244|Future Sight|Lilycove TM Shop|
-|TM245|Misty Explosion|Lilycove TM Shop|
-|TM246|Meteor Beam|Lilycove TM Shop|
-|TM247|Steel Beam|Lilycove TM Shop|
-|TM248|Triple Axel|Lilycove TM Shop|
-|TM249|Poltergeist|Lilycove TM Shop|
-|TM250|Supercell Slam|Lilycove TM Shop|
+|TM232|Stone Edge|Lilycove Department Store|
+|TM233|Blast Burn|Lilycove Department Store|
+|TM234|Hydro Cannon|Lilycove Department Store|
+|TM235|Frenzy Plant|Lilycove Department Store|
+|TM236|Flare Blitz|Lilycove Department Store|
+|TM237|Brave Bird|Lilycove Department Store|
+|TM238|Wild Charge|Lilycove Department Store|
+|TM239|Leaf Storm|Lilycove Department Store|
+|TM240|Draco Meteor|Lilycove Department Store|
+|TM241|Close Combat|Lilycove Department Store|
+|TM242|Solar Blade|Lilycove Department Store|
+|TM243|Outrage|Lilycove Department Store|
+|TM244|Future Sight|Lilycove Department Store|
+|TM245|Misty Explosion|Lilycove Department Store|
+|TM246|Meteor Beam|Lilycove Department Store|
+|TM247|Steel Beam|Lilycove Department Store|
+|TM248|Triple Axel|Lilycove Department Store|
+|TM249|Poltergeist|Lilycove Department Store|
+|TM250|Supercell Slam|Lilycove Department Store|
 
 ### Move Tutors:
 #### Mainland:
@@ -1444,10 +1444,12 @@
 
 - Raichu:
     - Learns Volt Tackle by level up
+    - Learns
     - Learns Fairy Wind by Egg Move
 
 - Alolan Raichu:
     - Learns Volt Tackle and Psybeam by level up
+    - Learns Rising Voltage by TM (it gets this move in Champions)
 
 - Sandshrew/Sandslash:
     - Learn Earth Power and Drill Run by level up
@@ -2035,7 +2037,7 @@
 - Pinsir:
     - Catch rate: 45->90
     - Learns Fury Cutter by level up
-    - Learns Aerial Ace by TM
+    - Learns Aerial Ace and Lunge by TM (it gets these moves in Champions)
 
 - Tauros (not in Emerald):
     - Catch rate: 45->90
@@ -2459,8 +2461,9 @@
     - Learns Rock Tomb by level up
 
 - Heracross:
-    - Learns Fury Cutter, Bug Bite, and Lunge by level up
     - Catch rate: 45->90
+    - Learns Fury Cutter, Bug Bite, and Lunge by level up
+    - Learns Drain Punch by TM
 
 - Sneasel/Weavile (postgame):
     - Learn Powder Snow, Bite, Ice Fang, Ice Punch, and Razor Wind by level up
@@ -3971,6 +3974,7 @@
     - Atk: 81->90
     - Spe: 126->130
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
+    - Learns Blaze Kick by TM (it gets this move in Champions)
 
 - Scatterbug:
     - Learns Bug Bite at level 9 instead of 15

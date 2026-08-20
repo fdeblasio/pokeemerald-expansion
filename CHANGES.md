@@ -5145,6 +5145,9 @@
 - Mega Tatsugiri:
     - Ability: Storm Drain until its official one is revealed
 
+- Iron Bundle:
+    - Learns Bubble, Icy Wind, Chilling Water, Aurora Beam, Bubble Beam, Water Pulse, and Surf by level up
+
 - Gimmighoul:
     - Held item: Relic Gold: 0%->5%
 
@@ -5163,3 +5166,6 @@
 
 - Chi-Yu:
     - Learns Burning Jealousy and Flamethrower by level up
+
+- Fezandipiti
+    - Learns Poison Sting, Poison Tail, Spirit Break, Poison Jab, and Play Rough by level up

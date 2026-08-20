@@ -59975,6 +59975,7 @@ static const u16 sIronBundleTeachableLearnset[] = {
     MOVE_REST,
     MOVE_SLEEP_TALK,
     MOVE_SNOWSCAPE,
+    MOVE_SURF,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,

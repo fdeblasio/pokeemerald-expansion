@@ -63,12 +63,7 @@ upcoming
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
-- Update legendaries?
-    - Tornadus-T
-    - Yveltal
-    - Fezandipiti
-    - Tapu Koko
-    - Iron Bundle
+- Double-check legendaries' movesets
 - Remove Lileep, Treecko, Mudkip, Torchic lines from Trainers
     - Most will be removed when Gyms are redone
     - Jackson's Treecko is the only one not in a Gym

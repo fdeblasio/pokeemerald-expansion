@@ -120,11 +120,11 @@ CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
 	.string "Please also take this with you.$"
 
 CeladonCity_Gym_Text_ReceivedTM19FromErika::
-	.string "{PLAYER} received TM19\n"
+	.string "{PLAYER} received TM019\n"
 	.string "from Erika.$"
 
 CeladonCity_Gym_Text_ExplainTM19::
-	.string "TM19 contains Giga Drain.\p"
+	.string "TM019 contains Giga Drain.\p"
 	.string "Half the damage it inflicts is\n"
 	.string "drained to heal your Pokémon.\p"
 	.string "Wouldn't you agree that it's a\n"

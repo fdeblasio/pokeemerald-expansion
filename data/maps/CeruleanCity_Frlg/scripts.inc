@@ -418,7 +418,7 @@ CeruleanCity_Text_OkayIllReturnStolenTM::
 	.string "I'll return the TM I stole.$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
-	.string "{PLAYER} recovered TM28 from\n"
+	.string "{PLAYER} recovered TM028 from\n"
 	.string "the Team Rocket Grunt.$"
 
 CeruleanCity_Text_BetterGetMovingBye::

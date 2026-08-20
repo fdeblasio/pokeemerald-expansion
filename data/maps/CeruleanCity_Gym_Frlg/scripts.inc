@@ -79,7 +79,7 @@ CeruleanCity_Gym_Text_MistyIntro::
 	.string "with Water-type Pokémon!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 CeruleanCity_Gym_Text_ExplainTM03::
-	.string "TM03 teaches Water Pulse.\p"
+	.string "TM003 teaches Water Pulse.\p"
 	.string "Use it on an aquatic Pokémon!$"
 
 CeruleanCity_Gym_Text_ExplainCascadeBadge::
@@ -94,7 +94,7 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
 	.string "You can also have my favorite TM.$"
 
 CeruleanCity_Gym_Text_ReceivedTM03FromMisty::
-	.string "{PLAYER} received TM03\n"
+	.string "{PLAYER} received TM003\n"
 	.string "from Misty.$"
 
 CeruleanCity_Gym_Text_BetterMakeRoomForThis::

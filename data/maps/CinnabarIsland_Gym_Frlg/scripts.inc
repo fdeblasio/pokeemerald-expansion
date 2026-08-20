@@ -736,11 +736,11 @@ CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
 	.string "Here, you can have this, too!$"
 
 CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
-	.string "{PLAYER} received TM38\n"
+	.string "{PLAYER} received TM038\n"
 	.string "from Blaine.$"
 
 CinnabarIsland_Gym_Text_BlainePostBattle::
-	.string "TM38 contains Fire Blast.\n"
+	.string "TM038 contains Fire Blast.\n"
 	.string "Teach it to Fire-type Pokémon.\p"
 	.string "Vulpix or Charmeleon would be\n"
 	.string "ideal for that move.$"
@@ -889,7 +889,7 @@ CinnabarIsland_Gym_Text_QuizQuestion5::
 	.string "are not identical?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion6::
-	.string "TM28 contains Tombstony?$"
+	.string "TM028 contains Tombstony?$"
 
 CinnabarIsland_Gym_Text_CorrectGoOnThrough::
 	.string "You're absolutely correct!\p"

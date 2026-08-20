@@ -145,11 +145,11 @@ ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
 	.string "League challenge.$"
 
 ViridianCity_Gym_Text_ReceivedTM26FromGiovanni::
-	.string "{PLAYER} received TM26\n"
+	.string "{PLAYER} received TM026\n"
 	.string "from Giovanni.$"
 
 ViridianCity_Gym_Text_ExplainTM26::
-	.string "TM26 contains Earthquake.\p"
+	.string "TM026 contains Earthquake.\p"
 	.string "It is a powerful attack that causes\n"
 	.string "a massive tremor.\p"
 	.string "I made it when I ran the Gym here,\n"

@@ -51,8 +51,7 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update Gym leaders/Elite Four
-    - Rustboro, Dewford, and Mauville first battles completed
-    - Lavaridge and Petalburg first battles and rematches completed
+    - Rustboro, Dewford, Mauville, Lavaridge, and Petalburg first battles and rematches completed
     - Update TMs
     - Eric Spinda pattern
     - Check Steven's Copperajah note

@@ -265,12 +265,12 @@
 |TM031|Brick Break|Sootopolis|
 |TM032|Double Team|Route 113|
 |TM033|Reflect|Fortree TM Shop|
-|TM034|Shock Wave|Wattson|
+|TM034|Shock Wave|Mauville TM Shop|
 |TM035|Flamethrower|Fiery Path|
 |TM036|Sludge Bomb|Dewford|
 |TM037|Sandstorm|Route 111|
 |TM038|Fire Blast|Lilycove Department Store|
-|TM039|Rock Tomb|Slateport TM Shop|
+|TM039|Rock Tomb|Mauville Gym Leader|
 |TM040|Aerial Ace|Winona|
 |TM041|Torment|Slateport|
 |TM042|Facade|Norman|

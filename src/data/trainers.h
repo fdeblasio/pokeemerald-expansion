@@ -762,7 +762,7 @@ WALLY_REMATCH(4),
     .partySize = 6
 
 #define ROXANNE_INFO                 \
-    LEADER_INFO(ROXANNE),            \
+    LEADER_INFO(WINONA),             \
     .trainerName = _("Maribel"),     \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
@@ -1227,9 +1227,9 @@ BRAWLY_REMATCH(2),
 BRAWLY_REMATCH(3),
 BRAWLY_REMATCH(4),
 
-#define WATTSON_INFO             \
-    LEADER_INFO(WATTSON),        \
-    .trainerName = _("Linda"), \
+#define WATTSON_INFO                 \
+    LEADER_INFO(ROXANNE),            \
+    .trainerName = _("Linda"),       \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
@@ -1241,35 +1241,35 @@ BRAWLY_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = CAP_GYM_3 - 4,
-        .species = SPECIES_MAGNEMITE,
-        .ability = ABILITY_MAGNET_PULL,
+        .species = SPECIES_ROGGENROLA,
+        .ability = ABILITY_STURDY,
         IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_NONE,
-        },
-        {
-        .lvl = CAP_GYM_3 - 2,
-        .species = SPECIES_MINUN,
-        .ability = ABILITY_MINUS,
-        IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = CAP_GYM_3 - 2,
-        .species = SPECIES_PLUSLE,
-        .ability = ABILITY_PLUS,
-        IVS(26),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_ROCK_TOMB, MOVE_SAND_ATTACK, MOVE_HARDEN, MOVE_STEALTH_ROCK},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = CAP_GYM_3,
-        .species = SPECIES_ELECTRIKE,
-        .ability = ABILITY_STATIC,
-        IVS(30),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
+        .lvl = CAP_GYM_3 - 2,
+        .species = SPECIES_ARCHEN,
+        .ability = ABILITY_DEFEATIST,
+        IVS(24),
+        .moves = {MOVE_ROCK_TOMB, MOVE_PLUCK, MOVE_DRAGON_BREATH, MOVE_QUICK_GUARD},
+        .gender = TRAINER_MON_FEMALE,
+        },
+        {
+        .lvl = CAP_GYM_3 - 2,
+        .species = SPECIES_ANORITH,
+        .ability = ABILITY_BATTLE_ARMOR,
+        IVS(26),
+        .moves = {MOVE_ROCK_TOMB, MOVE_BUG_BITE, MOVE_METAL_CLAW, MOVE_HARDEN},
         .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = CAP_GYM_3,
+        .species = SPECIES_NOSEPASS,
+        .ability = ABILITY_STURDY,
+        IVS(30),
+        .moves = {MOVE_ROCK_TOMB, MOVE_SPARK, MOVE_BLOCK, MOVE_THUNDER_WAVE},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
@@ -1512,9 +1512,9 @@ WATTSON_REMATCH(2),
 WATTSON_REMATCH(3),
 WATTSON_REMATCH(4),
 
-#define FLANNERY_INFO             \
-    LEADER_INFO(FLANNERY),        \
-    .trainerName = _("Helene"), \
+#define FLANNERY_INFO                \
+    LEADER_INFO(ERIKA_FRLG),         \
+    .trainerName = _("Helene"),      \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
@@ -7670,12 +7670,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,   \
     .partySize = 2
 
-#define MAUVILLE_GYM_MON(Species, Move2, Move3, Move4)                    \
-    {                                                                     \
-    .lvl = CAP_GYM_3 - 3,                                                 \
-    .species = SPECIES_##Species,                                         \
-    IVS(12),                                                              \
-    .moves = {MOVE_SHOCK_WAVE, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}, \
+#define MAUVILLE_GYM_MON(Species) \
+    {                             \
+    .lvl = CAP_GYM_3 - 3,         \
+    .species = SPECIES_##Species, \
+    IVS(12),                      \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_VIVIAN] =
@@ -7683,18 +7682,18 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Vivian"),
     MAUVILLE_GYM_TRAINER_INFO(BEAUTY),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MINUN, SWIFT, NUZZLE, ENCORE),
-        MAUVILLE_GYM_MON(PLUSLE, SWIFT, NUZZLE, SKILL_SWAP)
+        MAUVILLE_GYM_MON(DWEBBLE),
+        MAUVILLE_GYM_MON(CORSOLA)
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_KIRK] =
 {
     .trainerName = _("Kirk"),
-    MAUVILLE_GYM_TRAINER_INFO(HIKER),
+    MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
-        MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
+        MAUVILLE_GYM_MON(ARON),
+        MAUVILLE_GYM_MON(BINACLE)
     },
 },
 
@@ -7703,8 +7702,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Ben"),
     MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
+        MAUVILLE_GYM_MON(RHYHORN),
+        MAUVILLE_GYM_MON(GEODUDE)
     },
 },
 
@@ -7713,8 +7712,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Angelo"),
     MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
+        MAUVILLE_GYM_MON(LUNATONE),
+        MAUVILLE_GYM_MON(SOLROCK)
     },
 },
 
@@ -7723,8 +7722,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Shawn"),
     MAUVILLE_GYM_TRAINER_INFO(HIKER),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
-        MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
+        MAUVILLE_GYM_MON(ROGGENROLA),
+        MAUVILLE_GYM_MON(GEODUDE)
     },
 },
 

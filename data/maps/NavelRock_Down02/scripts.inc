@@ -48,11 +48,11 @@ NavelRock_Down02_EventScript_Legendary::
 
 NavelRock_Down02_EventScript_DefeatedLegendary::
 	setflag FLAG_DEFEATED_NAVEL_ROCK_ZAPDOS
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_2
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Down02_EventScript_RanFromLegendary::
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_2
 	goto Common_EventScript_LegendaryFlewAway
 	end

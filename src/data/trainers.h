@@ -13344,13 +13344,13 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 [DIFFICULTY_NORMAL][TRAINER_HUMBERTO] =
 {
     .trainerName = _("Humberto"),
-    BIRD_KEEPER_INFO,
+    POKEMON_RANGER_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_TROPIUS,
         IVS(30),
         }
     },
@@ -13358,24 +13358,24 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_JARED] =
 {
-    .trainerName = _("Jared"),
-    BIRD_KEEPER_INFO,
+    .trainerName = _("Briana"),
+    POKEMON_RANGER_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_BUDEW,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_ROSELIA,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_ROSERADE,
         IVS(12),
         }
     },
@@ -13384,23 +13384,23 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 [DIFFICULTY_NORMAL][TRAINER_ASHLEY] =
 {
     .trainerName = _("Ashley"),
-    PICNICKER_INFO,
+    POKEMON_RANGER_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_MASQUERAIN,
+        .species = SPECIES_SEEDOT,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SWABLU,
+        .species = SPECIES_NUZLEAF,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_SHIFTRY,
         IVS(12),
         }
     },
@@ -13408,19 +13408,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_FLINT] =
 {
-    .trainerName = _("Flint"),
-    CAMPER_INFO,
+    .trainerName = _("Marissa"),
+    POKEMON_RANGER_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_DHELMISE,
         IVS(18),
         },
         {
         .lvl = 39,
-        .species = SPECIES_GOLBAT,
+        .species = SPECIES_CACTURNE,
         IVS(18),
         }
     },
@@ -13429,18 +13429,18 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 [DIFFICULTY_NORMAL][TRAINER_EDWARDO] =
 {
     .trainerName = _("Edwardo"),
-    BIRD_KEEPER_INFO,
+    POKEMON_RANGER_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_BELLOSSOM,
         IVS(18),
         },
         {
         .lvl = 39,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_VILEPLUME,
         IVS(18),
         }
     },
@@ -13448,14 +13448,14 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_DARIUS] =
 {
-    .trainerName = _("Darius"),
-    BIRD_KEEPER_INFO,
+    .trainerName = _("Tyler"),
+    POKEMON_RANGER_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_XATU,
+        .species = SPECIES_LUDICOLO,
         IVS(24),
         }
     },

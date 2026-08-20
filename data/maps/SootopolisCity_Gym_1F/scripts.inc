@@ -115,14 +115,14 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	end
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
-	giveitem ITEM_TM_LIQUIDATION
+	giveitem ITEM_TM_ICICLE_CRASH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_LIQUIDATION
 	return
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
-	giveitem ITEM_TM_LIQUIDATION
+	giveitem ITEM_TM_ICICLE_CRASH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_LIQUIDATION
@@ -177,9 +177,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Sootopolis's Gym Leader Juan is\n"
+	.string "Sootopolis's Gym Leader Pat is\n"
 	.string "a master of Water-type Pokémon.\p"
-	.string "And, to get to Juan, an icy floor\n"
+	.string "And, to get to Pat, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -187,7 +187,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even Juan, who\n"
+	.string "Yow! You've beaten even Pat, who\n"
 	.string "was supposedly the best in all Hoenn!\p"
 	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
@@ -233,7 +233,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the Rain Badge\n"
-	.string "from Juan.$"
+	.string "from Pat.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Rain Badge shall assure you\n"
@@ -246,13 +246,13 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
-	.string "contains Liquidation.\p"
-	.string "In use, it will occasionally lower\n"
-	.string "the target's Defense'.\p"
+	.string "contains Icicle Crash.\p"
+	.string "In use, it will make the\n"
+	.string "target flinch'.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered Gym Leader Juan\n"
+	.string "Registered Gym Leader Pat\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
@@ -277,11 +277,11 @@ SootopolisCity_Gym_1F_Text_GymStatue:
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "Sootopolis City Pokémon Gym\p"
-	.string "Juan's Certified Trainers:\n"
+	.string "Pat's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "Pat: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
@@ -294,7 +294,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "Juan: If I told you to become my\n"
+	.string "Pat: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -304,7 +304,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "Pat: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"

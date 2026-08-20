@@ -1526,34 +1526,34 @@ WATTSON_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = CAP_GYM_4 - 4,
-        .species = SPECIES_CASTFORM,
-        .ability = ABILITY_FORECAST,
+        .species = SPECIES_MASQUERAIN,
+        .ability = ABILITY_INTIMIDATE,
         IVS(24),
-        .moves = {MOVE_OVERHEAT, MOVE_WEATHER_BALL, MOVE_HEADBUTT, MOVE_SUNNY_DAY},
+        .moves = {MOVE_SIGNAL_BEAM, MOVE_AIR_CUTTER, MOVE_OMINOUS_WIND, MOVE_STICKY_WEB},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = CAP_GYM_4 - 2,
-        .species = SPECIES_COMBUSKEN,
-        .ability = ABILITY_BLAZE,
+        .species = SPECIES_DWEBBLE,
+        .ability = ABILITY_SHELL_ARMOR,
         IVS(24),
-        .moves = {MOVE_OVERHEAT, MOVE_DOUBLE_KICK, MOVE_FEATHER_DANCE, MOVE_SUNNY_DAY},
+        .moves = {MOVE_SIGNAL_BEAM, MOVE_ROCK_SLIDE, MOVE_FEINT_ATTACK, MOVE_WITHDRAW},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = CAP_GYM_4 - 2,
-        .species = SPECIES_NUMEL,
-        .ability = ABILITY_OBLIVIOUS,
+        .species = SPECIES_BEAUTIFLY,
+        .ability = ABILITY_SWARM,
         IVS(30),
-        .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_SUNNY_DAY, MOVE_AMNESIA},
+        .moves = {MOVE_SIGNAL_BEAM, MOVE_AIR_CUTTER, MOVE_MORNING_SUN, MOVE_STUN_SPORE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = CAP_GYM_4,
-        .species = SPECIES_TORKOAL,
-        .ability = ABILITY_DROUGHT,
+        .species = SPECIES_RIBOMBEE,
+        .ability = ABILITY_SHIELD_DUST,
         IVS(30),
-        .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_RAPID_SPIN, MOVE_SMOKESCREEN},
+        .moves = {MOVE_SIGNAL_BEAM, MOVE_DRAINING_KISS, MOVE_STUN_SPORE, MOVE_SWEET_SCENT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         .ball = ITEM_POKE_BALL,
@@ -1699,18 +1699,74 @@ WATTSON_REMATCH(4),
 #define FLANNERY_ARMAROUGE
 #define FLANNERY_CERULEDGE
 
+#define HELENE_RIBOMBEE(rematch, tier)                                                 \
+    {                                                                                  \
+    REMATCH_MON(RIBOMBEE, tier, rematch, ITEM_SITRUS_BERRY),                           \
+    .ability = ABILITY_SHIELD_DUST,                                                    \
+    IDEAL_SPEEDSTER_SPECIAL,                                                           \
+    .moves = {MOVE_POLLEN_PUFF, MOVE_DAZZLING_GLEAM, MOVE_PSYCHIC, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
+#define HELENE_BEAUTIFLY(rematch, tier)                                            \
+    {                                                                              \
+    REMATCH_MON(BEAUTIFLY, tier, rematch, ITEM_SILVER_POWDER),                     \
+    .ability = ABILITY_SWARM,                                                      \
+    IDEAL_ATTACKER_SPECIAL,                                                        \
+    .moves = {MOVE_BUG_BUZZ, MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+#define HELENE_CRUSTLE(rematch, tier)                                               \
+    {                                                                               \
+    REMATCH_MON(CRUSTLE, tier, rematch, ITEM_QUICK_CLAW),                           \
+    .ability = ABILITY_SHELL_ARMOR,                                                 \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define HELENE_MASQUERAIN(rematch, tier)                                    \
+    {                                                                       \
+    REMATCH_MON(MASQUERAIN, tier, rematch),                                 \
+    .ability = ABILITY_INTIMIDATE,                                          \
+    IDEAL_ATTACKER_SPECIAL,                                                 \
+    .moves = {MOVE_BUG_BUZZ, MOVE_AIR_SLASH, MOVE_SURF, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                           \
+    }
+
+#define HELENE_HERACROSS(rematch, tier)                                          \
+    {                                                                            \
+    REMATCH_MON(HERACROSS, tier, rematch),                                       \
+    .ability = ABILITY_MOXIE,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
+    .moves = {MOVE_LUNGE, MOVE_DRAIN_PUNCH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
+#define HELENE_PINSIR(rematch, tier)                                             \
+    {                                                                            \
+    REMATCH_MON(PINSIR, tier, rematch),                                          \
+    .ability = ABILITY_MOXIE,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
+    .moves = {MOVE_LUNGE, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
+
 #define FLANNERY_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_FLANNERY_##Rematch] = \
 {                                                 \
     FLANNERY_INFO,                                \
     LEADER_REMATCH,                               \
     .party = (const struct TrainerMon[]) {        \
-        FLANNERY_NINETALES(Rematch, TIER3),       \
-        FLANNERY_MAGCARGO(Rematch, TIER3),        \
-        FLANNERY_CASTFORM(Rematch, TIER3),        \
-        FLANNERY_BLAZIKEN(Rematch, TIER2),        \
-        FLANNERY_CAMERUPT(Rematch, TIER2),        \
-        FLANNERY_TORKOAL(Rematch, ACE),           \
+        HELENE_PINSIR(Rematch, TIER3),            \
+        HELENE_HERACROSS(Rematch, TIER3),         \
+        HELENE_MASQUERAIN(Rematch, TIER3),        \
+        HELENE_CRUSTLE(Rematch, TIER2),           \
+        HELENE_BEAUTIFLY(Rematch, TIER2),         \
+        HELENE_RIBOMBEE(Rematch, ACE),            \
     },                                            \
 }
 
@@ -10386,18 +10442,18 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_JEFF] =
 {
     .trainerName = _("Jeff"),
-    KINDLER_INFO,
+    BUG_CATCHER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 27,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_ILLUMISE,
         IVS(12),
         },
         {
         .lvl = 27,
-        .species = SPECIES_SLUGMA,
+        .species = SPECIES_VOLBEAT,
         IVS(12),
         }
     },
@@ -10406,13 +10462,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_JACE] =
 {
     .trainerName = _("Jace"),
-    KINDLER_INFO,
+    BUG_CATCHER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_VULPIX,
+        .species = SPECIES_DUSTOX,
         IVS(12),
         }
     },
@@ -10421,13 +10477,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_ELI] =
 {
     .trainerName = _("Eli"),
-    HIKER_INFO,
+    BUG_MANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_ANORITH,
         IVS(12),
         }
     },
@@ -10436,13 +10492,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_COLE] =
 {
     .trainerName = _("Cole"),
-    KINDLER_INFO,
+    BUG_CATCHER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TORKOAL,
+        .species = SPECIES_NINJASK,
         IVS(12),
         }
     },
@@ -10451,14 +10507,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_GERALD] =
 {
     .trainerName = _("Gerald"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    BUG_MANIAC_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TORCHIC,
+        .species = SPECIES_SHEDINJA,
         IVS(12),
         }
     },
@@ -10467,13 +10522,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_AXLE] =
 {
     .trainerName = _("Axle"),
-    KINDLER_INFO,
+    BUG_CATCHER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_CENTISKORCH,
         IVS(12),
         }
     },
@@ -10482,13 +10537,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_KEEGAN] =
 {
     .trainerName = _("Keegan"),
-    KINDLER_INFO,
+    BUG_CATCHER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_HOUNDOUR,
+        .species = SPECIES_PINSIR,
         IVS(14),
         }
     },
@@ -10497,13 +10552,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_DANIELLE] =
 {
     .trainerName = _("Danielle"),
-    BATTLE_GIRL_INFO,
+    PICNICKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_COMBUSKEN,
+        .species = SPECIES_HERACROSS,
         IVS(12),
         }
     },

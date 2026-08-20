@@ -1421,11 +1421,11 @@
     - Type: Normal/Flying->Flying
 
 - Fearow (not in Emerald):
-    - Type: Normal/Flying->Flying
     - HP: 65->70
     - Atk: 90->95
     - SpA: 61->65
     - SpD: 61->65
+    - Type: Normal/Flying->Flying
 
 - Ekans/Arbok (not in Emerald):
     - Learn Poison Tail, Poison Fang, and Poison Jab by level up
@@ -1967,12 +1967,14 @@
     - Learns Expanding Force by level up
 
 - Galarian Mr. Mime (not in Emerald):
+    - Type: Ice/Psychic->Psychic/Ice
     - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
 - Mr. Rime (not in Emerald):
     - Atk: 85->75
     - Spe: 70->90
+    - Type: Ice/Psychic->Psychic/Ice
     - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
@@ -2527,7 +2529,7 @@
     - Def: 75->85
     - SpA: 105->110
     - SpD: 75->85
-    - Learns Surf and Snipe Shot by level up
+    - Learns Octolock, Surf, and Snipe Shot by level up
 
 - Delibird (not in main game):
     - HP: 45->75
@@ -3190,13 +3192,19 @@
     - Learns Chilling Water, Mirror Shot, Surf, and Flash Cannon by level up
 
 - Starly:
+    - Type: Normal/Flying->Flying
     - Learns Dual Wingbeat by level up
 
 - Staravia:
-    - Learns Slash and Dual Wingbeat by level up
+    - Type: Normal/Flying->Flying
+    - Learns Dual Wingbeat by level up
 
 - Staraptor:
-    - Learns Slash, Brick Break, and Dual Wingbeat by level up
+    - Type: Normal/Flying->Flying
+    - Learns Brick Break and Dual Wingbeat by level up
+
+- Mega Staraptor:
+    - Type: Fighting/Flying->Flying/Fighting
 
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
@@ -3961,18 +3969,20 @@
     - Learns Dizzy Punch, Strength, Stomping Tantrum, and Body Slam by level up
 
 - Fletchling:
-    - Type: Normal/Flying->Flying
     - Spe: 62->65
+    - Type: Normal/Flying->Flying
     - Learns Dual Wingbeat by level up
 
 - Fletchinder:
     - Atk: 73->75
     - Spe: 84->85
+    - Type: Fire/Flying->Flying/Fire
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
 
 - Talonflame:
     - Atk: 81->90
     - Spe: 126->130
+    - Type: Fire/Flying->Flying/Fire
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
     - Learns Blaze Kick by TM (it gets this move in Champions)
 
@@ -4119,6 +4129,10 @@
 
 - Malamar:
     - Learn Feint Attack, Zen Headbutt, and Throat Chop by level up
+
+- Mega Malamar:
+    - Atk: 102->122
+    - SpA: 98->78
 
 - Binacle:
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
@@ -5016,7 +5030,8 @@
     - Learns Fairy Wind by level up
 
 - Squawkabilly:
-    - Learns Scratch, Cut, Dual Wingbeat, and Body Slam by level up
+    - Type: Normal/Flying->Flying
+    - Learns Dual Wingbeat by level up
 
 - Nacli/Naclstack:
     - Learn Rock Tomb by level up
@@ -5167,5 +5182,5 @@
 - Chi-Yu:
     - Learns Burning Jealousy and Flamethrower by level up
 
-- Fezandipiti
+- Fezandipiti:
     - Learns Poison Sting, Poison Tail, Spirit Break, Poison Jab, and Play Rough by level up

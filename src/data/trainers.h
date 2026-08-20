@@ -1606,6 +1606,7 @@ WATTSON_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
+/* Replace with Winona's due to type change
 #define FLANNERY_TALONFLAME(rematch, tier)                                                                            \
     {                                                                                                                 \
     REMATCH_MON(TALONFLAME, tier, rematch),                                                                           \
@@ -1614,6 +1615,7 @@ WATTSON_REMATCH(4),
     .moves = {MOVE_BLAZE_KICK, tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_STEEL_WING, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_FEMALE,                                                                                     \
     }
+*/
 
 #define FLANNERY_PYROAR(rematch, tier)                                             \
     {                                                                              \
@@ -1825,7 +1827,6 @@ FLANNERY_REMATCH(4),
     }
 
 #define NORMAN_CASTFORM
-#define NORMAN_STARAPTOR
 
 #define NORMAN_BIBAREL(rematch, tier)                                              \
     {                                                                              \
@@ -1912,7 +1913,6 @@ FLANNERY_REMATCH(4),
 #define NORMAN_DUBWOOL
 #define NORMAN_OINKOLOGNE
 #define NORMAN_MAUSHOLD
-#define NORMAN_SQUAWKABILLY
 
 #define NORMAN_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_NORMAN_##Rematch] = \
@@ -2084,6 +2084,15 @@ NORMAN_REMATCH(4),
     .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
+#define WINONA_TALONFLAME(rematch, tier)                                                                              \
+    {                                                                                                                 \
+    REMATCH_MON(TALONFLAME, tier, rematch),                                                                           \
+    .ability = ABILITY_GALE_WINGS,                                                                                    \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                                                         \
+    .moves = {tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_BLAZE_KICK, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                     \
+    }
+
 // Can replace Tailwind with Flamethrower
 #define WINONA_NOIVERN(rematch, tier)                                        \
     {                                                                        \
@@ -2121,6 +2130,8 @@ NORMAN_REMATCH(4),
     .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
+
+#define WINONA_SQUAWKABILLY
 
 // Can replace Liquidation with Throat Chop
 #define WINONA_FLAMIGO(rematch, tier)                                              \
@@ -3120,7 +3131,6 @@ JUAN_REMATCH(4),
 
 // Extra for hacks
 #define GLACIA_SANDSLASH
-#define GLACIA_MR_RIME
 #define GLACIA_JYNX
 
 #define GLACIA_GLACEON(Level, Tier)                                               \

@@ -11307,7 +11307,15 @@
     "TutorMoves": []
   },
   "IRON_BUNDLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 7, "Move": "MOVE_BUBBLE"},
+      {"Level": 14, "Move": "MOVE_ICY_WIND"},
+      {"Level": 21, "Move": "MOVE_CHILLING_WATER"},
+      {"Level": 28, "Move": "MOVE_AURORA_BEAM"},
+      {"Level": 28, "Move": "MOVE_BUBBLE_BEAM"},
+      {"Level": 35, "Move": "MOVE_WATER_PULSE"},
+      {"Level": 56, "Move": "MOVE_SURF"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11487,7 +11495,13 @@
     "TutorMoves": []
   },
   "FEZANDIPITI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_POISON_STING"},
+      {"Level": 16, "Move": "MOVE_POISON_TAIL"},
+      {"Level": 32, "Move": "MOVE_SPIRIT_BREAK"},
+      {"Level": 40, "Move": "MOVE_POISON_JAB"},
+      {"Level": 48, "Move": "MOVE_PLAY_ROUGH"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

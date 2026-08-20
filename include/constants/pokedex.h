@@ -1560,6 +1560,9 @@ enum NationalDexOrder
     F(HO_OH) \
     F(LATIAS) \
     F(LATIOS) \
+    F(IRON_BUNDLE) \
+    F(TAPU_KOKO) \
+    F(FEZANDIPITI) \
     F(JIRACHI) \
     F(DEOXYS)
 

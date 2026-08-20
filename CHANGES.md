@@ -3212,7 +3212,7 @@
     - Catch rate: 25->90
     - Learns Metal Claw and Shadow Claw by level up
 
-- Tapu Koko (not in game):
+- Tapu Koko (postgame):
     - Learns Spirit Break, Thunder Punch, Zing Zap, Play Rough, Supercell Slam, and Rising Voltage by level up
     - Theoretically learns Bolt Beak by Egg Move, although it can't breed
 
@@ -3440,8 +3440,8 @@
 - Mega Tatsugiri:
     - Ability: Storm Drain until its official one is revealed
 
-- Iron Bundle:
+- Iron Bundle (postgame):
     - Learns Bubble, Icy Wind, Chilling Water, Aurora Beam, Bubble Beam, Water Pulse, and Surf by level up
 
-- Fezandipiti:
+- Fezandipiti (postgame):
     - Learns Poison Sting, Poison Tail, Spirit Break, Poison Jab, and Play Rough by level up

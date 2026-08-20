@@ -260,7 +260,7 @@
 |TM026|Earthquake|Seafloor Cavern|
 |TM027|Return|Pacifidlog|
 |TM028|Dig|Route 114|
-|TM029|Psychic|Tate/Liza|
+|TM029|Psychic|Lilycove Department Store|
 |TM030|Shadow Ball|Mt. Pyre|
 |TM031|Brick Break|Sootopolis|
 |TM032|Double Team|Route 113|
@@ -271,7 +271,7 @@
 |TM037|Sandstorm|Route 111|
 |TM038|Fire Blast|Lilycove Department Store|
 |TM039|Rock Tomb|Mauville Gym Leader|
-|TM040|Aerial Ace|Winona|
+|TM040|Aerial Ace|Mauville TM Shop|
 |TM041|Torment|Slateport|
 |TM042|Facade|Norman|
 |TM043|Secret Power|Route 111|
@@ -394,7 +394,7 @@
 |TM160|Temper Flare|Fortree TM Shop|
 |TM161|Lash Out|Fortree TM Shop|
 |TM162|Psychic Noise|Fortree TM Shop|
-|TM163|Seed Bomb|Fortree TM Shop|
+|TM163|Seed Bomb|Fortree Gym Leader|
 |TM164|X-Scissor|Fortree TM Shop|
 |TM165|Signal Beam|Lavaridge Gym Leader|
 |TM166|Zen Headbutt|Fortree TM Shop|
@@ -416,14 +416,14 @@
 |TM182|Hyper Voice|Lilycove Department Store|
 |TM183|Blaze Kick|Lilycove Department Store|
 |TM184|Heat Wave|Lilycove Department Store|
-|TM185|Liquidation|Juan|
+|TM185|Liquidation|Lilycove Department Store|
 |TM186|Aqua Tail|Lilycove Department Store|
 |TM187|Scald|Lilycove Department Store|
 |TM188|Leaf Blade|Lilycove Department Store|
 |TM189|Petal Blizzard|Lilycove Department Store|
 |TM190|Energy Ball|Route 123|
 |TM191|Zing Zap|Lilycove Department Store|
-|TM192|Icicle Crash|Lilycove Department Store|
+|TM192|Icicle Crash|Sootopolis Gym Leader|
 |TM193|Sky Uppercut|Lilycove Department Store|
 |TM194|Aura Sphere|Lilycove Department Store|
 |TM195|Poison Jab|Lilycove Department Store|
@@ -441,7 +441,7 @@
 |TM207|Rock Slide|Lilycove Department Store|
 |TM208|Power Gem|Fallarbor|
 |TM209|Phantom Force|Lilycove Department Store|
-|TM210|Dragon Pulse|Lilycove Department Store|
+|TM210|Dragon Pulse|Mossdeep Gym Leader|
 |TM211|Crunch|Lilycove Department Store|
 |TM212|Throat Chop|Lilycove Department Store|
 |TM213|Darkest Lariat|Lilycove Department Store|

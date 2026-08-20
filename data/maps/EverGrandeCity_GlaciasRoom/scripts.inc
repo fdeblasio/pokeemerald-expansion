@@ -67,7 +67,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is Glacia\n"
+	.string "Welcome, my name is Kimberly\n"
 	.string "of the Elite Four.\p"
 	.string "I've traveled from afar to Hoenn\n"
 	.string "so that I may hone my ice skills.\p"

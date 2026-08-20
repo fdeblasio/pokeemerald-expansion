@@ -981,18 +981,76 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
+#define MARIBEL_CLEFABLE(rematch, tier)                                           \
+    {                                                                             \
+    REMATCH_MON(CLEFABLE, tier, rematch, ITEM_FAIRY_FEATHER),                     \
+    .ability = ABILITY_MAGIC_GUARD,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_MOONBLAST, MOVE_FLAMETHROWER, MOVE_CALM_MIND, MOVE_MOONLIGHT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
+#define MARIBEL_TOGEKISS(rematch, tier)                                             \
+    {                                                                               \
+    REMATCH_MON(TOGEKISS, tier, rematch, ITEM_SITRUS_BERRY),                        \
+    .ability = ABILITY_SERENE_GRACE,                                                \
+    IDEAL_ATTACKER_SPECIAL,                                                         \
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_LIFE_DEW, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define MARIBEL_GRANBULL(rematch, tier)                                          \
+    {                                                                            \
+    REMATCH_MON(GRANBULL, tier, rematch),                                        \
+    .ability = ABILITY_STRONG_JAW,                                               \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_PSYCHIC_FANGS}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
+#define MARIBEL_AROMATISSE(rematch, tier)                                           \
+    {                                                                               \
+    REMATCH_MON(AROMATISSE, tier, rematch, ITEM_LEFTOVERS),                         \
+    .ability = ABILITY_AROMA_VEIL,                                                  \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_HP_SPD,                                                           \
+    .moves = {MOVE_MOONBLAST, MOVE_REFLECT, MOVE_AROMATHERAPY, MOVE_MISTY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define MARIBEL_SLURPUFF(rematch, tier)                                                       \
+    {                                                                                         \
+    REMATCH_MON(SLURPUFF, tier, rematch, ITEM_TERRAIN_EXTENDER),                              \
+    .ability = ABILITY_SWEET_VEIL,                                                            \
+    IDEAL_ATTACKER_SPECIAL,                                                                   \
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_COTTON_GUARD, MOVE_MISTY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                             \
+    }
+
+#define MARIBEL_DACHSBUN(rematch, tier)                                         \
+    {                                                                           \
+    REMATCH_MON(DACHSBUN, tier, rematch),                                       \
+    .ability = ABILITY_WELL_BAKED_BODY,                                         \
+    .nature = NATURE_IMPISH,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                       \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_BODY_PRESS, MOVE_WORK_UP, MOVE_BATON_PASS}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
+
 #define ROXANNE_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_ROXANNE_##Rematch] = \
 {                                                \
     ROXANNE_INFO,                                \
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
-        ROXANNE_CORSOLA(Rematch, TIER3),         \
-        ROXANNE_AGGRON(Rematch, TIER3),          \
-        ROXANNE_RELICANTH(Rematch, TIER3),       \
-        ROXANNE_CRADILY(Rematch, TIER2),         \
-        ROXANNE_ARMALDO(Rematch, TIER2),         \
-        ROXANNE_PROBOPASS(Rematch, ACE),         \
+        MARIBEL_DACHSBUN(Rematch, TIER3),        \
+        MARIBEL_GRANBULL(Rematch, TIER3),        \
+        MARIBEL_SLURPUFF(Rematch, TIER3),        \
+        MARIBEL_TOGEKISS(Rematch, TIER2),        \
+        MARIBEL_CLEFABLE(Rematch, TIER2),        \
+        MARIBEL_AROMATISSE(Rematch, ACE),        \
     },                                           \
 }
 
@@ -1208,18 +1266,76 @@ ROXANNE_REMATCH(4),
     .moves = {MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_SPIKY_SHIELD, MOVE_NO_RETREAT},  \
     }
 
+#define ADAM_GENGAR(rematch, tier)                                                      \
+    {                                                                                   \
+    REMATCH_MON(GENGAR, tier, rematch, ITEM_GENGARITE),                                 \
+    .ability = ABILITY_CURSED_BODY,                                                     \
+    IDEAL_ATTACKER_SPECIAL,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_DAZZLING_GLEAM, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    }
+
+#define ADAM_DUSKNOIR(rematch, tier)                                                \
+    {                                                                               \
+    REMATCH_MON(DUSKNOIR, tier, rematch, ITEM_SITRUS_BERRY),                        \
+    .ability = ABILITY_IRON_FIST,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPD_HP,                                                           \
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define ADAM_BANETTE(rematch, tier)                                                    \
+    {                                                                                  \
+    REMATCH_MON(BANETTE, tier, rematch),                                               \
+    .ability = ABILITY_CURSED_BODY,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define ADAM_DHELMISE(rematch, tier)                                                  \
+    {                                                                                 \
+    REMATCH_MON(DHELMISE, tier, rematch),                                             \
+    .ability = ABILITY_STEELWORKER,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_POWER_WHIP, MOVE_ANCHOR_SHOT, MOVE_LIQUIDATION}, \
+    .gender = TRAINER_MON_NONE,                                                       \
+    }
+
+// Can replace Infiltrator with Flame Body
+#define ADAM_CHANDELURE(rematch, tier)                                                \
+    {                                                                                 \
+    REMATCH_MON(CHANDELURE, tier, rematch, ITEM_SPELL_TAG),                           \
+    .ability = ABILITY_INFILTRATOR,                                                   \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
+#define ADAM_PALOSSAND(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(PALOSSAND, tier, rematch, ITEM_SPELL_TAG),                         \
+    .ability = ABILITY_WATER_COMPACTION,                                           \
+    .nature = NATURE_BOLD,                                                         \
+    EV_SPREAD_SPA_DEF_HP,                                                          \
+    .moves = {MOVE_SHADOW_BALL, MOVE_EARTH_POWER, MOVE_GIGA_DRAIN, MOVE_SHORE_UP}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
+
 #define BRAWLY_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_BRAWLY_##Rematch] = \
 {                                               \
     BRAWLY_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        BRAWLY_GALLADE(Rematch, TIER3),         \
-        BRAWLY_BLAZIKEN(Rematch, TIER3),        \
-        BRAWLY_BRELOOM(Rematch, TIER3),         \
-        BRAWLY_MACHAMP(Rematch, TIER2),         \
-        BRAWLY_MEDICHAM(Rematch, TIER2),        \
-        BRAWLY_HARIYAMA(Rematch, ACE),          \
+        ADAM_DHELMISE(Rematch, TIER3),          \
+        ADAM_BANETTE(Rematch, TIER3),           \
+        ADAM_DUSKNOIR(Rematch, TIER3),          \
+        ADAM_CHANDELURE(Rematch, TIER2),        \
+        ADAM_PALOSSAND(Rematch, TIER2),         \
+        ADAM_GENGAR(Rematch, ACE),              \
     },                                          \
 }
 
@@ -1493,18 +1609,77 @@ BRAWLY_REMATCH(4),
     .moves = {MOVE_THUNDER, MOVE_HURRICANE, MOVE_WEATHER_BALL, MOVE_RAIN_DANCE}, \
     }
 
+#define LINDA_PROBOPASS(rematch, tier)                                                \
+    {                                                                                 \
+    REMATCH_MON(PROBOPASS, tier, rematch, ITEM_SITRUS_BERRY),                         \
+    .ability = ABILITY_SAND_FORCE,                                                    \
+    .nature = NATURE_IMPISH,                                                          \
+    EV_SPREAD_SPA_DEF_SPD,                                                            \
+    .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
+#define LINDA_ARMALDO(rematch, tier)                                                \
+    {                                                                               \
+    REMATCH_MON(ARMALDO, tier, rematch, ITEM_QUICK_CLAW),                           \
+    .ability = ABILITY_BATTLE_ARMOR,                                                \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define LINDA_ARCHEOPS(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(ARCHEOPS, tier, rematch, ITEM_SHELL_BELL),                         \
+    .ability = ABILITY_EARLY_BIRD,                                                 \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+#define LINDA_GIGALITH(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(GIGALITH, tier, rematch),                                          \
+    .ability = ABILITY_SAND_STREAM,                                                \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPD_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_IRON_HEAD, MOVE_SANDSTORM, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+#define LINDA_LUNATONE(rematch, tier)                                           \
+    {                                                                           \
+    REMATCH_MON(LUNATONE, tier, rematch),                                       \
+    .ability = ABILITY_LEVITATE,                                                \
+    .nature = NATURE_MODEST,                                                    \
+    EV_SPREAD_SPA_SPD_HP,                                                       \
+    .moves = {MOVE_POWER_GEM, MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_COSMIC_POWER}, \
+    .gender = TRAINER_MON_NONE,                                                 \
+    }
+
+#define LINDA_BARBARACLE(rematch, tier)                                               \
+    {                                                                                 \
+    REMATCH_MON(BARBARACLE, tier, rematch),                                           \
+    .ability = ABILITY_TOUGH_CLAWS,                                                   \
+    .nature = NATURE_IMPISH,                                                          \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_LIQUIDATION, MOVE_DRAIN_PUNCH, MOVE_SHELL_SMASH}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
 #define WATTSON_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_WATTSON_##Rematch] = \
 {                                                \
     WATTSON_INFO,                                \
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
-        WATTSON_ELECTRODE(Rematch, TIER3),       \
-        WATTSON_LANTURN(Rematch, TIER3),         \
-        WATTSON_MAGNEZONE(Rematch, TIER3),       \
-        WATTSON_MINUN(Rematch, TIER2),           \
-        WATTSON_PLUSLE(Rematch, TIER2),          \
-        WATTSON_MANECTRIC(Rematch, ACE),         \
+        LINDA_BARBARACLE(Rematch, TIER3),        \
+        LINDA_LUNATONE(Rematch, TIER3),          \
+        LINDA_GIGALITH(Rematch, TIER3),          \
+        LINDA_ARCHEOPS(Rematch, TIER2),          \
+        LINDA_ARMALDO(Rematch, TIER2),           \
+        LINDA_PROBOPASS(Rematch, ACE),           \
     },                                           \
 }
 

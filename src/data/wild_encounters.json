@@ -1921,8 +1921,8 @@
               {"species": "SABLEYE"},
               {"species": "ARON"},
               {"species": "ARON"},
-              {"species": "MAWILE"},
-              {"species": "SABLEYE"},
+              {"species": "DRILBUR"},
+              {"species": "DRILBUR"},
               {"species": "ARON"},
               {"species": "ZUBAT"},
               {"species": "ZUBAT"},
@@ -1963,10 +1963,10 @@
               {"species": "MAKUHITA"},
               {"species": "NOSEPASS"},
               {"species": "MAKUHITA"},
-              {"species": "ARON"},
-              {"species": "CUFANT"},
-              {"species": "NOSEPASS"},
-              {"species": "MAKUHITA"}
+              {"species": "DRILBUR"},
+              {"species": "DRILBUR"},
+              {"species": "DRILBUR"},
+              {"species": "DRILBUR"}
             ]
           }
         },
@@ -3394,7 +3394,7 @@
             "range": "POSTGAME",
             "mons": [
               {"species": "HELIOPTILE"},
-              {"species": "SANDILE"},
+              {"species": "STUNFISK_GALAR"},
               {"species": "GLIGAR"},
               {"species": "BONSLY"},
               {"species": "GLIGAR"},
@@ -3513,7 +3513,7 @@
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "range": "POSTGAME",
             "mons": [
-              {"species": "DRILBUR"},
+              {"species": "STUNFISK"},
               {"species": "LICKITUNG"},
               {"species": "ZIGZAGOON_GALAR"},
               {"species": "STANTLER"},

@@ -1201,6 +1201,8 @@ enum NationalDexOrder
     F(ZUBAT) \
     F(GOLBAT) \
     F(CROBAT) \
+    F(DRILBUR) \
+    F(EXCADRILL) \
     F(NOSEPASS) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(PROBOPASS)) \
     F(CUFANT) \
@@ -1297,6 +1299,9 @@ enum NationalDexOrder
     F(GRUMPIG) \
     F(PHANPY) \
     F(DONPHAN) \
+    F(SANDILE) \
+    F(KROKOROK) \
+    F(KROOKODILE) \
     F(MANKEY) \
     F(PRIMEAPE) \
     F(ANNIHILAPE) \
@@ -1509,17 +1514,13 @@ enum NationalDexOrder
     F(BONSLY) \
     F(SUDOWOODO) \
     F(MILTANK) \
-    F(SANDILE) \
-    F(KROKOROK) \
-    F(KROOKODILE) \
     F(TYNAMO) \
     F(EELEKTRIK) \
     F(EELEKTROSS) \
     F(TYMPOLE) \
     F(PALPITOAD) \
     F(SEISMITOAD) \
-    F(DRILBUR) \
-    F(EXCADRILL) \
+    F(STUNFISK) \
     F(VANILLITE) \
     F(VANILLISH) \
     F(VANILLUXE) \

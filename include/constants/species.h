@@ -1856,12 +1856,12 @@ enum __attribute__((packed)) Species
 
 #define SPECIES_CABLE_CAR_1                 SPECIES_SPOINK
 #define SPECIES_CABLE_CAR_2                 SPECIES_PHANPY
-#define SPECIES_CABLE_CAR_3                 SPECIES_NUMEL
+#define SPECIES_CABLE_CAR_3                 SPECIES_SANDILE
 #define SPECIES_CABLE_CAR_4                 SPECIES_MACHOP
 #define SPECIES_CABLE_CAR_5                 SPECIES_MANKEY
 
 #define SPECIES_TERRANCE_ACE                SPECIES_BALTOY
-#define SPECIES_JORDAN_ACE                  SPECIES_RHYHORN
+#define SPECIES_JORDAN_ACE                  SPECIES_GOLETT
 #define SPECIES_MT_CHIMNEY_MAGMA_GRUNT      SPECIES_TORKOAL
 #define SPECIES_MT_CHIMNEY_MAGMA_GRUNTS     SPECIES_HOUNDOUR
 

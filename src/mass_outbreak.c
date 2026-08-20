@@ -35,8 +35,8 @@ static const struct MassOutbreak sPokeOutbreakSpeciesList[OUTBREAK_COUNT] = {
         .location = MAP_ROUTE113,
     },
     [OUTBREAK_ID_ROUTE120] = {
-        .species = SPECIES_SANDILE,
-        .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
+        .species = SPECIES_STUNFISK,
+        .moves = {MOVE_AQUA_TAIL, MOVE_PAIN_SPLIT, MOVE_CURSE, MOVE_YAWN},
         .level = POSTGAME_LEVEL,
         .probability = 100,
         .duration = 1,

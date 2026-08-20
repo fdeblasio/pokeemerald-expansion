@@ -762,7 +762,7 @@ WALLY_REMATCH(4),
     .partySize = 6
 
 #define ROXANNE_INFO                 \
-    LEADER_INFO(WINONA),             \
+    LEADER_INFO(MARIBEL),            \
     .trainerName = _("Maribel"),     \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
@@ -1001,7 +1001,7 @@ ROXANNE_REMATCH(3),
 ROXANNE_REMATCH(4),
 
 #define BRAWLY_INFO           \
-    LEADER_INFO(BRAWLY),      \
+    LEADER_INFO(ADAM),        \
     .trainerName = _("Adam"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
@@ -1228,7 +1228,7 @@ BRAWLY_REMATCH(3),
 BRAWLY_REMATCH(4),
 
 #define WATTSON_INFO                 \
-    LEADER_INFO(ROXANNE),            \
+    LEADER_INFO(LINDA),              \
     .trainerName = _("Linda"),       \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
@@ -1513,7 +1513,7 @@ WATTSON_REMATCH(3),
 WATTSON_REMATCH(4),
 
 #define FLANNERY_INFO                \
-    LEADER_INFO(ERIKA_FRLG),         \
+    LEADER_INFO(HELENE),             \
     .trainerName = _("Helene"),      \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
@@ -1774,7 +1774,7 @@ FLANNERY_REMATCH(2),
 FLANNERY_REMATCH(3),
 FLANNERY_REMATCH(4),
 
-#define NORMAN_INFO             \
+#define NORMAN_INFO           \
     LEADER_INFO(ERIC),        \
     .trainerName = _("Eric"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
@@ -2055,8 +2055,8 @@ NORMAN_REMATCH(2),
 NORMAN_REMATCH(3),
 NORMAN_REMATCH(4),
 
-#define WINONA_INFO             \
-    LEADER_INFO(WINONA),        \
+#define WINONA_INFO            \
+    LEADER_INFO(YUNDA),        \
     .trainerName = _("Yunda"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
@@ -2292,9 +2292,9 @@ WINONA_REMATCH(2),
 WINONA_REMATCH(3),
 WINONA_REMATCH(4),
 
-#define TATE_AND_LIZA_INFO                                   \
-    LEADER_INFO(TATE_AND_LIZA), \
-    .trainerName = _("Ivanna"),                           \
+#define TATE_AND_LIZA_INFO           \
+    LEADER_INFO(IVANNA),             \
+    .trainerName = _("Ivanna"),      \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
@@ -2544,8 +2544,8 @@ TATE_AND_LIZA_REMATCH(2),
 TATE_AND_LIZA_REMATCH(3),
 TATE_AND_LIZA_REMATCH(4),
 
-#define JUAN_INFO             \
-    LEADER_INFO(JUAN),        \
+#define JUAN_INFO            \
+    LEADER_INFO(PAT),        \
     .trainerName = _("Pat"), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
@@ -2825,9 +2825,9 @@ JUAN_REMATCH(4),
     .heldItem = Tier <= E4_TIER2 ? DEFAULT(ITEM_NONE, __VA_ARGS__) : ITEM_NONE,   \
     .ball = Tier == ACE ? ITEM_POKE_BALL : Trainer##_BALL
 
-#define SIDNEY_INFO                \
-    ELITE_FOUR_INFO(SIDNEY, DARK), \
-    .trainerName = _("Thuy"),    \
+#define SIDNEY_INFO                  \
+    ELITE_FOUR_INFO(THUY, DARK),     \
+    .trainerName = _("Thuy"),        \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
@@ -3050,9 +3050,9 @@ JUAN_REMATCH(4),
     },
 },
 
-#define PHOEBE_INFO                 \
-    ELITE_FOUR_INFO(PHOEBE, GHOST), \
-    .trainerName = _("Brian"),      \
+#define PHOEBE_INFO                     \
+    ELITE_FOUR_INFO(LANCE_FRLG, GHOST), \
+    .trainerName = _("Brian"),          \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define PHOEBE_DUSKNOIR(Rematch, Tier)                                              \
@@ -3244,9 +3244,9 @@ JUAN_REMATCH(4),
     },
 },
 
-#define GLACIA_INFO               \
-    ELITE_FOUR_INFO(GLACIA, ICE), \
-    .trainerName = _("Kimberly"),   \
+#define GLACIA_INFO                  \
+    ELITE_FOUR_INFO(KIMBERLY, ICE),  \
+    .trainerName = _("Kimberly"),    \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
@@ -3411,8 +3411,8 @@ JUAN_REMATCH(4),
     },
 },
 
-#define DRAKE_INFO                  \
-    ELITE_FOUR_INFO(DRAKE, DRAGON), \
+#define DRAKE_INFO                       \
+    ELITE_FOUR_INFO(RAFAEL_III, DRAGON), \
     .trainerName = _("Rafael III"),      \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
@@ -3780,7 +3780,7 @@ JUAN_REMATCH(4),
 {                                                                                          \
     .trainerName = _("Frank"),                                                             \
     .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
-    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
+    .trainerPic = TRAINER_PIC_FRANK,                                                       \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,                                        \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
     .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \

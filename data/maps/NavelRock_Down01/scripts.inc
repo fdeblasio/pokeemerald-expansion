@@ -48,11 +48,11 @@ NavelRock_Down01_EventScript_Legendary::
 
 NavelRock_Down01_EventScript_DefeatedLegendary::
 	setflag FLAG_DEFEATED_NAVEL_ROCK_ARTICUNO
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_1
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Down01_EventScript_RanFromLegendary::
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_1
 	goto Common_EventScript_LegendaryFlewAway
 	end

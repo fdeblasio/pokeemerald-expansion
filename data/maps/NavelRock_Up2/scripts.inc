@@ -48,11 +48,11 @@ NavelRock_Up2_EventScript_Legendary::
 
 NavelRock_Up2_EventScript_DefeatedLegendary::
 	setflag FLAG_DEFEATED_NAVEL_ROCK_TAPU_KOKO
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_8
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Up2_EventScript_RanFromLegendary::
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_8
 	goto Common_EventScript_LegendaryFlewAway
 	end

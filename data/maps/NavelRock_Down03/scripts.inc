@@ -48,11 +48,11 @@ NavelRock_Down03_EventScript_Legendary::
 
 NavelRock_Down03_EventScript_DefeatedLegendary::
 	setflag FLAG_DEFEATED_NAVEL_ROCK_MOLTRES
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_3
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Down03_EventScript_RanFromLegendary::
-	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_BOTTOM
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_3
 	goto Common_EventScript_LegendaryFlewAway
 	end

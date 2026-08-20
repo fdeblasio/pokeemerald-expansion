@@ -31,10 +31,10 @@ NavelRock_Up2_EventScript_Legendary::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_NAVEL_ROCK_9, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_NAVEL_ROCK_8, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	seteventmon SPECIES_NAVEL_ROCK_9, POSTGAME_LEVEL
+	seteventmon SPECIES_NAVEL_ROCK_8, POSTGAME_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE

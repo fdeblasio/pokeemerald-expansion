@@ -63,7 +63,7 @@ upcoming
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
-- Double-check legendaries' movesets
+- Update trainer teams for more variety with new Pokemon once Gym Leaders are done
 - Remove Lileep, Treecko, Mudkip, Torchic lines from Trainers
     - Most will be removed when Gyms are redone
     - Jackson's Treecko is the only one not in a Gym

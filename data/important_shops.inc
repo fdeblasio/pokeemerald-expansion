@@ -322,6 +322,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_SALAMENCITE     @ 0373
 	.2byte ITEM_METAGROSSITE    @ 0376
 	.2byte ITEM_STARAPTITE      @ 0398
+	.2byte ITEM_EXCADRITE       @ 0530
 	.2byte ITEM_CHANDELURITE    @ 0609
 	.2byte ITEM_GOLURKITE       @ 0623
 	.2byte ITEM_BARBARACITE     @ 0689
@@ -366,7 +367,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_HEATRANITE      @ 0485
 	.2byte ITEM_DARKRANITE      @ 0491
 	.2byte ITEM_EMBOARITE       @ 0500
-	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
 	.2byte ITEM_AUDINITE        @ 0531
 	.2byte ITEM_SCOLIPITE       @ 0545
 	.2byte ITEM_SCRAFTINITE     @ 0560
@@ -406,7 +406,6 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_SWAMPERTITE     @ 0260
 	.2byte ITEM_LATIASITE       @ 0380
 	.2byte ITEM_LATIOSITE       @ 0381
-	.2byte ITEM_EXCADRITE       @ 0530
 	.2byte ITEM_DRAGALGITE      @ 0691
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L

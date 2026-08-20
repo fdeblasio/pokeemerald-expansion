@@ -836,11 +836,11 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderJuan, gTrainerPalette_LeaderJuan),
     },
-    [TRAINER_PIC_SCHOOL_KID_M] =
+    [TRAINER_PIC_SCHOOLKID_M] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SchoolKidM, gTrainerPalette_SchoolKidM),
     },
-    [TRAINER_PIC_SCHOOL_KID_F] =
+    [TRAINER_PIC_SCHOOLKID_F] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SchoolKidF, gTrainerPalette_SchoolKidF),
     },

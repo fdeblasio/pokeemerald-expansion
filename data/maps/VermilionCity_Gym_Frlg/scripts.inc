@@ -311,11 +311,11 @@ VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
 	.string "Take this!$"
 
 VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
-	.string "{PLAYER} received TM34\n"
+	.string "{PLAYER} received TM034\n"
 	.string "from Lt. Surge.$"
 
 VermilionCity_Gym_Text_ExplainTM34::
-	.string "TM34 contains Shock Wave!\p"
+	.string "TM034 contains Shock Wave!\p"
 	.string "Teach it to an Electric Pokémon!$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::

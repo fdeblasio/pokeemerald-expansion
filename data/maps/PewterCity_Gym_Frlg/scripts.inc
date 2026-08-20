@@ -117,7 +117,7 @@ PewterCity_Gym_Text_TakeThisWithYou::
 	.string "Take this with you.$"
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
-	.string "{PLAYER} received TM39\n"
+	.string "{PLAYER} received TM039\n"
 	.string "from Brock.$"
 
 PewterCity_Gym_Text_ExplainTM39::
@@ -129,7 +129,7 @@ PewterCity_Gym_Text_ExplainTM39::
 	.string "So, when you use one, pick the\n"
 	.string "Pokémon carefully.\p"
 	.string "Anyways…\n"
-	.string "TM39 contains Rock Tomb.\p"
+	.string "TM039 contains Rock Tomb.\p"
 	.string "It hurls boulders at the foe and\n"
 	.string "lowers its Speed.$"
 

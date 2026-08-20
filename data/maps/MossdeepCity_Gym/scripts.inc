@@ -534,7 +534,7 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "Liza: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainPsychic:
-	.string "Tate: That TM29 contains…\n"
+	.string "Tate: That TM029 contains…\n"
 	.string "Liza: Psychic!\p"
 	.string "Tate: It's a move that's perfect…\n"
 	.string "Liza: For Psychic Pokémon!\p"

@@ -128,11 +128,11 @@ SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
 	.string "Wait, please take this TM with you.$"
 
 SaffronCity_Gym_Text_ReceivedTM04FromSabrina::
-	.string "{PLAYER} received TM04 from\n"
+	.string "{PLAYER} received TM004 from\n"
 	.string "Sabrina.$"
 
 SaffronCity_Gym_Text_ExplainTM04::
-	.string "TM04 is Calm Mind.\p"
+	.string "TM004 is Calm Mind.\p"
 	.string "It makes the Pokémon concentrate\n"
 	.string "to raise both Sp. Atk and Sp. Def.$"
 

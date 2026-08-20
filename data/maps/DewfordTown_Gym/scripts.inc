@@ -406,7 +406,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "Machine, too.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "That TM08 contains Bulk Up.\p"
+	.string "That TM008 contains Bulk Up.\p"
 	.string "It's a move that raises both Attack\n"
 	.string "and Defense stats.\p"
 	.string "… … … … … …$"

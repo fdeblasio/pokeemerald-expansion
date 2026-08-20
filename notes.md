@@ -79,8 +79,6 @@ upcoming
     - Lucario Z:
         - Could revert regular Mega stats back to be Physical since Z is Special
             - Maybe wait to see how Zs are handled in main games
-    - Mega Malamar:
-        - Take some SpA and give to Atk?
     - Zygarde:
         - Make attacking stats more consistent?
             - Regular forms have more Atk, but Mega has 146 more SpA
@@ -135,18 +133,15 @@ upcoming
         9: 120
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
-    - Staraptor because of different-typed Mega?
-        - Mega Staraptor Fighting/Flying->Flying/Fighting?
 - The default legendary battle music seems to be FRLG's. See if that is in vanilla and potentially change back to RSE
 - Remove evolved fishing encounters for the Safari Zone?
-- Decide whether to reverse types for Pokemon whose primary becomes secondary:
+- Decide whether to reverse types for Pokemon whose primary becomes changes:
     - Vanilla:
         - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
-        - Staraptor Normal(?)/Flying->Mega Staraptor Fighting/Flying
+        - Onix Rock/Ground->Steelix Steel/Ground
     - Custom:
-        - Mime Jr. Psychic->Galarian Mr. Mime Ice/Psychic
         - Swablu Flying->Altaria Dragon/Flying
-        - Fletchling Flying->Fletchinder Fire/Flying
+            - Although the Mega Evolution would then keep the secondary type instead of the primary
 - More macros for almost identical forms (like Mimikyu)
 - Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to higher attack stat and 0 to lower)
 - Eventually remove RSE and/or BDSP teachable moves?

@@ -1299,6 +1299,7 @@ static const struct LevelUpMove sGloomLevelUpLearnset[] = {
 static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
@@ -1311,9 +1312,9 @@ static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_AROMATHERAPY),
     LEVEL_UP_MOVE( 2, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE( 2, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE( 2, MOVE_MOONBLAST),
     LEVEL_UP_MOVE( 2, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE( 2, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE(69, MOVE_SOLAR_BEAM),
     LEVEL_UP_END
 };
@@ -10210,6 +10211,7 @@ static const struct LevelUpMove sRoseliaLevelUpLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
+    LEVEL_UP_MOVE( 1, MOVE_VENOSHOCK),
     LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
@@ -10230,7 +10232,7 @@ static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
     LEVEL_UP_MOVE( 1, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE( 2, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE( 2, MOVE_VENOSHOCK),
+    LEVEL_UP_MOVE( 2, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE( 2, MOVE_INGRAIN),
     LEVEL_UP_MOVE( 2, MOVE_GRASS_WHISTLE),
     LEVEL_UP_END

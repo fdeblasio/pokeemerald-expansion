@@ -571,10 +571,11 @@
   "VILEPLUME": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_ENERGY_BALL"},
+      {"Level": 1, "Move": "MOVE_MOONLIGHT"},
       {"Level": 2, "Move": "MOVE_GIGA_DRAIN"},
+      {"Level": 2, "Move": "MOVE_SLUDGE_BOMB"},
       {"Level": 2, "Move": "MOVE_MOONBLAST"},
-      {"Level": 2, "Move": "MOVE_GRASSY_TERRAIN"},
-      {"Level": 2, "Move": "MOVE_MOONLIGHT"}
+      {"Level": 2, "Move": "MOVE_GRASSY_TERRAIN"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -4471,9 +4472,10 @@
   },
   "ROSERADE": {
     "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_VENOSHOCK"},
       {"Level": 1, "Move": "MOVE_ENERGY_BALL"},
       {"Level": 2, "Move": "MOVE_GIGA_DRAIN"},
-      {"Level": 2, "Move": "MOVE_VENOSHOCK"},
+      {"Level": 2, "Move": "MOVE_SLUDGE_BOMB"},
       {"Level": 2, "Move": "MOVE_INGRAIN"},
       {"Level": 2, "Move": "MOVE_GRASS_WHISTLE"}
     ],

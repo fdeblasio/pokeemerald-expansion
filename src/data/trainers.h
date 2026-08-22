@@ -788,14 +788,14 @@ WALLY_REMATCH(4),
     },
 },
 
-#define ROXANNE_PROBOPASS(rematch, tier)                                                \
-    {                                                                                   \
-    REMATCH_MON(PROBOPASS, tier, rematch, ITEM_SITRUS_BERRY),                           \
-    .ability = ABILITY_SAND_FORCE,                                                      \
-    .nature = NATURE_IMPISH,                                                            \
-    EV_SPREAD_SPA_DEF_SPD,                                                              \
-    .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, rematch < 5 ? MOVE_SANDSTORM : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
-    .gender = TRAINER_MON_FEMALE,                                                       \
+#define ROXANNE_PROBOPASS(rematch, tier)                                              \
+    {                                                                                 \
+    REMATCH_MON(PROBOPASS, tier, rematch, ITEM_SITRUS_BERRY),                         \
+    .ability = ABILITY_SAND_FORCE,                                                    \
+    .nature = NATURE_IMPISH,                                                          \
+    EV_SPREAD_SPA_DEF_SPD,                                                            \
+    .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
 #define ROXANNE_ARMALDO(rematch, tier)                                              \
@@ -818,24 +818,24 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                               \
     }
 
-#define ROXANNE_RELICANTH(rematch, tier)                                                                             \
-    {                                                                                                                \
-    REMATCH_MON(RELICANTH, tier, rematch),                                                                           \
-    .ability = ABILITY_ROCK_HEAD,                                                                                    \
-    .nature = NATURE_IMPISH,                                                                                         \
-    EV_SPREAD_ATK_DEF_HP,                                                                                            \
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, rematch < 5 ? MOVE_DOUBLE_EDGE : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
-    .gender = TRAINER_MON_FEMALE,                                                                                    \
+#define ROXANNE_RELICANTH(rematch, tier)                                            \
+    {                                                                               \
+    REMATCH_MON(RELICANTH, tier, rematch),                                          \
+    .ability = ABILITY_ROCK_HEAD,                                                   \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define ROXANNE_AGGRON(rematch, tier)                                                                                 \
-    {                                                                                                                 \
-    REMATCH_MON(AGGRON, tier, rematch),                                                                               \
-    .ability = ABILITY_ROCK_HEAD,                                                                                     \
-    .nature = NATURE_IMPISH,                                                                                          \
-    EV_SPREAD_ATK_DEF_HP,                                                                                             \
-    .moves = {MOVE_HEAD_SMASH, rematch < 5 ? MOVE_IRON_HEAD : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_STEALTH_ROCK}, \
-    .gender = TRAINER_MON_FEMALE,                                                                                     \
+#define ROXANNE_AGGRON(rematch, tier)                                                  \
+    {                                                                                  \
+    REMATCH_MON(AGGRON, tier, rematch),                                                \
+    .ability = ABILITY_ROCK_HEAD,                                                      \
+    .nature = NATURE_IMPISH,                                                           \
+    EV_SPREAD_ATK_DEF_HP,                                                              \
+    .moves = {MOVE_HEAD_SMASH, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
 #define ROXANNE_CORSOLA(rematch, tier)                                    \

@@ -1534,8 +1534,14 @@
 - Crobat:
     - Learns Gust and Poison Jab by level up
 
-- Oddish/Gloom/Vileplume/Bellossom:
+- Oddish/Gloom:
     - Learn Energy Ball by level up
+
+- Vileplume:
+    - Learns Energy Ball and Sludge Bomb by level up
+
+- Bellossom:
+    - Learns Energy Ball by level up
 
 - Paras (not in Emerald):
     - Learns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
@@ -2878,7 +2884,7 @@
     - Held items:
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%
-    - Learn Venoshock and Energy Ball by level up
+    - Learn Venoshock, Energy Ball, and Sludge Bomb by level up
     - Learns Fairy Wind by Egg Move
 
 - Gulpin:

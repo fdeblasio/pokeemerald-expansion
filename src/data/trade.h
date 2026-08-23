@@ -970,17 +970,17 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("Dots"),
+        .nickname = _("Bailanda"),
         .species = SPECIES_RUSTBORO_TRADE_GET,
-        .ivs = {5, 4, 5, 4, 4, 4},
-        .abilityNum = 1,
+        .ivs = {MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS},
+        .abilityNum = 0,
         .otId = 38726,
-        .conditions = {30, 5, 5, 5, 5},
+        .conditions = {30, 255, 5, 0, 0},
         .personality = 0x84,
         .heldItem = ITEM_CHESTO_BERRY,
         .mailNum = -1,
-        .otName = _("Kobe"),
-        .otGender = MALE,
+        .otName = _("Arnold"),
+        .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_RUSTBORO_TRADE_GIVE
     },
@@ -1002,16 +1002,16 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("Seasor"),
+        .nickname = _("Ironside"),
         .species = SPECIES_PACIFIDLOG_TRADE_GET,
-        .ivs = {5, 4, 4, 4, 5, 4},
+        .ivs = {MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS},
         .abilityNum = 0,
         .otId = 46285,
-        .conditions = {5, 5, 5, 5, 30},
+        .conditions = {30, 0, 0, 5, 255},
         .personality = 0x7F,
         .heldItem = ITEM_WAVE_MAIL,
         .mailNum = 1,
-        .otName = _("Skylar"),
+        .otName = _("Thomas"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_PACIFIDLOG_TRADE_GIVE

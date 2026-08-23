@@ -51,7 +51,7 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update Gym leaders/Elite Four
-    - Rustboro, Dewford, Mauville, Lavaridge, and Petalburg first battles and rematches completed
+    - Rustboro, Dewford, Mauville, Lavaridge, Petalburg, and Fortree first battles and rematches completed
     - Eric Spinda pattern
     - Check Steven's Copperajah note
 - Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?

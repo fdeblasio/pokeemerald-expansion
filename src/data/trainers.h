@@ -2457,17 +2457,31 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                               \
     }
 
-#define YUNDA_SHIFTRY
-#define YUNDA_VILEPLUME
-#define YUNDA_BELLOSSOM
+#define YUNDA_SHIFTRY(rematch, tier)                                                  \
+    {                                                                                 \
+    REMATCH_MON(SHIFTRY, tier, rematch, ITEM_GRASSY_SEED),                            \
+    .ability = ABILITY_CHLOROPHYLL,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
+    .moves = {MOVE_LEAF_BLADE, MOVE_NIGHT_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
 
-#define YUNDA_ROSERADE(rematch, tier)                                                       \
-    {                                                                                       \
-    REMATCH_MON(ROSERADE, tier, rematch),                                                   \
-    .ability = ABILITY_NATURAL_CURE,                                                        \
-    IDEAL_ATTACKER_SPECIAL,                                                                 \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_GRASSY_TERRAIN}, \
-    .gender = TRAINER_MON_FEMALE,                                                           \
+#define YUNDA_VILEPLUME(rematch, tier)                                                 \
+    {                                                                                  \
+    REMATCH_MON(VILEPLUME, tier, rematch, ITEM_TERRAIN_EXTENDER),                      \
+    .ability = ABILITY_CHLOROPHYLL,                                                    \
+    IDEAL_ATTACKER_SPECIAL,                                                            \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_MOONBLAST, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define YUNDA_ROSERADE(rematch, tier)                                                     \
+    {                                                                                     \
+    REMATCH_MON(ROSERADE, tier, rematch),                                                 \
+    .ability = ABILITY_NATURAL_CURE,                                                      \
+    IDEAL_ATTACKER_SPECIAL,                                                               \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_WEATHER_BALL}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
     }
 
 #define YUNDA_TROPIUS(rematch, tier)                                               \
@@ -2480,17 +2494,27 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
+#define YUNDA_BELLOSSOM(rematch, tier)                                             \
+    {                                                                              \
+    REMATCH_MON(BELLOSSOM, tier, rematch, ITEM_HEAT_ROCK),                         \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_CALM,                                                         \
+    EV_SPREAD_SPA_SPE_SPD,                                                         \
+    .moves = {MOVE_SOLAR_BEAM, MOVE_MOONBLAST, MOVE_SUNNY_DAY, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define WINONA_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_WINONA_##Rematch] = \
 {                                               \
     WINONA_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        WINONA_NINJASK(Rematch, TIER3),         \
+        YUNDA_BELLOSSOM(Rematch, TIER3),        \
         YUNDA_TROPIUS(Rematch, TIER3),          \
         YUNDA_ROSERADE(Rematch, TIER3),         \
-        WINONA_PELIPPER(Rematch, TIER2),        \
-        WINONA_SWELLOW(Rematch, TIER2),         \
+        YUNDA_VILEPLUME(Rematch, TIER2),        \
+        YUNDA_SHIFTRY(Rematch, TIER2),          \
         YUNDA_BRELOOM(Rematch, ACE),            \
     },                                          \
 }

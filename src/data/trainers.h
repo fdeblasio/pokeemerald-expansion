@@ -2448,6 +2448,38 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
+#define YUNDA_BRELOOM(rematch, tier)                                          \
+    {                                                                         \
+    REMATCH_MON(BRELOOM, tier, rematch, ITEM_LOADED_DICE),                    \
+    .ability = ABILITY_TECHNICIAN,                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
+    .moves = {MOVE_BULLET_SEED, MOVE_ARM_THRUST, MOVE_ROCK_TOMB, MOVE_SPORE}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
+#define YUNDA_SHIFTRY
+#define YUNDA_VILEPLUME
+#define YUNDA_BELLOSSOM
+
+#define YUNDA_ROSERADE(rematch, tier)                                                       \
+    {                                                                                       \
+    REMATCH_MON(ROSERADE, tier, rematch),                                                   \
+    .ability = ABILITY_NATURAL_CURE,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                                 \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                           \
+    }
+
+#define YUNDA_TROPIUS(rematch, tier)                                               \
+    {                                                                              \
+    REMATCH_MON(TROPIUS, tier, rematch),                                           \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_HP_SPD,                                                          \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_SYNTHESIS}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
 #define WINONA_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_WINONA_##Rematch] = \
 {                                               \
@@ -2455,11 +2487,11 @@ NORMAN_REMATCH(4),
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
         WINONA_NINJASK(Rematch, TIER3),         \
-        WINONA_MASQUERAIN(Rematch, TIER3),      \
-        WINONA_TROPIUS(Rematch, TIER3),         \
+        YUNDA_TROPIUS(Rematch, TIER3),          \
+        YUNDA_ROSERADE(Rematch, TIER3),         \
         WINONA_PELIPPER(Rematch, TIER2),        \
         WINONA_SWELLOW(Rematch, TIER2),         \
-        WINONA_ALTARIA(Rematch, ACE),           \
+        YUNDA_BRELOOM(Rematch, ACE),            \
     },                                          \
 }
 

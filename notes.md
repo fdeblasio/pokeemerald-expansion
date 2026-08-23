@@ -182,6 +182,18 @@ upcoming
 - Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
     - Move is currently on two lines, item is on 3 so the move gets cut off
 - Move some TMs from shops to overworld
+- Give more berries to Pokemon resembling them, like with Tropius/Tsareena?
+  - Chesto: Chespin? (more based on water chestnut)
+  - Pecha: Pecharunt?
+  - Rawst: Strawberry Sweet Alcremie?
+  - Leppa: Applin, Greedent?
+  - Pinap: Ludicolo
+  - Nomel: Lemon Cream Alcremie?
+  - Pamtre: Exeggutor
+  - Kelpsy: Skrelp
+  - Durin: Ferroseed?
+  - Petaya: Dragons?
+  - Starf: Star Sweet Alcremie?
 - See if it's possible to give the decoration PC more room
 - Increase bag space for all items: 383 (595 - 100 items - 37 medicine - 75 unused):
     - 136 non-macroed

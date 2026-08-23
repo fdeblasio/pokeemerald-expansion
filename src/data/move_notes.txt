@@ -225,14 +225,15 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
 
     Sky Uppercut:   15 PP, hits flying
     Bounce:          5 PP, 85 accuracy, 30% paralyze
-    Dragon Pulse:   10 PP (increase to 90?)
     Night Daze:     10 PP, 40% accuracy
     Secret Sword:   10 PP, targets Defense
     Darkest Lariat: 10 PP, ignores stat changes
 
 90 Power:
+    Aqua Tail/Dragon Pulse:    10 PP
     Flamethrower/Ice Beam/Thunderbolt: 15 PP, 10% effect
     Psychic/Bug Buzz/Energy Ball/Earth Power/Flash Cannon: 10 PP, 10% lower SpD
+    Fire Lash/Apple Acid/Trop Kick/Thunderous Kick: 15 PP, 100% lower Stat
     Surf/Hyper Voice/Petal Blizzard/Overdrive: 15 PP, hits both
     Leaf Blade/Attack Order: 15 PP, increased critical
     Spirit Shackle/Anchor Shot: 20 PP, prevents escape
@@ -244,12 +245,9 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Freezing Glare: 10 PP, 20% freeze
     Fiery Wrath:    10 PP, 20% flinch
 
-    Fire Lash/Apple Acid/Trop Kick/Thunderous Kick: 15 PP, 100% lower Stat
-
     Fly: 15 PP, semi-invulnerable
     Phantom Force: 10 PP, semi-invulnerable, bypasses Protect
 
-    Aqua Tail:       15 PP
     Bitter Blade:    10 PP, 50% heal
     Aura Sphere:     20 PP, always hits
     Take Down:       20 PP, 25% recoil

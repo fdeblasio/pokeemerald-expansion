@@ -1018,6 +1018,7 @@
     - Stun Spore:
         - PP: 30->35
     - Syrup Bomb:
+        - Power: 60->80
         - Accuracy: 90->100
     - Trop Kick:
         - Power: 85->90
@@ -1097,6 +1098,8 @@
         - No longer lowers user's Defense
     - Dragon Claw:
         - PP: 15->20
+    - Dragon Pulse:
+        - Power: 85->90
     - Dual Chop:
         - Accuracy: 90->100
     - Dynamax Cannon:
@@ -3277,6 +3280,7 @@
     - Learn Bubble by level up
 
 - Cherubi/Cherrim:
+    - Held item: Cheri Berry: 0%->50%
     - Learns Fairy Wind by Egg Move
 
 - Cherrim Sunshine Form:
@@ -4766,8 +4770,22 @@
 - Carkol/Coalossal (postgame):
     - Learn Rock Throw, Rock Tomb, Flame Wheel, Rock Slide, Power Gem, Temper Flare, Flame Burst, Lava Plume, and Flamethrower by level up
 
-- Applin/Appletun:
-    - Learn Dragon Breath by move tutor (Note: Flapple, Dippin, and Hydrapple already learn it)
+- Applin:
+    - Held item: Leppa Berry: 0%->100%
+    - Learns Absorb by level up
+    - Learns Dragon Breath by move tutor (Note: Flapple, Dipplin, and Hydrapple already learn it)
+
+- Flapple:
+    - Held item: Leppa Berry: 0%->100%
+    - Learns Absorb, Breaking Swipe, Bullet Seed, and Dual Chop by level up
+
+- Appletun:
+    - Held item: Leppa Berry: 0%->100%
+    - Learns Absorb, Mega Drain, and Dragon Breath by level up
+
+- Dipplin/Hydrapple:
+    - Held item: Leppa Berry: 0%->100%
+    - Learn Absorb, Mega Drain, and Dragon Cheer by level up
 
 - Silicobra/Sandaconda:
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake by level up

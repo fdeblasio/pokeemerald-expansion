@@ -22806,6 +22806,7 @@ static const struct LevelUpMove sCoalossalLevelUpLearnset[] = {
 
 #if P_FAMILY_APPLIN
 static const struct LevelUpMove sApplinLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_END
@@ -22813,6 +22814,7 @@ static const struct LevelUpMove sApplinLevelUpLearnset[] = {
 
 static const struct LevelUpMove sFlappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
@@ -22821,9 +22823,12 @@ static const struct LevelUpMove sFlappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE( 8, MOVE_ACROBATICS),
     LEVEL_UP_MOVE(12, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(16, MOVE_BREAKING_SWIPE),
     LEVEL_UP_MOVE(16, MOVE_PROTECT),
+    LEVEL_UP_MOVE(20, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(24, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(28, MOVE_DUAL_CHOP),
     LEVEL_UP_MOVE(28, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(32, MOVE_GRAV_APPLE),
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
@@ -22834,6 +22839,7 @@ static const struct LevelUpMove sFlappleLevelUpLearnset[] = {
 
 static const struct LevelUpMove sAppletunLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HEADBUTT),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_RECYCLE),
@@ -22842,7 +22848,9 @@ static const struct LevelUpMove sAppletunLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_CURSE),
     LEVEL_UP_MOVE( 8, MOVE_STOMP),
     LEVEL_UP_MOVE(12, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(16, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(16, MOVE_PROTECT),
+    LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(20, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(24, MOVE_RECOVER),
     LEVEL_UP_MOVE(28, MOVE_APPLE_ACID),
@@ -22856,6 +22864,7 @@ static const struct LevelUpMove sAppletunLevelUpLearnset[] = {
 #if P_GEN_9_CROSS_EVOS
 static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DOUBLE_HIT),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
@@ -22864,8 +22873,10 @@ static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE( 8, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(16, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(16, MOVE_PROTECT),
     LEVEL_UP_MOVE(20, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(28, MOVE_DRAGON_CHEER),
     LEVEL_UP_MOVE(28, MOVE_SYRUP_BOMB),
     LEVEL_UP_MOVE(32, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(36, MOVE_RECOVER),
@@ -22876,6 +22887,7 @@ static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
 
 static const struct LevelUpMove sHydrappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FICKLE_BEAM),
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_YAWN),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
     LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
@@ -22886,8 +22898,10 @@ static const struct LevelUpMove sHydrappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE( 8, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(16, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(16, MOVE_PROTECT),
     LEVEL_UP_MOVE(20, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(28, MOVE_DRAGON_CHEER),
     LEVEL_UP_MOVE(28, MOVE_SYRUP_BOMB),
     LEVEL_UP_MOVE(32, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(36, MOVE_RECOVER),

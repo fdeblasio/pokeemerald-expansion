@@ -469,6 +469,8 @@ upcoming
     - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
 - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more consistent
 - Add trailing commas wherever possible
+- Consolidate REMATCH_MON, ELITE_FOUR_MON, and WALLACE_STEVEN_MON?
+    - E4 uses Level but maybe a bad copy of the Gym tier system can be implemented so that it can use rematch, tier like Gym
 - Remove type duplicates:
     - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
     - Turn Juan into a Poison specialist?

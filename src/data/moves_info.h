@@ -655,6 +655,13 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST
 
 // 90
+#define BASIC_90_POWER_INFO                           \
+    BASIC_MOVE,                                       \
+    .power = 90,                                      \
+    .pp = 15,                                         \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING, \
+    .validApprenticeMove = TRUE
+
 #define STATUS_90_POWER_INFO(Effect)                 \
     EFFECT_MOVE_INFO(Effect, 10),                    \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 95, \
@@ -10029,25 +10036,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_NightSlash,
     },
 
-
     [MOVE_AQUA_TAIL] =
     {
         .name = COMPOUND_STRING("Aqua Tail"),
         .description = COMPOUND_STRING(
             "The user swings its tail\n"
             "like a wave to attack."),
-        BASIC_MOVE,
-        .power = 90,
+        BASIC_90_POWER_INFO,
         .type = TYPE_WATER,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_AquaTail,
-        .validApprenticeMove = TRUE
     },
 
     [MOVE_SEED_BOMB] =
@@ -10123,13 +10125,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Generates a shock wave to\n"
             "damage the foe."),
-        BASIC_MOVE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 85 : 90,
+        BASIC_90_POWER_INFO,
         .type = TYPE_DRAGON,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .pulseMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_DragonPulse,
     },
@@ -18329,7 +18328,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Lowers the foe's Speed\n"
             "each turn for 3 turns."),
         BASIC_MOVE,
-        .power = 60,
+        .power = 80,
         .type = TYPE_GRASS,
         .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,

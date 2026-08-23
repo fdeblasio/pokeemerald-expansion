@@ -53632,6 +53632,7 @@ static const u16 sFlappleTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
     MOVE_ATTRACT,
+    MOVE_BREAKING_SWIPE,
     MOVE_BULLET_SEED,
     MOVE_DEFENSE_CURL,
     MOVE_DRACO_METEOR,

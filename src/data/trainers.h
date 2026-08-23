@@ -3796,8 +3796,27 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 // Grass
-#define JUAN_VILEPLUME
-#define JUAN_BELLOSSOM
+// Terrain Extender and Grassy Terrain can be swapped out
+#define JUAN_VILEPLUME(rematch, tier)                                                  \
+    {                                                                                  \
+    REMATCH_MON(VILEPLUME, tier, rematch, ITEM_TERRAIN_EXTENDER),                      \
+    .ability = ABILITY_CHLOROPHYLL,                                                    \
+    IDEAL_ATTACKER_SPECIAL,                                                            \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_MOONBLAST, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+//Heat Rock, Solar Beam, and Sunny Day can be swapped out
+#define JUAN_BELLOSSOM(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(BELLOSSOM, tier, rematch, ITEM_HEAT_ROCK),                         \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_CALM,                                                         \
+    EV_SPREAD_SPA_SPE_SPD,                                                         \
+    .moves = {MOVE_SOLAR_BEAM, MOVE_MOONBLAST, MOVE_SUNNY_DAY, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define JUAN_VICTREEBEL
 #define JUAN_EXEGGUTOR
 #define JUAN_EXEGGUTOR_ALOLA
@@ -3805,7 +3824,18 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_LEAFEON
 #define JUAN_JUMPLUFF
 #define JUAN_SUNFLORA
-#define JUAN_SHIFTRY
+
+//Grassy Seed can be swapped out
+//Leaf Blade can be replaced with Solar Blade on a sun team
+//Chlorophyll can be replaced with Wind Rider
+#define JUAN_SHIFTRY(rematch, tier)                                                   \
+    {                                                                                 \
+    REMATCH_MON(SHIFTRY, tier, rematch, ITEM_GRASSY_SEED),                            \
+    .ability = ABILITY_CHLOROPHYLL,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
+    .moves = {MOVE_LEAF_BLADE, MOVE_NIGHT_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
 
 #define JUAN_BRELOOM(rematch, tier)                                           \
     {                                                                         \
@@ -3817,6 +3847,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                               \
     }
 
+//Grassy Terrain can be replaced with with Toxic Spikes or Weather Ball
+//Dazzling Gleam can be replaced with Weather Ball
 #define JUAN_ROSERADE(rematch, tier)                                                        \
     {                                                                                       \
     /*ELITE_FOUR_MON(Level, ROSERADE, Tier, GLACIA),*/                                      \

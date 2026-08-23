@@ -479,7 +479,7 @@ upcoming
     - Double check this?
 - More mugshots for other bosses?
 - Can add Scientists since FRLG front sprite is available
-    - Can add Super Nerds too using either the School Kid or Scientist overworld sprites
+    - Can add Super Nerds too using either the School Kid or Maniac or Scientist overworld sprites
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
@@ -640,6 +640,7 @@ upcoming
 - Make Rival's teams less identical? Not sure if there's enough birds for that
     - Charmander team would have Rattata to not give double advantage against Bulbasaur
 - Add Charms after Tea is taken
+- Update Super Nerd overworld sprite to use Maniac?
 - Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
     - overworld
     - file definition for juggler

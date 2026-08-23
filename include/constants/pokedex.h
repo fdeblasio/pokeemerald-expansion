@@ -1299,12 +1299,13 @@ enum NationalDexOrder
     F(GRUMPIG) \
     F(PHANPY) \
     F(DONPHAN) \
-    F(SANDILE) \
-    F(KROKOROK) \
-    F(KROOKODILE) \
     F(MANKEY) \
     F(PRIMEAPE) \
     F(ANNIHILAPE) \
+    F(SANDILE) \
+    F(KROKOROK) \
+    F(KROOKODILE) \
+    F(PASSIMIAN) \
     F(TRAPINCH) \
     F(VIBRAVA) \
     F(FLYGON) \

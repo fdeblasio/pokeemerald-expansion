@@ -207,14 +207,14 @@
             "range": "JAGGED_PASS",
             "mons": [
               {"species": "SQUAWKABILLY_WHITE"},
+              {"species": "SANDILE"},
+              {"species": "PASSIMIAN"},
+              {"species": "PASSIMIAN"},
               {"species": "SQUAWKABILLY_WHITE"},
               {"species": "SQUAWKABILLY_WHITE"},
               {"species": "SQUAWKABILLY_WHITE"},
-              {"species": "SQUAWKABILLY_WHITE"},
-              {"species": "SQUAWKABILLY_WHITE"},
-              {"species": "SQUAWKABILLY_WHITE"},
-              {"species": "SQUAWKABILLY_WHITE"},
-              {"species": "SQUAWKABILLY_WHITE"},
+              {"species": "SANDILE"},
+              {"species": "PASSIMIAN"},
               {"species": "SQUAWKABILLY_WHITE"}
             ]
           }

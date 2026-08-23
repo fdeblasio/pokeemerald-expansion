@@ -897,7 +897,7 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-// ROXANNE_CARRACOSTA: https:// github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
+// ROXANNE_CARRACOSTA: https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
 
 #define ROXANNE_ARCHEOPS(rematch, tier)                                            \
     {                                                                              \
@@ -3806,10 +3806,40 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_JUMPLUFF
 #define JUAN_SUNFLORA
 #define JUAN_SHIFTRY
-#define JUAN_BRELOOM // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1942
-#define JUAN_ROSERADE // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1961
-#define JUAN_CACTURNE // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
-#define JUAN_TROPIUS // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2005
+
+#define JUAN_BRELOOM(rematch, tier)                                           \
+    {                                                                         \
+    /*ELITE_FOUR_MON(Level, BRELOOM, Tier, GLACIA, ITEM_LOADED_DICE),*/       \
+    REMATCH_MON(BRELOOM, tier, rematch, ITEM_LOADED_DICE),                    \
+    .ability = ABILITY_TECHNICIAN,                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
+    .moves = {MOVE_BULLET_SEED, MOVE_ARM_THRUST, MOVE_ROCK_TOMB, MOVE_SPORE}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
+#define JUAN_ROSERADE(rematch, tier)                                                        \
+    {                                                                                       \
+    /*ELITE_FOUR_MON(Level, ROSERADE, Tier, GLACIA),*/                                      \
+    REMATCH_MON(ROSERADE, tier, rematch),                                                   \
+    .ability = ABILITY_NATURAL_CURE,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                                 \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                           \
+    }
+
+#define JUAN_CACTURNE // https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
+
+#define JUAN_TROPIUS(rematch, tier)                                                \
+    {                                                                              \
+    /*ELITE_FOUR_MON(Level, TROPIUS, Tier, GLACIA),*/                              \
+    REMATCH_MON(TROPIUS, tier, rematch),                                           \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_HP_SPD,                                                          \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_SYNTHESIS}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
 #define JUAN_CHERRIM
 #define JUAN_CARNIVINE
 #define JUAN_ABOMASNOW
@@ -3817,7 +3847,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_WHIMSICOTT
 #define JUAN_LILLIGANT_HISUI
 #define JUAN_LILLIGANT
-#define JUAN_MARACTUS // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
+#define JUAN_MARACTUS // https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
 #define JUAN_AMOONGUSS
 #define JUAN_FERRORTHORN
 #define JUAN_GOGOAT
@@ -3830,7 +3860,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_HYDRAPPLE
 #define JUAN_ARBOLIVA
 #define JUAN_BRAMBLEGHAST
-#define JUAN_SCOVILLAIN // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
+#define JUAN_SCOVILLAIN // https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
 #define JUAN_SINISTCHA
 
 #define REMATCH_2_LEVEL_1 35

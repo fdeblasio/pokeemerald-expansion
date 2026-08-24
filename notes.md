@@ -51,6 +51,8 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update Gym leaders/Elite Four
+    - Update Mossdeep text
+    - Mossdeep first battle completed
     - Rustboro, Dewford, Mauville, Lavaridge, Petalburg, and Fortree first battles and rematches completed
     - Eric Spinda pattern
     - Check Steven's Copperajah note
@@ -59,7 +61,6 @@ upcoming
         - else trainer name = Tom species = SPHEAL
     - FRLG overworld sprites have a weird palette
         - This includes Brock for Arnold in Rustboro
-- Komala gets special properties for Snore (like Hypno with Hypnosis) or a signature move that's a stronger Snore?
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
 - Update surf/fish encounters

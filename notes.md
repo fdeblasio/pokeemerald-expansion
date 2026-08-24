@@ -52,8 +52,7 @@ upcoming
 - Wallace->Frank
 - Update Gym leaders/Elite Four
     - Update Mossdeep text
-    - Mossdeep first battle completed
-    - Rustboro, Dewford, Mauville, Lavaridge, Petalburg, and Fortree first battles and rematches completed
+    - All Gyms but Sootopolis have their first battles and rematches completed
     - Eric Spinda pattern
     - Check Steven's Copperajah note
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not

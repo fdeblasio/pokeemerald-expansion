@@ -3359,7 +3359,17 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define DRAKE_TATSUGIRI
+#define DRAKE_TATSUGIRI(Level, Tier)                                         \
+    {                                                                        \
+    ELITE_FOUR_MON(Level, TATSUGIRI_DROOPY, Tier, DRAKE),                    \
+    /*ELITE_FOUR_MON(Level, TATSUGIRI_CURLY, Tier, DRAKE),                   \*/
+    /*ELITE_FOUR_MON(Level, TATSUGIRI_STRETCHY, Tier, DRAKE),                \*/
+    .ability = ABILITY_STORM_DRAIN,                                          \
+    IDEAL_ATTACKER_SPECIAL,                                                  \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_ICY_WIND, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    }
+
 #define DRAKE_BAXCALIBUR
 
 [DIFFICULTY_NORMAL][TRAINER_DRAKE] =

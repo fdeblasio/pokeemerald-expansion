@@ -2565,7 +2565,7 @@ WINONA_REMATCH(4),
         .ability = ABILITY_BERSERK,
         IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_SWIFT, MOVE_EXTRASENSORY, MOVE_LIGHT_SCREEN},
-        .gender = TRAINER_MON_FEMALE,
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_7,
@@ -2761,18 +2761,76 @@ WINONA_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                        \
     }
 
+#define IVANNA_ALTARIA(rematch, tier)                                                \
+    {                                                                                \
+    REMATCH_MON(ALTARIA, tier, rematch, ITEM_ALTARIANITE),                           \
+    .ability = ABILITY_FLUFFY,                                                       \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_DEF_HP,                                                            \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
+// Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
+#define IVANNA_DRAMPA(rematch, tier)                                                     \
+    {                                                                                    \
+    REMATCH_MON(DRAMPA, tier, rematch),                                                  \
+    .ability = ABILITY_BERSERK,                                                          \
+    IDEAL_ATTACKER_SPECIAL,                                                              \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_HYPER_VOICE, MOVE_ENERGY_BALL, MOVE_FLAMETHROWER}, \
+    .gender = TRAINER_MON_MALE,                                                          \
+    }
+
+// Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
+#define IVANNA_HAXORUS(rematch, tier)                                            \
+    {                                                                            \
+    REMATCH_MON(HAXORUS, tier, rematch),                                         \
+    .ability = ABILITY_MOLD_BREAKER,                                             \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_CRUNCH, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
+#define IVANNA_TATSUGIRI(rematch, tier)                                      \
+    {                                                                        \
+    REMATCH_MON(TATSUGIRI_DROOPY, tier, rematch),                            \
+    .ability = ABILITY_STORM_DRAIN,                                          \
+    IDEAL_ATTACKER_SPECIAL,                                                  \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_ICY_WIND, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                            \
+    }
+
+// Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
+#define IVANNA_DRUDDIGON(rematch, tier)                                        \
+    {                                                                          \
+    REMATCH_MON(DRUDDIGON, tier, rematch),                                     \
+    .ability = ABILITY_SHEER_FORCE,                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_CRUNCH, MOVE_FIRE_PUNCH}, \
+    .gender = TRAINER_MON_FEMALE,                                              \
+    }
+
+#define IVANNA_SALAMENCE(rematch, tier)                                                  \
+    {                                                                                    \
+    REMATCH_MON(SALAMENCE, tier, rematch),                                               \
+    .ability = ABILITY_INTIMIDATE,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                             \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    }
+
 #define TATE_AND_LIZA_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_##Rematch] = \
 {                                                      \
     TATE_AND_LIZA_INFO,                                \
     LEADER_REMATCH,                                    \
     .party = (const struct TrainerMon[]) {             \
-        LIZA_GARDEVOIR(Rematch, TIER3),                \
-        TATE_CHIMECHO(Rematch, TIER3),                 \
-        LIZA_CLAYDOL(Rematch, TIER2),                  \
-        TATE_GRUMPIG(Rematch, TIER2),                  \
-        LIZA_LUNATONE(Rematch, ACE),                   \
-        TATE_SOLROCK(Rematch, ACE),                    \
+        IVANNA_SALAMENCE(Rematch, TIER3),              \
+        IVANNA_DRUDDIGON(Rematch, TIER3),              \
+        IVANNA_TATSUGIRI(Rematch, TIER3),              \
+        IVANNA_HAXORUS(Rematch, TIER2),                \
+        IVANNA_DRAMPA(Rematch, TIER2),                 \
+        IVANNA_ALTARIA(Rematch, ACE),                  \
     },                                                 \
 }
 

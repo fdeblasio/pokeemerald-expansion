@@ -51,7 +51,6 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update Gym leaders/Elite Four
-    - Update Mossdeep text
     - All Gyms but Sootopolis have their first battles and rematches completed
     - Eric Spinda pattern
     - Check Steven's Copperajah note
@@ -527,6 +526,7 @@ upcoming
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
 - Get rid of Gym Leader rematches needing two Pokémon
+    - Maybe all doubles too
 - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Double check this?
 - More mugshots for other bosses?

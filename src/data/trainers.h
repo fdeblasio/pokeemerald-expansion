@@ -17279,7 +17279,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_CETITAN,
         IVS(12),
         }
     },
@@ -17294,7 +17294,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_FROSMOTH,
         IVS(12),
         }
     },
@@ -17309,12 +17309,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(54),
-        .species = SPECIES_CORSOLA,
+        .species = SPECIES_GLALIE,
         IVS(12),
         },
         {
         RICH_MON(54),
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_FROSLASS,
         IVS(12),
         }
     },
@@ -17329,15 +17329,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_DELIBIRD,
         IVS(12),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_BOUNCE, MOVE_FLAIL, MOVE_TACKLE}
         },
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_FEEBAS,
+        .species = SPECIES_EISCUE,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_FLAIL, MOVE_RETURN, MOVE_ATTRACT}
         }
     },
 },
@@ -17351,12 +17349,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_CUBCHOO,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_SHARPEDO,
+        .species = SPECIES_CRABOMINABLE,
         IVS(12),
         }
     },
@@ -17391,17 +17389,17 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_VANILLITE,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_MARILL,
+        .species = SPECIES_VANILLISH,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_VANILLUXE,
         IVS(12),
         }
     },
@@ -17444,7 +17442,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(55),
-        .species = SPECIES_MARSHTOMP,
+        .species = SPECIES_BEARTIC,
         IVS(18),
         }
     },
@@ -17459,7 +17457,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_WALREIN,
         IVS(18),
         }
     },

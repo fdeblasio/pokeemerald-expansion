@@ -2865,12 +2865,12 @@
               {"species": "EISCUE"},
               {"species": "CUBCHOO"},
               {"species": "CUBCHOO"},
-              {"species": "SNORUNT"},
-              {"species": "EISCUE"},
-              {"species": "CUBCHOO"},
-              {"species": "CUBCHOO"},
-              {"species": "SPHEAL"},
-              {"species": "SPHEAL"}
+              {"species": "VANILLITE"},
+              {"species": "VANILLITE"},
+              {"species": "SNOM"},
+              {"species": "SNOM"},
+              {"species": "SNOM"},
+              {"species": "SNOM"}
             ]
           }
         },
@@ -3559,10 +3559,10 @@
               {"species": "SMOOCHUM"},
               {"species": "SNEASEL"},
               {"species": "SMOOCHUM"},
-              {"species": "VANILLITE"},
-              {"species": "VANILLITE"},
-              {"species": "VANILLITE"},
-              {"species": "VANILLITE"}
+              {"species": "BERGMITE"},
+              {"species": "BERGMITE"},
+              {"species": "BERGMITE"},
+              {"species": "BERGMITE"}
             ]
           }
         },

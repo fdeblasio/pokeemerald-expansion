@@ -1411,6 +1411,11 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(FROSLASS)) \
     F(CUBCHOO) \
     F(BEARTIC) \
+    F(VANILLITE) \
+    F(VANILLISH) \
+    F(VANILLUXE) \
+    F(SNOM) \
+    F(FROSMOTH) \
     F(WYNAUT) \
     F(WOBBUFFET) \
     F(CLAMPERL) \
@@ -1447,8 +1452,6 @@ enum NationalDexOrder
     F(PIPLUP) \
     F(PRINPLUP) \
     F(EMPOLEON) \
-    F(BLITZLE) \
-    F(ZEBSTRIKA) \
     F(MAGBY) \
     F(MAGMAR) \
     F(MAGMORTAR) \
@@ -1487,7 +1490,6 @@ enum NationalDexOrder
     F(TEDDIURSA) \
     F(URSARING) \
     F(URSALUNA) \
-    F(KLEFKI) \
     F(SNEASEL) \
     F(WEAVILE) \
     F(SNEASLER) \
@@ -1521,13 +1523,15 @@ enum NationalDexOrder
     F(TYMPOLE) \
     F(PALPITOAD) \
     F(SEISMITOAD) \
+    F(BLITZLE) \
+    F(ZEBSTRIKA) \
     F(STUNFISK) \
-    F(VANILLITE) \
-    F(VANILLISH) \
-    F(VANILLUXE) \
     F(HEATMOR) \
     F(FRILLISH) \
     F(JELLICENT) \
+    F(BERGMITE) \
+    F(AVALUGG) \
+    F(KLEFKI) \
     F(BRUXISH) \
     F(WISHIWASHI) \
     F(HELIOPTILE) \

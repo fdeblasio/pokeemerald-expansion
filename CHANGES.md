@@ -1752,6 +1752,15 @@
 - Staryu/Starmie:
     - Learns Water Pulse by level up
 
+- Smoochum (postgame):
+    - Def: 15->20
+    - Catch rate: 45->150
+    - Learns Aurora Beam, Psybeam, and Ice Beam by level up
+
+- Jynx (postgame):
+    - Def: 35->40
+    - Learns Aurora Beam, Psybeam, and Ice Beam by level up
+
 - Elekid:
     - Atk: 63->65
     - Def: 37->40
@@ -1849,23 +1858,23 @@
     - Hidden Ability: Gluttony->Comatose
     - Learns Slack Off upon evolving
 
-- Articuno (not in Emerald):
+- Articuno (postgame):
     - Learns Aurora Beam, Air Cutter, and Air Slash by level up
 
-- Galarian Articuno (not in Emerald):
+- Galarian Articuno (postgame):
     - Learns Psybeam, Air Cutter, and Air Slash by level up
 
-- Zapdos (not in Emerald):
+- Zapdos (postgame):
     - Learns Gust, Shock Wave, Air Cutter, Air Slash, Thunderbolt, and Hurricane by level up
     - Theoretically learns Bolt Beak by Egg Move, although it can't breed
 
-- Galarian Zapdos (not in Emerald):
+- Galarian Zapdos (postgame):
     - Learns Double Kick and Acrobatics by level up
 
-- Moltres (not in Emerald):
+- Moltres (postgame):
     - Learns by Flame Burst and Air Cutter level up
 
-- Galarian Moltres (not in Emerald):
+- Galarian Moltres (postgame):
     - Learns Snarl, Air Cutter, and Dark Pulse by level up
 
 - Mew (postgame):
@@ -2856,17 +2865,17 @@
     - Spe: 98->100
     - Learns Surf and Dual Wingbeat by level up
 
-- Vanillite (postgame):
+- Vanillite:
     - Evolution: 35->30
     - Held item: Casteliacone: 0%->50%
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
-- Vanillish (postgame):
+- Vanillish:
     - Evolution: 47->42
     - Held item: Casteliacone: 0%->50%
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
-- Vanilluxe (postgame):
+- Vanilluxe:
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
 - Foongus (postgame):
@@ -3088,9 +3097,19 @@
 - Hawlucha:
     - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
-- Klefki:
+- Klefki (postgame):
     - Catch rate: 75->90
     - Learns Dazzling Gleam by level up
+
+- Bergmite (postgame):
+    - Evolves into Hisuian Avalugg with an Ice Stone
+    - Learns Ice Spinner by level up
+
+- Avalugg (postgame):
+    - Learns Ice Spinner by level up
+
+- Hisuian Avalugg (postgame):
+    - Learns Rock Throw, Rock Tomb, and Ice Spinner by level up
 
 - Noibat:
     - Evolution: 48->40
@@ -3351,10 +3370,10 @@
         - Relic Copper: 0%->5%
     - Received Sturdy as a second ability
 
-- Dracozolt:
+- Dracozolt (postgame):
     - Learns Twister, Shock Wave, and Spark by level up
 
-- Arctozolt:
+- Arctozolt (postgame):
     - Learns Shock Wave, and Spark by level up
 
 - Regieleki:

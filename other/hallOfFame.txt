@@ -1,0 +1,90 @@
+- EE 1:
+    - Electabuzz (edited in starter)
+    - Breloom
+    - Exploud
+    - Alakazam
+    - Mawile
+    - Zangoose
+- PokeTom 1:
+    - Torterra
+    - Scolipede
+    - Granbull
+    - Galvantula
+    - Aerodactyl
+    - Lickitung
+- PokeTom 2 (no encounters):
+    - Blastoise
+    - Cradily
+    - Electrode
+    - Cryogonal
+    - Kecleon
+    - Aerodactyl
+- EE 2 (unfinished):
+    - Swampert
+    - Shiftry
+    - Masquerain
+    - Ninjask
+    - Shedinja
+    - Lunatone
+- EE 3:
+    - Blaziken
+    - Beautifly
+    - Mightyena (Shiny)
+    - Bellossom
+    - Seaking
+    - Farigiraf
+- Cats:
+    - Incineroar
+    - Ledybulk
+    - Perrserker
+    - Swoobat
+    - Eelektross
+    - Grapploct
+- Frogs:
+    - Venusaur
+    - Nidoqueen
+    - Bellibolt
+    - Poliwrath
+    - Gliscor
+    - Toxicroak
+- Unite 1:
+    - Cinderace
+    - Leavanny
+    - Greedent
+    - Pawmot
+    - Tsareena
+    - Muk (Shiny)
+- Unite 2:
+    - Decidueye
+    - Venomoth
+    - Dachsbun
+    - Slowbro
+    - Mr. Rime
+    - Jolteon
+Wedding 1:
+    - Corviknight-P
+    - Espathra
+    - Conductot
+    - Alomomola
+    - Sirfetch'd
+    - Eiscue
+Wedding 2:
+    - Machamp-P
+    - Nidoking
+    - Valentide
+    - Oricorio Pom-Pom
+    -
+    -
+- :
+    -
+    -
+    -
+    -
+    -
+    -
+
+Future:
+    - EE 4:
+        - Sceptile (Quincy)
+    - FRE:
+        -

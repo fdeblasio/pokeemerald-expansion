@@ -51,7 +51,6 @@ upcoming
     - Nidoran named Arnold
 - Wallace->Frank
 - Update Gym leaders/Elite Four
-    - All Gyms but Sootopolis have their first battles and rematches completed
     - Eric Spinda pattern
     - Check Steven's Copperajah note
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
@@ -61,6 +60,7 @@ upcoming
         - This includes Brock for Arnold in Rustboro
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
+    - Valentide Water/Fairy?
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
@@ -69,9 +69,8 @@ upcoming
     - Tornadus-T
     - Yveltal
 - Update trainer teams for more variety with new Pokemon once Gym Leaders are done
-- Remove Lileep, Treecko, Mudkip, Torchic lines from Trainers
-    - Most will be removed when Gyms are redone
-    - Jackson's Treecko is the only one not in a Gym
+    - If a rematch has a Pokemon in the hack, use it
+- Remove Jackson's Treecko
 
 ## To Do (common):
 ### Champions

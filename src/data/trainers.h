@@ -3164,10 +3164,11 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
+// Can replace Slush Rush with Snow Cloak
 #define GLACIA_BEARTIC(Level, Tier)                                               \
     {                                                                             \
     ELITE_FOUR_MON(Level, BEARTIC, Tier, GLACIA),                                 \
-    .ability = ABILITY_SNOW_CLOAK,                                                \
+    .ability = ABILITY_SLUSH_RUSH,                                                \
     IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
@@ -3196,7 +3197,14 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
-#define GLACIA_CETITAN
+#define GLACIA_CETITAN(Level, Tier)                                                  \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, CETITAN, Tier, GLACIA, ITEM_LEFTOVERS),                    \
+    .ability = ABILITY_SLUSH_RUSH,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_BELLY_DRUM}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
 {

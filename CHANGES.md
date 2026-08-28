@@ -18,26 +18,24 @@
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Pokémon can now be listed as orange in the Pokédex
 - Releasing a Pokémon now gives you its Poké Ball back
-- Hoenn-specific:
-    - Some areas made easier to navigate
-        - Route 102/103: Path from Littleroot to rival is more direct
-    - Some reversions back to Ruby and Sapphire
-        - Birch is chased by a Poochyena
-        - Some trainers on Routes 104 and 117 go back to their original locations
-    - Gym Leaders use more Hoenn Pokémon
-    - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
-    - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
-    - Pokémon have a more even encounter distribution
-    - Route 104's northen section has different encounters than the southern section
-    - Safari Zone:
-        - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
-        - Pokémon in the Safari Zone can't flee
-        - Connected the north and northwest sections of the Safari Zone
-        - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
-        - There are extra areas in the Safari Zone
-    - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-    - Contest opponents from RS and ORAS were added
-    - There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
+- Some areas made easier to navigate
+    - Route 102/103: Path from Littleroot to rival is more direct
+- Some reversions back to Ruby and Sapphire
+    - Birch is chased by a Poochyena
+    - Some trainers on Routes 104 and 117 go back to their original locations
+- Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+- Team Magma are focused on Ground types in addition to Fire types
+- Pokémon have a more even encounter distribution
+- Route 104's northen section has different encounters than the southern section
+- Safari Zone:
+    - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
+    - Pokémon in the Safari Zone can't flee
+    - Connected the north and northwest sections of the Safari Zone
+    - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
+    - There are extra areas in the Safari Zone
+- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
+- Contest opponents from RS and ORAS were added
+- There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
 
 ### Overworld:
 - Faster walking/surfing speed
@@ -3446,6 +3444,9 @@
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up
     - Learns Steel Wing by TM
+
+- Cetoddle/Cetitan:
+    - Learn Ice Fang and Icicle Crash by level up
 
 - Veluza (postgame):
     - Learns Waterfall, Zen Headbutt, Aqua Tail, and Psychic Fangs by level up

@@ -2851,42 +2851,42 @@ TATE_AND_LIZA_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = CAP_GYM_8 - 3,
-        .species = SPECIES_CASTFORM,
-        .ability = ABILITY_FORECAST,
+        .species = SPECIES_VANILLUXE,
+        .ability = ABILITY_SNOW_WARNING,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_WEATHER_BALL, MOVE_ICE_BEAM, MOVE_RAIN_DANCE},
+        .moves = {MOVE_ICICLE_CRASH, MOVE_MIRROR_SHOT, MOVE_MIRROR_COAT, MOVE_ACID_ARMOR},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_8 - 3,
-        .species = SPECIES_HUNTAIL,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_EISCUE,
+        .ability = ABILITY_ICE_FACE,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_RAIN_DANCE},
+        .moves = {MOVE_ICICLE_CRASH, MOVE_SURF, MOVE_AURORA_VEIL, MOVE_AMNESIA},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_8 - 2,
-        .species = SPECIES_CRAWDAUNT,
-        .ability = ABILITY_SHELL_ARMOR,
+        .species = SPECIES_CETITAN,
+        .ability = ABILITY_SLUSH_RUSH,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_SWORDS_DANCE},
+        .moves = {MOVE_ICICLE_CRASH, MOVE_BODY_SLAM, MOVE_BOUNCE, MOVE_AMNESIA},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_8 - 2,
-        .species = SPECIES_LUVDISC,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_BEARTIC,
+        .ability = ABILITY_SLUSH_RUSH,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_AQUA_RING},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_SLASH, MOVE_SWAGGER, MOVE_AQUA_JET},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = CAP_GYM_8,
-        .species = SPECIES_WHISCASH,
-        .ability = ABILITY_OBLIVIOUS,
+        .species = SPECIES_MAMOSWINE,
+        .ability = ABILITY_SNOW_CLOAK,
         IVS(30),
-        .moves = {MOVE_WATER_PULSE, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_ICE_SHARD, MOVE_AMNESIA},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -3071,18 +3071,73 @@ TATE_AND_LIZA_REMATCH(4),
 #define JUAN_SALAZZLE
 #define JUAN_GRAFAIAI
 
+// Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
+#define PAT_MAMOSWINE(rematch, tier)                                                \
+    {                                                                               \
+    REMATCH_MON(MAMOSWINE, tier, rematch, ITEM_BRIGHT_POWDER),                      \
+    .ability = ABILITY_SNOW_CLOAK,                                                  \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_TRAILBLAZE, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define PAT_BEARTIC(rematch, tier)                                                \
+    {                                                                             \
+    REMATCH_MON(BEARTIC, tier, rematch, ITEM_NEVER_MELT_ICE),                     \
+    .ability = ABILITY_SLUSH_RUSH,                                                \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define PAT_CETITAN(rematch, tier)                                                        \
+    {                                                                                     \
+    REMATCH_MON(CETITAN, tier, rematch, ITEM_LEFTOVERS),                                  \
+    .ability = ABILITY_SLUSH_RUSH,                                                        \
+    IDEAL_ATTACKER_PHYSICAL,                                                              \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_HIGH_HORSEPOWER, MOVE_BELLY_DRUM}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    }
+
+#define PAT_EISCUE(rematch, tier)                                                      \
+    {                                                                                  \
+    REMATCH_MON(EISCUE, tier, rematch),                                                \
+    .ability = ABILITY_ICE_FACE,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_LIQUIDATION, MOVE_ZEN_HEADBUTT, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define PAT_VANILLUXE(rematch, tier)                                                 \
+    {                                                                                \
+    REMATCH_MON(VANILLUXE, tier, rematch),                                           \
+    .ability = ABILITY_SNOW_WARNING,                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                                          \
+    .moves = {MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_HYPER_VOICE, MOVE_SIGNAL_BEAM}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+#define PAT_FROSLASS(rematch, tier)                                                 \
+    {                                                                               \
+    REMATCH_MON(FROSLASS, tier, rematch),                                           \
+    .ability = ABILITY_SNOW_CLOAK,                                                  \
+    IDEAL_SPEEDSTER_SPECIAL,                                                        \
+    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
 #define JUAN_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_JUAN_##Rematch] = \
 {                                             \
     JUAN_INFO,                                \
     LEADER_REMATCH,                           \
     .party = (const struct TrainerMon[]) {    \
-        JUAN_SWAMPERT(Rematch, TIER3),        \
-        JUAN_CASTFORM(Rematch, TIER3),        \
-        JUAN_HUNTAIL(Rematch, TIER3),         \
-        JUAN_CRAWDAUNT(Rematch, TIER2),       \
-        JUAN_LUVDISC(Rematch, TIER2),         \
-        JUAN_WHISCASH(Rematch, ACE),          \
+        PAT_FROSLASS(Rematch, TIER3),         \
+        PAT_VANILLUXE(Rematch, TIER3),        \
+        PAT_EISCUE(Rematch, TIER3),           \
+        PAT_CETITAN(Rematch, TIER2),          \
+        PAT_BEARTIC(Rematch, TIER2),          \
+        PAT_MAMOSWINE(Rematch, ACE),          \
     },                                        \
 }
 
@@ -17354,7 +17409,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_CRABOMINABLE,
+        .species = SPECIES_BEARTIC,
         IVS(12),
         }
     },
@@ -17369,12 +17424,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_SPHEAL,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_WAILORD,
+        .species = SPECIES_SEALEO,
         IVS(12),
         }
     },
@@ -17407,28 +17462,25 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 
 [DIFFICULTY_NORMAL][TRAINER_OLIVIA] =
 {
-    .trainerName = _("Olivia"),
+    .trainerName = _("Sandra"),
     BEAUTY_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_CLAMPERL,
+        .species = SPECIES_SNORUNT,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_IRON_DEFENSE}
         },
         {
         .lvl = 53,
-        .species = SPECIES_CRAWDAUNT,
+        .species = SPECIES_CETODDLE,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_TAUNT}
         },
         {
         .lvl = 53,
-        .species = SPECIES_LUDICOLO,
+        .species = SPECIES_PILOSWINE,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_GIGA_DRAIN, MOVE_NATURE_POWER, MOVE_TEETER_DANCE}
         }
     },
 },
@@ -17442,7 +17494,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(55),
-        .species = SPECIES_BEARTIC,
+        .species = SPECIES_CRABOMINABLE,
         IVS(18),
         }
     },
@@ -17450,9 +17502,10 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 
 [DIFFICULTY_NORMAL][TRAINER_BRIDGET] =
 {
-    .trainerName = _("Bridget"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .trainerName = _("Tom"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {

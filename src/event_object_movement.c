@@ -531,7 +531,6 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
-#if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_GREEN},
@@ -547,7 +546,6 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Meteorite,             OBJ_EVENT_PAL_TAG_METEORITE},
     {gObjectEventPal_SSAnne,                OBJ_EVENT_PAL_TAG_SS_ANNE},
     {gObjectEventPal_Seagallop,             OBJ_EVENT_PAL_TAG_SEAGALLOP},
-#endif // IS_FRLG
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},
@@ -10011,9 +10009,9 @@ void ScriptFaceEachOther(struct ScriptContext *ctx)
     u32 localIdTwo = VarGet(ScriptReadHalfword(ctx));
     struct ObjectEvent *objectOne = &gObjectEvents[GetObjectEventIdByLocalId(localIdOne)];
     struct ObjectEvent *objectTwo = &gObjectEvents[GetObjectEventIdByLocalId(localIdTwo)];
-    
+
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
-    
+
     ObjectEventsTurnToEachOther(objectOne, objectTwo);
 }
 
@@ -11731,7 +11729,7 @@ bool8 MovementType_OverworldWildEncounter_WanderAround_Step2(struct ObjectEvent 
 {
     if (!ObjectEventExecSingleMovementAction(objectEvent, sprite))
         return FALSE;
-    
+
     SetMovementDelay(sprite, sMovementDelaysOWE[Random() % ARRAY_COUNT(sMovementDelaysOWE)]);
     sprite->sTypeFuncId = 3;
     return TRUE;
@@ -11746,13 +11744,13 @@ bool8 MovementType_OverworldWildEncounter_WanderAround_Step3(struct ObjectEvent 
         sprite->sTypeFuncId = 4;
         return TRUE;
     }
-    
+
     if (OW_MON_WANDER_WALK == TRUE && IS_OW_MON_OBJ(objectEvent))
         UpdateMonMoveInPlace(objectEvent, sprite);
 
     if (CanAwareOWESeePlayer(objectEvent))
         sprite->sTypeFuncId = 7;
-    
+
     return FALSE;
 }
 
@@ -11808,7 +11806,7 @@ bool8 MovementType_OverworldWildEncounter_Common_Step9(struct ObjectEvent *objec
 {
     if (ObjectEventExecSingleMovementAction(objectEvent, sprite))
         sprite->sTypeFuncId = 10;
-    
+
     return TRUE;
 }
 
@@ -11916,7 +11914,7 @@ bool8 MovementType_OverworldWildEncounter_FleePlayer_Step11(struct ObjectEvent *
         enum Direction newDirection = DirectionOfOWEToPlayerFromCollision(objectEvent);
         if (newDirection != objectEvent->movementDirection)
             newDirection = GetOppositeDirection(newDirection);
-        
+
         movementActionId = GetOWEWalkMovementActionInDirectionWithSpeed(newDirection, OWE_GetActiveSpeedFromSpecies(speciesId));
         if (CheckRestrictedOWEMovement(objectEvent, newDirection))
         {

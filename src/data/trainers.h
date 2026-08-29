@@ -908,7 +908,15 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-#define ROXANNE_BARBARACLE
+#define ROXANNE_BARBARACLE(rematch, tier)                                              \
+    {                                                                                  \
+    REMATCH_MON(BARBARACLE, tier, rematch, Tier = ACE ? ITEM_BARBARACITE : ITEM_NONE), \
+    .ability = ABILITY_TOUGH_CLAWS,                                                    \
+    .nature = NATURE_IMPISH,                                                           \
+    EV_SPREAD_ATK_DEF_HP,                                                              \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_LIQUIDATION, MOVE_DRAIN_PUNCH, MOVE_SHELL_SMASH},  \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
 
 #define ROXANNE_TYRANTRUM(rematch, tier)                                                 \
     {                                                                                    \
@@ -1093,6 +1101,7 @@ ROXANNE_REMATCH(4),
 #define BRAWLY_TAUROS_AQUA
 #define BRAWLY_SNEASLER
 
+// ITEM_LUCARIONITE or ITEM_LUCARIONITE_Z if ACE
 #define BRAWLY_LUCARIO(rematch, tier)                                                  \
     {                                                                                  \
     REMATCH_MON(LUCARIO, tier, rematch),                                               \
@@ -1124,13 +1133,13 @@ ROXANNE_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                     \
     }
 
-#define BRAWLY_HAWLUCHA(rematch, tier)                                       \
-    {                                                                        \
-    REMATCH_MON(HAWLUCHA, tier, rematch),                                    \
-    .ability = ABILITY_LIMBER,                                               \
-    IDEAL_SPEEDSTER_PHYSICAL,                                                \
-    .moves = {MOVE_BULK_UP, MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE}, \
-    .gender = TRAINER_MON_MALE,                                              \
+#define BRAWLY_HAWLUCHA(rematch, tier)                                                \
+    {                                                                                 \
+    REMATCH_MON(HAWLUCHA, tier, rematch, Tier = ACE ? ITEM_HAWLUCHANITE : ITEM_NONE), \
+    .ability = ABILITY_LIMBER,                                                        \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                         \
+    .moves = {MOVE_BULK_UP, MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE},          \
+    .gender = TRAINER_MON_MALE,                                                       \
     }
 
 #define BRAWLY_CRABOMINABLE(rematch, tier)                                              \
@@ -1156,7 +1165,7 @@ ROXANNE_REMATCH(4),
 
 #define BRAWLY_FALINKS(rematch, tier)                                               \
     {                                                                               \
-    REMATCH_MON(FALINKS, tier, rematch),                                            \
+    REMATCH_MON(FALINKS, tier, rematch, Tier = ACE ? ITEM_FALINKSITE : ITEM_NONE),  \
     .ability = ABILITY_DEFIANT,                                                     \
     IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_SPIKY_SHIELD, MOVE_NO_RETREAT}, \
@@ -1286,6 +1295,7 @@ BRAWLY_REMATCH(4),
     }
 
 // Extra for hacks
+// ITEM_RAICHUNITE_X or ITEM_RAICHUNITE_Y if ACE
 #define WATTSON_RAICHU(rematch, tier)                                           \
     {                                                                           \
     REMATCH_MON(RAICHU, tier, rematch),                                         \
@@ -1345,13 +1355,13 @@ BRAWLY_REMATCH(4),
 #define WATTSON_ZEBSTRIKA
 #define WATTSON_EMOLGA
 
-#define WATTSON_EELEKTROSS(rematch, tier)                                          \
-    {                                                                              \
-    REMATCH_MON(EELEKTROSS, tier, rematch),                                        \
-    .ability = ABILITY_LEVITATE,                                                   \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_SPA_SPE_DEF,                                                         \
-    .moves = {MOVE_SUPERCELL_SLAM, MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_COIL}, \
+#define WATTSON_EELEKTROSS(rematch, tier)                                                \
+    {                                                                                    \
+    REMATCH_MON(EELEKTROSS, tier, rematch, Tier = ACE ? ITEM_EELEKTROSSITE : ITEM_NONE), \
+    .ability = ABILITY_LEVITATE,                                                         \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_SPA_SPE_DEF,                                                               \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_COIL},       \
     }
 
 #define WATTSON_HELIOLISK(rematch, tier)                                                     \
@@ -1617,13 +1627,13 @@ WATTSON_REMATCH(4),
     }
 */
 
-#define FLANNERY_PYROAR(rematch, tier)                                             \
-    {                                                                              \
-    REMATCH_MON(PYROAR, tier, rematch, ITEM_WIDE_LENS),                            \
-    .ability = ABILITY_COMPETITIVE,                                                \
-    IDEAL_ATTACKER_SPECIAL,                                                        \
-    .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_VOICE, MOVE_DARK_PULSE, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                  \
+#define FLANNERY_PYROAR(rematch, tier)                                                \
+    {                                                                                 \
+    REMATCH_MON(PYROAR, tier, rematch, Tier = ACE ? ITEM_PYROARITE : ITEM_WIDE_LENS), \
+    .ability = ABILITY_COMPETITIVE,                                                   \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
+    .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_VOICE, MOVE_DARK_PULSE, MOVE_SUNNY_DAY},    \
+    .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
 #define FLANNERY_ORICORIO
@@ -2067,13 +2077,13 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                             \
     }
 
-#define WINONA_STARAPTOR(rematch, tier)                                         \
-    {                                                                           \
-    REMATCH_MON(STARAPTOR, tier, rematch),                                      \
-    .ability = ABILITY_INTIMIDATE,                                              \
-    IDEAL_ATTACKER_PHYSICAL,                                                    \
-    .moves = {MOVE_DUAL_WINGBEAT, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_AGILITY}, \
-    .gender = TRAINER_MON_FEMALE,                                               \
+#define WINONA_STARAPTOR(rematch, tier)                                              \
+    {                                                                                \
+    REMATCH_MON(STARAPTOR, tier, rematch, Tier = ACE ? ITEM_STARAPTITE : ITEM_NONE), \
+    .ability = ABILITY_INTIMIDATE,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
+    .moves = {MOVE_DUAL_WINGBEAT, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_AGILITY},      \
+    .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
 #define WINONA_ROTOM(rematch, tier)                                                       \
@@ -2250,14 +2260,14 @@ WINONA_REMATCH(4),
     .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
     }
 
-#define TATE_CHIMECHO(rematch, tier)                                             \
-    {                                                                            \
-    REMATCH_MON(CHIMECHO, tier, rematch),                                        \
-    .ability = ABILITY_LEVITATE,                                                 \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPD_HP,                                                        \
-    .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
-    .gender = TRAINER_MON_MALE,                                                  \
+#define TATE_CHIMECHO(rematch, tier)                                                \
+    {                                                                               \
+    REMATCH_MON(CHIMECHO, tier, rematch, Tier = ACE ? ITEM_CHIMECHITE : ITEM_NONE), \
+    .ability = ABILITY_LEVITATE,                                                    \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPD_HP,                                                           \
+    .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},    \
+    .gender = TRAINER_MON_MALE,                                                     \
     }
 
 #define LIZA_GARDEVOIR(rematch, tier)                                                 \
@@ -2632,6 +2642,7 @@ TATE_AND_LIZA_REMATCH(4),
     }
 
 #define JUAN_GARDBODOR
+// ITEM_DRAGALGITE if ACE
 #define JUAN_DRAGALGE
 #define JUAN_TOXAPEX
 #define JUAN_SALAZZLE
@@ -2668,19 +2679,32 @@ JUAN_REMATCH(4),
 #define GLACIA_BALL ITEM_PREMIER_BALL
 #define DRAKE_BALL  ITEM_HEAVY_BALL
 
+#define SIDNEY_ACE_LEVEL 63
+#define PHOEBE_ACE_LEVEL 64
+#define GLACIA_ACE_LEVEL 65
+#define DRAKE_ACE_LEVEL  66
+#define ELITE_FOUR_REMATCH_ACE_LEVEL 90
+
+#define ELITE_FOUR_ACE   0
+#define ELITE_FOUR_TIER2 1
+#define ELITE_FOUR_TIER3 2
+#define ELITE_FOUR_0     ELITE_FOUR_ACE
+#define ELITE_FOUR_2     ELITE_FOUR_TIER2
+#define ELITE_FOUR_5     ELITE_FOUR_TIER3
+
 #define ELITE_FOUR_MON(Level, Species, Tier, Trainer, ...)                   \
-    .lvl = Level,                                                            \
+    .lvl = Level - ELITE_FOUR_##Tier,                                        \
     .species = SPECIES_##Species,                                            \
     PERFECT_IVS,                                                             \
     .heldItem = Tier <= TIER2 ? DEFAULT(ITEM_NONE, __VA_ARGS__) : ITEM_NONE, \
     .ball = Tier == ACE ? ITEM_POKE_BALL : Trainer##_BALL
-
 
 #define SIDNEY_INFO                \
     ELITE_FOUR_INFO(SIDNEY, DARK), \
     .trainerName = _("Sidney"),    \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
+// Also ITEM_ABSOLITE_Z
 #define SIDNEY_ABSOL(Level, Tier)                                                                           \
     {                                                                                                       \
     ELITE_FOUR_MON(Level, ABSOL, Tier, SIDNEY, Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
@@ -2800,6 +2824,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
+// ITEM_SCRAFTINITE if ACE
 #define SIDNEY_SCRAFTY
 
 #define SIDNEY_ZOROARK(Level, Tier)                                               \
@@ -2815,13 +2840,13 @@ JUAN_REMATCH(4),
 #define SIDNEY_MANDIBUZZ
 #define SIDNEY_HYDREIGON
 
-#define SIDNEY_MALAMAR(Level, Tier)                                                    \
-    {                                                                                  \
-    ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY),                                      \
-    .ability = ABILITY_CONTRARY,                                                       \
-    IDEAL_ATTACKER_PHYSICAL,                                                           \
-    .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
-    .gender = TRAINER_MON_FEMALE,                                                      \
+#define SIDNEY_MALAMAR(Level, Tier)                                                         \
+    {                                                                                       \
+    ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY, Tier = ACE ? ITEM_MALAMARITE : ITEM_NONE), \
+    .ability = ABILITY_CONTRARY,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                                \
+    .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY},      \
+    .gender = TRAINER_MON_FEMALE,                                                           \
     }
 
 #define SIDNEY_THIEVUL
@@ -2849,11 +2874,11 @@ JUAN_REMATCH(4),
     SIDNEY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_MIGHTYENA(60, TIER3),
-        SIDNEY_SHIFTRY(60, TIER3),
-        SIDNEY_CRAWDAUNT(61, TIER3),
-        SIDNEY_CACTURNE(61, TIER3),
-        SIDNEY_ABSOL(62, ACE),
+        SIDNEY_MIGHTYENA(SIDNEY_ACE_LEVEL, TIER3),
+        SIDNEY_SHIFTRY(SIDNEY_ACE_LEVEL, TIER3),
+        SIDNEY_CRAWDAUNT(SIDNEY_ACE_LEVEL, TIER2),
+        SIDNEY_CACTURNE(SIDNEY_ACE_LEVEL, TIER2),
+        SIDNEY_ABSOL(SIDNEY_ACE_LEVEL, ACE),
     },
 },
 
@@ -2862,12 +2887,12 @@ JUAN_REMATCH(4),
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SHARPEDO(86, TIER3),
-        SIDNEY_MIGHTYENA(86, TIER3),
-        SIDNEY_SHIFTRY(86, TIER3),
-        SIDNEY_CRAWDAUNT(88, TIER3),
-        SIDNEY_CACTURNE(88, TIER3),
-        SIDNEY_ABSOL(90, ACE),
+        SIDNEY_SHARPEDO(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        SIDNEY_MIGHTYENA(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        SIDNEY_SHIFTRY(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        SIDNEY_CRAWDAUNT(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        SIDNEY_CACTURNE(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        SIDNEY_ABSOL(ELITE_FOUR_REMATCH_ACE_LEVEL, ACE),
     },
 },
 
@@ -2969,13 +2994,13 @@ JUAN_REMATCH(4),
 #define PHOEBE_COFAGRIGUS
 
 // Can replace Infiltrator with Flame Body
-#define PHOEBE_CHANDELURE(Level, Tier)                                                \
-    {                                                                                 \
-    ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE),                                  \
-    .ability = ABILITY_INFILTRATOR,                                                   \
-    IDEAL_ATTACKER_SPECIAL,                                                           \
-    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
-    .gender = TRAINER_MON_FEMALE,                                                     \
+#define PHOEBE_CHANDELURE(Level, Tier)                                                           \
+    {                                                                                            \
+    ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE, Tier = ACE ? ITEM_CHANDELURITE : ITEM_NONE), \
+    .ability = ABILITY_INFILTRATOR,                                                              \
+    IDEAL_ATTACKER_SPECIAL,                                                                      \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND},            \
+    .gender = TRAINER_MON_FEMALE,                                                                \
     }
 
 #define PHOEBE_TREVENANT(Level, Tier)                                               \
@@ -3044,11 +3069,11 @@ JUAN_REMATCH(4),
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(61, TIER3),
-        PHOEBE_SHEDINJA(61, TIER3),
-        PHOEBE_SABLEYE(62, TIER3),
-        PHOEBE_BANETTE(62, TIER3),
-        PHOEBE_DUSKNOIR(63, ACE),
+        PHOEBE_DUSCLOPS(PHOEBE_ACE_LEVEL, TIER3),
+        PHOEBE_SHEDINJA(PHOEBE_ACE_LEVEL, TIER3),
+        PHOEBE_SABLEYE(PHOEBE_ACE_LEVEL, TIER2),
+        PHOEBE_BANETTE(PHOEBE_ACE_LEVEL, TIER2),
+        PHOEBE_DUSKNOIR(PHOEBE_ACE_LEVEL, ACE),
     },
 },
 
@@ -3057,12 +3082,12 @@ JUAN_REMATCH(4),
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(86, TIER3),
-        PHOEBE_CURSOLA(86, TIER3),
-        PHOEBE_SHEDINJA(86, TIER3),
-        PHOEBE_SABLEYE(88, TIER3),
-        PHOEBE_BANETTE(88, TIER3),
-        PHOEBE_DUSKNOIR(90, ACE),
+        PHOEBE_DUSCLOPS(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        PHOEBE_CURSOLA(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        PHOEBE_SHEDINJA(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        PHOEBE_SABLEYE(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        PHOEBE_BANETTE(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        PHOEBE_DUSKNOIR(ELITE_FOUR_REMATCH_ACE_LEVEL, ACE),
     },
 },
 
@@ -3082,13 +3107,13 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                          \
     }
 
-#define GLACIA_FROSLASS(Level, Tier)                                                \
-    {                                                                               \
-    ELITE_FOUR_MON(Level, FROSLASS, Tier, GLACIA),                                  \
-    .ability = ABILITY_SNOW_CLOAK,                                                  \
-    IDEAL_SPEEDSTER_SPECIAL,                                                        \
-    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                   \
+#define GLACIA_FROSLASS(Level, Tier)                                                          \
+    {                                                                                         \
+    ELITE_FOUR_MON(Level, FROSLASS, Tier, GLACIA, Tier = ACE ? ITEM_FROSLASSITE : ITEM_NONE), \
+    .ability = ABILITY_SNOW_CLOAK,                                                            \
+    IDEAL_SPEEDSTER_SPECIAL,                                                                  \
+    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE},           \
+    .gender = TRAINER_MON_FEMALE,                                                             \
     }
 
 #define GLACIA_GLALIE(Level, Tier)                                                  \
@@ -3211,11 +3236,11 @@ JUAN_REMATCH(4),
     GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(62, TIER3),
-        GLACIA_CASTFORM(62, TIER3),
-        GLACIA_GLALIE(63, TIER3),
-        GLACIA_FROSLASS(63, TIER3),
-        GLACIA_WALREIN(64, ACE),
+        GLACIA_SEALEO(GLACIA_ACE_LEVEL, TIER3),
+        GLACIA_CASTFORM(GLACIA_ACE_LEVEL, TIER3),
+        GLACIA_GLALIE(GLACIA_ACE_LEVEL, TIER3),
+        GLACIA_FROSLASS(GLACIA_ACE_LEVEL, TIER2),
+        GLACIA_WALREIN(GLACIA_ACE_LEVEL, ACE),
     },
 },
 
@@ -3224,12 +3249,12 @@ JUAN_REMATCH(4),
     GLACIA_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(86, TIER3),
-        GLACIA_NINETALES(86, TIER2),
-        GLACIA_CASTFORM(86, TIER3),
-        GLACIA_GLALIE(88, TIER3),
-        GLACIA_FROSLASS(88, TIER3),
-        GLACIA_WALREIN(90, ACE),
+        GLACIA_SEALEO(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        GLACIA_NINETALES(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        GLACIA_CASTFORM(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        GLACIA_GLALIE(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        GLACIA_FROSLASS(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        GLACIA_WALREIN(ELITE_FOUR_REMATCH_ACE_LEVEL, ACE),
     },
 },
 
@@ -3298,13 +3323,14 @@ JUAN_REMATCH(4),
 // Extra for hacks
 #define DRAKE_DRAGONITE(Level, Tier)                                                    \
     {                                                                                   \
-    ELITE_FOUR_MON(Level, DRAGONITE, Tier, DRAKE),                                      \
+    ELITE_FOUR_MON(Level, DRAGONITE, Tier, DRAKE, ITEM_DRAGONINITE),                    \
     .ability = ABILITY_MULTISCALE,                                                      \
     IDEAL_ATTACKER_PHYSICAL,                                                            \
     .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_IRON_HEAD, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                         \
     }
 
+// Also ITEM_GARCHOMPITE_Z
 #define DRAKE_GARCHOMP(Level, Tier)                                                  \
     {                                                                                \
     ELITE_FOUR_MON(Level, GARCHOMP, Tier, DRAKE, ITEM_GARCHOMPITE),                  \
@@ -3345,13 +3371,13 @@ JUAN_REMATCH(4),
     }
 
 // Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
-#define DRAKE_DRAMPA(Level, Tier)                                                        \
-    {                                                                                    \
-    ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE),                                          \
-    .ability = ABILITY_SAP_SIPPER,                                                       \
-    IDEAL_ATTACKER_SPECIAL,                                                              \
-    .moves = {MOVE_DRAGON_PULSE, MOVE_HYPER_VOICE, MOVE_ENERGY_BALL, MOVE_FLAMETHROWER}, \
-    .gender = TRAINER_MON_MALE,                                                          \
+#define DRAKE_DRAMPA(Level, Tier)                                                         \
+    {                                                                                     \
+    ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE, Tier = ACE ? ITEM_DRAMPANITE : ITEM_NONE), \
+    .ability = ABILITY_SAP_SIPPER,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                               \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_HYPER_VOICE, MOVE_ENERGY_BALL, MOVE_FLAMETHROWER},  \
+    .gender = TRAINER_MON_MALE,                                                           \
     }
 
 #define DRAKE_KOMMO_O
@@ -3385,11 +3411,11 @@ JUAN_REMATCH(4),
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(63, TIER3),
-        DRAKE_KINGDRA(63, TIER3),
-        DRAKE_ALTARIA(64, TIER3),
-        DRAKE_FLYGON(64, TIER3),
-        DRAKE_SALAMENCE(66, ACE),
+        DRAKE_SHELGON(DRAKE_ACE_LEVEL, TIER3),
+        DRAKE_KINGDRA(DRAKE_ACE_LEVEL, TIER3),
+        DRAKE_ALTARIA(DRAKE_ACE_LEVEL, TIER2),
+        DRAKE_FLYGON(DRAKE_ACE_LEVEL, TIER2),
+        DRAKE_SALAMENCE(DRAKE_ACE_LEVEL, ACE),
     },
 },
 
@@ -3398,12 +3424,12 @@ JUAN_REMATCH(4),
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86, TIER3),
-        DRAKE_DRAGALGE(86, TIER3),
-        DRAKE_KINGDRA(86, TIER3),
-        DRAKE_ALTARIA(88, TIER3),
-        DRAKE_FLYGON(88, TIER3),
-        DRAKE_SALAMENCE(90, ACE),
+        DRAKE_SHELGON(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        DRAKE_DRAGALGE(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        DRAKE_KINGDRA(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER3),
+        DRAKE_ALTARIA(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        DRAKE_FLYGON(ELITE_FOUR_REMATCH_ACE_LEVEL, TIER2),
+        DRAKE_SALAMENCE(ELITE_FOUR_REMATCH_ACE_LEVEL, ACE),
     },
 },
 
@@ -3498,6 +3524,7 @@ JUAN_REMATCH(4),
 
 // Fairy
 // Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
+// ITEM_CLEFABLITE if ACE
 #define WALLACE_CLEFABLE(Level)                                                   \
     {                                                                             \
     WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
@@ -3617,11 +3644,11 @@ JUAN_REMATCH(4),
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
-        WALLACE_PELIPPER(AceLevel - 3),                                                    \
-        WALLACE_GOREBYSS(AceLevel - 3),                                                    \
-        WALLACE_RELICANTH(AceLevel - 3),                                                   \
+        WALLACE_PELIPPER(AceLevel - 2),                                                    \
+        WALLACE_GOREBYSS(AceLevel - 2),                                                    \
+        WALLACE_RELICANTH(AceLevel - 2),                                                   \
         WALLACE_LUDICOLO(AceLevel - 2),                                                    \
-        WALLACE_WAILORD(AceLevel - 2),                                                     \
+        WALLACE_WAILORD(AceLevel - 1),                                                     \
         WALLACE_MILOTIC(AceLevel),                                                         \
     },                                                                                     \
 }
@@ -3690,6 +3717,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_HEAVY_BALL,                                                         \
     }
 
+// ITEM_SKARMORITE if ACE
 #define STEVEN_SKARMORY(Level)                                                 \
     {                                                                          \
     WALLACE_STEVEN_MON(Level, SKARMORY),                                       \
@@ -3794,11 +3822,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     BOSS_AI_FLAGS,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        STEVEN_SKARMORY(87),
-        STEVEN_CLAYDOL(87),
+        STEVEN_SKARMORY(88),
+        STEVEN_CLAYDOL(88),
         STEVEN_JIRACHI(88),
         {
-        STEVEN_MAWILE(88),
+        STEVEN_MAWILE(89),
         .heldItem = ITEM_LIFE_ORB,
         },
         {
@@ -3835,6 +3863,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
+// ITEM_VICTREEBELITE if ACE
 #define JUAN_VICTREEBEL
 #define JUAN_EXEGGUTOR
 #define JUAN_EXEGGUTOR_ALOLA
@@ -4503,6 +4532,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define MAXIE_HIPPOPOTAS
 
+// ITEM_EXCADRITE if ACE
 #define MAXIE_DRILBUR(Level)                                     \
     {                                                            \
     TEAM_LEADER_SUPPORTING_MON(Level),                           \
@@ -4523,6 +4553,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_STUNFISK
 #define MAXIE_STUNFISK_ALOLA
 
+// ITEM_GOLURKITE if ACE
 #define MAXIE_GOLETT(Level)                                  \
     {                                                        \
     TEAM_LEADER_SUPPORTING_MON(Level),                       \
@@ -4579,6 +4610,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define ARCHIE_KRABBY
 #define ARCHIE_HORSEA
 #define ARCHIE_GOLDEEN
+// ITEM_STARMINITE if ACE
 #define ARCHIE_STARYU
 #define ARCHIE_MAGIKARP
 #define ARCHIE_LAPRAS

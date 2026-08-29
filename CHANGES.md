@@ -180,11 +180,11 @@
 |Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                   |70                    |60|
 |Wally Victory Road         |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
-|Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
-|Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
-|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
+|Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 63|
+|Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 64|
+|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 65|
 |Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
-|Wallace                    |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
+|Wallace                    |55, 56, 56, 56, 57, 58|67, 67, 67, 67, 68, 69|
 |Groudon/Kyogre             |70||
 |Latios/Latias              |40                    |70|
 |Mew                        |N/A                   |70|
@@ -193,9 +193,9 @@
 |Gym Leader/Wally rematch 1 |Various               |75, 75, 75, 78, 78, 80|
 |Gym Leader/Wally rematch 2 |Various               |80, 80, 80, 83, 83, 85|
 |Gym Leader/Wally rematch 3 |Various               |85, 85, 85, 88, 88, 90|
-|Elite Four rematches       |N/A                   |86, 86, 86, 88, 88, 90|
-|Wallace rematches          |N/A                   |87, 87, 87, 88, 88, 90|
-|Steven                     |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|
+|Elite Four rematches       |N/A                   |87, 87, 87, 88, 88, 90|
+|Wallace rematches          |N/A                   |88, 88, 88, 88, 89, 90|
+|Steven                     |75, 76, 76, 76, 77, 78|88, 88, 88, 89, 89, 90|
 
 #### Bosses (FireRed):
 |          BOSSES           |        VANILLA       |    UPDATED    |

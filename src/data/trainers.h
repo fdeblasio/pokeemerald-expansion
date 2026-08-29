@@ -3153,8 +3153,8 @@ JUAN_REMATCH(4),
     BOSS_AI_FLAGS
 
 #define SIDNEY_BALL ITEM_DUSK_BALL
-#define PHOEBE_BALL ITEM_DUSK_BALL
-#define GLACIA_BALL ITEM_PREMIER_BALL
+#define PHOEBE_BALL ITEM_LUXURY_BALL
+#define GLACIA_BALL ITEM_NET_BALL
 #define DRAKE_BALL  ITEM_HEAVY_BALL
 
 #define SIDNEY_ACE_LEVEL 63
@@ -3180,14 +3180,13 @@ JUAN_REMATCH(4),
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-// Also ITEM_ABSOLITE_Z
 #define SIDNEY_ABSOL(Rematch, Tier)                                                            \
     {                                                                                          \
-    ELITE_FOUR_MON(ABSOL, Tier, Rematch, SIDNEY, Rematch ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
+    ELITE_FOUR_MON(ABSOL, Tier, Rematch, SIDNEY, ITEM_SITRUS_BERRY),                           \
     .ability = ABILITY_SHARPNESS,                                                              \
     IDEAL_ATTACKER_PHYSICAL,                                                                   \
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},          \
-    .gender = TRAINER_MON_MALE,                                                                \
+    .gender = TRAINER_MON_FEMALE,                                                              \
     }
 
 #define SIDNEY_CACTURNE(Rematch, Tier)                                                \
@@ -3223,7 +3222,7 @@ JUAN_REMATCH(4),
     .ability = ABILITY_INTIMIDATE,                                              \
     IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
-    .gender = TRAINER_MON_MALE,                                                 \
+    .gender = TRAINER_MON_FEMALE,                                               \
     }
 
 #define SIDNEY_SHARPEDO(Rematch, Tier)                                         \
@@ -3285,7 +3284,7 @@ JUAN_REMATCH(4),
     .ability = ABILITY_FLASH_FIRE,                                                    \
     IDEAL_ATTACKER_SPECIAL,                                                           \
     .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_MALE,                                                       \
+    .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
 #define SIDNEY_OBSTAGOON
@@ -3378,9 +3377,9 @@ JUAN_REMATCH(4),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         SIDNEY_MIGHTYENA(FALSE, E4_TIER3),
-        SIDNEY_SHIFTRY(FALSE, E4_TIER3),
-        SIDNEY_CRAWDAUNT(FALSE, E4_TIER2),
-        SIDNEY_CACTURNE(FALSE, E4_TIER2),
+        SIDNEY_HOUNDOOM(FALSE, E4_TIER3),
+        SIDNEY_HONCHKROW(FALSE, E4_TIER2),
+        SIDNEY_ABSOL(FALSE, E4_TIER2),
         SIDNEY_ABSOL(FALSE, E4_ACE),
     },
 },
@@ -17327,7 +17326,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 // Sootopolis Gym
 [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
 {
-    .trainerName = _("Connie"),
+    .trainerName = _("Sheena"),
     BEAUTY_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,

@@ -178,7 +178,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Sootopolis's Gym Leader Pat is\n"
-	.string "a master of Water-type Pokémon.\p"
+	.string "a master of Ice-type Pokémon.\p"
 	.string "And, to get to Pat, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
@@ -194,22 +194,15 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "set for the Pokémon League challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Let me ask you.\n"
-	.string "Did you know?\l"
-	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught Wallace everything\n"
-	.string "there is to know about Pokémon.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the Gym Leader.\p"
-	.string "In my place, I had entrusted Wallace\n"
-	.string "with the Gym.\p"
 	.string "However, a compelling reason arose for\n"
 	.string "me to make a comeback.\p"
 	.string "Ah, but enough chatter.\n"
 	.string "Let us begin our match, shall we?\p"
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
-	.string "A grand illusion of water sculpted\n"
+	.string "A grand illusion of ice sculpted\n"
 	.string "by Pokémon and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
@@ -222,21 +215,21 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "From you, I sense the brilliant shine\n"
 	.string "of skill that will overcome all.\p"
 	.string "However, compared with me or even\n"
-	.string "Wallace, you are lacking in elegance.\p"
+	.string "Frank, you are lacking in elegance.\p"
 	.string "Perhaps I should make you a loan\n"
 	.string "of my outfit?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Hahaha, I merely jest!\p"
 	.string "Rather than my clothes, I shall reward\n"
-	.string "you with this, the Rain Badge!$"
+	.string "you with this, the Snow Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} received the Rain Badge\n"
+	.string "{PLAYER} received the Snow Badge\n"
 	.string "from Pat.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the Rain Badge shall assure you\n"
+	.string "Having the Snow Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
 	.string "You can now rent a Wailmer that can\n"
@@ -248,7 +241,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
 	.string "contains Icicle Crash.\p"
 	.string "In use, it will make the\n"
-	.string "target flinch'.\p"
+	.string "target flinch.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
@@ -306,7 +299,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "Pat: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
-	.string "But our young typhoon has returned\n"
+	.string "But our young blizzard has returned\n"
 	.string "to put us to the test again!\p"
 	.string "Well, my friend, most certainly!\n"
 	.string "I shall be delighted to dance with you…\p"

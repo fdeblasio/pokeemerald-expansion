@@ -342,7 +342,7 @@ MauvilleCity_Gym_Text_WattsonIntro:
 	.string "Wahahahah!\n"
 	.string "Now, that is amusing!\p"
 	.string "Then, I, Linda, the Leader of\n"
-	.string "Mauville Gym, shall electrify you!$"
+	.string "Mauville Gym, shall rock you!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
 	.string "Wahahahah!\n"

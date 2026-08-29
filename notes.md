@@ -53,11 +53,10 @@ upcoming
 - Update Gym leaders/Elite Four
     - Eric Spinda pattern
     - Check Steven's Copperajah note
+    - Change NPC text referring to original Gym Leader/Elite Four names
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
         - if TRADED set IVs = traded IVs nickname = nickname species = WALREIN etc
         - else trainer name = Tom species = SPHEAL
-    - FRLG overworld sprites have a weird palette
-        - This includes Brock for Arnold in Rustboro
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
     - Valentide Water/Fairy?

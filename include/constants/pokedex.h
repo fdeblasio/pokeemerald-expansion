@@ -1183,6 +1183,10 @@ enum NationalDexOrder
     F(TOUCANNON) \
     F(CRABRAWLER) \
     F(CRABOMINABLE) \
+    F(INKAY) \
+    F(MALAMAR) \
+    F(CLOBBOPUS) \
+    F(GRAPPLOCT) \
     F(MAKUHITA) \
     F(HARIYAMA) \
     F(GEODUDE) \

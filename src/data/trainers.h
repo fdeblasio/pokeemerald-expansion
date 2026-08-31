@@ -3650,10 +3650,10 @@ JUAN_REMATCH(4),
     },
 },
 
-#define GLACIA_INFO                  \
-    ELITE_FOUR_INFO(KIMBERLY, ICE),  \
-    .trainerName = _("Kimberly"),    \
-    .gender = TRAINER_GENDER_FEMALE, \
+#define GLACIA_INFO                    \
+    ELITE_FOUR_INFO(KIMBERLY, FLYING), \
+    .trainerName = _("Kimberly"),      \
+    .gender = TRAINER_GENDER_FEMALE,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define GLACIA_WALREIN(Rematch, Tier)                                      \
@@ -3790,16 +3790,73 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
+#define KIMBERLY_CORVIKNIGHT(Rematch, Tier)                                         \
+    {                                                                               \
+    ELITE_FOUR_MON(CORVIKNIGHT, Tier, Rematch, GLACIA, ITEM_SITRUS_BERRY),          \
+    .ability = ABILITY_MIRROR_ARMOR,                                                \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_DRILL_PECK, MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+// Can replace Liquidation with Throat Chop
+#define KIMBERLY_FLAMIGO(Rematch, Tier)                                            \
+    {                                                                              \
+    ELITE_FOUR_MON(FLAMIGO, Tier, Rematch, GLACIA, ITEM_FLYING_GEM),               \
+    .ability = ABILITY_SCRAPPY,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
+    .moves = {MOVE_ACROBATICS, MOVE_HIGH_JUMP_KICK, MOVE_LIQUIDATION, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+#define KIMBERLY_TALONFLAME(Rematch, Tier)                                       \
+    {                                                                            \
+    ELITE_FOUR_MON(TALONFLAME, Tier, Rematch, GLACIA),                           \
+    .ability = ABILITY_GALE_WINGS,                                               \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                    \
+    .moves = {MOVE_ACROBATICS, MOVE_BLAZE_KICK, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
+// Can replace Rocky Payload/Hone Claws with Big Pecks/Roost
+#define KIMBERLY_BOMBIRDIER(Rematch, Tier)                                          \
+    {                                                                               \
+    ELITE_FOUR_MON(BOMBIRDIER, Tier, Rematch, GLACIA, ITEM_SHARP_BEAK),             \
+    .ability = ABILITY_ROCKY_PAYLOAD,                                               \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
+    .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define KIMBERLY_CRAMORANT(Rematch, Tier)                               \
+    {                                                                   \
+    ELITE_FOUR_MON(CRAMORANT, Tier, Rematch, GLACIA, ITEM_SHARP_BEAK),  \
+    .ability = ABILITY_GULP_MISSILE,                                    \
+    IDEAL_ATTACKER_SPECIAL,                                             \
+    .moves = {MOVE_AIR_SLASH, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    }
+
+#define KIMBERLY_TOUCANNON(Rematch, Tier)                                             \
+    {                                                                                 \
+    ELITE_FOUR_MON(TOUCANNON, Tier, Rematch, GLACIA, ITEM_SHARP_BEAK),                \
+    .ability = ABILITY_SKILL_LINK,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
+    .moves = {MOVE_BEAK_BLAST, MOVE_BULLET_SEED, MOVE_ROCK_BLAST, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
 {
     GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(FALSE, E4_TIER3),
-        GLACIA_CASTFORM(FALSE, E4_TIER3),
-        GLACIA_GLALIE(FALSE, E4_TIER2),
-        GLACIA_FROSLASS(FALSE, E4_TIER2),
-        GLACIA_WALREIN(FALSE, E4_ACE),
+        KIMBERLY_CRAMORANT(FALSE, E4_TIER3),
+        KIMBERLY_BOMBIRDIER(FALSE, E4_TIER3),
+        KIMBERLY_TALONFLAME(FALSE, E4_TIER2),
+        KIMBERLY_FLAMIGO(FALSE, E4_TIER2),
+        KIMBERLY_CORVIKNIGHT(FALSE, E4_ACE),
     },
 },
 
@@ -3808,12 +3865,12 @@ JUAN_REMATCH(4),
     GLACIA_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(TRUE, E4_TIER3),
-        GLACIA_NINETALES(TRUE, E4_TIER2),
-        GLACIA_CASTFORM(TRUE, E4_TIER3),
-        GLACIA_GLALIE(TRUE, E4_TIER3),
-        GLACIA_FROSLASS(TRUE, E4_TIER2),
-        GLACIA_WALREIN(TRUE, E4_ACE),
+        KIMBERLY_TOUCANNON(TRUE, E4_TIER3),
+        KIMBERLY_CRAMORANT(TRUE, E4_TIER3),
+        KIMBERLY_BOMBIRDIER(TRUE, E4_TIER3),
+        KIMBERLY_TALONFLAME(TRUE, E4_TIER2),
+        KIMBERLY_FLAMIGO(TRUE, E4_TIER2),
+        KIMBERLY_CORVIKNIGHT(TRUE, E4_ACE),
     },
 },
 

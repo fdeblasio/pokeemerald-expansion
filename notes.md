@@ -45,6 +45,7 @@ upcoming
 - Implement level caps?
 - Have Steven give out starter Mega Stones? (with copies available in Lilycove)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
+    - In Love Balls
 - Update Rival battles:
     - Rival Kim uses non-flying birds (Psyduck for Water type?)
     - Update rival battle macro since starters no longer share a type with grass/water/fire
@@ -52,7 +53,8 @@ upcoming
 - Wallace->Frank
 - Update Gym leaders/Elite Four
     - Eric Spinda pattern
-    - Update Elite Four balls and trainer intro slide palettes
+    - Confirm Elite Four balls and trainer intro slide palettes
+    - Update Elite Four battle environment palettes
     - Check Steven's Copperajah note
     - Change NPC text referring to original Gym Leader/Elite Four names
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
@@ -60,6 +62,7 @@ upcoming
         - else trainer name = Tom species = SPHEAL
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
+        - Put Chatot earlier?
     - Valentide Water/Fairy?
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
@@ -71,6 +74,7 @@ upcoming
 - Update trainer teams for more variety with new Pokemon once Gym Leaders are done
     - If a rematch has a Pokemon in the hack, use it
 - Remove Jackson's Treecko
+- Look into game bugs
 - Rebase upcoming
 
 ## To Do (common):

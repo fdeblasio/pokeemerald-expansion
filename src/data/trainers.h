@@ -4040,6 +4040,34 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                              \
     }
 
+#define RAFAEL_SIRFETCHD(Rematch, Tier)                                                \
+    {                                                                                  \
+    ELITE_FOUR_MON(SIRFETCHD, Tier, Rematch, DRAKE),                                   \
+    .ability = ABILITY_SCRAPPY,                                                        \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
+    .moves = {MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define RAFAEL_ANNIHILAPE(Rematch, Tier)                                       \
+    {                                                                          \
+    ELITE_FOUR_MON(ANNIHILAPE, Tier, Rematch, DRAKE),                          \
+    .ability = ABILITY_DEFIANT,                                                \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_RAGE_FIST, MOVE_ROCK_TOMB}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define RAFAEL_PASSIMIAN(Rematch, Tier)                                         \
+    {                                                                           \
+    ELITE_FOUR_MON(PASSIMIAN, Tier, Rematch, DRAKE),                            \
+    .ability = ABILITY_DEFIANT,                                                 \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_ACROBATICS, MOVE_KNOCK_OFF}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    .nickname = COMPOUND_STRING("Thoma"),                                       \
+    }
+
 #define RAFAEL_CRABOMINABLE(Rematch, Tier)                                              \
     {                                                                                   \
     ELITE_FOUR_MON(CRABOMINABLE, Tier, Rematch, DRAKE, ITEM_ASSAULT_VEST),              \
@@ -4055,9 +4083,9 @@ JUAN_REMATCH(4),
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(FALSE, E4_TIER3),
-        DRAKE_KINGDRA(FALSE, E4_TIER3),
-        DRAKE_ALTARIA(FALSE, E4_TIER2),
+        RAFAEL_PASSIMIAN(FALSE, E4_TIER3),
+        RAFAEL_ANNIHILAPE(FALSE, E4_TIER3),
+        RAFAEL_ANNIHILAPE(FALSE, E4_TIER2),
         RAFAEL_HAWLUCHA(FALSE, E4_TIER2),
         RAFAEL_MACHAMP(FALSE, E4_ACE),
     },
@@ -4069,9 +4097,9 @@ JUAN_REMATCH(4),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         RAFAEL_CRABOMINABLE(TRUE, E4_TIER3),
-        DRAKE_DRAGALGE(TRUE, E4_TIER3),
-        DRAKE_KINGDRA(TRUE, E4_TIER3),
-        DRAKE_ALTARIA(TRUE, E4_TIER2),
+        RAFAEL_PASSIMIAN(TRUE, E4_TIER3),
+        RAFAEL_ANNIHILAPE(TRUE, E4_TIER3),
+        RAFAEL_ANNIHILAPE(TRUE, E4_TIER2),
         RAFAEL_HAWLUCHA(TRUE, E4_TIER2),
         RAFAEL_MACHAMP(TRUE, E4_ACE),
     },

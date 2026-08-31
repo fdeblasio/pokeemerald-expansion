@@ -3037,6 +3037,42 @@
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
     - Learns Blaze Kick by TM (it gets this move in Champions)
 
+- Espurr:
+    - HP: 62->65
+    - Atk: 48->50
+    - Def: 54->55
+    - SpA: 63->65
+    - Spe: 68->70
+    - Learns Psychic Noise, Extrasensory, Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic by level up
+
+- Male Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 83->90
+    - SpD: 81->85
+    - Spe: 104->105
+    - Learns Tearful Look, Baby-Doll Eyes, Psychic Noise, Extrasensory, and Psychic Terrain by level up
+    - Learns Miracle Eye at level 1 instead of level 31
+
+- Female Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 83->90
+    - SpD: 81->85
+    - Spe: 104->105
+    - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
+    - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
+
+- Mega Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 143->150
+    - SpD: 101->105
+    - Spe: 124->125
+
 - Spritzee:
     - Gender ratio: 50/50->25/75
     - Learns Dazzling Gleam by level up
@@ -3050,6 +3086,16 @@
 
 - Swirlix/Slurpuff:
     - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
+
+- Inkay:
+    - Learn Feint Attack and Zen Headbutt by level up
+
+- Malamar:
+    - Learn Feint Attack, Zen Headbutt, and Throat Chop by level up
+
+- Mega Malamar:
+    - Atk: 102->122
+    - SpA: 98->78
 
 - Binacle:
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up

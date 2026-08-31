@@ -1082,8 +1082,24 @@ ROXANNE_REMATCH(4),
     }
 
 // Extra for hacks
-#define BRAWLY_ANNIHILAPE
-#define BRAWLY_SIRFETCHD
+#define BRAWLY_ANNIHILAPE(rematch, tier)                                       \
+    {                                                                          \
+    REMATCH_MON(ANNIHILAPE, tier, rematch),                                    \
+    .ability = ABILITY_DEFIANT,                                                \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_RAGE_FIST, MOVE_ROCK_TOMB}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define BRAWLY_SIRFETCHD(rematch, tier)                                                \
+    {                                                                                  \
+    REMATCH_MON(SIRFETCHD, tier, rematch),                                             \
+    .ability = ABILITY_SCRAPPY,                                                        \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
+    .moves = {MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
 #define BRAWLY_HITMONLEE
 #define BRAWLY_HITMONCHAN
 #define BRAWLY_HITMONTOP
@@ -1152,7 +1168,14 @@ ROXANNE_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                         \
     }
 
-#define BRAWLY_PASSIMIAN
+#define BRAWLY_PASSIMIAN(rematch, tier)                                        \
+    {                                                                          \
+    REMATCH_MON(PASSIMIAN, tier, rematch),                                     \
+    .ability = ABILITY_DEFIANT,                                                \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_ACROBATICS MOVE_KNOCK_OFF}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
 
 #define BRAWLY_GRAPPLOCT(rematch, tier)                                      \
     {                                                                        \

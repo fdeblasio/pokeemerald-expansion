@@ -718,36 +718,16 @@
             "encounter_rate": 20,
             "range": "ROUTE_107",
             "mons": [
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              },
-              {
-                "species": "WINGULL"
-              }
+              {"species": "WINGULL"},
+              {"species": "SANDYGAST"},
+              {"species": "INKAY"},
+              {"species": "CLOBBOPUS"},
+              {"species": "SANDYGAST"},
+              {"species": "CLOBBOPUS"},
+              {"species": "CRABRAWLER"},
+              {"species": "CRABRAWLER"},
+              {"species": "CRABRAWLER"},
+              {"species": "CRABRAWLER"}
             ]
           },
           "water_mons": {

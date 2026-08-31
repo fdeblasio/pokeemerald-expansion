@@ -1043,7 +1043,7 @@
         - PP: 5->10
         - Effect chance: 50%->100%
     - Mystical Power:
-        - Power: 70->80
+        - Power: 70->90
         - Accuracy: 90->100
     - Photon Geyser:
         - PP: 5->10

@@ -3874,9 +3874,9 @@ JUAN_REMATCH(4),
     },
 },
 
-#define DRAKE_INFO                       \
-    ELITE_FOUR_INFO(RAFAEL_III, DRAGON), \
-    .trainerName = _("Rafael III"),      \
+#define DRAKE_INFO                         \
+    ELITE_FOUR_INFO(RAFAEL_III, FIGHTING), \
+    .trainerName = _("Rafael III"),        \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define DRAKE_SALAMENCE(Rematch, Tier)                                                   \
@@ -4022,6 +4022,34 @@ JUAN_REMATCH(4),
 
 #define DRAKE_BAXCALIBUR
 
+#define RAFAEL_MACHAMP(Rematch, Tier)                                         \
+    {                                                                         \
+    ELITE_FOUR_MON(MACHAMP, Tier, Rematch, DRAKE, ITEM_BLACK_BELT),           \
+    .ability = ABILITY_NO_GUARD,                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
+    .moves = {MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP, MOVE_BULK_UP}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
+#define RAFAEL_HAWLUCHA(Rematch, Tier)                                       \
+    {                                                                        \
+    ELITE_FOUR_MON(HAWLUCHA, Tier, Rematch, DRAKE),                          \
+    .ability = ABILITY_LIMBER,                                               \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                \
+    .moves = {MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE, MOVE_BULK_UP}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    }
+
+#define RAFAEL_CRABOMINABLE(Rematch, Tier)                                              \
+    {                                                                                   \
+    ELITE_FOUR_MON(CRABOMINABLE, Tier, Rematch, DRAKE, ITEM_ASSAULT_VEST),              \
+    .ability = ABILITY_IRON_FIST,                                                       \
+    .nature = NATURE_ADAMANT,                                                           \
+    EV_SPREAD_ATK_HP_SPD,                                                               \
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_ICE_HAMMER, MOVE_CRABHAMMER, MOVE_POWER_UP_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
 {
     DRAKE_INFO,
@@ -4030,8 +4058,8 @@ JUAN_REMATCH(4),
         DRAKE_SHELGON(FALSE, E4_TIER3),
         DRAKE_KINGDRA(FALSE, E4_TIER3),
         DRAKE_ALTARIA(FALSE, E4_TIER2),
-        DRAKE_FLYGON(FALSE, E4_TIER2),
-        DRAKE_SALAMENCE(FALSE, E4_ACE),
+        RAFAEL_HAWLUCHA(FALSE, E4_TIER2),
+        RAFAEL_MACHAMP(FALSE, E4_ACE),
     },
 },
 
@@ -4040,12 +4068,12 @@ JUAN_REMATCH(4),
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(TRUE, E4_TIER3),
+        RAFAEL_CRABOMINABLE(TRUE, E4_TIER3),
         DRAKE_DRAGALGE(TRUE, E4_TIER3),
         DRAKE_KINGDRA(TRUE, E4_TIER3),
         DRAKE_ALTARIA(TRUE, E4_TIER2),
-        DRAKE_FLYGON(TRUE, E4_TIER2),
-        DRAKE_SALAMENCE(TRUE, E4_ACE),
+        RAFAEL_HAWLUCHA(TRUE, E4_TIER2),
+        RAFAEL_MACHAMP(TRUE, E4_ACE),
     },
 },
 

@@ -17370,6 +17370,7 @@ static const struct LevelUpMove sGolurkLevelUpLearnset[] = {
 
 #if P_FAMILY_PAWNIARD
 static const struct LevelUpMove sPawniardLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PAYBACK),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_FURY_CUTTER),
@@ -17378,6 +17379,7 @@ static const struct LevelUpMove sPawniardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_FEINT_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(25, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(30, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE(30, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(35, MOVE_SLASH),
     LEVEL_UP_MOVE(40, MOVE_NIGHT_SLASH),
@@ -17391,6 +17393,7 @@ static const struct LevelUpMove sPawniardLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sBisharpLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PAYBACK),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
@@ -17400,6 +17403,7 @@ static const struct LevelUpMove sBisharpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_FEINT_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(25, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(30, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE(30, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(35, MOVE_SLASH),
     LEVEL_UP_MOVE(40, MOVE_NIGHT_SLASH),
@@ -17415,6 +17419,7 @@ static const struct LevelUpMove sBisharpLevelUpLearnset[] = {
 #if P_GEN_9_CROSS_EVOS
 static const struct LevelUpMove sKingambitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_KOWTOW_CLEAVE),
+    LEVEL_UP_MOVE( 1, MOVE_PAYBACK),
     LEVEL_UP_MOVE( 1, MOVE_METAL_BURST),
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
@@ -17423,6 +17428,7 @@ static const struct LevelUpMove sKingambitLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_TORMENT),
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(25, MOVE_ASSURANCE),
+    LEVEL_UP_MOVE(30, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE(30, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(35, MOVE_SLASH),
     LEVEL_UP_MOVE(40, MOVE_NIGHT_SLASH),

@@ -1887,7 +1887,6 @@ FLANNERY_REMATCH(4),
 #define NORMAN_BRAVIARY
 #define NORMAN_DIGGERSBY
 #define NORMAN_FURFROU
-#define NORMAN_TOUCANNON
 
 #define NORMAN_GUMSHOOS(rematch, tier)                                            \
     {                                                                             \
@@ -2101,6 +2100,15 @@ NORMAN_REMATCH(4),
     IDEAL_SPEEDSTER_PHYSICAL,                                                                                         \
     .moves = {tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_BLAZE_KICK, MOVE_STEEL_WING, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_FEMALE,                                                                                     \
+    }
+
+#define WINONA_TOUCANNON(Rematch, Tier)                                               \
+    {                                                                                 \
+    REMATCH_MON(TOUCANNON, Tier, Rematch, ITEM_SHARP_BEAK),                           \
+    .ability = ABILITY_SKILL_LINK,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
+    .moves = {MOVE_BEAK_BLAST, MOVE_BULLET_SEED, MOVE_ROCK_BLAST, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
 // Can replace Tailwind with Flamethrower

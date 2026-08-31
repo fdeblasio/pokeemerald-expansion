@@ -2858,7 +2858,7 @@ JUAN_REMATCH(4),
     .ability = ABILITY_OVERCOAT,                                         \
     .nature = NATURE_IMPISH,                                             \
     EV_SPREAD_SPE_DEF_HP,                                                \
-    .moves = {MOVE_FOUL_PLAY, MOVE_ACROBATIC, MOVE_TOXIC, MOVE_ROOST},   \
+    .moves = {MOVE_FOUL_PLAY, MOVE_ACROBATICS, MOVE_TOXIC, MOVE_ROOST},  \
     .gender = TRAINER_MON_FEMALE,                                        \
     }
 

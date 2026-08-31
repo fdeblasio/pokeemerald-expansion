@@ -3398,9 +3398,9 @@ JUAN_REMATCH(4),
     },
 },
 
-#define PHOEBE_INFO                     \
-    ELITE_FOUR_INFO(LANCE_FRLG, GHOST), \
-    .trainerName = _("Brian"),          \
+#define PHOEBE_INFO                       \
+    ELITE_FOUR_INFO(LANCE_FRLG, PSYCHIC), \
+    .trainerName = _("Brian"),            \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define PHOEBE_DUSKNOIR(Rematch, Tier)                                              \
@@ -3565,16 +3565,74 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
+// Can replace Shadow Ball with Recover
+#define BRIAN_ALAKAZAM(Rematch, Tier)                                               \
+    {                                                                               \
+    ELITE_FOUR_MON(ALAKAZAM, Tier, Rematch, PHOEBE, ITEM_ALAKAZITE),                \
+    .ability = ABILITY_MAGIC_GUARD,                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                                         \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    .nickname = COMPOUND_STRING("Harry"),                                           \
+    }
+
+#define BRIAN_BRAVIARY(Rematch, Tier)                                                \
+    {                                                                                \
+    ELITE_FOUR_MON(BRAVIARY_HISUI, Tier, Rematch, PHOEBE),                           \
+    .ability = ABILITY_TINTED_LENS,                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                          \
+    .moves = {MOVE_ESPER_WING, MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+#define BRIAN_GRUMPIG(Rematch, Tier)                                               \
+    {                                                                              \
+    ELITE_FOUR_MON(GRUMPIG, Tier, Rematch, PHOEBE),                                \
+    .ability = ABILITY_THICK_FAT,                                                  \
+    .nature = NATURE_CALM,                                                         \
+    EV_SPREAD_SPA_SPD_HP,                                                          \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_MAGIC_COAT}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
+#define BRIAN_CHIMECHO(Rematch, Tier)                                            \
+    {                                                                            \
+    ELITE_FOUR_MON(CHIMECHO, Tier, Rematch, PHOEBE),                             \
+    .ability = ABILITY_LEVITATE,                                                 \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPD_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
+#define BRIAN_MEOWSTIC(Rematch, Tier)                                                   \
+    {                                                                                   \
+    ELITE_FOUR_MON(MEOWSTIC_M, Tier, Rematch, PHOEBE, ITEM_SITRUS_BERRY),               \
+    .ability = ABILITY_PRANKSTER,                                                       \
+    IDEAL_SPEEDSTER_SPECIAL,                                                            \
+    .moves = {MOVE_PSYCHIC, MOVE_PSYCHIC_TERRAIN, MOVE_TEARFUL_LOOK, MOVE_DOUBLE_TEAM}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    }
+
+#define BRIAN_ESPATHRA(Rematch, Tier)                                                    \
+    {                                                                                    \
+    ELITE_FOUR_MON(ESPATHRA, Tier, Rematch, PHOEBE),                                     \
+    .ability = ABILITY_OPPORTUNIST,                                                      \
+    IDEAL_SPEEDSTER_SPECIAL,                                                             \
+    .moves = {MOVE_LUMINA_CRASH, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
 {
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(FALSE, E4_TIER3),
-        PHOEBE_SHEDINJA(FALSE, E4_TIER3),
-        PHOEBE_SABLEYE(FALSE, E4_TIER2),
-        PHOEBE_BANETTE(FALSE, E4_TIER2),
-        PHOEBE_DUSKNOIR(FALSE, E4_ACE),
+        BRIAN_MEOWSTIC(FALSE, E4_TIER3),
+        BRIAN_CHIMECHO(FALSE, E4_TIER3),
+        BRIAN_GRUMPIG(FALSE, E4_TIER2),
+        BRIAN_BRAVIARY(FALSE, E4_TIER2),
+        BRIAN_ALAKAZAM(FALSE, E4_ACE),
     },
 },
 
@@ -3583,12 +3641,12 @@ JUAN_REMATCH(4),
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(TRUE, E4_TIER3),
-        PHOEBE_CURSOLA(TRUE, E4_TIER3),
-        PHOEBE_SHEDINJA(TRUE, E4_TIER3),
-        PHOEBE_SABLEYE(TRUE, E4_TIER2),
-        PHOEBE_BANETTE(TRUE, E4_TIER2),
-        PHOEBE_DUSKNOIR(TRUE, E4_ACE),
+        BRIAN_ESPATHRA(TRUE, E4_TIER3),
+        BRIAN_MEOWSTIC(TRUE, E4_TIER3),
+        BRIAN_CHIMECHO(TRUE, E4_TIER3),
+        BRIAN_GRUMPIG(TRUE, E4_TIER2),
+        BRIAN_BRAVIARY(TRUE, E4_TIER2),
+        BRIAN_ALAKAZAM(TRUE, E4_ACE),
     },
 },
 

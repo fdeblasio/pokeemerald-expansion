@@ -52,6 +52,7 @@ upcoming
 - Wallace->Frank
 - Update Gym leaders/Elite Four
     - Eric Spinda pattern
+    - Update Elite Four balls and trainer intro slide palettes
     - Check Steven's Copperajah note
     - Change NPC text referring to original Gym Leader/Elite Four names
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
@@ -70,6 +71,7 @@ upcoming
 - Update trainer teams for more variety with new Pokemon once Gym Leaders are done
     - If a rematch has a Pokemon in the hack, use it
 - Remove Jackson's Treecko
+- Rebase upcoming
 
 ## To Do (common):
 ### Champions

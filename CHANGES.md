@@ -4517,6 +4517,7 @@
 
 - Passimian:
     - Catch rate: 45->90
+    - Held item: Watmel Berry: 0%-50%
     - Learns Power-Up Punch, Wake Up-Slap, Drain Punch, and Brick Break by level up
 
 - Wimpod:

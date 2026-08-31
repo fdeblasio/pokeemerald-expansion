@@ -3682,7 +3682,7 @@
     - Learns Gust, Aerial Ace, Air Cutter, Dual Wingbeat, and Air Slash by level up
 
 - Karrablast:
-    - Can also evolve with Linking Cord
+    - Can also evolve with a Linking Cord
     - Learns Bug Bite by level up
 
 - Escavalier:
@@ -3782,7 +3782,7 @@
 
 - Shelmet:
     - SpA: 40->50
-    - Can also evolve with Linking Cord
+    - Can also evolve with a Linking Cord
     - Learns Bug Bite and Signal Beam by level up
 
 - Accelgor:
@@ -3822,14 +3822,26 @@
     - Learns Dragon Breath by move tutor
 
 - Golett:
-    - Evolution: 43->40
+    - Evolution: 43->35
     - Learns Bulldoze by level up
 
 - Golurk:
     - Learns Bulldoze by level up
 
 - Pawniard:
-    - Evolution: 52->40
+    - Hidden Ability: Pressure->Sharpness
+    - Evolution: 52->35
+    - Learns Payback and Smart Strike by level up
+
+- Bisharp:
+    - Hidden Ability: Pressure->Sharpness
+    - Can also evolve with a Dusk Stone
+    - Held item: Leader's Crest: 5%->0%
+    - Learns Payback and Smart Strike by level up
+
+- Kingambit:
+    - Hidden Ability: Pressure->Sharpness
+    - Learns Payback and Smart Strike by level up
 
 - Bouffalant:
     - Catch rate: 45->90

@@ -2833,16 +2833,33 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-#define SIDNEY_KINGAMBIT
+// Can replace Supreme Overlord with Sharpness
+#define SIDNEY_KINGAMBIT(Rematch, Tier)                                                  \
+    {                                                                                    \
+    ELITE_FOUR_MON(KINGAMBIT, Tier, Rematch, SIDNEY),                                    \
+    .ability = ABILITY_SUPREME_OVERLORD,                                                 \
+    IDEAL_ATTACKER_PHYSICAL,                                                             \
+    .moves = {MOVE_KOWTOW_CLEAVE, MOVE_IRON_HEAD, MOVE_SUCKER_PUNCH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                          \
+    }
 
-#define SIDNEY_MANDIBUZZ(Rematch, Tier)                                           \
+#define SIDNEY_ZOROARK(Rematch, Tier)                                             \
     {                                                                             \
-    ELITE_FOUR_MON(MANDIBUZZ, Tier, Rematch, SIDNEY),                             \
-    .ability = ABILITY_OVERCOAT,                                                  \
-    .nature = NATURE_IMPISH,                                                      \
-    EV_SPREAD_SPE_DEF_HP,                                                         \
+    ELITE_FOUR_MON(ZOROARK, Tier, Rematch, SIDNEY),                               \
+    .ability = ABILITY_ILLUSION,                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define SIDNEY_MANDIBUZZ(Rematch, Tier)                                  \
+    {                                                                    \
+    ELITE_FOUR_MON(MANDIBUZZ, Tier, Rematch, SIDNEY, ITEM_SITRUS_BERRY), \
+    .ability = ABILITY_OVERCOAT,                                         \
+    .nature = NATURE_IMPISH,                                             \
+    EV_SPREAD_SPE_DEF_HP,                                                \
+    .moves = {MOVE_FOUL_PLAY, MOVE_ACROBATIC, MOVE_TOXIC, MOVE_ROOST},   \
+    .gender = TRAINER_MON_FEMALE,                                        \
     }
 
 #define SIDNEY_HYDREIGON

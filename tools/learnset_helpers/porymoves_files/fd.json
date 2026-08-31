@@ -7511,21 +7511,30 @@
     "TutorMoves": []
   },
   "PAWNIARD": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_PAYBACK"},
+      {"Level": 30, "Move": "MOVE_SMART_STRIKE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BISHARP": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_PAYBACK"},
+      {"Level": 30, "Move": "MOVE_SMART_STRIKE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "KINGAMBIT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_PAYBACK"},
+      {"Level": 30, "Move": "MOVE_SMART_STRIKE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

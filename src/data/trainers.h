@@ -2335,7 +2335,15 @@ WINONA_REMATCH(4),
 #define LIZA_GOTHITELLE
 #define TATE_REUNICLUS
 #define TATE_LIZA_BEHEEYEM
-#define TATE_BRAVIARY
+
+#define TATE_BRAVIARY(rematch, tier)                                                 \
+    {                                                                                \
+    REMATCH_MON(BRAVIARY_HISUI, tier, rematch),                                      \
+    .ability = ABILITY_TINTED_LENS,                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                          \
+    .moves = {MOVE_ESPER_WING, MOVE_AIR_SLASH, MOVE_DAZZLING_GLEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
 
 #define TATE_MEOWSTIC(rematch, tier)                                                    \
     {                                                                                   \

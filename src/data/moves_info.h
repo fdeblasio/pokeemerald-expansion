@@ -709,6 +709,13 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,         \
     .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS
 
+#define RAISE_STAT_90_POWER_INFO(Stat) \
+    BASIC_MOVE,                        \
+    .power = 90,                       \
+    .pp = 10,                          \
+    RAISE_STAT_1(Stat),                \
+    .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION
+
 // 100
 #define BASIC_100_POWER_INFO                          \
     BASIC_MOVE,                                       \
@@ -16923,13 +16930,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits a foe with psychic\n"
             "energy. May raise Defense."),
-        BASIC_MOVE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? 90 : 70,
+        RAISE_STAT_90_POWER_INFO(MOVE_STAT_DEF),
         .type = TYPE_PSYCHIC,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        RAISE_STAT_1(MOVE_STAT_DEF),
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_PSYCHIC_TERRAIN},
         .battleAnimScript = gBattleAnimMove_PsyshieldBash,
@@ -17141,7 +17145,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "High critical-hit ratio.\n"
             "Raises the user's Speed."),
-        RAISE_STAT_80_POWER_INFO(MOVE_STAT_SPE),
+        RAISE_STAT_90_POWER_INFO(MOVE_STAT_SPE),
         .type = TYPE_PSYCHIC,
         .criticalHitStage = INCREASED_CRITICAL,
         .category = DAMAGE_CATEGORY_SPECIAL,

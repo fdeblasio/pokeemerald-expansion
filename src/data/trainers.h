@@ -2834,7 +2834,17 @@ JUAN_REMATCH(4),
     }
 
 #define SIDNEY_KINGAMBIT
-#define SIDNEY_MANDIBUZZ
+
+#define SIDNEY_MANDIBUZZ(Rematch, Tier)                                           \
+    {                                                                             \
+    ELITE_FOUR_MON(MANDIBUZZ, Tier, Rematch, SIDNEY),                             \
+    .ability = ABILITY_OVERCOAT,                                                  \
+    .nature = NATURE_IMPISH,                                                      \
+    EV_SPREAD_SPE_DEF_HP,                                                         \
+    .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
 #define SIDNEY_HYDREIGON
 
 #define SIDNEY_MALAMAR(Rematch, Tier)                                                          \

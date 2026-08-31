@@ -1309,6 +1309,11 @@ enum NationalDexOrder
     F(SANDILE) \
     F(KROKOROK) \
     F(KROOKODILE) \
+    F(PAWNIARD) \
+    F(BISHARP) \
+    F(KINGAMBIT) \
+    F(ESPURR) \
+    F(MEOWSTIC) \
     F(PASSIMIAN) \
     F(TRAPINCH) \
     F(VIBRAVA) \

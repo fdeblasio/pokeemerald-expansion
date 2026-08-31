@@ -3389,7 +3389,7 @@ JUAN_REMATCH(4),
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SABLEYE(TRUE, E4_TIER3),
+        SIDNEY_MIGHTYENA(TRUE, E4_TIER3),
         SIDNEY_HOUNDOOM(TRUE, E4_TIER3),
         SIDNEY_HONCHKROW(TRUE, E4_TIER3),
         SIDNEY_ABSOL(TRUE, E4_TIER2),

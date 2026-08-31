@@ -1168,13 +1168,13 @@ ROXANNE_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                         \
     }
 
-#define BRAWLY_PASSIMIAN(rematch, tier)                                        \
-    {                                                                          \
-    REMATCH_MON(PASSIMIAN, tier, rematch),                                     \
-    .ability = ABILITY_DEFIANT,                                                \
-    IDEAL_ATTACKER_PHYSICAL,                                                   \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_ACROBATICS MOVE_KNOCK_OFF}, \
-    .gender = TRAINER_MON_MALE,                                                \
+#define BRAWLY_PASSIMIAN(rematch, tier)                                         \
+    {                                                                           \
+    REMATCH_MON(PASSIMIAN, tier, rematch),                                      \
+    .ability = ABILITY_DEFIANT,                                                 \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_ACROBATICS, MOVE_KNOCK_OFF}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
 #define BRAWLY_GRAPPLOCT(rematch, tier)                                      \

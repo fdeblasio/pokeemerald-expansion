@@ -2024,13 +2024,14 @@
     - Def: 57->60
     - SpA: 95->100
     - Learns Spark and Electric Terrain by level up
+    - Learns Dazzling Gleam and Flash Cannon by TM
 
 - Electivire (postgame in Emerald, main game in FireRed):
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
     - Learns Spark and Electric Terrain by level up
-    - Learns Drain Punch by TM
+    - Learns Dazzling Gleam, Drain Punch, and Flash Cannon by TM
     - Learns Zing Zap by tutor
 
 - Magby (postgame in Emerald, main game in FireRed):
@@ -2308,6 +2309,7 @@
 
 - Chinchou/Lanturn:
     - Learn Thunder Shock, Shock Wave, Surf, Thunderbolt, and Thunder by level up
+    - Learn Flash Cannon by TM
 
 - Togepi (postgame):
     - Ability: Hustle->Early Bird
@@ -4624,6 +4626,7 @@
 
 - Xurkitree:
     - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
+    - Learns Flash Cannon by TM
 
 - Celesteela:
     - Learns Magnet Bomb, Smart Strike, and Mirror Shot by level up
@@ -4848,6 +4851,14 @@
     - Learns Circle Throw, Storm Throw, and Aqua Jet by level up
     - Learns Strength by TM
 
+- Sinistea:
+    - Learns Hex by level up
+    - Learns Scald by TM
+
+- Polteageist:
+    - Learns Hex and Poltergeist by level up
+    - Learns Scald by TM
+
 - Hatenna:
     - Evolution: 32->28
     - Catch rate: 235->255
@@ -4896,6 +4907,9 @@
     - SpD: 65->75
 
 - Pincurchin:
+    - HP: 48->50
+    - Atk: 101->105
+    - SpA: 91->95
     - Learns Supercell Slam by level up
 
 - Snom:

@@ -5313,11 +5313,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_PINCURCHIN
     [SPECIES_PINCURCHIN] =
     {
-        .baseHP        = 48,
-        .baseAttack    = 101,
+        .baseHP        = 50,
+        .baseAttack    = 105,
         .baseDefense   = 95,
         .baseSpeed     = 15,
-        .baseSpAttack  = 91,
+        .baseSpAttack  = 95,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = DEFAULT_CATCH_RATE(75),

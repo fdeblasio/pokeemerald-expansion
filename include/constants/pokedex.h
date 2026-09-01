@@ -1172,19 +1172,21 @@ enum NationalDexOrder
     F(EXPLOUD) \
     F(MAGIKARP) \
     F(GYARADOS) \
+    F(CHATOT) \
+    F(CONDUCTOT) \
     F(WATTREL) \
     F(KILOWATTREL) \
     F(SANDYGAST) \
     F(PALOSSAND) \
+    F(CRABRAWLER) \
+    F(CRABOMINABLE) \
     F(DWEBBLE) \
     F(CRUSTLE) \
+    F(INKAY) \
+    F(MALAMAR) \
     F(PIKIPEK) \
     F(TRUMBEAK) \
     F(TOUCANNON) \
-    F(CRABRAWLER) \
-    F(CRABOMINABLE) \
-    F(INKAY) \
-    F(MALAMAR) \
     F(CLOBBOPUS) \
     F(GRAPPLOCT) \
     F(MAKUHITA) \
@@ -1356,8 +1358,7 @@ enum NationalDexOrder
     F(KLANG) \
     F(KLINKLANG) \
     F(CRAMORANT) \
-    F(CHATOT) \
-    F(CONDUCTOT) \
+    F(PINCURCHIN) \
     F(TROPIUS) \
     F(PINSIR) \
     F(HERACROSS) \

@@ -989,7 +989,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
     else
     {
         if (data->battleEnvironment == BATTLE_ENVIRONMENT_GRASS)
-            data->battleEnvironment = BATTLE_ENVIRONMENT_TYPE_ROCK;
+            data->battleEnvironment = BATTLE_ENVIRONMENT_TYPE_ROCK; // Update to STEEL or WATER when they're added
         else
             data->battleEnvironment -= 1;
     }

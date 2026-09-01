@@ -549,6 +549,7 @@ upcoming
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
 - Battle Environments:
+    - Is there a reason Volcano uses sMapBattleSceneMapping but Ice (cave, not type) uses BattleSetup_GetEnvironmentId and metatiles? Should these both use the same method (leaning towards sMapBattleSceneMapping) for consistency?
     - Should Magma Hideout use the unused Magma battle environment? Currently uses Volcano
     - Ice/Volcano/Puddle need better palettes/need slide intros
         - Ice and Volcano's player side has been fixed but the palettes overall could be better

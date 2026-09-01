@@ -280,13 +280,17 @@ extern const u16 gBattleEnvironmentPalette_StadiumPhoebe[];
 extern const u16 gBattleEnvironmentPalette_StadiumGlacia[];
 extern const u16 gBattleEnvironmentPalette_StadiumDrake[];
 extern const u16 gBattleEnvironmentPalette_StadiumWallace[];
+extern const u16 gBattleEnvironmentPalette_StadiumFrank[];
+extern const u16 gBattleEnvironmentPalette_StadiumFrank2[];
 extern const u16 gBattleEnvironmentPalette_BurialGround[];
 extern const u16 gBattleEnvironmentPalette_Ice[];
 extern const u16 gBattleEnvironmentPalette_Volcano[];
 extern const u16 gBattleEnvironmentPalette_StadiumDark[];
+extern const u16 gBattleEnvironmentPalette_StadiumFighting[];
 extern const u16 gBattleEnvironmentPalette_StadiumFlying[];
 extern const u16 gBattleEnvironmentPalette_StadiumGrass[];
 extern const u16 gBattleEnvironmentPalette_StadiumIce[];
+extern const u16 gBattleEnvironmentPalette_StadiumPsychic[];
 extern const u16 gBattleEnvironmentPalette_StadiumRock[];
 
 // Pokédex

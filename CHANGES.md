@@ -36,6 +36,7 @@
     - Pokémon in the Safari Zone can't flee
     - Connected the north and northwest sections of the Safari Zone
     - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
+    - There are extra areas in the Safari Zone
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Contest opponents from RS and ORAS were added
 - There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
@@ -109,7 +110,12 @@
 ### Battle:
 - Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
-- Added Burial Ground, Volcano, and Ice battle environments from later generations (effects Secret Power and Nature Power)
+- Added battle environments from later generations (effects Secret Power and Nature Power):
+    - Burial Ground (Mt. Pyre)
+    - Volcano (Fiery Path, Mt. Chimney, Safari Zone fire cave)
+    - Ice (Shoal Cave ice room, Safari Zone ice cave)
+    - Sky Pillar (Sky Pillar)
+- Added new Elite Four battle backgrounds that match their type
 
 ### Items:
 - No longer able to select "Use" on items that can't be used from the bag
@@ -3062,9 +3068,6 @@
 - Absol:
     - Hidden Ability: Justified->Sharpness
     - Learns Shadow Sneak, Spite, and Shadow Claw by level up
-
-- Mega Absol Z:
-    - Ability: Sharpness until its official one is revealed
 
 - Snorunt/Glalie/Froslass:
     - Learn Aurora Beam and Ice Beam by level up

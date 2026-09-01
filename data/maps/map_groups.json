@@ -321,19 +321,19 @@
     "PacifidlogTown_House5"
   ],
   "gMapGroup_IndoorEverGrande": [
-    "EverGrandeCity_SidneysRoom",
-    "EverGrandeCity_PhoebesRoom",
-    "EverGrandeCity_GlaciasRoom",
-    "EverGrandeCity_DrakesRoom",
-    "EverGrandeCity_ChampionsRoom",
-    "EverGrandeCity_Hall1",
-    "EverGrandeCity_Hall2",
-    "EverGrandeCity_Hall3",
-    "EverGrandeCity_Hall4",
-    "EverGrandeCity_Hall5",
+    "EverGrandeCity_PokemonCenter_1F",
     "EverGrandeCity_PokemonLeague_1F",
-    "EverGrandeCity_HallOfFame",
-    "EverGrandeCity_PokemonCenter_1F"
+    "EverGrandeCity_Hall5",
+    "EverGrandeCity_SidneysRoom",
+    "EverGrandeCity_Hall1",
+    "EverGrandeCity_PhoebesRoom",
+    "EverGrandeCity_Hall2",
+    "EverGrandeCity_GlaciasRoom",
+    "EverGrandeCity_Hall3",
+    "EverGrandeCity_DrakesRoom",
+    "EverGrandeCity_Hall4",
+    "EverGrandeCity_ChampionsRoom",
+    "EverGrandeCity_HallOfFame"
   ],
   "gMapGroup_Dungeons": [
     "PetalburgWoods",

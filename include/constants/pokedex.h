@@ -1569,6 +1569,12 @@ enum NationalDexOrder
     F(ARCTOZOLT) \
     F(SMEARGLE) \
     F(MEW) \
+    F(IRON_BUNDLE) \
+    F(TAPU_KOKO) \
+    F(FEZANDIPITI) \
+    F(ENAMORUS) \
+    F(TORNADUS) \
+    F(YVELTAL) \
     F(ARTICUNO) \
     F(ZAPDOS) \
     F(MOLTRES) \
@@ -1576,9 +1582,6 @@ enum NationalDexOrder
     F(HO_OH) \
     F(LATIAS) \
     F(LATIOS) \
-    F(IRON_BUNDLE) \
-    F(TAPU_KOKO) \
-    F(FEZANDIPITI) \
     F(JIRACHI) \
     F(DEOXYS)
 

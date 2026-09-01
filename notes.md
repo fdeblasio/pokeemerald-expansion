@@ -139,6 +139,7 @@ upcoming
     - Vanilla:
         - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
         - Onix Rock/Ground->Steelix Steel/Ground
+        - Goomy Dragon->Hisuian Sliggoo Steel/Dragon
     - Custom:
         - Swablu Flying->Altaria Dragon/Flying
             - Although the Mega Evolution would then keep the secondary type instead of the primary
@@ -819,6 +820,10 @@ upcoming
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, Comfey, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon
+- PokeTom 2:
+    - All double battles
+    - No held items
+        - Remove "Give" item option
 - Massachusetts:
     - Braviary
     - Mismagius

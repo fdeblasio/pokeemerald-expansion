@@ -924,7 +924,7 @@ static u8 GetBattleEnvironmentOverride(void)
         if (trainerClass == TRAINER_CLASS_LEADER)
             return BATTLE_ENVIRONMENT_LEADER;
         else if (trainerClass == TRAINER_CLASS_CHAMPION)
-            return BATTLE_ENVIRONMENT_CHAMPION;
+            return BATTLE_ENVIRONMENT_FRANK;
     }
 
     if (battleScene == MAP_BATTLE_SCENE_NORMAL)

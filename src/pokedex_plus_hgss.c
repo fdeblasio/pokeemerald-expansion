@@ -3317,12 +3317,19 @@ static void HandleTargetSpeciesPrintText(enum Species targetSpecies, u32 base_x,
 
 static void HandleTargetSpeciesPrintIcon(u8 taskId, enum Species targetSpecies, u8 base_i, u8 iterations)
 {
+    bool32 seen = GetSetPokedexFlag(SpeciesToNationalPokedexNum(targetSpecies), FLAG_GET_SEEN);
+
     u32 personality = GetPokedexMonPersonality(targetSpecies);
     LoadMonIconPalettePersonality(targetSpecies, personality); //Loads pallete for current mon
+
+    u32 x = 50 + 32*base_i;
     if (iterations > 6) // Print icons closer to each other if there are many evolutions
-        gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 45 + 26*base_i, 31, 4, personality);
+        x = 45 + 26*base_i;
+
+    if (seen || !HGSS_HIDE_UNSEEN_EVOLUTION_NAMES)
+        gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, x, 31, 4, personality);
     else
-        gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 50 + 32*base_i, 31, 4, personality);
+        gTasks[taskId].data[4+base_i] = CreateMonIconSilhouette(targetSpecies, SpriteCB_MonIcon, x, 31, 4, personality);
     gSprites[gTasks[taskId].data[4+base_i]].oam.priority = 0;
 }
 

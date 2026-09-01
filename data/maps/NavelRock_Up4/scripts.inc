@@ -1,3 +1,58 @@
 NavelRock_Up4_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Up4_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, NavelRock_Up4_OnResume
 	.byte 0
 
+NavelRock_Up4_OnTransition:
+	call_if_set FLAG_CAUGHT_NAVEL_ROCK_ENAMORUS, NavelRock_Up4_EventScript_HideLegendary
+	call_if_unset FLAG_CAUGHT_NAVEL_ROCK_ENAMORUS, NavelRock_Up4_EventScript_TryShowLegendary
+	end
+
+NavelRock_Up4_EventScript_HideLegendary::
+	setflag FLAG_HIDE_NAVEL_ROCK_ENAMORUS
+	return
+
+NavelRock_Up4_EventScript_TryShowLegendary::
+	goto_if_set FLAG_DEFEATED_NAVEL_ROCK_ENAMORUS, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_NAVEL_ROCK_ENAMORUS
+	return
+
+NavelRock_Up4_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, NavelRock_Up4_EventScript_TryRemoveLegendary
+	end
+
+NavelRock_Up4_EventScript_TryRemoveLegendary::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject LOCALID_NAVEL_ROCK_ENAMORUS
+	return
+
+NavelRock_Up4_EventScript_Legendary::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NAVEL_ROCK_10, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	seteventmon SPECIES_NAVEL_ROCK_10, POSTGAME_LEVEL
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Up4_EventScript_DefeatedLegendary
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Up4_EventScript_RanFromLegendary
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Up4_EventScript_RanFromLegendary
+	setflag FLAG_CAUGHT_NAVEL_ROCK_ENAMORUS
+	release
+	end
+
+NavelRock_Up4_EventScript_DefeatedLegendary::
+	setflag FLAG_DEFEATED_NAVEL_ROCK_ENAMORUS
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_10
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+NavelRock_Up4_EventScript_RanFromLegendary::
+	setvar VAR_0x8004, SPECIES_NAVEL_ROCK_10
+	goto Common_EventScript_LegendaryFlewAway
+	end

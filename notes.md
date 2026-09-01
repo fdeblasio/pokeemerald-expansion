@@ -50,13 +50,10 @@ upcoming
     - Rival Kim uses non-flying birds (Psyduck for Water type?)
     - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
-- Update Gym leaders/Elite Four
-    - Wallace->Frank
-    - Eric Spinda pattern
-    - Change NPC text referring to original Gym Leader/Elite Four names
-    - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
-        - if TRADED set IVs = traded IVs nickname = nickname species = WALREIN etc
-        - else trainer name = Tom species = SPHEAL
+- Eric Spinda pattern
+- Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
+    - if TRADED set IVs = traded IVs nickname = nickname species = WALREIN etc
+    - else trainer name = Tom species = SPHEAL
 - Similar to some cats getting a boost in Cats, boost Luvdisc and Alomomola?
     - Boost Chatot/Squawkabilly too?
         - Put Chatot earlier?
@@ -64,10 +61,8 @@ upcoming
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
-- Finish adding legendaries
-    - Enamorus
-    - Tornadus-T
-    - Yveltal
+- Update Quaxly line and notes
+- Change legendaries to walk in place?
 - Update trainer teams for more variety with new Pokemon once Gym Leaders are done
 - Look into game bugs
 - Rebase upcoming

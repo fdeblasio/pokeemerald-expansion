@@ -12895,8 +12895,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTornadusLevelUpLearnset,
         .teachableLearnset = sTornadusTeachableLearnset,
-        .formSpeciesIdTable = sTornadusFormSpeciesIdTable,
-        .formChangeTable = sTornadusFormChangeTable,
     },
 
     [SPECIES_TORNADUS_THERIAN] =
@@ -12968,8 +12966,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTornadusLevelUpLearnset,
         .teachableLearnset = sTornadusTeachableLearnset,
-        .formSpeciesIdTable = sTornadusFormSpeciesIdTable,
-        .formChangeTable = sTornadusFormChangeTable,
     },
 #endif //P_FAMILY_TORNADUS
 

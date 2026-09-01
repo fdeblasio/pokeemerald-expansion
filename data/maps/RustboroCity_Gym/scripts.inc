@@ -249,7 +249,7 @@ RustboroCity_Gym_Text_RegisteredRoxanne:
 
 RustboroCity_Gym_Text_RoxannePreRematch:
 	.string "Maribel: I'm so glad to see you again.\n"
-	.string "I'm Roxanne, the Gym Leader here.\p"
+	.string "I'm Maribel, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"
@@ -267,7 +267,7 @@ RustboroCity_Gym_Text_RoxannePostRematch:
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "Maribel: I'm so glad to see you again.\n"
-	.string "I'm Roxanne, the Gym Leader here.\p"
+	.string "I'm Maribel, the Gym Leader here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"

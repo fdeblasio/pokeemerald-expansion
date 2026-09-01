@@ -639,8 +639,8 @@ DewfordTown_Text_TownSign:
 
 DewfordTown_Text_GymSign:
 	.string "Dewford Town Pokémon Gym\n"
-	.string "Leader: Brawly\l"
-	.string "“A big wave in fighting!”$"
+	.string "Leader: Adam\l"
+	.string "“A big spooky guy!”$"
 
 DewfordTown_Text_HallSign:
 	.string "Dewford Hall\n"

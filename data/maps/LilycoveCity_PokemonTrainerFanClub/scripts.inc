@@ -615,7 +615,7 @@ LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou:
 
 LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan:
 	.string "Sigh…\n"
-	.string "Brawly…\p"
+	.string "Adam…\p"
 	.string "Oh, no! Wait!\n"
 	.string "That's not right! No, no, no!\p"
 	.string "I'm your fan through and through!\p"
@@ -624,19 +624,19 @@ LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan:
 
 LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly:
 	.string "I can't help it, I can only get to\n"
-	.string "like Brawly…$"
+	.string "like Adam…$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly:
 	.string "Nobody understands the charm of\n"
-	.string "Brawly…\p"
+	.string "Adam…\p"
 	.string "I don't care!\p"
 	.string "Even if I'm the only one, I'm going\n"
-	.string "to keep cheering for Brawly!$"
+	.string "to keep cheering for Adam!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly:
 	.string "Whatever anyone says, my favorite\n"
 	.string "Trainer is Dewford's Gym Leader\l"
-	.string "Brawly!$"
+	.string "Adam!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather:
 	.string "You've surpassed your own father in\n"
@@ -652,18 +652,18 @@ LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling:
 	.string "So keep on battling!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman:
-	.string "Norman battled with more power,\n"
+	.string "Eric battled with more power,\n"
 	.string "charisma, and showmanship than you.\p"
 	.string "Even though people may say that\n"
 	.string "you're strong…\p"
 	.string "You've still got a long way to go\n"
-	.string "compared to your father.$"
+	.string "compared to him.$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent:
 	.string "You're beginning to get the same\n"
-	.string "air of awe Norman exudes.\p"
+	.string "air of awe Eric exudes.\p"
 	.string "But there's something conclusively\n"
-	.string "different between you and Norman.\p"
+	.string "different between you and Eric.\p"
 	.string "I can't tell you what that is.\n"
 	.string "You'll have to find it yourself.$"
 

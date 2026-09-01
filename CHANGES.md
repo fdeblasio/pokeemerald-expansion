@@ -3103,8 +3103,13 @@
     - Held item: Heart Scale: 50%->100%
     - Learns Surf by level up
 
-- Bagon/Shelgon/Salamence:
+- Bagon/Shelgon:
+    - Received Intimidate as a second ability
     - Learn Dragon Pulse by level up
+
+- Salamence:
+    - Received Rock Head as a second ability
+    - Learns Dragon Pulse by level up
 
 - Beldum:
     - Learns Metal Claw by level up

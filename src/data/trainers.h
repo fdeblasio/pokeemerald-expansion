@@ -1328,13 +1328,13 @@ BRAWLY_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define WATTSON_RAICHU_ALOLA(rematch, tier)                                \
-    {                                                                      \
-    REMATCH_MON(RAICHU_ALOLA, tier, rematch, ITEM_ELECTRIC_SEED),          \
-    .ability = ABILITY_SURGE_SURFER,                                       \
-    IDEAL_SPEEDSTER_SPECIAL,                                               \
-    .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_MALE,                                            \
+#define WATTSON_RAICHU_ALOLA(rematch, tier)                                   \
+    {                                                                         \
+    REMATCH_MON(RAICHU_ALOLA, tier, rematch, ITEM_ELECTRIC_SEED),             \
+    .ability = ABILITY_SURGE_SURFER,                                          \
+    IDEAL_SPEEDSTER_SPECIAL,                                                  \
+    .moves = {MOVE_RISING_VOLTAGE, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                               \
     }
 
 #define WATTSON_ELECTRODE_HISUI

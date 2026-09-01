@@ -3015,7 +3015,8 @@
     - SpD: 66->70
     - Learns Ember, Flame Wheel, Fire Punch, and Lava Plume by level up
 
-- Tornadus (not in game):
+- Tornadus (postgame):
+    - Only in Therian Forme
     - Learns Acrobatics by level up
     - Learns Bleakwind Storm at level 75 instead of level 77 to match the rest of the group
 
@@ -3161,7 +3162,7 @@
     - Spe: 123->125
     - Learns Twister and Dragon Breath by level up
 
-- Yveltal (not in game):
+- Yveltal (postgame):
     - Learns Air Cutter by level up
 
 - Rowlet (postgame):
@@ -3423,7 +3424,8 @@
 - Regidrago:
     - Learns Rest and Endure by level up
 
-- Enamorus:
+- Enamorus (postgame):
+    - Only in Incarnate Forme
     - Learns Play Rough by level up
     - Learns Air Slash by TM
 

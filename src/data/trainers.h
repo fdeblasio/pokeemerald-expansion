@@ -5608,7 +5608,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE
 
 // Extra for hacks
-#define JERRY_PAWNIARD
+#define JERRY_PAWNIARD(Level) \
+    .lvl = Level,             \
+    .species = Level < 35 ? SPECIES_PAWNIARD : (Level < REMATCH_5_LEVEL_6 ? SPECIES_BISHARP : SPECIES_KINGAMBIT), \
+    .ability = 1,             \
+    .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
 {
@@ -7810,7 +7814,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define DALTON_VOLTORB(Level)                                    \
     .lvl = Level,                                                \
     .species = Level < 30 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
-    .ability = ABILITY_SOUNDPROOF
+    .ability = ABILITY_SOUNDPROOF,                               \
+    .gender = TRAINER_MON_NONE
 
 #define DALTON_WHISMUR(Level)                                                                                  \
     .lvl = Level,                                                                                              \
@@ -7821,10 +7826,16 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define DALTON_MAGNEMITE(Level) \
     .lvl = Level,               \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
-    .ability = ABILITY_STURDY
+    .ability = ABILITY_STURDY,  \
+    .gender = TRAINER_MON_NONE
 
 // Extra for hacks
-#define DALTON_CHATOT
+#define DALTON_CHATOT(Level)     \
+    .lvl = Level,                \
+    .species = SPECIES_CHATOT,   \
+    .ability = ABILITY_KEEN_EYE, \
+    .gender = TRAINER_MON_MALE
+
 #define DALTON_TOXEL
 
 [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
@@ -8053,10 +8064,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     TRIATHLETE_M_CYCLING_INFO,    \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define BENJAMIN_MAGNEMITE(Level, IV)                                                                               \
-    TRIATHLETE_MON(Level, IV),                                                                                      \
+#define BENJAMIN_MAGNEMITE(Level, IV) \
+    TRIATHLETE_MON(Level, IV),        \
     .species = Level < 30 ? SPECIES_MAGNEMITE : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
-    .ability = ABILITY_STURDY
+    .ability = ABILITY_STURDY,        \
+    .gender = TRAINER_MON_NONE
 
 #define BENJAMIN_MINUN(Level, IV) \
     TRIATHLETE_MON(Level, IV),    \
@@ -8066,10 +8078,15 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define BENJAMIN_VOLTORB(Level, IV)                                             \
     TRIATHLETE_MON(Level, IV),                                                  \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
-    .ability = ABILITY_SOUNDPROOF
+    .ability = ABILITY_SOUNDPROOF,                                              \
+    .gender = TRAINER_MON_NONE
 
 // Extra for hacks
-#define BENJAMIN_KLINK
+#define BENJAMIN_KLINK(Level, IV)                                                             \
+    TRIATHLETE_MON(Level, IV),                                                                \
+    .species = Level < 32 ? SPECIES_KLINK : (Level < 42 ? SPECIES_KLANG : SPECIES_KLINKLANG), \
+    .ability = ABILITY_STURDY,                                                                \
+    .gender = TRAINER_MON_NONE
 
 [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
 {
@@ -8740,7 +8757,12 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .gender = TRAINER_MON_MALE
 
 // Extra for hacks
-#define WILTON_AXEW
+#define WILTON_AXEW(Level)                                                                   \
+    .lvl = Level,                                                                            \
+    .species = Level < 35 ? SPECIES_AXEW : (Level < 45 ? SPECIES_FRAXURE : SPECIES_HAXORUS), \
+    .ability = ABILITY_MOLD_BREAKER,                                                         \
+    .gender = TRAINER_MON_MALE
+
 #define WILTON_FLETCHLING
 
 [DIFFICULTY_NORMAL][TRAINER_WILTON_1] =
@@ -9790,7 +9812,13 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .gender = TRAINER_MON_MALE
 
 // Extra for hacks
-#define NOB_MANKEY
+#define NOB_MANKEY(Level)            \
+    .lvl = Level,                    \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MANKEY : (Level < REMATCH_5_LEVEL_6 ? SPECIES_PRIMEAPE : SPECIES_ANNIHILAPE), \
+    .nature = NATURE_ADAMANT,        \
+    .ability = ABILITY_VITAL_SPIRIT, \
+    .gender = TRAINER_MON_MALE
+
 #define NOB_HITMONLEE
 
 [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
@@ -11087,7 +11115,12 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 
 // Extra for hacks
 #define TIMOTHY_TIMBURR
-#define TIMOTHY_HAWLUCHA
+
+#define TIMOTHY_HAWLUCHA(Level)  \
+    .lvl = Level,                \
+    .species = SPECIES_HAWLUCHA, \
+    .ability = ABILITY_LIMBER,   \
+    .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
 {
@@ -12974,7 +13007,12 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .gender = TRAINER_MON_MALE
 
 // Extra for hacks
-#define ROBERT_SPEAROW
+#define ROBERT_SPEAROW(Level)                                                \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_3_LEVEL_2 ? SPECIES_SPEAROW : SPECIES_FEAROW, \
+    .ability = ABILITY_KEEN_EYE,                                             \
+    .gender = TRAINER_MON_MALE
+
 #define ROBERT_STARLY
 
 [DIFFICULTY_NORMAL][TRAINER_ROBERT_1] =
@@ -15049,15 +15087,21 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 #define JENNY_STARYU(Level)                                   \
     .lvl = Level,                                             \
     .species = Level < 47 ? SPECIES_STARYU : SPECIES_STARMIE, \
-    .ability = ABILITY_ILLUMINATE
+    .ability = ABILITY_ILLUMINATE,                            \
+    .gender = TRAINER_MON_NONE
 
-#define JENNY_LUVDISC(Level)    \
-    .lvl = Level,               \
-    .species = SPECIES_LUVDISC, \
+#define JENNY_LUVDISC(Level)       \
+    .lvl = Level,                  \
+    .species = SPECIES_LUVDISC,    \
+    .ability = ABILITY_SWIFT_SWIM, \
     .gender = TRAINER_MON_FEMALE
 
 // Extra for hacks
-#define JENNY_ALOMOMOLA
+#define JENNY_ALOMOMOLA(Level)    \
+    .lvl = Level,                 \
+    .species = SPECIES_ALOMOMOLA, \
+    .ability = ABILITY_HYDRATION, \
+    .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
 {
@@ -17216,18 +17260,26 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 #define NICOLAS_BAGON(Level)                                                                                     \
     .lvl = Level,                                                                                                \
     .species = Level < 56 ? SPECIES_BAGON : (Level < REMATCH_5_MINI_BOSS ? SPECIES_SHELGON : SPECIES_SALAMENCE), \
+    .ability = ABILITY_INTIMIDATE,                                                                               \
     IVS(18),                                                                                                     \
     .gender = TRAINER_MON_MALE
 
-#define NICOLAS_FLYGON(Level)  \
-    .lvl = Level,              \
-    .species = SPECIES_FLYGON, \
-    IVS(18),                   \
+#define NICOLAS_FLYGON(Level)    \
+    .lvl = Level,                \
+    .species = SPECIES_FLYGON,   \
+    .ability = ABILITY_LEVITATE, \
+    IVS(18),                     \
     .gender = TRAINER_MON_MALE
 
 // Extra for hacks
-#define NICOLAS_DRUDDIGON
-#define NICOLAS_NOIBAT
+#define NICOLAS_DRUDDIGON(Level)    \
+    .lvl = Level,                   \
+    .species = SPECIES_DRUDDIGON,   \
+    .ability = ABILITY_SHEER_FORCE, \
+    IVS(18),                        \
+    .gender = TRAINER_MON_MALE
+
+#define NICOLAS_NOIVERN
 
 [DIFFICULTY_NORMAL][TRAINER_NICOLAS_1] =
 {

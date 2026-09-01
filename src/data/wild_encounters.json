@@ -666,9 +666,9 @@
             "mons": [
               {"species": "WATTREL"},
               {"species": "SANDYGAST"},
-              {"species": "PIKIPEK"},
+              {"species": "CHATOT"},
               {"species": "DWEBBLE"},
-              {"species": "PIKIPEK"},
+              {"species": "CHATOT"},
               {"species": "DWEBBLE"},
               {"species": "CRABRAWLER"},
               {"species": "CRABRAWLER"},
@@ -724,10 +724,10 @@
               {"species": "CLOBBOPUS"},
               {"species": "SANDYGAST"},
               {"species": "CLOBBOPUS"},
-              {"species": "CRABRAWLER"},
-              {"species": "CRABRAWLER"},
-              {"species": "CRABRAWLER"},
-              {"species": "CRABRAWLER"}
+              {"species": "PIKIPEK"},
+              {"species": "PIKIPEK"},
+              {"species": "PIKIPEK"},
+              {"species": "PIKIPEK"}
             ]
           },
           "water_mons": {
@@ -1180,8 +1180,8 @@
             "mons": [
               {"species": "EARLY_BEAST_1 + 1"},
               {"species": "MANECTRIC"},
-              {"species": "CHATOT"},
-              {"species": "CHATOT"},
+              {"species": "PINCURCHIN"},
+              {"species": "PINCURCHIN"},
               {"species": "CRAMORANT"},
               {"species": "CRAMORANT"},
               {"species": "KILOWATTREL"},

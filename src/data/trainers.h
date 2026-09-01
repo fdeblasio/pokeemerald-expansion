@@ -1339,12 +1339,22 @@ BRAWLY_REMATCH(4),
 
 #define WATTSON_ELECTRODE_HISUI
 
-#define WATTSON_ELECTIVIRE(rematch, tier)                                                     \
-    {                                                                                         \
-    REMATCH_MON(ELECTIVIRE, tier, rematch, ITEM_MAGNET),                                      \
-    IDEAL_ATTACKER_PHYSICAL,                                                                  \
-    .moves = {MOVE_SUPERCELL_SLAM, MOVE_FIRE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
-    .gender = TRAINER_MON_MALE,                                                               \
+#define WATTSON_ELECTABUZZ(rematch, tier)                                                       \
+    {                                                                                           \
+    REMATCH_MON(ELECTABUZZ, tier, rematch, ITEM_EVIOLITE),                                      \
+    .ability = ABILITY_STATIC,                                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                                     \
+    .moves = {MOVE_THUNDERBOLT, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                                 \
+    }
+
+#define WATTSON_ELECTIVIRE(rematch, tier)                                                    \
+    {                                                                                        \
+    REMATCH_MON(ELECTIVIRE, tier, rematch, ITEM_MAGNET),                                     \
+    .ability = ABILITY_MOTOR_DRIVE,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                                 \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_ICE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                              \
     }
 
 #define WATTSON_JOLTEON
@@ -1419,7 +1429,16 @@ BRAWLY_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                              \
     }
 
-#define WATTSON_PINCURCHIN
+#define WATTSON_PINCURCHIN(rematch, tier)                                                 \
+    {                                                                                     \
+    REMATCH_MON(PINCURCHIN, tier, rematch, ITEM_TERRAIN_EXTENDER),                        \
+    .ability = ABILITY_ELECTRIC_SURGE,                                                    \
+    .nature = NATURE_IMPISH,                                                              \
+    EV_SPREAD_DEF_SPD_HP,                                                                 \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_LIQUIDATION, MOVE_SPIKES, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    }
+
 #define WATTSON_MORPEKO
 
 #define WATTSON_PAWMOT(rematch, tier)                                                 \

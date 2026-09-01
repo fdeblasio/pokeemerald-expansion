@@ -50,12 +50,10 @@ upcoming
     - Rival Kim uses non-flying birds (Psyduck for Water type?)
     - Update rival battle macro since starters no longer share a type with grass/water/fire
     - Nidoran named Arnold
-- Wallace->Frank
 - Update Gym leaders/Elite Four
+    - Wallace->Frank
     - Eric Spinda pattern
-    - Confirm Elite Four balls and trainer intro slide palettes
-    - Update Elite Four battle environment palettes
-    - Check Steven's Copperajah note
+    - Confirm Elite Four balls and mugshot/battle environment palettes
     - Change NPC text referring to original Gym Leader/Elite Four names
     - Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
         - if TRADED set IVs = traded IVs nickname = nickname species = WALREIN etc

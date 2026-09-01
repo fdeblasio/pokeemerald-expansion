@@ -4302,7 +4302,7 @@ JUAN_REMATCH(4),
     .trainerPic = TRAINER_PIC_FRANK,                                                       \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,                                        \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
-    .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
+    .mugshotColor = MUGSHOT_TYPE_ELECTRIC,                                                 \
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
@@ -4429,7 +4429,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define STEVEN_GOODRA
 #define STEVEN_KLEFKI
 
-// Curse can be replaced by Supercell Slam
 #define STEVEN_COPPERAJAH(Level)                                             \
     {                                                                        \
     WALLACE_STEVEN_MON(Level, COPPERAJAH),                                   \

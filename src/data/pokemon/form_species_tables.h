@@ -1498,14 +1498,6 @@ static const u16 sBraviaryFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RUFFLET
 
-#if P_FAMILY_TORNADUS
-static const u16 sTornadusFormSpeciesIdTable[] = {
-    SPECIES_TORNADUS_INCARNATE,
-    SPECIES_TORNADUS_THERIAN,
-    FORM_SPECIES_END,
-};
-#endif //P_FAMILY_TORNADUS
-
 #if P_FAMILY_THUNDURUS
 static const u16 sThundurusFormSpeciesIdTable[] = {
     SPECIES_THUNDURUS_INCARNATE,
@@ -2461,14 +2453,6 @@ static const u16 sCalyrexFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CALYREX
-
-#if P_FAMILY_ENAMORUS
-static const u16 sEnamorusFormSpeciesIdTable[] = {
-    SPECIES_ENAMORUS_INCARNATE,
-    SPECIES_ENAMORUS_THERIAN,
-    FORM_SPECIES_END,
-};
-#endif //P_FAMILY_ENAMORUS
 
 #if P_FAMILY_LECHONK
 static const u16 sOinkologneFormSpeciesIdTable[] = {

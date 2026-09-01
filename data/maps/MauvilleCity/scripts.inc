@@ -544,8 +544,8 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "Mauville City Pokémon Gym\n"
-	.string "Leader: Wattson\l"
-	.string "“The cheerfully electrifying man!”$"
+	.string "Leader: Linda\l"
+	.string "“The cheerful woman who rocks!”$"
 
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"
@@ -573,4 +573,4 @@ MauvilleCity_Text_BeenCheckingOutTV:
 
 MauvilleCity_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Our cousin told us not to let anyone\n"
-	.string "through who hasn't beaten Wattson!$"
+	.string "through who hasn't beaten Linda!$"

@@ -403,8 +403,8 @@ MossdeepCity_Text_ItsAWhiteRock:
 
 MossdeepCity_Text_GymSign:
 	.string "Mossdeep City Pokémon Gym\n"
-	.string "Leaders: Liza & Tate\p"
-	.string "“The mystic combination!”$"
+	.string "Leader: Ivanna\p"
+	.string "“The mystic Dragon user!”$"
 
 MossdeepCity_Text_CitySign:
 	.string "Mossdeep City\n"
@@ -433,7 +433,5 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "Speaking of the waves, you know that\n"
 	.string "island city Sootopolis?\p"
 	.string "I think the Gym there had a new\n"
-	.string "Leader come in.\p"
-	.string "People tell me the new Leader once\n"
-	.string "mentored Wallace.$"
+	.string "Leader come in.$"
 

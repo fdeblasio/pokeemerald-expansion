@@ -41,35 +41,15 @@
     #define BUILDING_SECRET_POWER_ANIMATION gBattleAnimMove_Strength
 #endif
 
+#define PLAIN_BATTLE_INTRO_SLIDE BattleIntroSlide3
+
 #define BUILDING_ENVIRONMENT                                                     \
     .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT, \
     .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,                     \
     .secretPowerEffect = MOVE_EFFECT_PARALYSIS,                                  \
     .camouflageType = TYPE_NORMAL,                                               \
-    .camouflageBlend = RGB_WHITE,                                                \
-    .battleIntroSlide = BattleIntroSlide3
-
-// Plain values. USED for BATTLE_ENVIRONMENT_PLAIN as well as BATTLE_ENVIRONMENT_RAYQUAZA
-#if B_NATURE_POWER_MOVES >= GEN_6
-    #define PLAIN_NATURE_POWER MOVE_TRI_ATTACK
-#elif B_NATURE_POWER_MOVES >= GEN_4
-    #define PLAIN_NATURE_POWER MOVE_EARTHQUAKE
-#else
-    #define PLAIN_NATURE_POWER MOVE_SWIFT
-#endif
-#if B_SECRET_POWER_ANIMATION >= GEN_7
-    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_SpitUp
-#elif B_SECRET_POWER_ANIMATION == GEN_6
-    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_BodySlam
-#elif B_SECRET_POWER_ANIMATION >= GEN_4
-    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_MudSlap
-#else
-    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_Slam
-#endif
-#define PLAIN_SECRET_POWER_EFFECT (B_SECRET_POWER_EFFECT == GEN_4 || B_SECRET_POWER_EFFECT == GEN_5) ? SECRET_POWER_ACC_MINUS_1 : MOVE_EFFECT_PARALYSIS
-#define PLAIN_CAMOUFLAGE_TYPE     (B_CAMOUFLAGE_TYPES == GEN_4 || B_CAMOUFLAGE_TYPES == GEN_5) ? TYPE_GROUND : TYPE_NORMAL
-#define PLAIN_CAMOUFLAGE_BLEND    RGB_WHITE
-#define PLAIN_BATTLE_INTRO_SLIDE  BattleIntroSlide3
+    .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,                                 \
+    .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE
 
 #define SKY_PILLAR_ENVIRONMENT(Name)                    \
     {                                                   \
@@ -241,14 +221,32 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .palette = gBattleEnvironmentPalette_Building,
     },
 
+#if B_NATURE_POWER_MOVES >= GEN_6
+    #define PLAIN_NATURE_POWER MOVE_TRI_ATTACK
+#elif B_NATURE_POWER_MOVES >= GEN_4
+    #define PLAIN_NATURE_POWER MOVE_EARTHQUAKE
+#else
+    #define PLAIN_NATURE_POWER MOVE_SWIFT
+#endif
+
+#if B_SECRET_POWER_ANIMATION >= GEN_7
+    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_SpitUp
+#elif B_SECRET_POWER_ANIMATION == GEN_6
+    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_BodySlam
+#elif B_SECRET_POWER_ANIMATION >= GEN_4
+    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_MudSlap
+#else
+    #define PLAIN_SECRET_POWER_ANIMATION gBattleAnimMove_Slam
+#endif
+
     [BATTLE_ENVIRONMENT_PLAIN] =
     {
         .name = _("Plain"),
         .naturePower = PLAIN_NATURE_POWER,
         .secretPowerAnimation = PLAIN_SECRET_POWER_ANIMATION,
-        .secretPowerEffect = PLAIN_SECRET_POWER_EFFECT,
-        .camouflageType = PLAIN_CAMOUFLAGE_TYPE,
-        .camouflageBlend = PLAIN_CAMOUFLAGE_BLEND,
+        .secretPowerEffect = (B_SECRET_POWER_EFFECT == GEN_4 || B_SECRET_POWER_EFFECT == GEN_5) ? SECRET_POWER_ACC_MINUS_1 : MOVE_EFFECT_PARALYSIS,
+        .camouflageType = (B_CAMOUFLAGE_TYPES == GEN_4 || B_CAMOUFLAGE_TYPES == GEN_5) ? TYPE_GROUND : TYPE_NORMAL,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Building),
         .palette = gBattleEnvironmentPalette_Plain,
@@ -258,6 +256,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     [BATTLE_ENVIRONMENT_FRONTIER] =
     {
         .name = _("Frontier"),
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Building),
         .palette = gBattleEnvironmentPalette_Frontier,
@@ -446,6 +445,8 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .battleIntroSlide = BattleIntroSlide1,
     },
 
+    // TODO: Update these three
+
     [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
     {
         .name = _("Distortion World"),
@@ -457,7 +458,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumDark,
-        .battleIntroSlide = BattleIntroSlide3,
+        .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,
     },
 
     [BATTLE_ENVIRONMENT_SPACE] =
@@ -471,7 +472,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumDark,
-        .battleIntroSlide = BattleIntroSlide3,
+        .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,
     },
 
     [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
@@ -485,7 +486,31 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumDark,
-        .battleIntroSlide = BattleIntroSlide3,
+        .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,
+    },
+
+    #define FRANK_ENVIRONMENT                                \
+        .naturePower = MOVE_THUNDERBOLT,                     \
+        .secretPowerAnimation = gBattleAnimMove_Thunderbolt, \
+        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,          \
+        .camouflageType = TYPE_ELECTRIC,                     \
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,         \
+        .entry = ENVIRONMENT_ENTRY(Building),                \
+        .background = ENVIRONMENT_BACKGROUND(Stadium),       \
+        .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE
+
+    [BATTLE_ENVIRONMENT_FRANK] =
+    {
+        .name = _("Frank"),
+        FRANK_ENVIRONMENT,
+        .palette = gBattleEnvironmentPalette_StadiumFrank,
+    },
+
+    [BATTLE_ENVIRONMENT_FRANK2] =
+    {
+        .name = _("Frank 2"),
+        FRANK_ENVIRONMENT,
+        .palette = gBattleEnvironmentPalette_StadiumFrank2,
     },
 
 #define TYPE_ENVIRONMENT(Type)                              \
@@ -498,9 +523,11 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     }
 
     [BATTLE_ENVIRONMENT_TYPE_DARK] = TYPE_ENVIRONMENT(Dark),
+    [BATTLE_ENVIRONMENT_TYPE_FIGHTING] = TYPE_ENVIRONMENT(Fighting),
     [BATTLE_ENVIRONMENT_TYPE_FLYING] = TYPE_ENVIRONMENT(Flying),
     [BATTLE_ENVIRONMENT_TYPE_GRASS] = TYPE_ENVIRONMENT(Grass),
     [BATTLE_ENVIRONMENT_TYPE_ICE] = TYPE_ENVIRONMENT(Ice),
+    [BATTLE_ENVIRONMENT_TYPE_PSYCHIC] = TYPE_ENVIRONMENT(Psychic),
     [BATTLE_ENVIRONMENT_TYPE_ROCK] = TYPE_ENVIRONMENT(Rock),
 };
 

@@ -4294,6 +4294,69 @@ JUAN_REMATCH(4),
     .ball = ITEM_POKE_BALL,                                                              \
     }
 
+#define FRANK_ELECTABUZZ(Level)                                                                 \
+    {                                                                                           \
+    WALLACE_STEVEN_MON(Level, ELECTABUZZ, ITEM_EVIOLITE),                                       \
+    .ability = ABILITY_STATIC,                                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                                     \
+    .moves = {MOVE_THUNDERBOLT, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                                 \
+    .ball = ITEM_ULTRA_BALL,                                                                    \
+    }
+
+#define FRANK_MANECTRIC(Level)                                                    \
+    {                                                                             \
+    WALLACE_STEVEN_MON(Level, MANECTRIC, ITEM_MANECTITE),                         \
+    .ability = ABILITY_STATIC,                                                    \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    .ball = ITEM_ULTRA_BALL,                                                      \
+    }
+
+#define FRANK_BELLIBOLT(Level)                                                            \
+    {                                                                                     \
+    WALLACE_STEVEN_MON(Level, BELLIBOLT, ITEM_MAGNET),                                    \
+    .ability = ABILITY_ELECTROMORPHOSIS,                                                  \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_HP_SPD,                                                                 \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_EARTH_POWER, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    .ball = ITEM_ULTRA_BALL,                                                              \
+    .isShiny = TRUE,                                                                      \
+    }
+
+#define FRANK_KILOWATTREL(Level)                                                   \
+    {                                                                              \
+    WALLACE_STEVEN_MON(Level, KILOWATTREL, ITEM_MAGNET),                           \
+    .ability = ABILITY_WIND_POWER,                                                 \
+    IDEAL_SPEEDSTER_SPECIAL,                                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_AIR_SLASH, MOVE_WEATHER_BALL, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    .ball = ITEM_ULTRA_BALL,                                                       \
+    }
+
+#define FRANK_RAICHU_ALOLA(Level)                                             \
+    {                                                                         \
+    WALLACE_STEVEN_MON(Level, RAICHU_ALOLA, ITEM_ELECTRIC_SEED),              \
+    .ability = ABILITY_SURGE_SURFER,                                          \
+    IDEAL_SPEEDSTER_SPECIAL,                                                  \
+    .moves = {MOVE_RISING_VOLTAGE, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .ball = ITEM_ULTRA_BALL,                                                  \
+    }
+
+#define FRANK_PINCURCHIN(Level)                                                           \
+    {                                                                                     \
+    WALLACE_STEVEN_MON(Level, PINCURCHIN, ITEM_TERRAIN_EXTENDER),                         \
+    .ability = ABILITY_ELECTRIC_SURGE,                                                    \
+    .nature = NATURE_IMPISH,                                                              \
+    EV_SPREAD_DEF_SPD_HP,                                                                 \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_LIQUIDATION, MOVE_SPIKES, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    .ball = ITEM_ULTRA_BALL,                                                              \
+    }
+
 #define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
 [DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                   \
 {                                                                                          \
@@ -4306,12 +4369,12 @@ JUAN_REMATCH(4),
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
-        WALLACE_PELIPPER(AceLevel - 2),                                                    \
-        WALLACE_GOREBYSS(AceLevel - 2),                                                    \
-        WALLACE_RELICANTH(AceLevel - 2),                                                   \
-        WALLACE_LUDICOLO(AceLevel - 2),                                                    \
-        WALLACE_WAILORD(AceLevel - 1),                                                     \
-        WALLACE_MILOTIC(AceLevel),                                                         \
+        FRANK_PINCURCHIN(AceLevel - 2),                                                    \
+        FRANK_RAICHU_ALOLA(AceLevel - 2),                                                  \
+        FRANK_KILOWATTREL(AceLevel - 2),                                                   \
+        FRANK_BELLIBOLT(AceLevel - 2),                                                     \
+        FRANK_MANECTRIC(AceLevel - 1),                                                     \
+        FRANK_ELECTABUZZ(AceLevel),                                                        \
     },                                                                                     \
 }
 

@@ -311,9 +311,9 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "are exclusively desert-dwellers.\l"
 	.string "You might look around for those.\p"
 	.string "As for me…\n"
-	.string "I'm considering challenging Norman,\l"
+	.string "I'm considering challenging Eric,\l"
 	.string "the Gym Leader of Petalburg.\p"
-	.string "Unlike you, {PLAYER}, your dad looks like\n"
+	.string "Unlike you, {PLAYER}, he looks like\n"
 	.string "he really is tough.\p"
 	.string "See you around!$"
 
@@ -375,7 +375,7 @@ LavaridgeTown_Text_OhYouLikeHotSprings:
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
 	.string "I bathe in the hot springs every day.\p"
 	.string "I want to become a beautiful and strong\n"
-	.string "Gym Leader like Flannery.$"
+	.string "Gym Leader like Helene.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings:
 	.string "If people put Pokémon in hot springs,\n"
@@ -397,8 +397,8 @@ LavaridgeTown_Text_TownSign:
 
 LavaridgeTown_Text_GymSign:
 	.string "Lavaridge Town Pokémon Gym\n"
-	.string "Leader: Flannery\l"
-	.string "“One with a fiery passion that burns!”$"
+	.string "Leader: Helene\l"
+	.string "“One with a passion that bugs!”$"
 
 LavaridgeTown_Text_HerbShopSign:
 	.string "Pokémon Herb Shop\n"

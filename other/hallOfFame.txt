@@ -67,7 +67,7 @@ Wedding 1:
     - Conductot
     - Alomomola
     - Sirfetch'd
-    - Eiscue
+    - Eiscue/Archeops
 Wedding 2:
     - Machamp-P
     - Nidoking

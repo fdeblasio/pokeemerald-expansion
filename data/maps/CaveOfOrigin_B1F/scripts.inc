@@ -62,10 +62,10 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "Ah, so you are {PLAYER}{KUN}?\n"
 	.string "I've heard tales of your exploits.\p"
-	.string "My name is Wallace.\p"
+	.string "My name is Frank.\p"
 	.string "I was once the Gym Leader of\n"
 	.string "Sootopolis, but something came up.\p"
-	.string "So now, I've entrusted my mentor Juan\n"
+	.string "So now, I've entrusted my friend Juan\n"
 	.string "with the Gym's operation.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"

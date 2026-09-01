@@ -998,7 +998,7 @@ LittlerootTown_Text_ProfBirchsLab:
 	.string "Prof. Birch's Pokémon Lab$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "Norman's House$"
+	.string "{PLAYER}'s House$"
 
 LittlerootTown_Text_ProfBirchsHouse:
 	.string "Prof. Birch's House$"

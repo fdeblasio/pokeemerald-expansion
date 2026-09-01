@@ -324,7 +324,7 @@ PlayersHouse_1F_Text_HowDoYouLikeYourRoom:
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "Oh, yes.\n"
-	.string "One of Dad's friends lives in town.\p"
+	.string "One of my friends lives in town.\p"
 	.string "Prof. Birch is his name.\p"
 	.string "He lives right next door, so you should\n"
 	.string "go over and introduce yourself.$"

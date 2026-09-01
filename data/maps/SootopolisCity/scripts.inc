@@ -1370,9 +1370,9 @@ SootopolisCity_EventScript_MaxieArchieLeave::
 
 SootopolisCity_Text_GymSign:
 	.string "Sootopolis City Pokémon Gym\n"
-	.string "Leader: Juan\p"
+	.string "Leader: Pat\p"
 	.string "“The Gym Leader with the beauty\n"
-	.string "of pure water!”$"
+	.string "of pure ice!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "Sootopolis City\p"
@@ -1503,7 +1503,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A Trainer who has knowledge and\n"
 	.string "experience of many kinds of Pokémon…\p"
 	.string "If such a person were to appear, I was\n"
-	.string "instructed by Wallace to lead that\l"
+	.string "instructed by Frank to lead that\l"
 	.string "Trainer to this Cave.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
@@ -1623,7 +1623,7 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 SootopolisCity_Text_HereWereAreHelpWallace:
 	.string "Steven: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "Wallace.\p"
+	.string "Frank.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 

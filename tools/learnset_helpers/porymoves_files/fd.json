@@ -10639,7 +10639,8 @@
   "QUAXLY": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_WORK_UP"},
-      {"Level": 7, "Move": "MOVE_WATER_GUN"}
+      {"Level": 7, "Move": "MOVE_WATER_GUN"},
+      {"Level": 28, "Move": "MOVE_WATERFALL"}
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -10647,14 +10648,20 @@
     "TutorMoves": []
   },
   "QUAXWELL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 32, "Move": "MOVE_WATERFALL"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "QUAQUAVAL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 27, "Move": "MOVE_DRAIN_PUNCH"},
+      {"Level": 32, "Move": "MOVE_WATERFALL"},
+      {"Level": 43, "Move": "MOVE_SKY_UPPERCUT"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

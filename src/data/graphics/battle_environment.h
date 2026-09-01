@@ -50,10 +50,15 @@ const u16 gBattleEnvironmentPalette_StadiumGlacia[] = INCGFX_U16("graphics/battl
 const u16 gBattleEnvironmentPalette_StadiumDrake[] = INCGFX_U16("graphics/battle_environment/stadium/drake.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumWallace[] = INCGFX_U16("graphics/battle_environment/stadium/wallace.pal", ".gbapal");
 
+const u16 gBattleEnvironmentPalette_StadiumFrank[] = INCGFX_U16("graphics/battle_environment/stadium/frank.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumFrank2[] = INCGFX_U16("graphics/battle_environment/stadium/frank2.pal", ".gbapal");
+
 const u16 gBattleEnvironmentPalette_StadiumDark[] = INCGFX_U16("graphics/battle_environment/stadium/dark.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumFighting[] = INCGFX_U16("graphics/battle_environment/stadium/fighting.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumFlying[] = INCGFX_U16("graphics/battle_environment/stadium/flying.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumGrass[] = INCGFX_U16("graphics/battle_environment/stadium/grass.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumIce[] = INCGFX_U16("graphics/battle_environment/stadium/ice.pal", ".gbapal");
+const u16 gBattleEnvironmentPalette_StadiumPsychic[] = INCGFX_U16("graphics/battle_environment/stadium/psychic.pal", ".gbapal");
 const u16 gBattleEnvironmentPalette_StadiumRock[] = INCGFX_U16("graphics/battle_environment/stadium/rock.pal", ".gbapal");
 
 const u16 gBattleEnvironmentPalette_Kyogre[] = INCGFX_U16("graphics/battle_environment/water/kyogre.pal", ".gbapal");

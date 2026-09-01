@@ -5065,6 +5065,15 @@
     - HP: 104->105
     - Spe: 66->70
 
+- Quaxly:
+    - Learns Waterfall by level up
+
+- Quaxwell:
+    - Learns Waterfall by level up
+
+- Quaquaval:
+    - Learns Drain Punch, Waterfall, and Sky Uppercut by level up
+
 - Tarountula/Spidops:
     - Learn Spider Web by level up
 

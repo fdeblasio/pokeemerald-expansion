@@ -56790,6 +56790,7 @@ static const u16 sQuaxlyTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
     MOVE_WATER_PLEDGE,
+    MOVE_WATERFALL,
     MOVE_WHIRLPOOL,
     MOVE_UNAVAILABLE,
 };
@@ -56826,6 +56827,7 @@ static const u16 sQuaxwellTeachableLearnset[] = {
     MOVE_TRIPLE_AXEL,
     MOVE_WATER_PLEDGE,
     MOVE_WATER_PULSE,
+    MOVE_WATERFALL,
     MOVE_WHIRLPOOL,
     MOVE_UNAVAILABLE,
 };
@@ -56845,6 +56847,7 @@ static const u16 sQuaquavalTeachableLearnset[] = {
     MOVE_COACHING,
     MOVE_COUNTER,
     MOVE_DISARMING_VOICE,
+    MOVE_DRAIN_PUNCH,
     MOVE_ENCORE,
     MOVE_ENDEAVOR,
     MOVE_ENDURE,
@@ -56872,6 +56875,7 @@ static const u16 sQuaquavalTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROOST,
+    MOVE_SKY_UPPERCUT,
     MOVE_SLEEP_TALK,
     MOVE_SURF,
     MOVE_SWIFT,
@@ -56883,6 +56887,7 @@ static const u16 sQuaquavalTeachableLearnset[] = {
     MOVE_UPPER_HAND,
     MOVE_WATER_PLEDGE,
     MOVE_WATER_PULSE,
+    MOVE_WATERFALL,
     MOVE_WHIRLPOOL,
     MOVE_UNAVAILABLE,
 };

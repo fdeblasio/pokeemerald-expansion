@@ -1908,7 +1908,10 @@
       {"Level": 52, "Move": "MOVE_ELECTRIC_TERRAIN"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_FLASH_CANNON"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -1918,7 +1921,11 @@
       {"Level": 52, "Move": "MOVE_ELECTRIC_TERRAIN"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_DRAIN_PUNCH"],
+    "TMMoves": [
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_FLASH_CANNON"
+    ],
     "EggMoves": [],
     "TutorMoves": ["MOVE_ZING_ZAP"]
   },
@@ -2654,7 +2661,7 @@
       {"Level": 47, "Move": "MOVE_THUNDER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_FLASH_CANNON"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -2667,7 +2674,7 @@
       {"Level": 54, "Move": "MOVE_THUNDER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_FLASH_CANNON"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -9451,7 +9458,7 @@
       {"Level": 65, "Move": "MOVE_THUNDER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_FLASH_CANNON"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10118,16 +10125,21 @@
     "TutorMoves": []
   },
   "SINISTEA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 24, "Move": "MOVE_HEX"}
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_SCALD"],
     "EggMoves": [],
     "TutorMoves": []
   },
   "POLTEAGEIST": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 24, "Move": "MOVE_HEX"},
+      {"Level": 66, "Move": "MOVE_POLTERGEIST"}
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_SCALD"],
     "EggMoves": [],
     "TutorMoves": []
   },

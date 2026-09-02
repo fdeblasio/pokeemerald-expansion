@@ -44,8 +44,10 @@ upcoming
 ## Hack-specific:
 - Implement level caps?
 - Have Steven give out starter Mega Stones? (with copies available in Lilycove)
+- Rookidee line is glitchy in Dex for Forms/Evos
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
     - In Love Balls
+    - Class is Lovebirds
 - Update Rival battles:
     - Rival Kim uses non-flying birds (Psyduck for Water type?)
     - Update rival battle macro since starters no longer share a type with grass/water/fire
@@ -61,7 +63,6 @@ upcoming
 - Update surf/fish encounters
     - More Luvdisc/Alomomola
         - To a lesser extent, more Tadbulb
-- Update Quaxly line and notes
 - Change legendaries to walk in place?
 - Update trainer teams for more variety with new Pokemon once Gym Leaders are done
 - Look into game bugs

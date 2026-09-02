@@ -372,111 +372,131 @@
     {                                                                                                            \
     .lvl = Location##_STARTER_LEVEL,                                                                             \
     .species = SPECIES_##Rival2##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)),        \
-    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                                 \
+    .nature = Rival == BRENDAN ? NATURE_HARDY : NATURE_SERIOUS,                                                  \
     PERFECT_IVS,                                                                                                 \
     .gender = Rival,                                                                                             \
-    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_MACHAMPITE : ITEM_CORVIKNITE), \
+    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_MACHAMPITE : ITEM_CORVIKNITE),  \
     }
 
 #define RIVAL_SECOND_BRENDAN(Location)                                      \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    Location < RIVAL_ROUTE_119 ? SPECIES_NIDORAN_M : (Location < RIVAL_LILYCOVE ? SPECIES_NIDORINO : SPECIES_NIDOKING), \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_NIDORAN_M : (Location < RIVAL_LILYCOVE ? SPECIES_NIDORINO : SPECIES_NIDOKING), \
     .ability = ABILITY_POISON_POINT,                                        \
     IVS(18),                                                                \
+    .gender = TRAINER_MON_MALE,                                             \
     .nickname = COMPOUND_STRING("Arnold"),                                  \
     }
 
-#define RIVAL_SECOND_MAY(Location)                                          \
-    {                                                                       \
-    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    Location < RIVAL_ROUTE_119 ? SPECIES_NIDORAN_F : (Location < RIVAL_LILYCOVE ? SPECIES_NIDORINA : SPECIES_NIDOQUEEN), \
-    .ability = ABILITY_POISON_POINT,                                        \
-    IVS(18),                                                                \
+#define RIVAL_SECOND_MAY(Location)                                              \
+    {                                                                           \
+    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1),     \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_FLITTLE : SPECIES_ESPATHRA, \
+    .ability = 0,                                                               \
+    IVS(18),                                                                    \
+    .gender = TRAINER_MON_FEMALE,                                               \
     }
 
-#define RIVAL_WHISMUR(Location, Rival)                                      \
-    {                                                                       \
-    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = Rival == BRENDAN,                                            \
-    IVS(18),                                                                \
-    .gender = Rival,                                                        \
+#define RIVAL_MON(Location, Gender) \
+    IVS(Location < RIVAL_ROUTE_119 ? 6 : (Location < RIVAL_LILYCOVE ? 12 : 18)), \
+    .gender = TRAINER_MON_##Gender
+
+#define RIVAL_THIRD_BRENDAN(Location)    \
+    {                                    \
+    .lvl = Location##_STARTER_LEVEL - 2, \
+    .species = SPECIES_ORICORIO_BAILE,   \
+    .ability = ABILITY_DANCER,           \
+    RIVAL_MON(Location, FEMALE),         \
     }
 
-#define RIVAL_MON(Location, Species, Ability, Rival)                             \
+#define RIVAL_THIRD_MAY(Location)                                                \
     {                                                                            \
     .lvl = Location##_STARTER_LEVEL - 2,                                         \
-    .species = SPECIES_##Species,                                                \
-    .ability = ABILITY_##Ability,                                                \
-    IVS(Location < RIVAL_ROUTE_119 ? 6 : (Location < RIVAL_LILYCOVE ? 12 : 18)), \
-    .gender = Rival,                                                             \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_CHATOT : SPECIES_CONDUCTOT,  \
+    .ability = 1,                                                                \
+    RIVAL_MON(Location, MALE),                                                   \
     }
 
-#define RIVAL_BATTLES(Rival, Rival2, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103] =                             \
-{                                                                              \
-    Rival##_INFO,                                                              \
-    .partySize = 1,                                                            \
-    .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_STARTER(RIVAL_ROUTE_103, Rival, Rival2),                         \
-    },                                                                         \
-},                                                                             \
-                                                                               \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO] =                              \
-{                                                                              \
-    Rival##_INFO,                                                              \
-    .partySize = 2,                                                            \
-    .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_WHISMUR(RIVAL_RUSTBORO, Rival),                                  \
-        RIVAL_STARTER(RIVAL_RUSTBORO, Rival, Rival2),                          \
-    },                                                                         \
-},                                                                             \
-                                                                               \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110] =                             \
-{                                                                              \
-    Rival##_INFO,                                                              \
-    .partySize = 3,                                                            \
-    .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_MON(RIVAL_ROUTE_110, Mon3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_110, Rival),                                 \
-        RIVAL_STARTER(RIVAL_ROUTE_110, Rival, Rival2),                         \
-    },                                                                         \
-},                                                                             \
-                                                                               \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119] =                             \
-{                                                                              \
-    Rival##_INFO,                                                              \
-    .partySize = 4,                                                            \
-    .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_MON(RIVAL_ROUTE_119, Mon4, Ability4, Rival),                     \
-        RIVAL_MON(RIVAL_ROUTE_119, Evo3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_119, Rival),                                 \
-        RIVAL_STARTER(RIVAL_ROUTE_119, Rival, Rival2),                         \
-    },                                                                         \
-},                                                                             \
-                                                                               \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE] =                              \
-{                                                                              \
-    Rival##_INFO,                                                              \
-    .partySize = 5,                                                            \
-    .party = (const struct TrainerMon[]) {                                     \
-        {                                                                      \
-        .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,                               \
-        .species = SPECIES_VIBRAVA,                                            \
-        .ability = ABILITY_LEVITATE,                                           \
-        IVS(18),                                                               \
-        .gender = Rival,                                                       \
-        },                                                                     \
-        RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
-        RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \
-        RIVAL_WHISMUR(RIVAL_LILYCOVE, Rival),                                  \
-        RIVAL_STARTER(RIVAL_LILYCOVE, Rival, Rival2),                          \
-    },                                                                         \
+#define RIVAL_FOURTH_BRENDAN(Location)                                           \
+    {                                                                            \
+    .lvl = Location##_STARTER_LEVEL - 2,                                         \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_LUVDISC : SPECIES_VALENTIDE, \
+    .ability = ABILITY_CUTE_CHARM,                                               \
+    RIVAL_MON(Location, FEMALE),                                                 \
+    }
+
+#define RIVAL_FOURTH_MAY(Location)                                                       \
+    {                                                                                    \
+    .lvl = Location##_STARTER_LEVEL - 2,                                                 \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_FARFETCHD_GALAR : SPECIES_SIRFETCHD, \
+    .ability = ABILITY_STEADFAST,                                                        \
+    RIVAL_MON(Location, MALE),                                                           \
+    }
+
+#define RIVAL_BATTLES(Rival, Rival2)                                   \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103] =                     \
+{                                                                      \
+    Rival##_INFO,                                                      \
+    .partySize = 1,                                                    \
+    .party = (const struct TrainerMon[]) {                             \
+        RIVAL_STARTER(RIVAL_ROUTE_103, Rival, Rival2),                 \
+    },                                                                 \
+},                                                                     \
+                                                                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO] =                      \
+{                                                                      \
+    Rival##_INFO,                                                      \
+    .partySize = 2,                                                    \
+    .party = (const struct TrainerMon[]) {                             \
+        RIVAL_SECOND_##Rival(RIVAL_RUSTBORO),                          \
+        RIVAL_STARTER(RIVAL_RUSTBORO, Rival, Rival2),                  \
+    },                                                                 \
+},                                                                     \
+                                                                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110] =                     \
+{                                                                      \
+    Rival##_INFO,                                                      \
+    .partySize = 3,                                                    \
+    .party = (const struct TrainerMon[]) {                             \
+        RIVAL_THIRD_##Rival(RIVAL_ROUTE_110),                          \
+        RIVAL_SECOND_##Rival(RIVAL_ROUTE_110),                         \
+        RIVAL_STARTER(RIVAL_ROUTE_110, Rival, Rival2),                 \
+    },                                                                 \
+},                                                                     \
+                                                                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119] =                     \
+{                                                                      \
+    Rival##_INFO,                                                      \
+    .partySize = 4,                                                    \
+    .party = (const struct TrainerMon[]) {                             \
+        RIVAL_FOURTH_##Rival(RIVAL_ROUTE_119),                         \
+        RIVAL_THIRD_##Rival(RIVAL_ROUTE_119),                          \
+        RIVAL_SECOND_##Rival(RIVAL_ROUTE_119),                         \
+        RIVAL_STARTER(RIVAL_ROUTE_119, Rival, Rival2),                 \
+    },                                                                 \
+},                                                                     \
+                                                                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE] =                      \
+{                                                                      \
+    Rival##_INFO,                                                      \
+    .partySize = 5,                                                    \
+    .party = (const struct TrainerMon[]) {                             \
+        {                                                              \
+        .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,                       \
+        .species = Rival == BRENDAN ? SPECIES_SWALOT : SPECIES_EISCUE, \
+        .ability = 0,                                                  \
+        IVS(18),                                                       \
+        .gender = Rival,                                               \
+        },                                                             \
+        RIVAL_FOURTH_##Rival(RIVAL_LILYCOVE),                          \
+        RIVAL_THIRD_##Rival(RIVAL_LILYCOVE),                           \
+        RIVAL_SECOND_##Rival(RIVAL_LILYCOVE),                          \
+        RIVAL_STARTER(RIVAL_LILYCOVE, Rival, Rival2),                  \
+    },                                                                 \
 }
 
-RIVAL_BATTLES(BRENDAN, RAFI, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
-RIVAL_BATTLES(MAY, KIM, FLITTLE, ESPATHRA, OPPORTUNIST, PSYDUCK, GOLDUCK, CLOUD_NINE),
+RIVAL_BATTLES(BRENDAN, RAFI),
+RIVAL_BATTLES(MAY, KIM),
 
 #define ENDGAME_REMATCH_2_LEVEL 80
 #define ENDGAME_REMATCH_3_LEVEL 85
@@ -18857,6 +18877,27 @@ UNUSED_TRAINER(12),
 UNUSED_TRAINER(13),
 UNUSED_TRAINER(14),
 UNUSED_TRAINER(15),
+
+UNUSED_TRAINER(RIVAL_11),
+UNUSED_TRAINER(RIVAL_12),
+UNUSED_TRAINER(RIVAL_13),
+UNUSED_TRAINER(RIVAL_14),
+UNUSED_TRAINER(RIVAL_15),
+UNUSED_TRAINER(RIVAL_16),
+UNUSED_TRAINER(RIVAL_17),
+UNUSED_TRAINER(RIVAL_18),
+UNUSED_TRAINER(RIVAL_19),
+UNUSED_TRAINER(RIVAL_20),
+UNUSED_TRAINER(RIVAL_21),
+UNUSED_TRAINER(RIVAL_22),
+UNUSED_TRAINER(RIVAL_23),
+UNUSED_TRAINER(RIVAL_24),
+UNUSED_TRAINER(RIVAL_25),
+UNUSED_TRAINER(RIVAL_26),
+UNUSED_TRAINER(RIVAL_27),
+UNUSED_TRAINER(RIVAL_28),
+UNUSED_TRAINER(RIVAL_29),
+UNUSED_TRAINER(RIVAL_30),
 
 #else
 [DIFFICULTY_NORMAL][TRAINER_NONE] =

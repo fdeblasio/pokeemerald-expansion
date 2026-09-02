@@ -22,6 +22,8 @@ FortreeCity_House1_EventScript_NotRequestedMon::
 	end
 
 FortreeCity_House1_EventScript_TradeCompleted::
+	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_TRADE_GIVE
+	bufferspeciesname STR_VAR_2, SPECIES_FORTREE_TRADE_GET
 	msgbox FortreeCity_House1_Text_GoingToMakeVolbeatStrong, MSGBOX_DEFAULT
 	release
 	end
@@ -64,9 +66,9 @@ FortreeCity_House1_Text_YouWontTradeMe:
 	.string "Even after I bared my heart to you?$"
 
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
-	.string "I'm going to make Volbeat super\n"
+	.string "I'm going to make {STR_VAR_1} super\n"
 	.string "strong from this moment on!\p"
-	.string "I hope you do the same with Plusle!$"
+	.string "I hope you do the same with {SPECIES_FORTREE_TRADE_GET}!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
 	.string "Trading Pokémon with others…\p"

@@ -22,6 +22,7 @@ PacifidlogTown_House3_EventScript_NotRequestedMon::
 	end
 
 PacifidlogTown_House3_EventScript_TradeCompleted::
+	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TRADE_GIVE
 	msgbox PacifidlogTown_House3_Text_ReallyWantedToGetBagon, MSGBOX_DEFAULT
 	release
 	end
@@ -58,7 +59,7 @@ PacifidlogTown_House3_Text_NotDesperateOrAnything:
 PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
 	.string "I know I could go looking for one\n"
 	.string "on my own, but…\p"
-	.string "But I really wanted to get a Bagon\n"
+	.string "But I really wanted to get a {STR_VAR_1}\n"
 	.string "that another Trainer caught…$"
 
 PacifidlogTown_House3_Text_IsThatAPokedex:

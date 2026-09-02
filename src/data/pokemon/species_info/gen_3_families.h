@@ -11512,9 +11512,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 50,
+        .baseHP        = 60,
         .baseAttack    = 30,
-        .baseDefense   = 55,
+        .baseDefense   = 65,
         .baseSpeed     = 100,
         .baseSpAttack  = 80,
         .baseSpDefense = 65,
@@ -11585,13 +11585,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_VALENTIDE] =
     {
-        .baseHP        = 75,
+        .baseHP        = 80,
         .baseAttack    = 45,
-        .baseDefense   = 65,
+        .baseDefense   = 80,
         .baseSpeed     = 130,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER), //TODO
+        .baseSpAttack  = 110,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = DEFAULT_CATCH_RATE(95),
         .expYield = 190,
         .evYield_Speed = 3,

@@ -1453,9 +1453,6 @@ enum NationalDexOrder
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \
-    F(TORCHIC) \
-    F(COMBUSKEN) \
-    F(BLAZIKEN) \
     F(MUDKIP) \
     F(MARSHTOMP) \
     F(SWAMPERT) \

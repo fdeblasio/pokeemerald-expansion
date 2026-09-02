@@ -48,10 +48,6 @@ upcoming
     - In Love Balls
     - Class is Lovebirds
 - Eric Spinda pattern
-- Find a way to have Sootopolis Gym Trainer Thomas use traded Pokemon stats if traded, or other if not
-    - if TRADED set IVs = traded IVs nickname = nickname species = WALREIN etc
-    - else trainer name = Tom species = SPHEAL
-- Update trainer teams for more variety with new Pokemon once Gym Leaders are done
 - Look into game bugs
 - Rebase upcoming
 

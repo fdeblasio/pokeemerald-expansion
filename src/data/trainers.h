@@ -6120,7 +6120,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 6,
-        .species = SPECIES_DUCKLETT,
+        .species = SPECIES_ARROKUDA,
         }
     },
 },
@@ -6135,7 +6135,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 8,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_SIZZLIPEDE,
         IVS(6),
         },
         {
@@ -6201,7 +6201,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 8,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_ROGGENROLA,
         }
     },
 },
@@ -7363,7 +7363,7 @@ MARINA_BATTLE(MUSEUM, CAP_MUSEUM - 2),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_CRABRAWLER,
         IVS(12),
         }
     },
@@ -7569,11 +7569,11 @@ MARINA_BATTLE(MUSEUM, CAP_MUSEUM - 2),
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_CLOBBOPUS,
         },
         {
         .lvl = 16,
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_INKAY,
         }
     },
 },
@@ -7804,7 +7804,7 @@ MARINA_BATTLE(MUSEUM, CAP_MUSEUM - 2),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_CLOBBOPUS,
         },
         {
         .lvl = 16,
@@ -8614,7 +8614,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 22,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_INKAY,
         }
     },
 },
@@ -9675,7 +9675,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 25,
-        .species = SPECIES_MACHOP,
+        .species = SPECIES_CLOBBOPUS,
         IVS(12),
         }
     },
@@ -11942,7 +11942,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_SWANNA,
         }
     },
 },
@@ -11956,7 +11956,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -12990,12 +12990,12 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_FARFETCHD_GALAR
         IVS(12),
         },
         {
         .lvl = 31,
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_PASSIMIAN,
         IVS(12),
         }
     },
@@ -13010,7 +13010,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_FLAMIGO,
         IVS(12),
         }
     },
@@ -13092,7 +13092,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_PINSIR,
+        .species = SPECIES_RIBOMBEE,
         }
     },
 },
@@ -13165,7 +13165,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_SNOM,
         }
     },
 },
@@ -13979,7 +13979,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
         },
         {
         .lvl = 40,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_FLAMIGO,
         }
     },
 },
@@ -14750,7 +14750,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 43,
-        .species = SPECIES_SPOINK,
+        .species = SPECIES_LAMPENT,
         }
     },
 },
@@ -14764,7 +14764,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 43,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_PRIMEAPE,
         }
     },
 },
@@ -14892,7 +14892,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 43,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_GASTLY,
         IVS(6),
         }
     },
@@ -14907,7 +14907,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 43,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_BRELOOM,
         IVS(12),
         }
     },
@@ -15185,11 +15185,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_DUSKULL,
+        .species = SPECIES_SANDYGAST,
         },
         {
         .lvl = 44,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_DHELMISE,
         }
     },
 },
@@ -15520,7 +15520,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         },
         {
         .lvl = 44,
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_CRABOMINABLE,
         IVS(12),
         }
     },
@@ -17221,7 +17221,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_SIRFETCHD,
         IVS(12),
         }
     },
@@ -17348,7 +17348,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
         },
         {
         .lvl = 53,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_HAWLUCHA,
         IVS(24),
         }
     },
@@ -17464,12 +17464,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_PASSIMIAN,
         IVS(6),
         },
         {
         .lvl = 53,
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_GRAPPLOCT,
         IVS(24),
         }
     },
@@ -17489,7 +17489,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
         },
         {
         .lvl = 53,
-        .species = SPECIES_HARIYAMA,
+        .species = SPECIES_PASSIMIAN,
         IVS(24),
         }
     },
@@ -17760,7 +17760,9 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 [DIFFICULTY_NORMAL][TRAINER_BRIDGET] =
 {
     .trainerName = _("Tom"),
-    ACE_TRAINER_M_INFO,
+    .trainerClass = TRAINER_CLASS_ACE_TRAINER_M,
+    .trainerPic = TRAINER_PIC_NORMAN,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ACE_TRAINER_M,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
@@ -17769,6 +17771,8 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
         .lvl = 55,
         .species = SPECIES_WALREIN,
         IVS(18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Blue"),
         }
     },
 },

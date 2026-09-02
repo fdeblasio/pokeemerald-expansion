@@ -1756,12 +1756,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
 #if P_FAMILY_SQUAWKABILLY
 #define SQUAWKABILLY_INFO                                \
-    .baseHP        = 82,                                 \
-    .baseAttack    = 96,                                 \
-    .baseDefense   = 51,                                 \
-    .baseSpeed     = 92,                                 \
+    .baseHP        = 85,                                 \
+    .baseAttack    = 100,                                \
+    .baseDefense   = 55,                                 \
+    .baseSpeed     = 95,                                 \
     .baseSpAttack  = 45,                                 \
-    .baseSpDefense = 51,                                 \
+    .baseSpDefense = 55,                                 \
     .types = MON_TYPES(TYPE_FLYING),                     \
     .catchRate = DEFAULT_CATCH_RATE(190),                \
     .expYield = 146,                                     \

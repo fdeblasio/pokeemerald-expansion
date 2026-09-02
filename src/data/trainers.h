@@ -12990,7 +12990,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Arsanuos", M, DIRE_HIT,     FARFETCHD,  LEEK,   
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_FARFETCHD_GALAR
+        .species = SPECIES_FARFETCHD_GALAR,
         IVS(12),
         },
         {
@@ -17761,7 +17761,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 {
     .trainerName = _("Tom"),
     .trainerClass = TRAINER_CLASS_ACE_TRAINER_M,
-    .trainerPic = TRAINER_PIC_NORMAN,
+    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ACE_TRAINER_M,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

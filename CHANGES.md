@@ -2647,7 +2647,8 @@
     - Learns Rock Slide by level up
 
 - Luvdisc:
-    - HP: 43->50
+    - HP: 43->60
+    - Def: 55->65
     - SpA: 40->80
     - Spd: 97->100
     - Held item: Heart Scale: 50%->100%
@@ -2657,11 +2658,11 @@
 
 - ???:
     - Type: Water
-    - HP: 75
-    - Atk: 56
-    - Def: 65
-    - SpA: 100
-    - SpD: 75
+    - HP: 80
+    - Atk: 45
+    - Def: 80
+    - SpA: 110
+    - SpD: 80
     - Spe: 130
     - Abilities: Swift Swim/Cute Charm/Hydration
 
@@ -2894,6 +2895,9 @@
     - Learns Surf by level up
 
 - Alomomola:
+    - Atk: 75->90
+    - SpD: 45->80
+    - Spe: 65->70
     - Held item: Heart Scale: 0%->100%
     - Learns Heart Stamp, Flip Turn, Heart Scale Shot, Waterfall, and Liquidation by level up
 
@@ -3450,6 +3454,11 @@
 
 - Squawkabilly:
     - Type: Normal/Flying->Flying
+    - HP: 82->85
+    - Atk: 96->100
+    - Def: 51->55
+    - SpD: 51->55
+    - Spe: 92->95
     - Learns Dual Wingbeat by level up
     - Learns Steel Wing by TM
 

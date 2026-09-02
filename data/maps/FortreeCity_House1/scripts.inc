@@ -68,7 +68,7 @@ FortreeCity_House1_Text_YouWontTradeMe:
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
 	.string "I'm going to make {STR_VAR_1} super\n"
 	.string "strong from this moment on!\p"
-	.string "I hope you do the same with {SPECIES_FORTREE_TRADE_GET}!$"
+	.string "I hope you do the same with {STR_VAR_2}!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
 	.string "Trading Pokémon with others…\p"

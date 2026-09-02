@@ -6295,7 +6295,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        JERRY_RALTS(10),
+        JERRY_PAWNIARD(10),
         IVS(1),
         }
     },

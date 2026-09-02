@@ -88,8 +88,8 @@ static bool32 SetCorrectAbilityNum(struct Pokemon *mon, enum Species species, en
     }
     if (abilityNum >= maxAbilityNum)
     {
-        if ((ability == 1 || ability == 2) && speciesInfo->abilities[ability] != ABILITY_NONE)
-            abilityNum = ability;
+        if (ability <= 2 && speciesInfo->abilities[ability] != ABILITY_NONE)
+            abilityNum = speciesInfo->abilities[ability];
         else
             assertf(abilityNum < maxAbilityNum, "illegal ability %S for %S", gAbilitiesInfo[ability].name, speciesInfo->speciesName)
             {

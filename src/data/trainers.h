@@ -5120,7 +5120,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     {                                                          \
     .lvl = Level,                                              \
     .species = Level < 20 ? SPECIES_NINCADA : SPECIES_NINJASK, \
-    .ability = 1,                                              \
+    .ability = 0,                                              \
     IVS(IVs),                                                  \
     .gender = TRAINER_MON_MALE,                                \
     }
@@ -5147,7 +5147,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     {                                                                            \
     .lvl = Level,                                                                \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
-    .ability = 1,                                                                \
+    .ability = 0,                                                                \
     IVS(IVs),                                                                    \
     .gender = TRAINER_MON_FEMALE,                                                \
     }

@@ -22525,10 +22525,9 @@ static const struct LevelUpMove sGreedentLevelUpLearnset[] = {
 
 #if P_FAMILY_ROOKIDEE
 static const struct LevelUpMove sRookideeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 4, MOVE_POWER_TRIP),
-    LEVEL_UP_MOVE( 6, MOVE_PECK),
     LEVEL_UP_MOVE( 8, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(16, MOVE_PLUCK),
@@ -22542,7 +22541,6 @@ static const struct LevelUpMove sRookideeLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sCorvisquireLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
@@ -22563,7 +22561,6 @@ static const struct LevelUpMove sCorviknightLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 1, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
@@ -22581,9 +22578,10 @@ static const struct LevelUpMove sCorviknightLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sRookideePartnerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 4, MOVE_POWER_TRIP),
+    LEVEL_UP_MOVE( 6, MOVE_PECK),
     LEVEL_UP_MOVE( 8, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(16, MOVE_PLUCK),
@@ -22596,6 +22594,7 @@ static const struct LevelUpMove sRookideePartnerLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sCorvisquirePartnerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_HONE_CLAWS),
@@ -22612,6 +22611,7 @@ static const struct LevelUpMove sCorvisquirePartnerLevelUpLearnset[] = {
 
 static const struct LevelUpMove sCorviknightPartnerLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_STEEL_WING),
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),

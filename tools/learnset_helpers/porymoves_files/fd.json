@@ -10815,7 +10815,7 @@
       {"Level": 34, "Move": "MOVE_DUAL_WINGBEAT"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_STEEL_WING"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10915,6 +10915,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_RAIN_DANCE",
+      "MOVE_STEEL_WING",
       "MOVE_HEAT_WAVE"
     ],
     "EggMoves": ["MOVE_BOLT_BEAK"],
@@ -10932,6 +10933,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_RAIN_DANCE",
+      "MOVE_STEEL_WING",
       "MOVE_HEAT_WAVE"
     ],
     "EggMoves": [],
@@ -11123,7 +11125,7 @@
       {"Level": 47, "Move": "MOVE_THROAT_CHOP"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_STEEL_WING"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -11230,7 +11232,7 @@
       {"Level": 54, "Move": "MOVE_HIGH_JUMP_KICK"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_STEEL_WING"],
     "EggMoves": [],
     "TutorMoves": []
   },

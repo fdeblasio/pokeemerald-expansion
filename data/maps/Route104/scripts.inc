@@ -668,7 +668,6 @@ Route104_Movement_SailToDewford:
 	walk_faster_down
 	walk_faster_down
 	walk_faster_down
-	walk_faster_down
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
@@ -725,6 +724,7 @@ Route104_Movement_SailToDewford:
 	walk_right
 	walk_down
 	walk_down
+	walk_fast_down
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down

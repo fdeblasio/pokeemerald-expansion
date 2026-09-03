@@ -3,6 +3,7 @@
 #include "battle.h"
 #include "battle_partner.h"
 #include "battle_frontier.h"
+#include "caps.h"
 #include "data.h"
 #include "frontier_util.h"
 #include "difficulty.h"

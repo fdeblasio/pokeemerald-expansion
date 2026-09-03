@@ -3069,6 +3069,7 @@
 	.4byte \lose_text_b
 	.2byte \partnerId
 	waitstate
+	.endm
 
 @ Custom
 	.macro overworldspecies species:req, cryMode=CRY_MODE_NORMAL

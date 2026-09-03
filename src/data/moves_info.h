@@ -213,11 +213,11 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
 #define EFFECT_40_POWER_EFFECT_INFO(Effect) \
-    EFFECT_40_POWER_INFO,
+    EFFECT_40_POWER_INFO,                   \
     EFFECT_MOVE_INFO(Effect, 10)
 
 #define EFFECT_40_POWER_STAT_INFO(Stat) \
-    EFFECT_40_POWER_INFO,
+    EFFECT_40_POWER_INFO,               \
     STAT_CHANGE_MOVE_INFO(MOVE_EFFECT_STAT_MINUS, Stat, 1, 10)
 
 #define HIGH_PRIORITY_40_POWER_INFO \

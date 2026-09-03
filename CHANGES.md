@@ -13,34 +13,35 @@
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
-- Some areas made easier to navigate
-    - Route 102/103: Path from Littleroot to rival is more direct
-- Some reversions back to Ruby and Sapphire
-    - Birch is chased by a Poochyena
-    - Some trainers on Routes 104 and 117 go back to their original locations
+- Pokémon that evolve with an item at day or night now can evolve at any time
+- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
+- Pokémon can now be listed as orange in the Pokédex
+- Releasing a Pokémon now gives you its Poké Ball back
 - Hoenn-specific:
+    - Some areas made easier to navigate
+        - Route 102/103: Path from Littleroot to rival is more direct
+    - Some reversions back to Ruby and Sapphire
+        - Birch is chased by a Poochyena
+        - Some trainers on Routes 104 and 117 go back to their original locations
     - Gym Leaders use more Hoenn Pokémon
     - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
     - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
     - Pokémon have a more even encounter distribution
-- Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
-- Juan gives out Liquidation instead of Water Pulse (Water Pulse can be found in Slateport)
-- Pokémon that evolve with an item at day or night now can evolve at any time
-- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
-- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
-- Galarian Corsola and Cursola were added to the Hoenn Pokédex
-- Regieleki, Regidrago, and Regigigas were added to the Hoenn Pokédex
-- Pokémon can now be listed as orange in the Pokédex
-- Safari Zone:
-    - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
-    - Pokémon in the Safari Zone can't flee
-    - Connected the north and northwest sections of the Safari Zone
-    - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
-    - There are extra areas in the Safari Zone
-- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-- Contest opponents from RS and ORAS were added
-- There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
-- Releasing a Pokémon now gives you its Poké Ball back
+    - Route 104's northen section has different encounters than the southern section
+    - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
+    - Juan gives out Liquidation instead of Water Pulse (Water Pulse can be found in Slateport)
+    - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
+    - Galarian Corsola and Cursola were added to the Hoenn Pokédex
+    - Regieleki, Regidrago, and Regigigas were added to the Hoenn Pokédex
+    - Safari Zone:
+        - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
+        - Pokémon in the Safari Zone can't flee
+        - Connected the north and northwest sections of the Safari Zone
+        - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
+        - There are extra areas in the Safari Zone
+    - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
+    - Contest opponents from RS and ORAS were added
+    - There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
 
 ### Overworld:
 - Faster walking/surfing speed

@@ -17,13 +17,13 @@
     .party = (const struct TrainerMon[])
     {
         {
-        STEVEN_MAWILE(MAXIE_SPACE_CENTER_ACE_LEVEL - 2),
+        STEVEN_MAWILE(CAP_SPACE_CENTER - 2),
         },
         {
-        STEVEN_AGGRON(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        STEVEN_AGGRON(CAP_SPACE_CENTER - 1),
         },
         {
-        STEVEN_METAGROSS(MAXIE_SPACE_CENTER_ACE_LEVEL),
+        STEVEN_METAGROSS(CAP_SPACE_CENTER),
         .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_PURSUIT, MOVE_BULLET_PUNCH},
         },
     },

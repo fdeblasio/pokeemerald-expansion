@@ -224,8 +224,6 @@ struct Trainer
     .gender = TRAINER_MON_FEMALE,                                               \
     .ball = ITEM_ULTRA_BALL
 
-#define MAXIE_SPACE_CENTER_ACE_LEVEL 53
-
 struct TrainerClass
 {
     u8 name[13];

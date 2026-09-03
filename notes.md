@@ -537,6 +537,7 @@ upcoming
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west
+    - 110 north/south
     - 111 pre-/post-desert?
     - 115 north/south (north/middle/south?)
     - 118 east/west

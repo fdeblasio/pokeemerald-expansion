@@ -3728,9 +3728,9 @@ u8 IsRunningFromBattleImpossible(enum BattlerId battler)
         return BATTLE_RUN_SUCCESS;
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return BATTLE_RUN_SUCCESS;
-    if (IsSemiInvulnerable(BATTLE_OPPOSITE(battler), CHECK_ALL))
+    if (IsSemiInvulnerable(GetOppositeBattler(battler), CHECK_ALL))
         return BATTLE_RUN_SUCCESS;
-    if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE))
+    if (gBattleMons[GetOppositeBattler(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE))
         return BATTLE_RUN_SUCCESS;
 
     if ((i = IsAbilityPreventingEscape(battler)))
@@ -5860,7 +5860,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     struct DamageContext ctx = {0};
 
     if (gMain.inBattle)
-        battlerDef = BATTLE_OPPOSITE(battler);
+        battlerDef = GetOppositeBattler(battler);
     else
         battlerDef = 0;
 
@@ -6209,16 +6209,16 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         if (moveEffect == EFFECT_NATURE_POWER)
             accuracy = GetMoveAccuracy(GetNaturePowerMove());
         else if (moveEffect == EFFECT_OHKO) {
-            accuracy += gBattleMons[battler].level - gBattleMons[BATTLE_OPPOSITE(battler)].level;
+            accuracy += gBattleMons[battler].level - gBattleMons[GetOppositeBattler(battler)].level;
             if (MoveDecreasesAccIfUserNotSameType(move) && !IS_BATTLER_OF_TYPE(battler, GetMoveType(move)))
                 accuracy -= 10;
         }
 
         if (HasWeatherEffect()){
-            //if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), GetWeather(), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
+            //if (IsBattlerWeatherAffected(GetOppositeBattler(battler), GetWeather(), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
             if ((gBattleWeather & B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
                 accuracy = 50;
-            //else if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), GetWeather(), B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
+            //else if (IsBattlerWeatherAffected(GetOppositeBattler(battler), GetWeather(), B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
             else if ((gBattleWeather & B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
                 return 100;
             else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && MoveAlwaysHitsInHailSnow(move))

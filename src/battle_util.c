@@ -693,10 +693,10 @@ bool32 TryRunFromBattle(enum BattlerId battler)
     {
         effect = TRUE;
     }
-    else if (IsSemiInvulnerable(BATTLE_OPPOSITE(battler), CHECK_ALL)) {
+    else if (IsSemiInvulnerable(GetOppositeBattler(battler), CHECK_ALL)) {
         effect++;
     }
-    else if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE)) {
+    else if (gBattleMons[GetOppositeBattler(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE)) {
         effect++;
     }
     else

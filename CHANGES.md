@@ -11,7 +11,7 @@
 ## Changes
 - NOTE: This all assumes that I made no merging errors
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
-    - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
+    - However, with the Exp. Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
@@ -3335,6 +3335,7 @@
     - SpA: 92->95
     - SpD: 42->45
     - Spe: 91->95
+    - Catch rate: 30->90
     - Learns Gust, Air Cutter, Air Slash, and Boomburst by level up
 
 - Spiritomb:
@@ -5101,6 +5102,7 @@
 - Squawkabilly:
     - Type: Normal/Flying->Flying
     - Learns Dual Wingbeat by level up
+    - Learns Steel Wing by TM
 
 - Nacli/Naclstack:
     - Learn Rock Tomb by level up
@@ -5134,7 +5136,7 @@
 
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
-    - Learn Rain Dance and Heat Wave by TM
+    - Learn Rain Dance, Steel Wing, and Heat Wave by TM
     - Theoretically learn Bolt Beak by Egg Move, although nothing can pass it down
 
 - Maschiff/Mabosstiff:
@@ -5194,6 +5196,7 @@
     - Spe: 82->85
     - Catch rate: 45->90
     - Learns Aerial Ace, Feint Attack, Drill Peck, and Throat Chop by level up
+    - Learns Steel Wing by TM
 
 - Cyclizar:
     - Learns Headbutt and Body Slam by level up
@@ -5213,6 +5216,7 @@
 
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up
+    - Learns Steel Wing by TM
 
 - Cetoddle/Cetitan:
     - Learn Ice Fang and Icicle Crash by level up

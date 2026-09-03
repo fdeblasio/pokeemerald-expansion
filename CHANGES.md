@@ -1,4 +1,5 @@
 ## Known bugs and other notes
+- When looking at a route's wild Pokémon with the PokéNav, it will mark all forms as caught if you've caught one of them
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. They will start to follow you again if you talk to it
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)

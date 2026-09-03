@@ -9,15 +9,26 @@ u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[][2] =
     {
-        {FLAG_BADGE01_GET, 15},
-        {FLAG_BADGE02_GET, CAP_GYM_2},
-        {FLAG_BADGE03_GET, CAP_GYM_3},
-        {FLAG_BADGE04_GET, CAP_GYM_4},
-        {FLAG_BADGE05_GET, CAP_GYM_5},
-        {FLAG_BADGE06_GET, CAP_GYM_6},
-        {FLAG_BADGE07_GET, CAP_GYM_7},
-        {FLAG_BADGE08_GET, CAP_GYM_8},
-        {FLAG_IS_CHAMPION, 69},
+        {FLAG_BADGE01_GET,                    CAP_GYM_1},
+        {FLAG_BADGE02_GET,                    CAP_GYM_2},
+        {FLAG_DELIVERED_DEVON_GOODS,          CAP_MUSEUM},
+        {FLAG_DEFEATED_WALLY_MAUVILLE,        CAP_MAUVILLE_WALLY},
+        {FLAG_BADGE03_GET,                    CAP_GYM_3},
+        {FLAG_MET_ARCHIE_METEOR_FALLS,        CAP_METEOR_FALLS},
+        {FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY,  CAP_MT_CHIMNEY},
+        {FLAG_BADGE04_GET,                    CAP_GYM_4},
+        {FLAG_BADGE05_GET,                    CAP_GYM_5},
+        {FLAG_RECEIVED_CASTFORM,              CAP_WEATHER},
+        {FLAG_RECEIVED_TM_FLY,                CAP_RIVAL_119},
+        {FLAG_BADGE06_GET,                    CAP_GYM_6},
+        {FLAG_MET_RIVAL_LILYCOVE,             CAP_LILYCOVE},
+        {FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, CAP_MAGMA_HIDEOUT},
+        {FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, CAP_AQUA_HIDEOUT},
+        {FLAG_BADGE07_GET,                    CAP_GYM_7},
+        {FLAG_DEFEATED_MAGMA_SPACE_CENTER,    CAP_SPACE_CENTER},
+        {FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN},
+        {FLAG_BADGE08_GET,                    CAP_GYM_8},
+        {FLAG_IS_CHAMPION,                    CAP_CHAMPION},
     };
 
     u32 i;

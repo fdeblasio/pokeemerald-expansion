@@ -345,10 +345,10 @@
 #define RIVAL_LILYCOVE  4
 
 #define RIVAL_ROUTE_103_STARTER_LEVEL  5
-#define RIVAL_RUSTBORO_STARTER_LEVEL  15
-#define RIVAL_ROUTE_110_STARTER_LEVEL 20
-#define RIVAL_ROUTE_119_STARTER_LEVEL 42
-#define RIVAL_LILYCOVE_STARTER_LEVEL  45
+#define RIVAL_RUSTBORO_STARTER_LEVEL  CAP_GYM_1
+#define RIVAL_ROUTE_110_STARTER_LEVEL CAP_MAUVILLE_WALLY
+#define RIVAL_ROUTE_119_STARTER_LEVEL CAP_RIVAL_119
+#define RIVAL_LILYCOVE_STARTER_LEVEL  CAP_LILYCOVE
 
 #define BRENDAN 1
 #define MAY     2
@@ -507,6 +507,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .ability = ABILITY_FLUFFY,                                \
     .gender = TRAINER_MON_MALE
 
+//CAP_MAUVILLE_WALLY isn't used because Ralph needs to be unevolved
 [DIFFICULTY_NORMAL][TRAINER_WALLY_MAUVILLE] =
 {
     WALLY_INFO,
@@ -524,11 +525,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        WALLY_BUDEW(21),
+        WALLY_BUDEW(CAP_GYM_3 - 3),
         IVS(3),
         },
         {
-        RALPH(23),
+        RALPH(CAP_GYM_3 - 1),
         }
     },
 },
@@ -539,15 +540,15 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        WALLY_SWABLU(25),
+        WALLY_SWABLU(CAP_METEOR_FALLS - 3),
         IVS(6),
         },
         {
-        WALLY_BUDEW(25),
+        WALLY_BUDEW(CAP_METEOR_FALLS - 3),
         IVS(6),
         },
         {
-        RALPH(27),
+        RALPH(CAP_METEOR_FALLS - 1),
         }
     },
 },
@@ -760,7 +761,7 @@ WALLY_REMATCH(4),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 11,
+        .lvl = CAP_GYM_1 - 4,
         .species = SPECIES_LILEEP,
         .ability = ABILITY_SUCTION_CUPS,
         IVS(12),
@@ -768,7 +769,7 @@ WALLY_REMATCH(4),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 11,
+        .lvl = CAP_GYM_1 - 4,
         .species = SPECIES_ANORITH,
         .ability = ABILITY_SWIFT_SWIM,
         IVS(12),
@@ -776,7 +777,7 @@ WALLY_REMATCH(4),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 13,
+        .lvl = CAP_GYM_1 - 2,
         .species = SPECIES_NOSEPASS,
         .ability = ABILITY_STURDY,
         IVS(24),
@@ -4158,8 +4159,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define MAGMA_HIDEOUT_LEVEL 45
-#define SPACE_CENTER_GRUNT_LEVEL 47
+#define SPACE_CENTER_GRUNT_LEVEL CAP_SPACE_CENTER - 6
 
 #define LANDON_BATTLE(Location, Level)                                                   \
 [DIFFICULTY_NORMAL][TRAINER_LANDON_##Location] =                                         \
@@ -4293,8 +4293,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,     \
     }
 
-#define AQUA_HIDEOUT_LEVEL 45
-#define SEAFLOOR_CAVERN_LEVEL 52
+#define AQUA_HIDEOUT_LEVEL CAP_AQUA_HIDEOUT - 4
+#define SEAFLOOR_CAVERN_LEVEL CAP_SEAFLOOR_CAVERN - 3
 
 #define MARINA_BATTLE(Location, Level)                                                \
 [DIFFICULTY_NORMAL][TRAINER_MARINA_##Location] =                                      \
@@ -4535,6 +4535,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .multiTeamSize = MULTI_TEAM_SIZE_HALF,           \
     BOSS_AI_FLAGS
 
+#define MAXIE_SUPPORTING_SPACE_CENTER_LEVEL CAP_SPACE_CENTER - 1
+
 #define HUMPHREY(Level)                                       \
     .lvl = Level,                                             \
     .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
@@ -4548,7 +4550,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_RHYHORN(Level)           \
     {                                  \
     TEAM_LEADER_SUPPORTING_MON(Level), \
-    .species = Level < 42 ? SPECIES_RHYHORN : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
+    .species = Level < 42 ? SPECIES_RHYHORN : (Level < MAXIE_SUPPORTING_SPACE_CENTER_LEVEL ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
     .ability = 1,                      \
     .gender = TRAINER_MON_MALE,        \
     }
@@ -4588,7 +4590,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_TRAPINCH(Level)          \
     {                                  \
     TEAM_LEADER_SUPPORTING_MON(Level), \
-    .species = Level < 35 ? SPECIES_TRAPINCH : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
+    .species = Level < 35 ? SPECIES_TRAPINCH : (Level < MAXIE_SUPPORTING_SPACE_CENTER_LEVEL ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
     .ability = 1,                      \
     .gender = TRAINER_MON_MALE,        \
     }
@@ -4607,7 +4609,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_SANDILE(Level)           \
     {                                  \
     TEAM_LEADER_SUPPORTING_MON(Level), \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDILE : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDILE : (Level < MAXIE_SUPPORTING_SPACE_CENTER_LEVEL ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
     .ability = ABILITY_INTIMIDATE,     \
     .gender = TRAINER_MON_MALE,        \
     }
@@ -6464,18 +6466,18 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 // Oceanic Museum
-MALIK_BATTLE(MUSEUM, 17),
-MARINA_BATTLE(MUSEUM, 17),
+MALIK_BATTLE(MUSEUM, CAP_MUSEUM - 2),
+MARINA_BATTLE(MUSEUM, CAP_MUSEUM - 2),
 
 [DIFFICULTY_NORMAL][TRAINER_ARCHIE_MUSEUM] =
 {
     ARCHIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        ARCHIE_TENTACOOL(17),
-        ARCHIE_WAILMER(17),
+        ARCHIE_TENTACOOL(CAP_MUSEUM - 2),
+        ARCHIE_WAILMER(CAP_MUSEUM - 2),
         {
-        FINNEAS(19),
+        FINNEAS(CAP_MUSEUM),
         .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
         }
     },
@@ -7599,7 +7601,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 #define MAUVILLE_GYM_MON(Species, Move2, Move3, Move4)                    \
     {                                                                     \
-    .lvl = 21,                                                            \
+    .lvl = CAP_GYM_3 - 3,                                                 \
     .species = SPECIES_##Species,                                         \
     IVS(12),                                                              \
     .moves = {MOVE_SHOCK_WAVE, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}, \
@@ -9778,7 +9780,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 },
 
 // Meteor Falls
-COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
+COURTNEY_BATTLE(METEOR_FALLS, CAP_METEOR_FALLS, 3),
 
 // Route 115 (south)
 #define NOB_INFO             \
@@ -10029,9 +10031,9 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 },
 
 // Mt. Chimney (Magma)
-GINNY_BATTLE(MT_CHIMNEY, 27),
-LANDON_BATTLE(MT_CHIMNEY, 27),
-TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
+GINNY_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 3),
+LANDON_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 3),
+TABITHA_BATTLE(MT_CHIMNEY, CAP_MT_CHIMNEY - 1, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_MAXIE_MT_CHIMNEY] =
 {
@@ -10039,11 +10041,11 @@ TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(28),
-        MAXIE_BALTOY(29),
-        MAXIE_RHYHORN(29),
+        MAXIE_SANDSHREW(CAP_MT_CHIMNEY - 2),
+        MAXIE_BALTOY(CAP_MT_CHIMNEY - 1),
+        MAXIE_RHYHORN(CAP_MT_CHIMNEY - 1),
         {
-        HUMPHREY(30),
+        HUMPHREY(CAP_MT_CHIMNEY),
         }
     },
 },
@@ -12903,7 +12905,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 },
 
 // Weather Institute
-#define WEATHER_INSTITUTE_AQUA_LEVEL 37
+#define WEATHER_INSTITUTE_AQUA_LEVEL CAP_WEATHER - 4
 NERISSA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 BERYL_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 MALIK_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
@@ -12919,7 +12921,7 @@ MARINA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
     },
 },
 
-SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
+SHELLY_BATTLE(WEATHER_INSTITUTE, CAP_WEATHER, 6),
 
 // Route 119 (north)
 [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
@@ -14850,6 +14852,8 @@ MARINA_BATTLE(MT_PYRE, 42),
     },
 },
 
+#define MAGMA_HIDEOUT_LEVEL CAP_MAGMA_HIDEOUT - 3
+
 // Magma Hideout
 #define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species)        \
 [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] = \
@@ -14882,7 +14886,7 @@ JORDAN_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 TERRANCE_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 GINNY_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 LANDON_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
-TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
+TABITHA_BATTLE(MAGMA_HIDEOUT, CAP_MAGMA_HIDEOUT - 1, 9),
 
 [DIFFICULTY_NORMAL][TRAINER_MAXIE_MAGMA_HIDEOUT] =
 {
@@ -14890,11 +14894,11 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(46),
-        MAXIE_BALTOY(47),
-        MAXIE_RHYHORN(47),
+        MAXIE_SANDSHREW(CAP_MAGMA_HIDEOUT - 2),
+        MAXIE_BALTOY(CAP_MAGMA_HIDEOUT - 1),
+        MAXIE_RHYHORN(CAP_MAGMA_HIDEOUT - 1),
         {
-        HUMPHREY(48),
+        HUMPHREY(CAP_MAGMA_HIDEOUT),
         }
     },
 },
@@ -14937,7 +14941,7 @@ BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 
 MALIK_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
-MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
+MATT_BATTLE(AQUA_HIDEOUT, CAP_AQUA_HIDEOUT, 6),
 
 // Route 124
 [DIFFICULTY_NORMAL][TRAINER_GRACE] =
@@ -15577,18 +15581,18 @@ GAETANO_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 TERRANCE_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 GINNY_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 LANDON_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
-COURTNEY_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
-TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
+COURTNEY_BATTLE(SPACE_CENTER, CAP_SPACE_CENTER - 1, 12),
+TABITHA_BATTLE(SPACE_CENTER, CAP_SPACE_CENTER - 1, 12),
 
 [DIFFICULTY_NORMAL][TRAINER_MAXIE_SPACE_CENTER] =
 {
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
-        MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_BALTOY(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
+        MAXIE_RHYHORN(MAXIE_SUPPORTING_SPACE_CENTER_LEVEL),
         {
-        HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),
+        HUMPHREY(CAP_SPACE_CENTER),
         .heldItem = ITEM_CAMERUPTITE,
         }
     },
@@ -16204,8 +16208,8 @@ NERISSA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 BERYL_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MALIK_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MARINA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
-MATT_BATTLE(SEAFLOOR_CAVERN, 54, 12),
-SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
+MATT_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
+SHELLY_BATTLE(SEAFLOOR_CAVERN, CAP_SEAFLOOR_CAVERN - 1, 12),
 
 [DIFFICULTY_NORMAL][TRAINER_ARCHIE_SEAFLOOR_CAVERN] =
 {
@@ -16214,16 +16218,16 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 53,
+        .lvl = CAP_SEAFLOOR_CAVERN - 2,
         .species = SPECIES_GOLDUCK,
         .ability = ABILITY_DAMP,
         IVS(18),
         .gender = TRAINER_MON_MALE,
         },
-        ARCHIE_TENTACOOL(53),
-        ARCHIE_WAILMER(54),
+        ARCHIE_TENTACOOL(CAP_SEAFLOOR_CAVERN - 2),
+        ARCHIE_WAILMER(CAP_SEAFLOOR_CAVERN - 1),
         {
-        FINNEAS(55),
+        FINNEAS(CAP_SEAFLOOR_CAVERN),
         .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},
         .heldItem = ITEM_SHARPEDONITE,
         }

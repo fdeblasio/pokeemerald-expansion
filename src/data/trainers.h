@@ -4035,17 +4035,17 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define REMATCH_5_LEVEL_5 REMATCH_5_LEVEL_1 - 4
 #define REMATCH_5_LEVEL_6 REMATCH_5_LEVEL_1 - 5
 
-#define GABBY_AND_TY_INFO \
+#define GABBY_AND_TY_INFO                                        \
     .trainerName = _("Gabby & Ty"),                              \
     TRAINER_CONDENSED(INTERVIEWER),                              \
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,                   \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY, \
     .partySize = 2
 
-#define GABBY_WHISMUR(Level)    \
-    .lvl = Level,               \
+#define GABBY_WHISMUR(Level) \
+    .lvl = Level,            \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WHISMUR : (Level < ENDGAME_REMATCH_2_LEVEL ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = ABILITY_SCRAPPY, \
+    .ability = 2        ,    \
     .gender = TRAINER_MON_FEMALE
 
 #define TY_MAGNEMITE(Level) \

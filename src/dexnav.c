@@ -1833,7 +1833,7 @@ static bool8 CapturedAllFishingMons(u16 headerId)
 
     if (fishingMonsInfo != NULL)
     {
-        for (i = 0; i < FISH_WILD_COUNT; ++i)
+        for (i = 0; i < NUM_FISHING_MONS_ENCOUNTER_SLOTS; ++i)
         {
             species = fishingMonsInfo->wildPokemon[i].species;
             if (species != SPECIES_NONE)
@@ -1844,7 +1844,7 @@ static bool8 CapturedAllFishingMons(u16 headerId)
             }
         }
 
-        if (i >= FISH_WILD_COUNT && count > 0)
+        if (i >= NUM_FISHING_MONS_ENCOUNTER_SLOTS && count > 0)
             return TRUE;
     }
     else
@@ -1970,7 +1970,7 @@ static bool8 SpeciesInArray(enum Species species, u8 section)
         break;
 #else
     case 2: //fishing
-        for (i = 0; i < FISH_WILD_COUNT; i++)
+        for (i = 0; i < NUM_FISHING_MONS_ENCOUNTER_SLOTS; i++)
         {
             if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->fishingSpecies[i]) == dexNum)
                 return TRUE;
@@ -2062,7 +2062,7 @@ static void DexNavLoadEncounterData(void)
     // fishing mons
     if (fishingMonsInfo != NULL && fishingMonsInfo->encounterRate != 0)
     {
-        for (i = 0; i < FISH_WILD_COUNT; i++)
+        for (i = 0; i < NUM_FISHING_MONS_ENCOUNTER_SLOTS; i++)
         {
             species = fishingMonsInfo->wildPokemon[i].species;
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
@@ -2124,7 +2124,7 @@ static void DrawSpeciesIcons(void)
             CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark if detector mode inactive
     }
 #else
-    for (i = 0; i < FISH_WILD_COUNT; i++)
+    for (i = 0; i < NUM_FISHING_MONS_ENCOUNTER_SLOTS; i++)
     {
         species = sDexNavUiDataPtr->fishingSpecies[i];
         x = ROW_FISHING_ICON_X + COLUMN_SPACING * i;

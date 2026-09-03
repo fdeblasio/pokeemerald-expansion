@@ -188,7 +188,7 @@ static u8 RGBToHexColor(u8 hex1, u8 hex2)
     return (16 * hex1) + hex2;
 }
 
-static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, u8 *phrase)
+static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, const u8 *phrase)
 {
     s8 i;
     u8 charsByTableId[WALDA_PHRASE_LENGTH];

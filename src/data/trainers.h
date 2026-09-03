@@ -3726,7 +3726,7 @@ JUAN_REMATCH(4),
     },                                                                                     \
 }
 
-WALLACE_BATTLE(WALLACE, 69),
+WALLACE_BATTLE(WALLACE, CAP_CHAMPION),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 // Combine these three with the ones in include/data.h (for battle_partners)

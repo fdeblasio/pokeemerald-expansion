@@ -36,8 +36,8 @@
 #define CAP_GYM_7           51
 #define CAP_SPACE_CENTER    53
 #define CAP_SEAFLOOR_CAVERN 55
-#define CAP_GYM_8        58
-#define CAP_CHAMPION     69
+#define CAP_GYM_8           58
+#define CAP_CHAMPION        69
 
 u32 GetCurrentLevelCap(void);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);

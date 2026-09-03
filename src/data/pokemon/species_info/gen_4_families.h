@@ -4123,7 +4123,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpAttack  = 95,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = DEFAULT_CATCH_RATE(30),
+        .catchRate = BOOSTED_CATCH_RATE(30),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 107,
         .evYield_Attack = 1,
         .itemRare = ITEM_METRONOME,

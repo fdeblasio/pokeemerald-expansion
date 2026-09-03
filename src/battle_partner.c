@@ -4,6 +4,7 @@
 #include "battle_partner.h"
 #include "battle_frontier.h"
 #include "battle_tower.h"
+#include "caps.h"
 #include "data.h"
 #include "frontier_util.h"
 #include "difficulty.h"

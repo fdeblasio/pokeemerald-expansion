@@ -127,6 +127,8 @@ upcoming
 
 ### Pokémon
 - Implement level caps?
+    - Add IS_FRLG for Hoenn-specific flags
+    - Maybe add new FRLG list if gym levels are different
 - Give all Pokémon updated movesets
     - Not including cross-gen evos or regionals or already updated:
         4: 24 (Burmy-Mothim, Buneary-Lopunny, Bronzor-Bronzong, Finneon-Lumineon, Uxie-Heatran, Giratina-Arceus)

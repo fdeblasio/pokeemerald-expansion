@@ -18,13 +18,26 @@
 #error "Invalid choice for B_EV_CAP_TYPE, must be one of [EV_CAP_NONE, EV_CAP_FLAG_LIST, EV_CAP_VARIABLE, EV_CAP_NO_GAIN]"
 #endif
 
-#define CAP_GYM_2 18
-#define CAP_GYM_3 24
-#define CAP_GYM_4 32
-#define CAP_GYM_5 35
-#define CAP_GYM_6 43
-#define CAP_GYM_7 51
-#define CAP_GYM_8 58
+#define CAP_GYM_1           15
+#define CAP_GYM_2           18
+#define CAP_MUSEUM          19
+#define CAP_MAUVILLE_WALLY  20
+#define CAP_GYM_3           24
+#define CAP_METEOR_FALLS    28
+#define CAP_MT_CHIMNEY      30
+#define CAP_GYM_4           32
+#define CAP_GYM_5           35
+#define CAP_WEATHER         41
+#define CAP_RIVAL_119       42
+#define CAP_GYM_6           43
+#define CAP_LILYCOVE        45
+#define CAP_MAGMA_HIDEOUT   48
+#define CAP_AQUA_HIDEOUT    49
+#define CAP_GYM_7           51
+#define CAP_SPACE_CENTER    53
+#define CAP_SEAFLOOR_CAVERN 55
+#define CAP_GYM_8        58
+#define CAP_CHAMPION     69
 
 u32 GetCurrentLevelCap(void);
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue);

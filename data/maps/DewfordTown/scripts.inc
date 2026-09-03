@@ -207,6 +207,7 @@ DewfordTown_Movement_SailToPetalburg:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
+	walk_fast_up
 	walk_up
 	walk_up
 	walk_left
@@ -263,7 +264,6 @@ DewfordTown_Movement_SailToPetalburg:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
-	walk_faster_up
 	walk_faster_up
 	walk_faster_up
 	walk_faster_up

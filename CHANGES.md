@@ -12,7 +12,7 @@
 ## Changes
 - NOTE: This all assumes that I made no merging errors
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
-    - However, with the Exp. Share now affecting all party members, this can lead to becoming overleveled
+    - Level caps are included to prevent becoming too overleveled, which normally would happen with the higher Trainer levels combined with the Exp. Share
 - Decapitalization
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train

@@ -42,7 +42,6 @@ upcoming
 ```
 
 ## Hack-specific:
-- Implement level caps?
 - Have Steven give out starter Mega Stones? (with copies available in Lilycove)
 - If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
     - In Love Balls

@@ -404,10 +404,10 @@ upcoming
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 
-
 ## Emerald
 - Rustboro:
 - Dewford:
+    - Seems like Briney's flag was changed to be for Dewford Gym instead of Letter. The text should reflect this
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
             - It isn't on by default though, so could still be Steven

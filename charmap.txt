@@ -345,7 +345,7 @@ RIVAL          = FD 06
 REGION         = FD 07
 WALLY          = FD 08
 RALPH          = FD 09
-PEEKO          = FD 10
+PEEKO          = FD 0A
 
 @ battle string placeholders
 

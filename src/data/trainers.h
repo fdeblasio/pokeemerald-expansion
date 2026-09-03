@@ -5074,6 +5074,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .ability = ABILITY_DANCER,                                                       \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_FEMALE,                                                    \
+        .heldItem = ITEM_RED_NECTAR,                                                     \
         },                                                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
@@ -6750,6 +6751,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .lvl = 15,
         .species = SPECIES_ORICORIO_SENSU,
         IVS(18),
+        .heldItem = ITEM_PURPLE_NECTAR,
         }
     },
 },
@@ -8873,6 +8875,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         TRIATHLETE_MON(20, 0),
         .species = SPECIES_ORICORIO_POM_POM,
+        .heldItem = ITEM_RED_NECTAR,
         }
     },
 },
@@ -16098,10 +16101,12 @@ MATT_BATTLE(AQUA_HIDEOUT, CAP_AQUA_HIDEOUT, 6),
         {
         .lvl = 45,
         .species = SPECIES_ORICORIO_PAU,
+        .heldItem = ITEM_PINK_NECTAR,
         },
         {
         .lvl = 45,
         .species = SPECIES_ORICORIO_SENSU,
+        .heldItem = ITEM_PURPLE_NECTAR,
         }
     },
 },

@@ -3,6 +3,7 @@
 SlateportCity_Market_TMs:
 	.2byte ITEM_TM_WATER_PULSE
 	.2byte ITEM_TM_CALM_MIND
+	@.2byte ITEM_TM_BULK_UP
 	.2byte ITEM_TM_FALSE_SWIPE
 	.2byte ITEM_TM_FIRE_SPIN
 	.2byte ITEM_TM_WHIRLPOOL
@@ -24,6 +25,9 @@ SlateportCity_Market_TMs:
 
 	.align 2
 MauvilleCity_Mart_TMs:
+	@.2byte ITEM_TM_SHOCK_WAVE
+	@.2byte ITEM_TM_ROCK_TOMB
+	@.2byte ITEM_TM_AERIAL_ACE
 	.2byte ITEM_TM_CHARGE_BEAM
 	.2byte ITEM_TM_VACUUM_WAVE
 	.2byte ITEM_TM_ICICLE_SPEAR
@@ -106,6 +110,7 @@ FortreeCity_Mart_TMs:
 	.2byte ITEM_TM_GIGA_DRAIN
 	.2byte ITEM_TM_SAFEGUARD
 	.2byte ITEM_TM_REFLECT
+	@.2byte ITEM_TM_FACADE
 	.2byte ITEM_TM_WEATHER_BALL
 	.2byte ITEM_TM_PSYCHO_CUT
 	.2byte ITEM_TM_SHADOW_CLAW
@@ -142,19 +147,22 @@ FortreeCity_Mart_TMs:
 	.2byte ITEM_TM_ROOST
 	.2byte ITEM_TM_TAILWIND
 	.2byte ITEM_TM_CURSE
-	.2byte ITEM_TM_UPPER_HAND
+	.2byte ITEM_TM_DRAGON_CHEER
 	pokemartlistend
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_TMs:
+	@.2byte ITEM_TM_PSYCHIC
 	.2byte ITEM_TM_BODY_SLAM
 	.2byte ITEM_TM_HYPER_VOICE
 	.2byte ITEM_TM_BLAZE_KICK
 	.2byte ITEM_TM_HEAT_WAVE
+	@.2byte ITEM_TM_LIQUIDATION
 	.2byte ITEM_TM_AQUA_TAIL
 	.2byte ITEM_TM_SCALD
+	.2byte ITEM_TM_LEAF_BLADE
 	.2byte ITEM_TM_PETAL_BLIZZARD
-	.2byte ITEM_TM_ENERGY_BALL
+	@.2byte ITEM_TM_ENERGY_BALL
 	.2byte ITEM_TM_ZING_ZAP
 	.2byte ITEM_TM_ICICLE_CRASH
 	.2byte ITEM_TM_SKY_UPPERCUT
@@ -199,6 +207,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_StrongTMs:
 	.2byte ITEM_TM_SOLAR_BEAM
 	.2byte ITEM_TM_THUNDER
 	.2byte ITEM_TM_FIRE_BLAST
+	@.2byte ITEM_TM_OVERHEAT
 	.2byte ITEM_TM_GIGA_IMPACT
 	.2byte ITEM_TM_HYDRO_PUMP
 	.2byte ITEM_TM_HURRICANE

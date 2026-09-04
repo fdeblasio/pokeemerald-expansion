@@ -3827,7 +3827,7 @@ static void PrintHeldItemName(void)
     }
     else if (sMonSummaryScreen->summary.item == ITEM_NONE)
     {
-        StringCopy(gStringVar1, COMPOUND_STRING("NONE"));
+        StringCopy(gStringVar1, COMPOUND_STRING("None"));
 
         if (!BXPY_SummaryScreen_ShouldShowFullItem(sMonSummaryScreen->mode))
             StringCopy(gStringVar1, BXPY_ReturnItemText(ITEM_NONE));

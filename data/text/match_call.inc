@@ -1223,7 +1223,7 @@ MatchCall_PersonalizedText52::
 	.string "I gave a {POKEBLOCK} to my {STR_VAR_2}.\n"
 	.string "It seemed to enjoy it very much.\p"
 	.string "It looks like Pokémon have their\n"
-	.string "likes and dislikes with {POKEBLOCK}S.\p"
+	.string "likes and dislikes with {POKEBLOCK}s.\p"
 	.string "I find that quite fascinating.\n"
 	.string "Please do take care.$"
 

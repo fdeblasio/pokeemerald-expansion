@@ -610,7 +610,7 @@ gTV3CheersForPokeblocksText04::
 
 gTV3CheersForPokeblocksText05::
 	.string "Tune in next time!\n"
-	.string "Our slogan is “3 Cheers For {POKEBLOCK}S!”$"
+	.string "Our slogan is “3 Cheers For {POKEBLOCK}s!”$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WhatsYourOpinionOfTrainer::
 	.string "Hi, there!\p"
@@ -2384,7 +2384,7 @@ gTVSafariFanClubText01::
 	.string "{STR_VAR_2} Pokémon.$"
 
 gTVSafariFanClubText02::
-	.string "The Trainer is clever with {POKEBLOCK}S.\n"
+	.string "The Trainer is clever with {POKEBLOCK}s.\n"
 	.string "Used {STR_VAR_2} that time, I think.$"
 
 gTVSafariFanClubText03::
@@ -2414,14 +2414,14 @@ gTVSafariFanClubText06::
 	.string "catch one Pokémon. Not a one!$"
 
 gTVSafariFanClubText07::
-	.string "The Trainer does use {POKEBLOCK}S.\n"
+	.string "The Trainer does use {POKEBLOCK}s.\n"
 	.string "Used {STR_VAR_2} that time, I think.\p"
 	.string "But, boy, I wish the Trainer would\n"
 	.string "get a bit better at this.$"
 
 gTVSafariFanClubText08::
 	.string "I think the Trainer would have better\n"
-	.string "luck using {POKEBLOCK}S, which weren't\l"
+	.string "luck using {POKEBLOCK}s, which weren't\l"
 	.string "used at all that time.$"
 
 gTVSafariFanClubText09::

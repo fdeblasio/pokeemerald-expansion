@@ -175,7 +175,7 @@ Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 	.string "Excuse me!\n"
 	.string "You seem to be without a {POKEBLOCK} Case.\p"
 	.string "Your Safari Game will be much more\n"
-	.string "fruitful if you use {POKEBLOCK}S.\p"
+	.string "fruitful if you use {POKEBLOCK}s.\p"
 	.string "Please come back with a {POKEBLOCK} Case.\p"
 	.string "You may obtain a {POKEBLOCK} Case from\n"
 	.string "the Lilycove Contest Hall.$"
@@ -240,7 +240,7 @@ SafariZone_South_Text_Youngster:
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
 	.string "Safari Zone Trainer Tip!\p"
-	.string "Throw {POKEBLOCK}S at wild Pokémon to make\n"
+	.string "Throw {POKEBLOCK}s at wild Pokémon to make\n"
 	.string "them less likely to flee.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
@@ -248,16 +248,16 @@ SafariZone_Southwest_Text_RestHouseSign:
 	.string "Rest House$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "I don't have any {POKEBLOCK}S, but I caught\n"
+	.string "I don't have any {POKEBLOCK}s, but I caught\n"
 	.string "a good number of Pokémon.\p"
 	.string "You can improve your chances of making\n"
 	.string "a catch by getting closer to them\l"
 	.string "before throwing a Safari Ball.$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "If you use {POKEBLOCK}S, wild Pokémon won't\n"
+	.string "If you use {POKEBLOCK}s, wild Pokémon won't\n"
 	.string "be so quick to run away.\p"
-	.string "It's not much use to give {POKEBLOCK}S to\n"
+	.string "It's not much use to give {POKEBLOCK}s to\n"
 	.string "Pokémon that don't flee easily.$"
 
 SafariZone_RestHouse_Text_FatMan:

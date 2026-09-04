@@ -259,7 +259,7 @@
 #define FLAG_RECEIVED_TM_POWER_GEM           0xE5
 #define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
 #define FLAG_RECEIVED_TM_ROAR                0xE7
-#define FLAG_RECEIVED_TM_LEAF_BLADE          0xE8
+#define FLAG_RECEIVED_TM_ENERGY_BALL         0xE8
 #define FLAG_RECEIVED_TM_REST                0xE9
 #define FLAG_RECEIVED_TM_ATTRACT             0xEA
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEB

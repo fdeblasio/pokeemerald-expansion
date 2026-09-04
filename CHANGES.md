@@ -440,9 +440,9 @@
 |TM185|Liquidation|Juan|
 |TM186|Aqua Tail|Lilycove Department Store|
 |TM187|Scald|Lilycove Department Store|
-|TM188|Leaf Blade|Route 123|
+|TM188|Leaf Blade|Lilycove Department Store|
 |TM189|Petal Blizzard|Lilycove Department Store|
-|TM190|Energy Ball|Lilycove Department Store|
+|TM190|Energy Ball|Route 123|
 |TM191|Zing Zap|Lilycove Department Store|
 |TM192|Icicle Crash|Lilycove Department Store|
 |TM193|Sky Uppercut|Lilycove Department Store|

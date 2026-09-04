@@ -464,6 +464,12 @@ upcoming
 
 ### Trainers
 - Add check to throw assert if Trainer mon knows move it shouldn't?
+    - Already exists for ability. Need to check if exists for move
+- Reorder rematches (after first Wedding run)
+    - Calvin first
+    - Roughly in order of when encountered?
+    - Nob and other mini bosses can be ahead
+    - Norman grouped with other leaders?
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
     - Even just reducing to two or three rematches would save space

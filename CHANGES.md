@@ -151,6 +151,7 @@
 - There are now one less rematch per gym leader/Wally to free up space
 - Any Trainer first encountered after Sootopolis now only has one rematch
     - This only applies to two Trainers in Meteor Falls
+- Rematches now require less steps (regular trainers) and battles (Gym Leaders) to trigger
 
 #### Bosses (Emerald):
 |          BOSSES           |        VANILLA       |    UPDATED    |

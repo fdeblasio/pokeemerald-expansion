@@ -1265,6 +1265,8 @@ enum NationalDexOrder
     F(KINGDRA) \
     F(CHINCHOU) \
     F(LANTURN) \
+    F(ARROKUDA) \
+    F(BARRASKEWDA) \
     F(TADBULB) \
     F(BELLIBOLT) \
     F(CARVANHA) \
@@ -1549,8 +1551,6 @@ enum NationalDexOrder
     F(DRAGALGE) \
     F(DEWPIDER) \
     F(ARAQUANID) \
-    F(ARROKUDA) \
-    F(BARRASKEWDA) \
     F(ROLYCOLY) \
     F(CARKOL) \
     F(COALOSSAL) \

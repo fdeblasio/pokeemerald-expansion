@@ -3125,7 +3125,7 @@ Route120_Text_CallieDefeat:
 
 Route120_Text_CalliePostBattle:
 	.string "I wonder… Should I evolve my Pokémon?\n"
-	.string "They're cute the way they are, though.$"
+	.string "It's cute the way it is, though.$"
 
 Route120_Text_LeonelIntro:
 	.string "Your party Pokémon…\n"

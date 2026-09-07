@@ -388,7 +388,7 @@ BerryTree_Text_BerryLeftUnpicked_Mutation:
 	.string "and the {STR_VAR_3} unpicked.$"
 
 BerryTree_Text_BerryPocketFull_Mutation:
-	.string "The BAG's BERRIES POCKET is full.\p"
+	.string "The Bag's Berries Pocket is full.\p"
 	.string "The {STR_VAR_1} and the\n"
 	.string "{STR_VAR_3} couldn't be taken.$"
 
@@ -398,8 +398,8 @@ BerryTree_Text_PickedTheBerry_Mutation:
 
 BerryTree_Text_PutAwayBerry_Mutation:
 	.string "{PLAYER} put away the {STR_VAR_1}\n"
-	.string "and the {STR_VAR_3} in the BAG's\l"
-	.string "BERRIES POCKET.\p"
+	.string "and the {STR_VAR_3} in the Bag's\l"
+	.string "Berries Pocket.\p"
 	.string "The soil returned to its soft and\n"
 	.string "loamy state.$"
 .endif

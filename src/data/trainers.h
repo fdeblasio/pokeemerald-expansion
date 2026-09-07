@@ -4355,7 +4355,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {                                                                             \
         .lvl = Level,                                                                 \
         .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_HORSEA : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SEADRA : SPECIES_KINGDRA), \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .ability = 0,                                                                 \
         .gender = TRAINER_MON_MALE,                                                   \
         }                                                                             \
     },                                                                                \

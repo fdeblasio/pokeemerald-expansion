@@ -3079,7 +3079,7 @@ static s32 CompareItemsByIndex(enum Pocket pocketId, struct ItemSlot item1, stru
     default:
         index1 = item1.itemId;
         index2 = item2.itemId;
-        return 0;
+        break;
     }
 
     if (index1 < index2)

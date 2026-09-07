@@ -165,17 +165,17 @@
     "OldaleTown_House2"
   ],
   "gMapGroup_IndoorPetalburg": [
-    "PetalburgCity_Gym",
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_Mart",
+    "PetalburgCity_Gym",
     "PetalburgCity_WallysHouse",
     "PetalburgCity_House1",
     "PetalburgCity_House2"
   ],
   "gMapGroup_IndoorRustboro": [
-    "RustboroCity_Gym",
     "RustboroCity_PokemonCenter_1F",
     "RustboroCity_Mart",
+    "RustboroCity_Gym",
     "RustboroCity_DevonCorp_1F",
     "RustboroCity_DevonCorp_2F",
     "RustboroCity_DevonCorp_3F",
@@ -191,8 +191,8 @@
     "RustboroCity_House3"
   ],
   "gMapGroup_IndoorDewford": [
-    "DewfordTown_Gym",
     "DewfordTown_PokemonCenter_1F",
+    "DewfordTown_Gym",
     "DewfordTown_Hall",
     "DewfordTown_House1",
     "DewfordTown_House2"
@@ -213,9 +213,9 @@
     "SlateportCity_BattleTentBattleRoom"
   ],
   "gMapGroup_IndoorMauville": [
-    "MauvilleCity_Gym",
     "MauvilleCity_PokemonCenter_1F",
     "MauvilleCity_Mart",
+    "MauvilleCity_Gym",
     "MauvilleCity_BikeShop",
     "MauvilleCity_GameCorner",
     "MauvilleCity_House1",
@@ -241,18 +241,18 @@
     "FallarborTown_BattleTentBattleRoom"
   ],
   "gMapGroup_IndoorLavaridge": [
-    "LavaridgeTown_Gym_1F",
-    "LavaridgeTown_Gym_B1F",
     "LavaridgeTown_PokemonCenter_1F",
     "LavaridgeTown_Mart",
+    "LavaridgeTown_Gym_1F",
+    "LavaridgeTown_Gym_B1F",
     "LavaridgeTown_HerbShop",
     "LavaridgeTown_House"
   ],
   "gMapGroup_IndoorFortree": [
-    "FortreeCity_Gym",
     "FortreeCity_PokemonCenter_1F",
-    "FortreeCity_House1",
     "FortreeCity_Mart",
+    "FortreeCity_Gym",
+    "FortreeCity_House1",
     "FortreeCity_House2",
     "FortreeCity_House3",
     "FortreeCity_House4",
@@ -284,9 +284,9 @@
     "LilycoveCity_UnusedMart"
   ],
   "gMapGroup_IndoorMossdeep": [
-    "MossdeepCity_Gym",
     "MossdeepCity_PokemonCenter_1F",
     "MossdeepCity_Mart",
+    "MossdeepCity_Gym",
     "MossdeepCity_SpaceCenter_1F",
     "MossdeepCity_SpaceCenter_2F",
     "MossdeepCity_StevensHouse",
@@ -298,10 +298,10 @@
     "MossdeepCity_GameCorner_B1F"
   ],
   "gMapGroup_IndoorSootopolis": [
-    "SootopolisCity_Gym_1F",
-    "SootopolisCity_Gym_B1F",
     "SootopolisCity_PokemonCenter_1F",
     "SootopolisCity_Mart",
+    "SootopolisCity_Gym_1F",
+    "SootopolisCity_Gym_B1F",
     "SootopolisCity_House1",
     "SootopolisCity_House2",
     "SootopolisCity_House3",

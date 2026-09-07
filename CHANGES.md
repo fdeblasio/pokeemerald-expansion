@@ -70,7 +70,7 @@
     - Bag sorting with Start button
     - More bag space
 - The naming screen automatically swaps to lowercase after the first letter
-- Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
+- Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poké Balls)
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - All text characters are now eligible for a Walda wallpaper
 - It is now easier to specify which Walda wallpaper you want

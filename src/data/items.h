@@ -3652,8 +3652,8 @@ const struct ItemInfo gItemsInfo[] =
         SWEET_INFO(Love),
         .description = COMPOUND_STRING(
             "A heart-shaped\n"
-            "sweet. When held by\n"
-            "Milcery, it's happy."),
+            "sweet. When used by\n"
+            "Luvdisc, it's happy."),
     },
 
     [ITEM_BERRY_SWEET] =

@@ -1526,6 +1526,7 @@
 - Starter Machop:
     - SpD: 35->40
     - Spe: 35->45
+    - Abilities: Pummel, No Guard, Guts
     - Evolution: 28->16
     - Gender ratio: 75/25->100/0
     - Learns Tackle at level 1
@@ -1535,6 +1536,7 @@
 - Starter Machoke:
     - SpD: 60->65
     - Spe: 45->55
+    - Abilities: Pummel, No Guard, Guts
     - Evolution: Linking Cord->36
     - Gender ratio: 75/25->100/0
     - Learns Tackle, Drain Punch, and Brick Break by level up
@@ -1542,6 +1544,7 @@
 - Starter Machamp:
     - Def: 80->90
     - Spe: 55->75
+    - Abilities: Pummel, No Guard, Guts
     - Gender ratio: 75/25->100/0
     - Learns Tackle, Drain Punch, and Brick Break by level up
 
@@ -3310,6 +3313,7 @@
     - SpA: 33->40
     - SpD: 35->50
     - Spe: 57->60
+    - Abilities: Zephyr, Keen Eye, Big Pecks
     - Evolution: 18->16
     - Gender ratio: 50/50->0/100
     - Learns Scratch at level 1
@@ -3323,6 +3327,7 @@
     - SpA: 43->45
     - SpD: 55->65
     - Spe: 77->80
+    - Abilities: Zephyr, Keen Eye, Big Pecks
     - Evolution: 38->36
     - Gender ratio: 50/50->0/100
     - Learns Scratch and Feather Dance by level up
@@ -3333,6 +3338,7 @@
     - Def: 105->115
     - SpA: 53->55
     - Spe: 67->80
+    - Abilities: Zephyr, Keen Eye, Mirror Armor
     - Gender ratio: 50/50->0/100
     - Learns Scratch, Feather Dance, and Iron Head by level up
 

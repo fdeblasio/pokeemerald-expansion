@@ -4965,6 +4965,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     }
 
 #define WEATHER_INSTITUTE_AQUA_LEVEL CAP_WEATHER - 4
+#define MT_PYRE_AQUA_LEVEL 42
 #define AQUA_HIDEOUT_LEVEL CAP_AQUA_HIDEOUT - 4
 #define SEAFLOOR_CAVERN_LEVEL CAP_SEAFLOOR_CAVERN - 3
 
@@ -4990,26 +4991,26 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                \
 }
 
-#define MALIK_BATTLE(Location, Level)                                                      \
-[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                            \
-{                                                                                          \
-    .trainerName = _("Malik"),                                                             \
-    AQUA_GRUNT_M_INFO,                                                                     \
-    .partySize = 2,                                                                        \
-    .party = (const struct TrainerMon[]) {                                                 \
-        {                                                                                  \
-        .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_CHINCHOU : SPECIES_LANTURN,     \
-        .ability = ABILITY_WATER_ABSORB,                                                   \
-        .gender = TRAINER_MON_MALE,                                                        \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = Level,                                                                      \
-        .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),            \
-        .ability = ABILITY_OBLIVIOUS,                                                      \
-        .gender = TRAINER_MON_MALE,                                                        \
-        }                                                                                  \
-    },                                                                                     \
+#define MALIK_BATTLE(Location, Level)                                                  \
+[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                        \
+{                                                                                      \
+    .trainerName = _("Malik"),                                                         \
+    AQUA_GRUNT_M_INFO,                                                                 \
+    .partySize = 2,                                                                    \
+    .party = (const struct TrainerMon[]) {                                             \
+        {                                                                              \
+        .lvl = Level,                                                                  \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_CHINCHOU : SPECIES_LANTURN, \
+        .ability = ABILITY_WATER_ABSORB,                                               \
+        .gender = TRAINER_MON_MALE,                                                    \
+        },                                                                             \
+        {                                                                              \
+        .lvl = Level,                                                                  \
+        .species = SPECIES_MALIK_ACE + (Level < MT_PYRE_AQUA_LEVEL ? 0 : 1),           \
+        .ability = ABILITY_OBLIVIOUS,                                                  \
+        .gender = TRAINER_MON_MALE,                                                    \
+        }                                                                              \
+    },                                                                                 \
 }
 
 #define BERYL_BATTLE(Location, Level)                                                 \
@@ -15047,10 +15048,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     },
 },
 
-NERISSA_BATTLE(MT_PYRE, 42),
-BERYL_BATTLE(MT_PYRE, 42),
-MALIK_BATTLE(MT_PYRE, 42),
-MARINA_BATTLE(MT_PYRE, 42),
+NERISSA_BATTLE(MT_PYRE, MT_PYRE_AQUA_LEVEL),
+BERYL_BATTLE(MT_PYRE, MT_PYRE_AQUA_LEVEL),
+MALIK_BATTLE(MT_PYRE, MT_PYRE_AQUA_LEVEL),
+MARINA_BATTLE(MT_PYRE, MT_PYRE_AQUA_LEVEL),
 
 // Route 123 (east)
 #define CAMERON_INFO             \

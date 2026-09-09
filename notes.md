@@ -46,6 +46,7 @@ upcoming
 - Moves:
     - Power:
         - Bone Rush: 25->30 (still 25 in EE for macro)
+        - Slash: 70->80 (still 70 in EE for macro)
     - Effect:
         - Iron Head: 30%->20%
             - All but Air Slash and Zing Zap can go back to 20%; update notes if so
@@ -63,22 +64,24 @@ upcoming
         - Talonflame gets Blaze Kick
         - Alolan Raichu gets Rising Voltage
     - Some movesets get good moves that they don't have in EE that can be added:
-        - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
-        - Falinks gets Seed Bomb
-        - Barbaracle gets Waterfall and Close Combat
-        - Eelektross gets Waterfall
-        - Staraptor gets Bulk Up and Blaze Kick
-        - Sceptile gets Earth Power
+        - STAB:
+            - Starmie gets Aqua Jet, Bulk Up, Liquidation, and Zen Headbutt
+            - Barbaracle gets Waterfall and Close Combat
+            - Wigglytuff gets Moonblast
+            - Grapploct gets Mach Punch
+        - Non-STAB:
+            - Falinks gets Seed Bomb
+            - Eelektross gets Waterfall
+            - Staraptor gets Bulk Up and Blaze Kick
+            - Sceptile gets Earth Power
 - Abilities:
     - Update DynamicPower for Mega Sol
+        - Check DynamicType for examples (like Weather Ball)
 - Megas:
     - Starmie:
         - Make attacking stats more consistent? (Regular has 25 more SpA, Mega has 30 more SpA but actually more Atk from Huge Power)
     - Dragonite line:
         - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
-    - Lucario Z:
-        - Could revert regular Mega stats back to be Physical since Z is Special
-            - Maybe wait to see how Zs are handled in main games
     - Zygarde:
         - Make attacking stats more consistent?
             - Regular forms have more Atk, but Mega has 146 more SpA

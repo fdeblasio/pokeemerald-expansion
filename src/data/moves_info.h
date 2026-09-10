@@ -7757,7 +7757,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .accuracy = 100,
         .pp = 20,
         .target = TARGET_SELECTED,
-        .priority = 0
+        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .argument = { .secondaryEffectChance = 30 },
         .additionalEffects = ADDITIONAL_EFFECTS({

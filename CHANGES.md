@@ -8,6 +8,7 @@
 - Torkoal sprite on Mt. Chimney sometimes glitches
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
     - This may be related to the amount of overworld sprites/palettes
+- Sometimes in the Mossdeep Space Center multi-battle, when Steven's Metang uses Bullet Punch, it will attack your Pokémon instead of the opponent's
 
 ## Changes
 - NOTE: This all assumes that I made no merging errors

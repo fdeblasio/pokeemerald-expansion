@@ -7518,8 +7518,8 @@ static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *mon)
     if (GetMonData(&gParties[B_TRAINER_PLAYER][1], MON_DATA_SPECIES) != SPECIES_NONE
         && GetMonData(mon, MON_DATA_IS_EGG) == FALSE
         && mon != &gParties[B_TRAINER_PLAYER][0]
-        && !((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && mon == &gParties[B_TRAINER_PLAYER][1])
-        && !(IsMultiBattle() == TRUE && !AreMultiPartiesFullTeams() && (mon == &gParties[B_TRAINER_PLAYER][1] || mon == &gParties[B_TRAINER_PLAYER][4] || mon == &gParties[B_TRAINER_PLAYER][5]))
+        && !((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && !IsMultiBattle() && mon == &gParties[B_TRAINER_PLAYER][1])
+        && !(IsMultiBattle() && !AreMultiPartiesFullTeams() && (mon == &gParties[B_TRAINER_PARTNER][0] || mon == &gParties[B_TRAINER_PARTNER][1] || mon == &gParties[B_TRAINER_PARTNER][2]))
         && mon != &gParties[B_TRAINER_PLAYER][gBattleStruct->prevSelectedPartySlot]
         && gPartyMenu.layout != PARTY_LAYOUT_MULTI_FULL_PARTNER
     )

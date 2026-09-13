@@ -334,7 +334,7 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "Plus, she'll come at you with\n"
 	.string "outstanding attacks.\p"
 	.string "If you want to win, you'll need to show\n"
-	.string "them how tight you are with your\l"
+	.string "her how tight you are with your\l"
 	.string "Pokémon. Go for it!$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:

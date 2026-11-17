@@ -248,9 +248,9 @@ static const struct SpriteFrameImage sPicTable_PikachuAlola[] = {
 static const struct SpriteFrameImage sPicTable_PikachuPartner[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuPartner, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_PikachuWorld[] = {
+static const struct SpriteFrameImage sPicTable_PikachuWorld[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuWorld, 4, 4),
-};*/
+};
 #endif //P_CAP_PIKACHU_FORMS
 
 #if P_GIGANTAMAX_FORMS

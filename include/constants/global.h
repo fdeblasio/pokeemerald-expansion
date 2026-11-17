@@ -28,6 +28,7 @@
 #include "config/map_preview_screen.h"
 #include "config/overworld.h"
 #include "config/pokemon.h"
+#include "config/save.h"
 #include "config/summary_screen.h"
 #include "config/wild_encounter.h"
 #include "config/bxpy.h"
@@ -137,15 +138,27 @@ enum PartyBattleOrder
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
 
+#if FREE_MYSTERY_EVENT_BUFFERS
 enum BagCounts
 {
-    BAG_ITEMS_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 100 : 60, // need at most 558, was 30
-    BAG_MEDICINE_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 37 : 0,
+    BAG_ITEMS_COUNT = 100, // need at most 558, was 30
+    BAG_MEDICINE_COUNT = 37,
     BAG_KEYITEMS_COUNT = 45, // was 30
     BAG_POKEBALLS_COUNT = 28, // was 16
-    BAG_TMHM_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 250 : 108, // was 64
-    BAG_BERRIES_COUNT = FREE_MYSTERY_EVENT_BUFFERS ? 68 : 46, // was 46
+    BAG_TMHM_COUNT = 250, // was 64
+    BAG_BERRIES_COUNT = 68, // was 46
 };
+#else
+enum BagCounts
+{
+    BAG_ITEMS_COUNT = 60, // need at most 558, was 30
+    BAG_MEDICINE_COUNT = 0,
+    BAG_KEYITEMS_COUNT = 45, // was 30
+    BAG_POKEBALLS_COUNT = 28, // was 16
+    BAG_TMHM_COUNT = 108, // was 64
+    BAG_BERRIES_COUNT = 46, // was 46
+};
+#endif
 
 //Free space:
 //Saveblock 1: 15780/15872, free 92b    44/4=11 items

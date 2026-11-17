@@ -6255,10 +6255,12 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         case WEATHER_SNOW:
             if (MoveAlwaysHitsInHailSnow(move))
                 accuracy = 100;
+            break;
         case WEATHER_FOG_DIAGONAL:
         case WEATHER_FOG_HORIZONTAL:
             if (B_OVERWORLD_FOG == GEN_4)
                 accuracy = (accuracy * 60) / 100;
+            break;
         }
     }
 

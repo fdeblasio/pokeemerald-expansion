@@ -5064,9 +5064,9 @@ bool32 CanLearnTeachableMove(enum Species species, enum Move move)
             {
                 if (gSpeciesInfo[species].teachingType != TM_ILLITERATE)
                 {
-                    if (move == MOVE_TERA_BLAST && GET_BASE_SPECIES_ID(species) == SPECIES_TERAPAGOS)
+                    if (move == MOVE_TERA_BLAST && GetBaseSpecies(species) == SPECIES_TERAPAGOS)
                         return FALSE;
-                    if (GET_BASE_SPECIES_ID(species) == SPECIES_PYUKUMUKU && (move == MOVE_HIDDEN_POWER || move == MOVE_RETURN || move == MOVE_FRUSTRATION))
+                    if (GetBaseSpecies(species) == SPECIES_PYUKUMUKU && (move == MOVE_HIDDEN_POWER || move == MOVE_RETURN || move == MOVE_FRUSTRATION))
                         return FALSE;
                     return TRUE;
                 }

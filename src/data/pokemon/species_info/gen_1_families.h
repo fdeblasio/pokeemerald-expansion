@@ -3403,7 +3403,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         TRACKS_FOOT,                                                      \
         sAnimTable_Following_Asym,                                        \
         gOverworldPalette_Pikachu##Cap,                                   \
-        gShinyOverworldPalette_Pikachu#Cap                                \
+        gShinyOverworldPalette_Pikachu##Cap                               \
     )                                                                     \
     .levelUpLearnset = sPikachuLevelUpLearnset,                           \
     .teachableLearnset = sPikachuTeachableLearnset,                       \

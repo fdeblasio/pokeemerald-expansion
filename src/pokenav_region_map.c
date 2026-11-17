@@ -226,6 +226,7 @@ static u32 HandleRegionMapInput(struct Pokenav_RegionMapMenu *state)
     case MAP_INPUT_L_BUTTON:
         if (!MapHasNoEncounterData())
             return POKENAV_MAP_FUNC_DEXNAV;
+        break;
     case MAP_INPUT_R_BUTTON:
         if (regionMap->mapSecType == MAPSECTYPE_CITY_CANFLY && FlagGet(OW_FLAG_POKE_RIDER)
         && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)

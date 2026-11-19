@@ -808,7 +808,7 @@
         - PP: 10->20
     - Rock Slide:
         - Power: 75->80
-        - Accuracy: 90->100
+        - Accuracy: 95->100
     - Rock Throw:
         - Accuracy: 90->100
         - PP: 15->35
@@ -1078,8 +1078,6 @@
     - Freeze Shock:
         - Accuracy: 90->100
         - PP: 5->10
-    - Frost Breath:
-        - Accuracy: 90->100
     - Glacial Lance:
         - PP: 5->10
     - Glaciate:
@@ -1186,8 +1184,6 @@
         - PP: 10->15
     - Steel Beam:
         - Accuracy: 95->100
-    - Steel Wing:
-        - Accuracy: 90->100
     - Sunsteel Strike:
         - PP: 5->10
 - Fairy:
